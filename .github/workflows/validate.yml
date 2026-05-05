@@ -1,0 +1,51 @@
+name: Validate Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON files
+        run: |
+          set -e
+          for f in docs/data/*.json; do
+            echo "Validating $f"
+            python3 -c "import json; json.load(open('$f'))"
+          done
+
+      - name: Check critical files exist
+        run: |
+          test -f docs/index.html
+          test -f docs/papers.html
+          test -f docs/favorites.html
+          test -f docs/themes.html
+          test -f docs/css/style.css
+          test -f docs/js/favorites.js
+          test -f docs/js/site.js
+          test -f docs/data/papers.json
+          test -f docs/data/reports.json
+          echo "✅ all required files present"
+
+      - name: Lint HTML (basic check)
+        run: |
+          for f in docs/*.html; do
+            if ! grep -q "</html>" "$f"; then
+              echo "❌ $f missing closing tag"
+              exit 1
+            fi
+          done
+          echo "✅ HTML files look closed"
+
+  notify-pages:
+    needs: validate
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - run: echo "✅ Site validated. GitHub Pages will auto-deploy from /docs."

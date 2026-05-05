@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート：AI・データ科学 — 2026年3月7日</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+  :root{--primary:#1a3a5c;--accent:#2e75b6;--accent-light:#d5e8f4;--bg:#fafbfc;--card-bg:#fff;--text:#2c3e50;--text-light:#5a6a7a;--border:#e2e8f0;--rank1:#c9302c;--rank2:#e67e22;--rank3:#2980b9;--tag-method:#8e44ad;--tag-theme:#16a085}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:15px}
+  .container{max-width:960px;margin:0 auto;padding:40px 24px}
+  .report-header{background:linear-gradient(135deg,var(--primary) 0%,#2c5f8a 100%);color:#fff;padding:48px 40px;border-radius:12px;margin-bottom:32px;position:relative;overflow:hidden}
+  .report-header::after{content:'';position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:rgba(255,255,255,.05);border-radius:50%}
+  .report-header h1{font-family:'Noto Serif JP',serif;font-size:28px;font-weight:700;margin-bottom:8px}
+  .report-header .subtitle{font-size:16px;opacity:.85;margin-bottom:16px}
+  .report-header .meta{display:flex;gap:24px;font-size:13px;opacity:.75}
+  .section-title{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:var(--primary);border-left:4px solid var(--accent);padding-left:16px;margin:40px 0 20px}
+  .trend-box{background:var(--accent-light);border-radius:10px;padding:24px 28px;margin-bottom:32px;border:1px solid #b8d4ea}
+  .trend-box p{font-size:14.5px;color:var(--primary)}
+  .paper-card{background:var(--card-bg);border-radius:10px;border:1px solid var(--border);margin-bottom:24px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+  .paper-card.top1{border-top:4px solid var(--rank1)}.paper-card.top2{border-top:4px solid var(--rank2)}.paper-card.top3{border-top:4px solid var(--rank3)}.paper-card.remaining{border-top:3px solid var(--border)}
+  .card-header{padding:20px 24px 12px;display:flex;align-items:flex-start;gap:16px}
+  .rank-badge{flex-shrink:0;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px}
+  .rank-badge.r1{background:var(--rank1)}.rank-badge.r2{background:var(--rank2)}.rank-badge.r3{background:var(--rank3)}.rank-badge.rm{background:#95a5a6;font-size:13px}
+  .card-title{font-family:'Noto Serif JP',serif;font-size:17px;font-weight:700;color:var(--primary);line-height:1.5}
+  .card-title-en{font-size:13px;color:var(--text-light);margin-top:4px;font-style:italic}
+  .card-meta{padding:0 24px 12px;display:flex;flex-wrap:wrap;gap:8px}
+  .tag{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:500}
+  .tag-journal{background:#eaf2fb;color:var(--accent)}.tag-design{background:#f0e6f6;color:var(--tag-method)}.tag-relevance{background:#e0f5ef;color:var(--tag-theme)}
+  .paper-url{padding:0 24px 10px;font-size:12.5px}
+  .paper-url a{color:var(--accent);text-decoration:none;word-break:break-all}
+  .paper-url a:hover{text-decoration:underline}
+  .paper-url .url-label{font-weight:500;color:var(--text-light);margin-right:4px}
+  .card-body{padding:0 24px 20px}
+  .card-body h4{font-size:14px;font-weight:700;color:var(--accent);margin:16px 0 6px}
+  .card-body p{font-size:14px;line-height:1.75}
+  .highlight-box{background:#fffbe6;border-left:3px solid #f0c040;padding:10px 14px;margin:10px 0;border-radius:0 6px 6px 0;font-size:13.5px}
+  .idea-box{background:#f0f8ff;border-left:3px solid var(--accent);padding:10px 14px;margin:10px 0;border-radius:0 6px 6px 0;font-size:13.5px}
+  .summary-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:16px}
+  .summary-table th{background:var(--primary);color:#fff;padding:10px 12px;text-align:left;font-weight:500}
+  .summary-table td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+  .summary-table tr:nth-child(even) td{background:#f8fafc}
+  .summary-table tr:hover td{background:var(--accent-light)}
+  .trend-summary{background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);border-radius:10px;padding:28px;margin-top:32px;border:1px solid var(--border)}
+  .trend-summary h3{font-family:'Noto Serif JP',serif;font-size:18px;color:var(--primary);margin-bottom:16px}
+  .trend-summary p{font-size:14px;margin-bottom:12px}
+  .footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:12px;color:var(--text-light)}
+  @media print{body{font-size:11pt}.container{max-width:100%;padding:0}.paper-card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+<div class="container">
+  <div class="report-header">
+    <h1>研究レポート：AI・データ科学</h1>
+    <div class="subtitle">土曜日テーマ — 機械学習・ウェアラブル・デジタルツイン・説明可能AI</div>
+    <div class="meta"><span>2026年3月7日（土）</span><span>論文数：10本</span><span>対象期間：2025〜2026年</span></div>
+  </div>
+  <div class="trend-box"><p>今日のレポートでは、AI・データ科学が高齢者の健康・老化研究にもたらす方法論的革新に焦点を当てる。CT画像からの自動体組成評価と生物学的年齢推定、ウェアラブルAIによるフレイルのエッジコンピューティング実装、LLMエージェントによるウェアラブルデータの個別化解釈、デジタルツインの精密老年医学への応用といった重要な技術的発展が見られた。</p></div>
+
+  <h2 class="section-title">Top 3：詳細解説</h2>
+
+  <div class="paper-card top1"><div class="card-header"><div class="rank-badge r1">1</div><div><div class="card-title">CT画像AIによる生物学的年齢モデルと寿命予測</div><div class="card-title-en">Biological age model using explainable automated CT-based cardiometabolic biomarkers for phenotypic prediction of longevity</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">Nature Communications (2025)</span><span class="tag tag-design">コホート研究</span><span class="tag tag-relevance">筋質・身体機能</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41467-025-56741-w" target="_blank">https://www.nature.com/articles/s41467-025-56741-w</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4><p>腹部CT画像から骨格筋、腹部脂肪、大動脈石灰化、骨密度、腹部臓器を自動定量化し、生物学的年齢モデルを構築。寿命予測で従来の人口統計学的データを大幅に上回った（10年AUC 0.880 vs 0.779）。</p>
+      <h4>研究概要</h4><p>123,281名の成人（平均年齢53.6歳、47%女性、追跡中央値5.3年）の腹部CTスキャンに説明可能AIの自動パイプラインを適用。骨格筋量・質、腹部脂肪分布（内臓脂肪・皮下脂肪）、大動脈石灰化、骨密度、腹部実質臓器を自動定量化し、CT-based biological ageを算出した。CTモデルは年齢・性別などの標準的人口統計学的データと比較して寿命予測を有意に改善した。</p>
+      <h4>研究として重要な点</h4><p>「日常的に撮影されるCTスキャンからopportunisticに体組成と生物学的年齢を自動評価する」というパラダイムを実証。筋質研究者にとって、CT muscle densityと生物学的年齢の関連を探る新たな枠組みを提供する。サンプルサイズ123,281名は同種の研究で最大級。骨格筋だけでなく、血管石灰化、脂肪分布、骨密度を統合したマルチモーダルアプローチが特徴。</p>
+      <h4>方法論評価</h4><p>自動パイプラインの再現性は高く、マルチモーダルなCT指標を統合したアプローチは堅実。説明可能AIにより各指標の寄与を解釈可能にしている。ただし後方視的コホートであり、CTの適応バイアスが存在する。</p>
+      <h4>限界</h4><p>後方視的デザイン。CT撮影の適応バイアス。追跡中央値5.3年と比較的短い。75歳以上の高齢者への特化した検証が不十分。</p>
+      <div class="highlight-box"><strong>私の研究への示唆：</strong> CT muscle density（HU）研究への直接的応用。筋質指標を含む生物学的年齢モデルの構築が可能。ECW/ICW比やphase angleとの統合モデルも検討に値する。</div>
+      <div class="idea-box"><strong>研究アイデア：</strong> 日本のコホートでCT muscle density + 体組成指標（BIA phase angle, ECW/ICW）を用いた生物学的年齢モデルの開発。超音波echo intensityとCT densityの生物学的年齢予測力の比較研究。</div>
+    </div></div>
+
+  <div class="paper-card top2"><div class="card-header"><div class="rank-badge r2">2</div><div><div class="card-title">ウェアラブルAIによるオンデバイスフレイル評価</div><div class="card-title-en">Wearable AI for on-device frailty assessment using gait-based digital biomarkers</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">Nature Communications (2025)</span><span class="tag tag-design">方法論研究</span><span class="tag tag-relevance">身体機能・身体活動</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41467-025-67728-y" target="_blank">https://www.nature.com/articles/s41467-025-67728-y</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4><p>エッジAIをウェアラブルデバイスに実装し、臨床グレードの歩行ベースフレイル評価を数週間にわたってユーザー操作なしで実現した。</p>
+      <h4>研究概要</h4><p>従来のウェアラブルベースのフレイル評価はデータをクラウドに送信して後処理する必要があった。本研究ではデバイス上で推論を行うエッジAIフレームワークを開発。臨床グレードの生体信号取得とAIを統合し、装着者の操作なしに数週間にわたる連続的フレイル評価を実現。歩行パラメータ（歩行速度、歩幅変動性、対称性など）からフレイルスコアをリアルタイムに算出する。</p>
+      <h4>研究として重要な点</h4><p>「エッジAI × ウェアラブル × フレイル」の融合は、フレイルの連続的・日常的モニタリングを初めて実用レベルで実現。従来の1回限りの評価から長期間の動的フレイル評価へのパラダイムシフト。日常生活中の自然な歩行からフレイルを評価できるため、臨床環境でのパフォーマンスバイアスを回避できる。</p>
+      <h4>方法論評価</h4><p>エネルギー効率と精度のトレードオフを実証的に評価している点が優れている。ただし、CHS criteria（Friedモデル）に基づくフレイル定義であり、累積欠損モデルとの整合性は未検証。</p>
+      <h4>限界</h4><p>特定のフレイル定義に依存。長期使用のコンプライアンス。研究参加者 vs 地域在住高齢者の一般化可能性。屋内外環境差による歩行パラメータの変動。</p>
+      <div class="highlight-box"><strong>私の研究への示唆：</strong> 身体活動研究において加速度計データからフレイル状態を連続的に推定する手法の開発が可能。mobilityとgaitの評価がウェアラブルで自動化される。</div>
+      <div class="idea-box"><strong>研究アイデア：</strong> JAGESの加速度計データに本手法を応用し、社会的運動参加とフレイル遷移の関連を連続的に評価。歩行デジタルバイオマーカーとCT筋質指標の関連検証。</div>
+    </div></div>
+
+  <div class="paper-card top3"><div class="card-header"><div class="rank-badge r3">3</div><div><div class="card-title">LLMエージェントによるウェアラブルデータの個別化健康解釈</div><div class="card-title-en">Transforming wearable data into personal health insights using large language model agents</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">Nature Communications (2026)</span><span class="tag tag-design">方法論研究</span><span class="tag tag-relevance">身体活動・AI</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41467-025-67922-y" target="_blank">https://www.nature.com/articles/s41467-025-67922-y</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4><p>PHIA（Personal Health Insights Agent）を開発し、マルチステップ推論とコード生成を用いてウェアラブル行動健康データを分析・解釈。650時間の専門家評価で数値的質問に84%、自由記述質問に83%の精度を達成。</p>
+      <h4>研究概要</h4><p>ウェアラブルデバイスが収集する睡眠、運動、心拍数などのデータは膨大だが、個人にとって意味のある解釈への変換は困難だった。LLMベースのエージェントPHIAを開発し、マルチステップ推論（情報検索＋コード生成）により個別化された健康インサイトを生成。650時間の専門家評価で、コード生成のみのベースラインを有意に上回る性能を示した。</p>
+      <h4>研究として重要な点</h4><p>LLMの「推論能力」をウェアラブルデータの解釈に初めて本格的に応用。従来のMLは「予測」に留まっていたが、LLMエージェントは「なぜこのパターンが重要か」を自然言語で説明できる点が革新的。「予測→説明」へのパラダイムシフトを示す。</p>
+      <h4>方法論評価</h4><p>650時間の専門家評価は大規模で信頼性が高い。マルチステップ推論アーキテクチャは合理的。ただし医学的正確性の系統的検証は限定的であり、臨床判断の補助ツールとしての位置づけ。</p>
+      <h4>限界</h4><p>医学的正確性の系統的検証が不十分。プライバシーの懸念。高齢者に特化した検証なし。LLMのハルシネーションリスク。</p>
+      <div class="highlight-box"><strong>私の研究への示唆：</strong> 身体活動研究で収集する加速度計データの解釈にLLMエージェントを応用可能。研究参加者への個別化フィードバック生成にも活用できる。</div>
+      <div class="idea-box"><strong>研究アイデア：</strong> 高齢者の加速度計データに特化したLLMエージェントの開発。社会的運動パターンの解釈とフレイルリスク予測の統合。研究参加者向け個別化健康レポートの自動生成システム。</div>
+    </div></div>
+
+  <h2 class="section-title">Remaining 7：簡潔解説</h2>
+
+  <div class="paper-card remaining"><div class="card-header"><div class="rank-badge rm">4</div><div><div class="card-title">説明可能MLによる生物学的年齢とフレイルの統合バイオマーカー探索</div><div class="card-title-en">Explainable machine learning framework for biomarker discovery by combining biological age and frailty prediction</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">Scientific Reports (2025)</span><span class="tag tag-design">ML研究</span><span class="tag tag-relevance">身体機能・筋質</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41598-025-98948-3" target="_blank">https://www.nature.com/articles/s41598-025-98948-3</a></div>
+    <div class="card-body"><p>CHARLSデータを用い、CatBoost（BA予測最良）とGradient Boosting（フレイル予測最良）を構築。SHAPでcystatin Cが両モデルに共通する主要寄与因子であることが判明。生物学的年齢とフレイルを統合的に扱うスケーラブルなXAIフレームワーク。</p></div></div>
+
+  <div class="paper-card remaining"><div class="card-header"><div class="rank-badge rm">5</div><div><div class="card-title">CatBoost OOF-SHAPによるフレイルリスク予測Webアプリ</div><div class="card-title-en">Development of machine learning models with explainable AI for frailty risk prediction and their web-based application in community public health</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">Frontiers in Public Health (2025)</span><span class="tag tag-design">ML研究</span><span class="tag tag-relevance">身体機能・フレイル</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1698062/full" target="_blank">https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1698062/full</a></div>
+    <div class="card-body"><p>10,078名の高齢者で132変数からCatBoost OOF-SHAPにより15の主要予測因子を特定。うつ症状、年齢、IADL制限、睡眠の質、認知機能が上位。オフライン利用可能なバイリンガルWebアプリを開発し、地域公衆衛生での実装を実現。</p></div></div>
+
+  <div class="paper-card remaining"><div class="card-header"><div class="rank-badge rm">6</div><div><div class="card-title">AI駆動の健康診断データによる生物学的年齢予測</div><div class="card-title-en">Artificial intelligence-driven biological age prediction model using comprehensive health checkup data</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">JMIR Aging (2025)</span><span class="tag tag-design">ML研究</span><span class="tag tag-relevance">健康寿命</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12007724/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC12007724/</a></div>
+    <div class="card-body"><p>韓国の健康診断データから27臨床因子を用い、Gradient Boostingが最高性能（MSE 4.219、R² 0.967）を達成。SHAP分析で腎機能マーカー、性別、HbA1c、肝機能マーカー、体格指標が重要予測因子として同定。日常的な健診データからBAを推定できる実用モデル。</p></div></div>
+
+  <div class="paper-card remaining"><div class="card-header"><div class="rank-badge rm">7</div><div><div class="card-title">多疾患併存軌跡のML予測モデル</div><div class="card-title-en">Machine learning models for predicting multimorbidity trajectories in middle-aged and elderly adults</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">Scientific Reports (2025)</span><span class="tag tag-design">コホート研究</span><span class="tag tag-relevance">健康寿命</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41598-025-07060-z" target="_blank">https://www.nature.com/articles/s41598-025-07060-z</a></div>
+    <div class="card-body"><p>CHARLSの12,198名から潜在クラス軌跡分析で4つの多疾患併存パターンを同定：安定低リスク群（45.26%）、進行性悪化群（14.35%）等。MLモデルで軌跡パターンを予測し、早期介入のターゲット群を特定。</p></div></div>
+
+  <div class="paper-card remaining"><div class="card-header"><div class="rank-badge rm">8</div><div><div class="card-title">加速度計由来デジタルバイオマーカーによる身体機能予測</div><div class="card-title-en">Predicting physical functioning status in older adults: insights from wrist accelerometer sensors and derived digital biomarkers</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">BMC Medical Research Methodology (2024)</span><span class="tag tag-design">コホート研究</span><span class="tag tag-relevance">身体活動・身体機能</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11491653/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC11491653/</a></div>
+    <div class="card-body"><p>NHATSの747名の手首加速度計データから新規デジタルバイオマーカーを開発し、6つのMLアルゴリズムで身体機能障害を予測。加速度データの統計的特徴量から身体機能状態を推定。サブグループ間の予測力の差異を検証。</p></div></div>
+
+  <div class="paper-card remaining"><div class="card-header"><div class="rank-badge rm">9</div><div><div class="card-title">AIエイジングデジタルツインの精密老年医学への応用</div><div class="card-title-en">AI-driven aging digital twins: A roadmap for clinical translation in precision geriatrics</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">Ageing Research Reviews (2025)</span><span class="tag tag-design">レビュー</span><span class="tag tag-relevance">健康寿命・AI</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.sciencedirect.com/science/article/abs/pii/S1568163725002776" target="_blank">https://www.sciencedirect.com/science/article/abs/pii/S1568163725002776</a></div>
+    <div class="card-body"><p>ゲノム、プロテオーム、ウェアラブルデータを統合したエイジングデジタルツイン（ADT）の臨床実装ロードマップ。糖尿病、高血圧、早期腎臓病の仮想患者モデルで改善された転帰を実証。フェデレーテッドラーニングによるプライバシー保護型多施設データ統合にも言及。</p></div></div>
+
+  <div class="paper-card remaining"><div class="card-header"><div class="rank-badge rm">10</div><div><div class="card-title">エイジングクロックからヒトデジタルツインへの統合</div><div class="card-title-en">From ageing clocks to human digital twins in personalising healthcare through biological age analysis</div></div></div>
+    <div class="card-meta"><span class="tag tag-journal">npj Digital Medicine (2025)</span><span class="tag tag-design">コホート研究</span><span class="tag tag-relevance">遺伝子・AI</span></div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12371080/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC12371080/</a></div>
+    <div class="card-body"><p>深層表現型縦断コホートにおいて、29のエピジェネティクス、4の臨床生化学、2のプロテオミクス、3のメタボロミクスクロックを用いた生物学的年齢予測。マルチモーダルデータによる「ヒトデジタルツイン」の構築を提唱。オミクスと臨床リスク予測子の統合的枠組み。</p></div></div>
+
+  <h2 class="section-title">まとめ一覧表</h2>
+  <table class="summary-table"><thead><tr><th>優先度</th><th>論文</th><th>ジャーナル</th><th>デザイン</th><th>一言</th><th>関連</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>CT-based BA model</td><td>Nat Commun (2025)</td><td>コホート</td><td>CT自動体組成→寿命予測AUC 0.880</td><td>筋質・身体機能</td></tr>
+      <tr><td>2</td><td>Wearable AI frailty</td><td>Nat Commun (2025)</td><td>方法論</td><td>エッジAIで連続フレイル評価</td><td>身体機能・身体活動</td></tr>
+      <tr><td>3</td><td>PHIA LLM agent</td><td>Nat Commun (2026)</td><td>方法論</td><td>LLMでウェアラブルデータ解釈</td><td>身体活動・AI</td></tr>
+      <tr><td>4</td><td>XAI BA+frailty</td><td>Sci Rep (2025)</td><td>ML研究</td><td>cystatin CがBA・frailty共通因子</td><td>身体機能・筋質</td></tr>
+      <tr><td>5</td><td>Frailty Web app</td><td>Front Pub Health (2025)</td><td>ML研究</td><td>15予測因子+Webアプリ実装</td><td>身体機能・フレイル</td></tr>
+      <tr><td>6</td><td>AI健診BA予測</td><td>JMIR Aging (2025)</td><td>ML研究</td><td>健診データR²=0.967のBA予測</td><td>健康寿命</td></tr>
+      <tr><td>7</td><td>多疾患併存軌跡</td><td>Sci Rep (2025)</td><td>コホート</td><td>4つの多疾患軌跡パターン特定</td><td>健康寿命</td></tr>
+      <tr><td>8</td><td>加速度計バイオマーカー</td><td>BMC MRM (2024)</td><td>コホート</td><td>手首加速度計→身体機能予測</td><td>身体活動・身体機能</td></tr>
+      <tr><td>9</td><td>Aging digital twins</td><td>Ageing Res Rev (2025)</td><td>レビュー</td><td>ADTの臨床実装ロードマップ</td><td>健康寿命・AI</td></tr>
+      <tr><td>10</td><td>Ageing clocks → DT</td><td>npj Dig Med (2025)</td><td>コホート</td><td>マルチオミクスBA→デジタルツイン</td><td>遺伝子・AI</td></tr>
+    </tbody></table>
+
+  <div class="trend-summary">
+    <h3>本日の研究トレンド総括</h3>
+    <p>2025〜2026年のAI・データ科学×老化研究における3つの潮流を確認した。</p>
+    <p><strong>第一に、CT画像・ウェアラブルからのopportunistic AI評価の実用化。</strong>CT-based biological age model（第1位）が12万人超で寿命予測の優位性を実証し、ウェアラブルAI（第2位）がエッジコンピューティングでフレイルの連続評価を実現した。「既存のデータ/デバイスからAIで付加価値を抽出する」パラダイムの成熟を示す。筋質研究者にとって、CT muscle densityの自動評価パイプラインは直接的に応用可能。</p>
+    <p><strong>第二に、LLMの健康データ解釈への応用。</strong>PHIAエージェント（第3位）は、ウェアラブルデータの「予測」から「説明」へのパラダイムシフトを示す。なぜそのパターンが重要かを自然言語で個別に説明する能力は、臨床実装と患者コミュニケーションの両面で革新的。高齢者の身体活動データに特化したLLMエージェントの開発が期待される。</p>
+    <p><strong>第三に、デジタルツインによる精密老年医学の構想。</strong>エイジングデジタルツイン（第9位、第10位）は、マルチオミクス・ウェアラブル・臨床データを統合した仮想患者モデルとして、個別化された介入シミュレーションを可能にする。フェデレーテッドラーニングとの統合により、プライバシー保護型の多施設データ活用が提案されている。</p>
+  </div>
+
+  <div class="footer">本レポートは研究者の知識インフラとして作成されています。<br>作成日：2026年3月7日</div>
+</div>
+</body>
+</html>

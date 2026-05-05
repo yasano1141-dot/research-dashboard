@@ -1,0 +1,168 @@
+/**
+ * 詳細分析レポートDOCX生成スクリプト
+ * Top 3 の論文を7セクション構成で生成。
+ *
+ * data.json の構造:
+ *   {
+ *     "title": "詳細分析レポート — テーマ名",
+ *     "subtitle": "2026年4月28日（火曜日）/ Top 3論文の徹底分析",
+ *     "papers": [
+ *       {
+ *         "rank": 1,
+ *         "color": "B91C1C",
+ *         "title": "...",
+ *         "authors": "...",
+ *         "journal": "...",
+ *         "design": "...",
+ *         "url": "https://...",
+ *         "keywords": [["KW1", "説明1"], ["KW2", "説明2"], ...],
+ *         "abstract": "（400〜500字）",
+ *         "novelty": "（300〜400字）",
+ *         "background": "（300〜400字）",
+ *         "methods": "（300〜400字）",
+ *         "results": "（500〜600字）",
+ *         "discussion": "（300〜400字）",
+ *         "impact": "（400〜500字）"
+ *       },
+ *       // 3つ
+ *     ]
+ *   }
+ */
+
+const docx = require('/tmp/npm-work/node_modules/docx');
+const fs = require('fs');
+const {
+  Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
+  PageOrientation, ExternalHyperlink, BorderStyle, ShadingType
+} = docx;
+
+const outputPath = process.argv[2];
+const dataPath = process.argv[3];
+const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+
+const children = [];
+
+// タイトル
+children.push(new Paragraph({
+  heading: HeadingLevel.TITLE,
+  alignment: AlignmentType.CENTER,
+  children: [new TextRun({ text: data.title, bold: true, size: 36, color: "B91C1C" })]
+}));
+children.push(new Paragraph({
+  alignment: AlignmentType.CENTER,
+  spacing: { after: 240 },
+  children: [new TextRun({ text: data.subtitle || '', size: 22, color: "4A5568" })]
+}));
+
+function sectionHeading(text, color) {
+  return new Paragraph({
+    spacing: { before: 280, after: 100 },
+    border: { bottom: { color: color, size: 14, style: BorderStyle.SINGLE } },
+    children: [new TextRun({ text: text, bold: true, size: 24, color: color })]
+  });
+}
+
+function paragraph(text, opts = {}) {
+  return new Paragraph({
+    spacing: { before: 80, after: 80, line: 360 },
+    alignment: AlignmentType.JUSTIFIED,
+    children: [new TextRun({ text: text, size: opts.size || 21 })]
+  });
+}
+
+data.papers.forEach(p => {
+  children.push(new Paragraph({
+    spacing: { before: 520, after: 80 },
+    children: [new TextRun({ text: `RANK ${p.rank} — TOP ${p.rank}`, bold: true, size: 22, color: p.color })]
+  }));
+  children.push(new Paragraph({
+    heading: HeadingLevel.HEADING_1,
+    children: [new TextRun({ text: p.title, bold: true, size: 26, color: "1A202C" })]
+  }));
+  children.push(new Paragraph({ children: [
+    new TextRun({ text: "著者: ", bold: true, size: 20 }),
+    new TextRun({ text: p.authors, size: 20 })
+  ]}));
+  children.push(new Paragraph({ children: [
+    new TextRun({ text: "ジャーナル: ", bold: true, size: 20 }),
+    new TextRun({ text: p.journal, size: 20 })
+  ]}));
+  children.push(new Paragraph({ children: [
+    new TextRun({ text: "研究デザイン: ", bold: true, size: 20 }),
+    new TextRun({ text: p.design, size: 20 })
+  ]}));
+  if (p.url) {
+    children.push(new Paragraph({ children: [
+      new TextRun({ text: "URL: ", bold: true, size: 20 }),
+      new ExternalHyperlink({
+        link: p.url,
+        children: [new TextRun({ text: p.url, size: 18, color: "2B6CB0", style: "Hyperlink" })]
+      })
+    ]}));
+  }
+
+  // 1. キーワード
+  children.push(sectionHeading("1. 論文の核心になるキーワード分析", p.color));
+  if (p.keywords && Array.isArray(p.keywords)) {
+    p.keywords.forEach(([k, v]) => {
+      children.push(new Paragraph({
+        spacing: { before: 80, after: 60 },
+        shading: { type: ShadingType.CLEAR, color: "auto", fill: "FFF7ED" },
+        children: [
+          new TextRun({ text: k, bold: true, size: 21, color: "9A3412" }),
+          new TextRun({ text: " — " + v, size: 21 })
+        ]
+      }));
+    });
+  }
+
+  // 2. 要旨
+  children.push(sectionHeading("2. 要旨（400〜500字）", p.color));
+  children.push(paragraph(p.abstract || ''));
+
+  // 3. 革新性
+  children.push(sectionHeading("3. 革新性・新規性（300〜400字）", p.color));
+  children.push(paragraph(p.novelty || ''));
+
+  // 4. 背景
+  children.push(sectionHeading("4. 研究背景（300〜400字）", p.color));
+  children.push(paragraph(p.background || ''));
+
+  // 5. 手法
+  children.push(sectionHeading("5. 研究手法（300〜400字）", p.color));
+  children.push(paragraph(p.methods || ''));
+
+  // 6. 成果
+  children.push(sectionHeading("6. 研究成果（500〜600字＋考察）", p.color));
+  children.push(paragraph(p.results || ''));
+  if (p.discussion) {
+    children.push(new Paragraph({
+      spacing: { before: 100, after: 80 },
+      shading: { type: ShadingType.CLEAR, color: "auto", fill: "FFF7ED" },
+      children: [new TextRun({ text: "考察: " + p.discussion, size: 21 })]
+    }));
+  }
+
+  // 7. インパクト
+  children.push(sectionHeading("7. 社会的インパクト（400〜500字）", p.color));
+  children.push(paragraph(p.impact || ''));
+});
+
+const doc = new Document({
+  styles: {
+    default: {
+      document: {
+        run: { font: "Yu Gothic" }
+      }
+    }
+  },
+  sections: [{
+    properties: { page: { size: { orientation: PageOrientation.PORTRAIT } } },
+    children: children
+  }]
+});
+
+Packer.toBuffer(doc).then(buf => {
+  fs.writeFileSync(outputPath, buf);
+  console.log(`✅ Saved: ${outputPath} (${buf.length} bytes)`);
+});

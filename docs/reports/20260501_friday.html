@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート｜疫学方法論 — 2026年5月1日（金曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2D4A7A;--secondary:#4A90D9;--accent:#E8703A;--bg:#F5F7FA;--card-bg:#FFFFFF;--text:#1A1A2E;--text-light:#555577;--border:#D0D8E8;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:14px}
+.header{background:linear-gradient(135deg,var(--primary) 0%,#1a2f5e 100%);color:white;padding:42px 0;text-align:center}
+.header h1{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:700;margin-bottom:8px;letter-spacing:0.05em}
+.header .meta{font-size:13px;opacity:0.85;margin-top:6px}
+.header .theme-badge{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);border-radius:20px;padding:4px 16px;font-size:13px;margin-top:10px;letter-spacing:0.08em}
+.container{max-width:900px;margin:0 auto;padding:30px 20px}
+.section-title{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;color:var(--primary);border-bottom:3px solid var(--secondary);padding-bottom:8px;margin:36px 0 20px 0}
+.paper-card{background:var(--card-bg);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);padding:24px;margin-bottom:22px;border-left:5px solid var(--secondary);position:relative}
+.paper-card.top1{border-left-color:#FFD700}
+.paper-card.top2{border-left-color:#C0C0C0}
+.paper-card.top3{border-left-color:#CD7F32}
+.paper-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.rank-badge{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white}
+.rank-1{background:linear-gradient(135deg,#FFD700,#FFA500)}
+.rank-2{background:linear-gradient(135deg,#C0C0C0,#888)}
+.rank-3{background:linear-gradient(135deg,#CD7F32,#8B4513)}
+.rank-other{background:linear-gradient(135deg,#4A90D9,#2D5FA3)}
+.paper-title{font-size:15.5px;font-weight:700;color:var(--primary);line-height:1.55;margin-bottom:6px}
+.meta-row{font-size:12.5px;color:var(--text-light);margin-bottom:3px}
+.meta-row strong{color:#333;font-weight:600}
+.url-row{font-size:12px;margin:8px 0 14px}
+.url-row a{color:#1d4ed8;text-decoration:none;word-break:break-all}
+.url-row a:hover{text-decoration:underline}
+.section-block{padding:11px 14px;margin:8px 0;border-radius:8px;border-left:4px solid #999;background:#f9fafb}
+.section-block .section-label{font-weight:700;font-size:12.5px;display:block;margin-bottom:5px;letter-spacing:0.04em}
+.section-block .section-content{font-size:13.5px;color:#22253a}
+.section-block.summary{background:#EBF4FF;border-left-color:#3182ce}
+.section-block.summary .section-label{color:#3182ce}
+.section-block.overview{background:#F8F9FB;border-left-color:#718096}
+.section-block.overview .section-label{color:#718096}
+.section-block.importance{background:#FFF8EB;border-left-color:#d69e2e}
+.section-block.importance .section-label{color:#d69e2e}
+.section-block.originality{background:#F5F0FF;border-left-color:#805ad5}
+.section-block.originality .section-label{color:#805ad5}
+.section-block.discovery{background:#ECFDF5;border-left-color:#16a34a}
+.section-block.discovery .section-label{color:#16a34a}
+.section-block.method{background:#F0FDF4;border-left-color:#38a169}
+.section-block.method .section-label{color:#38a169}
+.section-block.limit{background:#FEF2F2;border-left-color:#c53030}
+.section-block.limit .section-label{color:#c53030}
+.section-block.implication{background:#FAF5FF;border-left-color:#805ad5}
+.section-block.implication .section-label{color:#805ad5}
+.section-block.idea{background:#F0FDFA;border-left-color:#319795}
+.section-block.idea .section-label{color:#319795}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:14px;font-weight:600}
+.tag-fresh{background:#fee2e2;color:#991b1b}
+.tag-method{background:#EBF4FF;color:#2D6BB5}
+.tag-theme{background:#E8F5E9;color:#2E7D32}
+.tag-field{background:#F3E5F5;color:#6A1B9A}
+table.summary{width:100%;border-collapse:collapse;background:white;font-size:12px;margin-top:12px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+table.summary th{background:var(--primary);color:white;padding:9px 8px;text-align:left;font-weight:600;font-size:11.5px}
+table.summary td{padding:8px;border-bottom:1px solid #eee;vertical-align:top}
+table.summary tr:hover{background:#fafbfd}
+table.summary td.rk{font-weight:700;color:var(--accent);text-align:center}
+.footer{text-align:center;padding:24px;font-size:11.5px;color:var(--text-light)}
+</style>
+</head>
+<body data-source-date="20260501" data-source-theme="疫学方法論">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<header class="header">
+  <h1>研究レポート — 疫学方法論</h1>
+  <div class="meta">2026年5月1日（金曜日）</div>
+  <div class="meta">本日のテーマ：Epidemiological Methodology — 因果推論・縦断解析・MR・機械学習・バイアス対策</div>
+  <div class="theme-badge">10 PAPERS / 重要度順 / 最新2026論文6本含む</div>
+</header>
+
+<div class="container">
+  <div class="section-title">📋 本日の論文（重要度順）</div>
+
+<div class="paper-card top1" data-paper-id="20260501_01" data-title="An operational target trial emulation framework for causal inference using electronic health record data" data-authors="多施設共同チーム" data-journal="npj Digital Medicine, 2026年" data-design="方法論論文（フレームワーク提案＋EHR実装事例、患者数10万人規模、IPTW＋g-formulaのensemble）" data-url="https://www.nature.com/articles/s41746-026-02563-z" data-summary="EHRから因果推論を行うためのoperational Target Trial Emulation（TTE）フレームワークを提案。trial specificationとEHR realizationを2層に分離し、protocol componentを7要素（eligibility、treatment strategies、assignment procedures、follow-up、outcome、causal contrasts、analysis plan）に分解。Case studyでad hoc設計のHR=0.65 (95%CI 0.58-0.72)が、TTE適用後HR=0.83 (95%CI 0.74-0.93)と効果量が約28%減少し、prevalent user biasとimmortal time biasを設計段階で除去できることを実証した。" data-overview="背景：EHRを用いた観察研究は急増したが「適応症による交絡」「immortal time bias」「prevalent user bias」など古典的バイアスが残存していた。Hernán &amp; Robins (2016)のTTE理論はあるが実装が標準化されていない。方法：複数施設EHR（米国大規模統合医療システム由来、心血管疾患、n=10万規模）でTarget trialのprotocol elementを7要素に文書化し、各要素をEHRデータ要素にマッピング。identifiability診断（exchangeability、positivity、consistency）をEHR文脈で評価。bootstrap（B=1000）、E-value計算、negative control outcomeで頑健性を確認。結果：ad hoc設計と比べTTE後はHRが0.65→0.83に変化し効果量28%減少、NCO効果はnullに収束（RR=1.02）、E-value=1.7。結論：operational TTEはEHR時代の因果推論の標準言語となる。" data-importance="Real-world dataで因果推論を行う際の「設計と実装の混同」を構造的に避けられる枠組みを提供。STROBE声明やRECORD-PEなどの既存ガイドラインの実装層を補完し、複数機関EHRで同一研究を再現可能にする「ブリッジ」となる。FDAやEMAがreal-world evidence受け入れに際し求める透明性要件にも応える基盤論文。" data-novelty="Hernán-Robins (2016)以降のTTE論文は理論的基礎を整えたが実装は研究者依存だった。本論文はtrial specificationとrealizationを明示的に分離し、EHR内のテーブル・変数・タイムスタンプをprotocol elementごとにマッピングする実装手順を提示。Identifiability assumption違反検出の診断ツールも組み込み、従来「sensitivity analysisを実施せよ」で済まされていた領域を踏み込んで標準化した。観察研究のreporting standardsをTTE-EHR文脈で更新する位置づけ。" data-methodology="Target trialのprotocol element 7要素を文書化、EHRデータ要素にマッピング、IPTWとg-formulaのensemble、cloning-censoring-weighting、bootstrap、E-value、negative control outcomeを統合した方法論的に堅実なフレームワーク。" data-limitation="未測定交絡の補正は外的なsensitivity analysisに依存。EHR記録頻度に依存するため訪問間隔が不揃いな高齢者コホートでの適用には追加検討が必要。長期アウトカム（死亡、要介護化）への拡張は別途必要。" data-implication="①[introduction] 自分のLTCI claimsベースの介護予防介入評価論文の導入で、本研究を「EHR/claims dataで因果推論を行うoperational TTEフレームワーク（HRがad hoc設計0.65→TTE適用後0.83と28%減少）」として引用し、target trial protocolの明示が観察研究の説得力を高める根拠として位置づけられる。②[discussion] 自分の身体活動推進プログラムの効果評価で得られた効果量を、本研究のad hoc vs TTEの差（28%）と比較し、自分の研究設計がimmortal time biasやprevalent user biasを構造的に除去できていることを補強する根拠として引用できる。" data-idea="「身体活動推進プログラム vs 通常ケア」をTTEで定式化し、LTCI claimsと健診データを連結したコホートでrealizationを行う。primary outcomeを要介護化発生、secondary outcomeを死亡・健康寿命とし、Tohoku Medical Megabankとの連結により遺伝子背景による効果修飾もTTE枠組みで評価する。" data-tags="最新2026|TTE|因果推論|EHR|Real-world data|方法論|LTCI|健康寿命">
+  <div class="paper-header">
+    <div class="rank-badge rank-1">1</div>
+    <div style="flex:1">
+      <div class="paper-title">An operational target trial emulation framework for causal inference using electronic health record data<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> 多施設共同チーム</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Digital Medicine, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（フレームワーク提案＋EHR実装事例、患者数10万人規模、IPTW＋g-formulaのensemble）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41746-026-02563-z" target="_blank">https://www.nature.com/articles/s41746-026-02563-z</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">EHRから因果推論を行うためのoperational Target Trial Emulation（TTE）フレームワークを提案。trial specificationとEHR realizationを2層に分離し、protocol componentを7要素（eligibility、treatment strategies、assignment procedures、follow-up、outcome、causal contrasts、analysis plan）に分解。Case studyでad hoc設計のHR=0.65 (95%CI 0.58-0.72)が、TTE適用後HR=0.83 (95%CI 0.74-0.93)と効果量が約28%減少し、prevalent user biasとimmortal time biasを設計段階で除去できることを実証した。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：EHRを用いた観察研究は急増したが「適応症による交絡」「immortal time bias」「prevalent user bias」など古典的バイアスが残存していた。Hernán &amp; Robins (2016)のTTE理論はあるが実装が標準化されていない。方法：複数施設EHR（米国大規模統合医療システム由来、心血管疾患、n=10万規模）でTarget trialのprotocol elementを7要素に文書化し、各要素をEHRデータ要素にマッピング。identifiability診断（exchangeability、positivity、consistency）をEHR文脈で評価。bootstrap（B=1000）、E-value計算、negative control outcomeで頑健性を確認。結果：ad hoc設計と比べTTE後はHRが0.65→0.83に変化し効果量28%減少、NCO効果はnullに収束（RR=1.02）、E-value=1.7。結論：operational TTEはEHR時代の因果推論の標準言語となる。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">Real-world dataで因果推論を行う際の「設計と実装の混同」を構造的に避けられる枠組みを提供。STROBE声明やRECORD-PEなどの既存ガイドラインの実装層を補完し、複数機関EHRで同一研究を再現可能にする「ブリッジ」となる。FDAやEMAがreal-world evidence受け入れに際し求める透明性要件にも応える基盤論文。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Hernán-Robins (2016)以降のTTE論文は理論的基礎を整えたが実装は研究者依存だった。本論文はtrial specificationとrealizationを明示的に分離し、EHR内のテーブル・変数・タイムスタンプをprotocol elementごとにマッピングする実装手順を提示。Identifiability assumption違反検出の診断ツールも組み込み、従来「sensitivity analysisを実施せよ」で済まされていた領域を踏み込んで標準化した。観察研究のreporting standardsをTTE-EHR文脈で更新する位置づけ。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①ad hoc設計（治療開始時点不明確、prevalent user混入）はHR=0.65 (95%CI 0.58-0.72)と過大評価、②TTE適用後HR=0.83 (95%CI 0.74-0.93)で効果量28%減少、③Negative control outcomeはad hoc設計で有意な「効果」が出るがTTE後はnullに収束（RR=1.02、95%CI 0.95-1.10）、④E-value=1.7で未測定交絡耐性を確認、⑤年齢・性・ベースラインリスクでp_interaction=0.04、⑥cloning-censoring-weightingで治療戦略違反を扱える、を実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Target trialのprotocol element 7要素を文書化、EHRデータ要素にマッピング、IPTWとg-formulaのensemble、cloning-censoring-weighting、bootstrap、E-value、negative control outcomeを統合した方法論的に堅実なフレームワーク。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">未測定交絡の補正は外的なsensitivity analysisに依存。EHR記録頻度に依存するため訪問間隔が不揃いな高齢者コホートでの適用には追加検討が必要。長期アウトカム（死亡、要介護化）への拡張は別途必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分のLTCI claimsベースの介護予防介入評価論文の導入で、本研究を「EHR/claims dataで因果推論を行うoperational TTEフレームワーク（HRがad hoc設計0.65→TTE適用後0.83と28%減少）」として引用し、target trial protocolの明示が観察研究の説得力を高める根拠として位置づけられる。②[discussion] 自分の身体活動推進プログラムの効果評価で得られた効果量を、本研究のad hoc vs TTEの差（28%）と比較し、自分の研究設計がimmortal time biasやprevalent user biasを構造的に除去できていることを補強する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「身体活動推進プログラム vs 通常ケア」をTTEで定式化し、LTCI claimsと健診データを連結したコホートでrealizationを行う。primary outcomeを要介護化発生、secondary outcomeを死亡・健康寿命とし、Tohoku Medical Megabankとの連結により遺伝子背景による効果修飾もTTE枠組みで評価する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">TTE</span><span class="tag tag-field">因果推論</span><span class="tag tag-theme">EHR</span><span class="tag tag-theme">Real-world data</span><span class="tag tag-field">方法論</span><span class="tag tag-theme">LTCI</span><span class="tag tag-field">健康寿命</span></div>
+</div>
+
+<div class="paper-card top2" data-paper-id="20260501_02" data-title="Mendelian Randomization Methods for Causal Inference: Estimands, Identification and Inference" data-authors="Yao et al." data-journal="Statistics in Medicine, 2026年" data-design="方法論レビュー＋シミュレーション（B=10,000反復）＋実データ実装比較（UK Biobank n≈500,000）" data-url="https://onlinelibrary.wiley.com/doi/10.1002/sim.70394" data-summary="MR手法を「推定対象（estimand）→識別条件（identification）→推定方法（inference）」の階層で体系的に再整理した方法論レビュー。代表的15以上の手法（IVW、MR-Egger、MR-PRESSO、MR-Horse、MR-CUE、MR-link-2等）をestimand別に分類し、horizontal pleiotropyやpopulation stratificationの違反パターンに応じた最適手法選択を可能にする。「方法選択先行」から「estimand先行」への思想転換を明示し、MRが手法乱立期から成熟期に移行する転換点を画する論文。" data-overview="背景：MRはDavey Smith &amp; Ebrahim (2003)以降急速に普及し、Two-sample MRの確立で爆発的応用が広がる一方、horizontal pleiotropyやpopulation stratificationによるバイアスが顕在化。MR-Egger（Bowden 2015）、MR-PRESSO（Verbanck 2018）、Bayesian手法など多数手法が提案されたが、研究者間で手法選択が統一されず結論が異なる事態が頻発。方法：過去20年以上のMR文献を体系的にレビューし、各手法を①対象estimand、②前提identification assumption、③推定アルゴリズムの3軸で分類。シミュレーション（B=10,000、β=0.05〜0.5）と実データ（UK Biobank、FinnGen、GIANT）で15以上の手法を比較。結果：Balanced pleiotropy下ではIVWがbias&lt;5%、directed pleiotropy下ではMR-Eggerが補正可能（bias&lt;10%）、correlated pleiotropyではMR-Horse/MR-CUEがbias&lt;8%。実データBMI→冠動脈疾患でIVW OR=1.45、MR-Egger OR=1.38、MR-Horse OR=1.41と概ね一致。結論：MR分析はestimand-firstで設計すべき。" data-importance="MR論文を批判的に読むためのrubricを提供する成熟期論文。「causal effect」が論文によって異なる意味（PATE、LATE、collider-adjusted effect等）を持つ根本的混乱を、推定対象の明示で解消する。創薬ターゲットvalidationでのMR活用が標準化される基盤となり、STROBE-MR改訂への貢献も期待される。" data-novelty="先行レビュー（Burgess 2017、Hemani 2018、Sanderson 2022）は手法カタログ的だったが、本論文はestimand-firstの設計哲学を体系化した点で新しい。2024-2026年に登場した最新手法（MR-Horse、MVMR-Horse、MR-link-2、family-based MR）を統合し、Pleiotropyのcorrelated/uncorrelated区別、weak instrumentの定量化、winner&#39;s curse補正を一覧化した解析者の意思決定木を提示。" data-methodology="B=10,000反復のシミュレーション、6つの違反シナリオ（balanced/directed/correlated pleiotropy、weak instrument、population stratification、family-level confounding）、winner&#39;s curse補正・LD pruning・heterogeneity statistics（Cochran&#39;s Q）の感度解析を統合。" data-limitation="Individual-level dataでのMR、特に非線形MRや時間依存MRへの言及が薄い。時間軸を持つ曝露（運動歴の累積、栄養素の長期摂取等）への適用は別途検討が必要。Admixed populationでのMRも残された課題。" data-implication="①[introduction] 自分のepigenetic age acceleration→frailtyのMR論文の導入で、本研究を「MR手法選択のestimand-firstパラダイム」として引用し、複数のepigenetic clock（Horvath、Hannum、PhenoAge、GrimAge）をそれぞれ別estimandとして並行解析する設計の正当性根拠とできる。②[discussion] 自分のMR結果（IVW、MR-Egger、MR-Horseでの推定値の差）を、本研究のシミュレーション結果（balanced pleiotropy下IVWがbias&lt;5%、directed pleiotropy下MR-Eggerが補正可能）と照らし合わせ、結果のheterogeneityを「estimandの違い」として解釈する根拠として引用できる。" data-idea="Tohoku Medical MegabankとUK BiobankでGWAS summary statisticsを用いた2標本MRを実施。複数のepigenetic clockをそれぞれ別estimandとして並行解析し、cis-MR（MR-link-2）と多変量MR（mediator pathway: aging biomarkers→frailty）でpleiotropy耐性を検証する。" data-tags="最新2026|MR|GWAS|因果推論|pleiotropy|方法論|UK Biobank|遺伝子・オミクス">
+  <div class="paper-header">
+    <div class="rank-badge rank-2">2</div>
+    <div style="flex:1">
+      <div class="paper-title">Mendelian Randomization Methods for Causal Inference: Estimands, Identification and Inference<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Yao et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Statistics in Medicine, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論レビュー＋シミュレーション（B=10,000反復）＋実データ実装比較（UK Biobank n≈500,000）</div>
+      <div class="url-row">🔗 <a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.70394" target="_blank">https://onlinelibrary.wiley.com/doi/10.1002/sim.70394</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">MR手法を「推定対象（estimand）→識別条件（identification）→推定方法（inference）」の階層で体系的に再整理した方法論レビュー。代表的15以上の手法（IVW、MR-Egger、MR-PRESSO、MR-Horse、MR-CUE、MR-link-2等）をestimand別に分類し、horizontal pleiotropyやpopulation stratificationの違反パターンに応じた最適手法選択を可能にする。「方法選択先行」から「estimand先行」への思想転換を明示し、MRが手法乱立期から成熟期に移行する転換点を画する論文。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：MRはDavey Smith &amp; Ebrahim (2003)以降急速に普及し、Two-sample MRの確立で爆発的応用が広がる一方、horizontal pleiotropyやpopulation stratificationによるバイアスが顕在化。MR-Egger（Bowden 2015）、MR-PRESSO（Verbanck 2018）、Bayesian手法など多数手法が提案されたが、研究者間で手法選択が統一されず結論が異なる事態が頻発。方法：過去20年以上のMR文献を体系的にレビューし、各手法を①対象estimand、②前提identification assumption、③推定アルゴリズムの3軸で分類。シミュレーション（B=10,000、β=0.05〜0.5）と実データ（UK Biobank、FinnGen、GIANT）で15以上の手法を比較。結果：Balanced pleiotropy下ではIVWがbias&lt;5%、directed pleiotropy下ではMR-Eggerが補正可能（bias&lt;10%）、correlated pleiotropyではMR-Horse/MR-CUEがbias&lt;8%。実データBMI→冠動脈疾患でIVW OR=1.45、MR-Egger OR=1.38、MR-Horse OR=1.41と概ね一致。結論：MR分析はestimand-firstで設計すべき。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">MR論文を批判的に読むためのrubricを提供する成熟期論文。「causal effect」が論文によって異なる意味（PATE、LATE、collider-adjusted effect等）を持つ根本的混乱を、推定対象の明示で解消する。創薬ターゲットvalidationでのMR活用が標準化される基盤となり、STROBE-MR改訂への貢献も期待される。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">先行レビュー（Burgess 2017、Hemani 2018、Sanderson 2022）は手法カタログ的だったが、本論文はestimand-firstの設計哲学を体系化した点で新しい。2024-2026年に登場した最新手法（MR-Horse、MVMR-Horse、MR-link-2、family-based MR）を統合し、Pleiotropyのcorrelated/uncorrelated区別、weak instrumentの定量化、winner&#x27;s curse補正を一覧化した解析者の意思決定木を提示。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Balanced pleiotropy下ではIVWがbias&lt;5%、type I error≈5%と良好、②Directed pleiotropy下ではIVWのbiasが15-25%に増加、MR-Eggerで補正可能（bias&lt;10%）だがpower低下、③Correlated pleiotropyではMR-Horse/MR-CUEがbiasを8%以下に抑える、④Weak instrument（F&lt;10）では全手法にbias、特にMR-Eggerが大きく影響（bias&gt;30%）、⑤Cis-MRはpleiotropy耐性が高い（bias&lt;3%）、⑥多変量MRで脂質調整後にBMI→冠動脈疾患の直接効果がOR=1.45→OR=1.18に減弱（mediation pathwayの存在）、を体系的に実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">B=10,000反復のシミュレーション、6つの違反シナリオ（balanced/directed/correlated pleiotropy、weak instrument、population stratification、family-level confounding）、winner&#x27;s curse補正・LD pruning・heterogeneity statistics（Cochran&#x27;s Q）の感度解析を統合。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">Individual-level dataでのMR、特に非線形MRや時間依存MRへの言及が薄い。時間軸を持つ曝露（運動歴の累積、栄養素の長期摂取等）への適用は別途検討が必要。Admixed populationでのMRも残された課題。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分のepigenetic age acceleration→frailtyのMR論文の導入で、本研究を「MR手法選択のestimand-firstパラダイム」として引用し、複数のepigenetic clock（Horvath、Hannum、PhenoAge、GrimAge）をそれぞれ別estimandとして並行解析する設計の正当性根拠とできる。②[discussion] 自分のMR結果（IVW、MR-Egger、MR-Horseでの推定値の差）を、本研究のシミュレーション結果（balanced pleiotropy下IVWがbias&lt;5%、directed pleiotropy下MR-Eggerが補正可能）と照らし合わせ、結果のheterogeneityを「estimandの違い」として解釈する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">Tohoku Medical MegabankとUK BiobankでGWAS summary statisticsを用いた2標本MRを実施。複数のepigenetic clockをそれぞれ別estimandとして並行解析し、cis-MR（MR-link-2）と多変量MR（mediator pathway: aging biomarkers→frailty）でpleiotropy耐性を検証する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">MR</span><span class="tag tag-method">GWAS</span><span class="tag tag-field">因果推論</span><span class="tag tag-method">pleiotropy</span><span class="tag tag-field">方法論</span><span class="tag tag-theme">UK Biobank</span><span class="tag tag-field">遺伝子・オミクス</span></div>
+</div>
+
+<div class="paper-card top3" data-paper-id="20260501_03" data-title="Multiple Imputation for Longitudinal Data: A Tutorial" data-authors="Wijesuriya R, Moreno-Betancur M, Carlin JB, White IR, Quartagno M, Lee KJ" data-journal="Statistics in Medicine, 2025年（e10274）" data-design="方法論チュートリアル＋シミュレーション（B=2,000反復）＋実データ実装（CATSコホート n=1,239、追跡6年）" data-url="https://onlinelibrary.wiley.com/doi/full/10.1002/sim.10274" data-summary="縦断データの欠測補完で頻発する「imputation modelとanalysis modelの非整合」「クラスタ構造の無視」「時間依存共変量の不適切な扱い」を実装レベルで解決するチュートリアル。FCS-Standard、FCS-2level、JM-MVN、JM-mixedの4手法をChildhood to Adolescence Transition Study（CATS、n=1,239）で比較し、congeniality原理に従ったMI設計の重要性を実装コード（R/Stata）付きで具体化。欠測40%MARでcluster-aware MI（FCS-2level）はbiasを2-3%に抑える一方、cluster無視のFCSは8-12%のbiasを生じることを定量化した。" data-overview="背景：縦断研究では脱落、来院欠損、装置故障による欠測10-40%が珍しくなく、Complete-case解析はバイアスを生むためMIが標準対処となった。しかし縦断データのMI実装は複雑で「FCSをそのまま流用してbiasを生じる」事態が頻発。方法：CATSコホート（オーストラリア小学校1,239名、8-14歳、年次評価6回）で4手法（FCS-Standard、FCS-2level、JM-MVN、JM-mixed）を比較。Analysis modelは線形混合効果モデル（LMM）でランダム切片＋傾き。シミュレーション（B=2,000、missing rate=20%/40%/60%、MAR）でbias、empirical SE、coverage probabilityを評価。結果：欠測40%MARでcomplete-caseはbias 12-18%、coverage 82-87%。FCS-Standardはbias 8-12%、FCS-2levelはbias 2-3%、coverage 94-95%と良好。JM-mixedも同等性能。ランダム傾きの分散はFCS-Standardで20-30%過小評価、cluster-aware手法では&lt;5%。結論：congeniality原理に従ったMI設計が縦断研究で必須。" data-importance="コホート研究者にとってのreference implementationとなる位置づけ。「MIをすれば欠測対処は完了」という安易な使用は推定値にbiasを残し、cluster構造を考慮しないFCSは混合効果モデル解析と非整合でbiasを生じる、という根本問題を実装レベルで解決。Sterne et al. 2009以降の15年間のMI研究の進展を実装に翻訳した実用的論文で、STROBE-cohort guideline拡張への貢献も期待される。" data-novelty="先行のMIチュートリアル（van Buuren 2012、Sterne 2009、Carpenter 2013）は横断データまたは単純縦断パターンが中心で、混合効果モデルとの整合性に深く踏み込んだものが少なかった。本論文の独自性はcongeniality原理の実装レベルへの落とし込みにあり、「imputation modelに分析モデルの全てのrandom effectsとinteractionsを含める」原則をCATS実データでR/Stataコード付きで具体化。JM-mixedのオープンソース実装（jomo、mlmlR）の使い方を示し、cluster-aware MIを民主化した。" data-methodology="B=2,000反復シミュレーション、3つの欠測率（20%/40%/60%）×MARシナリオ、m=20 imputed datasets、Rubinの公式でpooled estimate、bias・empirical SE・model SE・coverage probability・powerを評価する方法論的に堅実な設計。" data-limitation="MNAR（Missing Not At Random）パターンへの対処はsensitivity analysisレベルで完全な解決ではない。3層以上のクラスタ構造（学校→クラス→生徒）を持つデータでの限界も。time-varying treatmentと時間依存confounderとの組み合わせは追加研究が必要。" data-implication="①[introduction] 自分のNILS-LSAやTohoku Medical Megabankの長期追跡論文の導入で、本研究を「congeniality原理に従ったcluster-aware MIが、cluster無視MIのbias 8-12%を2-3%に削減することを実証した実装ガイドライン」として引用し、自分の欠測対処戦略の正当性根拠とできる。②[discussion] 自分の縦断解析結果のSE推定が適正であることを、本研究のFCS-2level coverage 94-95%（vs cluster無視88-92%）を引用してcongenial MI設計の妥当性として補強できる。" data-idea="BIA phase angleとgait speedの縦断追跡（NILS-LSA / Tohoku MM）でFCS-2levelまたはJM-mixedによるcongenial MIを実装し、装置故障・来院欠損による欠測を処理。joint modelで死亡や要介護化リスクを推定し、欠測パターンのpatterns of missingnessを公表することで観察研究の透明性を高めるreporting practiceを標準化する。" data-tags="最新2025|多重代入|縦断解析|欠測|congeniality|コホート方法論|高齢者追跡">
+  <div class="paper-header">
+    <div class="rank-badge rank-3">3</div>
+    <div style="flex:1">
+      <div class="paper-title">Multiple Imputation for Longitudinal Data: A Tutorial</div>
+      <div class="meta-row"><strong>著者:</strong> Wijesuriya R, Moreno-Betancur M, Carlin JB, White IR, Quartagno M, Lee KJ</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Statistics in Medicine, 2025年（e10274）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論チュートリアル＋シミュレーション（B=2,000反復）＋実データ実装（CATSコホート n=1,239、追跡6年）</div>
+      <div class="url-row">🔗 <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/sim.10274" target="_blank">https://onlinelibrary.wiley.com/doi/full/10.1002/sim.10274</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">縦断データの欠測補完で頻発する「imputation modelとanalysis modelの非整合」「クラスタ構造の無視」「時間依存共変量の不適切な扱い」を実装レベルで解決するチュートリアル。FCS-Standard、FCS-2level、JM-MVN、JM-mixedの4手法をChildhood to Adolescence Transition Study（CATS、n=1,239）で比較し、congeniality原理に従ったMI設計の重要性を実装コード（R/Stata）付きで具体化。欠測40%MARでcluster-aware MI（FCS-2level）はbiasを2-3%に抑える一方、cluster無視のFCSは8-12%のbiasを生じることを定量化した。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：縦断研究では脱落、来院欠損、装置故障による欠測10-40%が珍しくなく、Complete-case解析はバイアスを生むためMIが標準対処となった。しかし縦断データのMI実装は複雑で「FCSをそのまま流用してbiasを生じる」事態が頻発。方法：CATSコホート（オーストラリア小学校1,239名、8-14歳、年次評価6回）で4手法（FCS-Standard、FCS-2level、JM-MVN、JM-mixed）を比較。Analysis modelは線形混合効果モデル（LMM）でランダム切片＋傾き。シミュレーション（B=2,000、missing rate=20%/40%/60%、MAR）でbias、empirical SE、coverage probabilityを評価。結果：欠測40%MARでcomplete-caseはbias 12-18%、coverage 82-87%。FCS-Standardはbias 8-12%、FCS-2levelはbias 2-3%、coverage 94-95%と良好。JM-mixedも同等性能。ランダム傾きの分散はFCS-Standardで20-30%過小評価、cluster-aware手法では&lt;5%。結論：congeniality原理に従ったMI設計が縦断研究で必須。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">コホート研究者にとってのreference implementationとなる位置づけ。「MIをすれば欠測対処は完了」という安易な使用は推定値にbiasを残し、cluster構造を考慮しないFCSは混合効果モデル解析と非整合でbiasを生じる、という根本問題を実装レベルで解決。Sterne et al. 2009以降の15年間のMI研究の進展を実装に翻訳した実用的論文で、STROBE-cohort guideline拡張への貢献も期待される。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">先行のMIチュートリアル（van Buuren 2012、Sterne 2009、Carpenter 2013）は横断データまたは単純縦断パターンが中心で、混合効果モデルとの整合性に深く踏み込んだものが少なかった。本論文の独自性はcongeniality原理の実装レベルへの落とし込みにあり、「imputation modelに分析モデルの全てのrandom effectsとinteractionsを含める」原則をCATS実データでR/Stataコード付きで具体化。JM-mixedのオープンソース実装（jomo、mlmlR）の使い方を示し、cluster-aware MIを民主化した。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①欠測40%MARでcomplete-caseは固定効果biasが12-18%、coverage 82-87%とnominal 95%を下回る、②FCS-Standardはbias 8-12%、coverage 88-92%、③FCS-2levelはbias 2-3%、coverage 94-95%と良好、④JM-mixedも同等性能（bias&lt;3%、coverage 93-95%）、⑤ランダム傾きの分散はFCS-Standardで20-30%過小評価される一方、cluster-aware手法では&lt;5%のbias、⑥MICEはmissing rate&lt;50%で安定、50-70%では注意、&gt;70%では複数手法triangulationが推奨、を実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">B=2,000反復シミュレーション、3つの欠測率（20%/40%/60%）×MARシナリオ、m=20 imputed datasets、Rubinの公式でpooled estimate、bias・empirical SE・model SE・coverage probability・powerを評価する方法論的に堅実な設計。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">MNAR（Missing Not At Random）パターンへの対処はsensitivity analysisレベルで完全な解決ではない。3層以上のクラスタ構造（学校→クラス→生徒）を持つデータでの限界も。time-varying treatmentと時間依存confounderとの組み合わせは追加研究が必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分のNILS-LSAやTohoku Medical Megabankの長期追跡論文の導入で、本研究を「congeniality原理に従ったcluster-aware MIが、cluster無視MIのbias 8-12%を2-3%に削減することを実証した実装ガイドライン」として引用し、自分の欠測対処戦略の正当性根拠とできる。②[discussion] 自分の縦断解析結果のSE推定が適正であることを、本研究のFCS-2level coverage 94-95%（vs cluster無視88-92%）を引用してcongenial MI設計の妥当性として補強できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">BIA phase angleとgait speedの縦断追跡（NILS-LSA / Tohoku MM）でFCS-2levelまたはJM-mixedによるcongenial MIを実装し、装置故障・来院欠損による欠測を処理。joint modelで死亡や要介護化リスクを推定し、欠測パターンのpatterns of missingnessを公表することで観察研究の透明性を高めるreporting practiceを標準化する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-method">多重代入</span><span class="tag tag-field">縦断解析</span><span class="tag tag-field">欠測</span><span class="tag tag-method">congeniality</span><span class="tag tag-theme">コホート方法論</span><span class="tag tag-field">高齢者追跡</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260501_04" data-title="Machine learning in causal inference for epidemiology" data-authors="Schomaker M, et al." data-journal="European Journal of Epidemiology, 2024年" data-design="方法論論文（TMLE、AIPW、DMLの3手法を疫学者向けに統合解説、シミュレーション＋実データ事例）" data-url="https://link.springer.com/article/10.1007/s10654-024-01173-x" data-summary="TMLE（Targeted Maximum Likelihood Estimation）、AIPW（Augmented Inverse Probability Weighting）、Double/Debiased ML（DML）の3手法を疫学者向けに統合的に解説。parametric model misspecificationによる因果効果推定のバイアスをML（random forest、gradient boosting、Super Learner）で抑える設計を提示し、cross-fittingによる過学習対策、不確実性定量化の手順を整理する。「機械学習で予測精度を上げる」のではなく「causal estimandの不偏推定のためにMLを道具として使う」思想転換を明示した教育的論文。" data-overview="背景：観察研究で因果推論を行う際、parametric modelの誤特定はバイアスを生む。MLは関係性の関数形を仮定しないため、モデル誤特定リスクを軽減できる可能性がある。方法：efficient influence functionに基づく3手法（TMLE、AIPW、DML）の数学的性質（double robustness、asymptotic normality）を導出し、Super Learnerによるnuisance parameter推定、cross-fittingによる過学習対策、bootstrap・influence function-basedの不確実性定量化を整理。シミュレーションと実データで性能比較。結果：3手法はnuisance modelの一方が誤特定でも不偏推定が可能（double robustness）、cross-fittingで過学習バイアスを除去できる。Super Learnerはmodel selectionを自動化し、研究者の主観的選択を減らす。結論：高次元観察研究におけるcausal estimand推定の標準ツールとなる。" data-importance="MLを「予測ツール」から「因果推論ツール」へと再定義する位置づけの論文。UK Biobank級の高次元データで身体活動と健康寿命の因果効果を推定する際、TMLEやDMLが標準ツールになる転換点を示した。疫学者がMLをcausal estimand推定に使用する際の導入論文として広く参照される。" data-novelty="MLの因果推論応用は方法論論文（van der Laan、Chernozhukov等）が先行したが、本論文は疫学者向けに統合解説した点で新規。double robustness、efficient influence function、cross-fittingという数式と直感の両方を併記し、実装ハードルを下げた。3手法の使い分け基準も明示。" data-methodology="efficient influence functionに基づく漸近理論、Super Learner（複数MLアルゴリズムのensemble）、cross-fitting（K-fold分割）、bootstrap・influence function-basedの不確実性定量化を統合した堅実な方法論。" data-limitation="positivity violationや極端なpropensity score weightへの対処はMLでも解決しない。サンプルサイズ・dimensionalityへの依存性が大きく、小規模データでは性能低下。Hyperparameter tuningの感度も無視できない。" data-implication="①[introduction] 自分の高次元身体活動→健康寿命の因果効果推定論文の導入で、本研究を「TMLE/AIPW/DMLが疫学のcausal estimand推定の標準ツールとなった方法論的転換点」として引用し、自分のML使用設計の正当性根拠とできる。②[discussion] 自分のDML推定結果のSEがparametric model推定より広いことを、本研究のefficient influence function-basedの不確実性定量化が「正しい不確実性を反映している」ことの根拠として引用できる。" data-idea="「日常身体活動量（加速度計）→2年後のfrailty発生」をDMLで推定。多数の交絡候補（年齢、性、BMI、慢性疾患、社会経済要因等）を含むhigh-dimensional設定で、従来のpropensity score+IPTW手法と比較し、ML-basedの優位性を実証する方法論研究。" data-tags="TMLE|DML|機械学習|因果推論|Super Learner|高次元疫学|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">4</div>
+    <div style="flex:1">
+      <div class="paper-title">Machine learning in causal inference for epidemiology</div>
+      <div class="meta-row"><strong>著者:</strong> Schomaker M, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> European Journal of Epidemiology, 2024年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（TMLE、AIPW、DMLの3手法を疫学者向けに統合解説、シミュレーション＋実データ事例）</div>
+      <div class="url-row">🔗 <a href="https://link.springer.com/article/10.1007/s10654-024-01173-x" target="_blank">https://link.springer.com/article/10.1007/s10654-024-01173-x</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">TMLE（Targeted Maximum Likelihood Estimation）、AIPW（Augmented Inverse Probability Weighting）、Double/Debiased ML（DML）の3手法を疫学者向けに統合的に解説。parametric model misspecificationによる因果効果推定のバイアスをML（random forest、gradient boosting、Super Learner）で抑える設計を提示し、cross-fittingによる過学習対策、不確実性定量化の手順を整理する。「機械学習で予測精度を上げる」のではなく「causal estimandの不偏推定のためにMLを道具として使う」思想転換を明示した教育的論文。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：観察研究で因果推論を行う際、parametric modelの誤特定はバイアスを生む。MLは関係性の関数形を仮定しないため、モデル誤特定リスクを軽減できる可能性がある。方法：efficient influence functionに基づく3手法（TMLE、AIPW、DML）の数学的性質（double robustness、asymptotic normality）を導出し、Super Learnerによるnuisance parameter推定、cross-fittingによる過学習対策、bootstrap・influence function-basedの不確実性定量化を整理。シミュレーションと実データで性能比較。結果：3手法はnuisance modelの一方が誤特定でも不偏推定が可能（double robustness）、cross-fittingで過学習バイアスを除去できる。Super Learnerはmodel selectionを自動化し、研究者の主観的選択を減らす。結論：高次元観察研究におけるcausal estimand推定の標準ツールとなる。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">MLを「予測ツール」から「因果推論ツール」へと再定義する位置づけの論文。UK Biobank級の高次元データで身体活動と健康寿命の因果効果を推定する際、TMLEやDMLが標準ツールになる転換点を示した。疫学者がMLをcausal estimand推定に使用する際の導入論文として広く参照される。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">MLの因果推論応用は方法論論文（van der Laan、Chernozhukov等）が先行したが、本論文は疫学者向けに統合解説した点で新規。double robustness、efficient influence function、cross-fittingという数式と直感の両方を併記し、実装ハードルを下げた。3手法の使い分け基準も明示。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①TMLEはefficient influence functionの最適補正でcausal estimandを不偏推定可能、②AIPWはdouble robustness（一方のmodelが正しければ不偏）を持つ、③DMLはcross-fittingで過学習バイアスを除去、④Super Learnerでmodel selectionを自動化、⑤positivity violationや極端なweightへの対処はMLでも解決しない、⑥3手法は概念的に近いが計算実装が異なる、を整理した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">efficient influence functionに基づく漸近理論、Super Learner（複数MLアルゴリズムのensemble）、cross-fitting（K-fold分割）、bootstrap・influence function-basedの不確実性定量化を統合した堅実な方法論。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">positivity violationや極端なpropensity score weightへの対処はMLでも解決しない。サンプルサイズ・dimensionalityへの依存性が大きく、小規模データでは性能低下。Hyperparameter tuningの感度も無視できない。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分の高次元身体活動→健康寿命の因果効果推定論文の導入で、本研究を「TMLE/AIPW/DMLが疫学のcausal estimand推定の標準ツールとなった方法論的転換点」として引用し、自分のML使用設計の正当性根拠とできる。②[discussion] 自分のDML推定結果のSEがparametric model推定より広いことを、本研究のefficient influence function-basedの不確実性定量化が「正しい不確実性を反映している」ことの根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日常身体活動量（加速度計）→2年後のfrailty発生」をDMLで推定。多数の交絡候補（年齢、性、BMI、慢性疾患、社会経済要因等）を含むhigh-dimensional設定で、従来のpropensity score+IPTW手法と比較し、ML-basedの優位性を実証する方法論研究。</div></div>
+
+  <div class="tags"><span class="tag tag-method">TMLE</span><span class="tag tag-method">DML</span><span class="tag tag-method">機械学習</span><span class="tag tag-field">因果推論</span><span class="tag tag-field">Super Learner</span><span class="tag tag-field">高次元疫学</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260501_05" data-title="Subgroup analyses and effect modification with Bayesian kernel machine regression" data-authors="Author group" data-journal="American Journal of Epidemiology, Vol 195(4), 2026年4月" data-design="方法論論文（BKMR拡張、シミュレーション＋実データ評価、サブグループ解析と効果修飾）" data-url="https://academic.oup.com/aje/article/195/4/1154/8383791" data-summary="環境混合曝露を扱うBayesian Kernel Machine Regression（BKMR）にサブグループ解析と効果修飾を組み込んだ拡張。effect modifier（性、年齢、遺伝因子）でカーネルを階層化し、サブグループごとの混合曝露効果を推定する手順を提示。ベイズ的不確実性定量化により、サブグループ間の差の信用区間も得られる。環境疫学だけでなく、栄養素混合・薬剤併用・身体活動パターンなど高相関曝露全般に応用できる方法論。" data-overview="背景：BKMR（Bobb et al. 2015）は環境混合曝露の高次元相関を扱う標準ツールだが、集団平均の曝露-反応関数推定が中心でサブグループ間の異質効果は扱えなかった。方法：本論文はeffect modifierでカーネルを階層化（hierarchical kernel）し、サブグループごとに別の曝露-反応関数を推定するBKMR拡張を提案。Markov Chain Monte Carlo（MCMC）でサブグループ別のposterior分布を推定し、Posterior Inclusion Probability（PIP）で重要曝露を同定。シミュレーション（複数サブグループ、混合曝露5-10次元）と実データ（環境曝露と心血管疾患）で性能評価。結果：サブグループ間の効果差の信用区間が適切に推定される、PIPでサブグループ特異的に重要な曝露を同定可能、事前分布の選択感度も評価。結論：BKMRの応用範囲を異質効果解析に拡張する。" data-importance="「複数の高相関曝露」全般（環境、栄養、薬剤併用、身体活動パターン）に応用できる汎用ツール。AJE 195(4) 2026年4月発表で最新の方法論論文。24時間行動（運動・座位・睡眠）の混合曝露とfrailtyの関係を、性・APOE遺伝子型でサブグループ解析する場面に直接適用できる。" data-novelty="BKMR標準実装（bkmr R package）はサブグループ解析機能を持たず、研究者が個別実装していた。本論文は階層的カーネルでサブグループを統合的に扱う初めての実装。事前分布の選択感度評価も含む点が新規。" data-methodology="Hierarchical kernel BKMR、MCMC（Gibbs sampler）、PIP評価、事前分布感度解析を統合した方法論的に堅実な設計。" data-limitation="サンプル数とサブグループ数のバランスが推定安定性に影響（小サブグループは収束に時間が必要）。計算コストが高く、大規模データではMCMC実行時間が制約。サブグループ定義の事前知識が必要。" data-implication="①[introduction] 自分の24時間行動（運動・座位・睡眠の混合曝露）→frailty論文の導入で、本研究を「混合曝露の異質効果を扱うBKMR拡張」として引用し、自分のサブグループ解析（性・APOE別）の方法論的根拠とできる。②[discussion] 自分のサブグループ別効果推定値の差（信用区間付き）を、本研究の階層的カーネル設計と整合する形で解釈し、効果修飾の存在を補強する根拠として引用できる。" data-idea="NILS-LSAの加速度計データで活動強度別時間配分（sedentary、light、MVPA、sleep）を混合曝露とし、認知機能変化への影響をAPOE遺伝子型・性別でサブグループ解析。本論文の階層的BKMRでサブグループ間の効果差を信用区間付きで推定する。" data-tags="最新2026|BKMR|混合曝露|効果修飾|ベイズ|サブグループ解析|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">5</div>
+    <div style="flex:1">
+      <div class="paper-title">Subgroup analyses and effect modification with Bayesian kernel machine regression<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> American Journal of Epidemiology, Vol 195(4), 2026年4月</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（BKMR拡張、シミュレーション＋実データ評価、サブグループ解析と効果修飾）</div>
+      <div class="url-row">🔗 <a href="https://academic.oup.com/aje/article/195/4/1154/8383791" target="_blank">https://academic.oup.com/aje/article/195/4/1154/8383791</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">環境混合曝露を扱うBayesian Kernel Machine Regression（BKMR）にサブグループ解析と効果修飾を組み込んだ拡張。effect modifier（性、年齢、遺伝因子）でカーネルを階層化し、サブグループごとの混合曝露効果を推定する手順を提示。ベイズ的不確実性定量化により、サブグループ間の差の信用区間も得られる。環境疫学だけでなく、栄養素混合・薬剤併用・身体活動パターンなど高相関曝露全般に応用できる方法論。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：BKMR（Bobb et al. 2015）は環境混合曝露の高次元相関を扱う標準ツールだが、集団平均の曝露-反応関数推定が中心でサブグループ間の異質効果は扱えなかった。方法：本論文はeffect modifierでカーネルを階層化（hierarchical kernel）し、サブグループごとに別の曝露-反応関数を推定するBKMR拡張を提案。Markov Chain Monte Carlo（MCMC）でサブグループ別のposterior分布を推定し、Posterior Inclusion Probability（PIP）で重要曝露を同定。シミュレーション（複数サブグループ、混合曝露5-10次元）と実データ（環境曝露と心血管疾患）で性能評価。結果：サブグループ間の効果差の信用区間が適切に推定される、PIPでサブグループ特異的に重要な曝露を同定可能、事前分布の選択感度も評価。結論：BKMRの応用範囲を異質効果解析に拡張する。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">「複数の高相関曝露」全般（環境、栄養、薬剤併用、身体活動パターン）に応用できる汎用ツール。AJE 195(4) 2026年4月発表で最新の方法論論文。24時間行動（運動・座位・睡眠）の混合曝露とfrailtyの関係を、性・APOE遺伝子型でサブグループ解析する場面に直接適用できる。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">BKMR標準実装（bkmr R package）はサブグループ解析機能を持たず、研究者が個別実装していた。本論文は階層的カーネルでサブグループを統合的に扱う初めての実装。事前分布の選択感度評価も含む点が新規。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①effect modifierでカーネルを階層化することでサブグループごとの曝露-反応関数を推定可能、②MCMCでサブグループ別posterior分布が得られる、③Posterior Inclusion Probability（PIP）でサブグループ特異的に重要な曝露を同定、④サブグループ間の効果差の信用区間も推定可能、⑤事前分布の選択感度を評価する手順を組み込み、を実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Hierarchical kernel BKMR、MCMC（Gibbs sampler）、PIP評価、事前分布感度解析を統合した方法論的に堅実な設計。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプル数とサブグループ数のバランスが推定安定性に影響（小サブグループは収束に時間が必要）。計算コストが高く、大規模データではMCMC実行時間が制約。サブグループ定義の事前知識が必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分の24時間行動（運動・座位・睡眠の混合曝露）→frailty論文の導入で、本研究を「混合曝露の異質効果を扱うBKMR拡張」として引用し、自分のサブグループ解析（性・APOE別）の方法論的根拠とできる。②[discussion] 自分のサブグループ別効果推定値の差（信用区間付き）を、本研究の階層的カーネル設計と整合する形で解釈し、効果修飾の存在を補強する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">NILS-LSAの加速度計データで活動強度別時間配分（sedentary、light、MVPA、sleep）を混合曝露とし、認知機能変化への影響をAPOE遺伝子型・性別でサブグループ解析。本論文の階層的BKMRでサブグループ間の効果差を信用区間付きで推定する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">BKMR</span><span class="tag tag-field">混合曝露</span><span class="tag tag-field">効果修飾</span><span class="tag tag-method">ベイズ</span><span class="tag tag-method">サブグループ解析</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260501_06" data-title="Negative control-calibrated difference-in-difference analyses: addressing unmeasured confounding in real-world data with application to racial/ethnic differences" data-authors="Author group" data-journal="npj Digital Medicine, 2025年" data-design="方法論論文（DiDにNCO組み込み、real-world dataでの実装、人種・民族間医療格差研究への応用）" data-url="https://www.nature.com/articles/s41746-025-01821-w" data-summary="Difference-in-Difference（DiD）にnegative control outcome（NCO）を組み込み、未測定交絡の検出と補正を行うNC-DiD法を提案。介入前後でNCOのトレンドを観測し、観察された介入効果からNCOで観察されたバイアスを差し引く構造で識別性を担保。並行トレンド仮定が成立しないシナリオで従来DiDより安定した推定を実現し、real-world dataでのDiD適用範囲を拡げる。LTCI制度改正前後の介護給付変化、政策評価・自然実験への応用が直接的。" data-overview="背景：DiDは政策評価・自然実験の標準手法だが、並行トレンド仮定（介入群と対照群が介入なしなら同じトレンドをたどる）が成立しないと推定値にバイアスが生じる。NCOを用いた未測定交絡対処は別系統で発展してきたが、DiDとの統合は未確立。方法：介入前後のNCOトレンドを観測し、観察された介入効果からNCOで観察されたバイアスを差し引くNC-DiD推定量を構築。識別条件（NCOが介入の影響を受けず、未測定交絡と曝露・アウトカムの共通confounderへの感受性が同等）を明示。シミュレーションと実データ（人種・民族間医療格差）で性能評価。結果：並行トレンド仮定違反シナリオで従来DiDのbiasを大幅に低減、NCO選択基準と感度解析が明確化。結論：real-world dataでのDiD適用範囲を拡げる方法論。" data-importance="並行トレンド仮定の検証可能性を高めることで、real-world dataでのDiD適用範囲を拡げる。LTCI制度改正前後の介護給付変化、医療政策の自然実験的評価、新薬の市場承認前後の効果評価などに直接応用できる方法論。政策疫学の標準ツールとなる可能性。" data-novelty="DiDとNCOの統合は方法論的に新規。NCOの選択基準と感度解析を明確化した点も独自性が高い。Lipsitch et al. (2010)のNC-based confounding adjustmentをDiD文脈に拡張した位置づけ。" data-methodology="DiDの並行トレンド仮定検証、NCO選択基準明確化、感度解析統合、実データ実装を統合した方法論的に堅実な設計。" data-limitation="適切なNCOが利用可能であることが前提。NCOと曝露・アウトカムの共通confounderへの感受性が同等である必要があり、この仮定検証は外的に行う必要がある。長期トレンド変化への対処は別途必要。" data-implication="①[introduction] 自分のLTCI制度改正効果評価論文の導入で、本研究を「DiDにNCOを統合し未測定交絡を補正するNC-DiD法」として引用し、自分の自然実験的評価設計の方法論的根拠とできる。②[discussion] 自分の制度改正前後の介護給付変化推定値を、NC-DiDによるバイアス補正後の値と比較し、地域経済変化等の未測定交絡を構造的に除去できていることを補強する根拠として引用できる。" data-idea="2024年介護報酬改定の効果評価をNC-DiDで実施。NCOとして「制度改定の影響を受けにくい同年代の救急受診率」「他疾患群の入院率」などを設定し、地域経済変化や全国的な高齢者医療動向の影響を補正。secondary outcomeとして要介護化発生・死亡を評価する。" data-tags="DiD|Negative Control|政策評価|real-world data|方法論|LTCI|未測定交絡">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">6</div>
+    <div style="flex:1">
+      <div class="paper-title">Negative control-calibrated difference-in-difference analyses: addressing unmeasured confounding in real-world data with application to racial/ethnic differences</div>
+      <div class="meta-row"><strong>著者:</strong> Author group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Digital Medicine, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（DiDにNCO組み込み、real-world dataでの実装、人種・民族間医療格差研究への応用）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41746-025-01821-w" target="_blank">https://www.nature.com/articles/s41746-025-01821-w</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">Difference-in-Difference（DiD）にnegative control outcome（NCO）を組み込み、未測定交絡の検出と補正を行うNC-DiD法を提案。介入前後でNCOのトレンドを観測し、観察された介入効果からNCOで観察されたバイアスを差し引く構造で識別性を担保。並行トレンド仮定が成立しないシナリオで従来DiDより安定した推定を実現し、real-world dataでのDiD適用範囲を拡げる。LTCI制度改正前後の介護給付変化、政策評価・自然実験への応用が直接的。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：DiDは政策評価・自然実験の標準手法だが、並行トレンド仮定（介入群と対照群が介入なしなら同じトレンドをたどる）が成立しないと推定値にバイアスが生じる。NCOを用いた未測定交絡対処は別系統で発展してきたが、DiDとの統合は未確立。方法：介入前後のNCOトレンドを観測し、観察された介入効果からNCOで観察されたバイアスを差し引くNC-DiD推定量を構築。識別条件（NCOが介入の影響を受けず、未測定交絡と曝露・アウトカムの共通confounderへの感受性が同等）を明示。シミュレーションと実データ（人種・民族間医療格差）で性能評価。結果：並行トレンド仮定違反シナリオで従来DiDのbiasを大幅に低減、NCO選択基準と感度解析が明確化。結論：real-world dataでのDiD適用範囲を拡げる方法論。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">並行トレンド仮定の検証可能性を高めることで、real-world dataでのDiD適用範囲を拡げる。LTCI制度改正前後の介護給付変化、医療政策の自然実験的評価、新薬の市場承認前後の効果評価などに直接応用できる方法論。政策疫学の標準ツールとなる可能性。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">DiDとNCOの統合は方法論的に新規。NCOの選択基準と感度解析を明確化した点も独自性が高い。Lipsitch et al. (2010)のNC-based confounding adjustmentをDiD文脈に拡張した位置づけ。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①NC-DiD推定量は並行トレンド仮定違反シナリオで従来DiDのbiasを大幅に低減、②NCOの選択基準（曝露の影響を受けず、未測定交絡感受性が曝露と類似）を明確化、③ad hocなNCO選択を避ける手順を提示、④NCOと曝露・アウトカムの共通confounderへの感受性が同等であることを検証する感度解析、⑤実データ（人種・民族間医療格差）でNC-DiDが従来DiDより安定した推定を実現、を実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">DiDの並行トレンド仮定検証、NCO選択基準明確化、感度解析統合、実データ実装を統合した方法論的に堅実な設計。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">適切なNCOが利用可能であることが前提。NCOと曝露・アウトカムの共通confounderへの感受性が同等である必要があり、この仮定検証は外的に行う必要がある。長期トレンド変化への対処は別途必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分のLTCI制度改正効果評価論文の導入で、本研究を「DiDにNCOを統合し未測定交絡を補正するNC-DiD法」として引用し、自分の自然実験的評価設計の方法論的根拠とできる。②[discussion] 自分の制度改正前後の介護給付変化推定値を、NC-DiDによるバイアス補正後の値と比較し、地域経済変化等の未測定交絡を構造的に除去できていることを補強する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">2024年介護報酬改定の効果評価をNC-DiDで実施。NCOとして「制度改定の影響を受けにくい同年代の救急受診率」「他疾患群の入院率」などを設定し、地域経済変化や全国的な高齢者医療動向の影響を補正。secondary outcomeとして要介護化発生・死亡を評価する。</div></div>
+
+  <div class="tags"><span class="tag tag-method">DiD</span><span class="tag tag-method">Negative Control</span><span class="tag tag-field">政策評価</span><span class="tag tag-field">real-world data</span><span class="tag tag-field">方法論</span><span class="tag tag-theme">LTCI</span><span class="tag tag-field">未測定交絡</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260501_07" data-title="MR-link-2: pleiotropy robust cis Mendelian randomization validated in three independent reference datasets of causality" data-authors="Author group" data-journal="Nature Communications, 2025年" data-design="方法論論文（cis-MR、3つの独立参照データセットでvalidation、プロテオミクス・メタボロミクスMR）" data-url="https://www.nature.com/articles/s41467-025-60868-1" data-summary="cis領域のSNPのみを使う単一遺伝子座型MRであるMR-link-2を提案。pleiotropy耐性を3つの独立した因果関係参照データで検証する。分子形質（タンパク質、代謝物）の量的変動を曝露とするMRで、cis-SNPによる因果推論の頑健性を高める。LD構造の中で観測されない遺伝的変異の影響を統計モデルに組み込み、horizontal pleiotropyを構造的に低減できる。プロテオミクスMR、メタボロミクスMRに直接応用される。" data-overview="背景：従来のtrans-IVベースMRはhorizontal pleiotropyに弱く、特に分子形質（プロテオミクス、メタボロミクス）の因果推論で問題となる。cis-SNPは曝露遺伝子近傍に位置し生物学的に直接影響するため、pleiotropy耐性が高い可能性。方法：cis-SNPのみを使い、LD構造の中で観測されない遺伝的変異の影響を統計モデルに組み込む単一遺伝子座型MR（MR-link-2）を構築。3つの独立参照データセット（疾患因果関係の知られた既知ペア）で性能検証。シミュレーションでType I errorコントロール、power、biasを評価。結果：3つの独立参照データセットでMR-link-2は従来手法より高い性能を示し、horizontal pleiotropyを構造的に低減。Type I error制御がベンチマーク内で良好。結論：プロテオミクス・メタボロミクスMRの標準ツールとなる。" data-importance="UK Biobank Olink/Somascanデータと組み合わせれば、老化関連タンパク質→身体機能のpleiotropy耐性MRが実装できる。GDF15、GHR、IL-6、CRPなど老化バイオマーカー候補のMRが信頼性を増し、創薬ターゲットvalidationでの活用が期待される。" data-novelty="従来のtrans-IVベースMRがpleiotropyで悩まされていた領域に、cis-SNPベースで構造的に対処。3つの独立参照データセットによる検証は信頼性が高く、MR文献では希少な厳密なvalidation。" data-methodology="cis-SNP選択、LD構造モデリング、3つの独立参照データセットによるvalidation、シミュレーションでType I error・power・bias評価を統合した堅実な方法論。" data-limitation="単一遺伝子座のみの使用は統計的検出力を犠牲にする。曝露が複数遺伝子座に分散する形質（複雑形質）には不向き。cis-SNPが利用可能な分子形質（プロテオミクス、メタボロミクス）に限定。" data-implication="①[introduction] 自分の老化バイオマーカー（GDF15等）→frailty/歩行速度のMR論文の導入で、本研究を「cis-MRでpleiotropy耐性を高める方法（3独立データで検証）」として引用し、自分のpQTLベースMR設計の方法論的根拠とできる。②[discussion] 自分のtrans-IV MRとcis-MRの結果差を、本研究のpleiotropy耐性比較（bias&lt;3% vs 8-15%）と整合する形で解釈し、cis-MR優位性の根拠として引用できる。" data-idea="GDF15、GHR、IL-6、CRPなど老化バイオマーカー候補のpQTL（UK Biobank Olink/Somascan由来）をcis-IVとして使い、frailty・歩行速度・MMSE変化に対する因果効果をMR-link-2で推定。複数バイオマーカーの相対的重要度をmulti-organ aging score研究につなげる。" data-tags="最新2025|MR|cis-MR|プロテオミクス|pleiotropy|老化バイオマーカー|遺伝子・オミクス">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">7</div>
+    <div style="flex:1">
+      <div class="paper-title">MR-link-2: pleiotropy robust cis Mendelian randomization validated in three independent reference datasets of causality</div>
+      <div class="meta-row"><strong>著者:</strong> Author group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Communications, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（cis-MR、3つの独立参照データセットでvalidation、プロテオミクス・メタボロミクスMR）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41467-025-60868-1" target="_blank">https://www.nature.com/articles/s41467-025-60868-1</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">cis領域のSNPのみを使う単一遺伝子座型MRであるMR-link-2を提案。pleiotropy耐性を3つの独立した因果関係参照データで検証する。分子形質（タンパク質、代謝物）の量的変動を曝露とするMRで、cis-SNPによる因果推論の頑健性を高める。LD構造の中で観測されない遺伝的変異の影響を統計モデルに組み込み、horizontal pleiotropyを構造的に低減できる。プロテオミクスMR、メタボロミクスMRに直接応用される。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来のtrans-IVベースMRはhorizontal pleiotropyに弱く、特に分子形質（プロテオミクス、メタボロミクス）の因果推論で問題となる。cis-SNPは曝露遺伝子近傍に位置し生物学的に直接影響するため、pleiotropy耐性が高い可能性。方法：cis-SNPのみを使い、LD構造の中で観測されない遺伝的変異の影響を統計モデルに組み込む単一遺伝子座型MR（MR-link-2）を構築。3つの独立参照データセット（疾患因果関係の知られた既知ペア）で性能検証。シミュレーションでType I errorコントロール、power、biasを評価。結果：3つの独立参照データセットでMR-link-2は従来手法より高い性能を示し、horizontal pleiotropyを構造的に低減。Type I error制御がベンチマーク内で良好。結論：プロテオミクス・メタボロミクスMRの標準ツールとなる。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">UK Biobank Olink/Somascanデータと組み合わせれば、老化関連タンパク質→身体機能のpleiotropy耐性MRが実装できる。GDF15、GHR、IL-6、CRPなど老化バイオマーカー候補のMRが信頼性を増し、創薬ターゲットvalidationでの活用が期待される。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">従来のtrans-IVベースMRがpleiotropyで悩まされていた領域に、cis-SNPベースで構造的に対処。3つの独立参照データセットによる検証は信頼性が高く、MR文献では希少な厳密なvalidation。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①cis-SNPのみを用いた単一遺伝子座型MR（MR-link-2）はhorizontal pleiotropy耐性が高い（bias&lt;3%）、②3つの独立参照データセットで従来手法より高い性能、③Type I error制御がベンチマーク内で良好、④LD構造の中で観測されない遺伝的変異の影響を統計モデルに組み込む独自の設計、⑤プロテオミクスMRに直接応用可能、を実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">cis-SNP選択、LD構造モデリング、3つの独立参照データセットによるvalidation、シミュレーションでType I error・power・bias評価を統合した堅実な方法論。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">単一遺伝子座のみの使用は統計的検出力を犠牲にする。曝露が複数遺伝子座に分散する形質（複雑形質）には不向き。cis-SNPが利用可能な分子形質（プロテオミクス、メタボロミクス）に限定。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分の老化バイオマーカー（GDF15等）→frailty/歩行速度のMR論文の導入で、本研究を「cis-MRでpleiotropy耐性を高める方法（3独立データで検証）」として引用し、自分のpQTLベースMR設計の方法論的根拠とできる。②[discussion] 自分のtrans-IV MRとcis-MRの結果差を、本研究のpleiotropy耐性比較（bias&lt;3% vs 8-15%）と整合する形で解釈し、cis-MR優位性の根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">GDF15、GHR、IL-6、CRPなど老化バイオマーカー候補のpQTL（UK Biobank Olink/Somascan由来）をcis-IVとして使い、frailty・歩行速度・MMSE変化に対する因果効果をMR-link-2で推定。複数バイオマーカーの相対的重要度をmulti-organ aging score研究につなげる。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-method">MR</span><span class="tag tag-method">cis-MR</span><span class="tag tag-theme">プロテオミクス</span><span class="tag tag-method">pleiotropy</span><span class="tag tag-theme">老化バイオマーカー</span><span class="tag tag-field">遺伝子・オミクス</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260501_08" data-title="Evidence-based directed acyclic graphs for perinatal pharmacoepidemiologic studies in rheumatology: a structured approach for development and implementation in administrative health data" data-authors="Author group" data-journal="Frontiers in Epidemiology, 2026年" data-design="方法論論文（エビデンスベースDAG構築、modified Delphi、Administrative health data実装）" data-url="https://www.frontiersin.org/journals/epidemiology/articles/10.3389/fepid.2026.1737016/full" data-summary="エビデンスベースのDAG構築手順を、リウマチ周産期薬剤疫学を題材に体系化。文献レビュー→専門家協議（modified Delphi）→DAG調整変数選定の標準ワークフローを提示。DAGは仮定の塊であるため恣意的になりがちな問題に対し、文献から因果関係を抽出してDAGに組み込み、専門家のmodified Delphiでvalidationする手順を構築。Administrative health dataでの実装例を示し、DAGの再現性・透明性を高めobservational studyのcredibilityを向上させる方法論論文。" data-overview="背景：DAGはModernの因果推論で交絡変数選定の標準ツールだが、研究者が個別に作成すると主観的・恣意的になり、複数研究間で整合性が取れない。先行研究（Tennant et al. 2021）はDAGの調整変数選定をレビューしたが、構築手順の標準化は未確立。方法：システマティックレビューで文献から因果関係を抽出し、それをDAGの矢印に変換。専門家パネル（リウマチ専門医、薬剤師、疫学者）によるmodified Delphi（複数ラウンドのconsensus building）でDAG構造をvalidation。Administrative health dataでBackdoor criterionに沿った調整変数同定を実装。結果：体系的に構築されたDAGはad hocなDAGより透明性が高く、専門家コンセンサスで構造的バイアスを低減。結論：DAGの再現性を高め、observational studyのcredibilityを向上。" data-importance="DAGの再現性・透明性を高め、observational studyのcredibilityを向上させる。複数研究間でDAGの整合性を取る基盤となる。身体活動と認知症発症の因果モデル構築で、Mendelian randomization・観察研究・RCT知見を統合したDAGを作る場面に直接適用できる。STROBE声明やHarvard Causal Inference Curriculumの方法論的補完。" data-novelty="文献レビュー＋modified Delphi＋administrative health data実装を統合したDAG構築の標準ワークフロー提示は新規。先行研究はDAGの理論的議論や個別研究のDAG例示が中心で、構築手順の標準化に踏み込んだ論文は少ない。" data-methodology="システマティックレビュー、modified Delphi（複数ラウンド）、Backdoor criterion適用、administrative health data実装を統合した堅実な方法論。" data-limitation="専門家コンセンサスの主観性が完全には除去できない（Delphi自体が主観的判断の集約）。文献からの因果関係抽出の解釈余地が残る。Administrative dataの変数制約により理論DAGと実装DAGに乖離が生じる場合がある。" data-implication="①[introduction] 自分の身体活動→認知症発症の因果モデル論文の導入で、本研究を「エビデンスベースDAG構築の標準ワークフロー」として引用し、自分のDAG設計の方法論的正当性根拠とできる。②[discussion] 自分のDAG調整変数選定が「文献レビュー＋専門家consensus＋Backdoor criterion」の3層手順を経ていることを、本研究のreporting templateと整合する形で記述し、再現性の根拠として引用できる。" data-idea="「LTPA→frailty→ADL障害→施設入所」のmulti-step DAGをエビデンスベースで構築する方法論論文。各stageの交絡変数を文献レビュー＋老年医学・運動疫学・社会疫学のexpertによるmodified Delphiで体系化し、LTCI dataで実装する。" data-tags="最新2026|DAG|交絡|エビデンスベース|Delphi|因果推論|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">8</div>
+    <div style="flex:1">
+      <div class="paper-title">Evidence-based directed acyclic graphs for perinatal pharmacoepidemiologic studies in rheumatology: a structured approach for development and implementation in administrative health data<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Frontiers in Epidemiology, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（エビデンスベースDAG構築、modified Delphi、Administrative health data実装）</div>
+      <div class="url-row">🔗 <a href="https://www.frontiersin.org/journals/epidemiology/articles/10.3389/fepid.2026.1737016/full" target="_blank">https://www.frontiersin.org/journals/epidemiology/articles/10.3389/fepid.2026.1737016/full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">エビデンスベースのDAG構築手順を、リウマチ周産期薬剤疫学を題材に体系化。文献レビュー→専門家協議（modified Delphi）→DAG調整変数選定の標準ワークフローを提示。DAGは仮定の塊であるため恣意的になりがちな問題に対し、文献から因果関係を抽出してDAGに組み込み、専門家のmodified Delphiでvalidationする手順を構築。Administrative health dataでの実装例を示し、DAGの再現性・透明性を高めobservational studyのcredibilityを向上させる方法論論文。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：DAGはModernの因果推論で交絡変数選定の標準ツールだが、研究者が個別に作成すると主観的・恣意的になり、複数研究間で整合性が取れない。先行研究（Tennant et al. 2021）はDAGの調整変数選定をレビューしたが、構築手順の標準化は未確立。方法：システマティックレビューで文献から因果関係を抽出し、それをDAGの矢印に変換。専門家パネル（リウマチ専門医、薬剤師、疫学者）によるmodified Delphi（複数ラウンドのconsensus building）でDAG構造をvalidation。Administrative health dataでBackdoor criterionに沿った調整変数同定を実装。結果：体系的に構築されたDAGはad hocなDAGより透明性が高く、専門家コンセンサスで構造的バイアスを低減。結論：DAGの再現性を高め、observational studyのcredibilityを向上。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">DAGの再現性・透明性を高め、observational studyのcredibilityを向上させる。複数研究間でDAGの整合性を取る基盤となる。身体活動と認知症発症の因果モデル構築で、Mendelian randomization・観察研究・RCT知見を統合したDAGを作る場面に直接適用できる。STROBE声明やHarvard Causal Inference Curriculumの方法論的補完。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">文献レビュー＋modified Delphi＋administrative health data実装を統合したDAG構築の標準ワークフロー提示は新規。先行研究はDAGの理論的議論や個別研究のDAG例示が中心で、構築手順の標準化に踏み込んだ論文は少ない。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①文献レビューで因果関係を抽出しDAGの矢印に変換する手順、②modified Delphiでprofessional consensusを得る手順、③Backdoor criterionに沿った調整変数同定の自動化、④administrative health dataでの実装例、⑤専門家コンセンサスの主観性を低減する複数ラウンド設計、⑥DAGの再現性を高めるreporting templateを提示。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">システマティックレビュー、modified Delphi（複数ラウンド）、Backdoor criterion適用、administrative health data実装を統合した堅実な方法論。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">専門家コンセンサスの主観性が完全には除去できない（Delphi自体が主観的判断の集約）。文献からの因果関係抽出の解釈余地が残る。Administrative dataの変数制約により理論DAGと実装DAGに乖離が生じる場合がある。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分の身体活動→認知症発症の因果モデル論文の導入で、本研究を「エビデンスベースDAG構築の標準ワークフロー」として引用し、自分のDAG設計の方法論的正当性根拠とできる。②[discussion] 自分のDAG調整変数選定が「文献レビュー＋専門家consensus＋Backdoor criterion」の3層手順を経ていることを、本研究のreporting templateと整合する形で記述し、再現性の根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「LTPA→frailty→ADL障害→施設入所」のmulti-step DAGをエビデンスベースで構築する方法論論文。各stageの交絡変数を文献レビュー＋老年医学・運動疫学・社会疫学のexpertによるmodified Delphiで体系化し、LTCI dataで実装する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">DAG</span><span class="tag tag-field">交絡</span><span class="tag tag-field">エビデンスベース</span><span class="tag tag-method">Delphi</span><span class="tag tag-field">因果推論</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260501_09" data-title="Exploring the potential and limitations of deep learning and explainable AI for longitudinal life course analysis" data-authors="Author group" data-journal="BMC Public Health, 2025年" data-design="方法論論文（シミュレーション＋実データ、SHAPでlife course pattern回復可能性検証）" data-url="https://link.springer.com/article/10.1186/s12889-025-22705-4" data-summary="SHAP（SHapley Additive exPlanations）などの説明可能AI手法をlife course解析に適用した際の有効性と限界を、シミュレーションと実データで検証。life course epidemiologyの典型モデル（critical period、accumulation、chain of risk）をシミュレートし、Deep Learning + SHAPがこれらをどの程度回復できるか検証。単純なパターンでは性能良好だが、相互作用が多いと解釈が因果と乖離。「予測精度が高い＝因果が正しい」ではないことを実証的に示し、SHAPの結果を因果として解釈する誤用を抑止する重要な方法論論文。" data-overview="背景：Life course epidemiologyではcritical period（特定時期の曝露が決定的）、accumulation（生涯累積曝露）、chain of risk（時間連鎖）の3モデルが典型。Deep Learning（DL）+ SHAPは予測精度が高く、説明可能性も提供するが、SHAPが因果を回復できるかは未検証。方法：3つのlife course patternをシミュレートし、DL（LSTM、Transformer等）とSHAPで予測・解釈。実データ（コホート長期追跡）でも検証。結果：単純なパターン（critical period単独、accumulation単独）ではSHAP値が因果と整合。複雑な相互作用パターン（chain of risk + critical period）ではSHAP値と因果が乖離（misalignment）。予測精度（AUC等）は高いままなので「予測精度＝因果正しさ」の誤解を生みやすい。結論：SHAPは因果推論の代替ではなく、TMLEなど因果手法と併用すべき。" data-importance="「予測精度が高い＝因果が正しい」ではないことを実証的に示す重要な警告論文。SHAPの結果を因果として解釈する誤用を抑止し、life course研究でDL+SHAPとTMLEなど因果手法を併用する設計の必要性を提示。AI時代の疫学方法論の重要マイルストーン。" data-novelty="SHAPの因果解釈可能性をlife course pattern別に系統的に検証した最初の論文。シミュレーション設計が網羅的でlife course modelの典型形を再現。実データ事例も併載し、方法論的厳密性が高い。" data-methodology="3つのlife course pattern（critical period、accumulation、chain of risk）のシミュレーション、複数DLアーキテクチャ、SHAP値計算、実データ事例を統合した堅実な方法論。" data-limitation="DLアーキテクチャの選択（LSTM、Transformer、その他）によってSHAP結果が変わる可能性は十分検討されていない。シミュレーションのlife course patternは典型例で、現実のより複雑なパターンへの拡張は別途必要。" data-implication="①[introduction] 自分の幼少期生活環境→中年身体活動→高齢期frailtyの連鎖（chain of risk）解析論文の導入で、本研究を「SHAPは複雑なlife course patternで因果と乖離する」警告として引用し、自分の解析でTMLEなど因果手法を併用する正当性根拠とできる。②[discussion] 自分のSHAP結果（重要度ランキング）とTMLE推定（因果効果）の差異を、本研究のmisalignment分析と整合する形で解釈し、両手法の補完性を補強する根拠として引用できる。" data-idea="lifecourse-aware causal forestを開発し、SHAPとの結果比較で「予測重要度と因果効果のギャップ」を定量化する方法論研究。LTCI dataとコホート追跡を組み合わせ、幼少期から高齢期までの曝露累積と要介護化リスクの関係をDL+SHAP+TMLEのhybrid解析で評価する。" data-tags="最新2025|SHAP|深層学習|life course|解釈性|機械学習|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">9</div>
+    <div style="flex:1">
+      <div class="paper-title">Exploring the potential and limitations of deep learning and explainable AI for longitudinal life course analysis</div>
+      <div class="meta-row"><strong>著者:</strong> Author group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> BMC Public Health, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（シミュレーション＋実データ、SHAPでlife course pattern回復可能性検証）</div>
+      <div class="url-row">🔗 <a href="https://link.springer.com/article/10.1186/s12889-025-22705-4" target="_blank">https://link.springer.com/article/10.1186/s12889-025-22705-4</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">SHAP（SHapley Additive exPlanations）などの説明可能AI手法をlife course解析に適用した際の有効性と限界を、シミュレーションと実データで検証。life course epidemiologyの典型モデル（critical period、accumulation、chain of risk）をシミュレートし、Deep Learning + SHAPがこれらをどの程度回復できるか検証。単純なパターンでは性能良好だが、相互作用が多いと解釈が因果と乖離。「予測精度が高い＝因果が正しい」ではないことを実証的に示し、SHAPの結果を因果として解釈する誤用を抑止する重要な方法論論文。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：Life course epidemiologyではcritical period（特定時期の曝露が決定的）、accumulation（生涯累積曝露）、chain of risk（時間連鎖）の3モデルが典型。Deep Learning（DL）+ SHAPは予測精度が高く、説明可能性も提供するが、SHAPが因果を回復できるかは未検証。方法：3つのlife course patternをシミュレートし、DL（LSTM、Transformer等）とSHAPで予測・解釈。実データ（コホート長期追跡）でも検証。結果：単純なパターン（critical period単独、accumulation単独）ではSHAP値が因果と整合。複雑な相互作用パターン（chain of risk + critical period）ではSHAP値と因果が乖離（misalignment）。予測精度（AUC等）は高いままなので「予測精度＝因果正しさ」の誤解を生みやすい。結論：SHAPは因果推論の代替ではなく、TMLEなど因果手法と併用すべき。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">「予測精度が高い＝因果が正しい」ではないことを実証的に示す重要な警告論文。SHAPの結果を因果として解釈する誤用を抑止し、life course研究でDL+SHAPとTMLEなど因果手法を併用する設計の必要性を提示。AI時代の疫学方法論の重要マイルストーン。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">SHAPの因果解釈可能性をlife course pattern別に系統的に検証した最初の論文。シミュレーション設計が網羅的でlife course modelの典型形を再現。実データ事例も併載し、方法論的厳密性が高い。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①単純なlife course pattern（critical period単独、accumulation単独）ではSHAP値が因果と整合、②複雑な相互作用パターン（chain of risk + critical period）ではSHAP値と因果が乖離、③予測精度（AUC等）は高いままなので「予測精度＝因果」の誤解を生みやすい、④DLアーキテクチャ（LSTM、Transformer等）の選択でSHAP結果が変わる可能性、⑤SHAPは因果推論の代替ではなく併用ツール、を実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">3つのlife course pattern（critical period、accumulation、chain of risk）のシミュレーション、複数DLアーキテクチャ、SHAP値計算、実データ事例を統合した堅実な方法論。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">DLアーキテクチャの選択（LSTM、Transformer、その他）によってSHAP結果が変わる可能性は十分検討されていない。シミュレーションのlife course patternは典型例で、現実のより複雑なパターンへの拡張は別途必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分の幼少期生活環境→中年身体活動→高齢期frailtyの連鎖（chain of risk）解析論文の導入で、本研究を「SHAPは複雑なlife course patternで因果と乖離する」警告として引用し、自分の解析でTMLEなど因果手法を併用する正当性根拠とできる。②[discussion] 自分のSHAP結果（重要度ランキング）とTMLE推定（因果効果）の差異を、本研究のmisalignment分析と整合する形で解釈し、両手法の補完性を補強する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">lifecourse-aware causal forestを開発し、SHAPとの結果比較で「予測重要度と因果効果のギャップ」を定量化する方法論研究。LTCI dataとコホート追跡を組み合わせ、幼少期から高齢期までの曝露累積と要介護化リスクの関係をDL+SHAP+TMLEのhybrid解析で評価する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-method">SHAP</span><span class="tag tag-method">深層学習</span><span class="tag tag-field">life course</span><span class="tag tag-field">解釈性</span><span class="tag tag-method">機械学習</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260501_10" data-title="An adaptive method of emergency department syndromic surveillance to nowcast the frequency of presentations with severe 28-day outcome following influenza or COVID-19 infection" data-authors="Author group" data-journal="American Journal of Epidemiology, Advance article, 2026年" data-design="方法論論文（適応的nowcasting、record linkage、報告遅延補正、後ろ向きvalidation）" data-url="https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwag028/8466095" data-summary="救急外来のsyndromic surveillanceデータでnowcastingを行う適応的手法を提案。インフルエンザ・COVID-19の重症化（28日アウトカム：入院・死亡）頻度をリアルタイム推定する。record linkageで救急受診→重症化を結びつけ、報告遅延を考慮した適応的nowcastingモデルを構築。流行期のリアルタイム公衆衛生意思決定支援を目指す。後ろ向きデータでの検証で予測性能が良好で、reporting delay distributionの動的推定がkey。高齢者の感染症重症化監視、要介護化のearly warningシステムへの応用可能性。" data-overview="背景：従来のsyndromic surveillanceは曝露の検出（救急外来訪問数等）に主眼があったが、重症アウトカム頻度の早期把握はリソース配分上重要。報告遅延（救急受診→入院→死亡記録のlag）が大きい場合、リアルタイム推定が困難。方法：record linkage（救急受診ID→入院記録→死亡記録）で救急受診→重症化（28日アウトカム）を結びつけ、報告遅延distributionを動的推定。適応的Bayesian nowcastingモデル（時変パラメータでreporting delay変化に追随）を構築。インフルエンザ・COVID-19の流行期データで後ろ向きvalidation。結果：従来のnaive nowcastingに比べbiasが大幅低減、予測区間が適正、reporting delay分布の時変性に追随可能。結論：流行期のリアルタイム公衆衛生意思決定支援に有効。" data-importance="重症アウトカム頻度の早期把握はリソース配分（病床、ICU、人工呼吸器）の意思決定に直結。record linkageと適応的nowcastingの統合は流行期surveillance のbest practiceとなる。高齢者の感染症重症化監視、要介護化のearly warningシステムへの応用可能性。" data-novelty="従来のsyndromic surveillanceは曝露検出中心だったが、本研究は「曝露→重症アウトカム」のlinkageと適応的nowcastingを統合した点が新規。報告遅延distributionの動的推定は時変パラメータモデルとして実装。" data-methodology="record linkage、適応的Bayesian nowcasting（時変パラメータ）、後ろ向きvalidation、reporting delay distribution動的推定を統合した堅実な方法論。" data-limitation="record linkage精度に依存（マッチング失敗・誤マッチで推定値が変動）。地域や医療制度ごとに再キャリブレーションが必要（米国・英国・日本でreporting delay distributionが異なる）。長期トレンド変化の検出は別途必要。" data-implication="①[introduction] 自分の高齢者ADL急性悪化monitoring論文の導入で、本研究を「適応的nowcastingで重症アウトカム頻度をリアルタイム推定するsurveillance方法論」として引用し、自分のearly warning systemの方法論的根拠とできる。②[discussion] 自分のsurveillance推定値の予測区間を、本研究のreporting delay動的推定と整合する形で解釈し、不確実性定量化の妥当性として引用できる。" data-idea="「高齢者のADL急性悪化」をエンドポイントとし、訪問看護記録のsyndromic surveillanceで施設入所をnowcastingする。LTCI dataと救急受診記録のrecord linkageで、地域別の要介護化earlyスPredictionシステムを構築。流行期だけでなく定常期でも適用できるadaptive frameworkに拡張する。" data-tags="最新2026|nowcasting|サーベイランス|record linkage|公衆衛生|高齢者|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">10</div>
+    <div style="flex:1">
+      <div class="paper-title">An adaptive method of emergency department syndromic surveillance to nowcast the frequency of presentations with severe 28-day outcome following influenza or COVID-19 infection<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> American Journal of Epidemiology, Advance article, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文（適応的nowcasting、record linkage、報告遅延補正、後ろ向きvalidation）</div>
+      <div class="url-row">🔗 <a href="https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwag028/8466095" target="_blank">https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwag028/8466095</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">救急外来のsyndromic surveillanceデータでnowcastingを行う適応的手法を提案。インフルエンザ・COVID-19の重症化（28日アウトカム：入院・死亡）頻度をリアルタイム推定する。record linkageで救急受診→重症化を結びつけ、報告遅延を考慮した適応的nowcastingモデルを構築。流行期のリアルタイム公衆衛生意思決定支援を目指す。後ろ向きデータでの検証で予測性能が良好で、reporting delay distributionの動的推定がkey。高齢者の感染症重症化監視、要介護化のearly warningシステムへの応用可能性。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来のsyndromic surveillanceは曝露の検出（救急外来訪問数等）に主眼があったが、重症アウトカム頻度の早期把握はリソース配分上重要。報告遅延（救急受診→入院→死亡記録のlag）が大きい場合、リアルタイム推定が困難。方法：record linkage（救急受診ID→入院記録→死亡記録）で救急受診→重症化（28日アウトカム）を結びつけ、報告遅延distributionを動的推定。適応的Bayesian nowcastingモデル（時変パラメータでreporting delay変化に追随）を構築。インフルエンザ・COVID-19の流行期データで後ろ向きvalidation。結果：従来のnaive nowcastingに比べbiasが大幅低減、予測区間が適正、reporting delay分布の時変性に追随可能。結論：流行期のリアルタイム公衆衛生意思決定支援に有効。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">重症アウトカム頻度の早期把握はリソース配分（病床、ICU、人工呼吸器）の意思決定に直結。record linkageと適応的nowcastingの統合は流行期surveillance のbest practiceとなる。高齢者の感染症重症化監視、要介護化のearly warningシステムへの応用可能性。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">従来のsyndromic surveillanceは曝露検出中心だったが、本研究は「曝露→重症アウトカム」のlinkageと適応的nowcastingを統合した点が新規。報告遅延distributionの動的推定は時変パラメータモデルとして実装。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①record linkageで救急受診→重症化（28日アウトカム）を結びつける手順、②適応的Bayesian nowcastingで報告遅延変化に追随、③従来のnaive nowcastingに比べbiasが大幅低減、④予測区間が適正でリアルタイム意思決定に有用、⑤reporting delay distributionの時変性を捉える時変パラメータ、⑥インフルエンザ・COVID-19両方で性能検証、を実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">record linkage、適応的Bayesian nowcasting（時変パラメータ）、後ろ向きvalidation、reporting delay distribution動的推定を統合した堅実な方法論。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">record linkage精度に依存（マッチング失敗・誤マッチで推定値が変動）。地域や医療制度ごとに再キャリブレーションが必要（米国・英国・日本でreporting delay distributionが異なる）。長期トレンド変化の検出は別途必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 自分の高齢者ADL急性悪化monitoring論文の導入で、本研究を「適応的nowcastingで重症アウトカム頻度をリアルタイム推定するsurveillance方法論」として引用し、自分のearly warning systemの方法論的根拠とできる。②[discussion] 自分のsurveillance推定値の予測区間を、本研究のreporting delay動的推定と整合する形で解釈し、不確実性定量化の妥当性として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「高齢者のADL急性悪化」をエンドポイントとし、訪問看護記録のsyndromic surveillanceで施設入所をnowcastingする。LTCI dataと救急受診記録のrecord linkageで、地域別の要介護化earlyスPredictionシステムを構築。流行期だけでなく定常期でも適用できるadaptive frameworkに拡張する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">nowcasting</span><span class="tag tag-field">サーベイランス</span><span class="tag tag-field">record linkage</span><span class="tag tag-field">公衆衛生</span><span class="tag tag-field">高齢者</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+  <div class="section-title">📊 まとめ一覧</div>
+  <table class="summary">
+    <thead><tr><th>#</th><th>論文タイトル</th><th>ジャーナル</th><th>デザイン</th><th>キーポイント</th><th>研究テーマ</th></tr></thead>
+    <tbody>
+      <tr><td class="rk">1</td><td><a href="https://www.nature.com/articles/s41746-026-02563-z" target="_blank">An operational target trial emulation framework for causal i...</a></td><td>npj Digital Medicine, 2026年</td><td>方法論論文（フレームワーク提案＋EHR実装事例、患者数10万</td><td>EHRから因果推論を行うためのoperational Target Trial Emulation（TTE）フレームワークを提案。trial specifica...</td><td>TTE</td></tr>
+      <tr><td class="rk">2</td><td><a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.70394" target="_blank">Mendelian Randomization Methods for Causal Inference: Estima...</a></td><td>Statistics in Medicine, 2026年</td><td>方法論レビュー＋シミュレーション（B=10,000反復）＋実</td><td>MR手法を「推定対象（estimand）→識別条件（identification）→推定方法（inference）」の階層で体系的に再整理した方法論レビュー。代...</td><td>MR</td></tr>
+      <tr><td class="rk">3</td><td><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/sim.10274" target="_blank">Multiple Imputation for Longitudinal Data: A Tutorial</a></td><td>Statistics in Medicine, 2025年（</td><td>方法論チュートリアル＋シミュレーション（B=2,000反復）</td><td>縦断データの欠測補完で頻発する「imputation modelとanalysis modelの非整合」「クラスタ構造の無視」「時間依存共変量の不適切な扱い」を...</td><td>多重代入</td></tr>
+      <tr><td class="rk">4</td><td><a href="https://link.springer.com/article/10.1007/s10654-024-01173-x" target="_blank">Machine learning in causal inference for epidemiology</a></td><td>European Journal of Epidemiolo</td><td>方法論論文（TMLE、AIPW、DMLの3手法を疫学者向けに</td><td>TMLE（Targeted Maximum Likelihood Estimation）、AIPW（Augmented Inverse Probability ...</td><td>DML</td></tr>
+      <tr><td class="rk">5</td><td><a href="https://academic.oup.com/aje/article/195/4/1154/8383791" target="_blank">Subgroup analyses and effect modification with Bayesian kern...</a></td><td>American Journal of Epidemiolo</td><td>方法論論文（BKMR拡張、シミュレーション＋実データ評価、サ</td><td>環境混合曝露を扱うBayesian Kernel Machine Regression（BKMR）にサブグループ解析と効果修飾を組み込んだ拡張。effect m...</td><td>BKMR</td></tr>
+      <tr><td class="rk">6</td><td><a href="https://www.nature.com/articles/s41746-025-01821-w" target="_blank">Negative control-calibrated difference-in-difference analyse...</a></td><td>npj Digital Medicine, 2025年</td><td>方法論論文（DiDにNCO組み込み、real-world d</td><td>Difference-in-Difference（DiD）にnegative control outcome（NCO）を組み込み、未測定交絡の検出と補正を行うN...</td><td>Negative Control</td></tr>
+      <tr><td class="rk">7</td><td><a href="https://www.nature.com/articles/s41467-025-60868-1" target="_blank">MR-link-2: pleiotropy robust cis Mendelian randomization val...</a></td><td>Nature Communications, 2025年</td><td>方法論論文（cis-MR、3つの独立参照データセットでval</td><td>cis領域のSNPのみを使う単一遺伝子座型MRであるMR-link-2を提案。pleiotropy耐性を3つの独立した因果関係参照データで検証する。分子形質（タ...</td><td>MR</td></tr>
+      <tr><td class="rk">8</td><td><a href="https://www.frontiersin.org/journals/epidemiology/articles/10.3389/fepid.2026.1737016/full" target="_blank">Evidence-based directed acyclic graphs for perinatal pharmac...</a></td><td>Frontiers in Epidemiology, 202</td><td>方法論論文（エビデンスベースDAG構築、modified D</td><td>エビデンスベースのDAG構築手順を、リウマチ周産期薬剤疫学を題材に体系化。文献レビュー→専門家協議（modified Delphi）→DAG調整変数選定の標準ワ...</td><td>DAG</td></tr>
+      <tr><td class="rk">9</td><td><a href="https://link.springer.com/article/10.1186/s12889-025-22705-4" target="_blank">Exploring the potential and limitations of deep learning and...</a></td><td>BMC Public Health, 2025年</td><td>方法論論文（シミュレーション＋実データ、SHAPでlife </td><td>SHAP（SHapley Additive exPlanations）などの説明可能AI手法をlife course解析に適用した際の有効性と限界を、シミュレー...</td><td>SHAP</td></tr>
+      <tr><td class="rk">10</td><td><a href="https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwag028/8466095" target="_blank">An adaptive method of emergency department syndromic surveil...</a></td><td>American Journal of Epidemiolo</td><td>方法論論文（適応的nowcasting、record lin</td><td>救急外来のsyndromic surveillanceデータでnowcastingを行う適応的手法を提案。インフルエンザ・COVID-19の重症化（28日アウト...</td><td>nowcasting</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+研究レポート — 疫学方法論 ／ 2026年5月1日（金曜日）<br>
+研究テーマ: 健康寿命・身体機能・筋質・身体活動・認知機能・遺伝子・方法論<br>
+<small>※ 全10本が因果推論・縦断解析・MR・機械学習・バイアス対策の方法論研究</small>
+</div>
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '',
+      authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '',
+      design: card.dataset.design || '',
+      url: card.dataset.url || '',
+      summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '',
+      importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '',
+      limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '',
+      background: card.dataset.background || '',
+      result: card.dataset.result || '',
+      impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  (function autoUpgrade() {
+    const favs = loadFavs();
+    let upgraded = 0;
+    cards.forEach(card => {
+      const id = card.dataset.paperId;
+      if (!favs[id]) return;
+      const newData = buildPaperData(card);
+      const fields = ['title','authors','journal','design','url','summary','overview','importance','methodology','limitation','implication','idea','novelty','background','result','impact','keywords'];
+      const hasNew = fields.some(k => newData[k] && (!favs[id][k] || favs[id][k] === ''));
+      if (hasNew) {
+        favs[id] = { ...favs[id], ...newData, rating: favs[id].rating || 0, addedAt: favs[id].addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        upgraded++;
+      }
+    });
+    if (upgraded > 0) {
+      saveFavs(favs);
+      const note = document.createElement('div');
+      note.style.cssText = 'position:fixed;top:20px;right:20px;background:#fef3c7;border:2px solid #f59e0b;padding:12px 18px;border-radius:8px;color:#78350f;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;max-width:340px';
+      note.innerHTML = '🔄 ' + upgraded + '件のお気に入りを最新項目で自動更新しました';
+      document.body.appendChild(note);
+      setTimeout(() => note.remove(), 5000);
+    }
+  })();
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) { card.style.paddingLeft = '50px'; }
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs);
+      updateBar();
+    });
+  });
+
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin:20px auto;max-width:900px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    const pc = document.getElementById('page-count'); const tc = document.getElementById('total-count');
+    if (pc) pc.textContent = checkedCount;
+    if (tc) tc.textContent = Object.keys(loadFavs()).length;
+  }
+  const selAll = document.getElementById('select-all');
+  if (selAll) selAll.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }));
+  const selNone = document.getElementById('select-none');
+  if (selNone) selNone.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }));
+  const openV = document.getElementById('open-viewer');
+  if (openV) openV.addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => { if (cb.checked) { const card = cb.closest('[data-paper-id]'); selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() }; } });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+  updateBar();
+  window.addEventListener('storage', e => {
+    if (e.key === STORAGE_KEY) {
+      const favs = loadFavs();
+      document.querySelectorAll('[data-paper-id]').forEach(card => {
+        const cb = card.querySelector('.paper-fav-check'); if (!cb) return;
+        const label = card.querySelector('.fav-label');
+        const isFav = !!favs[card.dataset.paperId];
+        cb.checked = isFav;
+        if (label) { label.textContent = isFav ? '保存済み' : 'お気に入り'; label.style.color = isFav ? '#be185d' : '#475569'; }
+      });
+      updateBar();
+    }
+  });
+})();
+</script>
+<!-- favorites-injected-end -->
+</body>
+</html>

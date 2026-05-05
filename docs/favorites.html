@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お気に入り — Research Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='56' fill='white' font-family='Arial' font-weight='800'%3ER%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="logo">R</span><span>Research Dashboard</span></a>
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      <a href="papers.html">論文一覧</a>
+      <a href="themes.html">曜日テーマ</a>
+      <a href="favorites.html">お気に入り</a>
+    </nav>
+    <div class="spacer"></div>
+    <a class="fav-pill" href="favorites.html"><span class="star">★</span><span>お気に入り</span><span class="count">0</span></a>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">お気に入り</h1>
+  <p class="page-subtitle">★3段階評価／JSON書き出し・取り込み／検索・絞り込み・並び替え</p>
+
+  <div class="controls">
+    <input type="search" id="q" class="search-input" placeholder="🔍 タイトル・著者・要約で検索…">
+    <select id="sort" class="sort">
+      <option value="rating">★評価順</option>
+      <option value="added-desc">追加が新しい順</option>
+      <option value="added-asc">追加が古い順</option>
+      <option value="date-desc">レポート日付（新→古）</option>
+      <option value="title">タイトル順</option>
+    </select>
+    <select id="filter" class="filter">
+      <option value="all">すべて</option>
+      <option value="3">★★★ のみ</option>
+      <option value="2">★★以上</option>
+      <option value="1">★以上</option>
+      <option value="0">未評価のみ</option>
+    </select>
+  </div>
+
+  <div class="filter-pills" id="theme-pills"></div>
+
+  <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+    <button class="btn" id="btn-export">📥 JSON書き出し</button>
+    <button class="btn" id="btn-import">📤 JSON取り込み</button>
+    <button class="btn" id="btn-html">🖨 HTML書き出し</button>
+    <button class="btn" id="btn-clear" style="margin-left:auto;color:#c53030">🗑 全削除</button>
+  </div>
+
+  <div class="papers-list" id="fav-list"></div>
+</main>
+
+<footer class="site-footer"><p>© 2026 Yujiro Asano · Tohoku University</p></footer>
+
+<input type="file" id="file-import" accept=".json" hidden>
+
+<script src="js/favorites.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const reports = await SITE.loadReports();
+  const reportById = new Map(reports.map(r => [r.id, r]));
+
+  let activeTheme = "all";
+
+  const themeBox = document.getElementById("theme-pills");
+
+  function buildThemePills() {
+    const favs = Favorites.list();
+    const counts = {};
+    SITE.WEEKDAY_ORDER.forEach(wd => counts[wd] = 0);
+    favs.forEach(p => {
+      const r = (p.source_reports || []).map(rid => reportById.get(rid)).filter(Boolean)[0];
+      if (r) counts[r.weekday] = (counts[r.weekday] || 0) + 1;
+    });
+    themeBox.innerHTML = `<span class="pill ${activeTheme==='all'?'active':''}" data-th="all">すべて<span class="ct">${favs.length}</span></span>` +
+      SITE.WEEKDAY_ORDER.map(wd => {
+        const t = SITE.THEME[wd];
+        return `<span class="pill ${activeTheme===wd?'active':''}" data-th="${wd}">${t.short}<span class="ct">${counts[wd]}</span></span>`;
+      }).join("");
+  }
+  themeBox.addEventListener("click", e => {
+    const pill = e.target.closest(".pill"); if (!pill) return;
+    activeTheme = pill.dataset.th;
+    themeBox.querySelectorAll(".pill").forEach(p => p.classList.toggle("active", p.dataset.th === activeTheme));
+    render();
+  });
+
+  const q = document.getElementById("q");
+  const sortSel = document.getElementById("sort");
+  const filterSel = document.getElementById("filter");
+  q.addEventListener("input", debounce(render, 120));
+  sortSel.addEventListener("change", render);
+  filterSel.addEventListener("change", render);
+
+  document.getElementById("btn-export").addEventListener("click", exportJSON);
+  document.getElementById("btn-import").addEventListener("click", () => document.getElementById("file-import").click());
+  document.getElementById("file-import").addEventListener("change", importJSON);
+  document.getElementById("btn-html").addEventListener("click", exportHTML);
+  document.getElementById("btn-clear").addEventListener("click", () => {
+    if (confirm(`お気に入り ${Favorites.list().length} 件をすべて削除します。よろしいですか？`)) {
+      Favorites.clear();
+      SITE.toast("削除しました");
+      render(); buildThemePills();
+    }
+  });
+
+  document.addEventListener("favorites:change", () => { render(); buildThemePills(); });
+
+  function render() {
+    const term = q.value.trim().toLowerCase();
+    const filt = filterSel.value;
+    let arr = Favorites.list().slice();
+
+    if (activeTheme !== "all") {
+      arr = arr.filter(p => {
+        const r = (p.source_reports || []).map(rid => reportById.get(rid)).filter(Boolean)[0];
+        return r && r.weekday === activeTheme;
+      });
+    }
+
+    if (filt === "3") arr = arr.filter(p => (p.rating || 0) >= 3);
+    else if (filt === "2") arr = arr.filter(p => (p.rating || 0) >= 2);
+    else if (filt === "1") arr = arr.filter(p => (p.rating || 0) >= 1);
+    else if (filt === "0") arr = arr.filter(p => !p.rating);
+
+    if (term) {
+      arr = arr.filter(p => {
+        const haystack = [p.title, p.authors, p.journal, p.summary, p.overview,
+                         (p.tags||[]).join(" "), p.idea, p.implication]
+                         .filter(Boolean).join(" ").toLowerCase();
+        return haystack.includes(term);
+      });
+    }
+
+    const sortBy = sortSel.value;
+    const dateOf = p => {
+      const r = (p.source_reports || []).map(rid => reportById.get(rid)).filter(Boolean)[0];
+      return r ? r.date : "";
+    };
+    arr.sort((a, b) => {
+      if (sortBy === "rating") return (b.rating||0) - (a.rating||0) || (b.addedAt||"").localeCompare(a.addedAt||"");
+      if (sortBy === "added-desc") return (b.addedAt||"").localeCompare(a.addedAt||"");
+      if (sortBy === "added-asc") return (a.addedAt||"").localeCompare(b.addedAt||"");
+      if (sortBy === "date-desc") return (dateOf(b)||"").localeCompare(dateOf(a)||"");
+      if (sortBy === "title") return (a.title||"").localeCompare(b.title||"", "ja");
+      return 0;
+    });
+
+    const list = document.getElementById("fav-list");
+    if (arr.length === 0) {
+      list.innerHTML = `<div class="empty-state"><div class="em">⭐️</div>
+        まだお気に入りがありません<br>
+        <small style="display:block;margin-top:8px">論文一覧から ☆ をクリックして追加</small></div>`;
+      return;
+    }
+    list.innerHTML = arr.map(p => renderFav(p, reportById)).join("");
+    attachActions(list);
+  }
+
+  function renderFav(p, reportById) {
+    const r = (p.source_reports || []).map(rid => reportById.get(rid)).filter(Boolean)[0];
+    const wd = r ? r.weekday : null;
+    const t = wd ? SITE.THEME[wd] : null;
+    const c = t ? t.color : "var(--accent)";
+
+    const detailFields = [
+      ["要約", p.summary], ["概要", p.overview], ["重要な点", p.importance],
+      ["方法論", p.methodology], ["限界", p.limitation], ["示唆", p.implication],
+      ["研究アイデア", p.idea], ["新規性", p.novelty], ["背景", p.background],
+      ["結果", p.result], ["インパクト", p.impact],
+    ].filter(([_, v]) => v && String(v).trim());
+
+    return `
+      <article class="paper-row" id="fav-${p.id}" style="--c:${c}">
+        <div class="row-head">
+          <button class="fav-btn on" data-pid="${p.id}" title="お気に入り解除">★</button>
+          <h3><a href="${p.url || "#"}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a></h3>
+        </div>
+        <p class="meta">${escapeHtml(p.authors || "")} · <i>${escapeHtml(p.journal || "")}</i></p>
+        ${p.summary ? `<p class="summary">${escapeHtml(p.summary)}</p>` : ""}
+        <div class="footer">
+          ${t ? `<span class="theme-chip" style="--c:${c}">${t.short}</span>` : ""}
+          ${p.is_pd_related ? `<span class="pd-chip">📍 PD</span>` : ""}
+          ${(p.tags || []).slice(0, 6).map(tg => `<span class="tag-chip">${escapeHtml(tg)}</span>`).join("")}
+          ${r ? `<a href="reports/${r.id}.html">レポート（${SITE.fmtDateShort(r.date)}）</a>` : ""}
+          ${detailFields.length ? `<button class="btn expand-btn" data-pid="${p.id}" style="margin-left:auto;padding:4px 10px;font-size:12px">詳細</button>` : ""}
+          <span class="rating" data-pid="${p.id}">
+            ${[1,2,3].map(n => `<span class="r-star ${(p.rating||0)>=n?'on':''}" data-r="${n}">★</span>`).join("")}
+          </span>
+        </div>
+        <div class="row-detail" id="detail-${p.id}">
+          ${detailFields.map(([label, v]) => `
+            <div class="field"><div class="field-label">${label}</div><div class="field-val">${escapeHtml(v)}</div></div>`).join("")}
+        </div>
+      </article>`;
+  }
+
+  function attachActions(scope) {
+    scope.querySelectorAll(".fav-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        Favorites.remove(btn.dataset.pid);
+        SITE.toast("削除しました");
+      });
+    });
+    scope.querySelectorAll(".rating").forEach(rt => {
+      rt.querySelectorAll(".r-star").forEach(s => {
+        s.addEventListener("click", () => {
+          const pid = rt.dataset.pid;
+          const r = parseInt(s.dataset.r, 10);
+          const cur = Favorites.get(pid);
+          if (!cur) return;
+          const newRating = (cur.rating === r) ? 0 : r;
+          Favorites.rate(pid, newRating);
+          rt.querySelectorAll(".r-star").forEach((x, i) => x.classList.toggle("on", (i+1) <= newRating));
+        });
+      });
+    });
+    scope.querySelectorAll(".expand-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.getElementById("detail-" + btn.dataset.pid).classList.toggle("open");
+      });
+    });
+  }
+
+  function exportJSON() {
+    const json = Favorites.exportJSON();
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    const ts = new Date().toISOString().slice(0,10);
+    a.href = url;
+    a.download = `favorites_${ts}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    SITE.toast("JSONを書き出しました");
+  }
+
+  function importJSON(e) {
+    const file = e.target.files[0]; if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const added = Favorites.importJSON(reader.result, true);
+        SITE.toast(`${added}件を取り込みました`);
+        render(); buildThemePills();
+      } catch (err) { alert("読み込み失敗: " + err.message); }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+  }
+
+  function exportHTML() {
+    const arr = Favorites.list().slice().sort((a,b) => (b.rating||0)-(a.rating||0));
+    const ts = new Date().toLocaleString("ja-JP");
+    const html = `<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>お気に入り — ${ts}</title>
+      <style>body{font-family:-apple-system,sans-serif;max-width:800px;margin:20px auto;padding:0 20px;color:#1a202c}
+      h1{font-size:24px}h2{font-size:16px;margin:24px 0 4px}article{border-bottom:1px solid #ddd;padding:12px 0}
+      .stars{color:#f59e0b}.meta{color:#666;font-size:13px}.tags{margin-top:6px;font-size:11px;color:#888}</style>
+      </head><body><h1>お気に入り（${arr.length}件）</h1><p class="meta">エクスポート: ${ts}</p>
+      ${arr.map(p => `<article>
+        <div class="stars">${"★".repeat(p.rating||0)}${"☆".repeat(3-(p.rating||0))}</div>
+        <h2><a href="${escapeHtml(p.url||"#")}" target="_blank">${escapeHtml(p.title)}</a></h2>
+        <p class="meta">${escapeHtml(p.authors||"")} · <i>${escapeHtml(p.journal||"")}</i></p>
+        ${p.summary ? `<p>${escapeHtml(p.summary)}</p>` : ""}
+        ${p.idea ? `<p><b>研究アイデア:</b> ${escapeHtml(p.idea)}</p>` : ""}
+        <div class="tags">${(p.tags||[]).map(t => `#${escapeHtml(t)}`).join(" ")}</div>
+      </article>`).join("")}
+      </body></html>`;
+    const blob = new Blob([html], { type: "text/html" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `favorites_${new Date().toISOString().slice(0,10)}.html`;
+    a.click();
+    URL.revokeObjectURL(url);
+    SITE.toast("HTMLを書き出しました");
+  }
+
+  function escapeHtml(s) {
+    return (s || "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+  }
+  function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+
+  buildThemePills();
+  render();
+})();
+</script>
+</body>
+</html>

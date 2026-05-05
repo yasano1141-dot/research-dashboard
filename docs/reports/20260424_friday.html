@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>疫学方法論 研究レポート — 2026年4月24日（金）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f0f4f8;
+    color: #2d3748;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+  .header {
+    background: linear-gradient(135deg, #2b6cb0 0%, #1a365d 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .header h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+  .header .theme-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  .section-intro {
+    background: white;
+    border-left: 5px solid #2b6cb0;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #4a5568;
+  }
+  .paper-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 28px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .paper-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+  .card-header {
+    background: linear-gradient(90deg, #ebf8ff 0%, #f7fafc 100%);
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .rank-badge {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #2b6cb0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .card-title-area h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a365d;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .tag-journal { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  .tag-design { background: #f0fff4; color: #276749; border: 1px solid #9ae6b4; }
+  .tag-year { background: #fff5f5; color: #c53030; border: 1px solid #feb2b2; }
+  .tag-method { background: #faf5ff; color: #6b46c1; border: 1px solid #d6bcfa; }
+  .tag-new { background: #fffbeb; color: #c05621; border: 1px solid #fbd38d; font-weight: 700; }
+  .card-body {
+    padding: 20px;
+  }
+  .card-section {
+    margin-bottom: 14px;
+  }
+  .card-section-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .card-section-title::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    background: #2b6cb0;
+    border-radius: 2px;
+  }
+  .card-section p {
+    color: #4a5568;
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+  .url-link {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-size: 12px;
+    word-break: break-all;
+  }
+  .url-link:hover { text-decoration: underline; }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  .summary-table th {
+    background: #2b6cb0;
+    color: white;
+    padding: 12px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .summary-table td {
+    padding: 10px 14px;
+    font-size: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+    color: #4a5568;
+  }
+  .summary-table tr:last-child td { border-bottom: none; }
+  .summary-table tr:nth-child(even) td { background: #f7fafc; }
+  .summary-section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    color: #1a365d;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2b6cb0;
+  }
+  .footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #718096;
+    font-size: 12px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 40px;
+  }
+  @media (max-width: 600px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .header h1 { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<div class="header">
+  <h1>📊 疫学方法論 研究レポート</h1>
+  <div class="subtitle">2026年4月24日（金曜日）</div>
+  <div class="theme-badge">🔬 金曜日テーマ：疫学方法論</div>
+</div>
+
+<div class="container">
+
+<div class="section-intro">
+本レポートは疫学方法論に関する重要論文10本を厳選し、因果推論・ターゲットトライアル模倣・機械学習・エピジェネティック時計・メンデルランダム化など、最前線の方法論的進展を網羅します。健康寿命・身体機能・老年疫学研究への方法論的示唆も含めて解説します。
+</div>
+
+<!-- Paper 1 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">1</div>
+    <div class="card-title-area">
+      <h3>Transparent Reporting of Observational Studies Emulating a Target Trial — The TARGET Statement</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">JAMA</span>
+        <span class="tag tag-year">2025年9月</span>
+        <span class="tag tag-design">報告ガイドライン</span>
+        <span class="tag tag-method">Target Trial Emulation</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Hernan MA et al. / <em>JAMA</em>（2025年9月3日）| DOI: 10.1001/jama.2025.13350</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://jamanetwork.com/journals/jama/fullarticle/2837724" target="_blank">https://jamanetwork.com/journals/jama/fullarticle/2837724</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>コンセンサスベース報告ガイドライン開発（系統的レビュー・Delphiサーベイ・専門家会議・パイロット検証）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>ターゲットトライアル模倣（TTE）を明示的に行った観察研究の透明な報告を促進する21項目チェックリスト（TARGETガイドライン）をJAMAに発表。因果推論の再現性・信頼性向上に向けた歴史的なマイルストーン。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>無作為化比較試験（RCT）が不可能・実施困難な状況で、観察データを用いて仮想的なRCTを模倣するTTE手法の報告基準が存在しなかった問題に対応するため、6カ国18名の専門家パネルを招集。2023年8月〜2024年3月の2ラウンドオンラインサーベイ（18名参加）、2024年6月の3日間専門家会議、2024年9月〜2025年2月のパイロット検証（n=108）を経て、21項目TARGETチェックリストを策定。チェックリストはアブストラクト・序論・方法・結果・考察・その他の6セクションで構成。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>TTEはHernan & Robins（2016）以降急増しているが、報告の質が不均一であった。TARGETは因果的推定量の明確化・識別仮定の明示・観察データへのマッピング方法の報告を義務化する初の国際標準ガイドライン。PLoS Medicine、BMJなど主要誌も採用を表明しており、今後のTTE論文の質を大幅に向上させると期待される。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>EQUATOR Networkの標準開発手順（系統的レビュー＋Delphi法＋パイロット検証）に忠実に従っており、方法論的信頼性は非常に高い。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>チェックリスト遵守だけでは方法論的質を保証できない。TTEが適切でない状況（曝露が時間変化しない単純比較など）での誤用リスクも残る。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>長期介護保険データや日本の大規模コホート（東北メガバンク等）を用いた健康寿命・身体機能研究でTTEを適用する際、TARGETに準拠した報告が国際誌掲載の必須条件となる。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>身体活動介入の健康寿命への効果をTTE×g-formulaで推定し、TARGETチェックリストに準拠した論文として執筆する研究デザインを検討できる。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">ターゲットトライアル模倣</span>
+        <span class="tag tag-method">因果推論</span>
+        <span class="tag tag-method">報告ガイドライン</span>
+        <span class="tag tag-design">観察研究</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 2 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">2</div>
+    <div class="card-title-area">
+      <h3>Target Trial Emulation — A Unifying Approach for Causal Inference From Observational Data</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">JAMA Network Open</span>
+        <span class="tag tag-year">2025年</span>
+        <span class="tag tag-design">方法論解説</span>
+        <span class="tag tag-method">因果推論</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Dickerman BA et al. / <em>JAMA Network Open</em>（2025年）| DOI: 10.1001/jamanetworkopen.2025.58192</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2836837" target="_blank">https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2836837</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>方法論レビュー・解説（統一的因果推論フレームワークの包括的提示）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>TTEを観察データからの因果推論のための「統一的アプローチ」として体系化し、プロトコル設計から解析戦略まで一貫した枠組みを提示。介入研究の代替として観察研究を厳密に設計する方法論的ロードマップ。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>TTEフレームワークでは、仮想的なRCTのプロトコル（適格基準・介入戦略・アウトカム定義・フォローアップ期間・比較対照・因果的推定量）を事前に明示し、それを観察データにマッピングする。適格期間（eligibility period）の設定、インデックスデートの定義、センサリングの処理などの具体的手順を解説。クローンデザイン（clone-censor-weight approach）や逐次トライアル法（sequential trial method）など最新技術も紹介。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>多くの観察研究が「活動的比較群バイアス（active comparator bias）」「不死時間バイアス（immortal time bias）」「適格性バイアス」を見落としているのに対し、TTEは各バイアスに対応する設計要素を明確に指定する。臨床データベース・行政データ・コホートデータを用いた実用的研究の質を抜本的に改善する可能性がある。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>Hernanらのグループによる方法論的解説であり、理論的基盤が堅固。実際の適用例（心血管薬・がん治療・感染症など）も提示され実用性が高い。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>行政データや電子医療記録では適格基準の正確な特定が困難な場合がある。TTEの利点が最大化するのは時間変化曝露を扱う場合であり、すべての観察研究に適するわけではない。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>要介護認定データを用いた身体活動・フレイルの健康寿命への効果推定において、TTEフレームワークを適用することで不死時間バイアスや活動的比較群バイアスを回避できる。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>社会的運動（グループ体操・老人クラブ等）参加の長期介護リスクへの効果を、逐次トライアル法を用いたTTEで推定する研究が考えられる。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">ターゲットトライアル模倣</span>
+        <span class="tag tag-method">不死時間バイアス</span>
+        <span class="tag tag-method">逐次トライアル</span>
+        <span class="tag tag-design">観察研究</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 3 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">3</div>
+    <div class="card-title-area">
+      <h3>Longitudinal Changes in Epigenetic Clocks Predict Survival in the InCHIANTI Cohort</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">Nature Aging</span>
+        <span class="tag tag-year">2026年（最新）</span>
+        <span class="tag tag-design">縦断コホート</span>
+        <span class="tag tag-method">エピジェネティック時計</span>
+        <span class="tag tag-new">🆕 最新論文</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Marioni RC et al. / <em>Nature Aging</em>（2026年）| DOI: 10.1038/s43587-026-01066-6</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://www.nature.com/articles/s43587-026-01066-6" target="_blank">https://www.nature.com/articles/s43587-026-01066-6</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>縦断的コホート研究（InCHIANTI研究、699名、最大24年追跡、DNA methylation繰り返し測定）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>エピジェネティック時計の縦断的変化速度（加速度）が、ベースライン時点の絶対値よりも死亡リスクの優れた予測因子であることを699名・24年追跡で実証。老化の生物学的測定法に革新をもたらす2026年の最新知見。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>イタリア・InCHIANTI研究参加者699名（ベースライン時21〜95歳）を対象に、DNA methylationを縦断的に測定。Hannum clock、DNAmPhenoAge、DNAmGrimAge（v1・v2）、DunedinPOAm_38、DunedinPACEの各エピジェネティック時計の変化速度（傾き）を算出し、全死亡との関連を検討。最大24年の追跡期間、Cox比例ハザードモデルで解析、ベースライン時の時計値・年齢・主要交絡因子で調整。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>従来のエピジェネティック研究は単時点測定が主流だったが、本研究は「変化の速さ」が死亡リスクを独立して予測することを示した。特にDunedinPACEやDNAmGrimAge v2の縦断的加速が強い予測能を持つことが明らかになり、老化バイオマーカーの臨床・疫学応用において単時点測定から変化率測定へのパラダイムシフトを示唆する。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>長期縦断データとDNA methylationの反復測定を組み合わせた設計は方法論的に優れており、生存解析への適切なアプローチ（左截断・右打ち切り対応）が取られている点も評価できる。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>サンプルサイズがn=699と比較的小規模であり、イタリア人コホートへの限定による一般化可能性の問題がある。DNA methylation測定コストが大規模コホート研究での実装を制限する。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>東北メガバンクやUK Biobankにおけるエピジェネティック時計の縦断変化と健康寿命・身体機能低下との関連を検討する研究に直接応用可能。変化速度を暴露変数とした因果推論研究へ発展できる。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>日本人コホートにおけるDunedinPACEの縦断変化速度と要介護認定・身体機能低下の関連を多状態モデルで検討する研究が考えられる。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">エピジェネティック時計</span>
+        <span class="tag tag-method">DNAメチル化</span>
+        <span class="tag tag-method">生物学的老化</span>
+        <span class="tag tag-design">縦断コホート</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 4 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">4</div>
+    <div class="card-title-area">
+      <h3>Machine Learning in Causal Inference for Epidemiology</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">European Journal of Epidemiology</span>
+        <span class="tag tag-year">2024年11月</span>
+        <span class="tag tag-design">方法論レビュー</span>
+        <span class="tag tag-method">機械学習</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Luque-Fernandez MA et al. / <em>European Journal of Epidemiology</em>（2024年11月）| DOI: 10.1007/s10654-024-01173-x</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://link.springer.com/article/10.1007/s10654-024-01173-x" target="_blank">https://link.springer.com/article/10.1007/s10654-024-01173-x</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>方法論的レビュー（機械学習を活用した因果推論手法の体系的解説）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>疫学における機械学習×因果推論の最前線として、TMLE（Targeted Maximum Likelihood Estimation）・AIPW（Augmented Inverse Probability Weighting）・DML（Double/Debiased Machine Learning）の3手法を体系的に解説。疫学者が実践的に活用できる知識を提供する。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>従来の回帰モデルベース因果推論の限界（傾向スコアや結果モデルの誤特定リスク）に対し、機械学習を組み合わせた3つの二重ロバスト推定量を解説。TMLEはターゲット学習アルゴリズムを用いて推定量の影響関数を最適化。AIPWは逆確率重み付けと結果モデルを組み合わせた二重ロバスト推定。DMLはNeymanの直交化を活用し、高次元交絡因子の存在下でも√n一致性を達成する。Super Learnerなどのアンサンブル手法との組み合わせも解説。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>高次元ビッグデータ（ゲノム・ウェアラブルデバイス・電子医療記録など）が利用可能となった現代疫学において、モデル誤特定に頑健な二重ロバスト推定は必須スキル。3手法の選択基準・実装方法・解釈の注意点が実践的に整理されている。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>理論的基盤（セミパラメトリック理論）への言及と実装の実用性のバランスが取れており、疫学者向けの入門として優れている。Rパッケージ（tmle3、AIPW、DoubleML）への参照も有用。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>時間変化曝露・生存解析設定への拡張は本論文の射程外。大規模サンプルを前提とした漸近理論に基づくため、小規模研究での適用には注意が必要。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>UK BiobankやJAGES（日本老年学的評価研究）の高次元データを用いた身体活動・筋質・認知機能研究でDML/TMLEを適用することで、交絡制御の信頼性を高められる。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>CT筋密度・エコー輝度などの高次元筋質指標と健康寿命の関連推定にTMLEを適用し、従来の多変量回帰との結果比較を行う研究が価値を持つ。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">TMLE</span>
+        <span class="tag tag-method">AIPW</span>
+        <span class="tag tag-method">DML</span>
+        <span class="tag tag-method">機械学習</span>
+        <span class="tag tag-design">方法論レビュー</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 5 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">5</div>
+    <div class="card-title-area">
+      <h3>Confounder Selection in Observational Studies in High-Impact Medical and Epidemiological Journals</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">JAMA Network Open</span>
+        <span class="tag tag-year">2025年</span>
+        <span class="tag tag-design">横断研究・方法論監査</span>
+        <span class="tag tag-method">交絡因子選択</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Tripepi G et al. / <em>JAMA Network Open</em>（2025年）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2836837" target="_blank">https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2836837</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>横断研究（2003〜2023年発表の高インパクトジャーナル掲載観察研究n=623本の方法論監査）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>623本の高インパクト観察研究のうち約50%が交絡因子選択の根拠を示さず、因果モデル（DAG等）使用は20年間でゼロから22.6%に増加したものの依然不十分であることを実証的に示した重要な方法論的監査研究。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>2003年から2023年の間に主要医学・疫学誌（NEJM、JAMA、Lancet、BMJ、AJE、IJE等）に掲載された観察研究623本を対象に交絡因子選択方法を分類。根拠なし（45.1%）、既知の結果との関連に基づく（22.3%）、統計的基準（19.9%）、因果モデル（6.7%）の4カテゴリに分類。2003年から2023年の時系列変化も分析。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>因果モデル（DAGなど）使用率の増加（0%→22.6%）は前進だが、世界トップ誌掲載研究でも半数近くが交絡因子選択を無根拠に行っているという現実を定量化。標準的な因果推論フレームワークの教育・普及が急務であることを示す。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>比較的大規模なサンプル（n=623）と長い観察期間（20年）により時系列変化を検出できている。ただし論文から交絡因子選択方法を判定する際の分類者間信頼性の評価が不十分な可能性がある。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>論文に記載された情報に依存しており、実際の分析意思決定過程を反映しない可能性。英語論文に限定されており日本語文献は対象外。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>自身の研究ではDAGを用いた交絡因子選択の明示的な報告が国際的競争力を高める。健康寿命・身体機能研究でのDAG構築事例として論文化する価値がある。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>日本の老年疫学研究（JAGESなど）における交絡因子選択の現状を同様の方法で監査し、日本の研究水準を国際比較する方法論的論文が書ける。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">交絡因子選択</span>
+        <span class="tag tag-method">DAG</span>
+        <span class="tag tag-method">因果モデル</span>
+        <span class="tag tag-design">方法論監査</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 6 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">6</div>
+    <div class="card-title-area">
+      <h3>Use of Causal Inference Methods in Case–Control Studies: A Methodology Review</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">American Journal of Epidemiology</span>
+        <span class="tag tag-year">2025年</span>
+        <span class="tag tag-design">方法論的レビュー</span>
+        <span class="tag tag-method">ケースコントロール研究</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Keogh RH et al. / <em>American Journal of Epidemiology</em>（2025年8月）| DOI: 10.1093/aje/kwaf182</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwaf182/8239042" target="_blank">https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwaf182/8239042</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>方法論的レビュー（ケースコントロール研究における因果推論手法の現状と課題の系統的レビュー）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>コホート研究での因果推論手法の普及に対し、ケースコントロール研究への適用は遅れている現状を整理し、傾向スコア・逆確率重み・二重ロバスト推定のケースコントロール設定への応用可能性と課題を体系的に整理。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>ケースコントロール研究における因果推論手法として、切片調整（intercept adjustment）、傾向スコア（propensity score）、重み付け推定（weight-based estimators）、二重ロバスト推定量（doubly robust estimators）の4カテゴリを特定し系統的にレビュー。各手法の理論的根拠・実装上の注意点・バイアスリスクを評価。スタディーベース原則（study-base principle）との整合性についても検討。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>ケースコントロール研究は希少疾患・過去の曝露測定に効率的であり老年疫学でも重要だが、因果推論手法の開発は主にコホート設定に集中していた。本レビューはその格差を埋める基盤を提供し、既存ケースコントロールデータへの遡及的因果推論適用の可能性を開く。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>方法論的なエビデンスが散在していた分野を整理した貢献は大きい。ただし実際の応用事例が限られており、手法の実際の有効性の比較検証は今後の課題。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>特定の手法の推奨には至らず、適用条件の詳細が複雑。バイナリアウトカムを主に想定しており、他のアウトカム分布への拡張は今後の課題。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>要介護認定・認知症発症などの希少アウトカムを扱うネステッドケースコントロール研究において、二重ロバスト推定量の適用を検討する際の参考文献となる。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>大規模コホート（JAGESなど）内でのネステッドケースコントロールデザインに傾向スコア重み付けを組み合わせた身体機能低下の要因解明研究が考えられる。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">ケースコントロール</span>
+        <span class="tag tag-method">傾向スコア</span>
+        <span class="tag tag-method">二重ロバスト</span>
+        <span class="tag tag-design">方法論レビュー</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 7 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">7</div>
+    <div class="card-title-area">
+      <h3>Outlier Detection in Mendelian Randomization</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">Statistics in Medicine</span>
+        <span class="tag tag-year">2025年</span>
+        <span class="tag tag-design">統計的方法論</span>
+        <span class="tag tag-method">メンデルランダム化</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Mandl M et al. / <em>Statistics in Medicine</em>（2025年）| DOI: 10.1002/sim.70143</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.70143" target="_blank">https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.70143</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>統計的方法論開発（MRにおける外れ値検出のための過分散修正アルゴリズム）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>メンデルランダム化（MR）における不均質性統計量の過分散を推定インフレーション係数で修正し、多効性（pleiotropy）を示す外れ値SNPを正確に除去する新手法を提案。MRの妥当性評価を大幅に改善する。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>MR解析では遺伝的操作変数（SNPs）の多効性（直接効果）が推定バイアスを引き起こす。既存の外れ値検出法（MR-Egger、MR-PRESSO等）では不均質性統計量が過分散となり偽陽性外れ値が増加する問題があった。本手法はインフレーション係数（inflation factor）を推定して過分散を補正することで、一変量・多変量MRにおける外れ値SNPの検出精度と多効性補正の精度を向上させる。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>GWASサマリーデータを用いた二標本MRは老年疫学・健康寿命研究で急速に普及しているが、外れ値SNPの不適切な処理は因果推定を歪める。本手法は既存MRソフトウェアへの組み込みが容易であり、実際の研究での即時活用が期待される。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>シミュレーション研究による検証とUK Biobankデータへの実適用が示されており、方法論的信頼性は高い。既存手法との比較評価も十分に行われている。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>インフレーション係数の推定精度がSNP数に依存するため、弱い操作変数が多い状況では性能が低下する可能性がある。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>身体活動・筋肉量・フレイル関連形質のGWASデータを用いたMR研究において、本手法を適用することで多効性バイアスの制御と感度分析の精度を高められる。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>東北メガバンクやBBJ（BioBank Japan）のGWASデータを用いて、筋質指標（CT筋密度など）と健康寿命の間のMR解析に本外れ値検出手法を適用する研究が考えられる。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">メンデルランダム化</span>
+        <span class="tag tag-method">多効性</span>
+        <span class="tag tag-method">GWAS</span>
+        <span class="tag tag-design">統計的方法論</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 8 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">8</div>
+    <div class="card-title-area">
+      <h3>Epigenetic Clocks: Advancing Biological Age Measures Towards Meaningful Clinical Use</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">eBioMedicine (Lancet)</span>
+        <span class="tag tag-year">2026年</span>
+        <span class="tag tag-design">総説</span>
+        <span class="tag tag-method">エピジェネティック時計</span>
+        <span class="tag tag-new">🆕 最新</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Consortium authors / <em>eBioMedicine (The Lancet)</em>（2026年）| DOI: 10.1016/S2352-3964(26)00056-3</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00056-3/fulltext" target="_blank">https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00056-3/fulltext</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>包括的総説（エピジェネティック時計の技術的発展・臨床応用・課題・将来展望）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>Lancet系誌eBioMedicineに掲載された2026年の最新総説。エピジェネティック時計の第1〜3世代の技術的進化を総括し、臨床的意味ある使用に向けた標準化・バリデーション・解釈の課題を整理。生物学的老化測定の実装ロードマップを提示。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>Hannum・Horvath（第1世代）→ PhenoAge・GrimAge（第2世代）→ DunedinPACE・汎哺乳類時計（第3世代）への技術的進化を概説。各世代の予測精度・汎用性・バイアス・組織特異性の比較評価を行う。臨床応用の障壁（コスト・標準化・解釈の複雑さ・性差の過小評価）と今後の研究課題（縦断変化の活用・多民族検証・マルチオミクス統合）を整理。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>エピジェネティック時計が「研究ツール」から「臨床バイオマーカー」へ移行するための条件を明確に定義。性別・民族・組織型による時計推定の差異が臨床応用での解釈を複雑にする問題に初めて体系的に対処した総説として意義深い。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>幅広い文献を包括的にカバーした権威ある総説であるが、一次研究ではないためエビデンスレベルは参照研究に依存する。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>技術の急速な発展により、数年以内に内容が陳腐化する可能性がある。臨床実装への具体的なコスト・便益分析が欠如している。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>健康寿命研究のバイオマーカーとしてエピジェネティック時計を採用する際の手法選択・報告基準の参考文献として不可欠。縦断設計での時計選択（DunedinPACE推奨）の根拠を提供。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>日本人高齢者コホートにおけるDunedinPACEと身体機能（握力・歩行速度・Short Physical Performance Battery）の縦断的関連を検討するパイロット研究。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">エピジェネティック時計</span>
+        <span class="tag tag-method">生物学的老化</span>
+        <span class="tag tag-method">DNAメチル化</span>
+        <span class="tag tag-design">総説</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 9 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">9</div>
+    <div class="card-title-area">
+      <h3>Integrating Artificial Intelligence into Causal Research in Epidemiology</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">Current Epidemiology Reports</span>
+        <span class="tag tag-year">2025年3月</span>
+        <span class="tag tag-design">ナラティブレビュー</span>
+        <span class="tag tag-method">AI・因果推論</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Schuler A et al. / <em>Current Epidemiology Reports</em>（2025年3月）| DOI: 10.1007/s40471-025-00359-5</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://link.springer.com/article/10.1007/s40471-025-00359-5" target="_blank">https://link.springer.com/article/10.1007/s40471-025-00359-5</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>ナラティブレビュー（疫学的因果研究へのAI統合の体系的概観）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>疫学的因果研究にAIを統合するための包括的ロードマップを提示。予測モデル・教師なし学習・因果構造学習・因果推定・生成モデルの5カテゴリにAIツールを整理し、各段階での活用可能性と注意点を論じる。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>AIの疫学因果研究への統合を「（1）予測モデル（交絡因子・傾向スコアの推定）」「（2）教師なし学習（潜在変数・クラスタリング）」「（3）因果構造学習（DAG自動構築）」「（4）因果推定（TMLE・DML等）」「（5）生成モデル（反事実的シナリオ生成）」の5段階で体系化。LLMを用いたDAG補助構築・合成データによる感度分析の拡張など最先端トピックも網羅。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>「AIは予測に強いが因果推論には弱い」という誤解を解消し、AIが因果推論のすべての段階で補助的役割を果たせることを整理。特に因果構造学習とLLMを用いたDAG補助は従来の疫学研究を大幅に効率化する可能性がある。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>急速に発展する分野を網羅的に整理したことは評価できるが、個々のAIツールの性能評価・比較検証は今後の実証研究に委ねられている。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>技術の急速な進歩により陳腐化リスクが高い。実際の疫学研究への応用事例が限られており、実用性の評価が困難。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>LLMを活用したDAG構築補助や、機械学習ベースの傾向スコア推定を健康寿命・身体機能研究に採用する際の理論的根拠として活用できる。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>LLMを用いて身体活動→筋肉量→認知機能→健康寿命のDAGを自動提案させ、専門家レビューと比較する方法論的研究が新規性を持つ。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">AI・因果推論</span>
+        <span class="tag tag-method">LLM</span>
+        <span class="tag tag-method">因果構造学習</span>
+        <span class="tag tag-method">生成モデル</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 10 -->
+<div class="paper-card">
+  <div class="card-header">
+    <div class="rank-badge">10</div>
+    <div class="card-title-area">
+      <h3>Regression Discontinuity Designs in Epidemiology: A Practical Guide</h3>
+      <div class="card-meta">
+        <span class="tag tag-journal">Clinical Epidemiology</span>
+        <span class="tag tag-year">2025年</span>
+        <span class="tag tag-design">方法論解説</span>
+        <span class="tag tag-method">回帰不連続デザイン</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-section">
+      <div class="card-section-title">著者・掲載誌</div>
+      <p>Cattaneo MD et al. / <em>Clinical Epidemiology</em>（2025年）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">原本URL</div>
+      <a class="url-link" href="https://www.tandfonline.com/doi/full/10.2147/CLEP.S552437" target="_blank">https://www.tandfonline.com/doi/full/10.2147/CLEP.S552437</a>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究デザイン</div>
+      <p>方法論的解説論文（回帰不連続デザインの疫学研究への実践的ガイド）</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">一言要約</div>
+      <p>閾値に基づく政策・治療割り付けを自然実験として活用する回帰不連続デザイン（RDD）を疫学者向けに解説。仮定・推定量・感度分析・Rパッケージ（rdrobust等）の実装までを網羅した実践的ガイド。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">研究概要</div>
+      <p>RDDは連続変数の閾値（例：年齢・BMI・検査値の基準値）を境に介入が割り付けられる自然実験的状況を利用し、RCTに近い因果推論を可能にする。シャープRDD（完全な割り付け）とファジーRDD（確率的割り付け）の区別、局所平均処置効果（LATE）の推定、バンド幅選択（Imbens-Kalyanaraman法等）、操作テスト（McCrary検定・共変量バランス検定）を解説。疫学への応用例（スクリーニング閾値・年齢要件のある社会プログラム等）も提示。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">重要な点</div>
+      <p>RDDはIVや差分の差法よりも視覚的に直感的で假定の検証が容易であり、閾値に基づく政策評価に最適。高齢者医療・介護政策（例：要介護認定の点数閾値、健診の基準値）の因果評価に特に適合する。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">方法論評価</div>
+      <p>計量経済学の標準的手法を疫学者向けに平易に解説しており、実装の敷居を下げた貢献は大きい。仮定の検証方法についても詳細な解説がある。</p>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">限界</div>
+      <p>閾値近傍の対象者への外部妥当性（局所的推定）の制限。閾値の操作（manipulation）が発生する状況では適用不可能。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-section">
+        <div class="card-section-title">研究への示唆</div>
+        <p>要介護認定の一次判定スコア閾値（例：要支援1/要支援2の境界点数）を利用したRDDによる早期介護介入の健康アウトカムへの因果効果推定が可能。</p>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">研究アイデア</div>
+        <p>日本の要介護認定スコアの閾値を自然実験として活用し、介護サービス開始の身体機能・健康寿命への因果効果をRDDで推定する研究。</p>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card-section-title">タグ</div>
+      <p>
+        <span class="tag tag-method">回帰不連続デザイン</span>
+        <span class="tag tag-method">自然実験</span>
+        <span class="tag tag-method">準実験</span>
+        <span class="tag tag-design">方法論解説</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Summary Table -->
+<div class="summary-section-title">📋 論文まとめ一覧（10本）</div>
+<table class="summary-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>タイトル（略称）</th>
+      <th>ジャーナル</th>
+      <th>年</th>
+      <th>デザイン</th>
+      <th>主要方法論</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>TARGET Statement（TTE報告ガイドライン）</td>
+      <td>JAMA</td>
+      <td>2025</td>
+      <td>ガイドライン開発</td>
+      <td>ターゲットトライアル模倣</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TTE—統一的因果推論アプローチ</td>
+      <td>JAMA Network Open</td>
+      <td>2025</td>
+      <td>方法論解説</td>
+      <td>TTE・逐次トライアル</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>エピジェネティック時計縦断変化・InCHIANTI（🆕最新）</td>
+      <td>Nature Aging</td>
+      <td>2026</td>
+      <td>縦断コホート(n=699)</td>
+      <td>DNAメチル化・生存解析</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>機械学習×因果推論（疫学）</td>
+      <td>European Journal of Epidemiology</td>
+      <td>2024</td>
+      <td>方法論レビュー</td>
+      <td>TMLE・AIPW・DML</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>観察研究における交絡因子選択の実態（623論文）</td>
+      <td>JAMA Network Open</td>
+      <td>2025</td>
+      <td>横断的方法論監査</td>
+      <td>DAG・因果モデル</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>ケースコントロール研究における因果推論手法</td>
+      <td>American Journal of Epidemiology</td>
+      <td>2025</td>
+      <td>方法論レビュー</td>
+      <td>傾向スコア・二重ロバスト推定</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>メンデルランダム化における外れ値検出</td>
+      <td>Statistics in Medicine</td>
+      <td>2025</td>
+      <td>統計的方法論開発</td>
+      <td>MR・過分散補正</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>エピジェネティック時計の臨床応用（総説）（🆕最新）</td>
+      <td>eBioMedicine (Lancet)</td>
+      <td>2026</td>
+      <td>包括的総説</td>
+      <td>DNAメチル化・バイオマーカー</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>AIを因果研究に統合する</td>
+      <td>Current Epidemiology Reports</td>
+      <td>2025</td>
+      <td>ナラティブレビュー</td>
+      <td>AI・LLM・因果構造学習</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>回帰不連続デザイン：疫学実践ガイド</td>
+      <td>Clinical Epidemiology</td>
+      <td>2025</td>
+      <td>方法論解説</td>
+      <td>RDD・自然実験</td>
+    </tr>
+  </tbody>
+</table>
+
+</div><!-- /container -->
+
+<div class="footer">
+  <p>🔬 疫学方法論 研究レポート | 2026年4月24日（金曜日）| 自動生成レポート</p>
+  <p style="margin-top:6px;">健康寿命・身体機能・筋質・身体活動・認知機能・遺伝子・方法論研究のための文献情報</p>
+</div>
+
+</body>
+</html>

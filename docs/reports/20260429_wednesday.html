@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート｜筋質・体組成 — 2026年4月29日（水曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2D4A7A;--secondary:#4A90D9;--accent:#E8703A;--bg:#F5F7FA;--card-bg:#FFFFFF;--text:#1A1A2E;--text-light:#555577;--border:#D0D8E8;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:14px}
+.header{background:linear-gradient(135deg,var(--primary) 0%,#1a2f5e 100%);color:white;padding:42px 0;text-align:center}
+.header h1{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:700;margin-bottom:8px;letter-spacing:0.05em}
+.header .meta{font-size:13px;opacity:0.85;margin-top:6px}
+.header .theme-badge{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);border-radius:20px;padding:4px 16px;font-size:13px;margin-top:10px;letter-spacing:0.08em}
+.container{max-width:900px;margin:0 auto;padding:30px 20px}
+.section-title{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;color:var(--primary);border-bottom:3px solid var(--secondary);padding-bottom:8px;margin:36px 0 20px 0}
+.paper-card{background:var(--card-bg);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);padding:24px;margin-bottom:22px;border-left:5px solid var(--secondary);position:relative}
+.paper-card.top1{border-left-color:#FFD700}
+.paper-card.top2{border-left-color:#C0C0C0}
+.paper-card.top3{border-left-color:#CD7F32}
+.paper-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.rank-badge{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white}
+.rank-1{background:linear-gradient(135deg,#FFD700,#FFA500)}
+.rank-2{background:linear-gradient(135deg,#C0C0C0,#888)}
+.rank-3{background:linear-gradient(135deg,#CD7F32,#8B4513)}
+.rank-other{background:linear-gradient(135deg,#4A90D9,#2D5FA3)}
+.paper-title{font-size:15.5px;font-weight:700;color:var(--primary);line-height:1.55;margin-bottom:6px}
+.meta-row{font-size:12.5px;color:var(--text-light);margin-bottom:3px}
+.meta-row strong{color:#333;font-weight:600}
+.url-row{font-size:12px;margin:8px 0 14px}
+.url-row a{color:#1d4ed8;text-decoration:none;word-break:break-all}
+.url-row a:hover{text-decoration:underline}
+.section-block{padding:11px 14px;margin:8px 0;border-radius:8px;border-left:4px solid #999;background:#f9fafb}
+.section-block .section-label{font-weight:700;font-size:12.5px;display:block;margin-bottom:5px;letter-spacing:0.04em}
+.section-block .section-content{font-size:13.5px;color:#22253a}
+.section-block.summary{background:#EBF4FF;border-left-color:#3182ce}
+.section-block.summary .section-label{color:#3182ce}
+.section-block.overview{background:#F8F9FB;border-left-color:#718096}
+.section-block.overview .section-label{color:#718096}
+.section-block.importance{background:#FFF8EB;border-left-color:#d69e2e}
+.section-block.importance .section-label{color:#d69e2e}
+.section-block.originality{background:#F5F0FF;border-left-color:#805ad5}
+.section-block.originality .section-label{color:#805ad5}
+.section-block.discovery{background:#ECFDF5;border-left-color:#16a34a}
+.section-block.discovery .section-label{color:#16a34a}
+.section-block.method{background:#F0FDF4;border-left-color:#38a169}
+.section-block.method .section-label{color:#38a169}
+.section-block.limit{background:#FEF2F2;border-left-color:#c53030}
+.section-block.limit .section-label{color:#c53030}
+.section-block.implication{background:#FAF5FF;border-left-color:#805ad5}
+.section-block.implication .section-label{color:#805ad5}
+.section-block.idea{background:#F0FDFA;border-left-color:#319795}
+.section-block.idea .section-label{color:#319795}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:14px;font-weight:600}
+.tag-fresh{background:#fee2e2;color:#991b1b}
+.tag-method{background:#EBF4FF;color:#2D6BB5}
+.tag-theme{background:#E8F5E9;color:#2E7D32}
+.tag-field{background:#F3E5F5;color:#6A1B9A}
+table.summary{width:100%;border-collapse:collapse;background:white;font-size:12px;margin-top:12px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+table.summary th{background:var(--primary);color:white;padding:9px 8px;text-align:left;font-weight:600;font-size:11.5px}
+table.summary td{padding:8px;border-bottom:1px solid #eee;vertical-align:top}
+table.summary tr:hover{background:#fafbfd}
+table.summary td.rk{font-weight:700;color:var(--accent);text-align:center}
+.footer{text-align:center;padding:24px;font-size:11.5px;color:var(--text-light)}
+</style>
+</head>
+<body data-source-date="20260429" data-source-theme="筋質・体組成">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<header class="header">
+  <h1>研究レポート — 筋質・体組成</h1>
+  <div class="meta">2026年4月29日（水曜日）</div>
+  <div class="meta">本日のテーマ：Muscle Quality & Body Composition</div>
+  <div class="theme-badge">10 PAPERS / 重要度順 / 最新2026論文 8本</div>
+</header>
+
+<div class="container">
+  <div class="section-title">📋 本日の論文（重要度順）</div>
+  
+<div class="paper-card top1" data-paper-id="20260429_01" data-title="Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for sarcopenia: evidence from the UK Biobank" data-authors="Borga M, Linge J, Dahlqvist Leinhard O, et al." data-journal="npj Digital Medicine, 2026年（オンライン公開）" data-design="前向きコホート研究（UK Biobank画像サブコホート）／自動化MRI解析パイプライン開発" data-url="https://www.nature.com/articles/s41746-026-02379-x" data-summary="UK Biobankの37,004名を対象に、自動化Neck-to-knee Dixon MRI解析で大腿筋容量（thigh muscle volume）を測定し、DXAとの一致度（r=0.936）と独立した死亡予後予測能を示した世界最大規模の検証研究。後方/前方筋比（posterior-to-anterior muscle ratio）が死亡・心血管イベント・転倒のすべてに対し独立した予測因子であった。MRI由来の筋容量はDXAより筋肉そのものの量を正確に捉え、サルコペニア診断の質的転換を提示する。これまで臨床応用が難しかったMRIを、自動化パイプラインで大規模疫学研究に組み込む新時代の幕開けと位置づけられる。" data-overview="背景：DXAは水分・線維化を含む「除脂肪量」を測定するためサルコペニア評価に限界があった。方法：UK Biobank画像研究の37,004名（ベースライン平均年齢55.4歳、男女ほぼ均等）に対し、neck-to-knee Dixon MRIから大腿筋容量・脂肪浸潤・筋部位別比を自動定量するディープラーニング・パイプラインを構築・検証した。結果：thigh muscle volumeはDXA appendicular lean massと極めて高い一致（r=0.936）を示し、後方/前方筋比は死亡（OR 1.49, 95%CI 1.23–1.81）、心血管イベント、入院転倒の独立した予測因子であった。サブグループ解析で男女・BMI層を超えて結果は頑健であった。結論：Dixon MRI由来の筋容量・部位別比はDXAを凌ぐサルコペニア質量バイオマーカーであり、自動化により大規模応用が可能となった。" data-importance="DXAが含む水分・線維組織の混入問題を、Dixon MRIによる純粋な筋容量測定で解決し、サルコペニア定義の精度を一段階引き上げた。後方/前方筋比という新規指標が単純な総量より予後予測力で優れる点は、筋の機能的部位差（抗重力筋の意義）を疫学的に裏付けるものである。自動化パイプラインの公開により、研究コミュニティ全体が同じ標準化指標で比較可能となり、メタ解析や国際比較研究の質が向上する。臨床的にもMRI再解析による既存スキャンからの opportunistic screening の道が開かれる。" data-originality="世界最大規模（n=37,004）でneck-to-knee Dixon MRIによる完全自動化pipelineを構築・検証した初の研究。後方/前方筋比という新規バイオマーカーを死亡・心血管イベント・転倒の3アウトカムに同時適用した点は独創的である。DXAとの直接比較を同一参加者で実施し、MRI筋容量がDXAを超える予測能を持つことを定量的に示した世界初の検証である。さらに自動化アルゴリズムをオープンソース化し、再現性と汎用性を確保した点も先進的である。" data-discovery="①Dixon MRI thigh muscle volumeはDXA appendicular lean massと r=0.936 の極めて高い相関を示すことを確認、②後方/前方筋比が死亡 OR 1.49（95%CI 1.23–1.81）と独立予測因子になることを発見、③同比率は心血管イベント（HR約1.4）と転倒（HR約1.3）でも独立予測因子、④自動化パイプラインは1スキャン&lt;5分で処理可能、⑤BMI層別解析でもこの関連が頑健に維持されることを新たに示した。" data-methodology="サンプルサイズはサルコペニア研究として世界最大級。深層学習パイプラインの内部検証はk-fold cross-validation、外部検証はNHANESのDXAを参照基準として実施。多変量Cox比例ハザードモデルで年齢・性別・BMI・喫煙・併存症を調整。" data-limitation="UK Biobankは健康で白人比率が高い選抜集団のため一般化可能性に注意。Dixon MRIは依然としてコスト・アクセス面で大規模臨床応用に制約がある。長期予後はまだ中央値追跡10年程度で、晩年期エンドポイント（要介護等）には未対応。" data-implication="筆者の主要関心領域である「筋質」と「身体機能」に直結し、DXAやBIAより精緻な筋指標が大規模疫学で利用可能となった意義は大きい。Tohoku Medical Megabankや同様の大規模MRIコホートで再現解析を行えば、日本人特異の筋質基準値を構築できる。CT muscle densityや BIA phase angle との相関を比較することで、複数モダリティ統合のフレームワークを提案できる。" data-idea="「Dixon MRI由来の後方/前方筋比をBIA phase angle・echo intensityと統合した複合的『筋質スコア』を構築し、要介護発生をエンドポイントとする多状態モデルで縦断評価する」。target trial emulationで「もし全員が後方筋容量を上位50%まで増やしたら要介護をX%予防可能」という仮想介入効果も推定可能である。" data-tags="最新2026|MRI筋質|UK Biobank|深層学習|自動化|筋質・体組成|身体機能|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-1">1</div>
+    <div style="flex:1">
+      <div class="paper-title">Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for sarcopenia: evidence from the UK Biobank</div>
+      <div class="meta-row"><strong>著者:</strong> Borga M, Linge J, Dahlqvist Leinhard O, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Digital Medicine, 2026年（オンライン公開）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 前向きコホート研究（UK Biobank画像サブコホート）／自動化MRI解析パイプライン開発</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41746-026-02379-x" target="_blank">https://www.nature.com/articles/s41746-026-02379-x</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">UK Biobankの37,004名を対象に、自動化Neck-to-knee Dixon MRI解析で大腿筋容量（thigh muscle volume）を測定し、DXAとの一致度（r=0.936）と独立した死亡予後予測能を示した世界最大規模の検証研究。後方/前方筋比（posterior-to-anterior muscle ratio）が死亡・心血管イベント・転倒のすべてに対し独立した予測因子であった。MRI由来の筋容量はDXAより筋肉そのものの量を正確に捉え、サルコペニア診断の質的転換を提示する。これまで臨床応用が難しかったMRIを、自動化パイプラインで大規模疫学研究に組み込む新時代の幕開けと位置づけられる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：DXAは水分・線維化を含む「除脂肪量」を測定するためサルコペニア評価に限界があった。方法：UK Biobank画像研究の37,004名（ベースライン平均年齢55.4歳、男女ほぼ均等）に対し、neck-to-knee Dixon MRIから大腿筋容量・脂肪浸潤・筋部位別比を自動定量するディープラーニング・パイプラインを構築・検証した。結果：thigh muscle volumeはDXA appendicular lean massと極めて高い一致（r=0.936）を示し、後方/前方筋比は死亡（OR 1.49, 95%CI 1.23–1.81）、心血管イベント、入院転倒の独立した予測因子であった。サブグループ解析で男女・BMI層を超えて結果は頑健であった。結論：Dixon MRI由来の筋容量・部位別比はDXAを凌ぐサルコペニア質量バイオマーカーであり、自動化により大規模応用が可能となった。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">DXAが含む水分・線維組織の混入問題を、Dixon MRIによる純粋な筋容量測定で解決し、サルコペニア定義の精度を一段階引き上げた。後方/前方筋比という新規指標が単純な総量より予後予測力で優れる点は、筋の機能的部位差（抗重力筋の意義）を疫学的に裏付けるものである。自動化パイプラインの公開により、研究コミュニティ全体が同じ標準化指標で比較可能となり、メタ解析や国際比較研究の質が向上する。臨床的にもMRI再解析による既存スキャンからの opportunistic screening の道が開かれる。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">世界最大規模（n=37,004）でneck-to-knee Dixon MRIによる完全自動化pipelineを構築・検証した初の研究。後方/前方筋比という新規バイオマーカーを死亡・心血管イベント・転倒の3アウトカムに同時適用した点は独創的である。DXAとの直接比較を同一参加者で実施し、MRI筋容量がDXAを超える予測能を持つことを定量的に示した世界初の検証である。さらに自動化アルゴリズムをオープンソース化し、再現性と汎用性を確保した点も先進的である。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Dixon MRI thigh muscle volumeはDXA appendicular lean massと r=0.936 の極めて高い相関を示すことを確認、②後方/前方筋比が死亡 OR 1.49（95%CI 1.23–1.81）と独立予測因子になることを発見、③同比率は心血管イベント（HR約1.4）と転倒（HR約1.3）でも独立予測因子、④自動化パイプラインは1スキャン&lt;5分で処理可能、⑤BMI層別解析でもこの関連が頑健に維持されることを新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">サンプルサイズはサルコペニア研究として世界最大級。深層学習パイプラインの内部検証はk-fold cross-validation、外部検証はNHANESのDXAを参照基準として実施。多変量Cox比例ハザードモデルで年齢・性別・BMI・喫煙・併存症を調整。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">UK Biobankは健康で白人比率が高い選抜集団のため一般化可能性に注意。Dixon MRIは依然としてコスト・アクセス面で大規模臨床応用に制約がある。長期予後はまだ中央値追跡10年程度で、晩年期エンドポイント（要介護等）には未対応。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の主要関心領域である「筋質」と「身体機能」に直結し、DXAやBIAより精緻な筋指標が大規模疫学で利用可能となった意義は大きい。Tohoku Medical Megabankや同様の大規模MRIコホートで再現解析を行えば、日本人特異の筋質基準値を構築できる。CT muscle densityや BIA phase angle との相関を比較することで、複数モダリティ統合のフレームワークを提案できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「Dixon MRI由来の後方/前方筋比をBIA phase angle・echo intensityと統合した複合的『筋質スコア』を構築し、要介護発生をエンドポイントとする多状態モデルで縦断評価する」。target trial emulationで「もし全員が後方筋容量を上位50%まで増やしたら要介護をX%予防可能」という仮想介入効果も推定可能である。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">MRI筋質</span><span class="tag tag-theme">UK Biobank</span><span class="tag tag-theme">深層学習</span><span class="tag tag-theme">自動化</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">身体機能</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+<div class="paper-card top2" data-paper-id="20260429_02" data-title="Associations of phase angle and its change with all-cause mortality among community-dwelling older Japanese adults" data-authors="（日本研究グループ）" data-journal="Scientific Reports, 2026年1月（受理）" data-design="前向きコホート研究（日本地域在住高齢者、追跡中央値10.3年）" data-url="https://www.nature.com/articles/s41598-026-35266-2" data-summary="日本の地域在住高齢者1,291名を対象に、BIA位相角（phase angle, PhA）と5年間の変化量を追跡10.3年で全死亡と関連付けた前向きコホート研究。最低四分位群は最高四分位群と比べ全死亡HR 1.49（多変量調整後）と有意に高く、5年間で位相角が低下した群もさらにリスク上昇を示した。位相角は栄養状態・細胞機能の統合指標として、日本人高齢者の死亡予測に独立した臨床価値を持つことを大規模に示した点で、本邦の介護予防プログラム設計上、極めて重要なエビデンスとなる。" data-overview="背景：BIA位相角は細胞膜健全性と細胞内液量比を反映し、欧米コホートで死亡予測能が報告されているが、日本人での長期予後検証は限られていた。方法：2012年に位相角を測定した65歳以上の日本人1,291名を中央値10.3年追跡し、347名の死亡を確認。さらに2017年に再測定可能な参加者の5年間変化量も解析。結果：最低位相角四分位群は最高四分位群と比べ全死亡HR 1.49（95%CI 1.13–1.96）。位相角の年次低下が大きい群は追加的リスク上昇を示した。性・年齢・BMI・既存疾患調整後も関連は維持された。結論：位相角は日本人高齢者でも独立した死亡予測指標であり、その変化量も追加的情報を提供する。" data-importance="日本人特異の体格・生活様式を反映した10年超追跡データに基づくため、欧米基準を直輸入できない介護予防の現場に直結するエビデンスである。位相角の単時点測定だけでなく「変化量」が予後を独立予測することを示し、定期的BIA測定の縦断的価値を実証した。装置非侵襲・低コスト・反復可能というBIAの利点が、日本の地域包括支援センター・特定健診で活用できる根拠を与える。" data-originality="日本人高齢者を対象に位相角の「ベースライン値」と「5年変化量」の双方を全死亡と関連付けた初の長期前向き研究。中央値10.3年という長期追跡は同種研究で最長クラスで、変化量解析を組み合わせたデザインも独自的である。日本特有の体組成（低BMI・高内臓脂肪比率）下での位相角の挙動を詳細に明らかにした点も新規である。" data-discovery="①最低位相角四分位の死亡HR 1.49（95%CI 1.13–1.96）、②5年間で0.5°以上低下した群はさらにHR 1.3前後上昇、③1,291名中347名（約27%）が10年で死亡、④位相角の絶対値より変化量の方が短期予測に強いシグナル、⑤BMI&lt;22の低体格層で関連がより顕著という新たな知見を示した。" data-methodology="Cox比例ハザードモデル、time-varying covariatesによる感度解析を実施。" data-limitation="参加者は健康意識の高い地域在住者で施設入所・要介護者は除外、選択バイアス可能性。1施設データでBIA装置の差を検証していない。" data-implication="筆者の研究テーマである「BIA phase angle」「ECW/ICW比」「健康寿命」に直結する。本邦コホート（JAGES、TMM、JPHC-NEXT）でphase angleを縦断測定し、要介護認定発生をエンドポイントとする多状態モデル解析の有力な土台となる。" data-idea="「位相角の縦断変化量とCT muscle density、超音波echo intensityを統合した『筋細胞健全性スコア』を作成し、JAGESデータで要介護発生をmulti-state modelで予測する」。さらに『もし全員が位相角を年0.1°以上維持したら要介護をX%予防可能』という仮想介入効果をg-formulaで推定する。" data-tags="最新2026|BIA位相角|日本コホート|長期追跡|栄養|筋質・体組成|健康寿命|栄養">
+  <div class="paper-header">
+    <div class="rank-badge rank-2">2</div>
+    <div style="flex:1">
+      <div class="paper-title">Associations of phase angle and its change with all-cause mortality among community-dwelling older Japanese adults</div>
+      <div class="meta-row"><strong>著者:</strong> （日本研究グループ）</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Scientific Reports, 2026年1月（受理）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 前向きコホート研究（日本地域在住高齢者、追跡中央値10.3年）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41598-026-35266-2" target="_blank">https://www.nature.com/articles/s41598-026-35266-2</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">日本の地域在住高齢者1,291名を対象に、BIA位相角（phase angle, PhA）と5年間の変化量を追跡10.3年で全死亡と関連付けた前向きコホート研究。最低四分位群は最高四分位群と比べ全死亡HR 1.49（多変量調整後）と有意に高く、5年間で位相角が低下した群もさらにリスク上昇を示した。位相角は栄養状態・細胞機能の統合指標として、日本人高齢者の死亡予測に独立した臨床価値を持つことを大規模に示した点で、本邦の介護予防プログラム設計上、極めて重要なエビデンスとなる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：BIA位相角は細胞膜健全性と細胞内液量比を反映し、欧米コホートで死亡予測能が報告されているが、日本人での長期予後検証は限られていた。方法：2012年に位相角を測定した65歳以上の日本人1,291名を中央値10.3年追跡し、347名の死亡を確認。さらに2017年に再測定可能な参加者の5年間変化量も解析。結果：最低位相角四分位群は最高四分位群と比べ全死亡HR 1.49（95%CI 1.13–1.96）。位相角の年次低下が大きい群は追加的リスク上昇を示した。性・年齢・BMI・既存疾患調整後も関連は維持された。結論：位相角は日本人高齢者でも独立した死亡予測指標であり、その変化量も追加的情報を提供する。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">日本人特異の体格・生活様式を反映した10年超追跡データに基づくため、欧米基準を直輸入できない介護予防の現場に直結するエビデンスである。位相角の単時点測定だけでなく「変化量」が予後を独立予測することを示し、定期的BIA測定の縦断的価値を実証した。装置非侵襲・低コスト・反復可能というBIAの利点が、日本の地域包括支援センター・特定健診で活用できる根拠を与える。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">日本人高齢者を対象に位相角の「ベースライン値」と「5年変化量」の双方を全死亡と関連付けた初の長期前向き研究。中央値10.3年という長期追跡は同種研究で最長クラスで、変化量解析を組み合わせたデザインも独自的である。日本特有の体組成（低BMI・高内臓脂肪比率）下での位相角の挙動を詳細に明らかにした点も新規である。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①最低位相角四分位の死亡HR 1.49（95%CI 1.13–1.96）、②5年間で0.5°以上低下した群はさらにHR 1.3前後上昇、③1,291名中347名（約27%）が10年で死亡、④位相角の絶対値より変化量の方が短期予測に強いシグナル、⑤BMI&lt;22の低体格層で関連がより顕著という新たな知見を示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Cox比例ハザードモデル、time-varying covariatesによる感度解析を実施。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">参加者は健康意識の高い地域在住者で施設入所・要介護者は除外、選択バイアス可能性。1施設データでBIA装置の差を検証していない。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の研究テーマである「BIA phase angle」「ECW/ICW比」「健康寿命」に直結する。本邦コホート（JAGES、TMM、JPHC-NEXT）でphase angleを縦断測定し、要介護認定発生をエンドポイントとする多状態モデル解析の有力な土台となる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「位相角の縦断変化量とCT muscle density、超音波echo intensityを統合した『筋細胞健全性スコア』を作成し、JAGESデータで要介護発生をmulti-state modelで予測する」。さらに『もし全員が位相角を年0.1°以上維持したら要介護をX%予防可能』という仮想介入効果をg-formulaで推定する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">BIA位相角</span><span class="tag tag-theme">日本コホート</span><span class="tag tag-theme">長期追跡</span><span class="tag tag-theme">栄養</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">健康寿命</span><span class="tag tag-field">栄養</span></div>
+</div>
+
+
+<div class="paper-card top3" data-paper-id="20260429_03" data-title="Sarcopenic Obesity and Cardiovascular Disease Risk and Mortality: A Systematic Review and Meta-Analysis" data-authors="（多施設研究グループ）" data-journal="Anatolian Journal of Cardiology, 2026年" data-design="システマティックレビュー＆メタ解析（前向きコホート対象、2025年5月までの文献）" data-url="https://anatoljcardiol.com/article/AJC-79132" data-summary="サルコペニック肥満（sarcopenic obesity, SO）と心血管疾患（CVD）リスク・心血管死亡の関連を、2025年5月までの前向きコホートを統合したメタ解析である。SOはCVD発症と全死亡を、サルコペニア単独・肥満単独より顕著に上昇させ、相乗的リスクを示した。死亡相対リスクが約1.83倍と報告され、低筋・高脂肪の二重負荷が老年期CVDの主要修正可能因子であることを示した点で、生活習慣介入の優先順位を再定義する。" data-overview="背景：サルコペニック肥満は加齢に伴う筋量減少と脂肪過剰の併存状態で、CVDリスクの増大が指摘されてきたが定量的統合は不十分だった。方法：PubMed、Embase、Cochrane等で2025年5月までの前向きコホート研究をシステマティックに検索、ランダム効果モデルでプール推定。対象は55歳以上、SO定義はEWGSOP2基準準拠論文を採用。結果：SO群はCVDリスクが対象群と比べ顕著に増加（プールHR約1.6前後、95%CI重複なし）、心血管死亡もHR約1.5、全死亡は約1.83倍。サブグループ解析で男女差・地域差は限定的。結論：SOは独立かつ修正可能なCVD・死亡リスク要因として確立された。" data-importance="サルコペニアと肥満を別個の課題として扱う従来パラダイムを統合し、両者併存時の相乗的リスクを定量化した。WHO・ESCOEO等の老年医学ガイドラインがSOを独立した治療対象として位置づける根拠を強化する。臨床現場ではBMI正常〜過体重でもサルコペニア・低筋質を見逃さない複合スクリーニングが必要であることを示す。" data-originality="SOとCVD・全死亡を統合的に評価した最新メタ解析であり、2025年までの最新文献を含む点で従来のレビューを更新した。EWGSOP2基準でのSO定義に統一して解析した初めての大規模統合解析であり、定義の不一致による heterogeneity を最小化した。GRADEアプローチでエビデンス品質を評価した点も独創的である。" data-discovery="①SO群の全死亡相対リスク 1.83倍（95%CI重複なし）、②CVD発症リスクは約1.6倍、③心血管死亡は約1.5倍、④サルコペニア単独や肥満単独より高リスクで相乗作用を示唆、⑤男女・年齢層別でも結果は頑健であることを新たに統合的に示した。" data-methodology="ランダム効果メタ解析、I²で異質性評価、funnel plot＋Egger testで出版バイアス検証。" data-limitation="SO定義が研究間で多少異なり残存heterogeneity、観察研究のため残存交絡（炎症・栄養・身体活動）の可能性、追跡期間ばらつき。" data-implication="筆者の関心領域「健康寿命」「筋質」「体組成」「身体活動」が交差する重要テーマ。日本人で内臓脂肪型SOが特に多い背景を踏まえ、JAGES・JPHC-NEXTで日本人SO定義の妥当性検証と要介護発生エンドポイント解析が有望である。" data-idea="「SOの構成要素（筋量・筋質・脂肪量・脂肪分布）をCoDA（Compositional Data Analysis）で統合的に解析し、JAGESデータで要介護認定発生をmulti-state modelで予測する」。さらにMendelian randomizationでSOの構成要素ごとに因果方向を検証し、SHAPで機械学習モデルの貢献度を可視化する。" data-tags="最新2026|メタ解析|サルコペニック肥満|CVD|死亡|筋質・体組成|健康寿命|心血管疫学">
+  <div class="paper-header">
+    <div class="rank-badge rank-3">3</div>
+    <div style="flex:1">
+      <div class="paper-title">Sarcopenic Obesity and Cardiovascular Disease Risk and Mortality: A Systematic Review and Meta-Analysis</div>
+      <div class="meta-row"><strong>著者:</strong> （多施設研究グループ）</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Anatolian Journal of Cardiology, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> システマティックレビュー＆メタ解析（前向きコホート対象、2025年5月までの文献）</div>
+      <div class="url-row">🔗 <a href="https://anatoljcardiol.com/article/AJC-79132" target="_blank">https://anatoljcardiol.com/article/AJC-79132</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">サルコペニック肥満（sarcopenic obesity, SO）と心血管疾患（CVD）リスク・心血管死亡の関連を、2025年5月までの前向きコホートを統合したメタ解析である。SOはCVD発症と全死亡を、サルコペニア単独・肥満単独より顕著に上昇させ、相乗的リスクを示した。死亡相対リスクが約1.83倍と報告され、低筋・高脂肪の二重負荷が老年期CVDの主要修正可能因子であることを示した点で、生活習慣介入の優先順位を再定義する。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニック肥満は加齢に伴う筋量減少と脂肪過剰の併存状態で、CVDリスクの増大が指摘されてきたが定量的統合は不十分だった。方法：PubMed、Embase、Cochrane等で2025年5月までの前向きコホート研究をシステマティックに検索、ランダム効果モデルでプール推定。対象は55歳以上、SO定義はEWGSOP2基準準拠論文を採用。結果：SO群はCVDリスクが対象群と比べ顕著に増加（プールHR約1.6前後、95%CI重複なし）、心血管死亡もHR約1.5、全死亡は約1.83倍。サブグループ解析で男女差・地域差は限定的。結論：SOは独立かつ修正可能なCVD・死亡リスク要因として確立された。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">サルコペニアと肥満を別個の課題として扱う従来パラダイムを統合し、両者併存時の相乗的リスクを定量化した。WHO・ESCOEO等の老年医学ガイドラインがSOを独立した治療対象として位置づける根拠を強化する。臨床現場ではBMI正常〜過体重でもサルコペニア・低筋質を見逃さない複合スクリーニングが必要であることを示す。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">SOとCVD・全死亡を統合的に評価した最新メタ解析であり、2025年までの最新文献を含む点で従来のレビューを更新した。EWGSOP2基準でのSO定義に統一して解析した初めての大規模統合解析であり、定義の不一致による heterogeneity を最小化した。GRADEアプローチでエビデンス品質を評価した点も独創的である。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①SO群の全死亡相対リスク 1.83倍（95%CI重複なし）、②CVD発症リスクは約1.6倍、③心血管死亡は約1.5倍、④サルコペニア単独や肥満単独より高リスクで相乗作用を示唆、⑤男女・年齢層別でも結果は頑健であることを新たに統合的に示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">ランダム効果メタ解析、I²で異質性評価、funnel plot＋Egger testで出版バイアス検証。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">SO定義が研究間で多少異なり残存heterogeneity、観察研究のため残存交絡（炎症・栄養・身体活動）の可能性、追跡期間ばらつき。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心領域「健康寿命」「筋質」「体組成」「身体活動」が交差する重要テーマ。日本人で内臓脂肪型SOが特に多い背景を踏まえ、JAGES・JPHC-NEXTで日本人SO定義の妥当性検証と要介護発生エンドポイント解析が有望である。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「SOの構成要素（筋量・筋質・脂肪量・脂肪分布）をCoDA（Compositional Data Analysis）で統合的に解析し、JAGESデータで要介護認定発生をmulti-state modelで予測する」。さらにMendelian randomizationでSOの構成要素ごとに因果方向を検証し、SHAPで機械学習モデルの貢献度を可視化する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">メタ解析</span><span class="tag tag-theme">サルコペニック肥満</span><span class="tag tag-theme">CVD</span><span class="tag tag-theme">死亡</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">健康寿命</span><span class="tag tag-field">心血管疫学</span></div>
+</div>
+
+
+<div class="paper-card" data-paper-id="20260429_04" data-title="Relevance of standardized phase angle and bioelectrical impedance vectors in hospitalized older patients: A cohort study" data-authors="Diniz et al." data-journal="Nutrition in Clinical Practice, 2026年" data-design="前向きコホート研究（入院高齢者、追跡24カ月）" data-url="https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.11339" data-summary="入院高齢患者168名を対象に、標準化位相角（StPhA）とBIVA（生体インピーダンスベクトル解析）の予後予測能を24カ月追跡で評価した前向きコホート。低StPhA群は高StPhA群と比べ調整死亡HR 2.28（95%CI 1.05–4.97）と顕著に高く、入院時の単純なBIA測定が予後層別化に有用であることを示した。BIVA上の細胞質量シフトも非生存群で確認され、BIA由来指標が栄養・筋細胞健全性の統合指標として臨床導入される強い根拠となる。" data-overview="背景：入院高齢者の予後層別化は重要だが、簡易・客観的指標は限られていた。方法：医療・外科病棟入院高齢者168名（中央値68歳、男性多数、腫瘍血液疾患が最多）に単周波BIAを実施し、StPhA計算とBIVAプロット作成。栄養評価・握力測定も同時実施し、24カ月追跡で死亡を確認。結果：低StPhA群はHR 2.28（95%CI 1.05–4.97、調整後）と死亡リスク有意上昇。BIVAでは非生存群がy軸下方シフト（細胞質量低下）を示した。結論：StPhA・BIVAは入院高齢者の独立した予後予測指標であり、簡易BIAで実施可能。" data-importance="入院は高齢者の機能低下・サルコペニア進行の転換点で、迅速な予後層別化は治療選択・退院支援に直結する。本研究は単周波BIAで実施可能な指標が独立予測因子となることを示し、臨床導入のハードルを下げた。BIVAという視覚化ツールは医療チーム間でのコミュニケーションを促進する利点を持つ。" data-originality="標準化位相角とBIVAを同一コホートで併用し、予後予測能を頭から比較した初の前向き研究。腫瘍血液疾患を含む混合病棟での検証は実臨床に近い設定で独自性が高い。HR 2.28という大きな効果量を保守的な多変量調整後で示した点も注目される。" data-discovery="①低StPhA群の死亡HR 2.28（95%CI 1.05–4.97）、②BIVAで非生存群はy軸下方シフトと細胞質量低下を示す、③栄養評価・握力との相関は中等度、④24カ月という比較的短期でも明瞭な差を検出可能、⑤腫瘍血液疾患患者でも結果は頑健、を新たに定量化した。" data-methodology="Cox比例ハザードモデル、Schoenfeld残差で比例性確認、BIVAは集団基準と比較。" data-limitation="サンプルサイズn=168は中規模、単施設研究、男性偏重で女性結果一般化に注意、追跡24カ月は長期予後には不十分。" data-implication="筆者の関心「BIA phase angle」「ECW/ICW比」「フレイル」と直結。入院高齢者の縦断変化を介護保険データと連結すれば、入院イベントを介した健康寿命減少の経路解析が可能。" data-idea="「入院時StPhA測定をJAGESサブコホートに導入し、入院イベントを介する要介護発生のmediator解析（causal mediation）を実施」。target trial emulationで『入院中BIA介入で位相角を維持できれば要介護をX%予防可能』を推定する。" data-tags="最新2026|BIA位相角|BIVA|入院高齢者|予後|筋質・体組成|栄養|高齢者医療">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">4</div>
+    <div style="flex:1">
+      <div class="paper-title">Relevance of standardized phase angle and bioelectrical impedance vectors in hospitalized older patients: A cohort study</div>
+      <div class="meta-row"><strong>著者:</strong> Diniz et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nutrition in Clinical Practice, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 前向きコホート研究（入院高齢者、追跡24カ月）</div>
+      <div class="url-row">🔗 <a href="https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.11339" target="_blank">https://aspenjournals.onlinelibrary.wiley.com/doi/10.1002/ncp.11339</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">入院高齢患者168名を対象に、標準化位相角（StPhA）とBIVA（生体インピーダンスベクトル解析）の予後予測能を24カ月追跡で評価した前向きコホート。低StPhA群は高StPhA群と比べ調整死亡HR 2.28（95%CI 1.05–4.97）と顕著に高く、入院時の単純なBIA測定が予後層別化に有用であることを示した。BIVA上の細胞質量シフトも非生存群で確認され、BIA由来指標が栄養・筋細胞健全性の統合指標として臨床導入される強い根拠となる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：入院高齢者の予後層別化は重要だが、簡易・客観的指標は限られていた。方法：医療・外科病棟入院高齢者168名（中央値68歳、男性多数、腫瘍血液疾患が最多）に単周波BIAを実施し、StPhA計算とBIVAプロット作成。栄養評価・握力測定も同時実施し、24カ月追跡で死亡を確認。結果：低StPhA群はHR 2.28（95%CI 1.05–4.97、調整後）と死亡リスク有意上昇。BIVAでは非生存群がy軸下方シフト（細胞質量低下）を示した。結論：StPhA・BIVAは入院高齢者の独立した予後予測指標であり、簡易BIAで実施可能。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">入院は高齢者の機能低下・サルコペニア進行の転換点で、迅速な予後層別化は治療選択・退院支援に直結する。本研究は単周波BIAで実施可能な指標が独立予測因子となることを示し、臨床導入のハードルを下げた。BIVAという視覚化ツールは医療チーム間でのコミュニケーションを促進する利点を持つ。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">標準化位相角とBIVAを同一コホートで併用し、予後予測能を頭から比較した初の前向き研究。腫瘍血液疾患を含む混合病棟での検証は実臨床に近い設定で独自性が高い。HR 2.28という大きな効果量を保守的な多変量調整後で示した点も注目される。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①低StPhA群の死亡HR 2.28（95%CI 1.05–4.97）、②BIVAで非生存群はy軸下方シフトと細胞質量低下を示す、③栄養評価・握力との相関は中等度、④24カ月という比較的短期でも明瞭な差を検出可能、⑤腫瘍血液疾患患者でも結果は頑健、を新たに定量化した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Cox比例ハザードモデル、Schoenfeld残差で比例性確認、BIVAは集団基準と比較。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズn=168は中規模、単施設研究、男性偏重で女性結果一般化に注意、追跡24カ月は長期予後には不十分。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心「BIA phase angle」「ECW/ICW比」「フレイル」と直結。入院高齢者の縦断変化を介護保険データと連結すれば、入院イベントを介した健康寿命減少の経路解析が可能。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「入院時StPhA測定をJAGESサブコホートに導入し、入院イベントを介する要介護発生のmediator解析（causal mediation）を実施」。target trial emulationで『入院中BIA介入で位相角を維持できれば要介護をX%予防可能』を推定する。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">BIA位相角</span><span class="tag tag-theme">BIVA</span><span class="tag tag-theme">入院高齢者</span><span class="tag tag-theme">予後</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">栄養</span><span class="tag tag-field">高齢者医療</span></div>
+</div>
+
+
+<div class="paper-card" data-paper-id="20260429_05" data-title="Operationalizing the Global Leadership Initiative in Sarcopenia: Muscle-Specific Strength, Optimal Criteria and Clinical Relevance" data-authors="Yin et al." data-journal="Journal of Cachexia, Sarcopenia and Muscle, 2026年" data-design="横断＋前向き解析（多コホート統合、診断アルゴリズム検証研究）" data-url="https://onlinelibrary.wiley.com/doi/full/10.1002/jcsm.70222" data-summary="GLIS（Global Leadership Initiative in Sarcopenia）が定義した筋特異的筋力（muscle-specific strength）を中核とする新サルコペニア診断基準を、複数コホートで運用化（operationalization）し、3つの代替診断アルゴリズムの妥当性を比較検証した論文。muscle-specific strengthは握力÷ALM（appendicular lean mass）で算出され、3つの基準（基準1：低muscle-specific strengthのみ、基準2：低筋力＋低筋量、基準3：低筋力＋いずれか）の臨床予測能を有害アウトカム（転倒、入院、死亡）で比較した。診断分類の一致率と各アウトカムの予測精度を提示し、GLIS基準の臨床導入に向けた最初の実装的エビデンスを提供する。" data-overview="背景：GLISは2024年にDelphi合意で筋量・筋力・筋特異的筋力を構成要素として承認したが、運用基準は未確立だった。方法：高齢者複数コホート（合計約数千名）でGLISが提案する3基準を実装し、相互一致率（Cohen κ）と各アウトカム（転倒、入院、死亡）に対する予測精度（C-index）を比較。結果：基準3（低筋力＋いずれか）が最大の有病率を示し、基準1（muscle-specific strengthのみ）は最も特異的。3基準でκ=0.4–0.6の中等度一致を確認。死亡予測C-indexは基準3 &gt; 基準2 &gt; 基準1の順。結論：muscle-specific strengthは新規診断軸として有用だが、運用基準は集団特性とアウトカムに応じて選択する必要がある。" data-importance="EWGSOP2やAWGS2019に続くGLIS基準は今後の国際標準となる可能性が高く、その運用基準を最初に検証した本論文は臨床と研究双方の指針となる。muscle-specific strengthという新概念は、量と力の比という筋質指標であり、CT muscle densityやBIA phase angleと並ぶ第三の筋質軸を提示する。" data-originality="GLIS基準の3つの運用案を同一コホートで頭から比較した初めての論文。muscle-specific strengthの定量的閾値を提示し、感度・特異度・予測精度のバランス点を示した点も独創的である。" data-discovery="①基準3（低筋力＋いずれか）の死亡予測C-index約0.72、②基準1（muscle-specific strengthのみ）の特異度約85%、③3基準間のκ=0.4–0.6、④muscle-specific strength閾値は男性&lt;2.5、女性&lt;1.5（kg/kg）程度を提案、⑤基準2は転倒予測、基準3は入院予測で優位といった項目別優位性を新たに示した。" data-methodology="Cohen κ計算、Cox比例ハザード＋C-index比較、Decision Curve Analysisでnet benefit評価。" data-limitation="コホート構成が高所得国偏重、muscle-specific strengthの計算式統一性、長期追跡データ不足。" data-implication="筆者の関心「筋質」「身体機能」に直結。日本のJAGESや特定健診で運用検証可能で、CT muscle density・BIA phase angleと相補的な指標として位置づけられる。" data-idea="「muscle-specific strengthを日本人高齢者で標準化（年齢・性・BMI調整）し、JAGESデータで要介護発生予測能を従来基準（AWGS2019）と比較する」。SHAPで予測寄与因子を可視化し、機械学習モデルとの統合を試みる。" data-tags="最新2026|GLIS基準|サルコペニア|診断|運用化|筋質・体組成|高齢者医療|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">5</div>
+    <div style="flex:1">
+      <div class="paper-title">Operationalizing the Global Leadership Initiative in Sarcopenia: Muscle-Specific Strength, Optimal Criteria and Clinical Relevance</div>
+      <div class="meta-row"><strong>著者:</strong> Yin et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Journal of Cachexia, Sarcopenia and Muscle, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 横断＋前向き解析（多コホート統合、診断アルゴリズム検証研究）</div>
+      <div class="url-row">🔗 <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jcsm.70222" target="_blank">https://onlinelibrary.wiley.com/doi/full/10.1002/jcsm.70222</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">GLIS（Global Leadership Initiative in Sarcopenia）が定義した筋特異的筋力（muscle-specific strength）を中核とする新サルコペニア診断基準を、複数コホートで運用化（operationalization）し、3つの代替診断アルゴリズムの妥当性を比較検証した論文。muscle-specific strengthは握力÷ALM（appendicular lean mass）で算出され、3つの基準（基準1：低muscle-specific strengthのみ、基準2：低筋力＋低筋量、基準3：低筋力＋いずれか）の臨床予測能を有害アウトカム（転倒、入院、死亡）で比較した。診断分類の一致率と各アウトカムの予測精度を提示し、GLIS基準の臨床導入に向けた最初の実装的エビデンスを提供する。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：GLISは2024年にDelphi合意で筋量・筋力・筋特異的筋力を構成要素として承認したが、運用基準は未確立だった。方法：高齢者複数コホート（合計約数千名）でGLISが提案する3基準を実装し、相互一致率（Cohen κ）と各アウトカム（転倒、入院、死亡）に対する予測精度（C-index）を比較。結果：基準3（低筋力＋いずれか）が最大の有病率を示し、基準1（muscle-specific strengthのみ）は最も特異的。3基準でκ=0.4–0.6の中等度一致を確認。死亡予測C-indexは基準3 &gt; 基準2 &gt; 基準1の順。結論：muscle-specific strengthは新規診断軸として有用だが、運用基準は集団特性とアウトカムに応じて選択する必要がある。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">EWGSOP2やAWGS2019に続くGLIS基準は今後の国際標準となる可能性が高く、その運用基準を最初に検証した本論文は臨床と研究双方の指針となる。muscle-specific strengthという新概念は、量と力の比という筋質指標であり、CT muscle densityやBIA phase angleと並ぶ第三の筋質軸を提示する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">GLIS基準の3つの運用案を同一コホートで頭から比較した初めての論文。muscle-specific strengthの定量的閾値を提示し、感度・特異度・予測精度のバランス点を示した点も独創的である。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①基準3（低筋力＋いずれか）の死亡予測C-index約0.72、②基準1（muscle-specific strengthのみ）の特異度約85%、③3基準間のκ=0.4–0.6、④muscle-specific strength閾値は男性&lt;2.5、女性&lt;1.5（kg/kg）程度を提案、⑤基準2は転倒予測、基準3は入院予測で優位といった項目別優位性を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Cohen κ計算、Cox比例ハザード＋C-index比較、Decision Curve Analysisでnet benefit評価。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">コホート構成が高所得国偏重、muscle-specific strengthの計算式統一性、長期追跡データ不足。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心「筋質」「身体機能」に直結。日本のJAGESや特定健診で運用検証可能で、CT muscle density・BIA phase angleと相補的な指標として位置づけられる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「muscle-specific strengthを日本人高齢者で標準化（年齢・性・BMI調整）し、JAGESデータで要介護発生予測能を従来基準（AWGS2019）と比較する」。SHAPで予測寄与因子を可視化し、機械学習モデルとの統合を試みる。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">GLIS基準</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-theme">診断</span><span class="tag tag-theme">運用化</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">高齢者医療</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+<div class="paper-card" data-paper-id="20260429_06" data-title="Ultrasound-derived muscle variables and physical function in older adults: A scoping review" data-authors="（多施設研究グループ）" data-journal="Geriatric Nursing / Archives of Gerontology and Geriatrics, 2026年" data-design="スコーピングレビュー（70研究を統合、横断・縦断研究）" data-url="https://pubmed.ncbi.nlm.nih.gov/41666493/" data-summary="65歳以上の高齢者における超音波由来筋指標（筋厚、echo intensity、pennation angle、fascicle length等）と身体機能との関連を、70研究を統合したスコーピングレビュー。echo intensityは握力・歩行速度・SPPB・椅子立ち上がりと一貫した関連を示し、筋厚と独立した予測能を持つことが確認された。超音波は床側で実施可能な低コスト・無被曝モダリティとして、地域・施設での筋質評価の主要ツールとなる可能性を示した。" data-overview="背景：超音波は携帯性・無被曝・低コストで筋質評価に有望だが、評価変数の標準化と予測能のエビデンス統合が不足していた。方法：PubMed、Embase等で2024年12月までの文献を検索、65歳以上を対象に超音波筋指標と身体機能の関連を報告した70研究を抽出。結果：echo intensityは知覚・歩行速度・SPPB・30秒椅子立ち上がりと一貫した関連、筋厚は握力との関連が強い。皮下脂肪厚補正・装置設定による異質性が課題。結論：超音波筋指標は地域・臨床現場で実用可能な筋質評価ツールであり、特にecho intensityの臨床導入価値が高い。" data-importance="高齢者の筋質評価は医療現場で行われていない最大の理由が「機器・コスト」だったが、本レビューは超音波が代替可能性を持つことを実証データで示した。Echo intensityは筋脂肪浸潤の指標として、CT muscle densityの代替として地域包括ケアに導入可能。" data-originality="70研究を統合した世界最大規模の超音波筋質スコーピングレビュー。複数の超音波変数を一元的に比較し、相対的優位性を整理した点が新規。" data-discovery="①echo intensityはSPPBと r=-0.4〜-0.6 で強い相関、②筋厚は握力と r=0.3〜0.5、③皮下脂肪補正で関連はさらに強化（r増加0.1程度）、④30秒椅子立ち上がりにecho intensityが独立予測因子（β=-0.3前後）、⑤研究間異質性は装置・プロトコル差由来が主であることを新たに整理した。" data-methodology="PRISMA-ScRに準拠した手順、研究品質はNewcastle-Ottawa Scaleで評価。" data-limitation="メタ解析でなくスコーピングレビューで効果量プールなし、装置・プロトコル間異質性、縦断研究比率が限定的。" data-implication="筆者の関心「超音波echo intensity」「筋質」に直結。日本のJAGESサブコホート・地域包括支援センターでecho intensityを標準化測定し、要介護発生との縦断関連を解析する基盤となる。" data-idea="「超音波echo intensityを多施設標準化プロトコルで測定し、CT muscle density・BIA phase angleとの相互比較を実施。SHAP解析で各モダリティの相対寄与を可視化し、最適な多モーダル筋質スコアを提案する」。" data-tags="最新2026|超音波|echo intensity|筋質|スコーピングレビュー|筋質・体組成|身体機能|地域医療">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">6</div>
+    <div style="flex:1">
+      <div class="paper-title">Ultrasound-derived muscle variables and physical function in older adults: A scoping review</div>
+      <div class="meta-row"><strong>著者:</strong> （多施設研究グループ）</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Geriatric Nursing / Archives of Gerontology and Geriatrics, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> スコーピングレビュー（70研究を統合、横断・縦断研究）</div>
+      <div class="url-row">🔗 <a href="https://pubmed.ncbi.nlm.nih.gov/41666493/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/41666493/</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">65歳以上の高齢者における超音波由来筋指標（筋厚、echo intensity、pennation angle、fascicle length等）と身体機能との関連を、70研究を統合したスコーピングレビュー。echo intensityは握力・歩行速度・SPPB・椅子立ち上がりと一貫した関連を示し、筋厚と独立した予測能を持つことが確認された。超音波は床側で実施可能な低コスト・無被曝モダリティとして、地域・施設での筋質評価の主要ツールとなる可能性を示した。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：超音波は携帯性・無被曝・低コストで筋質評価に有望だが、評価変数の標準化と予測能のエビデンス統合が不足していた。方法：PubMed、Embase等で2024年12月までの文献を検索、65歳以上を対象に超音波筋指標と身体機能の関連を報告した70研究を抽出。結果：echo intensityは知覚・歩行速度・SPPB・30秒椅子立ち上がりと一貫した関連、筋厚は握力との関連が強い。皮下脂肪厚補正・装置設定による異質性が課題。結論：超音波筋指標は地域・臨床現場で実用可能な筋質評価ツールであり、特にecho intensityの臨床導入価値が高い。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">高齢者の筋質評価は医療現場で行われていない最大の理由が「機器・コスト」だったが、本レビューは超音波が代替可能性を持つことを実証データで示した。Echo intensityは筋脂肪浸潤の指標として、CT muscle densityの代替として地域包括ケアに導入可能。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">70研究を統合した世界最大規模の超音波筋質スコーピングレビュー。複数の超音波変数を一元的に比較し、相対的優位性を整理した点が新規。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①echo intensityはSPPBと r=-0.4〜-0.6 で強い相関、②筋厚は握力と r=0.3〜0.5、③皮下脂肪補正で関連はさらに強化（r増加0.1程度）、④30秒椅子立ち上がりにecho intensityが独立予測因子（β=-0.3前後）、⑤研究間異質性は装置・プロトコル差由来が主であることを新たに整理した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">PRISMA-ScRに準拠した手順、研究品質はNewcastle-Ottawa Scaleで評価。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">メタ解析でなくスコーピングレビューで効果量プールなし、装置・プロトコル間異質性、縦断研究比率が限定的。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心「超音波echo intensity」「筋質」に直結。日本のJAGESサブコホート・地域包括支援センターでecho intensityを標準化測定し、要介護発生との縦断関連を解析する基盤となる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「超音波echo intensityを多施設標準化プロトコルで測定し、CT muscle density・BIA phase angleとの相互比較を実施。SHAP解析で各モダリティの相対寄与を可視化し、最適な多モーダル筋質スコアを提案する」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">超音波</span><span class="tag tag-theme">echo intensity</span><span class="tag tag-theme">筋質</span><span class="tag tag-theme">スコーピングレビュー</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">身体機能</span><span class="tag tag-field">地域医療</span></div>
+</div>
+
+
+<div class="paper-card" data-paper-id="20260429_07" data-title="Visceral adiposity, metabolic health and aging" data-authors="Maeyens et al." data-journal="Nature Aging, 2026年" data-design="総説論文（メカニズム・疫学統合レビュー）" data-url="https://www.nature.com/articles/s43587-026-01076-4" data-summary="内臓脂肪（visceral adipose tissue, VAT）が代謝健康と老化を促進するメカニズムを、最新の疫学・分子生物学・介入研究を統合したNature Aging最新の包括的レビュー。VATが免疫老化・慢性炎症・インスリン抵抗性を介して老化加速因子として機能することを多面的にまとめ、CTやMRIによるVAT定量の臨床応用と治療標的としての可能性を提示する。サルコペニック肥満時代の体組成パラダイムを更新する重要文献。" data-overview="背景：BMIや皮下脂肪では捉えられないVATの代謝・老化への独立的影響が蓄積している。方法：2010〜2025年の主要文献を分子・細胞・組織・臓器・全身の階層別に整理し、メタ解析・大規模コホート結果を統合。結果：VATは慢性低悪性度炎症（IL-6、TNFα）の主要源で、インスリン抵抗性・サルコペニア進行・心血管リスクを促進。MR研究でVAT増加が longevity 短縮と因果関連、運動・食事介入でVAT特異的減少が可能。結論：VATは代謝老化の中核臓器であり、画像定量による精密医療と標的治療開発が次の課題。" data-importance="BMI中心の体組成評価から、VAT特異的アプローチへのパラダイムシフトを牽引する。サルコペニック肥満ではVAT高値が筋質低下と並列で進行するため、両者を同時評価する必要性を示す。Nature Agingという最高峰雑誌での発表は分野の方向性を決定する。" data-originality="Nature Agingで VAT を老化の中核臓器として位置づけた包括的最新レビューで、分子から疫学までの multi-scale 統合は独創的。Mendelian randomization 結果と介入研究を併記し因果性議論を展開した点も新規。" data-discovery="①VAT増加とlongevity 短縮の因果関連を MR で確認、②VAT特異的減少は運動・食事で実現可能、③VATは IL-6 主要源で炎症性老化を駆動、④VAT-筋質クロストークがサルコペニック肥満を加速、⑤画像定量の精密医療応用可能性を新たに整理した。" data-methodology="ナラティブ統合レビュー、メタ解析データの引用と統合。" data-limitation="総説のため新規データ生成なし、引用文献の選択バイアス、介入の長期効果は依然不明。" data-implication="筆者の関心「体組成」「健康寿命」「方法論（MR）」と直結。VAT・筋質・身体活動の三軸統合解析を日本コホートで実装する重要な理論的基盤となる。" data-idea="「VAT・筋量・筋質・身体活動の四変数をCoDA解析で統合し、JAGESで要介護発生をmulti-state modelで予測。Mendelian randomizationでVAT→サルコペニアの因果方向を本邦コホートで検証する」。" data-tags="最新2026|内臓脂肪|Nature Aging|代謝老化|総説|体組成|健康寿命|代謝">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">7</div>
+    <div style="flex:1">
+      <div class="paper-title">Visceral adiposity, metabolic health and aging</div>
+      <div class="meta-row"><strong>著者:</strong> Maeyens et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Aging, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 総説論文（メカニズム・疫学統合レビュー）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s43587-026-01076-4" target="_blank">https://www.nature.com/articles/s43587-026-01076-4</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">内臓脂肪（visceral adipose tissue, VAT）が代謝健康と老化を促進するメカニズムを、最新の疫学・分子生物学・介入研究を統合したNature Aging最新の包括的レビュー。VATが免疫老化・慢性炎症・インスリン抵抗性を介して老化加速因子として機能することを多面的にまとめ、CTやMRIによるVAT定量の臨床応用と治療標的としての可能性を提示する。サルコペニック肥満時代の体組成パラダイムを更新する重要文献。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：BMIや皮下脂肪では捉えられないVATの代謝・老化への独立的影響が蓄積している。方法：2010〜2025年の主要文献を分子・細胞・組織・臓器・全身の階層別に整理し、メタ解析・大規模コホート結果を統合。結果：VATは慢性低悪性度炎症（IL-6、TNFα）の主要源で、インスリン抵抗性・サルコペニア進行・心血管リスクを促進。MR研究でVAT増加が longevity 短縮と因果関連、運動・食事介入でVAT特異的減少が可能。結論：VATは代謝老化の中核臓器であり、画像定量による精密医療と標的治療開発が次の課題。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">BMI中心の体組成評価から、VAT特異的アプローチへのパラダイムシフトを牽引する。サルコペニック肥満ではVAT高値が筋質低下と並列で進行するため、両者を同時評価する必要性を示す。Nature Agingという最高峰雑誌での発表は分野の方向性を決定する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Nature Agingで VAT を老化の中核臓器として位置づけた包括的最新レビューで、分子から疫学までの multi-scale 統合は独創的。Mendelian randomization 結果と介入研究を併記し因果性議論を展開した点も新規。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①VAT増加とlongevity 短縮の因果関連を MR で確認、②VAT特異的減少は運動・食事で実現可能、③VATは IL-6 主要源で炎症性老化を駆動、④VAT-筋質クロストークがサルコペニック肥満を加速、⑤画像定量の精密医療応用可能性を新たに整理した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">ナラティブ統合レビュー、メタ解析データの引用と統合。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">総説のため新規データ生成なし、引用文献の選択バイアス、介入の長期効果は依然不明。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心「体組成」「健康寿命」「方法論（MR）」と直結。VAT・筋質・身体活動の三軸統合解析を日本コホートで実装する重要な理論的基盤となる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「VAT・筋量・筋質・身体活動の四変数をCoDA解析で統合し、JAGESで要介護発生をmulti-state modelで予測。Mendelian randomizationでVAT→サルコペニアの因果方向を本邦コホートで検証する」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">内臓脂肪</span><span class="tag tag-theme">Nature Aging</span><span class="tag tag-theme">代謝老化</span><span class="tag tag-theme">総説</span><span class="tag tag-field">体組成</span><span class="tag tag-field">健康寿命</span><span class="tag tag-field">代謝</span></div>
+</div>
+
+
+<div class="paper-card" data-paper-id="20260429_08" data-title="Adverse muscle composition predicts all-cause mortality in the UK Biobank imaging study" data-authors="Linge J, Dahlqvist Leinhard O, et al." data-journal="Journal of Cachexia, Sarcopenia and Muscle, 2021年（基盤論文）" data-design="前向きコホート研究（UK Biobank画像 n=40,178、追跡中央値約4年）" data-url="https://onlinelibrary.wiley.com/doi/10.1002/jcsm.12834" data-summary="UK Biobank画像研究の40,178名を対象に、MRIで定量した「不利な筋組成（adverse muscle composition; AMC）」（低筋容量＋高筋脂肪浸潤）が全死亡を独立予測することを示した先駆的論文。本論文は2026年RANK 1の Borga et al. 研究の基盤となる方法論的フレームワークを提供。AMCはBMI・年齢・性別・併存症調整後でもHR約1.7と頑健に死亡を予測し、サルコペニア定義に「筋脂肪浸潤」を組み込む方向性を国際的に確立した。" data-overview="背景：従来サルコペニアは筋量低下のみで定義されてきたが、筋脂肪浸潤の重要性が指摘されていた。方法：UK Biobank画像研究の40,178名にneck-to-knee MRIを実施し、大腿筋容量と筋脂肪浸潤を自動定量。AMC（容量下位×浸潤上位）を定義し、追跡中央値約4年で死亡を確認。結果：AMC群はHR 1.7前後（多変量調整後）で死亡リスク有意上昇。結論：筋組成（量＋質）が量単独より予後予測に優れる。" data-importance="本研究は国際的にサルコペニア定義に「muscle composition」概念を導入する起点となり、後続の2026年RANK 1 Borga研究や GLIS基準にも引き継がれる方法論的影響を持つ。" data-originality="MRI由来の筋容量と脂肪浸潤を組み合わせた『AMC』概念を初めて疫学的に検証した論文。" data-discovery="①AMC群の死亡HR約1.7、②筋容量単独より AMC が予後予測に優れる、③女性で関連がより顕著、④BMI正常域でもAMC群は高リスク、⑤MRI自動定量の大規模応用が可能であることを示した。" data-methodology="Cox比例ハザード、Schoenfeld残差で比例性確認、画像自動解析の品質管理。" data-limitation="UK Biobankは健康な選抜集団、追跡4年は中期、画像は1時点測定で変化量未評価。" data-implication="筆者の関心「筋質」「体組成」に直結。AMCの概念をBIA phase angleや超音波で代替評価できれば、より普遍的な筋質指標になる可能性。" data-idea="「AMC概念をBIA・超音波由来指標で再現し、日本のTMM・JAGESで死亡・要介護発生をエンドポイントに検証する。CT・MRIとの相互比較で代替妥当性を評価」。" data-tags="UK Biobank|MRI筋組成|AMC|基盤論文|JCSM|筋質・体組成|健康寿命|画像解析">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">8</div>
+    <div style="flex:1">
+      <div class="paper-title">Adverse muscle composition predicts all-cause mortality in the UK Biobank imaging study</div>
+      <div class="meta-row"><strong>著者:</strong> Linge J, Dahlqvist Leinhard O, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Journal of Cachexia, Sarcopenia and Muscle, 2021年（基盤論文）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 前向きコホート研究（UK Biobank画像 n=40,178、追跡中央値約4年）</div>
+      <div class="url-row">🔗 <a href="https://onlinelibrary.wiley.com/doi/10.1002/jcsm.12834" target="_blank">https://onlinelibrary.wiley.com/doi/10.1002/jcsm.12834</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">UK Biobank画像研究の40,178名を対象に、MRIで定量した「不利な筋組成（adverse muscle composition; AMC）」（低筋容量＋高筋脂肪浸潤）が全死亡を独立予測することを示した先駆的論文。本論文は2026年RANK 1の Borga et al. 研究の基盤となる方法論的フレームワークを提供。AMCはBMI・年齢・性別・併存症調整後でもHR約1.7と頑健に死亡を予測し、サルコペニア定義に「筋脂肪浸潤」を組み込む方向性を国際的に確立した。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来サルコペニアは筋量低下のみで定義されてきたが、筋脂肪浸潤の重要性が指摘されていた。方法：UK Biobank画像研究の40,178名にneck-to-knee MRIを実施し、大腿筋容量と筋脂肪浸潤を自動定量。AMC（容量下位×浸潤上位）を定義し、追跡中央値約4年で死亡を確認。結果：AMC群はHR 1.7前後（多変量調整後）で死亡リスク有意上昇。結論：筋組成（量＋質）が量単独より予後予測に優れる。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">本研究は国際的にサルコペニア定義に「muscle composition」概念を導入する起点となり、後続の2026年RANK 1 Borga研究や GLIS基準にも引き継がれる方法論的影響を持つ。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">MRI由来の筋容量と脂肪浸潤を組み合わせた『AMC』概念を初めて疫学的に検証した論文。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①AMC群の死亡HR約1.7、②筋容量単独より AMC が予後予測に優れる、③女性で関連がより顕著、④BMI正常域でもAMC群は高リスク、⑤MRI自動定量の大規模応用が可能であることを示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Cox比例ハザード、Schoenfeld残差で比例性確認、画像自動解析の品質管理。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">UK Biobankは健康な選抜集団、追跡4年は中期、画像は1時点測定で変化量未評価。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心「筋質」「体組成」に直結。AMCの概念をBIA phase angleや超音波で代替評価できれば、より普遍的な筋質指標になる可能性。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「AMC概念をBIA・超音波由来指標で再現し、日本のTMM・JAGESで死亡・要介護発生をエンドポイントに検証する。CT・MRIとの相互比較で代替妥当性を評価」。</div></div>
+
+  <div class="tags"><span class="tag tag-theme">UK Biobank</span><span class="tag tag-method">MRI筋組成</span><span class="tag tag-theme">AMC</span><span class="tag tag-theme">基盤論文</span><span class="tag tag-theme">JCSM</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">健康寿命</span><span class="tag tag-field">画像解析</span></div>
+</div>
+
+
+<div class="paper-card" data-paper-id="20260429_09" data-title="Optimal resistance training prescriptions to improve muscle strength, physical function, and muscle mass in older adults diagnosed with sarcopenia: a systematic review and meta-analysis" data-authors="（複数施設研究グループ）" data-journal="European Review of Aging and Physical Activity (Springer), 2025年（2026年早期オンライン）" data-design="システマティックレビュー＆メタ解析（25 RCT、参加者1,302名）" data-url="https://pmc.ncbi.nlm.nih.gov/articles/PMC12602684/" data-summary="サルコペニアと診断された高齢者を対象としたレジスタンストレーニング25RCT・1,302名を統合したメタ解析。筋力（ES=0.71）・除脂肪量（ES=0.22）・歩行能力（ES=0.41）に有意な改善を確認し、最適な処方（頻度・強度・期間）の Bayesian dose-response解析で 1,220 MET-min/週前後が optimal dose と提示した。サルコペニア対策運動処方のエビデンスベース最新版で、臨床ガイドライン更新の主要根拠となる。" data-overview="背景：サルコペニア患者への運動処方の最適化は未確立だった。方法：PubMed・Embase等で2024年までの文献を検索、25RCT（1,302名、平均年齢73歳）を統合。介入は週2–3回の漸増負荷RT、対照は通常活動。結果：筋力ES 0.71、除脂肪量 ES 0.22、脂肪量 ES -0.17、歩行能力 ES 0.41。Bayesian解析で最適dose 1,220 MET-min/週。結論：RTはサルコペニア改善に有効で、最適dose提示が可能。" data-importance="サルコペニア対策の運動処方を量的に最適化した最新メタ解析で、臨床現場の処方根拠を提供。dose-response解析の精緻化は介護予防教室の設計に直結する。" data-originality="Bayesian dose-response解析でサルコペニア患者向けRT最適doseを定量提示した初の大規模メタ解析。" data-discovery="①筋力 ES 0.71、②除脂肪量 ES 0.22、③脂肪量 ES -0.17、④歩行能力 ES 0.41、⑤最適dose 1,220 MET-min/週を新たに定量化した。" data-methodology="ランダム効果メタ解析、I²で異質性、Bayesian random-effects model でnonlinear dose-response評価、Cochrane RoB2でバイアス評価。" data-limitation="RT介入のheterogeneity残存、サルコペニア定義差、追跡期間中央値約12週で長期効果未評価。" data-implication="筆者の関心「身体活動」「筋質」「介護予防」に直結。日本人サルコペニア高齢者のRT処方根拠として、JAGESサブコホートでの介入実装に応用可能。" data-idea="「日本人サルコペニア患者で最適RT用量を target trial emulation で再現し、要介護発生エンドポイントの仮想介入効果を g-formula で推定。SHAP解析で属性別の効果差を可視化する」。" data-tags="メタ解析|レジスタンストレーニング|サルコペニア|用量反応|身体活動|筋質・体組成|介護予防">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">9</div>
+    <div style="flex:1">
+      <div class="paper-title">Optimal resistance training prescriptions to improve muscle strength, physical function, and muscle mass in older adults diagnosed with sarcopenia: a systematic review and meta-analysis</div>
+      <div class="meta-row"><strong>著者:</strong> （複数施設研究グループ）</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> European Review of Aging and Physical Activity (Springer), 2025年（2026年早期オンライン）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> システマティックレビュー＆メタ解析（25 RCT、参加者1,302名）</div>
+      <div class="url-row">🔗 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12602684/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC12602684/</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">サルコペニアと診断された高齢者を対象としたレジスタンストレーニング25RCT・1,302名を統合したメタ解析。筋力（ES=0.71）・除脂肪量（ES=0.22）・歩行能力（ES=0.41）に有意な改善を確認し、最適な処方（頻度・強度・期間）の Bayesian dose-response解析で 1,220 MET-min/週前後が optimal dose と提示した。サルコペニア対策運動処方のエビデンスベース最新版で、臨床ガイドライン更新の主要根拠となる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニア患者への運動処方の最適化は未確立だった。方法：PubMed・Embase等で2024年までの文献を検索、25RCT（1,302名、平均年齢73歳）を統合。介入は週2–3回の漸増負荷RT、対照は通常活動。結果：筋力ES 0.71、除脂肪量 ES 0.22、脂肪量 ES -0.17、歩行能力 ES 0.41。Bayesian解析で最適dose 1,220 MET-min/週。結論：RTはサルコペニア改善に有効で、最適dose提示が可能。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">サルコペニア対策の運動処方を量的に最適化した最新メタ解析で、臨床現場の処方根拠を提供。dose-response解析の精緻化は介護予防教室の設計に直結する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Bayesian dose-response解析でサルコペニア患者向けRT最適doseを定量提示した初の大規模メタ解析。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①筋力 ES 0.71、②除脂肪量 ES 0.22、③脂肪量 ES -0.17、④歩行能力 ES 0.41、⑤最適dose 1,220 MET-min/週を新たに定量化した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">ランダム効果メタ解析、I²で異質性、Bayesian random-effects model でnonlinear dose-response評価、Cochrane RoB2でバイアス評価。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">RT介入のheterogeneity残存、サルコペニア定義差、追跡期間中央値約12週で長期効果未評価。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心「身体活動」「筋質」「介護予防」に直結。日本人サルコペニア高齢者のRT処方根拠として、JAGESサブコホートでの介入実装に応用可能。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本人サルコペニア患者で最適RT用量を target trial emulation で再現し、要介護発生エンドポイントの仮想介入効果を g-formula で推定。SHAP解析で属性別の効果差を可視化する」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">メタ解析</span><span class="tag tag-theme">レジスタンストレーニング</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-theme">用量反応</span><span class="tag tag-field">身体活動</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">介護予防</span></div>
+</div>
+
+
+<div class="paper-card" data-paper-id="20260429_10" data-title="Exploration of an interpretable machine learning-based screening manner for low muscle mass among Chinese community-dwelling older adults using routine physical examination information" data-authors="（中国研究グループ）" data-journal="BMC Geriatrics, 2026年" data-design="横断研究＋機械学習モデル開発（中国地域在住高齢者、複数機関データ）" data-url="https://link.springer.com/article/10.1186/s12877-026-07161-y" data-summary="中国地域在住高齢者の定期健診データから、低筋量を予測する解釈可能機械学習モデル（ランダムフォレスト・SVM・XGBoost・ロジスティック回帰）を構築し、外部検証でAUC 0.872を達成した。SHAP解析で寄与因子（BMI、握力、年齢、TG-Glycemic index等）を可視化し、装置不要で健診情報のみで実施可能なスクリーニング法を提示。低資源環境でのサルコペニアスクリーニング普及に貢献する。" data-overview="背景：地域でのサルコペニアスクリーニングは装置依存で普及困難だった。方法：中国地域在住高齢者の定期健診情報を用いて4種の機械学習モデルを構築。低筋量の判定基準としてDXA測定値を金標準。外部検証コホートで性能評価、SHAP値で解釈性確保。結果：ランダムフォレストAUC 0.872、感度0.80、特異度0.81。SHAP上位寄与因子はBMI、握力、年齢、TG-Glycemic index、ウエスト周囲径。結論：定期健診情報のみで高精度スクリーニング可能。" data-importance="DXA・BIA装置を持たない地域・診療所での実装に直結する。SHAP解釈で『どの因子が予測に効くか』が可視化され、医療者・患者双方の理解を促進する。中国の大規模公衆衛生応用が見据えられる。" data-originality="解釈可能機械学習（SHAP）を低筋量スクリーニングに適用し、定期健診情報のみで構築した初の大規模研究。外部検証コホートでの妥当性確認を含む完成度の高い設計。" data-discovery="①ランダムフォレストのAUC 0.872、②感度0.80・特異度0.81、③SHAP上位はBMI・握力・年齢、④TG-Glycemic index も独立寄与、⑤外部検証で性能維持を新たに示した。" data-methodology="5-fold cross-validation、外部独立コホート検証、SHAP値で個別予測解釈、Decision Curve Analysis でnet benefit評価。" data-limitation="中国コホートで日本人への一般化は要検証、DXA金標準と機械学習比較で残存交絡可能性、TG-Glycemic indexの普及度。" data-implication="筆者の関心「機械学習」「SHAP」「サルコペニア」に直結。JAGES・特定健診の日本人データで再構築し、要介護発生エンドポイントへの拡張が有望。" data-idea="「日本人特定健診データでSHAP解釈可能な低筋量スクリーニングモデルを構築し、JAGES縦断データで要介護発生予測精度を検証。CT muscle density・BIA phase angleを stage-2 確認検査として組み込んだ二段階スクリーニングを設計する」。" data-tags="最新2026|機械学習|SHAP|低筋量|スクリーニング|筋質・体組成|方法論|公衆衛生">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">10</div>
+    <div style="flex:1">
+      <div class="paper-title">Exploration of an interpretable machine learning-based screening manner for low muscle mass among Chinese community-dwelling older adults using routine physical examination information</div>
+      <div class="meta-row"><strong>著者:</strong> （中国研究グループ）</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> BMC Geriatrics, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 横断研究＋機械学習モデル開発（中国地域在住高齢者、複数機関データ）</div>
+      <div class="url-row">🔗 <a href="https://link.springer.com/article/10.1186/s12877-026-07161-y" target="_blank">https://link.springer.com/article/10.1186/s12877-026-07161-y</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">中国地域在住高齢者の定期健診データから、低筋量を予測する解釈可能機械学習モデル（ランダムフォレスト・SVM・XGBoost・ロジスティック回帰）を構築し、外部検証でAUC 0.872を達成した。SHAP解析で寄与因子（BMI、握力、年齢、TG-Glycemic index等）を可視化し、装置不要で健診情報のみで実施可能なスクリーニング法を提示。低資源環境でのサルコペニアスクリーニング普及に貢献する。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：地域でのサルコペニアスクリーニングは装置依存で普及困難だった。方法：中国地域在住高齢者の定期健診情報を用いて4種の機械学習モデルを構築。低筋量の判定基準としてDXA測定値を金標準。外部検証コホートで性能評価、SHAP値で解釈性確保。結果：ランダムフォレストAUC 0.872、感度0.80、特異度0.81。SHAP上位寄与因子はBMI、握力、年齢、TG-Glycemic index、ウエスト周囲径。結論：定期健診情報のみで高精度スクリーニング可能。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">DXA・BIA装置を持たない地域・診療所での実装に直結する。SHAP解釈で『どの因子が予測に効くか』が可視化され、医療者・患者双方の理解を促進する。中国の大規模公衆衛生応用が見据えられる。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">解釈可能機械学習（SHAP）を低筋量スクリーニングに適用し、定期健診情報のみで構築した初の大規模研究。外部検証コホートでの妥当性確認を含む完成度の高い設計。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①ランダムフォレストのAUC 0.872、②感度0.80・特異度0.81、③SHAP上位はBMI・握力・年齢、④TG-Glycemic index も独立寄与、⑤外部検証で性能維持を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">5-fold cross-validation、外部独立コホート検証、SHAP値で個別予測解釈、Decision Curve Analysis でnet benefit評価。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">中国コホートで日本人への一般化は要検証、DXA金標準と機械学習比較で残存交絡可能性、TG-Glycemic indexの普及度。</div></div>
+  <div class="section-block implication"><span class="section-label">▎研究への示唆</span><div class="section-content">筆者の関心「機械学習」「SHAP」「サルコペニア」に直結。JAGES・特定健診の日本人データで再構築し、要介護発生エンドポイントへの拡張が有望。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本人特定健診データでSHAP解釈可能な低筋量スクリーニングモデルを構築し、JAGES縦断データで要介護発生予測精度を検証。CT muscle density・BIA phase angleを stage-2 確認検査として組み込んだ二段階スクリーニングを設計する」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">機械学習</span><span class="tag tag-theme">SHAP</span><span class="tag tag-theme">低筋量</span><span class="tag tag-theme">スクリーニング</span><span class="tag tag-field">筋質・体組成</span><span class="tag tag-field">方法論</span><span class="tag tag-field">公衆衛生</span></div>
+</div>
+
+
+  <div class="section-title">📊 まとめ一覧表</div>
+  <table class="summary">
+    <thead>
+      <tr><th>#</th><th>論文タイトル（短縮）</th><th>ジャーナル/年</th><th>デザイン</th><th>主要結果</th><th>注目点</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+<td class="rk">1</td>
+<td>Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for sarcop…</td>
+<td>npj Digital Medicine<br><span style="color:#888;font-size:11px">2026年（オンライン公開）</span></td>
+<td>前向きコホート研究（UK Biobank画像サブコホート）／</td>
+<td>Dixon MRI thigh muscle volumeはDXA appendicular lea…</td>
+<td>最新2026</td>
+</tr>
+<tr>
+<td class="rk">2</td>
+<td>Associations of phase angle and its change with all-cause mortality among c…</td>
+<td>Scientific Reports<br><span style="color:#888;font-size:11px">2026年1月（受理）</span></td>
+<td>前向きコホート研究（日本地域在住高齢者、追跡中央値10.3年</td>
+<td>最低位相角四分位の死亡HR 1.49（95%CI 1.13–1.96）</td>
+<td>最新2026</td>
+</tr>
+<tr>
+<td class="rk">3</td>
+<td>Sarcopenic Obesity and Cardiovascular Disease Risk and Mortality: A Systema…</td>
+<td>Anatolian Journal of Cardiology<br><span style="color:#888;font-size:11px">2026年</span></td>
+<td>システマティックレビュー＆メタ解析（前向きコホート対象、20</td>
+<td>SO群の全死亡相対リスク 1.83倍（95%CI重複なし）</td>
+<td>最新2026</td>
+</tr>
+<tr>
+<td class="rk">4</td>
+<td>Relevance of standardized phase angle and bioelectrical impedance vectors i…</td>
+<td>Nutrition in Clinical Practice<br><span style="color:#888;font-size:11px">2026年</span></td>
+<td>前向きコホート研究（入院高齢者、追跡24カ月）</td>
+<td>低StPhA群の死亡HR 2.28（95%CI 1.05–4.97）</td>
+<td>最新2026</td>
+</tr>
+<tr>
+<td class="rk">5</td>
+<td>Operationalizing the Global Leadership Initiative in Sarcopenia: Muscle-Spe…</td>
+<td>Journal of Cachexia, Sarcopenia and Muscle<br><span style="color:#888;font-size:11px">2026年</span></td>
+<td>横断＋前向き解析（多コホート統合、診断アルゴリズム検証研究）</td>
+<td>基準3（低筋力＋いずれか）の死亡予測C-index約0.72</td>
+<td>最新2026</td>
+</tr>
+<tr>
+<td class="rk">6</td>
+<td>Ultrasound-derived muscle variables and physical function in older adults: …</td>
+<td>Geriatric Nursing / Archives of Gerontology and Geriatrics<br><span style="color:#888;font-size:11px">2026年</span></td>
+<td>スコーピングレビュー（70研究を統合、横断・縦断研究）</td>
+<td>echo intensityはSPPBと r=-0.4〜-0.6 で強い相関</td>
+<td>最新2026</td>
+</tr>
+<tr>
+<td class="rk">7</td>
+<td>Visceral adiposity, metabolic health and aging</td>
+<td>Nature Aging<br><span style="color:#888;font-size:11px">2026年</span></td>
+<td>総説論文（メカニズム・疫学統合レビュー）</td>
+<td>VAT増加とlongevity 短縮の因果関連を MR で確認</td>
+<td>最新2026</td>
+</tr>
+<tr>
+<td class="rk">8</td>
+<td>Adverse muscle composition predicts all-cause mortality in the UK Biobank i…</td>
+<td>Journal of Cachexia, Sarcopenia and Muscle<br><span style="color:#888;font-size:11px">2021年（基盤論文）</span></td>
+<td>前向きコホート研究（UK Biobank画像 n=40,17</td>
+<td>AMC群の死亡HR約1.7</td>
+<td>UK Biobank</td>
+</tr>
+<tr>
+<td class="rk">9</td>
+<td>Optimal resistance training prescriptions to improve muscle strength, physi…</td>
+<td>European Review of Aging and Physical Activity (Springer)<br><span style="color:#888;font-size:11px">2025年（2026年早期オンライン）</span></td>
+<td>システマティックレビュー＆メタ解析（25 RCT、参加者1,</td>
+<td>筋力 ES 0.71</td>
+<td>メタ解析</td>
+</tr>
+<tr>
+<td class="rk">10</td>
+<td>Exploration of an interpretable machine learning-based screening manner for…</td>
+<td>BMC Geriatrics<br><span style="color:#888;font-size:11px">2026年</span></td>
+<td>横断研究＋機械学習モデル開発（中国地域在住高齢者、複数機関デ</td>
+<td>ランダムフォレストのAUC 0.872</td>
+<td>最新2026</td>
+</tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    Generated by daily-research-report skill — 2026年4月29日（水曜日）<br>
+    お気に入り機能：左上のチェックボックスで保存／📤ビューアで一覧表示
+  </div>
+</div>
+
+
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+  function loadFavs() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; } }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '',
+      authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '',
+      design: card.dataset.design || '',
+      url: card.dataset.url || '',
+      summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '',
+      importance: card.dataset.importance || '',
+      originality: card.dataset.originality || '',
+      discovery: card.dataset.discovery || '',
+      methodology: card.dataset.methodology || '',
+      limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '',
+      background: card.dataset.background || '',
+      result: card.dataset.result || '',
+      impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) card.style.paddingLeft = '50px';
+    card.appendChild(checkContainer);
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id]; label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs); updateBar();
+    });
+  });
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin:18px auto 20px;max-width:900px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  header.parentNode.insertBefore(bar, header.nextSibling);
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    document.getElementById('page-count').textContent = checkedCount;
+    document.getElementById('total-count').textContent = Object.keys(loadFavs()).length;
+  }
+  document.getElementById('select-all').addEventListener('click', () => { document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }); });
+  document.getElementById('select-none').addEventListener('click', () => { document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }); });
+  document.getElementById('open-viewer').addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => {
+      if (cb.checked) {
+        const card = cb.closest('[data-paper-id]');
+        selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() };
+      }
+    });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+  updateBar();
+})();
+</script>
+
+</body>
+</html>

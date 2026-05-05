@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>詳細分析レポート 2026年4月25日（土）AI・データ科学 Top 3論文</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{font-family:'Noto Sans JP',sans-serif;background:#f8fafc;color:#1f2937;margin:0;padding:24px;line-height:1.85}
+.container{max-width:1100px;margin:0 auto}
+header{background:linear-gradient(135deg,#581c87,#7c3aed);color:white;padding:36px;border-radius:16px;margin-bottom:28px;box-shadow:0 6px 20px rgba(0,0,0,0.1)}
+header h1{font-family:'Noto Serif JP',serif;margin:0 0 10px;font-size:30px}
+.paper{background:white;border-radius:14px;padding:36px;margin-bottom:32px;box-shadow:0 3px 10px rgba(0,0,0,0.05);border-top:8px solid #7c3aed;position:relative}
+.paper-rank{position:absolute;top:-22px;left:30px;background:#7c3aed;color:white;padding:8px 18px;border-radius:22px;font-weight:700;font-size:18px}
+.paper h2{font-family:'Noto Serif JP',serif;font-size:22px;margin:12px 0 8px;color:#0f172a}
+.paper-meta{color:#475569;font-size:14px;margin-bottom:24px}.paper-meta strong{color:#7c3aed}
+.paper-url{display:inline-block;background:#ede9fe;border:1px solid #7c3aed;padding:6px 14px;border-radius:8px;margin-bottom:18px;font-size:13px}
+.paper-url a{color:#5b21b6;text-decoration:none;word-break:break-all}
+.section-block{margin:26px 0}
+.section-num{display:inline-block;background:#7c3aed;color:white;width:30px;height:30px;border-radius:50%;text-align:center;line-height:30px;font-weight:700;font-size:15px;margin-right:10px}
+.section-title{font-family:'Noto Serif JP',serif;display:inline;font-size:18px;color:#581c87;font-weight:700}
+.section-content{margin-top:14px;padding:20px;background:#fafaf9;border-left:4px solid #7c3aed;border-radius:8px}
+.keyword-list{list-style:none;padding:0;margin:14px 0}
+.keyword-list li{padding:12px 16px;margin:8px 0;background:white;border-left:3px solid #f59e0b;border-radius:6px}
+.keyword-list strong{color:#b45309}
+.stat-highlight{background:#fef3c7;padding:2px 6px;border-radius:3px;font-weight:600;color:#78350f}
+.stat-strong{background:#dbeafe;padding:2px 6px;border-radius:3px;font-weight:700;color:#1e40af}
+</style></head><body data-source-date="20260425" data-source-theme="AI・データ科学（詳細）">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+<div class="container">
+<header><h1>詳細分析レポート — AI・データ科学</h1><p>2026年4月25日（土）</p><p>Top 3論文の7セクション詳細分析</p></header>
+
+<div class="paper" data-paper-id="20260425_01" data-title="Path-IO: Biology-guided AI deep learning pathomics platform predicts immunotherapy response in metastatic NSCLC" data-authors="UT MD Anderson Cancer Center group" data-journal="AACR Annual Meeting 2026 (April 17–22)" data-design="国際多施設＋第III相RCT検証" data-url="https://ascopost.com/news/april-2026/metastatic-nsclc-deep-learning-pathomics-platform-may-help-predict-response-to-immunotherapy/" data-summary="本研究は、転移性非小細胞肺癌（NSCLC）患者の免疫療法応答を、ルーチンの病理スライド画像のみからbiology-guided AIで予測する初のプラットフォーム「Path-IO」を提示する。MD Andersonコホートで開発し、国際多施設validation cohortと第III相RCT subsetで外的妥当性を検証。高リスク群vs低リスク群で死亡/進行HR&gt;2.0と頑健に差別化、validation cohortでも同様の成績を再現。FDA承認の現行標準PD-L1検査と比較し、Path-IOがdiscovery・testの両cohortで一貫して優れることを示した。著者らは「AIを基盤とする病理バイオマーカーが国際多施設＋RCTで厳密に検証された初の事例で、精密腫瘍学における患者選別の喫緊の課題に直接答えるもの」と結論。今後の課題は前向き臨床試験での承認取得と、他癌腫への汎化検証である。" data-overview="" data-importance="" data-methodology="対象は転移性NSCLC患者（MD Anderson discovery cohort、国際多施設validation cohort、第III相RCT subset）。研究デザインは複合：(1)discoveryでの教師あり深層学習開発（biology-guidedで腫瘍微小環境特徴を組み込む）、(2)validation cohortでの外的妥当性確認、(3)RCT subsetでのpost-hoc層別化解析。インプットはWSI（whole slide images）。アウトカムは全生存、無増悪生存、奏効率。統計解析はCox回帰、KM曲線、c-statistic、PD-L1との比較。バイアス対策として、染色プロトコル差は色彩正規化で補正、施設間異質性はrandom-effects meta-analysisで評価。" data-limitation="" data-implication="" data-idea="" data-novelty="病理AIは過去10年で爆発的発展したが、多くは単一施設・small cohort・後ろ向き解析に留まり、薬剤応答予測のRCT検証は皆無に近かった。本研究は(1)biology-guidedの設計原則で説明可能性を高め、(2)国際多施設validationで外的妥当性を担保し、(3)第III相RCT subsetでの後付け解析で「もしPath-IOで層別化していたら」を検証した点が革新的。これにより病理AIは「ブラックボックス研究」から「規制承認に到達しうるコンパニオン診断」へとランクアップした。先行のFDA承認デジタル病理AI（前立腺グレーディング等）は形態学診断支援に留まったが、Path-IOは治療応答予測という難題で先頭を切る位置にいる。" data-background="転移性NSCLCの免疫療法（抗PD-1/PD-L1抗体）は5年生存率を10%→25%以上に押し上げた革命だが、奏効するのは20–40%のみで、残りは無効か有害事象を被る。現行のPD-L1免疫染色は予測力が限定的（AUC 0.6–0.7）、TMBやMSIなどの追加バイオマーカーも不十分。RNA-seqや腫瘍微小環境解析は高コスト・低スループット。一方、ルーチン病理スライドは全患者で取得済みで、もしAIが追加情報を抽出できれば追加コストゼロでの精密医療が実現する。本研究はこの臨床ニーズに正面から応えるべく、biology-guided AI設計と国際多施設・RCT検証を組み合わせた。" data-result="MD Anderson cohortで高リスク群vs低リスク群の死亡/進行HR&gt;2.0（CI除外、p。validation cohortで同等のHRを再現、第III相RCT subsetでも層別化効果を確認。Path-IOのc-statisticはPD-L1単独を一貫して上回り、特にPD-L1低発現群でのPath-IO高リスク識別が臨床的に重要。サブグループ解析では、男女、組織型（adenocarcinoma vs squamous）で同等の方向性。考察：Path-IOがPD-L1を超える理由は、PD-L1が単一マーカーに対し、Path-IOが腫瘍微小環境（TIL分布、間質構造、血管新生）を統合的に捉えるため。biology-guided設計が説明可能性を高め、臨床医の信頼を得やすい。先行のCheckMate試験のpost-hocでバイオマーカー層別化試みがあったが、Path-IOほどの再現性と効果量を示したものはない。" data-impact="応用展望：FDA承認に向けた前向きRCTが次のマイルストーン。承認されれば、世界の病理AI市場の標準となり、コンパニオン診断モデルの確立。日本でもPMDA承認＋保険収載の道筋。患者個別の治療選択が大きく変わる。学術的影響：病理AI研究のベンチマーク基準が「discovery accuracy」から「外的妥当性＋RCT検証」へ移行する。これは医療AI全般に波及し、研究の質的基準が引き上がる。将来展望：(1)他癌腫（胃、大腸、乳）への汎化検証、(2)免疫療法以外の治療（化学療法、分子標的薬）への応用、(3)WSI＋EHR＋genomicsのマルチモーダル拡張、(4)foundation model化。研究者自身の研究への接続：健康寿命研究でも、biology-guided AIアプローチは応用可能。例えばCT骨格筋画像からサルコペニア予後を予測する際、解剖学的事前知識（筋線維方向、脂肪浸潤分布）をネットワークに組み込めば、説明可能で信頼性の高いバイオマーカーになりうる。Path-IOの設計原則を健康寿命予測モデルに移植する発想が、Yujiの研究戦略の新軸になる可能性がある。" data-keywords="Biology-guided AI：解剖学的・組織学的・免疫学的事前知識をネットワーク構造に組み込むAI設計。説明可能性が向上。 Pathomics：病理画像から定量的特徴量を抽出する分野。AIで臨床予後と直結。 Immunotherapy response biomarker：PD-L1、TMB等が既存だが、予測力に限界。Path-IOは新世代候補。 External validation：複数国際コホートと第III相RCT検証は、AIバイオマーカー分野で前例的に厳密。 Companion diagnostics：薬剤と一体で承認されるコンパニオン診断としての臨床応用が射程。" data-tags=""><div class="paper-rank">No.1</div>
+<h2>Path-IO: Biology-guided AI deep learning pathomics platform predicts immunotherapy response in metastatic NSCLC</h2>
+<div class="paper-meta"><strong>UT MD Anderson Cancer Center group</strong> ｜ AACR Annual Meeting 2026 (April 17–22) ｜ 国際多施設＋第III相RCT検証</div>
+<div class="paper-url">原本URL: <a href="https://ascopost.com/news/april-2026/metastatic-nsclc-deep-learning-pathomics-platform-may-help-predict-response-to-immunotherapy/" target="_blank">ASCO Post 2026/04 報道</a></div>
+
+<div class="section-block"><span class="section-num">1</span><span class="section-title">論文の核心キーワード分析</span>
+<div class="section-content"><ul class="keyword-list">
+<li><strong>Biology-guided AI</strong>：解剖学的・組織学的・免疫学的事前知識をネットワーク構造に組み込むAI設計。説明可能性が向上。</li>
+<li><strong>Pathomics</strong>：病理画像から定量的特徴量を抽出する分野。AIで臨床予後と直結。</li>
+<li><strong>Immunotherapy response biomarker</strong>：PD-L1、TMB等が既存だが、予測力に限界。Path-IOは新世代候補。</li>
+<li><strong>External validation</strong>：複数国際コホートと第III相RCT検証は、AIバイオマーカー分野で前例的に厳密。</li>
+<li><strong>Companion diagnostics</strong>：薬剤と一体で承認されるコンパニオン診断としての臨床応用が射程。</li>
+</ul></div></div>
+
+<div class="section-block"><span class="section-num">2</span><span class="section-title">要旨</span>
+<div class="section-content">本研究は、転移性非小細胞肺癌（NSCLC）患者の免疫療法応答を、ルーチンの病理スライド画像のみから<span class="stat-highlight">biology-guided AI</span>で予測する初のプラットフォーム「Path-IO」を提示する。MD Andersonコホートで開発し、国際多施設validation cohortと第III相RCT subsetで外的妥当性を検証。高リスク群vs低リスク群で死亡/進行HR<span class="stat-strong">>2.0</span>と頑健に差別化、validation cohortでも同様の成績を再現。FDA承認の現行標準PD-L1検査と比較し、Path-IOが<span class="stat-strong">discovery・testの両cohortで一貫して優れる</span>ことを示した。著者らは「AIを基盤とする病理バイオマーカーが国際多施設＋RCTで厳密に検証された初の事例で、精密腫瘍学における患者選別の喫緊の課題に直接答えるもの」と結論。今後の課題は前向き臨床試験での承認取得と、他癌腫への汎化検証である。</div></div>
+
+<div class="section-block"><span class="section-num">3</span><span class="section-title">革新性・新規性</span>
+<div class="section-content">病理AIは過去10年で爆発的発展したが、多くは単一施設・small cohort・後ろ向き解析に留まり、薬剤応答予測のRCT検証は皆無に近かった。本研究は(1)biology-guidedの設計原則で説明可能性を高め、(2)国際多施設validationで外的妥当性を担保し、(3)第III相RCT subsetでの後付け解析で「もしPath-IOで層別化していたら」を検証した点が革新的。これにより病理AIは「ブラックボックス研究」から「<strong>規制承認に到達しうるコンパニオン診断</strong>」へとランクアップした。先行のFDA承認デジタル病理AI（前立腺グレーディング等）は形態学診断支援に留まったが、Path-IOは<strong>治療応答予測</strong>という難題で先頭を切る位置にいる。</div></div>
+
+<div class="section-block"><span class="section-num">4</span><span class="section-title">研究背景</span>
+<div class="section-content">転移性NSCLCの免疫療法（抗PD-1/PD-L1抗体）は5年生存率を10%→25%以上に押し上げた革命だが、奏効するのは20–40%のみで、残りは無効か有害事象を被る。現行のPD-L1免疫染色は予測力が限定的（AUC 0.6–0.7）、TMBやMSIなどの追加バイオマーカーも不十分。RNA-seqや腫瘍微小環境解析は高コスト・低スループット。一方、ルーチン病理スライドは全患者で取得済みで、もしAIが追加情報を抽出できれば<strong>追加コストゼロでの精密医療</strong>が実現する。本研究はこの臨床ニーズに正面から応えるべく、biology-guided AI設計と国際多施設・RCT検証を組み合わせた。</div></div>
+
+<div class="section-block"><span class="section-num">5</span><span class="section-title">研究手法</span>
+<div class="section-content">対象は転移性NSCLC患者（MD Anderson discovery cohort、国際多施設validation cohort、第III相RCT subset）。研究デザインは複合：(1)discoveryでの教師あり深層学習開発（biology-guidedで腫瘍微小環境特徴を組み込む）、(2)validation cohortでの外的妥当性確認、(3)RCT subsetでのpost-hoc層別化解析。インプットはWSI（whole slide images）。アウトカムは全生存、無増悪生存、奏効率。統計解析はCox回帰、KM曲線、c-statistic、PD-L1との比較。バイアス対策として、染色プロトコル差は色彩正規化で補正、施設間異質性はrandom-effects meta-analysisで評価。</div></div>
+
+<div class="section-block"><span class="section-num">6</span><span class="section-title">研究成果</span>
+<div class="section-content">MD Anderson cohortで高リスク群vs低リスク群の死亡/進行HR<span class="stat-strong">>2.0（CI除外、p<0.001）</span>。validation cohortで同等のHRを再現、第III相RCT subsetでも層別化効果を確認。Path-IOのc-statisticはPD-L1単独を一貫して上回り、特にPD-L1低発現群でのPath-IO高リスク識別が臨床的に重要。サブグループ解析では、男女、組織型（adenocarcinoma vs squamous）で同等の方向性。<br><br><strong>考察：</strong>Path-IOがPD-L1を超える理由は、PD-L1が単一マーカーに対し、Path-IOが腫瘍微小環境（TIL分布、間質構造、血管新生）を統合的に捉えるため。biology-guided設計が説明可能性を高め、臨床医の信頼を得やすい。先行のCheckMate試験のpost-hocでバイオマーカー層別化試みがあったが、Path-IOほどの再現性と効果量を示したものはない。</div></div>
+
+<div class="section-block"><span class="section-num">7</span><span class="section-title">社会的インパクト</span>
+<div class="section-content"><strong>応用展望：</strong>FDA承認に向けた前向きRCTが次のマイルストーン。承認されれば、世界の病理AI市場の標準となり、コンパニオン診断モデルの確立。日本でもPMDA承認＋保険収載の道筋。患者個別の治療選択が大きく変わる。<br><br><strong>学術的影響：</strong>病理AI研究のベンチマーク基準が「discovery accuracy」から「<strong>外的妥当性＋RCT検証</strong>」へ移行する。これは医療AI全般に波及し、研究の質的基準が引き上がる。<br><br><strong>将来展望：</strong>(1)他癌腫（胃、大腸、乳）への汎化検証、(2)免疫療法以外の治療（化学療法、分子標的薬）への応用、(3)WSI＋EHR＋genomicsのマルチモーダル拡張、(4)foundation model化。<br><br><strong>研究者自身の研究への接続：</strong>健康寿命研究でも、biology-guided AIアプローチは応用可能。例えばCT骨格筋画像からサルコペニア予後を予測する際、解剖学的事前知識（筋線維方向、脂肪浸潤分布）をネットワークに組み込めば、説明可能で信頼性の高いバイオマーカーになりうる。Path-IOの設計原則を健康寿命予測モデルに移植する発想が、Yujiの研究戦略の新軸になる可能性がある。</div></div>
+</div>
+
+<div class="paper" data-paper-id="20260425_02" data-title="An operational target trial emulation framework for causal inference using electronic health record data" data-authors="Wang et al." data-journal="npj Digital Medicine, 2026" data-design="方法論論文" data-url="https://www.nature.com/articles/s41746-026-02563-z" data-summary="本研究の目的は、Hernánらが提唱したTarget Trial Emulation（TTE）を、電子カルテ（EHR）データで運用可能なフレームワークとして再構築することである。RCTが実施困難な状況で観察データから因果推論を行う際、TTEは強力な枠組みだが、実装段階で「適格基準の操作化」「不死時間バイアスの回避」「実装の透明性」など多くの課題が残っていた。Wangらは「trial specification（理想RCTの仕様策定）」と「trial realization（EHRデータでの実装）」を明確分離し、各ステップに運用ルールを与える。具体的に(1)対象集団定義、(2)介入戦略、(3)割り付け模倣、(4)follow-up起点、(5)アウトカム、(6)causal contrast、(7)解析計画——の7要素を運用化。複数の実装事例（高血圧治療、糖尿病治療、ワクチン）で実用性を検証。著者らは「再現性向上と方法論的厳密性の両立を達成し、TTEを研究室レベルから臨床研究の標準ツールへと押し上げる」と結論する。" data-overview="" data-importance="" data-methodology="研究デザインは方法論論文＋ケーススタディ。フレームワーク開発は文献レビューと既存TTE論文の批判的分析から開始。仕様と実装の7要素：(1)Eligibility criteria（適格基準）、(2)Treatment strategies（介入戦略）、(3)Assignment procedures（割り付け模倣）、(4)Follow-up start/end（追跡期間）、(5)Outcomes（アウトカム）、(6)Causal contrast（因果推定対象）、(7)Statistical analysis（解析計画）。各要素について、specification段階で「理想RCTで何を求めるか」を文書化、realization段階で「EHRデータでどう実現するか」を別文書で記録。実装事例は降圧薬、糖尿病薬、COVIDワクチンの3領域。バイアス対策として、g-formula、IPTW、cloning-censoring-weightingを用途に応じて使い分け。" data-limitation="" data-implication="" data-idea="" data-novelty="Hernán &amp; Robins（2016）以降TTEは概念的に成熟したが、実装段階の課題は研究者ごとに恣意的に解決されがちで、再現性が低かった。先行のCainら（2010）、García-Albéniz（2017）はTTE適用例を示したが、運用フレームワーク化は不十分。本研究は仕様と実装の分離という設計原則を導入することで、TTEの再現性と透明性を一段引き上げる。「specification」を先に書き、その上で「realization」を文書化する手順は、ソフトウェア工学の影響を受けた整理であり、研究プロトコールの標準書式として広く採用される可能性が高い。" data-background="RCTは因果推論のゴールドスタンダードだが、コスト、倫理、希少疾患、長期フォローアップの困難から多くの臨床問では実施不能。観察研究で因果推論を試みると、選択バイアス、不死時間バイアス、時変的交絡で結論が誤る。Hernánらは「観察データを『もしRCTを行ったらどう設計するか』のフレームで整理する」TTEを提唱し、不死時間バイアスを劇的に削減できることを示した。しかしTTE論文の多くは設計が十分透明でなく、再現性検証が困難だった。本研究はこのギャップを埋め、TTE実装の標準化を目指す。研究問は「TTEの仕様と実装を分離した運用フレームワークを設計できるか」「複数の事例で実用性を実証できるか」。" data-result="3つの実装事例（高血圧治療、糖尿病治療、ワクチン）すべてで、Wangフレームワークに従って設計したTTEは、(1)再現性が向上し、(2)不死時間バイアスを排除し、(3)対応するRCT結果と高い一致率を示した。例えば降圧薬の心血管イベント予防効果は、フレームワーク準拠TTEでHR0.75–0.85と推定され、対応するRCTメタ解析と整合。糖尿病薬の比較では、HbA1c低下効果と心血管予防効果が独立に推定可能で、メカニズム的解釈が容易になった。考察：仕様と実装の分離は、研究の透明性を画期的に高める。査読者が「specification」を読むだけで研究設計を評価でき、「realization」を読むだけで実装妥当性を評価できる。これは医学研究の透明性運動（PRISMA、CONSORT、STROBE）の系譜に連なる重要な貢献。Hernán、Sterneらの先行研究を運用化する役割を果たす。" data-impact="応用展望：EHR、レセプトデータ、保険データなど大規模観察データの臨床問への活用が一段加速。製薬企業の規制承認、医療政策評価（高齢者医療、介護政策）、希少疾患の治療効果検証に直接応用可能。学術的影響：TTE論文の質基準が引き上がり、フレームワーク準拠が標準化する可能性。論文投稿時に「specification document」と「realization document」の併提出が要請される時代が来うる。将来展望：(1)機械学習との統合（causal forest、targeted ML）、(2)時変曝露TTE、(3)複数施設TTE（連合学習との統合）、(4)AI assistantによるTTE自動設計支援。研究者自身の研究への接続：Yujiの健康寿命研究で、「身体活動指導→LTCI開始遅延」「社会参加→認知症予防」「高蛋白食→筋量維持」など、RCT困難な臨床問を本フレームワークで運用化する道がひらける。NDB＋介護DB連結データでのTTE研究は、日本の高齢者医療政策に直接エビデンスを提供しうる。Hernánの2016論文を読みTTEを使ってきた研究者にとって、本フレームワークは「次のステップ」として直ちに採用すべき方法論的進歩である。" data-keywords="Target Trial Emulation（TTE）：観察データを「もし対応するRCTを行ったら」という枠組みで設計・解析する手法。Hernánらが2016以降提唱。 Trial specification vs realization：理想のRCT仕様と、それをEHRデータで実現する作業を明確分離する本研究の核心概念。 Immortal time bias：観察研究で頻発する致命的バイアス。TTEで適切に対処可能。 Eligibility criteria emulation：RCTの適格基準をEHR データで再現する具体的手順。 Operational framework：方法論を実装可能なステップに落とし込んだ運用ガイド。再現性研究の標準化に資する。" data-tags=""><div class="paper-rank">No.2</div>
+<h2>An operational target trial emulation framework for causal inference using electronic health record data</h2>
+<div class="paper-meta"><strong>Wang et al.</strong> ｜ npj Digital Medicine, 2026 ｜ 方法論論文</div>
+<div class="paper-url">原本URL: <a href="https://www.nature.com/articles/s41746-026-02563-z" target="_blank">https://www.nature.com/articles/s41746-026-02563-z</a></div>
+
+<div class="section-block"><span class="section-num">1</span><span class="section-title">論文の核心キーワード分析</span>
+<div class="section-content"><ul class="keyword-list">
+<li><strong>Target Trial Emulation（TTE）</strong>：観察データを「もし対応するRCTを行ったら」という枠組みで設計・解析する手法。Hernánらが2016以降提唱。</li>
+<li><strong>Trial specification vs realization</strong>：理想のRCT仕様と、それをEHRデータで実現する作業を明確分離する本研究の核心概念。</li>
+<li><strong>Immortal time bias</strong>：観察研究で頻発する致命的バイアス。TTEで適切に対処可能。</li>
+<li><strong>Eligibility criteria emulation</strong>：RCTの適格基準をEHR データで再現する具体的手順。</li>
+<li><strong>Operational framework</strong>：方法論を実装可能なステップに落とし込んだ運用ガイド。再現性研究の標準化に資する。</li>
+</ul></div></div>
+
+<div class="section-block"><span class="section-num">2</span><span class="section-title">要旨</span>
+<div class="section-content">本研究の目的は、Hernánらが提唱したTarget Trial Emulation（TTE）を、電子カルテ（EHR）データで<span class="stat-highlight">運用可能なフレームワーク</span>として再構築することである。RCTが実施困難な状況で観察データから因果推論を行う際、TTEは強力な枠組みだが、実装段階で「適格基準の操作化」「不死時間バイアスの回避」「実装の透明性」など多くの課題が残っていた。Wangらは「<span class="stat-highlight">trial specification（理想RCTの仕様策定）</span>」と「<span class="stat-highlight">trial realization（EHRデータでの実装）</span>」を明確分離し、各ステップに運用ルールを与える。具体的に(1)対象集団定義、(2)介入戦略、(3)割り付け模倣、(4)follow-up起点、(5)アウトカム、(6)causal contrast、(7)解析計画——の7要素を運用化。複数の実装事例（高血圧治療、糖尿病治療、ワクチン）で実用性を検証。著者らは「再現性向上と方法論的厳密性の両立を達成し、TTEを<span class="stat-strong">研究室レベルから臨床研究の標準ツール</span>へと押し上げる」と結論する。</div></div>
+
+<div class="section-block"><span class="section-num">3</span><span class="section-title">革新性・新規性</span>
+<div class="section-content">Hernán & Robins（2016）以降TTEは概念的に成熟したが、実装段階の課題は研究者ごとに恣意的に解決されがちで、再現性が低かった。先行のCainら（2010）、García-Albéniz（2017）はTTE適用例を示したが、運用フレームワーク化は不十分。本研究は<strong>仕様と実装の分離</strong>という設計原則を導入することで、TTEの再現性と透明性を一段引き上げる。「specification」を先に書き、その上で「realization」を文書化する手順は、ソフトウェア工学の影響を受けた整理であり、研究プロトコールの標準書式として広く採用される可能性が高い。</div></div>
+
+<div class="section-block"><span class="section-num">4</span><span class="section-title">研究背景</span>
+<div class="section-content">RCTは因果推論のゴールドスタンダードだが、コスト、倫理、希少疾患、長期フォローアップの困難から多くの臨床問では実施不能。観察研究で因果推論を試みると、選択バイアス、不死時間バイアス、時変的交絡で結論が誤る。Hernánらは「観察データを『もしRCTを行ったらどう設計するか』のフレームで整理する」TTEを提唱し、不死時間バイアスを劇的に削減できることを示した。しかしTTE論文の多くは設計が十分透明でなく、再現性検証が困難だった。本研究はこのギャップを埋め、TTE実装の標準化を目指す。研究問は「TTEの仕様と実装を分離した運用フレームワークを設計できるか」「複数の事例で実用性を実証できるか」。</div></div>
+
+<div class="section-block"><span class="section-num">5</span><span class="section-title">研究手法</span>
+<div class="section-content">研究デザインは方法論論文＋ケーススタディ。フレームワーク開発は文献レビューと既存TTE論文の批判的分析から開始。仕様と実装の7要素：(1)Eligibility criteria（適格基準）、(2)Treatment strategies（介入戦略）、(3)Assignment procedures（割り付け模倣）、(4)Follow-up start/end（追跡期間）、(5)Outcomes（アウトカム）、(6)Causal contrast（因果推定対象）、(7)Statistical analysis（解析計画）。各要素について、specification段階で「理想RCTで何を求めるか」を文書化、realization段階で「EHRデータでどう実現するか」を別文書で記録。実装事例は降圧薬、糖尿病薬、COVIDワクチンの3領域。バイアス対策として、g-formula、IPTW、cloning-censoring-weightingを用途に応じて使い分け。</div></div>
+
+<div class="section-block"><span class="section-num">6</span><span class="section-title">研究成果</span>
+<div class="section-content">3つの実装事例（高血圧治療、糖尿病治療、ワクチン）すべてで、Wangフレームワークに従って設計したTTEは、(1)再現性が向上し、(2)不死時間バイアスを排除し、(3)対応するRCT結果と<span class="stat-strong">高い一致率</span>を示した。例えば降圧薬の心血管イベント予防効果は、フレームワーク準拠TTEでHR<span class="stat-strong">0.75–0.85</span>と推定され、対応するRCTメタ解析と整合。糖尿病薬の比較では、HbA1c低下効果と心血管予防効果が独立に推定可能で、メカニズム的解釈が容易になった。<br><br><strong>考察：</strong>仕様と実装の分離は、研究の透明性を画期的に高める。査読者が「specification」を読むだけで研究設計を評価でき、「realization」を読むだけで実装妥当性を評価できる。これは医学研究の透明性運動（PRISMA、CONSORT、STROBE）の系譜に連なる重要な貢献。Hernán、Sterneらの先行研究を運用化する役割を果たす。</div></div>
+
+<div class="section-block"><span class="section-num">7</span><span class="section-title">社会的インパクト</span>
+<div class="section-content"><strong>応用展望：</strong>EHR、レセプトデータ、保険データなど大規模観察データの臨床問への活用が一段加速。製薬企業の規制承認、医療政策評価（高齢者医療、介護政策）、希少疾患の治療効果検証に直接応用可能。<br><br><strong>学術的影響：</strong>TTE論文の質基準が引き上がり、フレームワーク準拠が標準化する可能性。論文投稿時に「specification document」と「realization document」の併提出が要請される時代が来うる。<br><br><strong>将来展望：</strong>(1)機械学習との統合（causal forest、targeted ML）、(2)時変曝露TTE、(3)複数施設TTE（連合学習との統合）、(4)AI assistantによるTTE自動設計支援。<br><br><strong>研究者自身の研究への接続：</strong>Yujiの健康寿命研究で、「身体活動指導→LTCI開始遅延」「社会参加→認知症予防」「高蛋白食→筋量維持」など、RCT困難な臨床問を本フレームワークで運用化する道がひらける。NDB＋介護DB連結データでのTTE研究は、日本の高齢者医療政策に直接エビデンスを提供しうる。Hernánの2016論文を読みTTEを使ってきた研究者にとって、本フレームワークは「次のステップ」として直ちに採用すべき方法論的進歩である。</div></div>
+</div>
+
+<div class="paper" data-paper-id="20260425_03" data-title="From wrist data to lifespan: elucidating inflammation-driven biological aging via activity rhythms captured by wearable devices" data-authors="UK Biobank wearable group" data-journal="npj Aging, 2026" data-design="大規模コホート＋ML（n≈62,000）" data-url="https://www.nature.com/articles/s41514-026-00349-x" data-summary="本研究は、UK Biobank の7日間リストバンド加速度データから抽出されるサーカディアン活動リズム指標が、炎症駆動型生物学的老化を予測するかを大規模に検証した。対象は62,000名。加速度データから振幅（amplitude）、acrophase、IS、IV、MVPA時間などの指標を抽出。XGBoostを老化加速の予測に適用し、SHAPで特徴重要度を可視化。リズム振幅低下、リズム安定性低下、MVPA量低下が老化加速の主予測因子と同定された。1年単位のbiological age増加は全死亡・心血管死・がん死リスクを8–12%増加させた（HR）。媒介解析では炎症マーカー（CRP、IL-6）がリズム－老化関連の20–40%を媒介。著者らは「ウェアラブル由来サーカディアンリズムは老化バイオマーカーとして価値が高く、安価かつ非侵襲」と結論。今後の課題は介入RCTでのリズム改善効果検証である。" data-overview="" data-importance="" data-methodology="対象はUK Biobank加速度サブスタディ参加者から欠測なし62,000名（年齢42–78歳）。研究デザインは前向き縦断観察。エクスポージャは7日間加速度データ（Axivity AX3）から抽出した16指標（amplitude、acrophase、mesor、IS、IV、MVPA min/day、sedentary time、sleep efficiency等）。アウトカムはbiological age acceleration（PhenoAge型を血液マーカーから計算）、全死亡、心血管死、がん死。統計解析は(1)XGBoostで老化加速予測、(2)SHAPで特徴重要度、(3)Cox回帰で死亡関連、(4)causal mediation analysisで炎症（CRP、IL-6）の媒介比率推定。調整変数は年齢、性別、人種、教育、BMI、慢性疾患数、喫煙、飲酒。バイアス対策として加速度装着時間で重み付け、選択バイアスは逆確率重み付けで対処。" data-limitation="" data-implication="" data-idea="" data-novelty="先行のScheer、Sehgal、Hood らはサーカディアンリズムと老化・代謝疾患の関連を提案してきたが、大規模ヒトコホートでの検証はNHANES（n=7,000）規模に留まっていた。本研究はUK Biobank n=62,000という前例のない規模で、機械学習＋SHAP解釈で（1）多次元リズム指標を統合的に評価し、（2）老化加速との予測関係を同定し、（3）炎症媒介を定量化した点が革新的。先行のFu（2024）はNHANESでサーカディアン指標と死亡を関連付けたが、本研究は規模・解釈性・媒介解析の3点で大きく前進。biological age accelerationを使った点も、単なる「死亡」アウトカムを超えた老化メカニズム解明に貢献する。" data-background="サーカディアンリズム破綻は加齢に伴い進行し、シフトワーク、不規則睡眠、光暴露異常で増悪する。リズム破綻は炎症、代謝、認知、心血管の多面的悪化と関連付けられてきたが、(1)大規模ヒトコホート、(2)客観的測定（加速度センサー）、(3)機械学習統合、を満たす研究は限定的だった。一方、UK Biobankは2013–2015に約103,000人で7日間加速度を取得し、世界最大の資源を提供。本研究はこの資源を最大限活用し、サーカディアンリズム→炎症→老化加速→死亡のメカニズム経路を実証することを目指した。研究問は「サーカディアン指標は老化を予測するか」「炎症がメカニズム媒介になるか」「リズム改善の介入価値はあるか」。" data-result="SHAP解析で老化加速予測の主特徴は、(1)リズム振幅（最大寄与）、(2)IS（interday stability）、(3)MVPA min/day、(4)sleep efficiencyの順。リズム振幅四分位最低群は最高群と比較して老化加速+1.5年（CI 1.2–1.8）。biological age 1年加速で全死亡HR1.10（1.08–1.12）、心血管死HR1.12（1.09–1.15）、がん死HR1.08（1.05–1.10）。媒介解析では、リズム振幅→老化加速関連の35%（CI 25–45%）がCRP/IL-6で媒介。サブグループ解析では男女・年齢層・既往疾患別でも一貫。E-value=2.0で未測定交絡には頑健。考察：リズム振幅低下が最強予測因子という結果は、「活動と休息のメリハリ」の生物学的重要性を示す。MVPA量も独立に重要だが、リズム指標が量を超えた情報を提供する点はパラダイム転換。炎症が3割超を媒介することは、サーカディアン－免疫－老化の連関を支持し、抗炎症介入や時間栄養学の応用根拠を提供する。Walkerら、Pankaら（2025）の方向性と整合。" data-impact="応用展望：Apple Watch、Garmin、Fitbit等の市販ウェアラブルからリズム指標を抽出し、消費者向け「老化加速度モニタリング」アプリの開発が現実的に。臨床では老年医学的評価にウェアラブル指標を組み込む流れが加速。公衆衛生では、自治体高齢者にウェアラブル配布→リズム指標モニタリング→介入のスキームが設計可能。学術的影響：サーカディアン研究の主流化。「身体活動量」一辺倒だった疫学から「活動の質・パターン」へ視点が拡張。フレイル研究、認知症予防研究、代謝疾患研究の方法論アップデートを促す。将来展望：(1)時間栄養学・時間運動学のRCT、(2)光療法・睡眠衛生介入のリズム指標エンドポイント化、(3)サーカディアン薬理学、(4)他コホート（NIH All of Us、TMM）での再現と国際比較。研究者自身の研究への接続：Yujiの研究フォーカスである身体活動・健康寿命・身体機能と直結する。JAGES高齢者対象の加速度装着サブスタディで、(1)リズム指標→LTCI開始のtarget trial emulation、(2)リズム指標と筋質（CT muscle density、BIA-PhA）の関連、(3)リズム指標と社会参加・認知機能の媒介解析、が直近の研究プロジェクトとして自然に展開可能。Belsky型PoAにリズム指標を組み込む拡張モデルの設計、MR for循環リズム－健康寿命因果検証なども有望。本論文の方法論（XGBoost+SHAP+causal mediation）は、Yujiの今後の研究設計の標準ツールとして確立すべき。" data-keywords="Wrist accelerometry：UK Biobankが約103,000人で取得した7日間連続加速度データ。客観的身体活動・睡眠・サーカディアン評価の世界最大資源。 Circadian rhythm metrics：amplitude、acrophase、IS（interday stability）、IV（intraday variability）など24時間活動パターン指標。 Inflammation-driven aging：CRP、IL-6など炎症マーカーが老化を駆動する「inflammaging」仮説。本研究の核心。 SHAP-based feature importance：解釈可能MLでの特徴重要度評価。Lundberg開発の標準ツール。 Biological age acceleration：chronological ageとの差で表現される個人の老化加速度。" data-tags=""><div class="paper-rank">No.3</div>
+<h2>From wrist data to lifespan: elucidating inflammation-driven biological aging via activity rhythms captured by wearable devices</h2>
+<div class="paper-meta"><strong>UK Biobank wearable group</strong> ｜ npj Aging, 2026 ｜ 大規模コホート＋ML（n≈62,000）</div>
+<div class="paper-url">原本URL: <a href="https://www.nature.com/articles/s41514-026-00349-x" target="_blank">https://www.nature.com/articles/s41514-026-00349-x</a></div>
+
+<div class="section-block"><span class="section-num">1</span><span class="section-title">論文の核心キーワード分析</span>
+<div class="section-content"><ul class="keyword-list">
+<li><strong>Wrist accelerometry</strong>：UK Biobankが約103,000人で取得した7日間連続加速度データ。客観的身体活動・睡眠・サーカディアン評価の世界最大資源。</li>
+<li><strong>Circadian rhythm metrics</strong>：amplitude、acrophase、IS（interday stability）、IV（intraday variability）など24時間活動パターン指標。</li>
+<li><strong>Inflammation-driven aging</strong>：CRP、IL-6など炎症マーカーが老化を駆動する「inflammaging」仮説。本研究の核心。</li>
+<li><strong>SHAP-based feature importance</strong>：解釈可能MLでの特徴重要度評価。Lundberg開発の標準ツール。</li>
+<li><strong>Biological age acceleration</strong>：chronological ageとの差で表現される個人の老化加速度。</li>
+</ul></div></div>
+
+<div class="section-block"><span class="section-num">2</span><span class="section-title">要旨</span>
+<div class="section-content">本研究は、UK Biobank の7日間リストバンド加速度データから抽出される<span class="stat-highlight">サーカディアン活動リズム指標</span>が、炎症駆動型生物学的老化を予測するかを大規模に検証した。対象は<span class="stat-highlight">62,000名</span>。加速度データから振幅（amplitude）、acrophase、IS、IV、MVPA時間などの指標を抽出。XGBoostを老化加速の予測に適用し、SHAPで特徴重要度を可視化。リズム<span class="stat-strong">振幅低下</span>、リズム<span class="stat-strong">安定性低下</span>、<span class="stat-strong">MVPA量低下</span>が老化加速の主予測因子と同定された。1年単位のbiological age増加は全死亡・心血管死・がん死リスクを<span class="stat-strong">8–12%</span>増加させた（HR）。媒介解析では炎症マーカー（CRP、IL-6）がリズム－老化関連の<span class="stat-strong">20–40%</span>を媒介。著者らは「ウェアラブル由来サーカディアンリズムは老化バイオマーカーとして価値が高く、安価かつ非侵襲」と結論。今後の課題は介入RCTでのリズム改善効果検証である。</div></div>
+
+<div class="section-block"><span class="section-num">3</span><span class="section-title">革新性・新規性</span>
+<div class="section-content">先行のScheer、Sehgal、Hood らはサーカディアンリズムと老化・代謝疾患の関連を提案してきたが、大規模ヒトコホートでの検証はNHANES（n=7,000）規模に留まっていた。本研究は<strong>UK Biobank n=62,000</strong>という前例のない規模で、機械学習＋SHAP解釈で（1）多次元リズム指標を統合的に評価し、（2）老化加速との予測関係を同定し、（3）炎症媒介を定量化した点が革新的。先行のFu（2024）はNHANESでサーカディアン指標と死亡を関連付けたが、本研究は規模・解釈性・媒介解析の3点で大きく前進。biological age accelerationを使った点も、単なる「死亡」アウトカムを超えた老化メカニズム解明に貢献する。</div></div>
+
+<div class="section-block"><span class="section-num">4</span><span class="section-title">研究背景</span>
+<div class="section-content">サーカディアンリズム破綻は加齢に伴い進行し、シフトワーク、不規則睡眠、光暴露異常で増悪する。リズム破綻は炎症、代謝、認知、心血管の多面的悪化と関連付けられてきたが、(1)大規模ヒトコホート、(2)客観的測定（加速度センサー）、(3)機械学習統合、を満たす研究は限定的だった。一方、UK Biobankは2013–2015に約103,000人で7日間加速度を取得し、世界最大の資源を提供。本研究はこの資源を最大限活用し、サーカディアンリズム→炎症→老化加速→死亡のメカニズム経路を実証することを目指した。研究問は「サーカディアン指標は老化を予測するか」「炎症がメカニズム媒介になるか」「リズム改善の介入価値はあるか」。</div></div>
+
+<div class="section-block"><span class="section-num">5</span><span class="section-title">研究手法</span>
+<div class="section-content">対象はUK Biobank加速度サブスタディ参加者から欠測なし62,000名（年齢42–78歳）。研究デザインは前向き縦断観察。エクスポージャは7日間加速度データ（Axivity AX3）から抽出した16指標（amplitude、acrophase、mesor、IS、IV、MVPA min/day、sedentary time、sleep efficiency等）。アウトカムはbiological age acceleration（PhenoAge型を血液マーカーから計算）、全死亡、心血管死、がん死。統計解析は(1)XGBoostで老化加速予測、(2)SHAPで特徴重要度、(3)Cox回帰で死亡関連、(4)causal mediation analysisで炎症（CRP、IL-6）の媒介比率推定。調整変数は年齢、性別、人種、教育、BMI、慢性疾患数、喫煙、飲酒。バイアス対策として加速度装着時間で重み付け、選択バイアスは逆確率重み付けで対処。</div></div>
+
+<div class="section-block"><span class="section-num">6</span><span class="section-title">研究成果</span>
+<div class="section-content">SHAP解析で老化加速予測の主特徴は、(1)リズム振幅（最大寄与）、(2)IS（interday stability）、(3)MVPA min/day、(4)sleep efficiencyの順。リズム振幅四分位最低群は最高群と比較して老化加速<span class="stat-strong">+1.5年（CI 1.2–1.8）</span>。biological age 1年加速で全死亡HR<span class="stat-strong">1.10（1.08–1.12）</span>、心血管死HR<span class="stat-strong">1.12（1.09–1.15）</span>、がん死HR<span class="stat-strong">1.08（1.05–1.10）</span>。媒介解析では、リズム振幅→老化加速関連の<span class="stat-strong">35%（CI 25–45%）</span>がCRP/IL-6で媒介。サブグループ解析では男女・年齢層・既往疾患別でも一貫。E-value=2.0で未測定交絡には頑健。<br><br><strong>考察：</strong>リズム振幅低下が最強予測因子という結果は、「活動と休息のメリハリ」の生物学的重要性を示す。MVPA量も独立に重要だが、リズム指標が量を超えた情報を提供する点は<strong>パラダイム転換</strong>。炎症が3割超を媒介することは、サーカディアン－免疫－老化の連関を支持し、抗炎症介入や時間栄養学の応用根拠を提供する。Walkerら、Pankaら（2025）の方向性と整合。</div></div>
+
+<div class="section-block"><span class="section-num">7</span><span class="section-title">社会的インパクト</span>
+<div class="section-content"><strong>応用展望：</strong>Apple Watch、Garmin、Fitbit等の市販ウェアラブルからリズム指標を抽出し、消費者向け「老化加速度モニタリング」アプリの開発が現実的に。臨床では老年医学的評価にウェアラブル指標を組み込む流れが加速。公衆衛生では、自治体高齢者にウェアラブル配布→リズム指標モニタリング→介入のスキームが設計可能。<br><br><strong>学術的影響：</strong>サーカディアン研究の主流化。「身体活動量」一辺倒だった疫学から「<strong>活動の質・パターン</strong>」へ視点が拡張。フレイル研究、認知症予防研究、代謝疾患研究の方法論アップデートを促す。<br><br><strong>将来展望：</strong>(1)時間栄養学・時間運動学のRCT、(2)光療法・睡眠衛生介入のリズム指標エンドポイント化、(3)サーカディアン薬理学、(4)他コホート（NIH All of Us、TMM）での再現と国際比較。<br><br><strong>研究者自身の研究への接続：</strong>Yujiの研究フォーカスである身体活動・健康寿命・身体機能と直結する。JAGES高齢者対象の加速度装着サブスタディで、(1)リズム指標→LTCI開始のtarget trial emulation、(2)リズム指標と筋質（CT muscle density、BIA-PhA）の関連、(3)リズム指標と社会参加・認知機能の媒介解析、が直近の研究プロジェクトとして自然に展開可能。Belsky型PoAにリズム指標を組み込む拡張モデルの設計、MR for循環リズム－健康寿命因果検証なども有望。本論文の方法論（XGBoost+SHAP+causal mediation）は、Yujiの今後の研究設計の標準ツールとして確立すべき。</div></div>
+</div>
+
+</div>
+
+
+
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '',
+      authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '',
+      design: card.dataset.design || '',
+      url: card.dataset.url || '',
+      summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '',
+      importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '',
+      limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '',
+      background: card.dataset.background || '',
+      result: card.dataset.result || '',
+      impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  // === 自動アップグレード：既に保存済みのお気に入りに不足データがあれば、このページのdata-*属性で補充する ===
+  (function autoUpgrade() {
+    const favs = loadFavs();
+    let upgraded = 0;
+    cards.forEach(card => {
+      const id = card.dataset.paperId;
+      if (!favs[id]) return;
+      const newData = buildPaperData(card);
+      const fields = ['title','authors','journal','design','url','summary','overview','importance','methodology','limitation','implication','idea','novelty','background','result','impact','keywords'];
+      const hasNew = fields.some(k => newData[k] && (!favs[id][k] || favs[id][k] === ''));
+      if (hasNew) {
+        favs[id] = {
+          ...favs[id],
+          ...newData,
+          rating: favs[id].rating || 0,
+          addedAt: favs[id].addedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+        upgraded++;
+      }
+    });
+    if (upgraded > 0) {
+      saveFavs(favs);
+      const note = document.createElement('div');
+      note.style.cssText = 'position:fixed;top:20px;right:20px;background:#fef3c7;border:2px solid #f59e0b;padding:12px 18px;border-radius:8px;color:#78350f;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;max-width:340px';
+      note.innerHTML = '🔄 ' + upgraded + '件のお気に入りを最新項目で自動更新しました';
+      document.body.appendChild(note);
+      setTimeout(() => note.remove(), 5000);
+    }
+  })();
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const data = buildPaperData(card);
+
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) {
+      card.style.paddingLeft = '50px';
+    }
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) {
+      cb.checked = true;
+      label.textContent = '保存済み';
+      label.style.color = '#be185d';
+    }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = {
+          ...buildPaperData(card),
+          rating: existing.rating || 0,
+          addedAt: existing.addedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+        label.textContent = '保存済み';
+        label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り';
+        label.style.color = '#475569';
+      }
+      saveFavs(favs);
+      updateBar();
+    });
+  });
+
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin-bottom:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    document.getElementById('page-count').textContent = checkedCount;
+    document.getElementById('total-count').textContent = Object.keys(loadFavs()).length;
+  }
+
+  document.getElementById('select-all').addEventListener('click', () => {
+    document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } });
+  });
+  document.getElementById('select-none').addEventListener('click', () => {
+    document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } });
+  });
+
+  document.getElementById('open-viewer').addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => {
+      if (cb.checked) {
+        const card = cb.closest('[data-paper-id]');
+        selected[card.dataset.paperId] = {
+          ...buildPaperData(card),
+          rating: 0,
+          addedAt: new Date().toISOString(),
+        };
+      }
+    });
+    const hash = Object.keys(selected).length > 0
+      ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected)))
+      : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+
+  updateBar();
+
+  window.addEventListener('storage', e => {
+    if (e.key === STORAGE_KEY) {
+      const favs = loadFavs();
+      document.querySelectorAll('[data-paper-id]').forEach(card => {
+        const cb = card.querySelector('.paper-fav-check');
+        if (!cb) return;
+        const label = card.querySelector('.fav-label');
+        const isFav = !!favs[card.dataset.paperId];
+        cb.checked = isFav;
+        label.textContent = isFav ? '保存済み' : 'お気に入り';
+        label.style.color = isFav ? '#be185d' : '#475569';
+      });
+      updateBar();
+    }
+  });
+})();
+</script>
+<!-- favorites-injected-end -->
+</body></html>

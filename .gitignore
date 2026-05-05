@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Logs
+scripts/logs/
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.pytest_cache/
+
+# Local secrets / config
+.env
+.env.local
+
+# Backups
+*.bak
+*.orig

@@ -1,0 +1,188 @@
+/**
+ * DOCX生成スクリプト テンプレート
+ *
+ * 使い方:
+ *   1. /tmp/npm-work で `npm install docx` を実行
+ *   2. このスクリプトを Node.js で実行
+ *
+ * パッケージインストール:
+ *   mkdir -p /tmp/npm-work && cd /tmp/npm-work && npm init -y > /dev/null 2>&1 && npm install docx
+ *
+ * 実行:
+ *   node generate-docx.js <output_path> <data_json_path>
+ *
+ * data.json の構造:
+ *   {
+ *     "title": "研究レポート — テーマ名",
+ *     "subtitle": "2026年4月28日（火曜日）",
+ *     "papers": [
+ *       {
+ *         "rank": 1,
+ *         "top": true,
+ *         "title": "...",
+ *         "authors": "...",
+ *         "journal": "...",
+ *         "design": "...",
+ *         "url": "https://...",
+ *         "summary": "...",
+ *         "overview": "...",
+ *         "importance": "...",
+ *         "originality": "...",
+ *         "discovery": "...",
+ *         "methodology": "...",
+ *         "limitation": "...",
+ *         "implication": "...",
+ *         "idea": "...",
+ *         "tags": "tag1 / tag2 / tag3"
+ *       },
+ *       ...
+ *     ]
+ *   }
+ */
+
+const docx = require('/tmp/npm-work/node_modules/docx');
+const fs = require('fs');
+const {
+  Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
+  PageOrientation, ExternalHyperlink, Table, TableRow, TableCell, WidthType,
+  BorderStyle, ShadingType
+} = docx;
+
+// 引数: <output_path> <data_json>
+const outputPath = process.argv[2];
+const dataPath = process.argv[3];
+const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+
+function makeBlock(label, text, color) {
+  return new Paragraph({
+    spacing: { before: 100, after: 80 },
+    shading: { type: ShadingType.CLEAR, color: "auto", fill: color },
+    children: [
+      new TextRun({ text: label + " ", bold: true, size: 20, color: "1A365D" }),
+      new TextRun({ text: text, size: 20 })
+    ]
+  });
+}
+
+const children = [];
+
+// タイトル
+children.push(new Paragraph({
+  heading: HeadingLevel.TITLE,
+  alignment: AlignmentType.CENTER,
+  children: [new TextRun({ text: data.title, bold: true, size: 36, color: "2C5282" })]
+}));
+children.push(new Paragraph({
+  alignment: AlignmentType.CENTER,
+  spacing: { after: 200 },
+  children: [new TextRun({ text: data.subtitle || '', size: 22, color: "4A5568" })]
+}));
+
+// 各論文
+data.papers.forEach(p => {
+  // ランクヘッダ
+  children.push(new Paragraph({
+    spacing: { before: 280, after: 80 },
+    border: { bottom: { color: p.top ? "C53030" : "4299E1", size: 12, style: BorderStyle.SINGLE } },
+    children: [
+      new TextRun({ text: `RANK ${p.rank}` + (p.top ? "（TOP）" : ""), bold: true, size: 20, color: p.top ? "C53030" : "2B6CB0" })
+    ]
+  }));
+
+  // タイトル
+  children.push(new Paragraph({
+    heading: HeadingLevel.HEADING_2,
+    children: [new TextRun({ text: p.title, bold: true, size: 24, color: "1A365D" })]
+  }));
+
+  // メタ情報
+  children.push(new Paragraph({ children: [
+    new TextRun({ text: "著者: ", bold: true, size: 20 }),
+    new TextRun({ text: p.authors, size: 20 })
+  ]}));
+  children.push(new Paragraph({ children: [
+    new TextRun({ text: "ジャーナル・年: ", bold: true, size: 20 }),
+    new TextRun({ text: p.journal, size: 20 })
+  ]}));
+  children.push(new Paragraph({ children: [
+    new TextRun({ text: "研究デザイン: ", bold: true, size: 20 }),
+    new TextRun({ text: p.design, size: 20 })
+  ]}));
+  if (p.url) {
+    children.push(new Paragraph({ children: [
+      new TextRun({ text: "URL: ", bold: true, size: 20 }),
+      new ExternalHyperlink({
+        link: p.url,
+        children: [new TextRun({ text: p.url, size: 18, color: "2B6CB0", style: "Hyperlink" })]
+      })
+    ]}));
+  }
+
+  // セクション（独立ブロック）
+  if (p.summary) children.push(makeBlock("【一言要約】", p.summary, "EBF8FF"));
+  if (p.overview) children.push(makeBlock("【研究概要】", p.overview, "F7FAFC"));
+  if (p.importance) children.push(makeBlock("【重要な点】", p.importance, "FEF5E7"));
+  if (p.originality) children.push(makeBlock("【オリジナリティ】", p.originality, "FAF5FF"));
+  if (p.discovery) children.push(makeBlock("【新発見項目】", p.discovery, "F0FDF4"));
+  if (p.methodology) children.push(makeBlock("【方法論評価】", p.methodology, "F0FFF4"));
+  if (p.limitation) children.push(makeBlock("【限界】", p.limitation, "FFF5F5"));
+  if (p.implication) children.push(makeBlock("【研究への示唆】", p.implication, "F5F3FF"));
+  if (p.idea) children.push(makeBlock("【研究アイデア】", p.idea, "E6FFFA"));
+
+  if (p.tags) {
+    children.push(new Paragraph({
+      spacing: { before: 60, after: 60 },
+      children: [
+        new TextRun({ text: "タグ: ", bold: true, size: 18, color: "718096" }),
+        new TextRun({ text: p.tags, size: 18, color: "4A5568" })
+      ]
+    }));
+  }
+});
+
+// まとめ表（オプション）
+if (data.summaryTable && data.summaryTable.rows) {
+  children.push(new Paragraph({
+    heading: HeadingLevel.HEADING_1,
+    spacing: { before: 400, after: 200 },
+    children: [new TextRun({ text: "まとめ一覧表", bold: true, size: 28, color: "1A365D" })]
+  }));
+
+  const headerRow = new TableRow({
+    children: data.summaryTable.headers.map(t =>
+      new TableCell({
+        shading: { fill: "2B6CB0" },
+        children: [new Paragraph({ children: [new TextRun({ text: t, bold: true, color: "FFFFFF", size: 18 })] })]
+      })
+    )
+  });
+  const tableRows = [headerRow];
+  data.summaryTable.rows.forEach(row => {
+    tableRows.push(new TableRow({
+      children: row.map(c => new TableCell({
+        children: [new Paragraph({ children: [new TextRun({ text: String(c), size: 16 })] })]
+      }))
+    }));
+  });
+  children.push(new Table({ rows: tableRows, width: { size: 100, type: WidthType.PERCENTAGE } }));
+}
+
+// ドキュメント生成
+const doc = new Document({
+  styles: {
+    default: {
+      document: {
+        run: { font: "Yu Gothic" }
+      }
+    }
+  },
+  sections: [{
+    properties: { page: { size: { orientation: PageOrientation.PORTRAIT } } },
+    children: children
+  }]
+});
+
+Packer.toBuffer(doc).then(buf => {
+  fs.writeFileSync(outputPath, buf);
+  console.log(`✅ Saved: ${outputPath} (${buf.length} bytes)`);
+});

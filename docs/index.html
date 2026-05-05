@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Dashboard — 浅野優次郎</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='56' fill='white' font-family='Arial' font-weight='800'%3ER%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="logo">R</span><span>Research Dashboard</span></a>
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      <a href="papers.html">論文一覧</a>
+      <a href="themes.html">曜日テーマ</a>
+      <a href="favorites.html">お気に入り</a>
+    </nav>
+    <div class="spacer"></div>
+    <a class="fav-pill" href="favorites.html"><span class="star">★</span><span>お気に入り</span><span class="count">0</span></a>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">研究論文ダッシュボード</h1>
+  <p class="page-subtitle">毎朝8:00に最新論文を更新／曜日テーマ別レポート＋お気に入り管理</p>
+
+  <div class="hero-grid">
+    <div class="latest-card" id="latest-card">
+      <div class="latest-label">最新レポート</div>
+      <div class="latest-title">読み込み中…</div>
+    </div>
+    <div class="stats-card">
+      <h3>累計</h3>
+      <div class="stats-grid" id="stats-grid">
+        <div class="stat"><div class="num" id="stat-reports">—</div><div class="label">レポート</div></div>
+        <div class="stat"><div class="num" id="stat-papers">—</div><div class="label">論文</div></div>
+        <div class="stat"><div class="num" id="stat-pd">—</div><div class="label">PD関連</div></div>
+        <div class="stat"><div class="num" id="stat-fav">—</div><div class="label">お気に入り</div></div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">曜日テーマ</h2>
+  <div class="theme-grid" id="theme-grid"></div>
+
+  <h2 class="section-title">最近30日</h2>
+  <div class="calendar" id="calendar"></div>
+
+  <h2 class="section-title">最近の論文</h2>
+  <div class="papers-list" id="recent-papers"></div>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Yujiro Asano · Tohoku University · <a href="https://github.com/">GitHub</a></p>
+</footer>
+
+<script src="js/favorites.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const [papers, reports] = await Promise.all([SITE.loadPapers(), SITE.loadReports()]);
+
+  // --- Latest report card ---
+  reports.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  const latest = reports.find(r => r.report_type !== "detail") || reports[0];
+  const latestCard = document.getElementById("latest-card");
+  if (!latest) {
+    latestCard.innerHTML = `<div class="latest-label">レポートがまだありません</div>
+      <div class="latest-title">最初のレポートを生成しましょう</div>
+      <p class="latest-meta">毎朝8:00に自動更新されます。</p>`;
+  } else {
+    const t = SITE.THEME[latest.weekday] || {};
+    latestCard.style.setProperty("--theme-color", t.color || "");
+    const top = (latest.paper_ids || []).slice(0, 5).map(id => papers.find(p => p.id === id)).filter(Boolean);
+    latestCard.innerHTML = `
+      <div class="latest-label">最新レポート ・ ${t.jp || latest.theme_jp || latest.weekday}</div>
+      <h2 class="latest-title">${SITE.fmtDateJP(latest.date)}</h2>
+      <p class="latest-meta">${(latest.paper_count || (latest.paper_ids||[]).length) + "本"} ／ ${t.jp || latest.theme_jp || ""}</p>
+      <div class="latest-papers">
+        ${top.map((p, i) => `<div class="paper-mini"><span class="num">${i+1}.</span><a href="papers.html#paper-${p.id}">${escapeHtml(p.title)}</a></div>`).join("")}
+      </div>
+      <div class="latest-actions">
+        <a class="btn btn-primary" href="reports/${latest.id}.html">レポートを開く →</a>
+        <a class="btn" href="papers.html?report=${latest.id}">論文一覧で見る</a>
+      </div>`;
+  }
+
+  // --- Stats ---
+  document.getElementById("stat-reports").textContent = reports.length;
+  document.getElementById("stat-papers").textContent = papers.length;
+  document.getElementById("stat-pd").textContent = papers.filter(p => p.is_pd_related).length;
+  document.getElementById("stat-fav").textContent = Favorites.list().length;
+
+  // --- Theme cards ---
+  const themeGrid = document.getElementById("theme-grid");
+  for (const wd of SITE.WEEKDAY_ORDER) {
+    const t = SITE.THEME[wd];
+    const wReports = reports.filter(r => r.weekday === wd);
+    const lastDate = wReports.length ? wReports[0].date : null;
+    const wPapers = new Set();
+    wReports.forEach(r => (r.paper_ids || []).forEach(id => wPapers.add(id)));
+    const card = document.createElement("a");
+    card.className = "theme-card";
+    card.href = `themes.html?day=${wd}`;
+    card.style.setProperty("--c", t.color);
+    card.innerHTML = `
+      <div class="day-label">${wd.toUpperCase()}</div>
+      <div class="day-name">${t.jp}</div>
+      <div class="day-stats">
+        <span><b>${wReports.length}</b> レポート</span>
+        <span><b>${wPapers.size}</b> 論文</span>
+      </div>
+      <div class="last-date">${lastDate ? "最終更新 " + SITE.fmtDateShort(lastDate) : "未生成"}</div>`;
+    themeGrid.appendChild(card);
+  }
+
+  // --- Calendar (last 30 days) ---
+  const cal = document.getElementById("calendar");
+  const today = new Date();
+  const days = [];
+  for (let i = 29; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    days.push(d);
+  }
+  // Pad to start on Sunday-aligned grid (Mon-first weeks would be cleaner; use simple linear)
+  for (const d of days) {
+    const ymd = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    const r = reports.find(r => r.date === ymd && r.report_type !== "detail");
+    const cell = document.createElement(r ? "a" : "div");
+    cell.className = "cal-day" + (r ? " has-report" : "");
+    if (r) {
+      const t = SITE.THEME[r.weekday];
+      cell.style.setProperty("--c", t.color);
+      cell.href = `reports/${r.id}.html`;
+      cell.title = `${ymd} ${t.jp}`;
+    }
+    cell.innerHTML = `<div class="num">${d.getDate()}</div>`;
+    cal.appendChild(cell);
+  }
+
+  // --- Recent papers (last 14 days) ---
+  const recent = papers
+    .filter(p => p.first_seen_date)
+    .sort((a, b) => (b.first_seen_date || "").localeCompare(a.first_seen_date || ""))
+    .slice(0, 8);
+  const recentEl = document.getElementById("recent-papers");
+  if (recent.length === 0) {
+    recentEl.innerHTML = `<div class="empty-state"><div class="em">📭</div>論文データがまだありません</div>`;
+  } else {
+    recentEl.innerHTML = recent.map(p => renderPaperRow(p, reports)).join("");
+    attachFavButtons(recentEl);
+  }
+})();
+
+function escapeHtml(s) {
+  return (s || "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+}
+
+function renderPaperRow(p, reports) {
+  const sourceReport = (p.source_reports || []).map(rid => reports.find(r => r.id === rid)).filter(Boolean)[0];
+  const wd = sourceReport ? sourceReport.weekday : null;
+  const t = wd ? SITE.THEME[wd] : null;
+  const c = t ? t.color : "var(--accent)";
+  const reportLink = sourceReport ? `reports/${sourceReport.id}.html` : "#";
+  const isFav = Favorites.has(p.id);
+  return `
+    <article class="paper-row" id="paper-${p.id}" style="--c:${c}">
+      <div class="row-head">
+        <button class="fav-btn ${isFav ? "on" : ""}" data-pid="${p.id}" title="お気に入り">${isFav ? "★" : "☆"}</button>
+        <h3><a href="${p.url || reportLink}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a></h3>
+      </div>
+      <p class="meta">${escapeHtml(p.authors || "")} · <i>${escapeHtml(p.journal || "")}</i></p>
+      ${p.summary ? `<p class="summary">${escapeHtml(p.summary)}</p>` : ""}
+      <div class="footer">
+        ${t ? `<span class="theme-chip" style="--c:${c}">${t.short}</span>` : ""}
+        ${p.is_pd_related ? `<span class="pd-chip">📍 PD</span>` : ""}
+        ${(p.tags || []).slice(0, 4).map(tg => `<span class="tag-chip">${escapeHtml(tg)}</span>`).join("")}
+        ${sourceReport ? `<a href="${reportLink}">レポート（${SITE.fmtDateShort(sourceReport.date)}）</a>` : ""}
+      </div>
+    </article>`;
+}
+
+function attachFavButtons(scope) {
+  scope.querySelectorAll(".fav-btn").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const pid = btn.dataset.pid;
+      const papers = await SITE.loadPapers();
+      const p = papers.find(x => x.id === pid);
+      if (!p) return;
+      const added = Favorites.toggle(p);
+      btn.classList.toggle("on", added);
+      btn.textContent = added ? "★" : "☆";
+      SITE.toast(added ? "お気に入りに追加" : "お気に入りから削除");
+      document.getElementById("stat-fav").textContent = Favorites.list().length;
+    });
+  });
+}
+</script>
+</body>
+</html>

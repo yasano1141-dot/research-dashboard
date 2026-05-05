@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>研究レポート 身体活動・運動疫学 2026年4月28日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+  color: #2d3748;
+  line-height: 1.7;
+  padding: 24px;
+}
+.container { max-width: 1100px; margin: 0 auto; }
+header.main {
+  background: linear-gradient(135deg, #2c5282 0%, #2b6cb0 50%, #4299e1 100%);
+  color: white;
+  padding: 40px 36px;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(44,82,130,0.25);
+}
+header.main h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+header.main .meta { font-size: 14px; opacity: 0.95; margin-top: 6px; }
+header.main .theme {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+.intro {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  border-left: 5px solid #2b6cb0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 14.5px;
+}
+.paper {
+  background: white;
+  padding: 28px 30px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  position: relative;
+  border-left: 4px solid #4299e1;
+}
+.paper.top1 { border-left-color: #c53030; }
+.paper.top2 { border-left-color: #d69e2e; }
+.paper.top3 { border-left-color: #38a169; }
+.rank-badge {
+  position: absolute;
+  top: -10px; left: 22px;
+  background: #4299e1;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+.paper.top1 .rank-badge { background: #c53030; }
+.paper.top2 .rank-badge { background: #d69e2e; }
+.paper.top3 .rank-badge { background: #38a169; }
+.paper h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a365d;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.meta-line {
+  font-size: 12.5px;
+  color: #4a5568;
+  margin-bottom: 4px;
+}
+.meta-line strong { color: #2d3748; }
+.url-line { font-size: 12px; margin: 6px 0 14px 0; word-break: break-all; }
+.url-line a { color: #2b6cb0; text-decoration: none; }
+.url-line a:hover { text-decoration: underline; }
+.section {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13.5px;
+}
+.section.summary { background: #ebf8ff; border-left: 3px solid #3182ce; }
+.section.overview { background: #f7fafc; border-left: 3px solid #718096; }
+.section.importance { background: #fef5e7; border-left: 3px solid #d69e2e; }
+.section.method { background: #f0fff4; border-left: 3px solid #38a169; }
+.section.limit { background: #fff5f5; border-left: 3px solid #c53030; }
+.section.implication { background: #faf5ff; border-left: 3px solid #805ad5; }
+.section.idea { background: #e6fffa; border-left: 3px solid #319795; }
+.section .label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+.tags { margin-top: 14px; }
+.tag {
+  display: inline-block;
+  background: #edf2f7;
+  color: #2d3748;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  margin: 2px 4px 2px 0;
+  font-weight: 500;
+}
+.tag.method { background: #c6f6d5; color: #22543d; }
+.tag.theme { background: #bee3f8; color: #2a4365; }
+.tag.field { background: #fbd5e0; color: #702459; }
+.tag.fresh { background: #fed7d7; color: #742a2a; }
+.summary-table {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  margin-top: 30px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  overflow-x: auto;
+}
+.summary-table h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 19px;
+  color: #1a365d;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2b6cb0;
+}
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { background: #2b6cb0; color: white; padding: 9px 8px; text-align: left; font-weight: 600; }
+td { padding: 9px 8px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+tr:hover { background: #f7fafc; }
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  color: #718096;
+  font-size: 12px;
+}
+</style>
+</head>
+<body data-source-date="20260428" data-source-theme="身体活動・運動疫学">
+<div class="container">
+
+<header class="main">
+  <h1>研究レポート — 身体活動・運動疫学</h1>
+  <div class="meta">2026年4月28日（火曜日）</div>
+  <div class="meta">本日のテーマ: Physical Activity & Exercise Epidemiology</div>
+  <div class="theme">10 papers / 重要度順</div>
+</header>
+
+<div class="intro">
+  本日は身体活動・運動疫学領域の最新10論文をレビューします。<strong>2026年1月にThe Lancetに掲載された大規模IPDメタ解析（Ekelund et al.）と、同月BMJ Medicineに掲載されたNurses' Health Study由来の運動多様性研究（Hu et al.）</strong>を含む、極めて新しい知見を中心に構成しました。加速度計（accelerometer）測定、ターゲットトライアル・エミュレーション、複数コホート統合解析など、方法論的にも先端的な研究を取り上げ、研究者プロフィール（健康寿命・身体機能・筋質・認知機能・方法論）との接続を意識して解説します。
+</div>
+
+<!-- Paper 1 -->
+<div class="paper top1" data-paper-id="20260428_01" data-title="Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies" data-authors="Ekelund U, et al." data-journal="The Lancet, 2026年1月" data-design="前向きコホート研究の個人参加者データ（IPD）メタ解析" data-url="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract" data-summary="加速度計で測定した中高強度身体活動（MVPA）を1日5分増やすだけで、最も活動量の少ない集団では6.0%、最活動的層を除く集団では10.0%の死亡を予防可能と推定。座位時間を1日30分減らすだけでも全死亡の3.0〜7.3%が予防可能であることが示された。" data-overview="WHOのガイドラインは「150分/週以上のMVPA」を推奨しているが、多くの成人がこれを達成できていない。本研究は、9つの前向きコホートから合計135,046人の加速度計データを統合し、IPDメタ解析により小さな行動変化の人口寄与効果を推定した。「ハイリスク集団のみ」と「最活動的層以外の全員」という2つのシナリオで、MVPA増加・座位時間減少が予防可能な死亡数を算出した。" data-importance="「150分/週」という閾値ではなく「+5分/日」というより達成可能な行動目標で大きな公衆衛生インパクトが得られることを定量化した点が画期的。低活動者ほど限界効用が大きいことを示し、ターゲット層を絞った介入の優先度を高めた。" data-methodology="IPDメタ解析は集計値ベースのメタ解析よりも交絡調整が精緻でバイアスが少ない。加速度計データの統一処理（harmonization）と非線形量反応モデルの適用により内的妥当性が高い。" data-limitation="観察研究のため逆因果（健康な人が活動的）の残存バイアスが否定できない。加速度計測定は短期間（1週間程度）であり、長期の活動習慣を反映しない可能性がある。" data-implication="健康寿命研究において「達成可能な行動変化」の枠組みは介護予防介入の設計に直結。LTCI（介護保険）対象者の身体機能維持戦略に応用可能。" data-idea="日本人高齢者コホート（JAGES、東北メディカル・メガバンク等）で「+5分/日 MVPA」シナリオによる要介護予防可能数の人口寄与リスクを推定する。g-formulaやmarginal structural modelを用いた介入効果推定が応用可能。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="最新2026|IPDメタ解析|加速度計|MVPA|座位時間|公衆衛生|健康寿命">
+  <span class="rank-badge">RANK 1</span>
+  <h2>Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies</h2>
+  <div class="meta-line"><strong>著者:</strong> Ekelund U, et al.</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> The Lancet, 2026年1月</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 前向きコホート研究の個人参加者データ（IPD）メタ解析</div>
+  <div class="url-line"><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract" target="_blank">https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  加速度計で測定した中高強度身体活動（MVPA）を1日5分増やすだけで、最も活動量の少ない集団では6.0%、最活動的層を除く集団では10.0%の死亡を予防可能と推定。座位時間を1日30分減らすだけでも全死亡の3.0〜7.3%が予防可能であることが示された。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  WHOのガイドラインは「150分/週以上のMVPA」を推奨しているが、多くの成人がこれを達成できていない。本研究は、9つの前向きコホートから合計135,046人の加速度計データを統合し、IPDメタ解析により小さな行動変化の人口寄与効果を推定した。「ハイリスク集団のみ」と「最活動的層以外の全員」という2つのシナリオで、MVPA増加・座位時間減少が予防可能な死亡数を算出した。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  「150分/週」という閾値ではなく「+5分/日」というより達成可能な行動目標で大きな公衆衛生インパクトが得られることを定量化した点が画期的。低活動者ほど限界効用が大きいことを示し、ターゲット層を絞った介入の優先度を高めた。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  IPDメタ解析は集計値ベースのメタ解析よりも交絡調整が精緻でバイアスが少ない。加速度計データの統一処理（harmonization）と非線形量反応モデルの適用により内的妥当性が高い。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  観察研究のため逆因果（健康な人が活動的）の残存バイアスが否定できない。加速度計測定は短期間（1週間程度）であり、長期の活動習慣を反映しない可能性がある。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  健康寿命研究において「達成可能な行動変化」の枠組みは介護予防介入の設計に直結。LTCI（介護保険）対象者の身体機能維持戦略に応用可能。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人高齢者コホート（JAGES、東北メディカル・メガバンク等）で「+5分/日 MVPA」シナリオによる要介護予防可能数の人口寄与リスクを推定する。g-formulaやmarginal structural modelを用いた介入効果推定が応用可能。
+  </div>
+
+  <div class="tags">
+    <span class="tag fresh">最新2026</span>
+    <span class="tag method">IPDメタ解析</span>
+    <span class="tag method">加速度計</span>
+    <span class="tag theme">MVPA</span>
+    <span class="tag theme">座位時間</span>
+    <span class="tag field">公衆衛生</span>
+    <span class="tag field">健康寿命</span>
+  </div>
+</div>
+
+<!-- Paper 2 -->
+<div class="paper top2" data-paper-id="20260428_02" data-title="Physical activity types, variety, and mortality: results from two prospective cohort studies" data-authors="Hu Y, et al." data-journal="BMJ Medicine, 2026年1月20日" data-design="2つの前向きコホート研究（NHS + HPFS）" data-url="https://pmc.ncbi.nlm.nih.gov/articles/PMC12820861/" data-summary="ウォーキングから筋トレ、ガーデニングまで多様な運動を継続的に行う者は、最も種類の少ない者と比較して早期死亡リスクが19%低い。この関連は総活動時間と独立しており、「量」だけでなく「多様性」が長寿に重要であることを示した。" data-overview="Harvard T.H. Chan School of Public Healthのチームが、Nurses&#39; Health Study（1986-2018）とHealth Professionals Follow-Up Study（1986-2020）の30年以上のデータを用い、111,000人以上の運動種目数と多様性、死亡リスクとの関連を解析した。共変量で調整後、運動多様性最高五分位は最低五分位と比較して全死亡リスク19%減（HR 0.81, 95% CI: 0.78-0.84）。" data-importance="運動量を一定にした層別解析でも多様性の効果が残ったことから、「同じ時間でも種目を増やす」という新しい行動変容戦略の根拠となる。これは筋骨格系の多角的刺激、社会的多様性、行動継続性といった複数のメカニズム仮説を支持する。" data-methodology="30年超の追跡で時間依存的な活動評価が可能。職種別2コホートで再現性確認したことで結果の頑健性が高い。一方、自己申告ベースであり測定誤差は残る。" data-limitation="対象が医療従事者中心で一般化可能性に制約。多様性の高い人ほど健康意識が高い等の残存交絡（健康行動クラスター）が完全には除外できていない。" data-implication="社会的運動（social exercise）研究に直結。多様な運動種目は社交機会の幅も広げ、認知機能維持・心理的健康への波及効果を介して健康寿命延伸に寄与する可能性がある。" data-idea="日本人高齢者で「運動多様性スコア」を構築し、要介護発生・認知機能低下・身体機能（gait, balance）との縦断関連を多状態モデル（multi-state model）で評価する研究。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="最新2026|前向きコホート|時間依存的曝露|運動多様性|余暇身体活動|疫学|健康寿命">
+  <span class="rank-badge">RANK 2</span>
+  <h2>Physical activity types, variety, and mortality: results from two prospective cohort studies</h2>
+  <div class="meta-line"><strong>著者:</strong> Hu Y, et al.</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> BMJ Medicine, 2026年1月20日</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 2つの前向きコホート研究（NHS + HPFS）</div>
+  <div class="url-line"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12820861/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC12820861/</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  ウォーキングから筋トレ、ガーデニングまで多様な運動を継続的に行う者は、最も種類の少ない者と比較して早期死亡リスクが19%低い。この関連は総活動時間と独立しており、「量」だけでなく「多様性」が長寿に重要であることを示した。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  Harvard T.H. Chan School of Public Healthのチームが、Nurses' Health Study（1986-2018）とHealth Professionals Follow-Up Study（1986-2020）の30年以上のデータを用い、111,000人以上の運動種目数と多様性、死亡リスクとの関連を解析した。共変量で調整後、運動多様性最高五分位は最低五分位と比較して全死亡リスク19%減（HR 0.81, 95% CI: 0.78-0.84）。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  運動量を一定にした層別解析でも多様性の効果が残ったことから、「同じ時間でも種目を増やす」という新しい行動変容戦略の根拠となる。これは筋骨格系の多角的刺激、社会的多様性、行動継続性といった複数のメカニズム仮説を支持する。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  30年超の追跡で時間依存的な活動評価が可能。職種別2コホートで再現性確認したことで結果の頑健性が高い。一方、自己申告ベースであり測定誤差は残る。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  対象が医療従事者中心で一般化可能性に制約。多様性の高い人ほど健康意識が高い等の残存交絡（健康行動クラスター）が完全には除外できていない。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  社会的運動（social exercise）研究に直結。多様な運動種目は社交機会の幅も広げ、認知機能維持・心理的健康への波及効果を介して健康寿命延伸に寄与する可能性がある。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人高齢者で「運動多様性スコア」を構築し、要介護発生・認知機能低下・身体機能（gait, balance）との縦断関連を多状態モデル（multi-state model）で評価する研究。
+  </div>
+
+  <div class="tags">
+    <span class="tag fresh">最新2026</span>
+    <span class="tag method">前向きコホート</span>
+    <span class="tag method">時間依存的曝露</span>
+    <span class="tag theme">運動多様性</span>
+    <span class="tag theme">余暇身体活動</span>
+    <span class="tag field">疫学</span>
+    <span class="tag field">健康寿命</span>
+  </div>
+</div>
+
+<!-- Paper 3 -->
+<div class="paper top3" data-paper-id="20260428_03" data-title="Data from the UK Biobank demonstrates that increased brief, sporadic moderate-to-vigorous physical activity reduces mortality" data-authors="UK Biobank研究グループ" data-journal="Communications Medicine (Nature), 2026" data-design="前向きコホート研究（加速度計 + 機械学習）" data-url="https://www.nature.com/articles/s43856-026-01421-z" data-summary="日常生活に散在する短時間（10分未満）のMVPAでも、150分/週で死亡リスクが48%、300分/週で50%低下し、最大の死亡予防効果が得られる。「まとまった運動」でなくても効果があることを機械学習で実証した。" data-overview="UK Biobank参加者96,054人について、2013-2016年に測定された加速度計データを解析。カメラ実画像で訓練した機械学習アルゴリズムで「散発的MVPA（sporadic）」と「まとまったMVPA（bouted）」を分類し、追跡期間中央値8.0年で3,586件の死亡、4,948件のCVDイベントとの関連を評価した。" data-importance="WHO 2020ガイドラインの「10分以上のbout」要件を撤廃した根拠を補強する重要なエビデンス。階段昇降、急ぎ足歩行など日常の細切れMVPAも有効であることを定量的に示し、忙しい現代人への実践的メッセージとなる。" data-methodology="機械学習による行動分類が新規性。ground-truthカメラデータでの検証は分類精度を担保。サンプルサイズも極めて大きい。" data-limitation="UK Biobank参加者は健康的バイアス（healthy volunteer bias）が強く、外的妥当性に制約。1週間の加速度計測定が長期習慣を反映するかは不明。" data-implication="身体機能（mobility, gait）研究において「家事・通勤等の日常活動」を含めた包括的活動評価の重要性を示唆。フレイル予防介入のエンドポイント設計にも応用可能。" data-idea="日本人高齢者で散発的MVPAと歩行能力（10m歩行速度、Timed Up and Go）の関連を解析。Tohoku Medical Megabankの加速度計データを活用したMRリンクで因果性検討も可能。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="最新2026|機械学習|加速度計|散発的MVPA|日常生活活動|UK Biobank">
+  <span class="rank-badge">RANK 3</span>
+  <h2>Data from the UK Biobank demonstrates that increased brief, sporadic moderate-to-vigorous physical activity reduces mortality</h2>
+  <div class="meta-line"><strong>著者:</strong> UK Biobank研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> Communications Medicine (Nature), 2026</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 前向きコホート研究（加速度計 + 機械学習）</div>
+  <div class="url-line"><a href="https://www.nature.com/articles/s43856-026-01421-z" target="_blank">https://www.nature.com/articles/s43856-026-01421-z</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  日常生活に散在する短時間（10分未満）のMVPAでも、150分/週で死亡リスクが48%、300分/週で50%低下し、最大の死亡予防効果が得られる。「まとまった運動」でなくても効果があることを機械学習で実証した。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  UK Biobank参加者96,054人について、2013-2016年に測定された加速度計データを解析。カメラ実画像で訓練した機械学習アルゴリズムで「散発的MVPA（sporadic）」と「まとまったMVPA（bouted）」を分類し、追跡期間中央値8.0年で3,586件の死亡、4,948件のCVDイベントとの関連を評価した。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  WHO 2020ガイドラインの「10分以上のbout」要件を撤廃した根拠を補強する重要なエビデンス。階段昇降、急ぎ足歩行など日常の細切れMVPAも有効であることを定量的に示し、忙しい現代人への実践的メッセージとなる。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  機械学習による行動分類が新規性。ground-truthカメラデータでの検証は分類精度を担保。サンプルサイズも極めて大きい。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  UK Biobank参加者は健康的バイアス（healthy volunteer bias）が強く、外的妥当性に制約。1週間の加速度計測定が長期習慣を反映するかは不明。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  身体機能（mobility, gait）研究において「家事・通勤等の日常活動」を含めた包括的活動評価の重要性を示唆。フレイル予防介入のエンドポイント設計にも応用可能。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人高齢者で散発的MVPAと歩行能力（10m歩行速度、Timed Up and Go）の関連を解析。Tohoku Medical Megabankの加速度計データを活用したMRリンクで因果性検討も可能。
+  </div>
+
+  <div class="tags">
+    <span class="tag fresh">最新2026</span>
+    <span class="tag method">機械学習</span>
+    <span class="tag method">加速度計</span>
+    <span class="tag theme">散発的MVPA</span>
+    <span class="tag theme">日常生活活動</span>
+    <span class="tag field">UK Biobank</span>
+  </div>
+</div>
+
+<!-- Paper 4 -->
+<div class="paper" data-paper-id="20260428_04" data-title="Replacing sedentary behaviour with physical activity and all-cause mortality in older adults: two-cohort study in China and the UK" data-authors="中国・英国研究グループ" data-journal="Journal of Epidemiology &amp; Community Health (JECH), 2026" data-design="2コホート前向き研究（CKB + UKB）" data-url="https://ifp.nyu.edu/2026/journal-article-abstracts/jech-2025-225695v1/" data-summary="座位時間1日30分の身体活動への置換は両コホートで全死亡リスク低下と関連。中国コホート（CKB）では強度を問わず効果一様、英国コホート（UKB）では高強度活動の効果が最大であった。" data-overview="China Kadoorie Biobank（CKB）の高齢者122,966人と、UK Biobank（UKB）の207,212人を対象に、isotemporal substitution analysisで30分の座位行動を等時間の身体活動に置換した場合の死亡リスク変化を推定。CKB: HR 1.013/30分座位増（95% CI 1.010-1.017）、UKB: HR 1.012（1.009-1.015）。" data-importance="人種・文化背景による「最適強度」の違いを示した重要な国際比較。中国高齢者では低強度活動でも十分効果があり、地域別ガイドライン策定の根拠となる。" data-methodology="Isotemporal substitution modelによる時間配分シミュレーション。同質な解析プロトコルでの並列解析は再現性が高い。" data-limitation="座位行動・活動の自己申告に依拠（一部加速度計）。文化的背景による報告バイアス差は完全には除外できない。" data-implication="日本高齢者向けガイドラインのカスタマイズに直結。LTCI受給予防の観点で、強度よりも「座位時間削減」を優先する戦略が有効である可能性。" data-idea="日本独自の活動パターン（家事、座位での趣味）を考慮した isotemporal substitution analysisを実施。多状態モデルで「健常→要支援→要介護」の遷移率への影響を評価する。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="Isotemporal substitution|国際比較コホート|座位時間|高齢者|公衆衛生">
+  <span class="rank-badge">RANK 4</span>
+  <h2>Replacing sedentary behaviour with physical activity and all-cause mortality in older adults: two-cohort study in China and the UK</h2>
+  <div class="meta-line"><strong>著者:</strong> 中国・英国研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> Journal of Epidemiology & Community Health (JECH), 2026</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 2コホート前向き研究（CKB + UKB）</div>
+  <div class="url-line"><a href="https://ifp.nyu.edu/2026/journal-article-abstracts/jech-2025-225695v1/" target="_blank">https://ifp.nyu.edu/2026/journal-article-abstracts/jech-2025-225695v1/</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  座位時間1日30分の身体活動への置換は両コホートで全死亡リスク低下と関連。中国コホート（CKB）では強度を問わず効果一様、英国コホート（UKB）では高強度活動の効果が最大であった。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  China Kadoorie Biobank（CKB）の高齢者122,966人と、UK Biobank（UKB）の207,212人を対象に、isotemporal substitution analysisで30分の座位行動を等時間の身体活動に置換した場合の死亡リスク変化を推定。CKB: HR 1.013/30分座位増（95% CI 1.010-1.017）、UKB: HR 1.012（1.009-1.015）。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  人種・文化背景による「最適強度」の違いを示した重要な国際比較。中国高齢者では低強度活動でも十分効果があり、地域別ガイドライン策定の根拠となる。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  Isotemporal substitution modelによる時間配分シミュレーション。同質な解析プロトコルでの並列解析は再現性が高い。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  座位行動・活動の自己申告に依拠（一部加速度計）。文化的背景による報告バイアス差は完全には除外できない。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  日本高齢者向けガイドラインのカスタマイズに直結。LTCI受給予防の観点で、強度よりも「座位時間削減」を優先する戦略が有効である可能性。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本独自の活動パターン（家事、座位での趣味）を考慮した isotemporal substitution analysisを実施。多状態モデルで「健常→要支援→要介護」の遷移率への影響を評価する。
+  </div>
+
+  <div class="tags">
+    <span class="tag method">Isotemporal substitution</span>
+    <span class="tag method">国際比較コホート</span>
+    <span class="tag theme">座位時間</span>
+    <span class="tag theme">高齢者</span>
+    <span class="tag field">公衆衛生</span>
+  </div>
+</div>
+
+<!-- Paper 5 -->
+<div class="paper" data-paper-id="20260428_05" data-title="Wearable device-based health equivalence of different physical activity intensities against mortality, cardiometabolic disease, and cancer" data-authors="UK Biobank研究グループ" data-journal="Nature Communications, 2025" data-design="前向きコホート研究（加速度計）" data-url="https://www.nature.com/articles/s41467-025-63475-2" data-summary="UK Biobank 73,485人（平均追跡8.0年）の加速度計データから、強度間の健康効果の等価性を定量化。死亡予防効果については、中強度活動は高強度活動の約4.1倍の時間で同等の効果を持つと推定された。" data-overview="本研究は、加速度計のintensityカテゴリ分類で測定された各強度（軽度・中強度・高強度）の活動が死亡・心代謝疾患・がん発症に対しどのような時間比で同等の効果を持つかを推定。死亡について、高強度1分=中強度4.1分（中央値）の等価性が示された。" data-importance="ガイドラインで使用される「中強度150分/週=高強度75分/週（2倍）」という換算を見直す必要があることを示唆。実証データに基づく強度等価性の構築は、個別化運動処方の基盤となる。" data-methodology="加速度計の客観的強度分類により自己申告誤差を回避。アウトカムごとに等価性を別個に推定した点が新規性。" data-limitation="強度カットオフ値の設定に依存し、年齢・性別・体力レベルによる個別差を平均化している可能性。" data-implication="運動疫学方法論の重要進歩。健康寿命研究で身体活動を曝露とする際の単位設計に直接関わる。" data-idea="日本人で同様の強度等価性を解析し、エンドポイントを「健康寿命」「要介護発生」とした際の換算係数を推定する研究。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="加速度計|強度等価解析|運動強度|心代謝疾患|UK Biobank">
+  <span class="rank-badge">RANK 5</span>
+  <h2>Wearable device-based health equivalence of different physical activity intensities against mortality, cardiometabolic disease, and cancer</h2>
+  <div class="meta-line"><strong>著者:</strong> UK Biobank研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> Nature Communications, 2025</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 前向きコホート研究（加速度計）</div>
+  <div class="url-line"><a href="https://www.nature.com/articles/s41467-025-63475-2" target="_blank">https://www.nature.com/articles/s41467-025-63475-2</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  UK Biobank 73,485人（平均追跡8.0年）の加速度計データから、強度間の健康効果の等価性を定量化。死亡予防効果については、中強度活動は高強度活動の約4.1倍の時間で同等の効果を持つと推定された。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  本研究は、加速度計のintensityカテゴリ分類で測定された各強度（軽度・中強度・高強度）の活動が死亡・心代謝疾患・がん発症に対しどのような時間比で同等の効果を持つかを推定。死亡について、高強度1分=中強度4.1分（中央値）の等価性が示された。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  ガイドラインで使用される「中強度150分/週=高強度75分/週（2倍）」という換算を見直す必要があることを示唆。実証データに基づく強度等価性の構築は、個別化運動処方の基盤となる。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  加速度計の客観的強度分類により自己申告誤差を回避。アウトカムごとに等価性を別個に推定した点が新規性。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  強度カットオフ値の設定に依存し、年齢・性別・体力レベルによる個別差を平均化している可能性。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  運動疫学方法論の重要進歩。健康寿命研究で身体活動を曝露とする際の単位設計に直接関わる。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人で同様の強度等価性を解析し、エンドポイントを「健康寿命」「要介護発生」とした際の換算係数を推定する研究。
+  </div>
+
+  <div class="tags">
+    <span class="tag method">加速度計</span>
+    <span class="tag method">強度等価解析</span>
+    <span class="tag theme">運動強度</span>
+    <span class="tag theme">心代謝疾患</span>
+    <span class="tag field">UK Biobank</span>
+  </div>
+</div>
+
+<!-- Paper 6 -->
+<div class="paper" data-paper-id="20260428_06" data-title="Midlife Cardiorespiratory Fitness and Healthy Aging: An Observational Cohort Study" data-authors="Cooper Center研究グループ" data-journal="Journal of the American College of Cardiology (JACC), 2026" data-design="観察コホート研究（Cooper Center Longitudinal Study）" data-url="https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5122" data-summary="中年期の心肺持久力（CRF）が健康寿命（healthspan）の強力な予測因子であることを24,576人で実証。中年期高CRFはその後の健康加齢期間を有意に延長することが示された。" data-overview="Cooper Center Longitudinal Study（CCLS）の中年成人24,576人について、トレッドミル運動試験で測定した最大運動時間からCRFを評価。健康寿命（健康加齢年数）と全死亡を主要アウトカムとした長期追跡解析を実施した。" data-importance="CRFは「身体活動量」を超える独立した健康指標であり、中年期からの介入対象としての価値を示す。1 MET増加で死亡リスク11-17%減との既報を健康寿命の枠組みで再確認した。" data-methodology="客観的CRF測定（トレッドミル）+ 大規模長期追跡で内的妥当性高い。CCLSは健康志向の高い集団のため代表性に注意が必要。" data-limitation="健康志向集団による選択バイアス。CRFは遺伝的決定要因も大きく、「介入で変えられる部分」と「不変部分」の分離が課題。" data-implication="健康寿命研究の核心テーマと直結。CRFと身体機能（mobility, gait speed）の関連は、フレイル予防の上流介入として重要。" data-idea="日本人中年層で簡便なCRF代替指標（6分間歩行、シャトルラン）を用いて、CRFと将来の要介護発生の関連を多状態モデルで解析。Mendelian randomizationでの因果性検証も並列で。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="観察コホート|運動負荷試験|心肺持久力|健康寿命|中年期介入">
+  <span class="rank-badge">RANK 6</span>
+  <h2>Midlife Cardiorespiratory Fitness and Healthy Aging: An Observational Cohort Study</h2>
+  <div class="meta-line"><strong>著者:</strong> Cooper Center研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> Journal of the American College of Cardiology (JACC), 2026</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 観察コホート研究（Cooper Center Longitudinal Study）</div>
+  <div class="url-line"><a href="https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5122" target="_blank">https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5122</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  中年期の心肺持久力（CRF）が健康寿命（healthspan）の強力な予測因子であることを24,576人で実証。中年期高CRFはその後の健康加齢期間を有意に延長することが示された。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  Cooper Center Longitudinal Study（CCLS）の中年成人24,576人について、トレッドミル運動試験で測定した最大運動時間からCRFを評価。健康寿命（健康加齢年数）と全死亡を主要アウトカムとした長期追跡解析を実施した。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  CRFは「身体活動量」を超える独立した健康指標であり、中年期からの介入対象としての価値を示す。1 MET増加で死亡リスク11-17%減との既報を健康寿命の枠組みで再確認した。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  客観的CRF測定（トレッドミル）+ 大規模長期追跡で内的妥当性高い。CCLSは健康志向の高い集団のため代表性に注意が必要。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  健康志向集団による選択バイアス。CRFは遺伝的決定要因も大きく、「介入で変えられる部分」と「不変部分」の分離が課題。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  健康寿命研究の核心テーマと直結。CRFと身体機能（mobility, gait speed）の関連は、フレイル予防の上流介入として重要。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人中年層で簡便なCRF代替指標（6分間歩行、シャトルラン）を用いて、CRFと将来の要介護発生の関連を多状態モデルで解析。Mendelian randomizationでの因果性検証も並列で。
+  </div>
+
+  <div class="tags">
+    <span class="tag method">観察コホート</span>
+    <span class="tag method">運動負荷試験</span>
+    <span class="tag theme">心肺持久力</span>
+    <span class="tag theme">健康寿命</span>
+    <span class="tag field">中年期介入</span>
+  </div>
+</div>
+
+<!-- Paper 7 -->
+<div class="paper" data-paper-id="20260428_07" data-title="Physical Activity Over the Adult Life Course and Risk of Dementia in the Framingham Heart Study" data-authors="Framingham研究グループ" data-journal="JAMA Network Open, 2025年11月" data-design="前向きコホート研究（ライフコース解析）" data-url="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2841638" data-summary="Framingham Heart Studyのライフコース解析により、中年期および高齢期の高身体活動者は、低活動者と比較してそれぞれ41%、45%低い認知症リスクを示した。早期成人期の活動は認知症リスクと関連せず。" data-overview="Framingham Heart Studyの参加者を成人ライフコース全体（早期成人期・中年期・高齢期）にわたって追跡し、各期の身体活動と全認知症発症の関連を評価。time-windowごとに別個の解析を実施。" data-importance="「いつ運動を開始すべきか」の問いに直接答える研究。中年期からの介入でも認知症予防効果が大きいことを示し、職場健康増進プログラムの根拠となる。" data-methodology="ライフコース・エピデミオロジーの代表的アプローチ。長期追跡データの強みを活用した独自性が高い。早期成人期の活動評価は記憶バイアスのリスクあり。" data-limitation="Framingham集団は白人中心で代表性に制約。早期成人期活動は遡及的評価で測定誤差大きい。" data-implication="認知機能・脳老化研究と直接関連。身体活動が脳構造（脳容積、白質統合性）に介在する経路の検証に発展可能。" data-idea="日本人ライフコースコホートで、中年期身体活動と高齢期脳構造変化（MRI）・認知機能の関連をmediation analysisで解析。脳老化バイオマーカー（DNA methylation age）も媒介変数として検討。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="ライフコース疫学|前向きコホート|認知症予防|中年期活動|脳老化">
+  <span class="rank-badge">RANK 7</span>
+  <h2>Physical Activity Over the Adult Life Course and Risk of Dementia in the Framingham Heart Study</h2>
+  <div class="meta-line"><strong>著者:</strong> Framingham研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> JAMA Network Open, 2025年11月</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 前向きコホート研究（ライフコース解析）</div>
+  <div class="url-line"><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2841638" target="_blank">https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2841638</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  Framingham Heart Studyのライフコース解析により、中年期および高齢期の高身体活動者は、低活動者と比較してそれぞれ41%、45%低い認知症リスクを示した。早期成人期の活動は認知症リスクと関連せず。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  Framingham Heart Studyの参加者を成人ライフコース全体（早期成人期・中年期・高齢期）にわたって追跡し、各期の身体活動と全認知症発症の関連を評価。time-windowごとに別個の解析を実施。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  「いつ運動を開始すべきか」の問いに直接答える研究。中年期からの介入でも認知症予防効果が大きいことを示し、職場健康増進プログラムの根拠となる。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  ライフコース・エピデミオロジーの代表的アプローチ。長期追跡データの強みを活用した独自性が高い。早期成人期の活動評価は記憶バイアスのリスクあり。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  Framingham集団は白人中心で代表性に制約。早期成人期活動は遡及的評価で測定誤差大きい。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  認知機能・脳老化研究と直接関連。身体活動が脳構造（脳容積、白質統合性）に介在する経路の検証に発展可能。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人ライフコースコホートで、中年期身体活動と高齢期脳構造変化（MRI）・認知機能の関連をmediation analysisで解析。脳老化バイオマーカー（DNA methylation age）も媒介変数として検討。
+  </div>
+
+  <div class="tags">
+    <span class="tag method">ライフコース疫学</span>
+    <span class="tag method">前向きコホート</span>
+    <span class="tag theme">認知症予防</span>
+    <span class="tag theme">中年期活動</span>
+    <span class="tag field">脳老化</span>
+  </div>
+</div>
+
+<!-- Paper 8 -->
+<div class="paper" data-paper-id="20260428_08" data-title="Interaction between physical activity and deficit-based frailty on all-cause mortality in older adults: a prospective study of five population-based cohorts" data-authors="国際多施設研究グループ" data-journal="Lancet Healthy Longevity, 2025" data-design="5コホート前向きメタ解析" data-url="https://www.sciencedirect.com/science/article/pii/S2666606525003190" data-summary="5つの集団ベースコホートを統合し、フレイル状態における身体活動の相互作用を解析。フレイル者でも定期的に活動的であれば、不活発フレイル者と比較し死亡リスクが有意に低いことを示した。" data-overview="5つの大規模コホートのデータをランダム効果モデルでメタ解析し、deficit-accumulation frailty index×身体活動の交互作用を死亡アウトカムで評価。フレイルが死亡リスクを増大する効果は活動量により有意に修飾されることが示された。" data-importance="「フレイル者は運動不能」という臨床的諦めに対する強力な反証。介護予防介入の対象を健常者からフレイル者まで拡大すべき根拠を提供する。" data-methodology="5コホートメタ解析でheterogeneityを定量化。frailty indexの統一は試みているが、コホート間の測定差は完全には解消しきれない。" data-limitation="Frailty indexの定義が研究間で微妙に異なる。逆因果（フレイル者は活動を減らす）の交絡が残存。" data-implication="健康寿命・フレイル研究の中核的問い。介護保険LTCIの予防給付対象設計と直結する。" data-idea="日本のJ-CHS基準フレイル者で、g-formulaを用いた「もし全員が週150分のMVPAを達成したら」シナリオでの仮想介入効果を推定。target trial emulationの枠組みで実施。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="多コホートメタ解析|交互作用解析|フレイル|高齢者|健康寿命">
+  <span class="rank-badge">RANK 8</span>
+  <h2>Interaction between physical activity and deficit-based frailty on all-cause mortality in older adults: a prospective study of five population-based cohorts</h2>
+  <div class="meta-line"><strong>著者:</strong> 国際多施設研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> Lancet Healthy Longevity, 2025</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 5コホート前向きメタ解析</div>
+  <div class="url-line"><a href="https://www.sciencedirect.com/science/article/pii/S2666606525003190" target="_blank">https://www.sciencedirect.com/science/article/pii/S2666606525003190</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  5つの集団ベースコホートを統合し、フレイル状態における身体活動の相互作用を解析。フレイル者でも定期的に活動的であれば、不活発フレイル者と比較し死亡リスクが有意に低いことを示した。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  5つの大規模コホートのデータをランダム効果モデルでメタ解析し、deficit-accumulation frailty index×身体活動の交互作用を死亡アウトカムで評価。フレイルが死亡リスクを増大する効果は活動量により有意に修飾されることが示された。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  「フレイル者は運動不能」という臨床的諦めに対する強力な反証。介護予防介入の対象を健常者からフレイル者まで拡大すべき根拠を提供する。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  5コホートメタ解析でheterogeneityを定量化。frailty indexの統一は試みているが、コホート間の測定差は完全には解消しきれない。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  Frailty indexの定義が研究間で微妙に異なる。逆因果（フレイル者は活動を減らす）の交絡が残存。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  健康寿命・フレイル研究の中核的問い。介護保険LTCIの予防給付対象設計と直結する。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本のJ-CHS基準フレイル者で、g-formulaを用いた「もし全員が週150分のMVPAを達成したら」シナリオでの仮想介入効果を推定。target trial emulationの枠組みで実施。
+  </div>
+
+  <div class="tags">
+    <span class="tag method">多コホートメタ解析</span>
+    <span class="tag method">交互作用解析</span>
+    <span class="tag theme">フレイル</span>
+    <span class="tag theme">高齢者</span>
+    <span class="tag field">健康寿命</span>
+  </div>
+</div>
+
+<!-- Paper 9 -->
+<div class="paper" data-paper-id="20260428_09" data-title="Physical Activity and All-Cause Mortality by Age in 4 Multinational Megacohorts" data-authors="多国籍研究グループ" data-journal="JAMA Network Open, 2024" data-design="4コホート統合解析（NHIS, UKB, CKB, Mei Jau）" data-url="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2826554" data-summary="4つの多国籍メガコホート（米・英・中・台）統合解析により、身体活動と死亡リスク低下の関連が成人期全体（若年〜高齢）にわたって一貫していることを示した。" data-overview="National Health Interview Survey（米、1997-2018）、UK Biobank（2006-2010）、China Kadoorie Biobank（2004-2008）、Mei Jau（台、1997-2016）の4コホートデータを統合解析。年齢層別（20-39, 40-59, 60-79, 80+）に身体活動と全死亡の関連を評価。" data-importance="「高齢になると運動効果は減弱する」という通念を覆し、80歳以上でも一貫した死亡リスク低下効果が示された。年齢を理由に介入を控える根拠がないことを強調する。" data-methodology="異なる人種・文化集団での再現性確認は強力。ただし自己申告ベースの活動評価で測定誤差は残る。" data-limitation="各コホートの活動評価ツールが微妙に異なる。最高齢層では生存バイアスが残存。" data-implication="日本超高齢社会で「いつまで運動指導すべきか」の議論に直接答える。LTCI受給高齢者へのレジスタンス運動指導の正当化につながる。" data-idea="日本人80歳以上の超高齢層で身体活動と要介護度遷移の関連を多状態モデルで解析。年齢×活動の交互作用を詳細に評価。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="多国籍統合解析|大規模コホート|年齢別効果|超高齢者|国際疫学">
+  <span class="rank-badge">RANK 9</span>
+  <h2>Physical Activity and All-Cause Mortality by Age in 4 Multinational Megacohorts</h2>
+  <div class="meta-line"><strong>著者:</strong> 多国籍研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> JAMA Network Open, 2024</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 4コホート統合解析（NHIS, UKB, CKB, Mei Jau）</div>
+  <div class="url-line"><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2826554" target="_blank">https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2826554</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  4つの多国籍メガコホート（米・英・中・台）統合解析により、身体活動と死亡リスク低下の関連が成人期全体（若年〜高齢）にわたって一貫していることを示した。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  National Health Interview Survey（米、1997-2018）、UK Biobank（2006-2010）、China Kadoorie Biobank（2004-2008）、Mei Jau（台、1997-2016）の4コホートデータを統合解析。年齢層別（20-39, 40-59, 60-79, 80+）に身体活動と全死亡の関連を評価。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  「高齢になると運動効果は減弱する」という通念を覆し、80歳以上でも一貫した死亡リスク低下効果が示された。年齢を理由に介入を控える根拠がないことを強調する。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  異なる人種・文化集団での再現性確認は強力。ただし自己申告ベースの活動評価で測定誤差は残る。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  各コホートの活動評価ツールが微妙に異なる。最高齢層では生存バイアスが残存。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  日本超高齢社会で「いつまで運動指導すべきか」の議論に直接答える。LTCI受給高齢者へのレジスタンス運動指導の正当化につながる。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人80歳以上の超高齢層で身体活動と要介護度遷移の関連を多状態モデルで解析。年齢×活動の交互作用を詳細に評価。
+  </div>
+
+  <div class="tags">
+    <span class="tag method">多国籍統合解析</span>
+    <span class="tag method">大規模コホート</span>
+    <span class="tag theme">年齢別効果</span>
+    <span class="tag theme">超高齢者</span>
+    <span class="tag field">国際疫学</span>
+  </div>
+</div>
+
+<!-- Paper 10 -->
+<div class="paper" data-paper-id="20260428_10" data-title="Target trial emulation of physical activity and cardiovascular disease risk: What is the impact of the exposure assessment method?" data-authors="因果推論方法論研究グループ" data-journal="medRxiv (preprint), 2025年11月" data-design="ターゲットトライアル・エミュレーション" data-url="https://www.medrxiv.org/content/10.1101/2025.11.02.25339322v2" data-summary="身体活動と心血管疾患の関連評価において、自己申告 vs 加速度計の曝露評価法の違いがtarget trial emulationの推定値にどう影響するかを系統的に検討した方法論研究。" data-overview="Target trial emulation（観察データから仮想RCTをエミュレートする因果推論枠組み）の適用にあたり、曝露評価法の選択が効果推定値（HR）にどう影響するかをUK Biobank等で検証。曝露測定誤差が想定より大きな影響を持つことが示された。" data-importance="運動疫学における因果推論方法論の最前線。曝露測定法の選択が結論を変えうることを示し、観察研究の解釈に注意喚起する。" data-methodology="Target trial emulationのprotocol（適格基準・治療戦略・割付・追跡・アウトカム・解析）を厳密に明示し、再現性が高い。" data-limitation="プレプリントで査読途中。複数の曝露評価法すべてに測定誤差があるため、ground truthが不明。" data-implication="方法論研究の核心。今後、自分の研究でtarget trial emulationを応用する際の必読論文。" data-idea="日本人コホートで身体活動の自己申告 vs 加速度計 vs スマートフォン履歴の3種曝露評価法を並列に解析し、target trial emulation結果の頑健性を検証。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="Target trial emulation|因果推論|測定誤差|心血管疾患|疫学方法論">
+  <span class="rank-badge">RANK 10</span>
+  <h2>Target trial emulation of physical activity and cardiovascular disease risk: What is the impact of the exposure assessment method?</h2>
+  <div class="meta-line"><strong>著者:</strong> 因果推論方法論研究グループ</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> medRxiv (preprint), 2025年11月</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> ターゲットトライアル・エミュレーション</div>
+  <div class="url-line"><a href="https://www.medrxiv.org/content/10.1101/2025.11.02.25339322v2" target="_blank">https://www.medrxiv.org/content/10.1101/2025.11.02.25339322v2</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  身体活動と心血管疾患の関連評価において、自己申告 vs 加速度計の曝露評価法の違いがtarget trial emulationの推定値にどう影響するかを系統的に検討した方法論研究。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  Target trial emulation（観察データから仮想RCTをエミュレートする因果推論枠組み）の適用にあたり、曝露評価法の選択が効果推定値（HR）にどう影響するかをUK Biobank等で検証。曝露測定誤差が想定より大きな影響を持つことが示された。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  運動疫学における因果推論方法論の最前線。曝露測定法の選択が結論を変えうることを示し、観察研究の解釈に注意喚起する。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  Target trial emulationのprotocol（適格基準・治療戦略・割付・追跡・アウトカム・解析）を厳密に明示し、再現性が高い。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  プレプリントで査読途中。複数の曝露評価法すべてに測定誤差があるため、ground truthが不明。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  方法論研究の核心。今後、自分の研究でtarget trial emulationを応用する際の必読論文。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本人コホートで身体活動の自己申告 vs 加速度計 vs スマートフォン履歴の3種曝露評価法を並列に解析し、target trial emulation結果の頑健性を検証。
+  </div>
+
+  <div class="tags">
+    <span class="tag method">Target trial emulation</span>
+    <span class="tag method">因果推論</span>
+    <span class="tag method">測定誤差</span>
+    <span class="tag theme">心血管疾患</span>
+    <span class="tag field">疫学方法論</span>
+  </div>
+</div>
+
+<!-- Summary Table -->
+<div class="summary-table">
+  <h2>まとめ一覧表（10論文）</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>論文タイトル（短縮）</th>
+        <th>ジャーナル/年</th>
+        <th>デザイン</th>
+        <th>主要結果</th>
+        <th>注目点</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Deaths potentially averted by small changes in PA and sedentary time</td>
+        <td>Lancet 2026</td>
+        <td>IPDメタ解析(N=135,046)</td>
+        <td>+5分MVPAで6-10%死亡予防</td>
+        <td>最新2026 公衆衛生インパクト</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Physical activity types, variety, and mortality (NHS+HPFS)</td>
+        <td>BMJ Med 2026</td>
+        <td>2コホート(N=111,000)</td>
+        <td>運動多様性最高五分位 死亡19%減</td>
+        <td>最新2026 多様性の独立効果</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Brief sporadic MVPA reduces mortality (UK Biobank)</td>
+        <td>Commun Med 2026</td>
+        <td>コホート+ML(N=96,054)</td>
+        <td>散発MVPA 150分/週で48%死亡減</td>
+        <td>最新2026 機械学習による分類</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Replacing sedentary behaviour with PA (China+UK)</td>
+        <td>JECH 2026</td>
+        <td>2コホート(N=330,178)</td>
+        <td>30分置換 HR=1.012-1.013/30分座位</td>
+        <td>国際比較 強度の文化差</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Wearable PA intensity equivalence</td>
+        <td>Nat Commun 2025</td>
+        <td>コホート(N=73,485)</td>
+        <td>中強度4.1分=高強度1分</td>
+        <td>強度等価性の定量化</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Midlife CRF and Healthy Aging (Cooper Center)</td>
+        <td>JACC 2026</td>
+        <td>観察コホート(N=24,576)</td>
+        <td>中年高CRF 健康寿命延伸</td>
+        <td>健康寿命直結</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>PA over Life Course and Dementia (Framingham)</td>
+        <td>JAMA Net Open 2025</td>
+        <td>ライフコース</td>
+        <td>中年期高活動 認知症45%減</td>
+        <td>ライフコース解析</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>PA × Frailty interaction on mortality (5 cohorts)</td>
+        <td>Lancet HL 2025</td>
+        <td>5コホートメタ解析</td>
+        <td>フレイル者でも活動効果あり</td>
+        <td>フレイル予防臨床応用</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>PA and mortality by age in 4 megacohorts</td>
+        <td>JAMA Net Open 2024</td>
+        <td>4コホート統合</td>
+        <td>全年齢で一貫した効果</td>
+        <td>超高齢者でも有効</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Target trial emulation of PA and CVD</td>
+        <td>medRxiv 2025</td>
+        <td>方法論研究</td>
+        <td>曝露測定法で結果が変動</td>
+        <td>因果推論方法論</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+Daily Research Report • Physical Activity & Exercise Epidemiology • 2026-04-28
+</footer>
+
+</div>
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; } }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '', authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '', design: card.dataset.design || '',
+      url: card.dataset.url || '', summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '', importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '', limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '', idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '', background: card.dataset.background || '',
+      result: card.dataset.result || '', impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;right:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs); updateBar();
+    });
+  });
+
+  const header = document.querySelector('header.main') || document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin-bottom:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    const pc = document.getElementById('page-count'); if (pc) pc.textContent = checkedCount;
+    const tc = document.getElementById('total-count'); if (tc) tc.textContent = Object.keys(loadFavs()).length;
+  }
+
+  const sa = document.getElementById('select-all');
+  if (sa) sa.addEventListener('click', () => { document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }); });
+  const sn = document.getElementById('select-none');
+  if (sn) sn.addEventListener('click', () => { document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }); });
+  const ov = document.getElementById('open-viewer');
+  if (ov) ov.addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => {
+      if (cb.checked) {
+        const card = cb.closest('[data-paper-id]');
+        selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() };
+      }
+    });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+
+  updateBar();
+})();
+</script>
+<!-- favorites-injected-end -->
+
+</body>
+</html>

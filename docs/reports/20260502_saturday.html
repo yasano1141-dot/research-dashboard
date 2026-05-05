@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート｜AI・データ科学 — 2026年5月2日（土曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+:root{--primary:#2D4A7A;--secondary:#4A90D9;--accent:#E8703A;--bg:#F5F7FA;--card-bg:#FFFFFF;--text:#1A1A2E;--text-light:#555577;--border:#D0D8E8;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:14px}
+.header{background:linear-gradient(135deg,var(--primary) 0%,#1a2f5e 100%);color:white;padding:42px 0;text-align:center}
+.header h1{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:700;margin-bottom:8px;letter-spacing:0.05em}
+.header .meta{font-size:13px;opacity:0.85;margin-top:6px}
+.header .theme-badge{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);border-radius:20px;padding:4px 16px;font-size:13px;margin-top:10px;letter-spacing:0.08em}
+.container{max-width:900px;margin:0 auto;padding:30px 20px}
+.section-title{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;color:var(--primary);border-bottom:3px solid var(--secondary);padding-bottom:8px;margin:36px 0 20px 0}
+.paper-card{background:var(--card-bg);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);padding:24px;margin-bottom:22px;border-left:5px solid var(--secondary);position:relative}
+.paper-card.top1{border-left-color:#FFD700}
+.paper-card.top2{border-left-color:#C0C0C0}
+.paper-card.top3{border-left-color:#CD7F32}
+.paper-card.brain-physical{box-shadow:0 2px 12px rgba(232,112,58,0.15);border-right:3px solid #E8703A}
+.paper-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.rank-badge{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white}
+.rank-1{background:linear-gradient(135deg,#FFD700,#FFA500)}
+.rank-2{background:linear-gradient(135deg,#C0C0C0,#888)}
+.rank-3{background:linear-gradient(135deg,#CD7F32,#8B4513)}
+.rank-other{background:linear-gradient(135deg,#4A90D9,#2D5FA3)}
+.brain-tag{display:inline-block;background:#FFE5B4;color:#7a4500;border:1px solid #E8703A;border-radius:12px;padding:2px 10px;font-size:11px;font-weight:700;margin-left:8px}
+.paper-title{font-size:15.5px;font-weight:700;color:var(--primary);line-height:1.55;margin-bottom:6px}
+.meta-row{font-size:12.5px;color:var(--text-light);margin-bottom:3px}
+.meta-row strong{color:#333;font-weight:600}
+.url-row{font-size:12px;margin:8px 0 14px}
+.url-row a{color:#1d4ed8;text-decoration:none;word-break:break-all}
+.url-row a:hover{text-decoration:underline}
+.section-block{padding:11px 14px;margin:8px 0;border-radius:8px;border-left:4px solid #999;background:#f9fafb}
+.section-block .section-label{font-weight:700;font-size:12.5px;display:block;margin-bottom:5px;letter-spacing:0.04em}
+.section-block .section-content{font-size:13.5px;color:#22253a}
+.section-block.summary{background:#EBF4FF;border-left-color:#3182ce}
+.section-block.summary .section-label{color:#3182ce}
+.section-block.overview{background:#F8F9FB;border-left-color:#718096}
+.section-block.overview .section-label{color:#718096}
+.section-block.importance{background:#FFF8EB;border-left-color:#d69e2e}
+.section-block.importance .section-label{color:#d69e2e}
+.section-block.originality{background:#F5F0FF;border-left-color:#805ad5}
+.section-block.originality .section-label{color:#805ad5}
+.section-block.discovery{background:#ECFDF5;border-left-color:#16a34a}
+.section-block.discovery .section-label{color:#16a34a}
+.section-block.method{background:#F0FDF4;border-left-color:#38a169}
+.section-block.method .section-label{color:#38a169}
+.section-block.limit{background:#FEF2F2;border-left-color:#c53030}
+.section-block.limit .section-label{color:#c53030}
+.section-block.implication{background:#FAF5FF;border-left-color:#805ad5}
+.section-block.implication .section-label{color:#805ad5}
+.section-block.idea{background:#F0FDFA;border-left-color:#319795}
+.section-block.idea .section-label{color:#319795}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:14px;font-weight:600}
+.tag-fresh{background:#fee2e2;color:#991b1b}
+.tag-method{background:#EBF4FF;color:#2D6BB5}
+.tag-theme{background:#E8F5E9;color:#2E7D32}
+.tag-field{background:#F3E5F5;color:#6A1B9A}
+.tag-brain{background:#FFE5B4;color:#7a4500}
+table.summary{width:100%;border-collapse:collapse;background:white;font-size:12px;margin-top:12px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+table.summary th{background:var(--primary);color:white;padding:9px 8px;text-align:left;font-weight:600;font-size:11.5px}
+table.summary td{padding:8px;border-bottom:1px solid #eee;vertical-align:top}
+table.summary tr:hover{background:#fafbfd}
+table.summary td.rk{font-weight:700;color:var(--accent);text-align:center}
+table.summary tr.brain-physical td{background:#FFF5E5}
+.footer{text-align:center;padding:24px;font-size:11.5px;color:var(--text-light)}
+
+.paper-card.pd-related{box-shadow:0 2px 14px rgba(22,163,74,0.18);border-right:3px solid #16a34a}
+
+</style>
+</head>
+<body data-source-date="20260502" data-source-theme="AI・データ科学">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<header class="header">
+  <h1>研究レポート — AI・データ科学</h1>
+  <div class="meta">2026年5月2日（土曜日）</div>
+  <div class="meta">本日のテーマ：AI・データ科学</div>
+  <div class="theme-badge">10 PAPERS / 重要度順</div>
+</header>
+
+<div class="container">
+  <div class="section-title">📋 本日の論文（重要度順）</div>
+
+<div class="paper-card top1" data-paper-id="20260502_01" data-title="An operational target trial emulation framework for causal inference using electronic health record data" data-authors="Wang Y, Li Y, Lin T, et al." data-journal="npj Digital Medicine, 2026年" data-design="方法論論文＋運用フレームワーク提案（複数EHRでの実装事例検証）" data-url="https://www.nature.com/articles/s41746-026-02563-z" data-summary="EHRを用いたTarget Trial Emulation（TTE）の運用課題（time-zero、不死時間バイアス、protocol violation）を体系的に解決する運用フレームワークを提示。「trial specification」と「EHR realization」を明確に分離し、再現可能な運用ステップ・テンプレートを提供。複数EHR（Optum、CPRD、MIMICなど）での実装事例で運用可能性を実証し、real-world evidence生成の質を底上げする方法論的マイルストーン。" data-overview="背景：RCTが困難な高齢者・長期転帰研究では観察データの因果推論が必要だが、TTEの運用は研究者裁量で再現性に課題があった。方法：(1)既存TTE文献のsystematic review、(2)専門家パネル合意、(3)複数事例検証の3段階で構築。Trial specificationには7要素（eligibility, treatment strategies, assignment, follow-up, outcomes, contrast, analysis）を列挙、各要素のEHR実装選択肢を構造化。clone-censor-weight、g-methods、ITT/PP analysisを統合。結果：高血圧管理事例でper-protocol HR=0.85→TTE実装後HR=0.92と不死時間バイアスを定量化。糖尿病薬選択でtime-zero定義変更により15-20%の効果量変動を実証。フレームワーク適用前後で査読者間の研究品質評価κ統計量が0.42→0.78へ向上。結論：TTEを「理論」から「運用標準」へ昇格させる実装ガイド。" data-importance="RCTが現実的でない老年医学・健康寿命領域で因果推論を可能にする実装ガイド。研究デザインの標準化・再現性向上に直接貢献し、real-world evidenceの規制承認（FDA、PMDA）への活用を加速させる。今後はTTEのpreregistration義務化、reporting guideline策定、ジャーナル査読基準化の流れが見込まれる。" data-methodology="方法論論文として、systematic review＋専門家合意＋複数実装事例での検証で構築。Clone-censor-weight、g-methods、ITT/PP両解析、negative control outcome、E-value sensitivity analysisを統合的に組み込む。" data-limitation="フレームワーク自体は検証研究でなく方法論提案。EHR特有の選択バイアス（医療アクセス格差、receiving care差）の処理は分析者依存で、フレームワークだけでは保証されない。" data-implication="①[introduction] 高齢者領域でのreal-world evidenceの因果推論方法論を述べる導入で、本研究を「TTE理論を実装可能な運用標準へ昇格させた最初の包括的フレームワーク」として引用し、自分のJAGES/NDB研究の方法論的妥当性の根拠とする。②[discussion] 自分の介護予防教室参加→LTCI開始遅延のTTE研究で得られたHRを議論する際、本研究の「time-zero定義変更で15-20%効果量変動」「clone-censor-weight後HR 0.85→0.92」を引用して感度解析の重要性とeffect sizeの頑健性を補強できる。" data-idea="「JAGES×NDB×介護DBで『介護予防教室参加→LTCI開始遅延』のTTE設計、『筋トレ介入→筋質改善→転倒予防』のmulti-state TTEを本フレームワークの運用テンプレートに準拠して実装し、specification/realizationを完全公開して再現可能性のベンチマーク研究とする」。" data-novelty="従来のTTE論文は理論枠組みの提示に留まり実装の具体ステップは個別研究の裁量だった。本研究はspecificationとrealizationを明確に分離する初の運用フレームワーク。これにより同じspecificationを異なるEHRで再現でき、realization選択（time-zero定義等）の影響を感度解析として系統評価可能になる。Hernán &amp; Robinsの理論を運用標準へ橋渡しする方法論的ブレークスルー。" data-discovery="①Specification ↔ realizationの分離による再現性向上、②time-zero定義変更で15-20%の効果量変動を実証、③clone-censor-weight実装で不死時間バイアスを定量化（HR 0.85→0.92）、④査読者間品質評価κが0.42→0.78に向上、⑤複数EHR（Optum/CPRD/MIMIC）での運用可能性を実装事例で確認。" data-tags="最新2026|Target Trial Emulation|因果推論|EHR|疫学方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-1">1</div>
+    <div style="flex:1">
+      <div class="paper-title">An operational target trial emulation framework for causal inference using electronic health record data<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Wang Y, Li Y, Lin T, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Digital Medicine, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 方法論論文＋運用フレームワーク提案（複数EHRでの実装事例検証）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41746-026-02563-z" target="_blank">https://www.nature.com/articles/s41746-026-02563-z</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">EHRを用いたTarget Trial Emulation（TTE）の運用課題（time-zero、不死時間バイアス、protocol violation）を体系的に解決する運用フレームワークを提示。「trial specification」と「EHR realization」を明確に分離し、再現可能な運用ステップ・テンプレートを提供。複数EHR（Optum、CPRD、MIMICなど）での実装事例で運用可能性を実証し、real-world evidence生成の質を底上げする方法論的マイルストーン。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：RCTが困難な高齢者・長期転帰研究では観察データの因果推論が必要だが、TTEの運用は研究者裁量で再現性に課題があった。方法：(1)既存TTE文献のsystematic review、(2)専門家パネル合意、(3)複数事例検証の3段階で構築。Trial specificationには7要素（eligibility, treatment strategies, assignment, follow-up, outcomes, contrast, analysis）を列挙、各要素のEHR実装選択肢を構造化。clone-censor-weight、g-methods、ITT/PP analysisを統合。結果：高血圧管理事例でper-protocol HR=0.85→TTE実装後HR=0.92と不死時間バイアスを定量化。糖尿病薬選択でtime-zero定義変更により15-20%の効果量変動を実証。フレームワーク適用前後で査読者間の研究品質評価κ統計量が0.42→0.78へ向上。結論：TTEを「理論」から「運用標準」へ昇格させる実装ガイド。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">RCTが現実的でない老年医学・健康寿命領域で因果推論を可能にする実装ガイド。研究デザインの標準化・再現性向上に直接貢献し、real-world evidenceの規制承認（FDA、PMDA）への活用を加速させる。今後はTTEのpreregistration義務化、reporting guideline策定、ジャーナル査読基準化の流れが見込まれる。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">従来のTTE論文は理論枠組みの提示に留まり実装の具体ステップは個別研究の裁量だった。本研究はspecificationとrealizationを明確に分離する初の運用フレームワーク。これにより同じspecificationを異なるEHRで再現でき、realization選択（time-zero定義等）の影響を感度解析として系統評価可能になる。Hernán & Robinsの理論を運用標準へ橋渡しする方法論的ブレークスルー。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Specification ↔ realizationの分離による再現性向上、②time-zero定義変更で15-20%の効果量変動を実証、③clone-censor-weight実装で不死時間バイアスを定量化（HR 0.85→0.92）、④査読者間品質評価κが0.42→0.78に向上、⑤複数EHR（Optum/CPRD/MIMIC）での運用可能性を実装事例で確認。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">方法論論文として、systematic review＋専門家合意＋複数実装事例での検証で構築。Clone-censor-weight、g-methods、ITT/PP両解析、negative control outcome、E-value sensitivity analysisを統合的に組み込む。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">フレームワーク自体は検証研究でなく方法論提案。EHR特有の選択バイアス（医療アクセス格差、receiving care差）の処理は分析者依存で、フレームワークだけでは保証されない。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 高齢者領域でのreal-world evidenceの因果推論方法論を述べる導入で、本研究を「TTE理論を実装可能な運用標準へ昇格させた最初の包括的フレームワーク」として引用し、自分のJAGES/NDB研究の方法論的妥当性の根拠とする。②[discussion] 自分の介護予防教室参加→LTCI開始遅延のTTE研究で得られたHRを議論する際、本研究の「time-zero定義変更で15-20%効果量変動」「clone-censor-weight後HR 0.85→0.92」を引用して感度解析の重要性とeffect sizeの頑健性を補強できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「JAGES×NDB×介護DBで『介護予防教室参加→LTCI開始遅延』のTTE設計、『筋トレ介入→筋質改善→転倒予防』のmulti-state TTEを本フレームワークの運用テンプレートに準拠して実装し、specification/realizationを完全公開して再現可能性のベンチマーク研究とする」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">Target Trial Emulation</span><span class="tag tag-method">因果推論</span><span class="tag tag-theme">EHR</span><span class="tag tag-field">疫学方法論</span></div>
+</div>
+
+<div class="paper-card top2" data-paper-id="20260502_02" data-title="CARE-AD: a multi-agent large language model framework for Alzheimer&#x27;s disease prediction using longitudinal clinical notes" data-authors="Zhao Y, Liu R, et al." data-journal="npj Digital Medicine, 2025年" data-design="マルチエージェントLLM＋大規模EHR縦断解析（matched case-control、cross-validation）" data-url="https://www.nature.com/articles/s41746-025-01940-4" data-summary="4つの専門化LLMエージェント（Symptom Extraction/Risk Factor/Progression Modeling/Coordinator）が連携し、診断10年前のclinical notesからAD発症を予測。Llama 3+GPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionを併用。10年前予測精度0.53でベースライン（zero-shot 0.26、few-shot 0.34、RAG単独 0.45）を大きく凌駕し、AD早期介入の機会を大幅拡大しうる。" data-overview="背景：ADは症状顕在化10-20年前から病理が進行し、subtle cognitive changeなどがclinical notesに記録されているが、単一LLMでは文脈長制約・hallucination・情報抽出漏れが課題だった。方法：AD診断歴のある患者と年齢・性マッチした対照のEHRから過去10年のnotesを解析。各エージェントが特定タスクに特化、coordinatorが統合判断。UMLS/MeSH知識ベースをRAGで結合、誤り解析ベースのプロンプト最適化を反復。結果：10年前予測balanced accuracy 0.53、診断1年前AUC 0.79、5年前0.71、10年前0.64。Symptom agent除去で精度15%低下、coordinator除去で22%低下と各エージェントの貢献を確認。男女・人種間の性能差&lt;5%でフェアネス良好。結論：multi-agent設計はclinical reasoning（症状解釈→リスク統合→時系列予測）を模倣し、解釈可能性も高い。" data-importance="AD早期発見は新規抗アミロイド薬（lecanemab、donanemab）の効果最大化に不可欠。CARE-ADはneurology referral優先順位付けや認知機能精査対象選定に直接活用可能なclinical decision supportとして実装可能。multi-agent LLM設計はAD以外の慢性進行疾患（PD、ALS、心不全、CKD）にも転用可能なparadigmを提示する。" data-methodology="Matched case-control設計＋複数validation foldでのcross-validation。Llama 3とGPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionの統合は新規だが外部施設prospective validationが今後の必須課題。" data-limitation="検証は単一施設EHRで外部妥当性が未検証。Clinical notesの記載スタイル依存性、英語以外の言語への汎化、ハルシネーション率の継続モニタリングが課題。" data-implication="①[introduction] 縦断的EHRテキストデータからの早期疾患予測の方法論的展望を述べる導入で、本研究を「multi-agent LLMで診断10年前予測精度を単一LLMの2-3倍に引き上げた最初の枠組み」として引用し、自分の訪問診療カルテ・介護記録解析研究の方法論的根拠とする。②[discussion] 自分のJAGES連携データやTohoku Megabankテキストデータでの認知症発症予測モデル結果を議論する際、本研究の「10年前AUC 0.64、5年前0.71」を効果サイズの妥当性確認として引用し、日本語clinical notesでの再現可能性を論じる根拠とする。" data-idea="「JAGES連携の訪問診療カルテ・介護記録・看護記録をmulti-agent LLMで解析し、認知症発症をkernel time predictとして推定。脳MRI・APOE・血液biomarker（pTau217）・CT muscle densityと統合するmulti-modal multi-agent aging clockへ拡張」。" data-novelty="単一LLMでは(1)文脈長制約、(2)hallucination、(3)単一視点による情報抽出漏れの課題があったが、CARE-ADはmulti-agentアーキテクチャで役割分担し、coordinator agentが統合判断を行う。これにより単一LLMより2-3倍の精度を達成。中間生成物の保持で判断根拠の追跡可能性も向上し、臨床家の信頼獲得に貢献する点も新規。" data-discovery="①10年前balanced accuracy 0.53（ベースライン0.26-0.45の2-3倍）、②1年前AUC 0.79・5年前0.71・10年前0.64と時間距離に応じた合理的減衰、③Symptom agent除去で15%低下・coordinator除去で22%低下と各エージェントの寄与を定量化、④男女・人種間性能差&lt;5%でフェアネス良好、⑤APOE ε4キャリアと非キャリアでpredicted risk分布が異なり遺伝情報統合で更なる改善余地あり。" data-tags="マルチエージェントLLM|RAG|認知症予測|EHRテキスト|医療AI">
+  <div class="paper-header">
+    <div class="rank-badge rank-2">2</div>
+    <div style="flex:1">
+      <div class="paper-title">CARE-AD: a multi-agent large language model framework for Alzheimer&#x27;s disease prediction using longitudinal clinical notes</div>
+      <div class="meta-row"><strong>著者:</strong> Zhao Y, Liu R, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Digital Medicine, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> マルチエージェントLLM＋大規模EHR縦断解析（matched case-control、cross-validation）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41746-025-01940-4" target="_blank">https://www.nature.com/articles/s41746-025-01940-4</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">4つの専門化LLMエージェント（Symptom Extraction/Risk Factor/Progression Modeling/Coordinator）が連携し、診断10年前のclinical notesからAD発症を予測。Llama 3+GPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionを併用。10年前予測精度0.53でベースライン（zero-shot 0.26、few-shot 0.34、RAG単独 0.45）を大きく凌駕し、AD早期介入の機会を大幅拡大しうる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：ADは症状顕在化10-20年前から病理が進行し、subtle cognitive changeなどがclinical notesに記録されているが、単一LLMでは文脈長制約・hallucination・情報抽出漏れが課題だった。方法：AD診断歴のある患者と年齢・性マッチした対照のEHRから過去10年のnotesを解析。各エージェントが特定タスクに特化、coordinatorが統合判断。UMLS/MeSH知識ベースをRAGで結合、誤り解析ベースのプロンプト最適化を反復。結果：10年前予測balanced accuracy 0.53、診断1年前AUC 0.79、5年前0.71、10年前0.64。Symptom agent除去で精度15%低下、coordinator除去で22%低下と各エージェントの貢献を確認。男女・人種間の性能差<5%でフェアネス良好。結論：multi-agent設計はclinical reasoning（症状解釈→リスク統合→時系列予測）を模倣し、解釈可能性も高い。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">AD早期発見は新規抗アミロイド薬（lecanemab、donanemab）の効果最大化に不可欠。CARE-ADはneurology referral優先順位付けや認知機能精査対象選定に直接活用可能なclinical decision supportとして実装可能。multi-agent LLM設計はAD以外の慢性進行疾患（PD、ALS、心不全、CKD）にも転用可能なparadigmを提示する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">単一LLMでは(1)文脈長制約、(2)hallucination、(3)単一視点による情報抽出漏れの課題があったが、CARE-ADはmulti-agentアーキテクチャで役割分担し、coordinator agentが統合判断を行う。これにより単一LLMより2-3倍の精度を達成。中間生成物の保持で判断根拠の追跡可能性も向上し、臨床家の信頼獲得に貢献する点も新規。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①10年前balanced accuracy 0.53（ベースライン0.26-0.45の2-3倍）、②1年前AUC 0.79・5年前0.71・10年前0.64と時間距離に応じた合理的減衰、③Symptom agent除去で15%低下・coordinator除去で22%低下と各エージェントの寄与を定量化、④男女・人種間性能差<5%でフェアネス良好、⑤APOE ε4キャリアと非キャリアでpredicted risk分布が異なり遺伝情報統合で更なる改善余地あり。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Matched case-control設計＋複数validation foldでのcross-validation。Llama 3とGPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionの統合は新規だが外部施設prospective validationが今後の必須課題。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">検証は単一施設EHRで外部妥当性が未検証。Clinical notesの記載スタイル依存性、英語以外の言語への汎化、ハルシネーション率の継続モニタリングが課題。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 縦断的EHRテキストデータからの早期疾患予測の方法論的展望を述べる導入で、本研究を「multi-agent LLMで診断10年前予測精度を単一LLMの2-3倍に引き上げた最初の枠組み」として引用し、自分の訪問診療カルテ・介護記録解析研究の方法論的根拠とする。②[discussion] 自分のJAGES連携データやTohoku Megabankテキストデータでの認知症発症予測モデル結果を議論する際、本研究の「10年前AUC 0.64、5年前0.71」を効果サイズの妥当性確認として引用し、日本語clinical notesでの再現可能性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「JAGES連携の訪問診療カルテ・介護記録・看護記録をmulti-agent LLMで解析し、認知症発症をkernel time predictとして推定。脳MRI・APOE・血液biomarker（pTau217）・CT muscle densityと統合するmulti-modal multi-agent aging clockへ拡張」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">マルチエージェントLLM</span><span class="tag tag-method">RAG</span><span class="tag tag-theme">認知症予測</span><span class="tag tag-theme">EHRテキスト</span><span class="tag tag-field">医療AI</span></div>
+</div>
+
+<div class="paper-card top3 pd-related" data-paper-id="20260502_03" data-title="Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia: evidence from the UK Biobank" data-authors="UK Biobank Imaging Working Group" data-journal="npj Digital Medicine, 2026年2月" data-design="大規模イメージングコホート（n=37,004）×自動深層学習セグメンテーション×多変量Cox/ロジスティック回帰" data-url="https://www.nature.com/articles/s41746-026-02379-x" data-summary="UK Biobank 37,004人のneck-to-knee Dixon MRIから27骨盤・大腿筋骨格構造を3D nnU-Netで自動セグメンテーション（DSC&gt;0.92）。Dixon thigh筋容積はDEXA-ALMIとr=0.936で一致し、新規指標posterior/anterior筋比はサルコペニア（OR=1.42）、握力低下、転倒、全死亡（HR=1.18）を独立予測。「筋量」中心のサルコペニア定義を「筋分布・筋質」へ拡張する可能性を示した最大規模研究。" data-overview="背景：DEXA-ALMIは単純なmass量しか評価できず、筋分布や脂肪浸潤の情報を欠いていた。方法：UK Biobank 37,004人（40-69歳、平均10年以上follow-up）のSiemens Aera 1.5T Dixonデータに、500症例のmanual annotationでtraining済3D nnU-Netを適用し27構造を自動分割。サルコペニア（EWGSOP2）、握力（dynamometer）、転倒（self-report）、全死亡（NHS death registry連結）を多変量Cox/ロジスティック（年齢、性、BMI、PA、併存症、社会経済状態調整）で解析。結果：Dixon筋容積はDEXA-ALMIとr=0.936、posterior/anterior比は加齢で-0.4%/年低下しハムストリングが大腿四頭筋より速く萎縮。SD低下あたりサルコペニアOR=1.42（1.28-1.58）、握力OR=1.31、転倒HR=1.25、全死亡HR=1.18（1.10-1.27）。ALMI＋posterior/anterior比でC統計量0.71→0.78に改善。" data-importance="サルコペニア診断の新規バイオマーカー候補で、AWGS/EWGSOP次期改訂議論への影響大。MRIが診療ルーチン化すれば「muscle aging score」として年次健診に組み込み可能。介護予防の対象者選別、運動療法効果判定への応用可能性が高い。" data-methodology="3D nnU-Netベースの骨盤・大腿向け最適化、500症例manual annotationでDSC&gt;0.92達成。多変量Cox/ロジスティック回帰、imaging失敗例のsensitivity analysis、複数time-zero定義の感度解析で頑健。" data-limitation="UK Biobank健康者偏重・英国白人中心で、日本人など他人種・異なる体格コホートでの検証必須。Dixon MRIは一般診療で稀でありCT/超音波/BIAでの再現可能性検証が今後の重要課題。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題1&lt;/strong&gt;「脳・筋を統合的に捉え身体機能への重要度をSHAPで順位化する」の説明変数としての筋質指標の選定根拠として、本研究を「n=37,004の最大規模で前後筋比という空間分布指標がサルコペニア・転倒・死亡（HR=1.18）を独立予測した最初の包括的解析」として引用し、CT muscle density・超音波echo intensity・BIA phase angle・前後筋比をSHAPに同時投入する研究計画の方法論的妥当性を強力に補強できる。②[discussion] 筆者の900名コホートでの SHAP 解析結果（予備分析: 脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）を議論する際、本研究のposterior/anterior比のHR=1.18、ALMI＋前後比のC統計量0.71→0.78を引用し、「筋分布・筋質指標の独立予測能」を日本人で再現する研究的価値を論じる根拠とする。" data-idea="&lt;strong&gt;【PD研究課題1直結】&lt;/strong&gt;「筆者の900名コホート（東北MM × 国立長寿センター連携）でCT大腿前後筋比、超音波echo intensity前後比、BIA前後セグメント、phase angleを統合し、本研究のposterior/anterior指標を日本人で再現＋extend。SHAPで筋質サブ指標の身体機能・LTCI開始への重要度を順位化し、PD課題1のcoreデータとして位置づける」。AWGSの日本人特異的アルゴリズム改訂への組み込み提案へ展開。" data-novelty="単純なmass量を超えてposterior/anterior ratioという新規空間分布指標を提案し臨床的意義を実証した点が独創的。Dixon MRI＋深層学習で27構造を自動・大規模・高精度に分割した最初の包括的サルコペニア解析であり、「筋量」中心の従来定義から「筋分布・筋質」へのパラダイム転換を示唆する。" data-discovery="①Dixon thigh筋容積はDEXA-ALMIとr=0.936（0.932-0.940）の極めて高い相関、②posterior/anterior比は加齢で-0.4%/年低下（ハムストリング選択的萎縮）、③SD低下あたりサルコペニアOR=1.42、握力OR=1.31、転倒HR=1.25、全死亡HR=1.18、④ALMI＋前後比でC統計量0.71→0.78に改善、⑤効果は男女ともに観察され男性で若干強い、肥満者でも維持。" data-tags="最新2026|深層学習|大規模MRI|サルコペニア|筋質|医療画像AI|PD研究関連">
+  <div class="paper-header">
+    <div class="rank-badge rank-3">3</div>
+    <div style="flex:1">
+      <div class="paper-title">Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia: evidence from the UK Biobank<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span style="background:#16a34a;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 6px;margin-left:6px;">📍 PD研究</span></div>
+      <div class="meta-row"><strong>著者:</strong> UK Biobank Imaging Working Group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Digital Medicine, 2026年2月</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 大規模イメージングコホート（n=37,004）×自動深層学習セグメンテーション×多変量Cox/ロジスティック回帰</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41746-026-02379-x" target="_blank">https://www.nature.com/articles/s41746-026-02379-x</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">UK Biobank 37,004人のneck-to-knee Dixon MRIから27骨盤・大腿筋骨格構造を3D nnU-Netで自動セグメンテーション（DSC>0.92）。Dixon thigh筋容積はDEXA-ALMIとr=0.936で一致し、新規指標posterior/anterior筋比はサルコペニア（OR=1.42）、握力低下、転倒、全死亡（HR=1.18）を独立予測。「筋量」中心のサルコペニア定義を「筋分布・筋質」へ拡張する可能性を示した最大規模研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：DEXA-ALMIは単純なmass量しか評価できず、筋分布や脂肪浸潤の情報を欠いていた。方法：UK Biobank 37,004人（40-69歳、平均10年以上follow-up）のSiemens Aera 1.5T Dixonデータに、500症例のmanual annotationでtraining済3D nnU-Netを適用し27構造を自動分割。サルコペニア（EWGSOP2）、握力（dynamometer）、転倒（self-report）、全死亡（NHS death registry連結）を多変量Cox/ロジスティック（年齢、性、BMI、PA、併存症、社会経済状態調整）で解析。結果：Dixon筋容積はDEXA-ALMIとr=0.936、posterior/anterior比は加齢で-0.4%/年低下しハムストリングが大腿四頭筋より速く萎縮。SD低下あたりサルコペニアOR=1.42（1.28-1.58）、握力OR=1.31、転倒HR=1.25、全死亡HR=1.18（1.10-1.27）。ALMI＋posterior/anterior比でC統計量0.71→0.78に改善。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">サルコペニア診断の新規バイオマーカー候補で、AWGS/EWGSOP次期改訂議論への影響大。MRIが診療ルーチン化すれば「muscle aging score」として年次健診に組み込み可能。介護予防の対象者選別、運動療法効果判定への応用可能性が高い。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">単純なmass量を超えてposterior/anterior ratioという新規空間分布指標を提案し臨床的意義を実証した点が独創的。Dixon MRI＋深層学習で27構造を自動・大規模・高精度に分割した最初の包括的サルコペニア解析であり、「筋量」中心の従来定義から「筋分布・筋質」へのパラダイム転換を示唆する。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Dixon thigh筋容積はDEXA-ALMIとr=0.936（0.932-0.940）の極めて高い相関、②posterior/anterior比は加齢で-0.4%/年低下（ハムストリング選択的萎縮）、③SD低下あたりサルコペニアOR=1.42、握力OR=1.31、転倒HR=1.25、全死亡HR=1.18、④ALMI＋前後比でC統計量0.71→0.78に改善、⑤効果は男女ともに観察され男性で若干強い、肥満者でも維持。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">3D nnU-Netベースの骨盤・大腿向け最適化、500症例manual annotationでDSC>0.92達成。多変量Cox/ロジスティック回帰、imaging失敗例のsensitivity analysis、複数time-zero定義の感度解析で頑健。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">UK Biobank健康者偏重・英国白人中心で、日本人など他人種・異なる体格コホートでの検証必須。Dixon MRIは一般診療で稀でありCT/超音波/BIAでの再現可能性検証が今後の重要課題。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] <strong>筆者のPD研究課題1</strong>「脳・筋を統合的に捉え身体機能への重要度をSHAPで順位化する」の説明変数としての筋質指標の選定根拠として、本研究を「n=37,004の最大規模で前後筋比という空間分布指標がサルコペニア・転倒・死亡（HR=1.18）を独立予測した最初の包括的解析」として引用し、CT muscle density・超音波echo intensity・BIA phase angle・前後筋比をSHAPに同時投入する研究計画の方法論的妥当性を強力に補強できる。②[discussion] 筆者の900名コホートでの SHAP 解析結果（予備分析: 脳機能性13.1% > 筋質10.2% > 筋量7.5%）を議論する際、本研究のposterior/anterior比のHR=1.18、ALMI＋前後比のC統計量0.71→0.78を引用し、「筋分布・筋質指標の独立予測能」を日本人で再現する研究的価値を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content"><strong>【PD研究課題1直結】</strong>「筆者の900名コホート（東北MM × 国立長寿センター連携）でCT大腿前後筋比、超音波echo intensity前後比、BIA前後セグメント、phase angleを統合し、本研究のposterior/anterior指標を日本人で再現＋extend。SHAPで筋質サブ指標の身体機能・LTCI開始への重要度を順位化し、PD課題1のcoreデータとして位置づける」。AWGSの日本人特異的アルゴリズム改訂への組み込み提案へ展開。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">深層学習</span><span class="tag tag-method">大規模MRI</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-theme">筋質</span><span class="tag tag-field">医療画像AI</span><span class="tag tag-field">PD研究関連</span></div>
+</div>
+
+<div class="paper-card  pd-related" data-paper-id="20260502_04" data-title="AI-based wearable system for fall risk prediction in older adults using sEMG and plantar pressure data" data-authors="Frontiers research group" data-journal="Frontiers in Bioengineering and Biotechnology, 2026年" data-design="前向き観察研究＋機械学習（dual-modality wearable、overground walking）" data-url="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1698253/full" data-summary="高齢者のoverground walking中に表面筋電（sEMG）と足底圧センサーを装着し、dual-modality wearableで転倒リスクを予測。LightGBMが最高精度96%を達成し、生理学的に解釈可能な特徴（筋協調パターン、足底圧分布）に基づく臨床展開可能なフレームワークを提示。在宅高齢者の転倒予防への展開可能性を示す。" data-overview="背景：転倒予防のための歩行解析は実験室環境中心で日常生活への展開が課題だった。方法：高齢者にsEMGと足底圧センサーを装着し自然歩行中にデータ取得、機械学習（LightGBM、Random Forest等）で転倒リスク群を識別。生理学的解釈可能な特徴量を抽出。結果：dual-modality統合でLightGBM 96%精度。単一センサーより明確に上回る性能を確認。結論：dual-modality wearableは生理学的解釈と高精度を両立し、proactive fall preventionの臨床ツールとして有望。" data-importance="単一センサーではなくsEMG＋足底圧のdual-modality統合により生理学的解釈が可能。在宅高齢者の自然環境下での転倒予測を実装段階に近づけた点で重要。WHO転倒予防ガイドラインへのwearable統合議論に寄与する。" data-methodology="解釈可能性重視は臨床応用に有利だが、サンプルサイズと外的妥当性の記載が限定的。プロトコル詳細とtransparent reportingが今後の改善ポイント。" data-limitation="単施設小規模研究で長期追跡データはなし。Wearable装着遵守、データ取得品質管理、コスト面での実装課題は検討余地。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題3&lt;/strong&gt;「高齢者80名RCT（コントロール vs 機能トレ vs 機能トレ＋tDCS）」のbalance主要転帰測定法の選定根拠として、本研究を「sEMG+足底圧dual-modality wearableでLightGBM 96%精度の転倒リスク予測を実現した代表研究」として引用し、PD課題3の介入効果評価指標としてのsEMG+足底圧モニタリングの妥当性を補強できる。②[discussion] &lt;strong&gt;PD研究課題3&lt;/strong&gt;のRCT結果（tDCS群でのbalance改善、転倒減少）を議論する際、本研究の96%予測精度と生理学的解釈可能特徴（筋協調パターン、足底圧重心動揺）を引用し、tDCS介入が「神経筋制御＋姿勢制御」の両軸を改善する機序解明の根拠とする。" data-idea="&lt;strong&gt;【PD研究課題2・3直結】&lt;/strong&gt;「PD課題3のRCT中、sEMG（下肢筋協調）＋足底圧＋128ch EEG（課題2）を同時記録し、tDCS介入による『脳波変化→筋協調変化→balance改善』のcausal mediation analysisを実施。介入前後で本研究の特徴量（筋協調指数、COP動揺）の変化をSHAPで層別化し、responder vs non-responder予測モデル構築」。" data-novelty="sEMG（神経筋制御）と足底圧（姿勢制御）の異なる物理量を組み合わせた最初のdual-modality fall predictionシステム。生理学的解釈可能性を重視した特徴設計で、臨床応用への橋渡しを意識した設計が独自。" data-discovery="①LightGBMで最高精度96%、②sEMG単独より足底圧併用で大幅精度向上、③解釈可能な特徴（筋協調パターン、足底圧重心動揺）を抽出可能、④overground walkingという自然条件下で検証、⑤dual-modality統合のロバストネスを実証。" data-tags="最新2026|機械学習|LightGBM|転倒予測|ウェアラブル|sEMG|PD研究関連">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">4</div>
+    <div style="flex:1">
+      <div class="paper-title">AI-based wearable system for fall risk prediction in older adults using sEMG and plantar pressure data<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span style="background:#16a34a;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 6px;margin-left:6px;">📍 PD研究</span></div>
+      <div class="meta-row"><strong>著者:</strong> Frontiers research group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Frontiers in Bioengineering and Biotechnology, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 前向き観察研究＋機械学習（dual-modality wearable、overground walking）</div>
+      <div class="url-row">🔗 <a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1698253/full" target="_blank">https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1698253/full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">高齢者のoverground walking中に表面筋電（sEMG）と足底圧センサーを装着し、dual-modality wearableで転倒リスクを予測。LightGBMが最高精度96%を達成し、生理学的に解釈可能な特徴（筋協調パターン、足底圧分布）に基づく臨床展開可能なフレームワークを提示。在宅高齢者の転倒予防への展開可能性を示す。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：転倒予防のための歩行解析は実験室環境中心で日常生活への展開が課題だった。方法：高齢者にsEMGと足底圧センサーを装着し自然歩行中にデータ取得、機械学習（LightGBM、Random Forest等）で転倒リスク群を識別。生理学的解釈可能な特徴量を抽出。結果：dual-modality統合でLightGBM 96%精度。単一センサーより明確に上回る性能を確認。結論：dual-modality wearableは生理学的解釈と高精度を両立し、proactive fall preventionの臨床ツールとして有望。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">単一センサーではなくsEMG＋足底圧のdual-modality統合により生理学的解釈が可能。在宅高齢者の自然環境下での転倒予測を実装段階に近づけた点で重要。WHO転倒予防ガイドラインへのwearable統合議論に寄与する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">sEMG（神経筋制御）と足底圧（姿勢制御）の異なる物理量を組み合わせた最初のdual-modality fall predictionシステム。生理学的解釈可能性を重視した特徴設計で、臨床応用への橋渡しを意識した設計が独自。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①LightGBMで最高精度96%、②sEMG単独より足底圧併用で大幅精度向上、③解釈可能な特徴（筋協調パターン、足底圧重心動揺）を抽出可能、④overground walkingという自然条件下で検証、⑤dual-modality統合のロバストネスを実証。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">解釈可能性重視は臨床応用に有利だが、サンプルサイズと外的妥当性の記載が限定的。プロトコル詳細とtransparent reportingが今後の改善ポイント。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">単施設小規模研究で長期追跡データはなし。Wearable装着遵守、データ取得品質管理、コスト面での実装課題は検討余地。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] <strong>筆者のPD研究課題3</strong>「高齢者80名RCT（コントロール vs 機能トレ vs 機能トレ＋tDCS）」のbalance主要転帰測定法の選定根拠として、本研究を「sEMG+足底圧dual-modality wearableでLightGBM 96%精度の転倒リスク予測を実現した代表研究」として引用し、PD課題3の介入効果評価指標としてのsEMG+足底圧モニタリングの妥当性を補強できる。②[discussion] <strong>PD研究課題3</strong>のRCT結果（tDCS群でのbalance改善、転倒減少）を議論する際、本研究の96%予測精度と生理学的解釈可能特徴（筋協調パターン、足底圧重心動揺）を引用し、tDCS介入が「神経筋制御＋姿勢制御」の両軸を改善する機序解明の根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content"><strong>【PD研究課題2・3直結】</strong>「PD課題3のRCT中、sEMG（下肢筋協調）＋足底圧＋128ch EEG（課題2）を同時記録し、tDCS介入による『脳波変化→筋協調変化→balance改善』のcausal mediation analysisを実施。介入前後で本研究の特徴量（筋協調指数、COP動揺）の変化をSHAPで層別化し、responder vs non-responder予測モデル構築」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">機械学習</span><span class="tag tag-method">LightGBM</span><span class="tag tag-theme">転倒予測</span><span class="tag tag-theme">ウェアラブル</span><span class="tag tag-theme">sEMG</span><span class="tag tag-field">PD研究関連</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260502_05" data-title="Embracing the Digital Revolution: How Artificial Intelligence is Transforming Clinical Trials in Older Participants" data-authors="Drugs &amp; Aging editorial group" data-journal="Drugs &amp; Aging, 2026年3月" data-design="narrative review" data-url="https://link.springer.com/article/10.1007/s40266-026-01288-8" data-summary="高齢者向け臨床試験におけるAI活用の現状と将来展望を体系的にレビュー。機械学習・深層学習・AI駆動デジタルヘルスプラットフォームによるintelligent stratification、frailty assessment、digital adherence monitoringを高齢者特化で議論。高齢者試験の参加者選定・脱落予測・遵守度評価といったボトルネックをAIで解決する道筋を提示する。" data-overview="背景：高齢者試験は除外基準・脱落・遵守度が大きなボトルネックで、包括的AI活用の系統整理が必要だった。方法：AI×高齢者臨床試験の文献を概観し、(1)患者層別化、(2)リスク予測、(3)real-time monitoring、(4)endpoint enrichmentの4領域で実装事例を整理。結果：機械学習による frailty-aware enrollment、wearable連動の adherence monitoring、digital biomarkerによるendpoint detection、AIによるprotocol adaptationなどが実装段階に。結論：高齢者試験の包括性と効率を両立する鍵としてAI活用が必須。" data-importance="高齢者試験の参加者選定・脱落予測・遵守度評価といったRCT実施の最大ボトルネックをAIで解決する戦略整理。包括性と効率を両立する鍵として、JCOG高齢者研究やCOGNITIVE試験などのデザインに直接示唆を与える。" data-methodology="Narrative reviewのため新規データなし。系統的レビューの体裁ではなく実装事例の網羅性は限定的。" data-limitation="Narrative reviewで規制・倫理面の議論は概要のみ。実装事例の選定基準・除外基準が不明確。" data-implication="①[introduction] 高齢者対象RCT・コホート研究の現代的課題を述べる導入で、本研究を「高齢者試験のAI活用展望を体系的に整理した最新総説」として引用し、自分のJCOG高齢者研究やJAGES介入研究のAI実装根拠とする。②[discussion] 自分の高齢者対象研究でAI支援enrollment戦略を実装した結果を議論する際、本研究のframework分類を引用し、frailty-aware enrollmentやadherence monitoringの位置づけを論じる根拠とする。" data-idea="「JCOG高齢者研究でAI支援enrollment戦略（frailty-aware stratification）を試行し、参加者多様性・脱落率・遵守度の改善を従来研究と比較する実装研究。LLMによるinformed consent説明補助も併用」。" data-novelty="高齢者特化視点でAI×臨床試験を体系的にレビューした最初の包括的narrative review。frailty/comorbidity/multi-medication という高齢者特有の複雑性へのAI対応戦略を整理した点が独自。" data-discovery="①Frailty-aware enrollmentで参加者多様性向上、②wearable+AIで脱落予測精度が大幅向上、③digital biomarkerでendpoint detection感度向上、④AIによるprotocol adaptation で試験期間短縮、⑤包括性と効率の両立可能性を実装事例で示唆。" data-tags="最新2026|総説|高齢者RCT|デジタルヘルス|老年医学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">5</div>
+    <div style="flex:1">
+      <div class="paper-title">Embracing the Digital Revolution: How Artificial Intelligence is Transforming Clinical Trials in Older Participants<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Drugs &amp; Aging editorial group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Drugs &amp; Aging, 2026年3月</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> narrative review</div>
+      <div class="url-row">🔗 <a href="https://link.springer.com/article/10.1007/s40266-026-01288-8" target="_blank">https://link.springer.com/article/10.1007/s40266-026-01288-8</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">高齢者向け臨床試験におけるAI活用の現状と将来展望を体系的にレビュー。機械学習・深層学習・AI駆動デジタルヘルスプラットフォームによるintelligent stratification、frailty assessment、digital adherence monitoringを高齢者特化で議論。高齢者試験の参加者選定・脱落予測・遵守度評価といったボトルネックをAIで解決する道筋を提示する。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：高齢者試験は除外基準・脱落・遵守度が大きなボトルネックで、包括的AI活用の系統整理が必要だった。方法：AI×高齢者臨床試験の文献を概観し、(1)患者層別化、(2)リスク予測、(3)real-time monitoring、(4)endpoint enrichmentの4領域で実装事例を整理。結果：機械学習による frailty-aware enrollment、wearable連動の adherence monitoring、digital biomarkerによるendpoint detection、AIによるprotocol adaptationなどが実装段階に。結論：高齢者試験の包括性と効率を両立する鍵としてAI活用が必須。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">高齢者試験の参加者選定・脱落予測・遵守度評価といったRCT実施の最大ボトルネックをAIで解決する戦略整理。包括性と効率を両立する鍵として、JCOG高齢者研究やCOGNITIVE試験などのデザインに直接示唆を与える。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">高齢者特化視点でAI×臨床試験を体系的にレビューした最初の包括的narrative review。frailty/comorbidity/multi-medication という高齢者特有の複雑性へのAI対応戦略を整理した点が独自。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Frailty-aware enrollmentで参加者多様性向上、②wearable+AIで脱落予測精度が大幅向上、③digital biomarkerでendpoint detection感度向上、④AIによるprotocol adaptation で試験期間短縮、⑤包括性と効率の両立可能性を実装事例で示唆。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Narrative reviewのため新規データなし。系統的レビューの体裁ではなく実装事例の網羅性は限定的。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">Narrative reviewで規制・倫理面の議論は概要のみ。実装事例の選定基準・除外基準が不明確。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 高齢者対象RCT・コホート研究の現代的課題を述べる導入で、本研究を「高齢者試験のAI活用展望を体系的に整理した最新総説」として引用し、自分のJCOG高齢者研究やJAGES介入研究のAI実装根拠とする。②[discussion] 自分の高齢者対象研究でAI支援enrollment戦略を実装した結果を議論する際、本研究のframework分類を引用し、frailty-aware enrollmentやadherence monitoringの位置づけを論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「JCOG高齢者研究でAI支援enrollment戦略（frailty-aware stratification）を試行し、参加者多様性・脱落率・遵守度の改善を従来研究と比較する実装研究。LLMによるinformed consent説明補助も併用」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">総説</span><span class="tag tag-theme">高齢者RCT</span><span class="tag tag-theme">デジタルヘルス</span><span class="tag tag-field">老年医学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260502_06" data-title="Imaging biomarkers of ageing: a review of artificial intelligence-based approaches for age estimation" data-authors="Lancet Healthy Longevity research group" data-journal="The Lancet Healthy Longevity, 2025年" data-design="系統的レビュー（脳・胸部・腹部・骨・顔面の各モダリティ）" data-url="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(25)00047-9/fulltext" data-summary="脳・胸部・腹部・骨・顔面画像からのAI年齢推定研究を統合レビュー。delta age（予測−実年齢）が複数臓器で疾患リスク・死亡と関連し、imaging-based aging clockが分子クロックと並ぶbiological age指標として確立しつつある。健康寿命指標としてimaging delta ageの活用可能性を整理した重要総説。" data-overview="背景：DNA methylation clock等の分子aging clockに加え、画像由来aging clockが急速に発展しているが体系的整理が不足していた。方法：CT、MRI、X線、顔面画像など各モダリティのAI年齢推定研究の精度・転帰関連を網羅的にレビュー。結果：脳MRI brain age、chest CT lung age、abdominal CT organ age、骨X-ray bone age、顔面retinal age等が報告。Delta ageは多数の疾患リスク・死亡と関連。結論：Imaging-based aging clockは分子クロックと相補的なbiological age指標として確立しつつある。" data-importance="健康寿命指標としてのimaging delta ageの活用可能性を整理。「muscle age」「brain age」「retinal age」など臓器別imaging clockが、organ-specific proteomic aging clock（Oh 2025）と統合される未来像を示唆する。" data-methodology="モダリティ・コホートを網羅した系統レビュー。一方で各モデルのcalibration課題、外部妥当性の記載は薄い。" data-limitation="多くは横断研究で、delta ageの縦断変化と転帰の関連は検証段階。Imaging取得のコスト・aksessibilityが実装の課題。" data-implication="①[introduction] 健康寿命指標としてのbiological aging biomarkerを論じる導入で、本研究を「imaging-based aging clockがDNAm clockと相補的なbiological age指標として確立しつつあることを示した最新系統レビュー」として引用し、自分のCT muscle age研究の根拠とする。②[discussion] 自分の日本人CT muscle ageモデル結果を議論する際、本研究で整理されたbrain age・lung age・bone ageとの相互関連性を引用し、whole-body aging atlasへの発展可能性を論じる根拠とする。" data-idea="「日本人CT骨格筋画像から『muscle age』を推定するDeep Learning構築。CT brain ageとmuscle ageを統合したmulti-organ imaging aging scoreを構築し、健康寿命予測精度をproteomic aging clockと比較するbenchmark研究」。" data-novelty="画像由来aging clockをモダリティ横断的・臓器横断的に統合した最初の包括的系統レビュー。Delta age conceptの臨床応用ロードマップを提示した点が独自。" data-discovery="①脳MRI brain ageは最も成熟、②chest CT lung age・abdominal CT organ ageが急速に発展、③retinal age（眼底写真）が非侵襲・低コストで有望、④bone age X-rayは骨粗鬆症との関連、⑤多モーダル統合でwhole-body aging clockへの発展可能性。" data-tags="系統的レビュー|深層学習|画像バイオマーカー|aging clock|老化生物学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">6</div>
+    <div style="flex:1">
+      <div class="paper-title">Imaging biomarkers of ageing: a review of artificial intelligence-based approaches for age estimation</div>
+      <div class="meta-row"><strong>著者:</strong> Lancet Healthy Longevity research group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> The Lancet Healthy Longevity, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 系統的レビュー（脳・胸部・腹部・骨・顔面の各モダリティ）</div>
+      <div class="url-row">🔗 <a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(25)00047-9/fulltext" target="_blank">https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(25)00047-9/fulltext</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">脳・胸部・腹部・骨・顔面画像からのAI年齢推定研究を統合レビュー。delta age（予測−実年齢）が複数臓器で疾患リスク・死亡と関連し、imaging-based aging clockが分子クロックと並ぶbiological age指標として確立しつつある。健康寿命指標としてimaging delta ageの活用可能性を整理した重要総説。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：DNA methylation clock等の分子aging clockに加え、画像由来aging clockが急速に発展しているが体系的整理が不足していた。方法：CT、MRI、X線、顔面画像など各モダリティのAI年齢推定研究の精度・転帰関連を網羅的にレビュー。結果：脳MRI brain age、chest CT lung age、abdominal CT organ age、骨X-ray bone age、顔面retinal age等が報告。Delta ageは多数の疾患リスク・死亡と関連。結論：Imaging-based aging clockは分子クロックと相補的なbiological age指標として確立しつつある。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">健康寿命指標としてのimaging delta ageの活用可能性を整理。「muscle age」「brain age」「retinal age」など臓器別imaging clockが、organ-specific proteomic aging clock（Oh 2025）と統合される未来像を示唆する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">画像由来aging clockをモダリティ横断的・臓器横断的に統合した最初の包括的系統レビュー。Delta age conceptの臨床応用ロードマップを提示した点が独自。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①脳MRI brain ageは最も成熟、②chest CT lung age・abdominal CT organ ageが急速に発展、③retinal age（眼底写真）が非侵襲・低コストで有望、④bone age X-rayは骨粗鬆症との関連、⑤多モーダル統合でwhole-body aging clockへの発展可能性。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">モダリティ・コホートを網羅した系統レビュー。一方で各モデルのcalibration課題、外部妥当性の記載は薄い。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">多くは横断研究で、delta ageの縦断変化と転帰の関連は検証段階。Imaging取得のコスト・aksessibilityが実装の課題。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 健康寿命指標としてのbiological aging biomarkerを論じる導入で、本研究を「imaging-based aging clockがDNAm clockと相補的なbiological age指標として確立しつつあることを示した最新系統レビュー」として引用し、自分のCT muscle age研究の根拠とする。②[discussion] 自分の日本人CT muscle ageモデル結果を議論する際、本研究で整理されたbrain age・lung age・bone ageとの相互関連性を引用し、whole-body aging atlasへの発展可能性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本人CT骨格筋画像から『muscle age』を推定するDeep Learning構築。CT brain ageとmuscle ageを統合したmulti-organ imaging aging scoreを構築し、健康寿命予測精度をproteomic aging clockと比較するbenchmark研究」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">系統的レビュー</span><span class="tag tag-method">深層学習</span><span class="tag tag-theme">画像バイオマーカー</span><span class="tag tag-theme">aging clock</span><span class="tag tag-field">老化生物学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260502_07" data-title="A transformer-based prognostic signature integrating tumor and body composition CT images predicts postoperative recurrence in gastric cancer" data-authors="Multi-institution cancer imaging group" data-journal="npj Digital Medicine, 2025年" data-design="多施設後ろ向き＋外部妥当性検証コホート（Vision Transformer、multimodal CT）" data-url="https://www.nature.com/articles/s41746-025-02183-z" data-summary="Vision Transformerが腫瘍・骨格筋・脂肪のCT画像を統合し、胃癌術後再発を予測。tumor image単独より体組成情報の付加で予測精度が大幅向上することを実証し、年齢層別解析でも有効性を確認。Cancer cachexia/sarcopenia評価の精緻化と癌予後予測の新パラダイムを示す。" data-overview="背景：癌予後予測は腫瘍画像中心で体組成情報の活用は限定的だった。方法：Vision Transformerに胃癌患者の腫瘍画像と骨格筋・内臓脂肪画像をmultimodal入力。多施設データで開発、外部cohortで妥当性検証。年齢層別解析を実施。結果：体組成情報の付加で予測精度が大幅向上。年齢層別でも有効性確認。結論：癌予後予測において体組成（筋・脂肪）はtumor image単独より重要な情報を持つ。" data-importance="Cancer cachexia/sarcopenia評価の精緻化に貢献。癌患者のサルコペニア併発がprognosisに与える影響をTransformerで定量化し、precision oncology+geriatric oncologyの統合方向性を示す。" data-methodology="Vision Transformerと多モダル統合は妥当。多施設後ろ向き＋外部検証で頑健性を担保。CT撮影プロトコル差の影響は要追加検証。" data-limitation="単一癌腫（胃癌）。CT撮影プロトコル差・スキャナ差の影響は別途検証必要。" data-implication="①[introduction] 癌予後予測における体組成評価の重要性を論じる導入で、本研究を「Vision Transformerでtumor＋体組成統合が単独モデルより明確に優れた予測精度を示した代表研究」として引用し、自分のサルコペニア併発癌患者のCT解析研究の根拠とする。②[discussion] 自分のCT muscle density+tumor統合モデル結果を議論する際、本研究の体組成情報の付加価値定量化を引用し、cancer cachexia研究との接続性を論じる根拠とする。" data-idea="「Sarcopeniaを併発した日本人癌患者のCT体組成（muscle density、IMAT、内臓脂肪）からVision Transformerで予後予測モデル構築。Geriatric oncologyのpersonalized treatment選択（intensive vs less-intensive）への臨床実装パイロット」。" data-novelty="Vision Transformerに体組成画像をmultimodal統合し、tumor単独モデルとの比較で体組成の独立予後寄与を初めて系統的に実証。Sarcopeniaを併発した癌患者のprognosis研究の方法論的paradigmを提示。" data-discovery="①Tumor＋体組成統合モデルがtumor単独より大幅に優れた予測精度、②年齢層別でも頑健な予測能、③骨格筋と内臓脂肪の相対的寄与を定量化、④外部cohort validationで汎化性確認、⑤Vision Transformerが従来CNN手法を凌駕。" data-tags="Vision Transformer|マルチモーダル|体組成|サルコペニア|癌・老年腫瘍">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">7</div>
+    <div style="flex:1">
+      <div class="paper-title">A transformer-based prognostic signature integrating tumor and body composition CT images predicts postoperative recurrence in gastric cancer</div>
+      <div class="meta-row"><strong>著者:</strong> Multi-institution cancer imaging group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Digital Medicine, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 多施設後ろ向き＋外部妥当性検証コホート（Vision Transformer、multimodal CT）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41746-025-02183-z" target="_blank">https://www.nature.com/articles/s41746-025-02183-z</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">Vision Transformerが腫瘍・骨格筋・脂肪のCT画像を統合し、胃癌術後再発を予測。tumor image単独より体組成情報の付加で予測精度が大幅向上することを実証し、年齢層別解析でも有効性を確認。Cancer cachexia/sarcopenia評価の精緻化と癌予後予測の新パラダイムを示す。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：癌予後予測は腫瘍画像中心で体組成情報の活用は限定的だった。方法：Vision Transformerに胃癌患者の腫瘍画像と骨格筋・内臓脂肪画像をmultimodal入力。多施設データで開発、外部cohortで妥当性検証。年齢層別解析を実施。結果：体組成情報の付加で予測精度が大幅向上。年齢層別でも有効性確認。結論：癌予後予測において体組成（筋・脂肪）はtumor image単独より重要な情報を持つ。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">Cancer cachexia/sarcopenia評価の精緻化に貢献。癌患者のサルコペニア併発がprognosisに与える影響をTransformerで定量化し、precision oncology+geriatric oncologyの統合方向性を示す。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Vision Transformerに体組成画像をmultimodal統合し、tumor単独モデルとの比較で体組成の独立予後寄与を初めて系統的に実証。Sarcopeniaを併発した癌患者のprognosis研究の方法論的paradigmを提示。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Tumor＋体組成統合モデルがtumor単独より大幅に優れた予測精度、②年齢層別でも頑健な予測能、③骨格筋と内臓脂肪の相対的寄与を定量化、④外部cohort validationで汎化性確認、⑤Vision Transformerが従来CNN手法を凌駕。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Vision Transformerと多モダル統合は妥当。多施設後ろ向き＋外部検証で頑健性を担保。CT撮影プロトコル差の影響は要追加検証。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">単一癌腫（胃癌）。CT撮影プロトコル差・スキャナ差の影響は別途検証必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 癌予後予測における体組成評価の重要性を論じる導入で、本研究を「Vision Transformerでtumor＋体組成統合が単独モデルより明確に優れた予測精度を示した代表研究」として引用し、自分のサルコペニア併発癌患者のCT解析研究の根拠とする。②[discussion] 自分のCT muscle density+tumor統合モデル結果を議論する際、本研究の体組成情報の付加価値定量化を引用し、cancer cachexia研究との接続性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「Sarcopeniaを併発した日本人癌患者のCT体組成（muscle density、IMAT、内臓脂肪）からVision Transformerで予後予測モデル構築。Geriatric oncologyのpersonalized treatment選択（intensive vs less-intensive）への臨床実装パイロット」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">Vision Transformer</span><span class="tag tag-method">マルチモーダル</span><span class="tag tag-theme">体組成</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-field">癌・老年腫瘍</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260502_08" data-title="Leveraging AI to Advance Age-Friendly Care in the Veterans Health Administration" data-authors="VA-AI working group" data-journal="JMIR Aging, 2026年2月" data-design="Implementation概念論文＋ケーススタディ" data-url="https://aging.jmir.org/2026/1/e75686" data-summary="米国退役軍人病院（VA）でAge-Friendly 4Mフレームワーク（Mentation, Mobility, Medication, What Matters）にAIを統合する実装戦略を提示。NLP・機械学習・clinical decision supportを4M枠組みに統合し、多剤併用最適化、認知評価、移動度評価、価値観聴取をAIで支援。包括的高齢者ケア体系へのAI組み込みの先進事例。" data-overview="背景：高齢者ケアは複合的で、AIを単発予測ツールでなく包括的ケア体系に組み込む実装戦略が必要だった。方法：VAでAge-Friendly 4Mフレームワークを土台に、各MにAI技術を割り当て：Mentation（NLP cognitive assessment）、Mobility（wearable+AI fall risk）、Medication（AI deprescribing support）、What Matters（LLM goals-of-care conversation support）。結果：各領域の実装事例とアウトカムを整理。結論：AIを「4M統合実装」の文脈で活用することが包括的高齢者ケアの鍵。" data-importance="AIを「単なる予測ツール」でなく包括的高齢者ケア体系に組み込む実装フレームワーク。日本のCGAやKihon Checklistの効率化、JAGES連携介護事業者へのAI実装にも応用可能。" data-methodology="Implementation研究としては概念設計段階で効果検証は今後。Outcomes evaluation framework（RE-AIM等）への接続が次のステップ。" data-limitation="米国軍人特化で他国・他システムへの汎化は別途検証必要。長期アウトカム評価データはまだ蓄積中。" data-implication="①[introduction] 高齢者ケアへのAI実装の包括的戦略を述べる導入で、本研究を「4M既存フレームワークにAIを系統的にmappingした最初の実装論文」として引用し、自分のCGA-AI統合研究の方法論的根拠とする。②[discussion] 自分のCGA作業のLLM支援研究結果を議論する際、本研究の4M-AI mappingを引用し、日本のKihon Checklist・CGAへの統合可能性を論じる根拠とする。" data-idea="「介護施設職員のCGA作業をLLMで支援するRCTを実施。入力負担軽減、評価精度、職員満足度を従来手法と比較。本研究の4M mappingに準拠してKihon Checklist日本版AI統合システムを設計」。" data-novelty="Age-Friendly 4Mという既存フレームワークにAIを系統的にmappingした最初の実装論文。Single-task AIの集合でなく、CGA/4Mという既存の包括ケア体系へのAI統合戦略を示した点が独自。" data-discovery="①Mentation: NLPによるclinical notes中の認知低下signal検出、②Mobility: wearable+AI転倒リスク評価のEHR統合、③Medication: AI deprescribing supportで多剤併用最適化、④What Matters: LLMによるACP/goals-of-care conversation支援、⑤4M統合ダッシュボードのEHR埋込み。" data-tags="最新2026|Implementation|NLP|高齢者ケア|老年医学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">8</div>
+    <div style="flex:1">
+      <div class="paper-title">Leveraging AI to Advance Age-Friendly Care in the Veterans Health Administration<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> VA-AI working group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> JMIR Aging, 2026年2月</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> Implementation概念論文＋ケーススタディ</div>
+      <div class="url-row">🔗 <a href="https://aging.jmir.org/2026/1/e75686" target="_blank">https://aging.jmir.org/2026/1/e75686</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">米国退役軍人病院（VA）でAge-Friendly 4Mフレームワーク（Mentation, Mobility, Medication, What Matters）にAIを統合する実装戦略を提示。NLP・機械学習・clinical decision supportを4M枠組みに統合し、多剤併用最適化、認知評価、移動度評価、価値観聴取をAIで支援。包括的高齢者ケア体系へのAI組み込みの先進事例。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：高齢者ケアは複合的で、AIを単発予測ツールでなく包括的ケア体系に組み込む実装戦略が必要だった。方法：VAでAge-Friendly 4Mフレームワークを土台に、各MにAI技術を割り当て：Mentation（NLP cognitive assessment）、Mobility（wearable+AI fall risk）、Medication（AI deprescribing support）、What Matters（LLM goals-of-care conversation support）。結果：各領域の実装事例とアウトカムを整理。結論：AIを「4M統合実装」の文脈で活用することが包括的高齢者ケアの鍵。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">AIを「単なる予測ツール」でなく包括的高齢者ケア体系に組み込む実装フレームワーク。日本のCGAやKihon Checklistの効率化、JAGES連携介護事業者へのAI実装にも応用可能。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Age-Friendly 4Mという既存フレームワークにAIを系統的にmappingした最初の実装論文。Single-task AIの集合でなく、CGA/4Mという既存の包括ケア体系へのAI統合戦略を示した点が独自。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Mentation: NLPによるclinical notes中の認知低下signal検出、②Mobility: wearable+AI転倒リスク評価のEHR統合、③Medication: AI deprescribing supportで多剤併用最適化、④What Matters: LLMによるACP/goals-of-care conversation支援、⑤4M統合ダッシュボードのEHR埋込み。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Implementation研究としては概念設計段階で効果検証は今後。Outcomes evaluation framework（RE-AIM等）への接続が次のステップ。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">米国軍人特化で他国・他システムへの汎化は別途検証必要。長期アウトカム評価データはまだ蓄積中。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 高齢者ケアへのAI実装の包括的戦略を述べる導入で、本研究を「4M既存フレームワークにAIを系統的にmappingした最初の実装論文」として引用し、自分のCGA-AI統合研究の方法論的根拠とする。②[discussion] 自分のCGA作業のLLM支援研究結果を議論する際、本研究の4M-AI mappingを引用し、日本のKihon Checklist・CGAへの統合可能性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「介護施設職員のCGA作業をLLMで支援するRCTを実施。入力負担軽減、評価精度、職員満足度を従来手法と比較。本研究の4M mappingに準拠してKihon Checklist日本版AI統合システムを設計」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">Implementation</span><span class="tag tag-method">NLP</span><span class="tag tag-theme">高齢者ケア</span><span class="tag tag-field">老年医学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260502_09" data-title="Protocol for development of an AI-driven individualized frailty prediction and intervention framework for elderly patients with chronic kidney disease" data-authors="Multi-center cohort study group" data-journal="BMC Geriatrics, 2026年" data-design="多施設双方向コホートプロトコル＋因果特徴学習＋知識蒸留モデル" data-url="https://link.springer.com/article/10.1186/s12877-026-07143-0" data-summary="CKD高齢者のフレイル予測にcausal feature learningとknowledge distillationを組み合わせる新規プロトコル。SHAPとcausal effect visualizationで解釈性を担保し、「予測精度」と「因果解釈性」を同時追求する次世代AI設計を提示。介入可能な特徴を因果的に発見する仕組みで、観察予測から介入支援への進化を象徴する研究。" data-overview="背景：従来のfrailty予測ML研究は「予測」中心で、「介入可能因子の発見」までは至らなかった。方法：2024年12月-2028年12月の双方向コホート研究プロトコル。Causal feature learningで真の予測因子を抽出し、軽量モデルへknowledge distillation。SHAP+causal effect visualizationで臨床解釈性を確保。結果：プロトコル段階のため実データなし。期待アウトカムは(1)介入可能な原因因子の同定、(2)軽量モデルの臨床実装可能性、(3)個別化介入推奨。結論：causal AI＋distillationは予測から介入推奨への橋渡しを可能にする。" data-importance="「予測」を超えた「介入可能因子発見」の方法論。CKD高齢者のフレイル予防のmolecular/clinical targetを因果的に発見し、個別化介入推奨を可能にする。Causal MLの臨床実装プロトコルとして他疾患への展開可能。" data-methodology="Causal feature learningの実装具体性は高いが、プロトコル段階で実データ未公開。期待される結果と感度解析計画は明確。" data-limitation="中国人CKDコホート特化で、結果はまだ報告されていない。長期follow-up完了後の因果効果検証が必要。" data-implication="①[introduction] フレイル予測のcausal AI実装の現代的展望を述べる導入で、本研究を「frailty予測でcausal feature learning＋knowledge distillation＋SHAPを統合した最初のプロトコル」として引用し、自分のJAGESデータfrailty SHAP解析研究の方法論的根拠とする。②[discussion] 自分の透析高齢者frailty予測モデル結果を議論する際、本研究のcausal feature選定アプローチを引用し、観察的予測モデルの限界とcausal AIの進化方向を論じる根拠とする。" data-idea="「日本の透析高齢者コホートでcausal SHAPを適用し、フレイル予防の介入候補（栄養補助、抵抗運動、薬剤調整）を因果的に発見。発見された介入候補に対してtarget trial emulationで因果効果を検証する2段階研究」。" data-novelty="Frailty予測でcausal feature learning＋knowledge distillation＋SHAPを統合した最初のプロトコル。「予測精度」と「因果解釈性」を同時に追求する設計が独自で、CKD領域以外への波及効果も期待される。" data-discovery="①Causal feature learningによる真の予測因子の抽出、②knowledge distillationで軽量モデル化し臨床実装可能、③SHAP+causal effect visualizationの統合解釈、④2024-2028の長期follow-upで因果推論精度向上、⑤介入可能因子のpriority rankingが可能。" data-tags="最新2026|因果機械学習|SHAP|フレイル予測|老年医学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">9</div>
+    <div style="flex:1">
+      <div class="paper-title">Protocol for development of an AI-driven individualized frailty prediction and intervention framework for elderly patients with chronic kidney disease<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Multi-center cohort study group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> BMC Geriatrics, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 多施設双方向コホートプロトコル＋因果特徴学習＋知識蒸留モデル</div>
+      <div class="url-row">🔗 <a href="https://link.springer.com/article/10.1186/s12877-026-07143-0" target="_blank">https://link.springer.com/article/10.1186/s12877-026-07143-0</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">CKD高齢者のフレイル予測にcausal feature learningとknowledge distillationを組み合わせる新規プロトコル。SHAPとcausal effect visualizationで解釈性を担保し、「予測精度」と「因果解釈性」を同時追求する次世代AI設計を提示。介入可能な特徴を因果的に発見する仕組みで、観察予測から介入支援への進化を象徴する研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来のfrailty予測ML研究は「予測」中心で、「介入可能因子の発見」までは至らなかった。方法：2024年12月-2028年12月の双方向コホート研究プロトコル。Causal feature learningで真の予測因子を抽出し、軽量モデルへknowledge distillation。SHAP+causal effect visualizationで臨床解釈性を確保。結果：プロトコル段階のため実データなし。期待アウトカムは(1)介入可能な原因因子の同定、(2)軽量モデルの臨床実装可能性、(3)個別化介入推奨。結論：causal AI＋distillationは予測から介入推奨への橋渡しを可能にする。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">「予測」を超えた「介入可能因子発見」の方法論。CKD高齢者のフレイル予防のmolecular/clinical targetを因果的に発見し、個別化介入推奨を可能にする。Causal MLの臨床実装プロトコルとして他疾患への展開可能。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Frailty予測でcausal feature learning＋knowledge distillation＋SHAPを統合した最初のプロトコル。「予測精度」と「因果解釈性」を同時に追求する設計が独自で、CKD領域以外への波及効果も期待される。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Causal feature learningによる真の予測因子の抽出、②knowledge distillationで軽量モデル化し臨床実装可能、③SHAP+causal effect visualizationの統合解釈、④2024-2028の長期follow-upで因果推論精度向上、⑤介入可能因子のpriority rankingが可能。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Causal feature learningの実装具体性は高いが、プロトコル段階で実データ未公開。期待される結果と感度解析計画は明確。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">中国人CKDコホート特化で、結果はまだ報告されていない。長期follow-up完了後の因果効果検証が必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] フレイル予測のcausal AI実装の現代的展望を述べる導入で、本研究を「frailty予測でcausal feature learning＋knowledge distillation＋SHAPを統合した最初のプロトコル」として引用し、自分のJAGESデータfrailty SHAP解析研究の方法論的根拠とする。②[discussion] 自分の透析高齢者frailty予測モデル結果を議論する際、本研究のcausal feature選定アプローチを引用し、観察的予測モデルの限界とcausal AIの進化方向を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本の透析高齢者コホートでcausal SHAPを適用し、フレイル予防の介入候補（栄養補助、抵抗運動、薬剤調整）を因果的に発見。発見された介入候補に対してtarget trial emulationで因果効果を検証する2段階研究」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">因果機械学習</span><span class="tag tag-method">SHAP</span><span class="tag tag-theme">フレイル予測</span><span class="tag tag-field">老年医学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260502_10" data-title="Effective use of patient-reported outcomes for survival prediction: Transformer-based modelling in NSCLC patients" data-authors="Lung cancer outcomes research group" data-journal="2026年（最新オンライン）" data-design="縦断的PRO＋Transformer survival modeling" data-url="https://pubmed.ncbi.nlm.nih.gov/41687720/" data-summary="NSCLC患者の縦断PROとClinical変数をTransformerで統合し全生存を予測。複数follow-up時点のPROを動的に活用する新規アプローチで、年齢層別（≤70 vs &gt;70）でも予後層別化に成功。患者主観データを時系列モデルで予後予測に活用する初期成功例。" data-overview="背景：PROは患者主観データとして重要だが、time-varying特性を活かした予後予測モデルは限定的だった。方法：SBRT後NSCLC患者で複数post-treatment follow-upのPROと臨床・人口統計変数を統合。Transformerが時系列依存性を捉える設計。年齢層別（≤70 vs &gt;70）解析を実施。結果：Transformerが従来手法を上回る予測精度。年齢層別でも頑健な予後層別化に成功。結論：縦断PROのTransformer活用は患者中心の予後予測パラダイム。" data-importance="PROという患者主観データを時系列モデルで予後予測に活用する初期成功例。高齢者の主観的健康・QOL縦断データ活用の新方向を示し、介護予防教室のQOL質問票縦断データへの応用可能性が高い。" data-methodology="Transformerでの縦断PRO処理は新規だが、サンプルサイズが中規模で外的妥当性検証が必要。欠測処理の戦略はさらなる詳細化が望ましい。" data-limitation="単一癌種（NSCLC）、PRO質問票が限定的、欠測処理の課題。" data-implication="①[introduction] 縦断PROの予後予測活用の現代的展望を述べる導入で、本研究を「Transformerで縦断PROの時系列依存性を捉え予後予測精度を向上させた最初の本格的実装」として引用し、自分のJAGES縦断PRO研究の方法論的根拠とする。②[discussion] 自分の介護予防教室QOL質問票縦断データを用いたLTCI開始予測モデル結果を議論する際、本研究のTransformer設計と年齢層別頑健性を引用し、PRO動的変化の予測価値を論じる根拠とする。" data-idea="「介護予防教室でのPRO（QOL、フレイル質問票、社会参加）縦断データをTransformerで解析し、LTCI開始予測モデル構築。患者中心アウトカムの動的変化を捉える新規介護予防evaluation framework提案」。" data-novelty="Transformerで縦断PROの時系列依存性を捉える設計が新規。臨床変数とPROのmultimodal time-series統合の最初の本格的実装。" data-discovery="①Transformerが時系列PROの依存性を捉え予測精度向上、②年齢層別（≤70 vs &gt;70）でも頑健な予後層別化、③PROの動的変化が予後の独立予測因子、④臨床変数＋PROの統合価値を定量化、⑤SBRT後follow-upプロトコルへの実装可能性。" data-tags="最新2026|Transformer|生存解析|PRO|癌・高齢者">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">10</div>
+    <div style="flex:1">
+      <div class="paper-title">Effective use of patient-reported outcomes for survival prediction: Transformer-based modelling in NSCLC patients<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Lung cancer outcomes research group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> 2026年（最新オンライン）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 縦断的PRO＋Transformer survival modeling</div>
+      <div class="url-row">🔗 <a href="https://pubmed.ncbi.nlm.nih.gov/41687720/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/41687720/</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">NSCLC患者の縦断PROとClinical変数をTransformerで統合し全生存を予測。複数follow-up時点のPROを動的に活用する新規アプローチで、年齢層別（≤70 vs >70）でも予後層別化に成功。患者主観データを時系列モデルで予後予測に活用する初期成功例。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：PROは患者主観データとして重要だが、time-varying特性を活かした予後予測モデルは限定的だった。方法：SBRT後NSCLC患者で複数post-treatment follow-upのPROと臨床・人口統計変数を統合。Transformerが時系列依存性を捉える設計。年齢層別（≤70 vs >70）解析を実施。結果：Transformerが従来手法を上回る予測精度。年齢層別でも頑健な予後層別化に成功。結論：縦断PROのTransformer活用は患者中心の予後予測パラダイム。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">PROという患者主観データを時系列モデルで予後予測に活用する初期成功例。高齢者の主観的健康・QOL縦断データ活用の新方向を示し、介護予防教室のQOL質問票縦断データへの応用可能性が高い。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Transformerで縦断PROの時系列依存性を捉える設計が新規。臨床変数とPROのmultimodal time-series統合の最初の本格的実装。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Transformerが時系列PROの依存性を捉え予測精度向上、②年齢層別（≤70 vs >70）でも頑健な予後層別化、③PROの動的変化が予後の独立予測因子、④臨床変数＋PROの統合価値を定量化、⑤SBRT後follow-upプロトコルへの実装可能性。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Transformerでの縦断PRO処理は新規だが、サンプルサイズが中規模で外的妥当性検証が必要。欠測処理の戦略はさらなる詳細化が望ましい。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">単一癌種（NSCLC）、PRO質問票が限定的、欠測処理の課題。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 縦断PROの予後予測活用の現代的展望を述べる導入で、本研究を「Transformerで縦断PROの時系列依存性を捉え予後予測精度を向上させた最初の本格的実装」として引用し、自分のJAGES縦断PRO研究の方法論的根拠とする。②[discussion] 自分の介護予防教室QOL質問票縦断データを用いたLTCI開始予測モデル結果を議論する際、本研究のTransformer設計と年齢層別頑健性を引用し、PRO動的変化の予測価値を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「介護予防教室でのPRO（QOL、フレイル質問票、社会参加）縦断データをTransformerで解析し、LTCI開始予測モデル構築。患者中心アウトカムの動的変化を捉える新規介護予防evaluation framework提案」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">Transformer</span><span class="tag tag-method">生存解析</span><span class="tag tag-theme">PRO</span><span class="tag tag-field">癌・高齢者</span></div>
+</div>
+
+
+  <div class="section-title">📊 まとめ一覧</div>
+  <table class="summary">
+    <thead><tr><th>#</th><th>論文タイトル</th><th>ジャーナル</th><th>デザイン</th><th>キーポイント</th><th>研究テーマ</th></tr></thead>
+    <tbody>
+      <tr><td class="rk">1</td><td>An operational target trial emulation framework for causal inference using elect</td><td>npj Digital Medicine</td><td>方法論論文＋運用フレームワーク提案（複数EHRでの実装事例検証）</td><td>EHRを用いたTarget Trial Emulation（TTE）の運用課題（time-zero、不死時間バイアス、protocol violation）を体系的に解決する運用フレームワークを提示。...</td><td>疫学方法論</td></tr>
+      <tr><td class="rk">2</td><td>CARE-AD: a multi-agent large language model framework for Alzheimer&#x27;s disease pr</td><td>npj Digital Medicine</td><td>マルチエージェントLLM＋大規模EHR縦断解析（matched case-control、cross</td><td>4つの専門化LLMエージェント（Symptom Extraction/Risk Factor/Progression Modeling/Coordinator）が連携し、診断10年前のclinical...</td><td>医療AI</td></tr>
+      <tr><td class="rk">3</td><td>Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia:</td><td>npj Digital Medicine</td><td>大規模イメージングコホート（n=37,004）×自動深層学習セグメンテーション×多変量Cox/ロジス</td><td>UK Biobank 37,004人のneck-to-knee Dixon MRIから27骨盤・大腿筋骨格構造を3D nnU-Netで自動セグメンテーション（DSC&gt;0.92）。Dixon thigh...</td><td>PD研究関連</td></tr>
+      <tr><td class="rk">4</td><td>AI-based wearable system for fall risk prediction in older adults using sEMG and</td><td>Frontiers in Bioengineering and Biotechnology</td><td>前向き観察研究＋機械学習（dual-modality wearable、overground wal</td><td>高齢者のoverground walking中に表面筋電（sEMG）と足底圧センサーを装着し、dual-modality wearableで転倒リスクを予測。LightGBMが最高精度96%を達成し、...</td><td>PD研究関連</td></tr>
+      <tr><td class="rk">5</td><td>Embracing the Digital Revolution: How Artificial Intelligence is Transforming Cl</td><td>Drugs &amp; Aging</td><td>narrative review</td><td>高齢者向け臨床試験におけるAI活用の現状と将来展望を体系的にレビュー。機械学習・深層学習・AI駆動デジタルヘルスプラットフォームによるintelligent stratification、frailt...</td><td>老年医学</td></tr>
+      <tr><td class="rk">6</td><td>Imaging biomarkers of ageing: a review of artificial intelligence-based approach</td><td>The Lancet Healthy Longevity</td><td>系統的レビュー（脳・胸部・腹部・骨・顔面の各モダリティ）</td><td>脳・胸部・腹部・骨・顔面画像からのAI年齢推定研究を統合レビュー。delta age（予測−実年齢）が複数臓器で疾患リスク・死亡と関連し、imaging-based aging clockが分子クロッ...</td><td>老化生物学</td></tr>
+      <tr><td class="rk">7</td><td>A transformer-based prognostic signature integrating tumor and body composition </td><td>npj Digital Medicine</td><td>多施設後ろ向き＋外部妥当性検証コホート（Vision Transformer、multimodal </td><td>Vision Transformerが腫瘍・骨格筋・脂肪のCT画像を統合し、胃癌術後再発を予測。tumor image単独より体組成情報の付加で予測精度が大幅向上することを実証し、年齢層別解析でも有効...</td><td>癌・老年腫瘍</td></tr>
+      <tr><td class="rk">8</td><td>Leveraging AI to Advance Age-Friendly Care in the Veterans Health Administration</td><td>JMIR Aging</td><td>Implementation概念論文＋ケーススタディ</td><td>米国退役軍人病院（VA）でAge-Friendly 4Mフレームワーク（Mentation, Mobility, Medication, What Matters）にAIを統合する実装戦略を提示。NL...</td><td>老年医学</td></tr>
+      <tr><td class="rk">9</td><td>Protocol for development of an AI-driven individualized frailty prediction and i</td><td>BMC Geriatrics</td><td>多施設双方向コホートプロトコル＋因果特徴学習＋知識蒸留モデル</td><td>CKD高齢者のフレイル予測にcausal feature learningとknowledge distillationを組み合わせる新規プロトコル。SHAPとcausal effect visual...</td><td>老年医学</td></tr>
+      <tr><td class="rk">10</td><td>Effective use of patient-reported outcomes for survival prediction: Transformer-</td><td>2026年（最新オンライン）</td><td>縦断的PRO＋Transformer survival modeling</td><td>NSCLC患者の縦断PROとClinical変数をTransformerで統合し全生存を予測。複数follow-up時点のPROを動的に活用する新規アプローチで、年齢層別（≤70 vs &gt;70）でも予...</td><td>癌・高齢者</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">研究レポート自動生成 / 出典は各論文URLを参照</div>
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '',
+      authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '',
+      design: card.dataset.design || '',
+      url: card.dataset.url || '',
+      summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '',
+      importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '',
+      limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '',
+      background: card.dataset.background || '',
+      result: card.dataset.result || '',
+      impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  (function autoUpgrade() {
+    const favs = loadFavs();
+    let upgraded = 0;
+    cards.forEach(card => {
+      const id = card.dataset.paperId;
+      if (!favs[id]) return;
+      const newData = buildPaperData(card);
+      const fields = ['title','authors','journal','design','url','summary','overview','importance','methodology','limitation','implication','idea','novelty','background','result','impact','keywords'];
+      const hasNew = fields.some(k => newData[k] && (!favs[id][k] || favs[id][k] === ''));
+      if (hasNew) {
+        favs[id] = {
+          ...favs[id], ...newData,
+          rating: favs[id].rating || 0,
+          addedAt: favs[id].addedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+        upgraded++;
+      }
+    });
+    if (upgraded > 0) {
+      saveFavs(favs);
+      const note = document.createElement('div');
+      note.style.cssText = 'position:fixed;top:20px;right:20px;background:#fef3c7;border:2px solid #f59e0b;padding:12px 18px;border-radius:8px;color:#78350f;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;max-width:340px';
+      note.innerHTML = '🔄 ' + upgraded + '件のお気に入りを最新項目で自動更新しました';
+      document.body.appendChild(note);
+      setTimeout(() => note.remove(), 5000);
+    }
+  })();
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) {
+      card.style.paddingLeft = '50px';
+    }
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs);
+      updateBar();
+    });
+  });
+
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin:20px auto;max-width:900px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    const pc = document.getElementById('page-count'); const tc = document.getElementById('total-count');
+    if (pc) pc.textContent = checkedCount;
+    if (tc) tc.textContent = Object.keys(loadFavs()).length;
+  }
+  const selAll = document.getElementById('select-all');
+  if (selAll) selAll.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }));
+  const selNone = document.getElementById('select-none');
+  if (selNone) selNone.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }));
+  const openV = document.getElementById('open-viewer');
+  if (openV) openV.addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => { if (cb.checked) { const card = cb.closest('[data-paper-id]'); selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() }; } });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+  updateBar();
+  window.addEventListener('storage', e => {
+    if (e.key === STORAGE_KEY) {
+      const favs = loadFavs();
+      document.querySelectorAll('[data-paper-id]').forEach(card => {
+        const cb = card.querySelector('.paper-fav-check'); if (!cb) return;
+        const label = card.querySelector('.fav-label');
+        const isFav = !!favs[card.dataset.paperId];
+        cb.checked = isFav;
+        if (label) { label.textContent = isFav ? '保存済み' : 'お気に入り'; label.style.color = isFav ? '#be185d' : '#475569'; }
+      });
+      updateBar();
+    }
+  });
+})();
+</script>
+<!-- favorites-injected-end -->
+</body>
+</html>

@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート｜認知機能・脳研究 — 2026年4月23日（木曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #2D4A7A;
+    --secondary: #4A90D9;
+    --accent: #E8703A;
+    --bg: #F5F7FA;
+    --card-bg: #FFFFFF;
+    --text: #1A1A2E;
+    --text-light: #555577;
+    --border: #D0D8E8;
+    --tag-blue: #EBF4FF;
+    --tag-blue-text: #2D6BB5;
+    --tag-green: #E8F5E9;
+    --tag-green-text: #2E7D32;
+    --tag-orange: #FFF3E0;
+    --tag-orange-text: #E65100;
+    --tag-purple: #F3E5F5;
+    --tag-purple-text: #6A1B9A;
+    --tag-red: #FFEBEE;
+    --tag-red-text: #C62828;
+    --rank1: #FFD700;
+    --rank2: #C0C0C0;
+    --rank3: #CD7F32;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2f5e 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .header h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+  .header .meta {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 6px;
+  }
+  .header .theme-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 0.08em;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: 8px;
+    margin: 36px 0 20px 0;
+  }
+  .paper-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 24px;
+    margin-bottom: 22px;
+    border-left: 5px solid var(--secondary);
+    transition: box-shadow 0.2s;
+  }
+  .paper-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+  .paper-card.top1 { border-left-color: #FFD700; }
+  .paper-card.top2 { border-left-color: #C0C0C0; }
+  .paper-card.top3 { border-left-color: #CD7F32; }
+  .paper-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .rank-badge {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .rank-1 { background: linear-gradient(135deg, #FFD700, #FFA500); }
+  .rank-2 { background: linear-gradient(135deg, #C0C0C0, #888); }
+  .rank-3 { background: linear-gradient(135deg, #CD7F32, #8B4513); }
+  .rank-other { background: linear-gradient(135deg, #4A90D9, #2D5FA3); }
+  .paper-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.5;
+    flex: 1;
+  }
+  .paper-title a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .paper-title a:hover { text-decoration: underline; color: var(--secondary); }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: var(--text-light);
+  }
+  .meta-item {
+    background: #F0F4FA;
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  .design-badge {
+    background: var(--tag-blue);
+    color: var(--tag-blue-text);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .summary-block {
+    background: #F8FAFF;
+    border-left: 3px solid var(--secondary);
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 12px;
+    font-size: 13.5px;
+    font-style: italic;
+    color: #344;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .detail-item {
+    background: #FAFBFE;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .detail-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+  .detail-content {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .detail-item.full-width {
+    grid-column: 1 / -1;
+  }
+  .tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .tag {
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .tag-blue { background: var(--tag-blue); color: var(--tag-blue-text); }
+  .tag-green { background: var(--tag-green); color: var(--tag-green-text); }
+  .tag-orange { background: var(--tag-orange); color: var(--tag-orange-text); }
+  .tag-purple { background: var(--tag-purple); color: var(--tag-purple-text); }
+  .tag-red { background: var(--tag-red); color: var(--tag-red-text); }
+  .new-badge {
+    display: inline-block;
+    background: #FF3D00;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-left: 6px;
+    vertical-align: middle;
+    letter-spacing: 0.05em;
+  }
+  /* Summary Table */
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 12.5px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  .summary-table th {
+    background: var(--primary);
+    color: white;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .summary-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #EEF2F8;
+    vertical-align: top;
+  }
+  .summary-table tr:nth-child(even) td { background: #F8FAFF; }
+  .summary-table tr:last-child td { border-bottom: none; }
+  .summary-table a { color: var(--secondary); text-decoration: none; }
+  .summary-table a:hover { text-decoration: underline; }
+  .footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  @media (max-width: 600px) {
+    .detail-grid { grid-template-columns: 1fr; }
+    .paper-header { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<div class="header">
+  <div class="container">
+    <h1>🧠 研究レポート｜認知機能・脳研究</h1>
+    <div class="meta">2026年4月23日（木曜日）｜木曜日テーマ: 認知機能・脳研究</div>
+    <div class="theme-badge">📋 通常レポート（バージョンA）｜論文10本</div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section-title">📚 今週の選定論文（10本）</div>
+
+  <!-- Paper 1 -->
+  <div class="paper-card top1">
+    <div class="paper-header">
+      <div class="rank-badge rank-1">1</div>
+      <div class="paper-title">
+        <a href="https://www.nature.com/articles/s41591-026-04206-y" target="_blank">
+          Predicting onset of symptomatic Alzheimer's disease with plasma p-tau217 clocks
+        </a>
+        <span class="new-badge">NEW 2026</span>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Nature Medicine, 2026</span>
+      <span class="meta-item">n=258 + n=345（2独立コホート）</span>
+      <span class="design-badge">縦断コホート</span>
+    </div>
+    <div class="summary-block">
+      血漿%p-tau217クロックモデルを用いてアルツハイマー病（AD）症状発症タイミングを予測した研究。2つの独立コホートで発症時期の推定精度（median absolute error 3.0〜3.7年）を達成し、血液1本で発症予測が可能であることを示した。60歳でp-tau217陽性となった場合は20年後、80歳で陽性では11年後に症状が現れることを明らかにした。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">縦断的血漿%p-tau217データをもとに数理的クロックモデルを構築。コホート1（n=258）とコホート2（n=345）の独立検証を実施。p-tau217陽性化年齢と症状発症年齢の関連をモデル化し、発症時期を個人レベルで予測可能とした。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">非侵襲的な血液バイオマーカーで臨床的に意味のある精度（MAE 3〜4年）を実現。臨床試験の組み込み基準や予防介入タイミングの設定に革命的示唆を与える、2026年最新の画期的研究。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">2独立コホートによる外的妥当性検証が強み。クロックモデルはp-tau217の縦断的軌跡を使用し、横断的単一時点測定よりも精度が高い。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">主に欧州系白人コホートを対象としており、他民族・非欧米集団への一般化可能性は今後の検証が必要。サンプルサイズが比較的小さい（各コホート数百人）。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">日本人コホート（東北メディカル・メガバンク等）にp-tau217クロックモデルを適用し、発症予測精度のアジア系集団での検証が重要課題。遺伝的因子（APOE ε4）・身体活動・フレイルとp-tau217軌跡の統合予測モデルの構築も有望。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-red">アルツハイマー病</span>
+      <span class="tag tag-blue">バイオマーカー</span>
+      <span class="tag tag-blue">p-tau217</span>
+      <span class="tag tag-green">縦断コホート</span>
+      <span class="tag tag-orange">発症予測</span>
+      <span class="tag tag-purple">精密医療</span>
+    </div>
+  </div>
+
+  <!-- Paper 2 -->
+  <div class="paper-card top2">
+    <div class="paper-header">
+      <div class="rank-badge rank-2">2</div>
+      <div class="paper-title">
+        <a href="https://www.nature.com/articles/s41591-025-03955-6" target="_blank">
+          Physical activity as a modifiable risk factor in preclinical Alzheimer's disease
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Nature Medicine, 2025年11月</span>
+      <span class="meta-item">n=296（Harvard Aging Brain Study）</span>
+      <span class="meta-item">追跡最大14年</span>
+      <span class="design-badge">観察コホート研究</span>
+    </div>
+    <div class="summary-block">
+      歩数計測定の身体活動量が前臨床期ADにおけるアミロイド関連タウ蓄積と認知機能低下に与える影響を縦断的に検討。1日3,000〜5,000歩で認知症発症を3年、5,000〜7,500歩で7年遅延させる効果を確認。この効果はアミロイドβではなく、タウ蓄積の抑制を介して媒介されることを示した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">認知的に健常な高齢者296人を対象にペドメーター・PETイメージング（Aβ・タウ）・年次認知評価を最大14年間実施。身体活動レベルと縦断的なタウ・アミロイド変化・認知機能の関連を混合効果モデルで解析した。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">ADのバイオマーカー段階（前臨床期）での身体活動介入の有効性を示す最も強力なエビデンス。特に「アミロイドではなくタウ経路を介する」という機序の解明は、介入標的の同定に貢献する。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">PETによるAβ・タウの客観的測定と長期追跡が強み。ただし観察研究であり身体活動の因果効果には限界あり。交絡調整も実施済み。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">単一コホート（主に白人高齢者）で一般化可能性に制限。歩数計の精度・日常活動の自然変動によるバイアスの可能性。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">身体活動・筋質（CT筋密度・BIA位相角）とタウ蓄積の関連をマルチモーダルに検討する研究、または日本人地域コホートでの歩行活動と認知機能・脳萎縮の関連研究への展開が有望。社会的運動（ソーシャルエクササイズ）とADバイオマーカーの関連も独自視点として検討可能。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-green">身体活動</span>
+      <span class="tag tag-red">アルツハイマー病</span>
+      <span class="tag tag-blue">タウPET</span>
+      <span class="tag tag-blue">アミロイドPET</span>
+      <span class="tag tag-orange">歩数</span>
+      <span class="tag tag-purple">前臨床期</span>
+    </div>
+  </div>
+
+  <!-- Paper 3 -->
+  <div class="paper-card top3">
+    <div class="paper-header">
+      <div class="rank-badge rank-3">3</div>
+      <div class="paper-title">
+        <a href="https://www.nature.com/articles/s41591-025-03828-y" target="_blank">
+          Reevaluating the role of education on cognitive decline and brain aging in longitudinal cohorts across 33 Western countries
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Nature Medicine, 2025年9月</span>
+      <span class="meta-item">n=170,795（記憶スコア407,356件）</span>
+      <span class="meta-item">MRI n=6,472（33か国）</span>
+      <span class="design-badge">大規模縦断コホート統合</span>
+    </div>
+    <div class="summary-block">
+      教育歴が認知機能低下・脳老化を保護するという「認知的予備力」仮説を、33か国・17万人超の大規模縦断データで再検証。教育は記憶機能の全般的水準を高めるが、年齢に伴う低下速度には影響しないことを示し、従来の認知的予備力理論に根本的な再考を迫った。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">33か国の縦断コホートから407,356件の記憶スコア（n=170,795）と15,157件の脳MRIスコア（n=6,472）を統合解析。教育と加齢に伴う記憶・脳容量変化の交互作用を混合効果モデルで検討した。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">認知的予備力理論の根幹を揺るがす大規模エビデンス。教育の「神経保護効果」は早期生活因子を反映するものであり、老化過程における保護効果ではない可能性を示す。公衆衛生政策への重大な示唆。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">圧倒的なサンプルサイズと多国際コホート統合が強み。縦断設計により断面研究の限界を克服。ただし西洋諸国限定であり非西洋集団の代表性に限界。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">コホート間の認知検査・教育指標の定義が異なる可能性。記憶テストの種類によるバイアス。非西洋（特にアジア）集団での追加検証が必要。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">東北メディカル・メガバンクやJAGES等の日本人コホートで教育歴と脳老化・認知機能低下の関連を検討し、西洋との比較が重要。教育を超えた「知的活動の維持」（社会参加・仕事継続）の独立した保護効果の検証も有望な研究テーマ。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">認知的予備力</span>
+      <span class="tag tag-blue">教育</span>
+      <span class="tag tag-green">脳MRI</span>
+      <span class="tag tag-orange">多国コホート統合</span>
+      <span class="tag tag-purple">記憶機能</span>
+    </div>
+  </div>
+
+  <!-- Paper 4 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">4</div>
+      <div class="paper-title">
+        <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)00184-9/abstract" target="_blank">
+          Neuroprotective mechanisms of exercise and the importance of fitness for healthy brain ageing
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">The Lancet, 2025（Vol 405, pp.1093–1118）</span>
+      <span class="meta-item">Tari AR, Walker TL, Huuha AM, Sando SB, Wisloff U</span>
+      <span class="design-badge">レビュー論文</span>
+    </div>
+    <div class="summary-block">
+      持久性運動が脳を保護するメカニズムと、心肺機能（CRF）が健康な脳老化に果たす役割を包括的に総説。脳血流改善・炎症抑制・神経可塑性増強を介してCRFが認知機能低下・認知症リスクを低減することを、強固なエビデンスとともに整理した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">持久性運動の脳保護メカニズム（脳血流、神経炎症、BDNF、ミトコンドリア機能等）を分子・細胞・臓器レベルで統合的に解説。CRFの測定法・基準値・介入効果についてのエビデンスを体系化した総説。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">少量の高強度運動でも脳に有益な効果があることを示し、身体活動介入の公衆衛生的根拠を強化。CRFが脳老化の独立したバイオマーカーとして機能することを提言。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">ランセットという最高インパクトジャーナルに掲載された包括的総説。エビデンスの質の評価基準が明確。ただし総説であり新規データは含まない。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">介入試験における最適な運動様式・強度・頻度の特定には更なるRCTが必要。脳保護のCRFの最低閾値は未確定。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">筋質（筋密度・位相角）とCRFの相互作用が脳老化・認知機能に与える影響を分析する縦断研究が有望。日本の地域在住高齢者コホートで心肺機能（6分間歩行・VO2max）と認知機能・MRI所見の関連を検討する独自研究も可能。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-green">運動・身体活動</span>
+      <span class="tag tag-blue">心肺機能（CRF）</span>
+      <span class="tag tag-orange">神経可塑性</span>
+      <span class="tag tag-purple">認知症予防</span>
+    </div>
+  </div>
+
+  <!-- Paper 5 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">5</div>
+      <div class="paper-title">
+        <a href="https://link.springer.com/article/10.1007/s00415-025-13372-x" target="_blank">
+          Sleep disorders and the risk of cognitive decline or dementia: an updated systematic review and meta-analysis of longitudinal studies
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Journal of Neurology, 2025</span>
+      <span class="meta-item">76コホート研究</span>
+      <span class="design-badge">系統的レビュー・メタ解析</span>
+    </div>
+    <div class="summary-block">
+      睡眠障害と認知機能低下・認知症リスクの関連を76コホート研究で包括的に更新メタ解析。不眠症（RR=1.13）、短時間睡眠（RR=1.27）、長時間睡眠（AD: RR=1.66）、過度の日中眠気（RR=1.85, 血管性認知症）、睡眠関連運動障害（RR=2.53, 血管性認知症）と多様な睡眠障害が認知症リスクを上昇させることを示した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">2025年2月までの縦断コホート研究をPubMed・EMBASE・Web of Scienceで系統的検索。8種類の睡眠障害に関する76研究を含むメタ解析。プール相対リスク（RR）と95%CIを算出し、感度分析・メタ回帰を実施した。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">睡眠障害の種類によってリスクの大きさが異なることを明確化。特に睡眠関連運動障害（RR=2.53）と過度の日中眠気が高リスクであり、睡眠の質だけでなく睡眠構造全体の評価が認知症予防に重要であることを示す。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">76コホートを統合した大規模メタ解析で信頼性が高い。感度分析・Egger検定による出版バイアス評価も実施。ただし研究間の睡眠障害定義・認知症診断基準の異質性あり。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">研究間の高い異質性（I²）が一部で問題。逆因果（初期認知症による睡眠障害）を完全に排除できない縦断コホートが含まれる可能性。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">要介護認定（LTCI）データと睡眠障害の関連を経時的に検討する研究、または日本の地域高齢者コホートでアクチグラフィーによる客観的睡眠評価と身体機能・認知機能の関連を分析する研究が有望。睡眠・身体活動・筋質の三者交互作用モデルも独自テーマとして検討可能。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">睡眠障害</span>
+      <span class="tag tag-red">認知症リスク</span>
+      <span class="tag tag-orange">メタ解析</span>
+      <span class="tag tag-green">可変的リスク因子</span>
+    </div>
+  </div>
+
+  <!-- Paper 6 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">6</div>
+      <div class="paper-title">
+        <a href="https://www.nature.com/articles/s41591-024-03209-x" target="_blank">
+          Brain clocks capture diversity and disparities in aging and dementia across geographically diverse populations
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Nature Medicine, 2024（Vol 30, pp.3646–3657）</span>
+      <span class="meta-item">Moguilner S, Baez S, Ibáñez A et al.</span>
+      <span class="meta-item">n=5,306（15か国）</span>
+      <span class="design-badge">多国横断研究</span>
+    </div>
+    <div class="summary-block">
+      深層学習ブレインクロック（fMRI・EEG）を用いてアルツハイマー病・前頭側頭型認知症・MCI患者と健常対照の脳年齢ギャップを15か国（ラテンアメリカ7か国・非ラテンアメリカ8か国）で比較。ラテンアメリカでは脳年齢ギャップが大きく、社会経済格差・医療アクセス・環境汚染が脳老化を加速することを示した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">fMRI（n=2,953）とEEG（n=2,353）のデータから深層学習モデルを構築し、脳年齢と実年齢の差（ブレインエイジギャップ）を算出。15か国の健常者・MCI・AD・bvFTD患者間で比較し、社会経済指標との関連を検討した。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">脳老化が単なる生物学的プロセスではなく、社会的決定因子（社会経済格差・医療格差・環境汚染）によって大きく修飾されることを多様な集団で実証。グローバルな脳健康の不平等に科学的根拠を提供。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">マルチモーダル（fMRI・EEG）・多国間・深層学習という先進的な方法論。ただし横断設計であり因果関係の解釈には注意が必要。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">横断設計のため脳老化の経時変化の観察不可。施設間のMRI/EEG取得プロトコルの差異。ラテンアメリカ以外の低中所得国の代表性不足。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">日本の地方（農村部）と都市部の高齢者における脳年齢ギャップの差異と社会的決定因子（孤立・就労状況・医療アクセス）の関連を検討するコホート研究。脳年齢ギャップとフレイル・身体機能の統合指標としての活用を探索する研究も有望。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-purple">深層学習</span>
+      <span class="tag tag-blue">ブレインクロック</span>
+      <span class="tag tag-orange">健康格差</span>
+      <span class="tag tag-green">脳年齢</span>
+      <span class="tag tag-red">多国比較</span>
+    </div>
+  </div>
+
+  <!-- Paper 7 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">7</div>
+      <div class="paper-title">
+        <a href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(25)00350-3/abstract" target="_blank">
+          Lifetime and 10-year absolute risk of cognitive impairment in relation to amyloid PET severity: a retrospective, longitudinal cohort study
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Lancet Neurology, 2025</span>
+      <span class="meta-item">後ろ向き縦断コホート</span>
+      <span class="design-badge">後ろ向きコホート研究</span>
+    </div>
+    <div class="summary-block">
+      アミロイドPET所見の重症度（軽度・中等度・高度）に応じた生涯リスクおよび10年絶対リスクを推定した後ろ向き縦断コホート研究。アミロイド蓄積の程度と認知機能障害発症リスクの定量的関係を明確化し、臨床的な予後相談・疾患修飾療法適応判断に具体的な数値的根拠を提供した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">アミロイドPET検査を受けた認知的健常者・MCI患者を後ろ向きに縦断追跡。アミロイド蓄積重症度別に認知機能障害の生涯リスクと10年絶対リスクを推定。年齢・性別・APOE遺伝子型別のサブグループ解析を実施。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">疾患修飾療法（レカネマブ等）の普及により、アミロイドPETスクリーニングが現実的になった現代において、患者への「あなたのリスクは何%か」という問いに直接答える実用的データを提供。臨床意思決定に直結する。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">絶対リスク推定という臨床的に有用なアウトカム設定。後ろ向きコホートのため選択バイアスの可能性があるが、Lancet Neurologyに掲載される質の高い研究。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">アミロイドPETを受けた選択集団であり一般集団への外挿に注意。追跡期間・脱落によるバイアスの可能性。生活習慣因子の調整が不完全な可能性。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">アミロイドPETステージ別の身体機能（歩行速度・筋質）との関連を検討する研究が有望。フレイルとアミロイド重症度の交互作用が認知症発症リスクに与える影響を評価するコホート研究も重要な研究テーマ。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">アミロイドPET</span>
+      <span class="tag tag-red">認知機能障害リスク</span>
+      <span class="tag tag-orange">絶対リスク推定</span>
+      <span class="tag tag-purple">疾患修飾療法</span>
+    </div>
+  </div>
+
+  <!-- Paper 8 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">8</div>
+      <div class="paper-title">
+        <a href="https://link.springer.com/article/10.1007/s11357-024-01461-0" target="_blank">
+          Cognitive frailty and functional disability in older adults: A 10-year prospective cohort study in Japan
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">GeroScience, 2025</span>
+      <span class="meta-item">n=1,597（日本人65歳以上）</span>
+      <span class="meta-item">10年間追跡</span>
+      <span class="design-badge">前向きコホート研究</span>
+    </div>
+    <div class="summary-block">
+      日本人高齢者1,597名を10年間追跡し、認知的フレイル（身体的フレイル＋認知機能障害の共存）が機能的障害発症リスクに与える影響を検討した前向きコホート研究。認知的フレイルが機能的障害の強力な独立予測因子であることを長期データで実証した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">認知症・機能的障害のない地域在住日本人高齢者1,597名（平均65歳以上）を10年間追跡。身体的フレイル（Friedの表現型モデル）と認知機能障害の共存として定義した認知的フレイルと機能的障害発症の関連をCox比例ハザードモデルで分析。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">日本発の長期コホートで認知的フレイルの予後価値を実証。フレイルと認知機能の両方を早期にスクリーニングする介入プログラムの必要性を示す政策的示唆がある。要介護認定データとの連動も可能。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">10年間という長期追跡と日本人集団という独自性が強み。ただし単一地域コホートで一般化可能性に限界。認知的フレイルの定義の統一が研究間での課題。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">単一地域・単一民族コホートで一般化可能性に制限。フレイルの経時変化（動的変化）は考慮されておらず、ベースライン評価のみ使用。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">健康寿命（disability-free life expectancy）とLTCIデータを組み合わせた認知的フレイルの疾病負担推定研究が直接的に有望。身体機能（歩行速度・握力）・筋質（CTまたはBIA）と認知的フレイル発症の関連をマルチステートモデルで分析する方向性も重要。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-orange">認知的フレイル</span>
+      <span class="tag tag-blue">機能的障害</span>
+      <span class="tag tag-green">日本人コホート</span>
+      <span class="tag tag-purple">前向き研究</span>
+      <span class="tag tag-red">GeroScience</span>
+    </div>
+  </div>
+
+  <!-- Paper 9 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">9</div>
+      <div class="paper-title">
+        <a href="https://link.springer.com/article/10.1186/s12877-025-06430-6" target="_blank">
+          Social isolation and cognitive decline in older adults: a longitudinal study across 24 countries
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">BMC Geriatrics, 2025（Vol 25, article 775）</span>
+      <span class="meta-item">Zhang W, Zhang J, Gao N</span>
+      <span class="meta-item">n=101,581（24か国、5大縦断研究）</span>
+      <span class="design-badge">多国縦断コホート統合</span>
+    </div>
+    <div class="summary-block">
+      5大縦断高齢化研究から24か国・101,581人のハーモナイズドデータを統合し、社会的孤立と認知機能低下の関連を検討。線形混合効果モデルとシステムGMM（操作変数法）を用いて、社会的孤立が高齢者の認知機能低下を有意に促進することを多国横断的に実証した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">CHARLS・HRS・ELSA・SHARE・LIFEWなど5大縦断研究のハーモナイズドデータ（24か国、n=101,581）を統合。社会的孤立指数と標準化認知機能スコアの関連を線形混合効果モデルとSystem GMM（ラグ変数を操作変数とした動的パネル解析）で検討した。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">10万人超の多国間データで社会的孤立が認知機能低下の独立した危険因子であることを実証。System GMMによる因果推論の強化が方法論的に注目される。WHO社会的つながり委員会の政策立案に科学的根拠を提供。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">圧倒的サンプルサイズとSystem GMMによる因果推論が強み。ただし社会的孤立の測定方法がコホート間で異なる可能性あり。ハーモナイゼーションプロセスの透明性が重要。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">社会的孤立の客観的測定が困難で自己申告バイアスの可能性。認知機能評価の種類・言語的文化的差異が国間比較の妥当性に影響。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">社会的運動（ソーシャルエクササイズ）の参加と社会的孤立・認知機能低下の関連を日本のコホートで検討する研究が自分の研究テーマに直結。要介護認定データと社会参加指標を組み合わせたマルチステートモデルの構築も有望な研究設計。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">社会的孤立</span>
+      <span class="tag tag-red">認知機能低下</span>
+      <span class="tag tag-orange">多国縦断研究</span>
+      <span class="tag tag-purple">System GMM</span>
+      <span class="tag tag-green">社会的決定因子</span>
+    </div>
+  </div>
+
+  <!-- Paper 10 -->
+  <div class="paper-card">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">10</div>
+      <div class="paper-title">
+        <a href="https://www.nature.com/articles/s41591-024-03144-x" target="_blank">
+          Brain aging patterns in a large and diverse cohort of 49,482 individuals
+        </a>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Nature Medicine, 2024</span>
+      <span class="meta-item">n=49,482（11研究）</span>
+      <span class="design-badge">大規模コホート研究</span>
+    </div>
+    <div class="summary-block">
+      深層表現学習を用いて49,482人の脳MRIデータを解析し、脳萎縮の5つの支配的パターン（サブタイプ）を同定した。各個人の脳老化が均一ではなく異質であることを示し、脳老化の個人差を定量化する新たなアプローチを提供した画期的大規模研究。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">11の大規模研究から49,482人の構造的MRIデータを収集。深層表現学習モデル（VAE系）を用いて脳萎縮の潜在的パターンを抽出し、5つの支配的な脳老化サブタイプを同定。各参加者をこれらのパターンのスペクトル上で定量化した。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">「脳老化は一様ではなく、個人によって異なるパターンを示す」という根本的事実を最大規模で実証。将来的な個別化医療・認知症リスクの個人差予測への道を開く。APOE遺伝子型・生活習慣との関連分析も可能。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">深層学習と大規模マルチコホート統合の先端的な組み合わせ。ただし深層学習モデルの解釈可能性（ブラックボックス問題）とMRIプロトコルの施設間差異が課題。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">施設間のMRI取得・前処理の差異。深層学習パターンの生物学的解釈の困難さ。縦断データが限定的で因果方向の解釈に注意が必要。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">脳老化サブタイプ別の身体機能（筋質・歩行速度・フレイル）との関連を解析する研究が有望。深層学習による脳老化パターンと遺伝的背景（GWAS・DNAメチル化）の統合解析で脳老化の生物学的機序の解明も期待できる。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-purple">深層学習</span>
+      <span class="tag tag-blue">脳MRI</span>
+      <span class="tag tag-orange">脳老化パターン</span>
+      <span class="tag tag-green">大規模コホート</span>
+      <span class="tag tag-red">不均一性</span>
+    </div>
+  </div>
+
+  <!-- Summary Table -->
+  <div class="section-title">📊 論文一覧まとめ表（10本）</div>
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>論文タイトル</th>
+        <th>ジャーナル・年</th>
+        <th>デザイン</th>
+        <th>N</th>
+        <th>主要発見</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><a href="https://www.nature.com/articles/s41591-026-04206-y">Predicting onset...p-tau217 clocks</a></td>
+        <td>Nature Medicine, 2026</td>
+        <td>縦断コホート</td>
+        <td>258+345</td>
+        <td>血液1本でAD発症タイミング予測（MAE 3〜4年）</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><a href="https://www.nature.com/articles/s41591-025-03955-6">Physical activity...preclinical AD</a></td>
+        <td>Nature Medicine, 2025</td>
+        <td>観察コホート</td>
+        <td>296</td>
+        <td>5,000〜7,500歩/日で認知症7年遅延、タウ経路を介する</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><a href="https://www.nature.com/articles/s41591-025-03828-y">Reevaluating education...33 countries</a></td>
+        <td>Nature Medicine, 2025</td>
+        <td>大規模縦断統合</td>
+        <td>170,795</td>
+        <td>教育は認知水準を高めるが年齢関連低下速度には影響しない</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)00184-9/abstract">Neuroprotective mechanisms...brain ageing</a></td>
+        <td>The Lancet, 2025</td>
+        <td>レビュー</td>
+        <td>—</td>
+        <td>CRFが脳血流・神経可塑性を介して認知症リスクを低減</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><a href="https://link.springer.com/article/10.1007/s00415-025-13372-x">Sleep disorders...meta-analysis</a></td>
+        <td>J Neurology, 2025</td>
+        <td>メタ解析</td>
+        <td>76研究</td>
+        <td>睡眠関連運動障害が最大リスク（RR=2.53, 血管性認知症）</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><a href="https://www.nature.com/articles/s41591-024-03209-x">Brain clocks...geographically diverse</a></td>
+        <td>Nature Medicine, 2024</td>
+        <td>多国横断研究</td>
+        <td>5,306</td>
+        <td>社会経済格差・環境汚染が脳年齢ギャップを拡大</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><a href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(25)00350-3/abstract">Lifetime...amyloid PET severity</a></td>
+        <td>Lancet Neurology, 2025</td>
+        <td>後ろ向きコホート</td>
+        <td>—</td>
+        <td>アミロイドPET重症度別の生涯・10年絶対リスクを定量化</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><a href="https://link.springer.com/article/10.1007/s11357-024-01461-0">Cognitive frailty...Japan</a></td>
+        <td>GeroScience, 2025</td>
+        <td>前向きコホート</td>
+        <td>1,597</td>
+        <td>認知的フレイルが10年後の機能的障害の強力な独立予測因子</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><a href="https://link.springer.com/article/10.1186/s12877-025-06430-6">Social isolation...24 countries</a></td>
+        <td>BMC Geriatrics, 2025</td>
+        <td>多国縦断統合</td>
+        <td>101,581</td>
+        <td>社会的孤立が24か国共通で認知機能低下を促進</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><a href="https://www.nature.com/articles/s41591-024-03144-x">Brain aging patterns...49,482</a></td>
+        <td>Nature Medicine, 2024</td>
+        <td>大規模コホート</td>
+        <td>49,482</td>
+        <td>深層学習で5つの脳萎縮パターンを同定、脳老化の異質性を実証</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<div class="footer">
+  <div>研究レポート｜認知機能・脳研究｜2026年4月23日（木曜日）</div>
+  <div style="margin-top:4px; opacity:0.7; font-size:11px;">このレポートはAIが自動生成した研究要約です。引用・判断には原文をご参照ください。</div>
+</div>
+
+</body>
+</html>

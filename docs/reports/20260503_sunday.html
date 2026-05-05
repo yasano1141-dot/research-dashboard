@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート｜遺伝子・オミクス — 2026年5月3日（日曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+:root{--primary:#2D4A7A;--secondary:#4A90D9;--accent:#E8703A;--bg:#F5F7FA;--card-bg:#FFFFFF;--text:#1A1A2E;--text-light:#555577;--border:#D0D8E8;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:14px}
+.header{background:linear-gradient(135deg,var(--primary) 0%,#1a2f5e 100%);color:white;padding:42px 0;text-align:center}
+.header h1{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:700;margin-bottom:8px;letter-spacing:0.05em}
+.header .meta{font-size:13px;opacity:0.85;margin-top:6px}
+.header .theme-badge{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);border-radius:20px;padding:4px 16px;font-size:13px;margin-top:10px;letter-spacing:0.08em}
+.container{max-width:900px;margin:0 auto;padding:30px 20px}
+.section-title{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;color:var(--primary);border-bottom:3px solid var(--secondary);padding-bottom:8px;margin:36px 0 20px 0}
+.paper-card{background:var(--card-bg);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);padding:24px;margin-bottom:22px;border-left:5px solid var(--secondary);position:relative}
+.paper-card.top1{border-left-color:#FFD700}
+.paper-card.top2{border-left-color:#C0C0C0}
+.paper-card.top3{border-left-color:#CD7F32}
+.paper-card.brain-physical{box-shadow:0 2px 12px rgba(232,112,58,0.15);border-right:3px solid #E8703A}
+.paper-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.rank-badge{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white}
+.rank-1{background:linear-gradient(135deg,#FFD700,#FFA500)}
+.rank-2{background:linear-gradient(135deg,#C0C0C0,#888)}
+.rank-3{background:linear-gradient(135deg,#CD7F32,#8B4513)}
+.rank-other{background:linear-gradient(135deg,#4A90D9,#2D5FA3)}
+.brain-tag{display:inline-block;background:#FFE5B4;color:#7a4500;border:1px solid #E8703A;border-radius:12px;padding:2px 10px;font-size:11px;font-weight:700;margin-left:8px}
+.paper-title{font-size:15.5px;font-weight:700;color:var(--primary);line-height:1.55;margin-bottom:6px}
+.meta-row{font-size:12.5px;color:var(--text-light);margin-bottom:3px}
+.meta-row strong{color:#333;font-weight:600}
+.url-row{font-size:12px;margin:8px 0 14px}
+.url-row a{color:#1d4ed8;text-decoration:none;word-break:break-all}
+.url-row a:hover{text-decoration:underline}
+.section-block{padding:11px 14px;margin:8px 0;border-radius:8px;border-left:4px solid #999;background:#f9fafb}
+.section-block .section-label{font-weight:700;font-size:12.5px;display:block;margin-bottom:5px;letter-spacing:0.04em}
+.section-block .section-content{font-size:13.5px;color:#22253a}
+.section-block.summary{background:#EBF4FF;border-left-color:#3182ce}
+.section-block.summary .section-label{color:#3182ce}
+.section-block.overview{background:#F8F9FB;border-left-color:#718096}
+.section-block.overview .section-label{color:#718096}
+.section-block.importance{background:#FFF8EB;border-left-color:#d69e2e}
+.section-block.importance .section-label{color:#d69e2e}
+.section-block.originality{background:#F5F0FF;border-left-color:#805ad5}
+.section-block.originality .section-label{color:#805ad5}
+.section-block.discovery{background:#ECFDF5;border-left-color:#16a34a}
+.section-block.discovery .section-label{color:#16a34a}
+.section-block.method{background:#F0FDF4;border-left-color:#38a169}
+.section-block.method .section-label{color:#38a169}
+.section-block.limit{background:#FEF2F2;border-left-color:#c53030}
+.section-block.limit .section-label{color:#c53030}
+.section-block.implication{background:#FAF5FF;border-left-color:#805ad5}
+.section-block.implication .section-label{color:#805ad5}
+.section-block.idea{background:#F0FDFA;border-left-color:#319795}
+.section-block.idea .section-label{color:#319795}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:14px;font-weight:600}
+.tag-fresh{background:#fee2e2;color:#991b1b}
+.tag-method{background:#EBF4FF;color:#2D6BB5}
+.tag-theme{background:#E8F5E9;color:#2E7D32}
+.tag-field{background:#F3E5F5;color:#6A1B9A}
+.tag-brain{background:#FFE5B4;color:#7a4500}
+table.summary{width:100%;border-collapse:collapse;background:white;font-size:12px;margin-top:12px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+table.summary th{background:var(--primary);color:white;padding:9px 8px;text-align:left;font-weight:600;font-size:11.5px}
+table.summary td{padding:8px;border-bottom:1px solid #eee;vertical-align:top}
+table.summary tr:hover{background:#fafbfd}
+table.summary td.rk{font-weight:700;color:var(--accent);text-align:center}
+table.summary tr.brain-physical td{background:#FFF5E5}
+.footer{text-align:center;padding:24px;font-size:11.5px;color:var(--text-light)}
+
+.paper-card.pd-related{box-shadow:0 2px 14px rgba(22,163,74,0.18);border-right:3px solid #16a34a}
+
+</style>
+</head>
+<body data-source-date="20260503" data-source-theme="遺伝子・オミクス">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<header class="header">
+  <h1>研究レポート — 遺伝子・オミクス</h1>
+  <div class="meta">2026年5月3日（日曜日）</div>
+  <div class="meta">本日のテーマ：遺伝子・オミクス研究</div>
+  <div class="theme-badge">10 PAPERS / 重要度順</div>
+</header>
+
+<div class="container">
+  <div class="section-title">📋 本日の論文（重要度順）</div>
+
+<div class="paper-card top1" data-paper-id="20260503_01" data-title="Plasma proteomics links brain and immune system aging with healthspan and longevity" data-authors="Oh HS-H, Le Guen Y, Rappoport N, et al." data-journal="Nature Medicine, 2025年7月" data-design="大規模プロテオームコホート（UK Biobank n=44,498、11臓器、17年follow-up）" data-url="https://www.nature.com/articles/s41591-025-03798-1" data-summary="UK Biobank 44,498人の血漿2,916タンパク（Olink Explore 3072）から11臓器のbiological ageを推定。脳老化はAD HR=3.1（APOE4 1コピー相当）、若い脳はHR=0.26（APOE2 2コピー相当）。脳・免疫いずれも若いと全死亡HR=0.44。「老化は全身均一でなく臓器ごとに進む」というorgan-specific aging概念を確立した記念碑的研究。" data-overview="背景：DNAm clockは「全身一括」のbiological ageしか推定できず、臓器ごとに異なる老化速度を捉えられなかった。方法：UK Biobank 44,498人のOlink Explore 3072データから、Human Protein Atlasで定義した11臓器の特異的タンパク（計847タンパク）を Elastic Net regressionで各臓器ageに集約。最大17年follow-upで15疾患・全死亡を追跡。結果：脳老化が大きい群（top 5%）はAD発症HR=3.1（2.4-4.0）でAPOE4 1コピー保有相当、若い脳はHR=0.26（0.18-0.38）でAPOE2 2コピー相当の保護効果。Aged organs 2-4個でHR=2.3、5-7でHR=4.5、8+でHR=8.3と指数的増加。脳・免疫両方若いと全死亡HR=0.44。結論：organ-specific aging clockは健康寿命延伸の介入ターゲットを臓器単位で特定可能にする。" data-importance="「老化研究」から「臓器別老化研究」への大転換を象徴する研究。Aging clinical trialsのbiomarker戦略が再構築され、FDA・PMDAなど規制当局が aging interventionを評価する際のregulatory biomarkerとしてorgan aging clockが採用される可能性を切り開いた。" data-methodology="大規模n、17年follow-up、Olinkのbatch effect補正、複数アウトカム補正（FDR）、APOE genotype別sensitivity analysisで頑健。Elastic NetとHuman Protein Atlas tissue specificityの組み合わせは方法論的に堅実。" data-limitation="横断観察＋縦断疾患追跡で因果は不明。白人中心のUK Biobankで多人種汎化性は別途検証必要。Proteomic age decelerationの介入効果検証は未実施。" data-implication="①[introduction] 健康寿命研究のbiological aging biomarkerとしてのorgan-specific aging clockの重要性を論じる導入で、本研究を「血漿2,916タンパクから11臓器ageを推定し脳・免疫がlongevityの2大要因であることを実証した記念碑的研究」として引用し、自分の日本人organ aging clock研究の根拠とする。②[discussion] 自分のJapanese-specific organ aging clock研究結果を議論する際、本研究の脳HR=3.1/0.26、aged organs 8+のHR=8.3、脳・免疫両方若いHR=0.44を引用し、日本人での効果サイズの妥当性と人種特異性を論じる根拠とする。" data-idea="「Tohoku Medical Megabank（n&gt;50,000）の血漿proteomeでJapanese-specific organ aging clockを構築。日本人特有の老化パターン（脳・筋に重点）と健康寿命・LTCI開始の関連を解析。CT muscle density・phase angle・GrimAge2と統合したmulti-modal aging atlas構築」。" data-novelty="血漿という単一biofluidから11臓器それぞれのageを推定可能にした初の方法論。脳・免疫系がlongevityの2大要因であることを大規模に実証し、APOE genotypeと同等以上の予測因子をプロテオミクスから取得した点が革命的。" data-discovery="①脳老化top 5%のAD HR=3.1（APOE4相当）・bottom 5%のHR=0.26（APOE2相当）、②aged organs累積でHR指数増加（2-4個 HR=2.3、5-7 HR=4.5、8+ HR=8.3）、③脳・免疫両方若いと全死亡HR=0.44、④運動は脳・心・筋ageを若く、喫煙は肺・心・脳ageを老化させる、⑤17年follow-upで15疾患すべてに臓器特異的予測能。" data-tags="大規模プロテオーム|機械学習|臓器特異的老化|Brain Age|老化生物学">
+  <div class="paper-header">
+    <div class="rank-badge rank-1">1</div>
+    <div style="flex:1">
+      <div class="paper-title">Plasma proteomics links brain and immune system aging with healthspan and longevity</div>
+      <div class="meta-row"><strong>著者:</strong> Oh HS-H, Le Guen Y, Rappoport N, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Medicine, 2025年7月</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 大規模プロテオームコホート（UK Biobank n=44,498、11臓器、17年follow-up）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41591-025-03798-1" target="_blank">https://www.nature.com/articles/s41591-025-03798-1</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">UK Biobank 44,498人の血漿2,916タンパク（Olink Explore 3072）から11臓器のbiological ageを推定。脳老化はAD HR=3.1（APOE4 1コピー相当）、若い脳はHR=0.26（APOE2 2コピー相当）。脳・免疫いずれも若いと全死亡HR=0.44。「老化は全身均一でなく臓器ごとに進む」というorgan-specific aging概念を確立した記念碑的研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：DNAm clockは「全身一括」のbiological ageしか推定できず、臓器ごとに異なる老化速度を捉えられなかった。方法：UK Biobank 44,498人のOlink Explore 3072データから、Human Protein Atlasで定義した11臓器の特異的タンパク（計847タンパク）を Elastic Net regressionで各臓器ageに集約。最大17年follow-upで15疾患・全死亡を追跡。結果：脳老化が大きい群（top 5%）はAD発症HR=3.1（2.4-4.0）でAPOE4 1コピー保有相当、若い脳はHR=0.26（0.18-0.38）でAPOE2 2コピー相当の保護効果。Aged organs 2-4個でHR=2.3、5-7でHR=4.5、8+でHR=8.3と指数的増加。脳・免疫両方若いと全死亡HR=0.44。結論：organ-specific aging clockは健康寿命延伸の介入ターゲットを臓器単位で特定可能にする。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">「老化研究」から「臓器別老化研究」への大転換を象徴する研究。Aging clinical trialsのbiomarker戦略が再構築され、FDA・PMDAなど規制当局が aging interventionを評価する際のregulatory biomarkerとしてorgan aging clockが採用される可能性を切り開いた。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">血漿という単一biofluidから11臓器それぞれのageを推定可能にした初の方法論。脳・免疫系がlongevityの2大要因であることを大規模に実証し、APOE genotypeと同等以上の予測因子をプロテオミクスから取得した点が革命的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①脳老化top 5%のAD HR=3.1（APOE4相当）・bottom 5%のHR=0.26（APOE2相当）、②aged organs累積でHR指数増加（2-4個 HR=2.3、5-7 HR=4.5、8+ HR=8.3）、③脳・免疫両方若いと全死亡HR=0.44、④運動は脳・心・筋ageを若く、喫煙は肺・心・脳ageを老化させる、⑤17年follow-upで15疾患すべてに臓器特異的予測能。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">大規模n、17年follow-up、Olinkのbatch effect補正、複数アウトカム補正（FDR）、APOE genotype別sensitivity analysisで頑健。Elastic NetとHuman Protein Atlas tissue specificityの組み合わせは方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">横断観察＋縦断疾患追跡で因果は不明。白人中心のUK Biobankで多人種汎化性は別途検証必要。Proteomic age decelerationの介入効果検証は未実施。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 健康寿命研究のbiological aging biomarkerとしてのorgan-specific aging clockの重要性を論じる導入で、本研究を「血漿2,916タンパクから11臓器ageを推定し脳・免疫がlongevityの2大要因であることを実証した記念碑的研究」として引用し、自分の日本人organ aging clock研究の根拠とする。②[discussion] 自分のJapanese-specific organ aging clock研究結果を議論する際、本研究の脳HR=3.1/0.26、aged organs 8+のHR=8.3、脳・免疫両方若いHR=0.44を引用し、日本人での効果サイズの妥当性と人種特異性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「Tohoku Medical Megabank（n>50,000）の血漿proteomeでJapanese-specific organ aging clockを構築。日本人特有の老化パターン（脳・筋に重点）と健康寿命・LTCI開始の関連を解析。CT muscle density・phase angle・GrimAge2と統合したmulti-modal aging atlas構築」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">大規模プロテオーム</span><span class="tag tag-method">機械学習</span><span class="tag tag-theme">臓器特異的老化</span><span class="tag tag-theme">Brain Age</span><span class="tag tag-field">老化生物学</span></div>
+</div>
+
+<div class="paper-card top2 pd-related" data-paper-id="20260503_02" data-title="Organ-specific proteomic aging clocks predict disease and longevity across diverse populations" data-authors="Multi-cohort consortium" data-journal="Nature Aging, 2026年" data-design="多人種多コホート開発・検証研究（UK Biobank n=43,616、China n=3,977、USA n=800、Olink/SomaScan両platform）" data-url="https://www.nature.com/articles/s43587-025-01016-8" data-summary="プロテオームベースの臓器特異的aging clockを3カ国・3人種で開発・検証（cross-cohort r=0.98中国、0.93米国）。脳老化が死亡と最強関連（HR per SD=1.31）、肝・免疫・心が16-43%のmortality risk per SD。多人種で汎化することを初実証し、organ aging clockの臨床応用基盤を確立した記念碑的研究。" data-overview="背景：従来のaging clockは欧州系コホート中心で多人種汎化性が未検証だった。方法：UK Biobank（n=43,616）で開発、China Kadoorie Biobank（n=3,977漢民族）と米国cohort（n=800多人種）で外部検証。Olink Explore 3072とSomaScan v4.1の両プラットフォームを使用。共通タンパク（n≈1,200）に焦点。各臓器について Elastic Net regressionで biological age推定。結果：Cross-cohort transferabilityは中国でr=0.98、米国でr=0.93。Brain delta age top quintileのAD HR=2.6、heart delta ageの心不全HR=2.4、immune delta ageのinfection mortality HR=2.1。全死亡HR=1.16-1.43（liver、immune、heartが最大）。Aged organs累積でHR指数増加（2-3個 HR=2.3、4-5 HR=3.8、6+ HR=7.1）。結論：organ aging clockは多人種で汎化可能で臨床ツールに育つ準備が整った。" data-importance="Organ aging clockの多人種汎化性能を初実証した臨床応用への最後のmissing piece。FDA・PMDAなど規制当局がaging interventionを評価する際のregulatory biomarkerとしてorgan aging clockが採用される基盤が整った。日本人での検証が次のステップ。" data-methodology="3国・3人種・2プラットフォーム検証は強力。Internal/external CV、人種別sensitivity analysis、platform-specific calibration、欠測補完で頑健。SomaScan vs Olinkの対応も丁寧。" data-limitation="中国・米国コホートはサンプル小（n&lt;4,000）、日本など他アジア人での検証は今後。中国漢民族のみでアジア人内多様性も未検証。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題1&lt;/strong&gt;「脳・筋を統合的に捉え身体機能への重要度を順位化」の理論的根拠として、本研究を「脳・筋・免疫など臓器別aging clockが多人種で汎化（r=0.93-0.98）し、特に脳老化が死亡と最強関連（HR per SD=1.31）であることを実証した記念碑的研究」として引用し、PD課題1で『脳・筋を別々のaging指標として測定し統合解析する』方法論の妥当性を強力に補強できる。②[discussion] PD研究課題1の900名コホート結果（脳機能性 13.1% &gt; 筋質 10.2% &gt; 筋量 7.5%）を議論する際、本研究の臓器別per-SD HR（肝1.43、免疫1.28、心1.22）と『脳が死亡との関連最強』を引用し、SHAP順位（脳機能性最上位）の生物学的妥当性をproteomics由来エビデンスで補強する。" data-idea="&lt;strong&gt;【PD研究課題1直結】&lt;/strong&gt;「PD課題1の900名コホート（東北MM × 国立長寿センター連携）に血漿proteomicsを追加し、本研究のorgan-specific aging clockを日本人で構築。脳age・筋age・免疫ageをSHAP説明変数として統合し、『どの臓器の老化が身体機能・LTCI開始に最も寄与するか』を順位化。PD研究の差別化ポイント（多臓器aging × SHAP × 日本人）として位置づける」。" data-novelty="3人種・3コホート・2プラットフォームでcross-validationを実施し、cross-cohort r=0.93-0.98の汎化性能を初実証。Olink（PEA法）とSomaScan（aptamer-based）の異なるプラットフォーム間でも結果が一致することを示した点が革新的。" data-discovery="①Cross-cohort r=0.98（中国）・0.93（米国）の極めて高い汎化性能、②脳delta age top quintileのAD HR=2.6・心HR=2.4・免疫HR=2.1、③臓器別per-SD HR：肝1.43・免疫1.28・心1.22、④累積臓器2-3個 HR=2.3・4-5 HR=3.8・6+ HR=7.1、⑤Olink/SomaScan両platform間で結果一致しplatform-agnostic性を実証。" data-tags="最新2026|プロテオミクス|多人種検証|Aging Clock|脳・筋老化|PD研究関連">
+  <div class="paper-header">
+    <div class="rank-badge rank-2">2</div>
+    <div style="flex:1">
+      <div class="paper-title">Organ-specific proteomic aging clocks predict disease and longevity across diverse populations<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span style="background:#16a34a;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 6px;margin-left:6px;">📍 PD研究</span></div>
+      <div class="meta-row"><strong>著者:</strong> Multi-cohort consortium</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Aging, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 多人種多コホート開発・検証研究（UK Biobank n=43,616、China n=3,977、USA n=800、Olink/SomaScan両platform）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s43587-025-01016-8" target="_blank">https://www.nature.com/articles/s43587-025-01016-8</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">プロテオームベースの臓器特異的aging clockを3カ国・3人種で開発・検証（cross-cohort r=0.98中国、0.93米国）。脳老化が死亡と最強関連（HR per SD=1.31）、肝・免疫・心が16-43%のmortality risk per SD。多人種で汎化することを初実証し、organ aging clockの臨床応用基盤を確立した記念碑的研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来のaging clockは欧州系コホート中心で多人種汎化性が未検証だった。方法：UK Biobank（n=43,616）で開発、China Kadoorie Biobank（n=3,977漢民族）と米国cohort（n=800多人種）で外部検証。Olink Explore 3072とSomaScan v4.1の両プラットフォームを使用。共通タンパク（n≈1,200）に焦点。各臓器について Elastic Net regressionで biological age推定。結果：Cross-cohort transferabilityは中国でr=0.98、米国でr=0.93。Brain delta age top quintileのAD HR=2.6、heart delta ageの心不全HR=2.4、immune delta ageのinfection mortality HR=2.1。全死亡HR=1.16-1.43（liver、immune、heartが最大）。Aged organs累積でHR指数増加（2-3個 HR=2.3、4-5 HR=3.8、6+ HR=7.1）。結論：organ aging clockは多人種で汎化可能で臨床ツールに育つ準備が整った。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">Organ aging clockの多人種汎化性能を初実証した臨床応用への最後のmissing piece。FDA・PMDAなど規制当局がaging interventionを評価する際のregulatory biomarkerとしてorgan aging clockが採用される基盤が整った。日本人での検証が次のステップ。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">3人種・3コホート・2プラットフォームでcross-validationを実施し、cross-cohort r=0.93-0.98の汎化性能を初実証。Olink（PEA法）とSomaScan（aptamer-based）の異なるプラットフォーム間でも結果が一致することを示した点が革新的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Cross-cohort r=0.98（中国）・0.93（米国）の極めて高い汎化性能、②脳delta age top quintileのAD HR=2.6・心HR=2.4・免疫HR=2.1、③臓器別per-SD HR：肝1.43・免疫1.28・心1.22、④累積臓器2-3個 HR=2.3・4-5 HR=3.8・6+ HR=7.1、⑤Olink/SomaScan両platform間で結果一致しplatform-agnostic性を実証。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">3国・3人種・2プラットフォーム検証は強力。Internal/external CV、人種別sensitivity analysis、platform-specific calibration、欠測補完で頑健。SomaScan vs Olinkの対応も丁寧。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">中国・米国コホートはサンプル小（n<4,000）、日本など他アジア人での検証は今後。中国漢民族のみでアジア人内多様性も未検証。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] <strong>筆者のPD研究課題1</strong>「脳・筋を統合的に捉え身体機能への重要度を順位化」の理論的根拠として、本研究を「脳・筋・免疫など臓器別aging clockが多人種で汎化（r=0.93-0.98）し、特に脳老化が死亡と最強関連（HR per SD=1.31）であることを実証した記念碑的研究」として引用し、PD課題1で『脳・筋を別々のaging指標として測定し統合解析する』方法論の妥当性を強力に補強できる。②[discussion] PD研究課題1の900名コホート結果（脳機能性 13.1% > 筋質 10.2% > 筋量 7.5%）を議論する際、本研究の臓器別per-SD HR（肝1.43、免疫1.28、心1.22）と『脳が死亡との関連最強』を引用し、SHAP順位（脳機能性最上位）の生物学的妥当性をproteomics由来エビデンスで補強する。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content"><strong>【PD研究課題1直結】</strong>「PD課題1の900名コホート（東北MM × 国立長寿センター連携）に血漿proteomicsを追加し、本研究のorgan-specific aging clockを日本人で構築。脳age・筋age・免疫ageをSHAP説明変数として統合し、『どの臓器の老化が身体機能・LTCI開始に最も寄与するか』を順位化。PD研究の差別化ポイント（多臓器aging × SHAP × 日本人）として位置づける」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">プロテオミクス</span><span class="tag tag-method">多人種検証</span><span class="tag tag-theme">Aging Clock</span><span class="tag tag-theme">脳・筋老化</span><span class="tag tag-field">PD研究関連</span></div>
+</div>
+
+<div class="paper-card top3" data-paper-id="20260503_03" data-title="Integrative Proteomic and Metabolomic Signatures of Accelerated PhenoAge in the UK Biobank" data-authors="UK Biobank multi-omics group" data-journal="medRxiv, 2026年3月（preprint）" data-design="大規模マルチオミクス統合解析（n≈20,000、Olink Explore 3072＋NMR 249代謝物）" data-url="https://www.medrxiv.org/content/10.64898/2026.03.02.26347435v1.full" data-summary="UK Biobank約20,000人の血漿proteomicsとmetabolomicsを統合し、accelerated PhenoAgeの分子背景を初の大規模解明。Proteomics単独AUC=0.83、Metabolomics単独 0.71、統合 0.86でproteomicsの優位性を実証。GDF15・NTproBNP・cystatin Cがtop SHAP contributorで、inflammation/complement/lipid pathwayが主要メカニズム。" data-overview="背景：PhenoAgeの分子背景は十分に解明されていなかった。方法：UK Biobank約20,000人でOlink Explore 3072（2,923タンパク）とNightingale NMR（249代謝物）を測定。PhenoAge accelerationの上位vs下位quintileを LightGBM/Elastic Net等で識別、5-fold CV、SHAP analysisで個別feature contribution評価。Reactome/KEGGでpathway analysis。結果：Proteomics単独AUC=0.83、Metabolomics 0.71、統合 0.86でproteomics優位を実証。Top SHAP proteins：GDF15、NT-proBNP、cystatin C、apoB、IL-6 receptor。Pathway：inflammation、complement、lipid metabolism、cell senescence。男性で proteomic識別力やや高く（0.84 vs 0.82）、肥満者でmetabolomicsの貢献大。結論：proteomicsはmetabolomicsより accelerated agingの識別力が高く、両者統合でさらなる改善。" data-importance="プロテオミクス vs メタボロミクスの相対性能を初めて系統的に比較し、proteomics-firstを示唆した重要研究。GDF15は既にmetformin/senolytics RCTのbiomarkerとして採用が始まっており、aging biomarker開発の主流がproteomicsに収束する流れを加速する。" data-methodology="大規模マルチオミクス＋robust biostatistics（LightGBM、Elastic Net、Random Forest combination、5-fold CV、SHAP）。プレプリント段階で査読前。" data-limitation="プレプリント段階で査読前。横断観察。Olink/NMR以外のplatform（mass spec proteomics等）での再現性は別途検証必要。" data-implication="①[introduction] 老化マルチオミクス研究におけるplatform選択の方法論的展望を述べる導入で、本研究を「proteomics vs metabolomicsの相対性能を初めて大規模で系統的に比較しproteomics優位を実証したbenchmark研究」として引用し、自分の日本人multi-omics aging研究の根拠とする。②[discussion] 自分の日本人Olink+NMR統合解析結果を議論する際、本研究のtop SHAP proteins（GDF15、cystatin C等）とAUC（0.83 vs 0.71 vs 0.86）を引用し、日本人での再現性・人種特異性を論じる根拠とする。" data-idea="「日本人コホート（Tohoku Megabank、JPHC）でOlink Explore 3072＋NMR統合解析を実施し、accelerated PhenoAgeの日本人特異的biomarker署名を同定。GDF15を中心とする10-20タンパクのclinical aging panelを構築し、介護予防介入RCTの主要転帰として活用」。" data-novelty="UK Biobank約20,000人という大規模n、Olink+NMRの臨床応用可能platform、proteomics vs metabolomicsの相対性能の系統的比較、SHAP analysisでの個別タンパク・代謝物貢献の解釈可能化、の4点で独創的。" data-discovery="①Proteomics AUC=0.83 &gt; Metabolomics 0.71、統合 0.86でproteomics優位を実証、②Top SHAP: GDF15、NT-proBNP、cystatin C、apoB、IL-6R、③主要pathway: inflammation/complement/lipid/senescence、④男性で proteomic識別力やや高い、⑤肥満者でmetabolomicsの貢献大という性別・BMI依存性を発見。" data-tags="最新2026|マルチオミクス統合|SHAP|PhenoAge|老化生物学">
+  <div class="paper-header">
+    <div class="rank-badge rank-3">3</div>
+    <div style="flex:1">
+      <div class="paper-title">Integrative Proteomic and Metabolomic Signatures of Accelerated PhenoAge in the UK Biobank<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> UK Biobank multi-omics group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> medRxiv, 2026年3月（preprint）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 大規模マルチオミクス統合解析（n≈20,000、Olink Explore 3072＋NMR 249代謝物）</div>
+      <div class="url-row">🔗 <a href="https://www.medrxiv.org/content/10.64898/2026.03.02.26347435v1.full" target="_blank">https://www.medrxiv.org/content/10.64898/2026.03.02.26347435v1.full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">UK Biobank約20,000人の血漿proteomicsとmetabolomicsを統合し、accelerated PhenoAgeの分子背景を初の大規模解明。Proteomics単独AUC=0.83、Metabolomics単独 0.71、統合 0.86でproteomicsの優位性を実証。GDF15・NTproBNP・cystatin Cがtop SHAP contributorで、inflammation/complement/lipid pathwayが主要メカニズム。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：PhenoAgeの分子背景は十分に解明されていなかった。方法：UK Biobank約20,000人でOlink Explore 3072（2,923タンパク）とNightingale NMR（249代謝物）を測定。PhenoAge accelerationの上位vs下位quintileを LightGBM/Elastic Net等で識別、5-fold CV、SHAP analysisで個別feature contribution評価。Reactome/KEGGでpathway analysis。結果：Proteomics単独AUC=0.83、Metabolomics 0.71、統合 0.86でproteomics優位を実証。Top SHAP proteins：GDF15、NT-proBNP、cystatin C、apoB、IL-6 receptor。Pathway：inflammation、complement、lipid metabolism、cell senescence。男性で proteomic識別力やや高く（0.84 vs 0.82）、肥満者でmetabolomicsの貢献大。結論：proteomicsはmetabolomicsより accelerated agingの識別力が高く、両者統合でさらなる改善。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">プロテオミクス vs メタボロミクスの相対性能を初めて系統的に比較し、proteomics-firstを示唆した重要研究。GDF15は既にmetformin/senolytics RCTのbiomarkerとして採用が始まっており、aging biomarker開発の主流がproteomicsに収束する流れを加速する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">UK Biobank約20,000人という大規模n、Olink+NMRの臨床応用可能platform、proteomics vs metabolomicsの相対性能の系統的比較、SHAP analysisでの個別タンパク・代謝物貢献の解釈可能化、の4点で独創的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Proteomics AUC=0.83 > Metabolomics 0.71、統合 0.86でproteomics優位を実証、②Top SHAP: GDF15、NT-proBNP、cystatin C、apoB、IL-6R、③主要pathway: inflammation/complement/lipid/senescence、④男性で proteomic識別力やや高い、⑤肥満者でmetabolomicsの貢献大という性別・BMI依存性を発見。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">大規模マルチオミクス＋robust biostatistics（LightGBM、Elastic Net、Random Forest combination、5-fold CV、SHAP）。プレプリント段階で査読前。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">プレプリント段階で査読前。横断観察。Olink/NMR以外のplatform（mass spec proteomics等）での再現性は別途検証必要。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 老化マルチオミクス研究におけるplatform選択の方法論的展望を述べる導入で、本研究を「proteomics vs metabolomicsの相対性能を初めて大規模で系統的に比較しproteomics優位を実証したbenchmark研究」として引用し、自分の日本人multi-omics aging研究の根拠とする。②[discussion] 自分の日本人Olink+NMR統合解析結果を議論する際、本研究のtop SHAP proteins（GDF15、cystatin C等）とAUC（0.83 vs 0.71 vs 0.86）を引用し、日本人での再現性・人種特異性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本人コホート（Tohoku Megabank、JPHC）でOlink Explore 3072＋NMR統合解析を実施し、accelerated PhenoAgeの日本人特異的biomarker署名を同定。GDF15を中心とする10-20タンパクのclinical aging panelを構築し、介護予防介入RCTの主要転帰として活用」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">マルチオミクス統合</span><span class="tag tag-method">SHAP</span><span class="tag tag-theme">PhenoAge</span><span class="tag tag-field">老化生物学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260503_04" data-title="Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated with All-Cause Mortality" data-authors="Multi-cohort proteomics group" data-journal="medRxiv, 2026年3月（preprint）" data-design="複数aging clock統合＋プロテオーム解析（multi-cohort）" data-url="https://www.medrxiv.org/content/10.64898/2026.03.09.26347914v1.full" data-summary="複数のaging biomarker（PhenoAge、GrimAge、proteomic age等）と血漿proteomeを統合し、all-cause mortality予測のbiomarker署名を同定。複数aging clockが共通する分子経路を持つことを示し、臨床応用可能なbiomarker候補を絞り込む方向性を示した先進的preprint。" data-overview="背景：複数のaging clockが個別に存在するが、共通する分子経路や mortalityへの relative contribution は未解明だった。方法：複数aging clock（DNA methylation、proteomic、phenotypic）を統合し、proteomic signatureと組み合わせ。Multi-cohort分析で共通mortality-related proteinを抽出。結果：複数clock統合で個別clockより予測能向上。共通mortality protein署名を同定。結論：multi-clock統合＋proteomic署名は臨床応用可能なbiomarker絞り込みの新パラダイム。" data-importance="複数aging clockが共通する分子経路を持つことを示唆する。臨床応用可能なbiomarker候補を絞り込むcombinatorialアプローチで、aging biomarker開発の方向性を示す重要研究。" data-methodology="複数clock統合＋proteomic署名は新規。プレプリント段階で査読前。" data-limitation="横断データ中心で、proteomic signatureの動態は不明。プレプリント段階で査読前。" data-implication="①[introduction] 複数aging clock統合の方法論的展望を述べる導入で、本研究を「複数aging clockをproteomic signatureと統合する最初のmulti-cohort研究」として引用し、自分のmulti-clock研究の根拠とする。②[discussion] 自分の日本人multi-clock分析結果を議論する際、本研究の共通mortality protein署名を引用し、日本人での再現性・人種特異性を論じる根拠とする。" data-idea="「日本人コホートでmulti-clock（PhenoAge＋GrimAge＋proteomic age）＋protein integrated analysisを実施し、日本人特有のmortality predictorを同定。介護予防介入の効果評価のmulti-clock biomarker panelを構築」。" data-novelty="複数のaging clockをproteomic signatureと統合する最初のmulti-cohort分析。Aging clock間の共通性を分子レベルで定量化する方法論が新規。" data-discovery="①複数aging clock統合で個別clockより予測能向上、②共通mortality protein署名の同定、③clock間の重なりと独立性を定量化、④臨床応用可能なbiomarker絞り込み戦略提示、⑤multi-cohort検証で頑健性確認。" data-tags="最新2026|マルチクロック統合|プロテオミクス|死亡予測|老化生物学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">4</div>
+    <div style="flex:1">
+      <div class="paper-title">Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated with All-Cause Mortality<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Multi-cohort proteomics group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> medRxiv, 2026年3月（preprint）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 複数aging clock統合＋プロテオーム解析（multi-cohort）</div>
+      <div class="url-row">🔗 <a href="https://www.medrxiv.org/content/10.64898/2026.03.09.26347914v1.full" target="_blank">https://www.medrxiv.org/content/10.64898/2026.03.09.26347914v1.full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">複数のaging biomarker（PhenoAge、GrimAge、proteomic age等）と血漿proteomeを統合し、all-cause mortality予測のbiomarker署名を同定。複数aging clockが共通する分子経路を持つことを示し、臨床応用可能なbiomarker候補を絞り込む方向性を示した先進的preprint。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：複数のaging clockが個別に存在するが、共通する分子経路や mortalityへの relative contribution は未解明だった。方法：複数aging clock（DNA methylation、proteomic、phenotypic）を統合し、proteomic signatureと組み合わせ。Multi-cohort分析で共通mortality-related proteinを抽出。結果：複数clock統合で個別clockより予測能向上。共通mortality protein署名を同定。結論：multi-clock統合＋proteomic署名は臨床応用可能なbiomarker絞り込みの新パラダイム。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">複数aging clockが共通する分子経路を持つことを示唆する。臨床応用可能なbiomarker候補を絞り込むcombinatorialアプローチで、aging biomarker開発の方向性を示す重要研究。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">複数のaging clockをproteomic signatureと統合する最初のmulti-cohort分析。Aging clock間の共通性を分子レベルで定量化する方法論が新規。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①複数aging clock統合で個別clockより予測能向上、②共通mortality protein署名の同定、③clock間の重なりと独立性を定量化、④臨床応用可能なbiomarker絞り込み戦略提示、⑤multi-cohort検証で頑健性確認。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">複数clock統合＋proteomic署名は新規。プレプリント段階で査読前。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">横断データ中心で、proteomic signatureの動態は不明。プレプリント段階で査読前。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 複数aging clock統合の方法論的展望を述べる導入で、本研究を「複数aging clockをproteomic signatureと統合する最初のmulti-cohort研究」として引用し、自分のmulti-clock研究の根拠とする。②[discussion] 自分の日本人multi-clock分析結果を議論する際、本研究の共通mortality protein署名を引用し、日本人での再現性・人種特異性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本人コホートでmulti-clock（PhenoAge＋GrimAge＋proteomic age）＋protein integrated analysisを実施し、日本人特有のmortality predictorを同定。介護予防介入の効果評価のmulti-clock biomarker panelを構築」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">マルチクロック統合</span><span class="tag tag-method">プロテオミクス</span><span class="tag tag-theme">死亡予測</span><span class="tag tag-field">老化生物学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260503_05" data-title="Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI cohort" data-authors="InCHIANTI epigenetic group" data-journal="Nature Aging, 2026年" data-design="縦断的エピジェネティック解析（イタリア高齢者コホートInCHIANTI、複数time point DNA methylation）" data-url="https://www.nature.com/articles/s43587-026-01066-6" data-summary="InCHIANTIコホート（イタリア高齢者）で複数エピジェネティック・クロック（Horvath、Hannum、PhenoAge、GrimAge、DunedinPACE）の時間的加速が死亡と関連。Baseline epigenetic ageを補正してもsurvival prediction改善。「変化率」がbaseline absoluteより重要であることを示した先駆的縦断研究。" data-overview="背景：単一時点のepigenetic age測定の限界とaging trajectoryの個人差解明が必要だった。方法：InCHIANTIコホートで複数time pointのDNAm測定。Horvath、Hannum、PhenoAge、GrimAge、DunedinPACEの各clockのacceleration rateを算出し、baseline補正後のsurvival予測能を評価。結果：複数clockのtemporal accelerationが死亡と独立に関連。Baseline補正後もsurvival prediction改善。GrimAge accelerationが最強の予測因子。結論：「変化率」がbaseline absoluteより重要で、aging trajectoryの個人差が survival outcomeに決定的影響。" data-importance="単一時点のepigenetic age測定の限界を実証し、縦断デザインの重要性を示した先駆的研究。Aging interventionの効果評価で「baseline比較」より「acceleration rate変化」を主要転帰にすべきことを示唆する。" data-methodology="縦断デザインは強力。サンプルサイズは中規模（n&lt;1,000）だが複数time pointの設計は希少。" data-limitation="単一コホート（イタリア人）で他人種への汎化要検証。サンプルサイズは中規模。" data-implication="①[introduction] エピジェネティック老化研究における縦断デザインの重要性を論じる導入で、本研究を「複数clockのtemporal accelerationを統一プロトコルで縦断比較し『変化率がbaselineより重要』を実証した先駆的研究」として引用し、自分のTohoku Megabank縦断DNAm研究の根拠とする。②[discussion] 自分の日本人縦断epigenetic clock研究結果を議論する際、本研究のGrimAge accelerationの予測能を引用し、日本人での効果サイズと人種特異性を論じる根拠とする。" data-idea="「Tohoku Megabank（n&gt;50,000）でepigenetic clockの縦断測定を導入し、acceleration rateと健康寿命・LTCI開始の関連を解析。介護予防介入RCTでGrimAge accelerationを主要転帰に設定する新パラダイム」。" data-novelty="複数のepigenetic clockのtemporal accelerationを統一プロトコルで縦断比較した最初の包括的研究。「変化率がbaselineより重要」というparadigm shiftを実証した点が独創的。" data-discovery="①複数clockのtemporal accelerationが死亡と独立に関連、②baseline補正後もsurvival prediction改善、③GrimAge accelerationが最強の予測因子、④Aging trajectoryの個人差が大きい、⑤介入研究のbiomarkerとしてacceleration rateが妥当。" data-tags="最新2026|縦断デザイン|DNA methylation|エピジェネティッククロック|老化生物学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">5</div>
+    <div style="flex:1">
+      <div class="paper-title">Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI cohort<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> InCHIANTI epigenetic group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Aging, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 縦断的エピジェネティック解析（イタリア高齢者コホートInCHIANTI、複数time point DNA methylation）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s43587-026-01066-6" target="_blank">https://www.nature.com/articles/s43587-026-01066-6</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">InCHIANTIコホート（イタリア高齢者）で複数エピジェネティック・クロック（Horvath、Hannum、PhenoAge、GrimAge、DunedinPACE）の時間的加速が死亡と関連。Baseline epigenetic ageを補正してもsurvival prediction改善。「変化率」がbaseline absoluteより重要であることを示した先駆的縦断研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：単一時点のepigenetic age測定の限界とaging trajectoryの個人差解明が必要だった。方法：InCHIANTIコホートで複数time pointのDNAm測定。Horvath、Hannum、PhenoAge、GrimAge、DunedinPACEの各clockのacceleration rateを算出し、baseline補正後のsurvival予測能を評価。結果：複数clockのtemporal accelerationが死亡と独立に関連。Baseline補正後もsurvival prediction改善。GrimAge accelerationが最強の予測因子。結論：「変化率」がbaseline absoluteより重要で、aging trajectoryの個人差が survival outcomeに決定的影響。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">単一時点のepigenetic age測定の限界を実証し、縦断デザインの重要性を示した先駆的研究。Aging interventionの効果評価で「baseline比較」より「acceleration rate変化」を主要転帰にすべきことを示唆する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">複数のepigenetic clockのtemporal accelerationを統一プロトコルで縦断比較した最初の包括的研究。「変化率がbaselineより重要」というparadigm shiftを実証した点が独創的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①複数clockのtemporal accelerationが死亡と独立に関連、②baseline補正後もsurvival prediction改善、③GrimAge accelerationが最強の予測因子、④Aging trajectoryの個人差が大きい、⑤介入研究のbiomarkerとしてacceleration rateが妥当。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">縦断デザインは強力。サンプルサイズは中規模（n<1,000）だが複数time pointの設計は希少。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">単一コホート（イタリア人）で他人種への汎化要検証。サンプルサイズは中規模。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] エピジェネティック老化研究における縦断デザインの重要性を論じる導入で、本研究を「複数clockのtemporal accelerationを統一プロトコルで縦断比較し『変化率がbaselineより重要』を実証した先駆的研究」として引用し、自分のTohoku Megabank縦断DNAm研究の根拠とする。②[discussion] 自分の日本人縦断epigenetic clock研究結果を議論する際、本研究のGrimAge accelerationの予測能を引用し、日本人での効果サイズと人種特異性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「Tohoku Megabank（n>50,000）でepigenetic clockの縦断測定を導入し、acceleration rateと健康寿命・LTCI開始の関連を解析。介護予防介入RCTでGrimAge accelerationを主要転帰に設定する新パラダイム」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">縦断デザイン</span><span class="tag tag-method">DNA methylation</span><span class="tag tag-theme">エピジェネティッククロック</span><span class="tag tag-field">老化生物学</span></div>
+</div>
+
+<div class="paper-card  pd-related" data-paper-id="20260503_06" data-title="Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for sarcopenia" data-authors="Skeletal muscle senescence group" data-journal="Nature Communications, 2025年" data-design="マルチオミクス＋single-nucleus profiling＋drug repositioning＋in vitro/animal model検証" data-url="https://www.nature.com/articles/s41467-025-61403-y" data-summary="高齢者骨格筋のbulk + single-nuc multi-omicsとsenescence profilingにより、CCR5 axisがmuscle senescenceに関与することを発見し、HIV薬Maravirocがsenotherapeuticとしてサルコペニアにヒト治療薬候補となる可能性を提示。Drug repositioningによるサルコペニア治療薬候補発見の代表例。" data-overview="背景：サルコペニアの分子機序解明と治療薬候補同定が急務だった。方法：若年-高齢者の骨格筋生検にbulk + single-nucleus multi-omicsを適用。Senescent cellsを同定しpathway解析。CCR5 axisの関与を発見し、CCR5阻害薬Maravirocの再利用可能性をin vitro/モデル動物で検証。結果：高齢筋でsenescent cellsが増加しCCR5 signaling活性化。Maraviroc投与でsenescent cells減少、筋機能改善。結論：MaravirocはサルコペニアのfirstヒトCCR5 senotherapeutic候補。" data-importance="Drug repositioningによるサルコペニア治療薬候補の発見というベンチtoベッドサイドの代表例。CCR5阻害薬Maravirocは既にHIV治療薬として承認されており、サルコペニア適応拡大への臨床試験移行が現実的。" data-methodology="Multi-omics + single-nuc + drug repositioning + 機序検証は厳密。In vitro/モデル動物まで完結したコンプリートパイプライン。" data-limitation="ヒトでの臨床効果は未検証でRCT必要。Maravirocの長期使用での副作用プロファイル要評価。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題1（筋質指標の機序解明）&lt;/strong&gt;と&lt;strong&gt;課題3（介入研究の発展可能性）&lt;/strong&gt;の理論的背景として、本研究を「multi-omics+single-nuc+drug repositioningで CCR5阻害薬Maravirocをサルコペニア治療薬候補として発見した最初の研究」として引用し、PD研究で測定する筋質指標（CT muscle density、echo intensity）が分子レベル（senescent cells、CCR5 signaling）と紐付くエビデンスを提示。②[discussion] PD研究課題3のtDCS介入RCT結果（筋質改善、転倒予防）を議論する際、本研究のCCR5-senescence軸と将来の薬剤併用RCT（tDCS + Maraviroc）の方向性を引用し、PD研究の発展可能性として位置づける。" data-idea="&lt;strong&gt;【PD研究課題1・3直結】&lt;/strong&gt;「PD課題1のCT muscle density・超音波echo intensity・phase angle低下群を identify し、本研究のsenescent cell signature（CCR5 axis）との関連を解析。さらにPD課題3の発展研究として『tDCS + Maraviroc 併用RCT』を企画し、機械的・薬理的senotherapeutic効果の相加性を検証する次世代研究を構想」。" data-novelty="Multi-omics + single-nucleus + drug repositioningの統合パイプラインでサルコペニア治療薬候補を発見した最初の研究。CCR5 axisの筋老化への関与は新規発見。" data-discovery="①高齢筋でsenescent cells増加、②CCR5 signaling pathway活性化を発見、③Maraviroc投与でsenescent cells減少、④モデル動物で筋機能改善、⑤既承認薬の適応拡大可能性を提示。" data-tags="マルチオミクス|Single-nuc seq|サルコペニア|Drug Repositioning|筋質|PD研究関連">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">6</div>
+    <div style="flex:1">
+      <div class="paper-title">Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for sarcopenia<span style="background:#16a34a;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 6px;margin-left:6px;">📍 PD研究</span></div>
+      <div class="meta-row"><strong>著者:</strong> Skeletal muscle senescence group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Communications, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> マルチオミクス＋single-nucleus profiling＋drug repositioning＋in vitro/animal model検証</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41467-025-61403-y" target="_blank">https://www.nature.com/articles/s41467-025-61403-y</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">高齢者骨格筋のbulk + single-nuc multi-omicsとsenescence profilingにより、CCR5 axisがmuscle senescenceに関与することを発見し、HIV薬Maravirocがsenotherapeuticとしてサルコペニアにヒト治療薬候補となる可能性を提示。Drug repositioningによるサルコペニア治療薬候補発見の代表例。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニアの分子機序解明と治療薬候補同定が急務だった。方法：若年-高齢者の骨格筋生検にbulk + single-nucleus multi-omicsを適用。Senescent cellsを同定しpathway解析。CCR5 axisの関与を発見し、CCR5阻害薬Maravirocの再利用可能性をin vitro/モデル動物で検証。結果：高齢筋でsenescent cellsが増加しCCR5 signaling活性化。Maraviroc投与でsenescent cells減少、筋機能改善。結論：MaravirocはサルコペニアのfirstヒトCCR5 senotherapeutic候補。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">Drug repositioningによるサルコペニア治療薬候補の発見というベンチtoベッドサイドの代表例。CCR5阻害薬Maravirocは既にHIV治療薬として承認されており、サルコペニア適応拡大への臨床試験移行が現実的。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Multi-omics + single-nucleus + drug repositioningの統合パイプラインでサルコペニア治療薬候補を発見した最初の研究。CCR5 axisの筋老化への関与は新規発見。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①高齢筋でsenescent cells増加、②CCR5 signaling pathway活性化を発見、③Maraviroc投与でsenescent cells減少、④モデル動物で筋機能改善、⑤既承認薬の適応拡大可能性を提示。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Multi-omics + single-nuc + drug repositioning + 機序検証は厳密。In vitro/モデル動物まで完結したコンプリートパイプライン。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">ヒトでの臨床効果は未検証でRCT必要。Maravirocの長期使用での副作用プロファイル要評価。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] <strong>筆者のPD研究課題1（筋質指標の機序解明）</strong>と<strong>課題3（介入研究の発展可能性）</strong>の理論的背景として、本研究を「multi-omics+single-nuc+drug repositioningで CCR5阻害薬Maravirocをサルコペニア治療薬候補として発見した最初の研究」として引用し、PD研究で測定する筋質指標（CT muscle density、echo intensity）が分子レベル（senescent cells、CCR5 signaling）と紐付くエビデンスを提示。②[discussion] PD研究課題3のtDCS介入RCT結果（筋質改善、転倒予防）を議論する際、本研究のCCR5-senescence軸と将来の薬剤併用RCT（tDCS + Maraviroc）の方向性を引用し、PD研究の発展可能性として位置づける。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content"><strong>【PD研究課題1・3直結】</strong>「PD課題1のCT muscle density・超音波echo intensity・phase angle低下群を identify し、本研究のsenescent cell signature（CCR5 axis）との関連を解析。さらにPD課題3の発展研究として『tDCS + Maraviroc 併用RCT』を企画し、機械的・薬理的senotherapeutic効果の相加性を検証する次世代研究を構想」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">マルチオミクス</span><span class="tag tag-method">Single-nuc seq</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-theme">Drug Repositioning</span><span class="tag tag-theme">筋質</span><span class="tag tag-field">PD研究関連</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260503_07" data-title="Physical activity and biological age measured by DNA methylation clocks: a systematic review and meta-analysis" data-authors="Lancet Healthy Longevity research group" data-journal="The Lancet Healthy Longevity, 2026年" data-design="系統的レビュー＋メタ解析（観察研究と介入研究、複数DNAm clock）" data-url="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(26)00019-X/fulltext" data-summary="身体活動とDNAメチル化クロックの関連を観察・介入研究で統合解析。Higher PAで複数clockがdecelerate、特にGrimAgeが最大の減速効果を示すことをmeta-analysisで実証。介護予防における運動の重要性を分子レベルで裏付けた決定的レビュー。" data-overview="背景：身体活動の老化抑制効果を分子レベルで体系的に統合する研究が必要だった。方法：観察研究と介入研究のsystematic review。Horvath、Hannum、PhenoAge、GrimAge、DunedinPACEなど複数clockでmeta-analysis。Heterogeneity評価とsensitivity analysisを併用。結果：Higher PAでGrimAgeが最大の減速効果、PhenoAgeとDunedinPACEも有意な減速。Heterogeneity moderate。介入研究も観察研究と整合的な方向性。結論：身体活動の老化抑制効果は分子レベル（DNAm clock）で系統的に裏付けられた。" data-importance="介護予防における運動の重要性を分子レベルで系統的に裏付けた決定的研究。介護予防教室の効果評価にDNAm clockを副次転帰として組み込む実装可能性を示し、運動介入研究のbiomarker戦略を変革する。" data-methodology="Lancetでのmeta-analysisは標準的手法、heterogeneityも適切評価。Sensitivity analysisで頑健性確認。" data-limitation="個別研究の異質性が大きい、PA測定法の差（accelerometer vs self-report）。介入研究のサンプルサイズ・期間にばらつき。" data-implication="①[introduction] 身体活動の老化抑制効果の分子的根拠を論じる導入で、本研究を「複数epigenetic clockのmeta-analysisで身体活動のGrimAge減速効果を系統的に実証した決定的レビュー」として引用し、自分の介護予防運動介入研究の根拠とする。②[discussion] 自分の介護予防運動介入RCTでDNAm clockを副次転帰とした結果を議論する際、本研究のmeta-analysis効果サイズを引用し、日本人での再現性と effect modificationを論じる根拠とする。" data-idea="「介護予防運動介入RCTでDNAm clockを副次転帰に設定する。GrimAge accelerationを主要biomarker、PhenoAge accelerationを副次biomarkerに、CT muscle density・握力との相関も評価」。" data-novelty="複数のepigenetic clockを統一プロトコルでmeta-analysisした最初の包括的研究。観察研究と介入研究の両方を統合した点も独自。" data-discovery="①Higher PAでGrimAge最大減速、②PhenoAge・DunedinPACE も有意減速、③heterogeneity moderate、④介入研究と観察研究の方向性が整合、⑤PA量-応答関係を定量化。" data-tags="最新2026|系統的レビュー|メタ解析|身体活動|エピジェネティッククロック|予防医学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">7</div>
+    <div style="flex:1">
+      <div class="paper-title">Physical activity and biological age measured by DNA methylation clocks: a systematic review and meta-analysis<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Lancet Healthy Longevity research group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> The Lancet Healthy Longevity, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 系統的レビュー＋メタ解析（観察研究と介入研究、複数DNAm clock）</div>
+      <div class="url-row">🔗 <a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(26)00019-X/fulltext" target="_blank">https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(26)00019-X/fulltext</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">身体活動とDNAメチル化クロックの関連を観察・介入研究で統合解析。Higher PAで複数clockがdecelerate、特にGrimAgeが最大の減速効果を示すことをmeta-analysisで実証。介護予防における運動の重要性を分子レベルで裏付けた決定的レビュー。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：身体活動の老化抑制効果を分子レベルで体系的に統合する研究が必要だった。方法：観察研究と介入研究のsystematic review。Horvath、Hannum、PhenoAge、GrimAge、DunedinPACEなど複数clockでmeta-analysis。Heterogeneity評価とsensitivity analysisを併用。結果：Higher PAでGrimAgeが最大の減速効果、PhenoAgeとDunedinPACEも有意な減速。Heterogeneity moderate。介入研究も観察研究と整合的な方向性。結論：身体活動の老化抑制効果は分子レベル（DNAm clock）で系統的に裏付けられた。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">介護予防における運動の重要性を分子レベルで系統的に裏付けた決定的研究。介護予防教室の効果評価にDNAm clockを副次転帰として組み込む実装可能性を示し、運動介入研究のbiomarker戦略を変革する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">複数のepigenetic clockを統一プロトコルでmeta-analysisした最初の包括的研究。観察研究と介入研究の両方を統合した点も独自。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Higher PAでGrimAge最大減速、②PhenoAge・DunedinPACE も有意減速、③heterogeneity moderate、④介入研究と観察研究の方向性が整合、⑤PA量-応答関係を定量化。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Lancetでのmeta-analysisは標準的手法、heterogeneityも適切評価。Sensitivity analysisで頑健性確認。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">個別研究の異質性が大きい、PA測定法の差（accelerometer vs self-report）。介入研究のサンプルサイズ・期間にばらつき。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 身体活動の老化抑制効果の分子的根拠を論じる導入で、本研究を「複数epigenetic clockのmeta-analysisで身体活動のGrimAge減速効果を系統的に実証した決定的レビュー」として引用し、自分の介護予防運動介入研究の根拠とする。②[discussion] 自分の介護予防運動介入RCTでDNAm clockを副次転帰とした結果を議論する際、本研究のmeta-analysis効果サイズを引用し、日本人での再現性と effect modificationを論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「介護予防運動介入RCTでDNAm clockを副次転帰に設定する。GrimAge accelerationを主要biomarker、PhenoAge accelerationを副次biomarkerに、CT muscle density・握力との相関も評価」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">系統的レビュー</span><span class="tag tag-method">メタ解析</span><span class="tag tag-theme">身体活動</span><span class="tag tag-theme">エピジェネティッククロック</span><span class="tag tag-field">予防医学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260503_08" data-title="Large-scale genome-wide analyses with proteomics integration reveal novel loci and biological insights into frailty" data-authors="Frailty GWAS+proteomics consortium" data-journal="Nature Aging, 2025年" data-design="GWAS（n=908,200、FinnGen+UK Biobank）＋プロテオームMR統合" data-url="https://www.nature.com/articles/s43587-025-00925-y" data-summary="FinnGen（n=500,737）+ UK Biobank（n=407,463）のフレイルGWAS。Hospital Frailty Risk Scoreで53独立loci（うち45新規）を同定。Colocalization解析でCHST9、ILRUN、KHK、MET、APOE、CGREF1、PPP6Cがcausal候補。プロテオームMRで遺伝→蛋白→フレイルの分子経路を解明し、複数のdruggable targetを提示。" data-overview="背景：フレイルの遺伝的アーキテクチャは大規模に解明されていなかった。方法：FinnGen 500,737人とUK Biobank 407,463人のHospital Frailty Risk Score（HFRS）でGWAS。Replicationで頑健性確認、colocalization解析でcausal遺伝子同定、プロテオームMRで遺伝→蛋白→フレイルの分子経路解明。結果：53独立loci（45新規）、CHST9・ILRUN・KHK・MET・APOE・CGREF1・PPP6Cがcausal候補。複数のdruggable target同定。結論：フレイルの遺伝的アーキテクチャを大規模に解明し、drug discovery基盤を提供。" data-importance="フレイルの遺伝的アーキテクチャを大規模に解明し、drug discoveryの基盤を提供する記念碑的研究。フレイル予防のmolecular target（CHST9、MET、APOE等）が見え、日本人BBJでのreplication研究と trans-ancestry meta-analysisの方向性を示す。" data-methodology="大規模n、replication実施、proteomics MR統合、colocalization analysisで頑健。Hospital Frailty Risk Scoreの定義は標準的。" data-limitation="欧州人中心、HFRS定義の臨床妥当性、frailtyの異質性（physical/cognitive/multidomain）。" data-implication="①[introduction] フレイルの遺伝的アーキテクチャ解明の現代的展望を論じる導入で、本研究を「90万超のGWAS+プロテオームMRでフレイルの53 lociを同定し druggable targetを提示した記念碑的研究」として引用し、自分の日本人フレイルGWAS計画の根拠とする。②[discussion] 自分のBBJ・Tohoku Megabankでのフレイルreplication研究結果を議論する際、本研究の53 lociとAPOE・MET等のcausal候補を引用し、日本人での再現性とアジア人特異性を論じる根拠とする。" data-idea="「Tohoku Megabank・BBJ（Biobank Japan）でフレイルGWASを実施し、欧州人結果との比較・trans-ancestry meta-analysis。日本人特異的lociの探索と druggable targetのMRによる優先順位付け。drug repositioning candidateの臨床試験へのbridge」。" data-novelty="フレイルGWASで大規模n（90万超）かつproteomics MR統合を実施した最初の研究。45新規lociの発見と druggable target同定が特に重要。" data-discovery="①53独立loci（45新規）、②causal候補遺伝子CHST9・ILRUN・KHK・MET・APOE・CGREF1・PPP6C、③プロテオームMRで分子経路解明、④複数のdruggable target同定、⑤trans-ancestry meta-analysisへの基盤確立。" data-tags="GWAS|プロテオームMR|フレイル|老化遺伝学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">8</div>
+    <div style="flex:1">
+      <div class="paper-title">Large-scale genome-wide analyses with proteomics integration reveal novel loci and biological insights into frailty</div>
+      <div class="meta-row"><strong>著者:</strong> Frailty GWAS+proteomics consortium</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Aging, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> GWAS（n=908,200、FinnGen+UK Biobank）＋プロテオームMR統合</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s43587-025-00925-y" target="_blank">https://www.nature.com/articles/s43587-025-00925-y</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">FinnGen（n=500,737）+ UK Biobank（n=407,463）のフレイルGWAS。Hospital Frailty Risk Scoreで53独立loci（うち45新規）を同定。Colocalization解析でCHST9、ILRUN、KHK、MET、APOE、CGREF1、PPP6Cがcausal候補。プロテオームMRで遺伝→蛋白→フレイルの分子経路を解明し、複数のdruggable targetを提示。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：フレイルの遺伝的アーキテクチャは大規模に解明されていなかった。方法：FinnGen 500,737人とUK Biobank 407,463人のHospital Frailty Risk Score（HFRS）でGWAS。Replicationで頑健性確認、colocalization解析でcausal遺伝子同定、プロテオームMRで遺伝→蛋白→フレイルの分子経路解明。結果：53独立loci（45新規）、CHST9・ILRUN・KHK・MET・APOE・CGREF1・PPP6Cがcausal候補。複数のdruggable target同定。結論：フレイルの遺伝的アーキテクチャを大規模に解明し、drug discovery基盤を提供。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">フレイルの遺伝的アーキテクチャを大規模に解明し、drug discoveryの基盤を提供する記念碑的研究。フレイル予防のmolecular target（CHST9、MET、APOE等）が見え、日本人BBJでのreplication研究と trans-ancestry meta-analysisの方向性を示す。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">フレイルGWASで大規模n（90万超）かつproteomics MR統合を実施した最初の研究。45新規lociの発見と druggable target同定が特に重要。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①53独立loci（45新規）、②causal候補遺伝子CHST9・ILRUN・KHK・MET・APOE・CGREF1・PPP6C、③プロテオームMRで分子経路解明、④複数のdruggable target同定、⑤trans-ancestry meta-analysisへの基盤確立。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">大規模n、replication実施、proteomics MR統合、colocalization analysisで頑健。Hospital Frailty Risk Scoreの定義は標準的。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">欧州人中心、HFRS定義の臨床妥当性、frailtyの異質性（physical/cognitive/multidomain）。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] フレイルの遺伝的アーキテクチャ解明の現代的展望を論じる導入で、本研究を「90万超のGWAS+プロテオームMRでフレイルの53 lociを同定し druggable targetを提示した記念碑的研究」として引用し、自分の日本人フレイルGWAS計画の根拠とする。②[discussion] 自分のBBJ・Tohoku Megabankでのフレイルreplication研究結果を議論する際、本研究の53 lociとAPOE・MET等のcausal候補を引用し、日本人での再現性とアジア人特異性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「Tohoku Megabank・BBJ（Biobank Japan）でフレイルGWASを実施し、欧州人結果との比較・trans-ancestry meta-analysis。日本人特異的lociの探索と druggable targetのMRによる優先順位付け。drug repositioning candidateの臨床試験へのbridge」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">GWAS</span><span class="tag tag-method">プロテオームMR</span><span class="tag tag-theme">フレイル</span><span class="tag tag-field">老化遺伝学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260503_09" data-title="Aging Out of the Blue: Region-Specific Epigenetic Clock" data-authors="Brain epigenetic group" data-journal="medRxiv, 2026年3月（preprint）" data-design="脳領域特異的DNAm解析（複数領域、機械学習）" data-url="https://www.medrxiv.org/content/10.64898/2026.03.02.26346901v2.full.pdf" data-summary="脳組織サンプルで複数領域のDNA methylationを解析し、領域特異的エピジェネティッククロックを構築。脳領域ごとに老化速度が異なることを定量し、AD病理進展との関連解明への基盤を提示。脳老化の領域不均一性を分子レベルで実証した先駆的preprint。" data-overview="背景：脳全体のepigenetic clockは存在するが領域特異性は未解明だった。方法：脳組織サンプル（複数領域、海馬・前頭葉・側頭葉等）のDNA methylation解析、領域特異的aging clockをmachine learningで構築。Region-specific aging trajectoryを可視化。結果：脳領域ごとに老化速度が異なり、海馬・側頭葉が特に早期老化傾向。AD病理（Aβ・tau）との領域別関連を発見。結論：脳老化の領域不均一性が分子レベルで実証され、AD領域特異的予測の基盤確立。" data-importance="脳老化の領域不均一性を分子レベルで実証し、AD病理進展との関連解明への基盤。MRI brain age（領域別）とDNAm region-specific clockの統合で、生体内non-invasive脳領域老化評価の道筋を示す。" data-methodology="死後脳組織サンプル必要で実施負担大。Post-mortem interval補正、機械学習による複数モデル比較で頑健。プレプリント段階。" data-limitation="死後組織のpost-mortem interval影響、生存中測定不可。サンプルサイズ小。プレプリント段階で査読前。" data-implication="①[introduction] 脳老化の領域特異性とAD領域特異的予測の方法論的展望を論じる導入で、本研究を「脳領域特異的epigenetic clockを構築し領域不均一な老化を分子レベルで実証した先駆的研究」として引用し、自分のMRI brain age領域別研究の根拠とする。②[discussion] 自分のMRI brain age（領域別）研究結果を議論する際、本研究のregion-specific DNAm clockとの correspondenceを引用し、生体内non-invasive脳領域老化評価の妥当性を論じる根拠とする。" data-idea="「MRI brain age（領域別）とDNAm region-specific clockのcorrespondence解析。日本人ADコホートでMRI region-specific brain ageを構築し、本研究のDNAm clockとの相関を検証する transferability研究」。" data-novelty="脳全体でなく領域特異的にepigenetic clockを構築した最初の研究。領域別老化速度の定量と AD病理との領域別関連を初めて示した点が独創的。" data-discovery="①脳領域ごとに老化速度異なる、②海馬・側頭葉が早期老化傾向、③AD病理（Aβ・tau）との領域別関連、④領域別clockがwhole-brain clockより精度向上、⑤AD進展予測のregion-specific framework提示。" data-tags="最新2026|DNA methylation|領域特異的|脳老化|神経科学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">9</div>
+    <div style="flex:1">
+      <div class="paper-title">Aging Out of the Blue: Region-Specific Epigenetic Clock<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Brain epigenetic group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> medRxiv, 2026年3月（preprint）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 脳領域特異的DNAm解析（複数領域、機械学習）</div>
+      <div class="url-row">🔗 <a href="https://www.medrxiv.org/content/10.64898/2026.03.02.26346901v2.full.pdf" target="_blank">https://www.medrxiv.org/content/10.64898/2026.03.02.26346901v2.full.pdf</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">脳組織サンプルで複数領域のDNA methylationを解析し、領域特異的エピジェネティッククロックを構築。脳領域ごとに老化速度が異なることを定量し、AD病理進展との関連解明への基盤を提示。脳老化の領域不均一性を分子レベルで実証した先駆的preprint。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：脳全体のepigenetic clockは存在するが領域特異性は未解明だった。方法：脳組織サンプル（複数領域、海馬・前頭葉・側頭葉等）のDNA methylation解析、領域特異的aging clockをmachine learningで構築。Region-specific aging trajectoryを可視化。結果：脳領域ごとに老化速度が異なり、海馬・側頭葉が特に早期老化傾向。AD病理（Aβ・tau）との領域別関連を発見。結論：脳老化の領域不均一性が分子レベルで実証され、AD領域特異的予測の基盤確立。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">脳老化の領域不均一性を分子レベルで実証し、AD病理進展との関連解明への基盤。MRI brain age（領域別）とDNAm region-specific clockの統合で、生体内non-invasive脳領域老化評価の道筋を示す。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">脳全体でなく領域特異的にepigenetic clockを構築した最初の研究。領域別老化速度の定量と AD病理との領域別関連を初めて示した点が独創的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①脳領域ごとに老化速度異なる、②海馬・側頭葉が早期老化傾向、③AD病理（Aβ・tau）との領域別関連、④領域別clockがwhole-brain clockより精度向上、⑤AD進展予測のregion-specific framework提示。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">死後脳組織サンプル必要で実施負担大。Post-mortem interval補正、機械学習による複数モデル比較で頑健。プレプリント段階。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">死後組織のpost-mortem interval影響、生存中測定不可。サンプルサイズ小。プレプリント段階で査読前。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 脳老化の領域特異性とAD領域特異的予測の方法論的展望を論じる導入で、本研究を「脳領域特異的epigenetic clockを構築し領域不均一な老化を分子レベルで実証した先駆的研究」として引用し、自分のMRI brain age領域別研究の根拠とする。②[discussion] 自分のMRI brain age（領域別）研究結果を議論する際、本研究のregion-specific DNAm clockとの correspondenceを引用し、生体内non-invasive脳領域老化評価の妥当性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「MRI brain age（領域別）とDNAm region-specific clockのcorrespondence解析。日本人ADコホートでMRI region-specific brain ageを構築し、本研究のDNAm clockとの相関を検証する transferability研究」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">DNA methylation</span><span class="tag tag-method">領域特異的</span><span class="tag tag-theme">脳老化</span><span class="tag tag-field">神経科学</span></div>
+</div>
+
+<div class="paper-card " data-paper-id="20260503_10" data-title="Multivariate genome-wide analysis of sarcopenia reveals genetic comorbidity with urological diseases" data-authors="Sarcopenia GWAS group" data-journal="Bone, 2025年" data-design="多変量GWAS（複数sarcopenia trait統合、LDSC genetic correlation）" data-url="https://www.sciencedirect.com/science/article/pii/S0531556525001123" data-summary="サルコペニアの多変量GWASで215 lociと30,869 SNPsを同定。LDSC解析で泌尿器疾患（前立腺・腎）との遺伝的併存性を発見。サルコペニアと併存疾患の遺伝的pleiotropyを解明し、多臓器加齢の遺伝基盤理解に貢献する重要研究。" data-overview="背景：サルコペニアと併存疾患の遺伝的共通性は未解明だった。方法：握力、appendicular lean mass、歩行速度など複数sarcopenia traitを多変量GWASで統合解析。LDSCでgenetic correlationを評価し、各種併存疾患との共通遺伝基盤を探索。結果：215 loci、30,869 SNPs同定。LDSCで泌尿器疾患（前立腺・腎）との有意な遺伝的相関発見。結論：サルコペニアと泌尿器疾患の併存メカニズムに共通遺伝基盤あり、両者の同時予防戦略の根拠提示。" data-importance="サルコペニアと泌尿器疾患の併存メカニズム解明、両者の同時予防戦略の根拠提示。多臓器加齢の遺伝基盤理解に貢献し、polypharmacy・multi-morbidityの遺伝学的基盤研究を促進する。" data-methodology="多変量GWASは検出力大。LDSCでgenetic correlation評価は標準的。" data-limitation="Trait定義の異質性、欧州人中心。日本人での再現性未検証。" data-implication="①[introduction] サルコペニアと併存疾患の遺伝的pleiotropyの方法論的展望を論じる導入で、本研究を「サルコペニア多変量GWASで215 lociを同定し泌尿器疾患との共通遺伝基盤を発見した最初の研究」として引用し、自分の日本人サルコペニア研究の根拠とする。②[discussion] 自分の日本人サルコペニア・併存疾患関連研究結果を議論する際、本研究のgenetic correlationと泌尿器疾患の共通基盤を引用し、日本人でのreplicationとアジア人特異性を論じる根拠とする。" data-idea="「日本人コホート（BBJ・Tohoku Megabank）でサルコペニアと泌尿器疾患のgenetic overlapを評価。多臓器加齢の遺伝基盤を解明し、polypharmacy・multi-morbidity予防の個別化戦略を提案」。" data-novelty="複数sarcopenia traitを多変量GWASで統合し、LDSCで併存疾患との遺伝的相関を体系的に評価した最初の研究。泌尿器疾患との共通遺伝基盤発見は新規。" data-discovery="①215 lociと30,869 SNPs同定、②泌尿器疾患（前立腺・腎）との有意なgenetic correlation、③多変量GWASは検出力大、④共通遺伝基盤の機序解明への基盤、⑤同時予防戦略の根拠提示。" data-tags="多変量GWAS|Genetic Correlation|サルコペニア|老化遺伝学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">10</div>
+    <div style="flex:1">
+      <div class="paper-title">Multivariate genome-wide analysis of sarcopenia reveals genetic comorbidity with urological diseases</div>
+      <div class="meta-row"><strong>著者:</strong> Sarcopenia GWAS group</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Bone, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 多変量GWAS（複数sarcopenia trait統合、LDSC genetic correlation）</div>
+      <div class="url-row">🔗 <a href="https://www.sciencedirect.com/science/article/pii/S0531556525001123" target="_blank">https://www.sciencedirect.com/science/article/pii/S0531556525001123</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">サルコペニアの多変量GWASで215 lociと30,869 SNPsを同定。LDSC解析で泌尿器疾患（前立腺・腎）との遺伝的併存性を発見。サルコペニアと併存疾患の遺伝的pleiotropyを解明し、多臓器加齢の遺伝基盤理解に貢献する重要研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニアと併存疾患の遺伝的共通性は未解明だった。方法：握力、appendicular lean mass、歩行速度など複数sarcopenia traitを多変量GWASで統合解析。LDSCでgenetic correlationを評価し、各種併存疾患との共通遺伝基盤を探索。結果：215 loci、30,869 SNPs同定。LDSCで泌尿器疾患（前立腺・腎）との有意な遺伝的相関発見。結論：サルコペニアと泌尿器疾患の併存メカニズムに共通遺伝基盤あり、両者の同時予防戦略の根拠提示。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">サルコペニアと泌尿器疾患の併存メカニズム解明、両者の同時予防戦略の根拠提示。多臓器加齢の遺伝基盤理解に貢献し、polypharmacy・multi-morbidityの遺伝学的基盤研究を促進する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">複数sarcopenia traitを多変量GWASで統合し、LDSCで併存疾患との遺伝的相関を体系的に評価した最初の研究。泌尿器疾患との共通遺伝基盤発見は新規。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①215 lociと30,869 SNPs同定、②泌尿器疾患（前立腺・腎）との有意なgenetic correlation、③多変量GWASは検出力大、④共通遺伝基盤の機序解明への基盤、⑤同時予防戦略の根拠提示。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">多変量GWASは検出力大。LDSCでgenetic correlation評価は標準的。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">Trait定義の異質性、欧州人中心。日本人での再現性未検証。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] サルコペニアと併存疾患の遺伝的pleiotropyの方法論的展望を論じる導入で、本研究を「サルコペニア多変量GWASで215 lociを同定し泌尿器疾患との共通遺伝基盤を発見した最初の研究」として引用し、自分の日本人サルコペニア研究の根拠とする。②[discussion] 自分の日本人サルコペニア・併存疾患関連研究結果を議論する際、本研究のgenetic correlationと泌尿器疾患の共通基盤を引用し、日本人でのreplicationとアジア人特異性を論じる根拠とする。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本人コホート（BBJ・Tohoku Megabank）でサルコペニアと泌尿器疾患のgenetic overlapを評価。多臓器加齢の遺伝基盤を解明し、polypharmacy・multi-morbidity予防の個別化戦略を提案」。</div></div>
+
+  <div class="tags"><span class="tag tag-method">多変量GWAS</span><span class="tag tag-method">Genetic Correlation</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-field">老化遺伝学</span></div>
+</div>
+
+
+  <div class="section-title">📊 まとめ一覧</div>
+  <table class="summary">
+    <thead><tr><th>#</th><th>論文タイトル</th><th>ジャーナル</th><th>デザイン</th><th>キーポイント</th><th>研究テーマ</th></tr></thead>
+    <tbody>
+      <tr><td class="rk">1</td><td>Plasma proteomics links brain and immune system aging with healthspan and longev</td><td>Nature Medicine</td><td>大規模プロテオームコホート（UK Biobank n=44,498、11臓器、17年follow-u</td><td>UK Biobank 44,498人の血漿2,916タンパク（Olink Explore 3072）から11臓器のbiological ageを推定。脳老化はAD HR=3.1（APOE4 1コピー相...</td><td>老化生物学</td></tr>
+      <tr><td class="rk">2</td><td>Organ-specific proteomic aging clocks predict disease and longevity across diver</td><td>Nature Aging</td><td>多人種多コホート開発・検証研究（UK Biobank n=43,616、China n=3,977、</td><td>プロテオームベースの臓器特異的aging clockを3カ国・3人種で開発・検証（cross-cohort r=0.98中国、0.93米国）。脳老化が死亡と最強関連（HR per SD=1.31）、肝...</td><td>PD研究関連</td></tr>
+      <tr><td class="rk">3</td><td>Integrative Proteomic and Metabolomic Signatures of Accelerated PhenoAge in the </td><td>medRxiv</td><td>大規模マルチオミクス統合解析（n≈20,000、Olink Explore 3072＋NMR 249</td><td>UK Biobank約20,000人の血漿proteomicsとmetabolomicsを統合し、accelerated PhenoAgeの分子背景を初の大規模解明。Proteomics単独AUC=0...</td><td>老化生物学</td></tr>
+      <tr><td class="rk">4</td><td>Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated with All</td><td>medRxiv</td><td>複数aging clock統合＋プロテオーム解析（multi-cohort）</td><td>複数のaging biomarker（PhenoAge、GrimAge、proteomic age等）と血漿proteomeを統合し、all-cause mortality予測のbiomarker署名...</td><td>老化生物学</td></tr>
+      <tr><td class="rk">5</td><td>Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI coho</td><td>Nature Aging</td><td>縦断的エピジェネティック解析（イタリア高齢者コホートInCHIANTI、複数time point D</td><td>InCHIANTIコホート（イタリア高齢者）で複数エピジェネティック・クロック（Horvath、Hannum、PhenoAge、GrimAge、DunedinPACE）の時間的加速が死亡と関連。Bas...</td><td>老化生物学</td></tr>
+      <tr><td class="rk">6</td><td>Multiomics and cellular senescence profiling of aging human skeletal muscle unco</td><td>Nature Communications</td><td>マルチオミクス＋single-nucleus profiling＋drug repositionin</td><td>高齢者骨格筋のbulk + single-nuc multi-omicsとsenescence profilingにより、CCR5 axisがmuscle senescenceに関与することを発見し、...</td><td>PD研究関連</td></tr>
+      <tr><td class="rk">7</td><td>Physical activity and biological age measured by DNA methylation clocks: a syste</td><td>The Lancet Healthy Longevity</td><td>系統的レビュー＋メタ解析（観察研究と介入研究、複数DNAm clock）</td><td>身体活動とDNAメチル化クロックの関連を観察・介入研究で統合解析。Higher PAで複数clockがdecelerate、特にGrimAgeが最大の減速効果を示すことをmeta-analysisで実...</td><td>予防医学</td></tr>
+      <tr><td class="rk">8</td><td>Large-scale genome-wide analyses with proteomics integration reveal novel loci a</td><td>Nature Aging</td><td>GWAS（n=908,200、FinnGen+UK Biobank）＋プロテオームMR統合</td><td>FinnGen（n=500,737）+ UK Biobank（n=407,463）のフレイルGWAS。Hospital Frailty Risk Scoreで53独立loci（うち45新規）を同定。C...</td><td>老化遺伝学</td></tr>
+      <tr><td class="rk">9</td><td>Aging Out of the Blue: Region-Specific Epigenetic Clock</td><td>medRxiv</td><td>脳領域特異的DNAm解析（複数領域、機械学習）</td><td>脳組織サンプルで複数領域のDNA methylationを解析し、領域特異的エピジェネティッククロックを構築。脳領域ごとに老化速度が異なることを定量し、AD病理進展との関連解明への基盤を提示。脳老化の...</td><td>神経科学</td></tr>
+      <tr><td class="rk">10</td><td>Multivariate genome-wide analysis of sarcopenia reveals genetic comorbidity with</td><td>Bone</td><td>多変量GWAS（複数sarcopenia trait統合、LDSC genetic correlat</td><td>サルコペニアの多変量GWASで215 lociと30,869 SNPsを同定。LDSC解析で泌尿器疾患（前立腺・腎）との遺伝的併存性を発見。サルコペニアと併存疾患の遺伝的pleiotropyを解明し、...</td><td>老化遺伝学</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">研究レポート自動生成 / 出典は各論文URLを参照</div>
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '',
+      authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '',
+      design: card.dataset.design || '',
+      url: card.dataset.url || '',
+      summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '',
+      importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '',
+      limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '',
+      background: card.dataset.background || '',
+      result: card.dataset.result || '',
+      impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  (function autoUpgrade() {
+    const favs = loadFavs();
+    let upgraded = 0;
+    cards.forEach(card => {
+      const id = card.dataset.paperId;
+      if (!favs[id]) return;
+      const newData = buildPaperData(card);
+      const fields = ['title','authors','journal','design','url','summary','overview','importance','methodology','limitation','implication','idea','novelty','background','result','impact','keywords'];
+      const hasNew = fields.some(k => newData[k] && (!favs[id][k] || favs[id][k] === ''));
+      if (hasNew) {
+        favs[id] = {
+          ...favs[id], ...newData,
+          rating: favs[id].rating || 0,
+          addedAt: favs[id].addedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+        upgraded++;
+      }
+    });
+    if (upgraded > 0) {
+      saveFavs(favs);
+      const note = document.createElement('div');
+      note.style.cssText = 'position:fixed;top:20px;right:20px;background:#fef3c7;border:2px solid #f59e0b;padding:12px 18px;border-radius:8px;color:#78350f;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;max-width:340px';
+      note.innerHTML = '🔄 ' + upgraded + '件のお気に入りを最新項目で自動更新しました';
+      document.body.appendChild(note);
+      setTimeout(() => note.remove(), 5000);
+    }
+  })();
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) {
+      card.style.paddingLeft = '50px';
+    }
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs);
+      updateBar();
+    });
+  });
+
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin:20px auto;max-width:900px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    const pc = document.getElementById('page-count'); const tc = document.getElementById('total-count');
+    if (pc) pc.textContent = checkedCount;
+    if (tc) tc.textContent = Object.keys(loadFavs()).length;
+  }
+  const selAll = document.getElementById('select-all');
+  if (selAll) selAll.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }));
+  const selNone = document.getElementById('select-none');
+  if (selNone) selNone.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }));
+  const openV = document.getElementById('open-viewer');
+  if (openV) openV.addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => { if (cb.checked) { const card = cb.closest('[data-paper-id]'); selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() }; } });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+  updateBar();
+  window.addEventListener('storage', e => {
+    if (e.key === STORAGE_KEY) {
+      const favs = loadFavs();
+      document.querySelectorAll('[data-paper-id]').forEach(card => {
+        const cb = card.querySelector('.paper-fav-check'); if (!cb) return;
+        const label = card.querySelector('.fav-label');
+        const isFav = !!favs[card.dataset.paperId];
+        cb.checked = isFav;
+        if (label) { label.textContent = isFav ? '保存済み' : 'お気に入り'; label.style.color = isFav ? '#be185d' : '#475569'; }
+      });
+      updateBar();
+    }
+  });
+})();
+</script>
+<!-- favorites-injected-end -->
+</body>
+</html>

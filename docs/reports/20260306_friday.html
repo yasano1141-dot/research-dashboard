@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート：疫学方法論 — 2026年3月6日</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+  :root {
+    --primary: #1a3a5c;
+    --accent: #2e75b6;
+    --accent-light: #d5e8f4;
+    --bg: #fafbfc;
+    --card-bg: #ffffff;
+    --text: #2c3e50;
+    --text-light: #5a6a7a;
+    --border: #e2e8f0;
+    --rank1: #c9302c;
+    --rank2: #e67e22;
+    --rank3: #2980b9;
+    --tag-method: #8e44ad;
+    --tag-theme: #16a085;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+
+  /* Header */
+  .report-header {
+    background: linear-gradient(135deg, var(--primary) 0%, #2c5f8a 100%);
+    color: white;
+    padding: 48px 40px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+  }
+  .report-header h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .report-header .subtitle {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 16px;
+  }
+  .report-header .meta {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    opacity: 0.75;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    border-left: 4px solid var(--accent);
+    padding-left: 16px;
+    margin: 40px 0 20px;
+  }
+
+  /* Trend summary */
+  .trend-box {
+    background: var(--accent-light);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 32px;
+    border: 1px solid #b8d4ea;
+  }
+  .trend-box p { font-size: 14.5px; color: var(--primary); }
+
+  /* Paper card */
+  .paper-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .paper-card.top1 { border-top: 4px solid var(--rank1); }
+  .paper-card.top2 { border-top: 4px solid var(--rank2); }
+  .paper-card.top3 { border-top: 4px solid var(--rank3); }
+  .paper-card.remaining { border-top: 3px solid var(--border); }
+
+  .card-header {
+    padding: 20px 24px 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .rank-badge {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .rank-badge.r1 { background: var(--rank1); }
+  .rank-badge.r2 { background: var(--rank2); }
+  .rank-badge.r3 { background: var(--rank3); }
+  .rank-badge.rm { background: #95a5a6; font-size: 13px; }
+
+  .card-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.5;
+  }
+  .card-title-en {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  .card-meta {
+    padding: 0 24px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12.5px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .tag-journal { background: #eaf2fb; color: var(--accent); }
+  .tag-design { background: #f0e6f6; color: var(--tag-method); }
+  .tag-relevance { background: #e0f5ef; color: var(--tag-theme); }
+
+  .paper-url {
+    padding: 0 24px 10px;
+    font-size: 12.5px;
+  }
+  .paper-url a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .paper-url a:hover { text-decoration: underline; }
+  .paper-url .url-label {
+    font-weight: 500;
+    color: var(--text-light);
+    margin-right: 4px;
+  }
+
+  .card-body { padding: 0 24px 20px; }
+  .card-body h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 16px 0 6px;
+  }
+  .card-body p, .card-body li {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.75;
+  }
+  .card-body ul { padding-left: 20px; }
+  .card-body li { margin-bottom: 4px; }
+
+  .highlight-box {
+    background: #fffbe6;
+    border-left: 3px solid #f0c040;
+    padding: 10px 14px;
+    margin: 10px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 13.5px;
+  }
+
+  .idea-box {
+    background: #f0f8ff;
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 10px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 13.5px;
+  }
+
+  /* Summary table */
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 16px;
+  }
+  .summary-table th {
+    background: var(--primary);
+    color: white;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .summary-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .summary-table tr:nth-child(even) td { background: #f8fafc; }
+  .summary-table tr:hover td { background: var(--accent-light); }
+
+  /* Trend summary at end */
+  .trend-summary {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    padding: 28px;
+    margin-top: 32px;
+    border: 1px solid var(--border);
+  }
+  .trend-summary h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
+  .trend-summary p { font-size: 14px; margin-bottom: 12px; }
+
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-light);
+  }
+
+  @media print {
+    body { font-size: 11pt; }
+    .container { max-width: 100%; padding: 0; }
+    .report-header { border-radius: 0; }
+    .paper-card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="report-header">
+    <h1>研究レポート：疫学方法論</h1>
+    <div class="subtitle">金曜日テーマ — 因果推論・Mendelian Randomization・Multi-state Model</div>
+    <div class="meta">
+      <span>2026年3月6日（金）</span>
+      <span>論文数：10本</span>
+      <span>対象期間：2025〜2026年</span>
+    </div>
+  </div>
+
+  <!-- Trend overview -->
+  <div class="trend-box">
+    <p>今日のレポートでは、因果推論・Mendelian randomization・multi-state modelなど、疫学研究の方法論的進展に焦点を当てる。2025〜2026年初頭にかけて、target trial emulationの報告ガイドライン標準化、時間分解型MRの開発、因果推論とmulti-state modelの融合といった重要な方法論的発展が見られた。これらは高齢者研究・健康寿命研究に直接応用可能な方法論である。</p>
+  </div>
+
+  <!-- ========== TOP 3 ========== -->
+  <h2 class="section-title">Top 3：詳細解説</h2>
+
+  <!-- #1 -->
+  <div class="paper-card top1">
+    <div class="card-header">
+      <div class="rank-badge r1">1</div>
+      <div>
+        <div class="card-title">TARGET Statement：Target Trial Emulationの報告ガイドライン</div>
+        <div class="card-title-en">Transparent Reporting of Observational Studies Emulating a Target Trial — The TARGET Statement</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">JAMA (2025)</span>
+      <span class="tag tag-design">報告ガイドライン</span>
+      <span class="tag tag-relevance">健康寿命・身体活動</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://jamanetwork.com/journals/jama/fullarticle/2837724" target="_blank">https://jamanetwork.com/journals/jama/fullarticle/2837724</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>Target trial emulationを用いた観察研究の報告の透明性を確保するための、初の標準化された21項目のチェックリストが策定された。</p>
+
+      <h4>研究概要</h4>
+      <p>Target trial emulationは、RCTが実施困難な場合に観察データから因果効果を推定するための枠組みとして急速に普及している。しかし、既存の報告ガイドライン（STROBEなど）では、target trial protocolの完全な記載や観察データへのmappingの透明性が求められていなかった。</p>
+      <p>本ガイドラインはEQUATORフレームワークに基づき、系統的レビュー、2回のオンライン調査（6カ国18名の専門家）、3日間の専門家コンセンサス会議、108名のステークホルダーによるパイロットテストを経て開発された。チェックリストは抄録・序論・方法・結果・考察・その他の6セクション、21項目で構成される。</p>
+      <p>主な推奨事項：(1) target trial emulationであることの明示、(2) 因果的疑問とtarget trialを模倣する理由の要約、(3) target trial protocol（因果的推定量、同定仮定、解析計画）の明確な記載と観察データへのmapping、(4) 各因果推定量の推定値・精度・感度分析の報告。</p>
+
+      <h4>研究として重要な点</h4>
+      <p>この報告ガイドラインの登場は、target trial emulationが「手法」から「分野の標準」へと移行する転換点を示している。PLOS Medicineは既にTARGETガイドラインへの準拠を投稿要件としており、今後他のジャーナルも追随する可能性が高い。STROBEがコホート研究の報告を変えたように、TARGETは介入効果に関する観察研究の報告を根本的に変える可能性がある。</p>
+
+      <h4>方法論評価</h4>
+      <p>コンセンサスベースのガイドライン開発としては模範的なプロセスを経ている。ただし、TARGETは「並行群、個別ランダム化のtarget trial」に焦点を当てており、クラスターRCTや段階的導入デザインの模倣には直接対応していない点に留意が必要である。</p>
+
+      <h4>限界</h4>
+      <p>適用範囲が並行群・個別ランダム化trialに限定。報告の質が改善しても、target trial emulation自体の方法論的課題（time zeroの定義、未測定交絡、grace periodの設定など）は研究者の判断に委ねられる。</p>
+
+      <div class="highlight-box">
+        <strong>私の研究への示唆：</strong> 身体活動と健康寿命の関連をtarget trial emulationで検討する際、TARGETチェックリストに準拠することで研究の透明性と再現性が向上する。
+      </div>
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 日本の大規模コホート（JAGES等）を用いたtarget trial emulationの方法論的検証。TARGETチェックリストを適用した模範的研究の実施。
+      </div>
+    </div>
+  </div>
+
+  <!-- #2 -->
+  <div class="paper-card top2">
+    <div class="card-header">
+      <div class="rank-badge r2">2</div>
+      <div>
+        <div class="card-title">Time-resolved Mendelian Randomization</div>
+        <div class="card-title-en">Time-resolved Mendelian randomization detects substantial variation in the detrimental effect of obesity throughout life</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Science Advances (2025)</span>
+      <span class="tag tag-design">方法論研究</span>
+      <span class="tag tag-relevance">遺伝子・健康寿命</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.science.org/doi/10.1126/sciadv.adv0926" target="_blank">https://www.science.org/doi/10.1126/sciadv.adv0926</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>BMIの疾患リスクへの因果効果が年齢によって大きく変動することを、新しい「時間分解型MR」によって初めて定量化した。</p>
+
+      <h4>研究概要</h4>
+      <p>通常のMRは一時点の平均的因果効果を推定するが、年齢による効果の変動を捉えることができない。著者らはUK Biobankデータを用い、BMI増加アレルの効果が年齢とともに減弱するエビデンスを発見した。2型糖尿病、冠動脈疾患、心房細動、変形性関節症において、強い年齢依存的パターンが確認された。特に顕著な時間的特徴の一部は性別特異的であった。</p>
+
+      <h4>研究として重要な点</h4>
+      <p>従来のMRでは「平均的な因果効果」しか推定できなかった。この手法は、生涯のどの時点で曝露が最も疾患リスクに影響するかという「critical period」を特定可能にする。BMI以外の任意の曝露（身体活動、筋力など）にも応用可能であり、遺伝的操作変数が利用可能な曝露であれば適用できる。</p>
+
+      <h4>方法論評価</h4>
+      <p>UK Biobankという大規模データの活用は説得力がある。ただし、時間依存的効果を推定するための追加的仮定の検証可能性、および生存者バイアスが高齢期の効果減弱を過大評価している可能性がある。</p>
+
+      <h4>限界</h4>
+      <p>UK Biobank（欧州系が主）への一般化可能性。BMI増加アレルの効果減弱が、アレル効果の減弱なのか選択バイアスの影響なのかの区別が困難。横断的遺伝データから縦断的因果効果を推定するという概念的飛躍。</p>
+
+      <div class="highlight-box">
+        <strong>私の研究への示唆：</strong> 身体活動やfrailty関連表現型のMR研究に時間分解型アプローチを応用し、「身体活動の認知機能保護効果は何歳の間に最も強いか」に答えることが理論的に可能。
+      </div>
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 身体活動量の遺伝的操作変数を用い、time-resolved MRで認知機能低下への年齢依存的因果効果を推定。Frailty関連形質（握力、歩行速度）に対するBMIの時間分解型因果効果の検討。
+      </div>
+    </div>
+  </div>
+
+  <!-- #3 -->
+  <div class="paper-card top3">
+    <div class="card-header">
+      <div class="rank-badge r3">3</div>
+      <div>
+        <div class="card-title">因果的Multi-state Model：g-computationとの融合</div>
+        <div class="card-title-en">Causal Multistate Models to Evaluate Treatment Delay</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Statistics in Medicine (2025)</span>
+      <span class="tag tag-design">方法論研究</span>
+      <span class="tag tag-relevance">健康寿命・身体機能</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.70061" target="_blank">https://onlinelibrary.wiley.com/doi/10.1002/sim.70061</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>Multi-state modelとg-computationを組み合わせ、治療遅延の因果効果を推定する新しい推定量を提案した。</p>
+
+      <h4>研究概要</h4>
+      <p>Multi-state modelは個人が時間経過とともに異なる健康状態間を遷移する過程を記述する強力な枠組みであるが、従来は記述的・予測的目的に留まっていた。著者らはillness-death modelにおいてg-computationを統合し、治療遅延戦略の因果効果を推定する方法を提案した。シミュレーション研究で、cloning-censoring-reweightingアプローチと比較してデータをより効率的に利用できる場面を示した。</p>
+
+      <h4>研究として重要な点</h4>
+      <p>高齢者は「健康→pre-frail→frail→障害→死亡」といった複数の状態間を遷移し、介入のタイミングが重要な意味を持つ。本手法により「介入タイミングの因果効果」を推定可能になる。</p>
+
+      <h4>方法論評価</h4>
+      <p>g-computationをmulti-state modelに自然に統合しており、理論的にエレガントである。ただし、実データへの応用は比較的単純な3状態モデルに限定されており、より複雑な状態構造への拡張性は今後の課題。</p>
+
+      <h4>限界</h4>
+      <p>3状態モデルへの適用に限定。時間依存的交絡への対処は明示的には扱われていない。高齢者研究への直接的応用例はまだない。</p>
+
+      <div class="highlight-box">
+        <strong>私の研究への示唆：</strong> 「運動介入をpre-frail段階で開始した場合 vs frail段階で開始した場合の障害発生率の差」を因果的に推定することが可能になる。
+      </div>
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 縦断データを用い、健康→pre-frail→frail→障害→死亡のmulti-state modelにg-computationを統合し、運動介入タイミングの最適化を因果的に検討。筋質指標の変化を状態として組み込んだcausal modelの構築。
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== REMAINING 7 ========== -->
+  <h2 class="section-title">Remaining 7：簡潔解説</h2>
+
+  <!-- #4 -->
+  <div class="paper-card remaining">
+    <div class="card-header">
+      <div class="rank-badge rm">4</div>
+      <div>
+        <div class="card-title">認知症研究におけるprevalent exposure designの限界</div>
+        <div class="card-title-en">Moving beyond the prevalent exposure design for causal inference in dementia research</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Lancet Healthy Longevity (2025)</span>
+      <span class="tag tag-design">系統的レビュー</span>
+      <span class="tag tag-relevance">認知機能・身体活動</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(24)00201-0/fulltext" target="_blank">https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(24)00201-0/fulltext</a></div>
+    <div class="card-body">
+      <p>認知症予防に関する観察コホート研究116本のうち84本（72%）がprevalent exposure designを使用していた。身体活動を事例として、このデザインが介入の不明確な定義、選択バイアス、交絡調整の困難を生むことを示し、target trial frameworkによる代替アプローチを提案。身体活動と認知機能を扱う研究者にとって、自身の研究デザインを見直す契機となる重要論文。</p>
+    </div>
+  </div>
+
+  <!-- #5 -->
+  <div class="paper-card remaining">
+    <div class="card-header">
+      <div class="rank-badge rm">5</div>
+      <div>
+        <div class="card-title">MR方法論の包括的フレームワーク</div>
+        <div class="card-title-en">Mendelian Randomization Methods for Causal Inference: Estimands, Identification and Inference</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Statistics in Medicine (2026)</span>
+      <span class="tag tag-design">方法論レビュー</span>
+      <span class="tag tag-relevance">遺伝子</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.70394" target="_blank">https://onlinelibrary.wiley.com/doi/10.1002/sim.70394</a></div>
+    <div class="card-body">
+      <p>MRにおける推定量（estimand）、同定条件（identification）、推論（inference）を統一的に定式化した包括的論文。MR-MAGICなど弱い遺伝的操作変数に対するロバストな推論法も紹介。MR研究を計画・実施する際の理論的基盤として有用。</p>
+    </div>
+  </div>
+
+  <!-- #6 -->
+  <div class="paper-card remaining">
+    <div class="card-header">
+      <div class="rank-badge rm">6</div>
+      <div>
+        <div class="card-title">多変量MRへの潜在因子分析の統合</div>
+        <div class="card-title-en">Integration of latent factor analysis into multivariable Mendelian randomization</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">European Journal of Epidemiology (2026)</span>
+      <span class="tag tag-design">方法論研究</span>
+      <span class="tag tag-relevance">遺伝子</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://link.springer.com/article/10.1007/s10654-025-01324-8" target="_blank">https://link.springer.com/article/10.1007/s10654-025-01324-8</a></div>
+    <div class="card-body">
+      <p>多変量MR（MVMR）において、高度に相関した曝露（特にマルチオミクスデータ）を扱う際の次元削減法として、潜在因子分析をMVMRフレームワークに統合する手法を提案。プロテオミクスやメタボロミクスデータを用いたMR研究に直接応用可能。</p>
+    </div>
+  </div>
+
+  <!-- #7 -->
+  <div class="paper-card remaining">
+    <div class="card-header">
+      <div class="rank-badge rm">7</div>
+      <div>
+        <div class="card-title">G-computationによるMSMパラメータ推定の改善</div>
+        <div class="card-title-en">Estimating marginal structural model parameters for time-fixed, binary actions with g-computation and estimating equations</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">American Journal of Epidemiology (2025)</span>
+      <span class="tag tag-design">方法論研究</span>
+      <span class="tag tag-relevance">方法論全般</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://academic.oup.com/aje/article/194/5/1464/7742764" target="_blank">https://academic.oup.com/aje/article/194/5/1464/7742764</a></div>
+    <div class="card-body">
+      <p>MSMのパラメータをIPWではなくg-computationベースの推定方程式で推定する方法を提案。IPWと比較して精度が向上することをHIV疫学の例で実証。R、SAS、Pythonのコードを公開しており、実装の障壁が低い。効果修飾（effect measure modification）の検討に特に有用。</p>
+    </div>
+  </div>
+
+  <!-- #8 -->
+  <div class="paper-card remaining">
+    <div class="card-header">
+      <div class="rank-badge rm">8</div>
+      <div>
+        <div class="card-title">説明可能AIによる生物学的年齢・フレイルのバイオマーカー探索</div>
+        <div class="card-title-en">Explainable machine learning framework for biomarker discovery by combining biological age and frailty prediction</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Scientific Reports (2025)</span>
+      <span class="tag tag-design">ML研究</span>
+      <span class="tag tag-relevance">身体機能・AI</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41598-025-98948-3" target="_blank">https://www.nature.com/articles/s41598-025-98948-3</a></div>
+    <div class="card-body">
+      <p>CHARLSデータを用い、16の血液バイオマーカーから生物学的年齢とフレイルを予測するtree-based ML modelを構築し、SHAPで重要な特徴量を同定。生物学的年齢とフレイルの両方を統合的に扱うXAIフレームワークとして新規性がある。</p>
+    </div>
+  </div>
+
+  <!-- #9 -->
+  <div class="paper-card remaining">
+    <div class="card-header">
+      <div class="rank-badge rm">9</div>
+      <div>
+        <div class="card-title">大気汚染の縦断的健康影響に対するMSM</div>
+        <div class="card-title-en">Marginal structural models for quantifying the causal effects of exposure to ambient air pollution on progression of CT emphysema</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">American Journal of Epidemiology (2025)</span>
+      <span class="tag tag-design">コホート研究</span>
+      <span class="tag tag-relevance">方法論全般</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwae456/2025" target="_blank">https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwae456/2025</a></div>
+    <div class="card-body">
+      <p>連続的曝露レベルに対するIPW推定のための分位ビニングと半パラメトリックモデルを提案。時間変動交絡を考慮した縦断的環境曝露の因果効果推定法として、身体活動量（連続変数）の因果効果推定にも応用可能な枠組み。</p>
+    </div>
+  </div>
+
+  <!-- #10 -->
+  <div class="paper-card remaining">
+    <div class="card-header">
+      <div class="rank-badge rm">10</div>
+      <div>
+        <div class="card-title">社会的孤立と認知機能低下のg-formula解析</div>
+        <div class="card-title-en">Social isolation and cognitive decline — parametric g-formula analysis</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Journals of Gerontology B (2025)</span>
+      <span class="tag tag-design">縦断コホート</span>
+      <span class="tag tag-relevance">認知機能・身体活動</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://academic.oup.com/psychsocgerontology/article/80/3/gbaf015/2025" target="_blank">https://academic.oup.com/psychsocgerontology/article/80/3/gbaf015/2025</a></div>
+    <div class="card-body">
+      <p>米国の高齢者を10年以上追跡し、パラメトリックg-formulaを用いて社会的孤立が認知機能低下に及ぼす因果効果を推定。加齢、健康変化、生活環境、教育、収入、社会的不平等を考慮した時間変動交絡の調整が特徴。「孤独感」ではなく「客観的な社会的孤立」が認知機能低下と関連することを示した。</p>
+    </div>
+  </div>
+
+  <!-- ========== SUMMARY TABLE ========== -->
+  <h2 class="section-title">まとめ一覧表</h2>
+
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>優先度</th>
+        <th>論文</th>
+        <th>ジャーナル</th>
+        <th>デザイン</th>
+        <th>一言</th>
+        <th>関連</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>TARGET Statement</td><td>JAMA (2025)</td><td>報告ガイドライン</td><td>TTE報告の標準化チェックリスト</td><td>健康寿命・身体活動</td></tr>
+      <tr><td>2</td><td>Time-resolved MR</td><td>Science Advances (2025)</td><td>方法論</td><td>年齢依存的因果効果の定量化</td><td>遺伝子・健康寿命</td></tr>
+      <tr><td>3</td><td>Causal Multistate Model</td><td>Stat Med (2025)</td><td>方法論</td><td>Multi-state × g-computation</td><td>健康寿命・身体機能</td></tr>
+      <tr><td>4</td><td>Prevalent exposure批判</td><td>Lancet HL (2025)</td><td>系統的レビュー</td><td>認知症研究の72%が該当</td><td>認知機能・身体活動</td></tr>
+      <tr><td>5</td><td>MR Estimands統一</td><td>Stat Med (2026)</td><td>方法論レビュー</td><td>MRの理論的基盤の整理</td><td>遺伝子</td></tr>
+      <tr><td>6</td><td>潜在因子 × MVMR</td><td>Eur J Epi (2026)</td><td>方法論</td><td>高次元オミクスMR対応</td><td>遺伝子</td></tr>
+      <tr><td>7</td><td>G-comp for MSM</td><td>AJE (2025)</td><td>方法論</td><td>IPWより高精度なMSM推定</td><td>方法論全般</td></tr>
+      <tr><td>8</td><td>XAI × BA × Frailty</td><td>Sci Rep (2025)</td><td>ML研究</td><td>SHAP × BA × frailty統合</td><td>身体機能・AI</td></tr>
+      <tr><td>9</td><td>MSM × 連続曝露</td><td>AJE (2025)</td><td>コホート</td><td>連続曝露の因果推論法</td><td>方法論全般</td></tr>
+      <tr><td>10</td><td>社会的孤立 × g-formula</td><td>J Gerontol B (2025)</td><td>縦断コホート</td><td>時間変動交絡調整の模範例</td><td>認知機能・身体活動</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ========== TREND SUMMARY ========== -->
+  <div class="trend-summary">
+    <h3>本日の研究トレンド総括</h3>
+    <p>2025〜2026年の疫学方法論における3つの大きな潮流が確認できた。</p>
+    <p><strong>第一に、target trial emulationの制度化。</strong>TARGETガイドラインの登場により、TTEは「先進的手法」から「標準的実践」へと移行しつつある。認知症研究におけるprevalent exposure designの批判と合わせて、高齢者研究分野全体がより厳密な因果推論デザインへと移行する圧力が高まっている。</p>
+    <p><strong>第二に、Mendelian randomizationの精緻化。</strong>時間分解型MR、estimandの統一的定式化、高次元データへのMVMR拡張と、MRは単純な操作変数法から多層的な因果推論ツールへと進化している。</p>
+    <p><strong>第三に、因果推論と既存統計モデルの融合。</strong>Multi-state model × g-computation、MSM × g-computation、g-formula × 縦断研究のように、既存の統計的枠組みに因果推論の概念を注入する動きが加速している。これは高齢者の複雑な健康遷移を「介入した場合に何が起こるか」として推定可能にするパラダイムシフトである。</p>
+  </div>
+
+  <div class="footer">
+    本レポートは研究者の知識インフラとして作成されています。<br>
+    作成日：2026年3月6日
+  </div>
+
+</div>
+</body>
+</html>

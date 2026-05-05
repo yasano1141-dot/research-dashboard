@@ -1,0 +1,121 @@
+/* ================================================================
+   Per-report HTML page (/reports/*.html)
+   Lightweight wrapper that complements the inline styles already
+   in generated reports. Adds site-nav and consistent typography.
+   ================================================================ */
+
+@import url("style.css");
+
+.report-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+}
+
+.report-back {
+  margin: 0 0 14px;
+  font-size: 13px;
+}
+.report-back a {
+  color: var(--text-mut);
+  border-bottom: none;
+}
+.report-back a:hover { color: var(--accent-dk); }
+
+.report-header {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.report-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 4px;
+  background: var(--theme-color, var(--accent));
+}
+.report-header h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+.report-header .meta {
+  color: var(--text-mut);
+  font-size: 14px;
+}
+.report-header .actions {
+  margin-top: 14px;
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+
+/* The generated reports use their own .paper-card styling.
+   Provide compatible defaults in case the generator simplifies.   */
+.paper-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+}
+.paper-card .paper-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+.paper-card .paper-meta {
+  color: var(--text-mut);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.section-block {
+  border-left: 4px solid currentColor;
+  padding: 10px 14px;
+  margin: 12px 0;
+  background: var(--bg-soft);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--text);
+}
+.section-block .section-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+  color: var(--block-color, var(--text-mut));
+}
+.section-block .section-content {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.section-block.summary    { color: var(--s-summary); }
+.section-block.overview   { color: var(--s-overview); }
+.section-block.importance { color: var(--s-importance); }
+.section-block.originality{ color: var(--s-originality); }
+.section-block.discovery  { color: var(--s-discovery); }
+.section-block.method     { color: var(--s-method); }
+.section-block.limit      { color: var(--s-limit); }
+.section-block.citation   { color: var(--s-citation); }
+.section-block.implication{ color: var(--s-implication); }
+.section-block.idea       { color: var(--s-idea); }
+
+.task-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.task-tag.pd {
+  background: var(--t-pd);
+}

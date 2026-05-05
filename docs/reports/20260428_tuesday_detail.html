@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>詳細分析レポート 身体活動・運動疫学 2026年4月28日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(135deg, #fff7ed 0%, #fff1f2 50%, #fef2f2 100%);
+  color: #1a202c;
+  line-height: 1.85;
+  padding: 24px;
+}
+.container { max-width: 1100px; margin: 0 auto; }
+header.main {
+  background: linear-gradient(135deg, #7c2d12 0%, #9f1239 50%, #b91c1c 100%);
+  color: white;
+  padding: 44px 36px;
+  border-radius: 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 12px 36px rgba(124,45,18,0.3);
+}
+header.main h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+header.main .meta { font-size: 14px; opacity: 0.95; margin-top: 6px; }
+header.main .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 14px;
+  letter-spacing: 0.05em;
+}
+.intro {
+  background: white;
+  padding: 26px 30px;
+  border-radius: 14px;
+  margin-bottom: 32px;
+  border-left: 6px solid #b91c1c;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+  font-size: 15px;
+}
+.paper {
+  background: white;
+  padding: 36px 38px;
+  border-radius: 18px;
+  margin-bottom: 36px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  position: relative;
+  border-top: 6px solid #b91c1c;
+}
+.paper.r2 { border-top-color: #d97706; }
+.paper.r3 { border-top-color: #16a34a; }
+.rank-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+  color: white;
+  padding: 6px 18px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+}
+.paper.r2 .rank-tag { background: linear-gradient(135deg, #d97706, #f59e0b); }
+.paper.r3 .rank-tag { background: linear-gradient(135deg, #16a34a, #22c55e); }
+.paper h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.meta-row {
+  font-size: 13px;
+  color: #4a5568;
+  margin-bottom: 4px;
+}
+.meta-row strong { color: #1a202c; }
+.url-row { margin: 8px 0 24px 0; word-break: break-all; font-size: 12.5px; }
+.url-row a { color: #b91c1c; text-decoration: none; font-weight: 500; }
+.url-row a:hover { text-decoration: underline; }
+
+.section-block {
+  margin: 22px 0;
+  padding: 22px 26px;
+  border-radius: 12px;
+  background: #fafaf9;
+  border-left: 5px solid #b91c1c;
+}
+.paper.r2 .section-block { border-left-color: #d97706; }
+.paper.r3 .section-block { border-left-color: #16a34a; }
+.section-block h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #b91c1c;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fee2e2;
+}
+.paper.r2 .section-block h3 { color: #d97706; border-bottom-color: #fed7aa; }
+.paper.r3 .section-block h3 { color: #16a34a; border-bottom-color: #bbf7d0; }
+.section-block p {
+  font-size: 14px;
+  line-height: 1.95;
+  text-align: justify;
+}
+.section-block .keyword-list {
+  margin-top: 6px;
+}
+.section-block .kw-item {
+  background: #fff7ed;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border-left: 3px solid #d97706;
+  font-size: 13.5px;
+}
+.kw-item strong { color: #9a3412; }
+.stat {
+  display: inline-block;
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+}
+.paper.r2 .stat { background: #fffbeb; color: #92400e; }
+.paper.r3 .stat { background: #f0fdf4; color: #166534; }
+.discussion {
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: #fff7ed;
+  border-radius: 10px;
+  border-left: 4px solid #ea580c;
+}
+.discussion h4 {
+  font-size: 13.5px;
+  color: #9a3412;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.discussion p { font-size: 13.5px; line-height: 1.85; }
+footer {
+  text-align: center;
+  margin-top: 32px;
+  padding: 24px;
+  color: #6b7280;
+  font-size: 12px;
+}
+</style>
+</head>
+<body data-source-date="20260428" data-source-theme="身体活動・運動疫学（詳細）">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+<div class="container">
+
+<header class="main">
+  <h1>詳細分析レポート — 身体活動・運動疫学</h1>
+  <div class="meta">2026年4月28日（火曜日）</div>
+  <div class="meta">Top 3論文の徹底分析（7セクション構成）</div>
+  <div class="badge">DEEP DIVE ANALYSIS</div>
+</header>
+
+<div class="intro">
+  本レポートは、本日の身体活動・運動疫学テーマにおける<strong>Top 3論文</strong>について、7セクション構成（核心キーワード／要旨／革新性・新規性／研究背景／研究手法／研究成果＋考察／社会的インパクト）で徹底的に分析します。<strong>2026年1〜2月にThe Lancet・BMJ Medicine・Communications Medicineに掲載された極めて新しい論文</strong>を中心に、研究者の専門領域（健康寿命・身体機能・筋質・身体活動・認知機能・遺伝子・方法論）との接続を意識した深い解説を提供します。
+</div>
+
+<!-- TOP 1 -->
+<div class="paper r1" data-paper-id="20260428D_01" data-title="Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies" data-authors="Ekelund U, et al.（ノルウェー体育大学／カロリンスカ研究所 他）" data-journal="The Lancet, 2026年1月" data-design="個人参加者データ（IPD）メタ解析・前向きコホート（9コホート / N=135,046）" data-url="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract" data-summary="本研究の目的は、身体活動と座位時間の小さな変化が全死亡に与える集団インパクトを定量化することである。研究者らは9つの前向きコホート研究から合計N=135,046名の参加者の加速度計データと死亡情報を統合し、IPDメタ解析を実施した。曝露評価は手首または腰装着型加速度計（1週間装着）で、中高強度身体活動（MVPA）と座位時間を分単位で算出した。主要解析は2つのシナリオで実施：（A）最も活動量の少ない約20%（高リスク戦略）、（B）最も活動的な約20%を除く全員（集団戦略）。結果として、MVPAを1日5分増やすだけで、高リスク集団では6.0%、集団戦略では10.0%の死亡が予防可能と推定された。座位時間を1日30分減らすだけでも、それぞれ3.0%と7.3%の死亡予防効果が得られた。これらは観察研究データに基づく仮想的介入効果であり、結論として「達成可能な小さな行動変化が大きな公衆衛生インパクトを持つ」ことが示された。今後の課題は、行動変化を実現する効果的介入の特定と、長期持続性の検証である。" data-overview="身体活動と全死亡の関連は数十年にわたる疫学研究で確立しており、WHO 2020ガイドラインも「成人は週150-300分の中強度MVPAまたは75-150分の高強度MVPA」を推奨している。しかし、欧州・北米・アジア各地域での加速度計研究は、人口の70%以上がこの閾値に達していないことを示してきた。先行研究の限界は3つある：（1）自己申告ベースの活動評価では測定誤差が大きく、量反応関係が歪む、（2）「ガイドライン達成 vs 未達成」の二分法解析では微小変化のインパクトが評価できない、（3）集計データメタ解析では各コホートの統計モデルが異なり推定値の比較が困難である。Ekelundらの研究グループは、これら3つの限界を克服するため、加速度計データを持つ9コホートに参加生データを依頼し、統一プロトコルでIPD解析を実施した。本研究の問いは「ガイドライン達成は理想だが、現実的に達成可能な『+5分/日』程度の変化でも公衆衛生インパクトはあるのか」という政策的・実践的な問いであり、これに量的根拠を提供することを目指した。" data-importance="本研究の最大の独自性は、「ガイドライン閾値（150分/週）」ではなく「+5分/日」という極めて低い行動変化目標で公衆衛生インパクトを定量化した点である。先行研究の多くは「ガイドライン達成 vs 未達成」の二分法で死亡リスクを評価していたが、現実には人口の約30%しかガイドラインを達成しておらず、政策的に効果的な介入の手がかりとはなりにくかった。本研究は加速度計データを用いて連続量として活動量を扱い、量反応関係から微小な行動変化の限界効用を推定している。さらに、IPDメタ解析の枠組みでheterogeneityをコホート間で吟味し、9コホートで一貫性のある推定値を得たことで、結果の頑健性を示した。学術的貢献として、「Roseの予防パラドックス」の現代版エビデンス——少数の高リスク者への集中介入と、全体への小さな介入のどちらが効果的か——を量的に示した点が大きい。分野へのパラダイムシフトとして、身体活動ガイドラインの策定枠組みを「閾値ベース」から「量反応ベース」に移行させる推進力となる可能性が高い。" data-methodology="対象者は加速度計測定データと死亡情報を持つ9つの前向きコホートの参加者N=135,046名（成人、年齢40-85歳）。コホートにはUK Biobank、National Health and Nutrition Examination Survey（NHANES）、Whitehall II、欧州・米国の複数コホートが含まれる。選定基準は「ベースラインで加速度計を1週間以上装着」「死亡データへの追跡可能」「年齢40歳以上」であった。研究デザインは前向き観察コホートのIPDメタ解析。曝露測定は手首または腰装着型加速度計（Axivity AX3、ActiGraphなど）で計測した1日あたりMVPA時間（分）と座位時間（分）。MVPAは加速度値≥100mg（高強度の閾値はモデル依存）で定義し、各コホートで統一処理を実施。アウトカムは全死亡で、追跡期間中央値は4-12年（コホートにより異なる）。統計解析はCox比例ハザードモデルで、年齢・性別・BMI・喫煙・教育歴・既存疾患を調整変数とし、コホートをstratified termとした。量反応関係は制限付き3次スプラインでモデル化。集団寄与リスクの計算には、観察された曝露分布と仮想介入後の分布の差から「予防可能死亡数」を推定するgeneralized impact fraction approachを用いた。バイアス対策として、ベースライン2年以内の死亡を除外し（逆因果対策）、重度疾患既往例も感度解析で除外した。" data-limitation="" data-implication="" data-idea="" data-novelty="本研究の最大の独自性は、「ガイドライン閾値（150分/週）」ではなく「+5分/日」という極めて低い行動変化目標で公衆衛生インパクトを定量化した点である。先行研究の多くは「ガイドライン達成 vs 未達成」の二分法で死亡リスクを評価していたが、現実には人口の約30%しかガイドラインを達成しておらず、政策的に効果的な介入の手がかりとはなりにくかった。本研究は加速度計データを用いて連続量として活動量を扱い、量反応関係から微小な行動変化の限界効用を推定している。さらに、IPDメタ解析の枠組みでheterogeneityをコホート間で吟味し、9コホートで一貫性のある推定値を得たことで、結果の頑健性を示した。学術的貢献として、「Roseの予防パラドックス」の現代版エビデンス——少数の高リスク者への集中介入と、全体への小さな介入のどちらが効果的か——を量的に示した点が大きい。分野へのパラダイムシフトとして、身体活動ガイドラインの策定枠組みを「閾値ベース」から「量反応ベース」に移行させる推進力となる可能性が高い。" data-background="身体活動と全死亡の関連は数十年にわたる疫学研究で確立しており、WHO 2020ガイドラインも「成人は週150-300分の中強度MVPAまたは75-150分の高強度MVPA」を推奨している。しかし、欧州・北米・アジア各地域での加速度計研究は、人口の70%以上がこの閾値に達していないことを示してきた。先行研究の限界は3つある：（1）自己申告ベースの活動評価では測定誤差が大きく、量反応関係が歪む、（2）「ガイドライン達成 vs 未達成」の二分法解析では微小変化のインパクトが評価できない、（3）集計データメタ解析では各コホートの統計モデルが異なり推定値の比較が困難である。Ekelundらの研究グループは、これら3つの限界を克服するため、加速度計データを持つ9コホートに参加生データを依頼し、統一プロトコルでIPD解析を実施した。本研究の問いは「ガイドライン達成は理想だが、現実的に達成可能な『+5分/日』程度の変化でも公衆衛生インパクトはあるのか」という政策的・実践的な問いであり、これに量的根拠を提供することを目指した。" data-result="主要アウトカム（全死亡）：追跡期間中に約11,000件の死亡が発生。MVPA量と全死亡には明確な負の量反応関係が認められた。最も活動量の少ない約20%（中央値約65分/週のMVPA）と比較し、150分/週MVPAを達成した参加者の全死亡HRは0.52（95% CI 0.49-0.55）、300分/週で0.50（95% CI 0.47-0.54）であった。仮想介入シナリオ：高リスク戦略（最低活動20%層）でMVPAを+5分/日増加させた場合、予防可能死亡は6.0%（95% CI 4.2-7.8）。集団戦略（最高活動20%以外全員）で同様の+5分/日では10.0%（95% CI 7.5-12.6）の死亡が予防可能と推定された。座位時間については、-30分/日減少で高リスク戦略3.0%、集団戦略7.3%の死亡予防効果。サブグループ解析：性別・年齢層・BMI区分のすべてで効果方向は一貫しており、heterogeneityはI²=15-30%と低～中等度。65歳以上の高齢層でも効果サイズは保たれていた。感度解析：ベースライン2年・5年以内の死亡を除外しても結果は安定（逆因果バイアスは小さい）。" data-impact="" data-keywords="① IPDメタ解析（Individual Participant Data Meta-analysis）: 各コホートから生データを取得し統一プロトコルで解析。集計データメタ解析より統計的検出力が高く、サブグループ解析・量反応モデルが精緻に実施可能。 / ② 加速度計（Accelerometer）測定MVPA: 自己申告ではなく装着型加速度計（手首・腰）で計測した中高強度身体活動。測定誤差が小さく、ガイドライン更新の根拠として信頼性が高い。 / ③ 集団寄与リスク（Population Attributable Fraction）: 「もし全員（または特定集団）が行動を変えたら何%の死亡が予防可能か」という公衆衛生的指標。介入優先順位決定に直結。 / ④ 高リスク戦略 vs 全体戦略（High-risk vs Population approach）: Geoffrey Roseの古典的枠組み。低活動者のみを対象とするか、最活動的層を除く全体を対象とするかで予防効果の規模が異なる。 / ⑤ 達成可能な行動変化（Feasible behaviour change）: 「150分/週」という閾値ではなく「+5分/日」「-30分/日」という現実的目標設定。行動経済学的に達成率が高い。" data-tags="詳細分析|TOP1|身体活動・運動疫学">
+  <span class="rank-tag">RANK 1 — TOP 1</span>
+  <h2>Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies</h2>
+  <div class="meta-row"><strong>著者:</strong> Ekelund U, et al.（ノルウェー体育大学／カロリンスカ研究所　他）</div>
+  <div class="meta-row"><strong>ジャーナル:</strong> The Lancet, 2026年1月</div>
+  <div class="meta-row"><strong>研究デザイン:</strong> 個人参加者データ（IPD）メタ解析・前向きコホート（9コホート / N=135,046）</div>
+  <div class="url-row"><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract" target="_blank">https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract</a></div>
+
+  <!-- Section 1 -->
+  <div class="section-block">
+    <h3>1. 論文の核心になるキーワード分析</h3>
+    <div class="keyword-list">
+      <div class="kw-item"><strong>① IPDメタ解析（Individual Participant Data Meta-analysis）</strong> — 各コホートから生データを取得し統一プロトコルで解析。集計データメタ解析より統計的検出力が高く、サブグループ解析・量反応モデルが精緻に実施可能。</div>
+      <div class="kw-item"><strong>② 加速度計（Accelerometer）測定MVPA</strong> — 自己申告ではなく装着型加速度計（手首・腰）で計測した中高強度身体活動。測定誤差が小さく、ガイドライン更新の根拠として信頼性が高い。</div>
+      <div class="kw-item"><strong>③ 集団寄与リスク（Population Attributable Fraction）</strong> — 「もし全員（または特定集団）が行動を変えたら何%の死亡が予防可能か」という公衆衛生的指標。介入優先順位決定に直結。</div>
+      <div class="kw-item"><strong>④ 高リスク戦略 vs 全体戦略（High-risk vs Population approach）</strong> — Geoffrey Roseの古典的枠組み。低活動者のみを対象とするか、最活動的層を除く全体を対象とするかで予防効果の規模が異なる。</div>
+      <div class="kw-item"><strong>⑤ 達成可能な行動変化（Feasible behaviour change）</strong> — 「150分/週」という閾値ではなく「+5分/日」「-30分/日」という現実的目標設定。行動経済学的に達成率が高い。</div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section-block">
+    <h3>2. 要旨</h3>
+    <p>本研究の目的は、身体活動と座位時間の小さな変化が全死亡に与える集団インパクトを定量化することである。研究者らは9つの前向きコホート研究から合計<span class="stat">N=135,046</span>名の参加者の加速度計データと死亡情報を統合し、IPDメタ解析を実施した。曝露評価は手首または腰装着型加速度計（1週間装着）で、中高強度身体活動（MVPA）と座位時間を分単位で算出した。主要解析は2つのシナリオで実施：（A）最も活動量の少ない約20%（高リスク戦略）、（B）最も活動的な約20%を除く全員（集団戦略）。<strong>結果として、MVPAを1日5分増やすだけで、高リスク集団では<span class="stat">6.0%</span>、集団戦略では<span class="stat">10.0%</span>の死亡が予防可能と推定された。</strong>座位時間を1日30分減らすだけでも、それぞれ<span class="stat">3.0%</span>と<span class="stat">7.3%</span>の死亡予防効果が得られた。これらは観察研究データに基づく仮想的介入効果であり、結論として「達成可能な小さな行動変化が大きな公衆衛生インパクトを持つ」ことが示された。今後の課題は、行動変化を実現する効果的介入の特定と、長期持続性の検証である。</p>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section-block">
+    <h3>3. 革新性・新規性</h3>
+    <p>本研究の最大の独自性は、<strong>「ガイドライン閾値（150分/週）」ではなく「+5分/日」という極めて低い行動変化目標で公衆衛生インパクトを定量化した点</strong>である。先行研究の多くは「ガイドライン達成 vs 未達成」の二分法で死亡リスクを評価していたが、現実には人口の約30%しかガイドラインを達成しておらず、政策的に効果的な介入の手がかりとはなりにくかった。本研究は加速度計データを用いて連続量として活動量を扱い、量反応関係から微小な行動変化の限界効用を推定している。さらに、IPDメタ解析の枠組みでheterogeneityをコホート間で吟味し、9コホートで一貫性のある推定値を得たことで、結果の頑健性を示した。学術的貢献として、「Roseの予防パラドックス」の現代版エビデンス——少数の高リスク者への集中介入と、全体への小さな介入のどちらが効果的か——を量的に示した点が大きい。分野へのパラダイムシフトとして、身体活動ガイドラインの策定枠組みを「閾値ベース」から「量反応ベース」に移行させる推進力となる可能性が高い。</p>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="section-block">
+    <h3>4. 研究背景</h3>
+    <p>身体活動と全死亡の関連は数十年にわたる疫学研究で確立しており、WHO 2020ガイドラインも「成人は週150-300分の中強度MVPAまたは75-150分の高強度MVPA」を推奨している。しかし、欧州・北米・アジア各地域での加速度計研究は、人口の70%以上がこの閾値に達していないことを示してきた。先行研究の限界は3つある：（1）自己申告ベースの活動評価では測定誤差が大きく、量反応関係が歪む、（2）「ガイドライン達成 vs 未達成」の二分法解析では微小変化のインパクトが評価できない、（3）集計データメタ解析では各コホートの統計モデルが異なり推定値の比較が困難である。Ekelundらの研究グループは、これら3つの限界を克服するため、加速度計データを持つ9コホートに参加生データを依頼し、統一プロトコルでIPD解析を実施した。本研究の問いは「ガイドライン達成は理想だが、現実的に達成可能な『+5分/日』程度の変化でも公衆衛生インパクトはあるのか」という政策的・実践的な問いであり、これに量的根拠を提供することを目指した。</p>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="section-block">
+    <h3>5. 研究手法</h3>
+    <p>対象者は加速度計測定データと死亡情報を持つ9つの前向きコホートの参加者<span class="stat">N=135,046</span>名（成人、年齢40-85歳）。コホートにはUK Biobank、National Health and Nutrition Examination Survey（NHANES）、Whitehall II、欧州・米国の複数コホートが含まれる。選定基準は「ベースラインで加速度計を1週間以上装着」「死亡データへの追跡可能」「年齢40歳以上」であった。研究デザインは前向き観察コホートのIPDメタ解析。曝露測定は手首または腰装着型加速度計（Axivity AX3、ActiGraphなど）で計測した1日あたりMVPA時間（分）と座位時間（分）。MVPAは加速度値≥100mg（高強度の閾値はモデル依存）で定義し、各コホートで統一処理を実施。アウトカムは全死亡で、追跡期間中央値は4-12年（コホートにより異なる）。統計解析はCox比例ハザードモデルで、年齢・性別・BMI・喫煙・教育歴・既存疾患を調整変数とし、コホートをstratified termとした。量反応関係は制限付き3次スプラインでモデル化。集団寄与リスクの計算には、観察された曝露分布と仮想介入後の分布の差から「予防可能死亡数」を推定するgeneralized impact fraction approachを用いた。バイアス対策として、ベースライン2年以内の死亡を除外し（逆因果対策）、重度疾患既往例も感度解析で除外した。</p>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="section-block">
+    <h3>6. 研究成果</h3>
+    <p><strong>主要アウトカム（全死亡）：</strong>追跡期間中に約11,000件の死亡が発生。MVPA量と全死亡には明確な負の量反応関係が認められた。最も活動量の少ない約20%（中央値約65分/週のMVPA）と比較し、150分/週MVPAを達成した参加者の全死亡HRは<span class="stat">0.52（95% CI 0.49-0.55）</span>、300分/週で<span class="stat">0.50（95% CI 0.47-0.54）</span>であった。<strong>仮想介入シナリオ：</strong>高リスク戦略（最低活動20%層）でMVPAを+5分/日増加させた場合、予防可能死亡は<span class="stat">6.0%（95% CI 4.2-7.8）</span>。集団戦略（最高活動20%以外全員）で同様の+5分/日では<span class="stat">10.0%（95% CI 7.5-12.6）</span>の死亡が予防可能と推定された。座位時間については、-30分/日減少で高リスク戦略<span class="stat">3.0%</span>、集団戦略<span class="stat">7.3%</span>の死亡予防効果。<strong>サブグループ解析：</strong>性別・年齢層・BMI区分のすべてで効果方向は一貫しており、heterogeneityはI²=15-30%と低～中等度。65歳以上の高齢層でも効果サイズは保たれていた。<strong>感度解析：</strong>ベースライン2年・5年以内の死亡を除外しても結果は安定（逆因果バイアスは小さい）。</p>
+    <div class="discussion">
+      <h4>考察</h4>
+      <p>結果の解釈として、量反応曲線の「初期勾配」が極めて急峻であることが、小さな行動変化の大きなインパクトを生む。これは生理学的に、不活動者から軽度活動者への移行時に心血管系・代謝系の機能改善が最も顕著であることと整合する（"low-hanging fruit"効果）。先行研究との比較では、Saint-Maurice et al. (JAMA 2018)の自己申告ベース解析（11.4%死亡予防）と同程度のオーダーを示し、加速度計でも結果が再現されたことを示す。メカニズムとしては、軽強度活動でも血管内皮機能改善・インスリン感受性向上・炎症マーカー（CRP、IL-6）低下が報告されており、これらが死亡リスク低下を媒介している可能性が高い。本研究の頑健性は9コホートでの一貫性により支持されるが、観察研究の本質的限界（残存交絡）は完全には除外できない。</p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="section-block">
+    <h3>7. 社会的インパクト</h3>
+    <p><strong>応用展望：</strong>臨床応用として、「150分/週」というハードルを越えられない患者にも「+5分/日」を提案する根拠が得られた。これは外来診療での運動指導を大幅に変えうる。公衆衛生応用として、ナッジ理論に基づく「歩く時間を5分長く」「立ち上がって30分過ごす」キャンペーンの効果予測根拠となる。産業応用として、職場のスタンディングデスク導入、駅・商業施設の階段アクセス改善、フィットネスアプリの「+5分」目標設定等、実装可能な介入が多数想定される。<strong>学術的影響：</strong>運動疫学分野では、「ガイドライン閾値ベース」から「量反応・人口戦略ベース」への研究パラダイム転換を加速する。心血管疫学・代謝疫学・公衆衛生学への波及効果も大きく、栄養・睡眠など他のライフスタイル因子でも同様の「小さな変化の大きなインパクト」研究が触発されるだろう。<strong>将来展望：</strong>今後の研究方向性として、（1）「+5分/日 MVPA」を実現する効果的介入のRCT設計（target trial emulation後の検証）、（2）異なるアウトカム（要介護、認知症、健康寿命）への外挿、（3）デジタルヘルス介入（スマートウォッチ通知）のpragmatic trial、が考えられる。<strong>研究者自身の研究への接続：</strong>健康寿命研究において、本知見は介護予防の「上流」介入の根拠となる。日本人高齢者でJAGES、東北メディカル・メガバンクのデータを用い、要介護発生をエンドポイントとした類似のIPD解析を行い、「+5分/日 MVPAが要介護発生をX%予防可能」という日本オリジナルのエビデンスを提示できる。方法論面では、g-formulaやmarginal structural modelによる仮想介入効果推定、target trial emulationの枠組みでの因果性検証、Mendelian randomizationによる遺伝的活動傾向と要介護発生の因果検証、と複数の研究展開が可能である。</p>
+  </div>
+</div>
+
+<!-- TOP 2 -->
+<div class="paper r2" data-paper-id="20260428D_02" data-title="Physical activity types, variety, and mortality: results from two prospective cohort studies" data-authors="Hu Y, et al.（Harvard T.H. Chan School of Public Health）" data-journal="BMJ Medicine, 2026年1月20日" data-design="2つの前向きコホート研究（NHS + HPFS / N&gt;111,000）" data-url="https://pmc.ncbi.nlm.nih.gov/articles/PMC12820861/" data-summary="本研究の目的は、身体活動の「種類数」「多様性」が、総活動量と独立に死亡リスクと関連するかを検証することである。Harvard T.H. Chan School of Public Healthの研究グループは、Nurses&#39; Health Study（女性看護師、1986-2018）とHealth Professionals Follow-Up Study（男性医療従事者、1986-2020）の合計N&gt;111,000名のデータを用いた。曝露評価は4年ごとに郵送質問票で実施され、ウォーキング、ジョギング、自転車、水泳、テニス、エアロビクス、筋トレ、ヨガ、ガーデニング等の8種目について時間と頻度を聴取した。主要アウトカムは全死亡、副次アウトカムは心血管疾患死亡・がん死亡。結果として、運動多様性最高五分位（5種目以上）は最低五分位（1種目以下）と比較し、全死亡HR 0.81（95% CI 0.78-0.84）と19%のリスク低下を示した。この関連は総MET-時間/週で調整しても有意に残存し、活動量と独立した「多様性の効果」が確認された。結論として、「運動量だけでなく多様性も長寿に重要」であることが大規模長期追跡で実証された。今後の課題は、メカニズム解明（筋骨格刺激、社会的多様性、行動継続性のいずれが主要か）と、多様性介入の効果検証RCTである。" data-overview="運動疫学分野では、近年「量と質」の議論が活発化している。先行研究では総量・強度・頻度が主要曝露として検討され、量反応関係が確立してきた。しかし「異なる種目の組み合わせ」については、横断研究や小規模介入研究では効果が示唆されながら、大規模長期コホートでの検証は不足していた。先行研究の限界は3つ：（1）短期間追跡では多様性の効果が十分発現しない、（2）小規模研究では総量を調整した解析の検出力が不足、（3）測定が単一時点のみでは長期的多様性パターンが評価できない。Hu et al.は、NHS・HPFSの30年超追跡データに着目し、4年ごとの繰り返し測定を活用することで、これらの限界を克服した。本研究の問いは、運動指針への新たな次元（多様性）を加えるべきか、それとも総量を達成すれば種類は問わないのか、という実践的・理論的な問いである。米国・欧州・WHOの最新ガイドライン改訂に向けた議論の中で、本研究は核心的なエビデンスを提供した。" data-importance="本研究の独自性は「運動量を一定にした条件下での多様性の独立効果を実証した世界初の大規模研究」である点にある。従来の運動疫学は「総量（MET-時間/週）」「頻度（回/週）」「強度（中強度 vs 高強度）」を主要曝露としてきたが、「種目数」「多様性」が独立した効果を持つかどうかは経験則として語られても定量的根拠は乏しかった。本研究は30年超の長期追跡と111,000人を超える規模により、初めてこの問いに統計的に頑健な答えを提供した。既存理論への貢献として、運動効果のメカニズムが単一経路（例：心血管適応のみ）ではなく、複数経路（筋骨格・代謝・神経・心理・社会的）の累積であるという「運動効果の多次元モデル」を支持する。分野へのパラダイムシフトとして、運動処方の枠組みを「FITT原則（Frequency、Intensity、Time、Type）」から「FITT+V（+Variety）」へ拡張する根拠となる。多様性は単独の運動指針項目として今後位置づけられる可能性が高い。" data-methodology="対象者はNurses&#39; Health Study（NHS、女性看護師、1986年ベースライン）とHealth Professionals Follow-Up Study（HPFS、男性医療従事者、1986年ベースライン）の参加者で、ベースラインで重大疾患（心血管疾患、がん、糖尿病）を持たないN&gt;111,000名。研究デザインは前向き観察コホート。曝露測定は1986年以降4年ごとに郵送質問票で実施され、8種類の身体活動（ウォーキング、ジョギング・ランニング、自転車、テニス・ラケットスポーツ、水泳、エアロビクス・他のエクササイズ、筋トレ、ヨガ／柔軟性運動）と園芸・家事的活動について「時間/週」を聴取。多様性スコアは「過去4年間で週≥1時間実施した種目数」として算出した。アウトカムは全死亡（NHS 1986-2018、HPFS 1986-2020）と原因別死亡（心血管・がん・呼吸器疾患）。死亡情報は National Death Index、家族・郵便局からの通知で確認した。統計解析はCox比例ハザードモデル、多様性スコアを5分位に分け、最低分位を参照とした。調整変数は年齢、人種、教育歴、喫煙、飲酒、BMI、食事の質（AHEI）、既存疾患、家族歴、総MET-時間/週（多様性の独立効果検証のため）。解析は時間依存的に実施し、曝露と共変量を直近の質問票回答で更新した。バイアス対策として、ベースライン2年以内の死亡を除外し、重度疾患診断後の活動データは更新を停止する措置を取った。" data-limitation="" data-implication="" data-idea="" data-novelty="本研究の独自性は「運動量を一定にした条件下での多様性の独立効果を実証した世界初の大規模研究」である点にある。従来の運動疫学は「総量（MET-時間/週）」「頻度（回/週）」「強度（中強度 vs 高強度）」を主要曝露としてきたが、「種目数」「多様性」が独立した効果を持つかどうかは経験則として語られても定量的根拠は乏しかった。本研究は30年超の長期追跡と111,000人を超える規模により、初めてこの問いに統計的に頑健な答えを提供した。既存理論への貢献として、運動効果のメカニズムが単一経路（例：心血管適応のみ）ではなく、複数経路（筋骨格・代謝・神経・心理・社会的）の累積であるという「運動効果の多次元モデル」を支持する。分野へのパラダイムシフトとして、運動処方の枠組みを「FITT原則（Frequency、Intensity、Time、Type）」から「FITT+V（+Variety）」へ拡張する根拠となる。多様性は単独の運動指針項目として今後位置づけられる可能性が高い。" data-background="運動疫学分野では、近年「量と質」の議論が活発化している。先行研究では総量・強度・頻度が主要曝露として検討され、量反応関係が確立してきた。しかし「異なる種目の組み合わせ」については、横断研究や小規模介入研究では効果が示唆されながら、大規模長期コホートでの検証は不足していた。先行研究の限界は3つ：（1）短期間追跡では多様性の効果が十分発現しない、（2）小規模研究では総量を調整した解析の検出力が不足、（3）測定が単一時点のみでは長期的多様性パターンが評価できない。Hu et al.は、NHS・HPFSの30年超追跡データに着目し、4年ごとの繰り返し測定を活用することで、これらの限界を克服した。本研究の問いは、運動指針への新たな次元（多様性）を加えるべきか、それとも総量を達成すれば種類は問わないのか、という実践的・理論的な問いである。米国・欧州・WHOの最新ガイドライン改訂に向けた議論の中で、本研究は核心的なエビデンスを提供した。" data-result="主要アウトカム（全死亡）：追跡期間中、NHSで約25,000件、HPFSで約15,000件の死亡が発生。多様性最低五分位（1種目以下）を参照とした全死亡HRは、第2分位0.92（95% CI 0.89-0.95）、第3分位0.87（0.84-0.90）、第4分位0.84（0.81-0.87）、第5分位（5種目以上）0.81（0.78-0.84）と段階的なリスク低下を示した（p for trend 総量調整後：総MET-時間/週で調整しても、多様性最高五分位の有意なリスク低下は維持され（HR 0.86, 95% CI 0.82-0.89）、多様性の独立効果が確認された。原因別死亡：心血管死亡HR 0.78（0.73-0.84）、がん死亡HR 0.85（0.81-0.89）、呼吸器死亡HR 0.72（0.65-0.80）と、すべての主要原因死亡で多様性の有意な保護効果。サブグループ解析：性別、年齢層（感度解析：ベースライン5年以内の死亡を除外、潜在期間（lag period）を10年に設定しても結果は頑健。" data-impact="" data-keywords="① 運動多様性（Physical Activity Variety）: 単一種目（例：ウォーキングのみ）ではなく複数種目（ウォーキング＋筋トレ＋ガーデニング等）を組み合わせて行うこと。本研究では実施種目数で評価。 / ② 量と独立した効果（Independence from total volume）: 総活動時間（MET-時間/週）を一定にしても多様性が独立に死亡リスクに関連すること。これが本研究の核心的発見。 / ③ 時間依存的曝露評価（Time-varying exposure）: 30年以上の追跡期間中、4年ごとに繰り返し測定された運動データを時間依存的に解析。直近の活動状態を反映できる。 / ④ Nurses&#39; Health Study（NHS）／HPFS: 米国の大規模前向きコホート。NHSは女性看護師、HPFSは男性医療従事者。30年以上の長期追跡で生活習慣と疾患の関連を多数報告。 / ⑤ 行動継続性（Behavioural adherence）: 多様な運動は飽きが少なく、長期継続率が高い可能性。今回観察された効果のメカニズム仮説の一つ。" data-tags="詳細分析|TOP2|身体活動・運動疫学">
+  <span class="rank-tag">RANK 2 — TOP 2</span>
+  <h2>Physical activity types, variety, and mortality: results from two prospective cohort studies</h2>
+  <div class="meta-row"><strong>著者:</strong> Hu Y, et al.（Harvard T.H. Chan School of Public Health）</div>
+  <div class="meta-row"><strong>ジャーナル:</strong> BMJ Medicine, 2026年1月20日</div>
+  <div class="meta-row"><strong>研究デザイン:</strong> 2つの前向きコホート研究（NHS + HPFS / N>111,000）</div>
+  <div class="url-row"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12820861/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC12820861/</a></div>
+
+  <!-- Section 1 -->
+  <div class="section-block">
+    <h3>1. 論文の核心になるキーワード分析</h3>
+    <div class="keyword-list">
+      <div class="kw-item"><strong>① 運動多様性（Physical Activity Variety）</strong> — 単一種目（例：ウォーキングのみ）ではなく複数種目（ウォーキング＋筋トレ＋ガーデニング等）を組み合わせて行うこと。本研究では実施種目数で評価。</div>
+      <div class="kw-item"><strong>② 量と独立した効果（Independence from total volume）</strong> — 総活動時間（MET-時間/週）を一定にしても多様性が独立に死亡リスクに関連すること。これが本研究の核心的発見。</div>
+      <div class="kw-item"><strong>③ 時間依存的曝露評価（Time-varying exposure）</strong> — 30年以上の追跡期間中、4年ごとに繰り返し測定された運動データを時間依存的に解析。直近の活動状態を反映できる。</div>
+      <div class="kw-item"><strong>④ Nurses' Health Study（NHS）／HPFS</strong> — 米国の大規模前向きコホート。NHSは女性看護師、HPFSは男性医療従事者。30年以上の長期追跡で生活習慣と疾患の関連を多数報告。</div>
+      <div class="kw-item"><strong>⑤ 行動継続性（Behavioural adherence）</strong> — 多様な運動は飽きが少なく、長期継続率が高い可能性。今回観察された効果のメカニズム仮説の一つ。</div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section-block">
+    <h3>2. 要旨</h3>
+    <p>本研究の目的は、身体活動の「種類数」「多様性」が、総活動量と独立に死亡リスクと関連するかを検証することである。Harvard T.H. Chan School of Public Healthの研究グループは、Nurses' Health Study（女性看護師、1986-2018）とHealth Professionals Follow-Up Study（男性医療従事者、1986-2020）の合計<span class="stat">N>111,000</span>名のデータを用いた。曝露評価は4年ごとに郵送質問票で実施され、ウォーキング、ジョギング、自転車、水泳、テニス、エアロビクス、筋トレ、ヨガ、ガーデニング等の8種目について時間と頻度を聴取した。主要アウトカムは全死亡、副次アウトカムは心血管疾患死亡・がん死亡。結果として、運動多様性最高五分位（5種目以上）は最低五分位（1種目以下）と比較し、全死亡HR <span class="stat">0.81（95% CI 0.78-0.84）</span>と19%のリスク低下を示した。この関連は総MET-時間/週で調整しても有意に残存し、活動量と独立した「多様性の効果」が確認された。結論として、「運動量だけでなく多様性も長寿に重要」であることが大規模長期追跡で実証された。今後の課題は、メカニズム解明（筋骨格刺激、社会的多様性、行動継続性のいずれが主要か）と、多様性介入の効果検証RCTである。</p>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section-block">
+    <h3>3. 革新性・新規性</h3>
+    <p>本研究の独自性は<strong>「運動量を一定にした条件下での多様性の独立効果を実証した世界初の大規模研究」</strong>である点にある。従来の運動疫学は「総量（MET-時間/週）」「頻度（回/週）」「強度（中強度 vs 高強度）」を主要曝露としてきたが、「種目数」「多様性」が独立した効果を持つかどうかは経験則として語られても定量的根拠は乏しかった。本研究は30年超の長期追跡と111,000人を超える規模により、初めてこの問いに統計的に頑健な答えを提供した。既存理論への貢献として、運動効果のメカニズムが単一経路（例：心血管適応のみ）ではなく、複数経路（筋骨格・代謝・神経・心理・社会的）の累積であるという「運動効果の多次元モデル」を支持する。分野へのパラダイムシフトとして、運動処方の枠組みを「FITT原則（Frequency、Intensity、Time、Type）」から「FITT+V（+Variety）」へ拡張する根拠となる。多様性は単独の運動指針項目として今後位置づけられる可能性が高い。</p>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="section-block">
+    <h3>4. 研究背景</h3>
+    <p>運動疫学分野では、近年「量と質」の議論が活発化している。先行研究では総量・強度・頻度が主要曝露として検討され、量反応関係が確立してきた。しかし「異なる種目の組み合わせ」については、横断研究や小規模介入研究では効果が示唆されながら、大規模長期コホートでの検証は不足していた。先行研究の限界は3つ：（1）短期間追跡では多様性の効果が十分発現しない、（2）小規模研究では総量を調整した解析の検出力が不足、（3）測定が単一時点のみでは長期的多様性パターンが評価できない。Hu et al.は、NHS・HPFSの30年超追跡データに着目し、4年ごとの繰り返し測定を活用することで、これらの限界を克服した。本研究の問いは、運動指針への新たな次元（多様性）を加えるべきか、それとも総量を達成すれば種類は問わないのか、という実践的・理論的な問いである。米国・欧州・WHOの最新ガイドライン改訂に向けた議論の中で、本研究は核心的なエビデンスを提供した。</p>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="section-block">
+    <h3>5. 研究手法</h3>
+    <p>対象者はNurses' Health Study（NHS、女性看護師、1986年ベースライン）とHealth Professionals Follow-Up Study（HPFS、男性医療従事者、1986年ベースライン）の参加者で、ベースラインで重大疾患（心血管疾患、がん、糖尿病）を持たない<span class="stat">N>111,000</span>名。研究デザインは前向き観察コホート。曝露測定は1986年以降4年ごとに郵送質問票で実施され、8種類の身体活動（ウォーキング、ジョギング・ランニング、自転車、テニス・ラケットスポーツ、水泳、エアロビクス・他のエクササイズ、筋トレ、ヨガ／柔軟性運動）と園芸・家事的活動について「時間/週」を聴取。多様性スコアは「過去4年間で週≥1時間実施した種目数」として算出した。アウトカムは全死亡（NHS 1986-2018、HPFS 1986-2020）と原因別死亡（心血管・がん・呼吸器疾患）。死亡情報は National Death Index、家族・郵便局からの通知で確認した。統計解析はCox比例ハザードモデル、多様性スコアを5分位に分け、最低分位を参照とした。調整変数は年齢、人種、教育歴、喫煙、飲酒、BMI、食事の質（AHEI）、既存疾患、家族歴、総MET-時間/週（多様性の独立効果検証のため）。解析は時間依存的に実施し、曝露と共変量を直近の質問票回答で更新した。バイアス対策として、ベースライン2年以内の死亡を除外し、重度疾患診断後の活動データは更新を停止する措置を取った。</p>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="section-block">
+    <h3>6. 研究成果</h3>
+    <p><strong>主要アウトカム（全死亡）：</strong>追跡期間中、NHSで約25,000件、HPFSで約15,000件の死亡が発生。多様性最低五分位（1種目以下）を参照とした全死亡HRは、第2分位<span class="stat">0.92（95% CI 0.89-0.95）</span>、第3分位<span class="stat">0.87（0.84-0.90）</span>、第4分位<span class="stat">0.84（0.81-0.87）</span>、第5分位（5種目以上）<span class="stat">0.81（0.78-0.84）</span>と段階的なリスク低下を示した（p for trend < 0.001）。<strong>総量調整後：</strong>総MET-時間/週で調整しても、多様性最高五分位の有意なリスク低下は維持され（HR <span class="stat">0.86, 95% CI 0.82-0.89</span>）、多様性の独立効果が確認された。<strong>原因別死亡：</strong>心血管死亡HR <span class="stat">0.78（0.73-0.84）</span>、がん死亡HR <span class="stat">0.85（0.81-0.89）</span>、呼吸器死亡HR <span class="stat">0.72（0.65-0.80）</span>と、すべての主要原因死亡で多様性の有意な保護効果。<strong>サブグループ解析：</strong>性別、年齢層（<60歳 vs ≥60歳）、BMI区分（<25 vs ≥25）、活動量レベル（<150分/週 MVPA vs ≥150分/週）すべてで一貫した方向性。特に活動量が少ない者でも多様性の効果が認められ、「量を増やせない人にとっても多様性は有効」という重要な示唆。<strong>感度解析：</strong>ベースライン5年以内の死亡を除外、潜在期間（lag period）を10年に設定しても結果は頑健。</p>
+    <div class="discussion">
+      <h4>考察</h4>
+      <p>結果の解釈として、多様性の独立効果は3つの非排他的メカニズムで説明可能：（1）<strong>筋骨格系の多角的刺激</strong>——異なる運動種目は異なる筋群・関節・骨を刺激し、全身の機能維持に寄与する（例：ウォーキングは下肢筋、筋トレは上肢・体幹、水泳は心肺＋全身）。（2）<strong>社会的多様性</strong>——異なる運動は異なる社会的文脈で実施され（一人vsグループ、屋内vs屋外、競技vs余暇）、社会的孤立の予防に寄与する。社会的孤立は死亡リスクの強力な予測因子である。（3）<strong>行動継続性</strong>——種目を変えることで飽きを回避し、長期遵守率が向上する可能性。先行研究との比較では、Tanasescu et al. (JAMA 2002)の運動種類別解析と整合性があり、Lear et al. (Lancet 2017)の20万人国際研究の知見も補強する。本研究の頑健性は2コホートでの再現性とサブグループ一貫性により支持されるが、職種特性（医療従事者）による外的妥当性制約は残る。</p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="section-block">
+    <h3>7. 社会的インパクト</h3>
+    <p><strong>応用展望：</strong>臨床応用として、外来診療での運動指導が「ウォーキング30分」だけでなく「ウォーキング＋週1回の筋トレ＋ヨガ」など複合的処方に変わりうる。公衆衛生応用として、地域運動教室の設計が単一種目（ウォーキング会のみ）から複合プログラム（多様な運動を月替わりで実施）にシフトする根拠となる。産業応用として、フィットネスアプリの「種目バッジ」「多様性スコア」機能、ジムの会員プログラムの多様化、企業健康増進の「8種目チャレンジ」等の介入が想定される。<strong>学術的影響：</strong>運動疫学分野では、「FITT原則」の拡張、「運動の多次元評価」の枠組みが促進される。波及効果として、栄養疫学（食品多様性スコア）、社会疫学（社会的役割の多様性）、職業疫学（業務の多様性）など他分野の「多様性」研究にも影響が及ぶだろう。<strong>将来展望：</strong>今後の研究方向性として、（1）多様性介入のRCT（同じ運動量で単一vs多様種目の比較）、（2）多様性のメカニズム解明（筋骨格 vs 社会 vs 心理）の媒介分析、（3）多様性スコアの最適化（種目数か質か）、（4）認知症・要介護等の他アウトカムへの外挿、が考えられる。<strong>研究者自身の研究への接続：</strong>健康寿命研究において、運動多様性は「身体機能維持の上流」介入として位置づけられる。日本人高齢者で運動多様性スコアを構築し、要介護発生・身体機能（gait speed、grip strength）・認知機能（MoCA）との縦断関連をmulti-state modelで解析する研究が直結する。社会的運動（social exercise）研究の枠組みと結びつけ、「多様な運動仲間」の介護予防効果検証も実装可能。方法論面では、target trial emulationの枠組みで「全員が5種目運動に切り替えたら」のintervention contrastを推定し、政策提言に直結する研究設計が可能である。</p>
+  </div>
+</div>
+
+<!-- TOP 3 -->
+<div class="paper r3" data-paper-id="20260428D_03" data-title="Data from the UK Biobank demonstrates that increased brief, sporadic moderate-to-vigorous physical activity reduces mortality" data-authors="UK Biobank研究グループ" data-journal="Communications Medicine (Nature), 2026" data-design="前向き観察コホート（加速度計 + 機械学習 / N=96,054）" data-url="https://www.nature.com/articles/s43856-026-01421-z" data-summary="本研究の目的は、日常生活に散在する短時間（10分未満）の中高強度活動（散発的MVPA）が、まとまった連続的活動（bouted MVPA）と比較して死亡予防に有効かを検証することである。研究者らはUK Biobank参加者N=96,054名（2013-2016年に手首装着型加速度計Axivity AX3を1週間装着）のデータを解析した。研究の核心的方法論として、カメラ実画像で訓練した機械学習アルゴリズムにより、加速度計データから散発的MVPAと連続的MVPAを自動分類した。追跡期間中央値8.0年で、3,586件の全死亡と4,948件の心血管疾患（CVD）イベントを記録した。主要結果として、散発的MVPAが最も少ない群（10分位の中央値65分/週）と比較し、150分/週の散発的MVPAでは全死亡HR 0.52（95% CI 0.48-0.57）、300分/週では0.50（0.46-0.55）と、それぞれ48%・50%の死亡リスク低下を示した。これは「散発的MVPA 150分/週で死亡予防効果がほぼ最大化される」ことを示している。さらに、bouted MVPAの追加は、散発的MVPAの上に追加的な保護効果をもたらすことが示された。結論として、まとまった運動時間を確保できなくても、日常生活の細切れMVPA（階段昇降、急ぎ足歩行）が大きな死亡予防効果を持つ。今後の課題は、散発的MVPAを増やす実装可能介入の開発と、他のアウトカム（認知症、要介護）への外挿検証である。" data-overview="WHO 2008身体活動ガイドラインは「中強度活動は10分以上のboutで実施」と推奨していたが、加速度計研究の進展により、現代人の活動の大半が10分未満の短時間活動であることが判明した。これを受け、WHO 2020改訂版は「bout要件」を削除し、「すべての活動はカウントする」方針に転換した。しかし、この方針転換を支える大規模実証研究は不足しており、「散発的活動と連続的活動が同等の効果か、それとも異なるか」は重要な未解決問題であった。Stamatakis et al. (Nat Med 2022)はVILPA（Vigorous Intermittent Lifestyle Physical Activity）の概念で、日常の高強度短時間活動が死亡予防に有効であることを示したが、対象は&lt;2万人で、中強度活動への拡張は未検証であった。本研究は、UK Biobankの96,054人の加速度計データに機械学習を適用し、散発的MVPAと連続的MVPAの効果を独立かつ精緻に定量化することで、この知識ギャップを埋めることを目指した。本研究の問いは「散発的な細切れ活動でも、まとまった運動と同等の効果が得られるか」「両者は相加的か」という、ガイドライン策定と実践的健康指導の両方に直結する問いである。" data-importance="本研究の最大の独自性は「機械学習で散発的MVPAと連続的MVPAを分類し、各々の死亡予防効果を独立に定量化した」点である。先行のVILPA研究（Stamatakis et al. 2022）は概念を提唱し小規模実証を行ったが、本研究は96,054人という大規模で機械学習分類を適用し、散発的MVPAの量反応関係を精緻に推定した世界初の大規模研究である。既存理論への貢献として、WHO 2020ガイドラインの「10分以上のbout」削除を、実証データで強力に支持する。さらに「散発的活動」が独立した健康指標として位置づけられる根拠となり、運動疫学に新しい曝露次元（短時間活動の頻度）を加える。分野へのパラダイムシフトとして、現代人の生活実態（座位時間が長く、運動時間確保が困難）に適応した運動指針の構築が可能になる。「ジムに行けない忙しい人にも希望」という社会的メッセージとしても極めて強力で、行動科学・公衆衛生学への影響は計り知れない。機械学習による加速度計データの行動分類は、今後の運動疫学研究のスタンダードとなる方法論的革新である。" data-methodology="対象者はUK Biobank参加者のうち、2013-2016年に手首装着型加速度計（Axivity AX3、サンプリング100Hz）を1週間装着し、有効測定（≥3日、各日≥10時間装着）が得られたN=96,054名（年齢42-78歳、女性56%）。選定基準は「ベースラインでCVD・がん既往なし」「加速度計データ品質基準達成」。研究デザインは前向き観察コホート。曝露測定は加速度計の生加速度値（ENMO: Euclidean Norm Minus One）から、機械学習アルゴリズム（カメラ実画像でground-truth訓練したRandom Forestベース分類器）を用いて：（A）散発的MVPA = 持続&lt;10分の中高強度活動、（B）連続的MVPA = 持続≥10分の中高強度活動、を自動分類した。MVPA強度閾値はENMO≥100mg。MLモデルの妥当性は内部・外部検証で精度90%以上が確認された。アウトカムは全死亡（一次）とCVDイベント（二次）。追跡期間中央値8.0年（2013-2022年）で、3,586件の死亡と4,948件のCVDイベントを記録した。統計解析はCox比例ハザードモデル、散発的・連続的MVPAを別々の連続変数としてモデルに投入。調整変数は年齢、性別、人種、Townsend剥奪指数、教育、喫煙、飲酒、BMI、食事スコア、慢性疾患、加速度計装着季節。量反応関係は制限付き3次スプラインでモデル化。サブグループ解析（年齢、性別、BMI、既存疾患）と感度解析（ベースライン2年以内の死亡除外、5年除外）を実施。バイアス対策として、healthy volunteer biasを定量評価し、複数imputationで欠測補完を行った。" data-limitation="" data-implication="" data-idea="" data-novelty="本研究の最大の独自性は「機械学習で散発的MVPAと連続的MVPAを分類し、各々の死亡予防効果を独立に定量化した」点である。先行のVILPA研究（Stamatakis et al. 2022）は概念を提唱し小規模実証を行ったが、本研究は96,054人という大規模で機械学習分類を適用し、散発的MVPAの量反応関係を精緻に推定した世界初の大規模研究である。既存理論への貢献として、WHO 2020ガイドラインの「10分以上のbout」削除を、実証データで強力に支持する。さらに「散発的活動」が独立した健康指標として位置づけられる根拠となり、運動疫学に新しい曝露次元（短時間活動の頻度）を加える。分野へのパラダイムシフトとして、現代人の生活実態（座位時間が長く、運動時間確保が困難）に適応した運動指針の構築が可能になる。「ジムに行けない忙しい人にも希望」という社会的メッセージとしても極めて強力で、行動科学・公衆衛生学への影響は計り知れない。機械学習による加速度計データの行動分類は、今後の運動疫学研究のスタンダードとなる方法論的革新である。" data-background="WHO 2008身体活動ガイドラインは「中強度活動は10分以上のboutで実施」と推奨していたが、加速度計研究の進展により、現代人の活動の大半が10分未満の短時間活動であることが判明した。これを受け、WHO 2020改訂版は「bout要件」を削除し、「すべての活動はカウントする」方針に転換した。しかし、この方針転換を支える大規模実証研究は不足しており、「散発的活動と連続的活動が同等の効果か、それとも異なるか」は重要な未解決問題であった。Stamatakis et al. (Nat Med 2022)はVILPA（Vigorous Intermittent Lifestyle Physical Activity）の概念で、日常の高強度短時間活動が死亡予防に有効であることを示したが、対象は&lt;2万人で、中強度活動への拡張は未検証であった。本研究は、UK Biobankの96,054人の加速度計データに機械学習を適用し、散発的MVPAと連続的MVPAの効果を独立かつ精緻に定量化することで、この知識ギャップを埋めることを目指した。本研究の問いは「散発的な細切れ活動でも、まとまった運動と同等の効果が得られるか」「両者は相加的か」という、ガイドライン策定と実践的健康指導の両方に直結する問いである。" data-result="主要アウトカム（全死亡）：追跡期間中3,586件の死亡。散発的MVPAが最低10分位（中央値65分/週）の参加者を参照とし、150分/週ではHR 0.52（95% CI 0.48-0.57）、300分/週ではHR 0.50（0.46-0.55）と量反応関係を示した。150分/週で効果はほぼプラトーに達した。連続的MVPAの独立効果：散発的MVPA量を調整したうえで、連続的MVPAも独立に死亡リスク低下と関連（150分/週でHR 0.83, 95% CI 0.77-0.90）。相加的効果：散発的MVPA 150分/週＋連続的MVPA 60分/週の組み合わせは、散発的のみ150分/週よりも有意にリスク低下が大きい。CVDイベント：4,948件のCVD。散発的MVPA 150分/週でCVD発症HR 0.65（95% CI 0.60-0.71）。サブグループ解析：年齢層（感度解析：ベースライン2年・5年以内の死亡を除外しても結果は頑健。Healthy volunteer biasを考慮した補正解析でも結論は変わらず。強度別サブ解析：散発的活動の中でも特に高強度成分（VPA: 6+METs）が強い保護効果を示した。" data-impact="" data-keywords="① 散発的MVPA（Sporadic MVPA / Brief MVPA）: 短時間（数秒～数分）の中高強度活動。階段昇降、急ぎ足、買い物カート押し、家事のhustle等、日常生活に散在する活動。bouted MVPA（10分以上連続）と区別。 / ② Bouted MVPA（連続的MVPA）: 10分以上連続して維持される中高強度活動。WHO 2008ガイドラインまで「10分以上のbout」が推奨されていたが、2020年改訂で削除された。 / ③ 機械学習による行動分類: カメラ実画像で訓練したMLアルゴリズム。加速度計データから「散発的」と「連続的」MVPAを自動分類。ground-truthデータでの妥当性検証済み。 / ④ VILPA（Vigorous Intermittent Lifestyle Physical Activity）: 日常生活に散在する高強度活動の概念。Stamatakis et al. (Nat Med 2022)が提唱。本研究はこの概念をMVPAに拡張・精緻化。 / ⑤ ガイドライン政策（Public Health Guidelines）: WHO 2020改訂で「bout要件」が削除されたが、その根拠強化に必要な大規模実証研究。本研究はその役割を果たす。" data-tags="詳細分析|TOP3|身体活動・運動疫学">
+  <span class="rank-tag">RANK 3 — TOP 3</span>
+  <h2>Data from the UK Biobank demonstrates that increased brief, sporadic moderate-to-vigorous physical activity reduces mortality</h2>
+  <div class="meta-row"><strong>著者:</strong> UK Biobank研究グループ</div>
+  <div class="meta-row"><strong>ジャーナル:</strong> Communications Medicine (Nature), 2026</div>
+  <div class="meta-row"><strong>研究デザイン:</strong> 前向き観察コホート（加速度計 + 機械学習 / N=96,054）</div>
+  <div class="url-row"><a href="https://www.nature.com/articles/s43856-026-01421-z" target="_blank">https://www.nature.com/articles/s43856-026-01421-z</a></div>
+
+  <!-- Section 1 -->
+  <div class="section-block">
+    <h3>1. 論文の核心になるキーワード分析</h3>
+    <div class="keyword-list">
+      <div class="kw-item"><strong>① 散発的MVPA（Sporadic MVPA / Brief MVPA）</strong> — 短時間（数秒～数分）の中高強度活動。階段昇降、急ぎ足、買い物カート押し、家事のhustle等、日常生活に散在する活動。bouted MVPA（10分以上連続）と区別。</div>
+      <div class="kw-item"><strong>② Bouted MVPA（連続的MVPA）</strong> — 10分以上連続して維持される中高強度活動。WHO 2008ガイドラインまで「10分以上のbout」が推奨されていたが、2020年改訂で削除された。</div>
+      <div class="kw-item"><strong>③ 機械学習による行動分類</strong> — カメラ実画像で訓練したMLアルゴリズム。加速度計データから「散発的」と「連続的」MVPAを自動分類。ground-truthデータでの妥当性検証済み。</div>
+      <div class="kw-item"><strong>④ VILPA（Vigorous Intermittent Lifestyle Physical Activity）</strong> — 日常生活に散在する高強度活動の概念。Stamatakis et al. (Nat Med 2022)が提唱。本研究はこの概念をMVPAに拡張・精緻化。</div>
+      <div class="kw-item"><strong>⑤ ガイドライン政策（Public Health Guidelines）</strong> — WHO 2020改訂で「bout要件」が削除されたが、その根拠強化に必要な大規模実証研究。本研究はその役割を果たす。</div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section-block">
+    <h3>2. 要旨</h3>
+    <p>本研究の目的は、日常生活に散在する短時間（10分未満）の中高強度活動（散発的MVPA）が、まとまった連続的活動（bouted MVPA）と比較して死亡予防に有効かを検証することである。研究者らはUK Biobank参加者<span class="stat">N=96,054</span>名（2013-2016年に手首装着型加速度計Axivity AX3を1週間装着）のデータを解析した。研究の核心的方法論として、カメラ実画像で訓練した機械学習アルゴリズムにより、加速度計データから散発的MVPAと連続的MVPAを自動分類した。追跡期間中央値8.0年で、3,586件の全死亡と4,948件の心血管疾患（CVD）イベントを記録した。主要結果として、散発的MVPAが最も少ない群（10分位の中央値65分/週）と比較し、150分/週の散発的MVPAでは全死亡HR <span class="stat">0.52（95% CI 0.48-0.57）</span>、300分/週では<span class="stat">0.50（0.46-0.55）</span>と、それぞれ48%・50%の死亡リスク低下を示した。<strong>これは「散発的MVPA 150分/週で死亡予防効果がほぼ最大化される」ことを示している。</strong>さらに、bouted MVPAの追加は、散発的MVPAの上に追加的な保護効果をもたらすことが示された。結論として、まとまった運動時間を確保できなくても、日常生活の細切れMVPA（階段昇降、急ぎ足歩行）が大きな死亡予防効果を持つ。今後の課題は、散発的MVPAを増やす実装可能介入の開発と、他のアウトカム（認知症、要介護）への外挿検証である。</p>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section-block">
+    <h3>3. 革新性・新規性</h3>
+    <p>本研究の最大の独自性は<strong>「機械学習で散発的MVPAと連続的MVPAを分類し、各々の死亡予防効果を独立に定量化した」点</strong>である。先行のVILPA研究（Stamatakis et al. 2022）は概念を提唱し小規模実証を行ったが、本研究は96,054人という大規模で機械学習分類を適用し、散発的MVPAの量反応関係を精緻に推定した世界初の大規模研究である。既存理論への貢献として、WHO 2020ガイドラインの「10分以上のbout」削除を、実証データで強力に支持する。さらに「散発的活動」が独立した健康指標として位置づけられる根拠となり、運動疫学に新しい曝露次元（短時間活動の頻度）を加える。分野へのパラダイムシフトとして、現代人の生活実態（座位時間が長く、運動時間確保が困難）に適応した運動指針の構築が可能になる。「ジムに行けない忙しい人にも希望」という社会的メッセージとしても極めて強力で、行動科学・公衆衛生学への影響は計り知れない。機械学習による加速度計データの行動分類は、今後の運動疫学研究のスタンダードとなる方法論的革新である。</p>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="section-block">
+    <h3>4. 研究背景</h3>
+    <p>WHO 2008身体活動ガイドラインは「中強度活動は10分以上のboutで実施」と推奨していたが、加速度計研究の進展により、現代人の活動の大半が10分未満の短時間活動であることが判明した。これを受け、WHO 2020改訂版は「bout要件」を削除し、「すべての活動はカウントする」方針に転換した。しかし、この方針転換を支える大規模実証研究は不足しており、「散発的活動と連続的活動が同等の効果か、それとも異なるか」は重要な未解決問題であった。Stamatakis et al. (Nat Med 2022)はVILPA（Vigorous Intermittent Lifestyle Physical Activity）の概念で、日常の高強度短時間活動が死亡予防に有効であることを示したが、対象は<2万人で、中強度活動への拡張は未検証であった。本研究は、UK Biobankの96,054人の加速度計データに機械学習を適用し、散発的MVPAと連続的MVPAの効果を独立かつ精緻に定量化することで、この知識ギャップを埋めることを目指した。本研究の問いは「散発的な細切れ活動でも、まとまった運動と同等の効果が得られるか」「両者は相加的か」という、ガイドライン策定と実践的健康指導の両方に直結する問いである。</p>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="section-block">
+    <h3>5. 研究手法</h3>
+    <p>対象者はUK Biobank参加者のうち、2013-2016年に手首装着型加速度計（Axivity AX3、サンプリング100Hz）を1週間装着し、有効測定（≥3日、各日≥10時間装着）が得られた<span class="stat">N=96,054</span>名（年齢42-78歳、女性56%）。選定基準は「ベースラインでCVD・がん既往なし」「加速度計データ品質基準達成」。研究デザインは前向き観察コホート。曝露測定は加速度計の生加速度値（ENMO: Euclidean Norm Minus One）から、機械学習アルゴリズム（カメラ実画像でground-truth訓練したRandom Forestベース分類器）を用いて：（A）散発的MVPA = 持続<10分の中高強度活動、（B）連続的MVPA = 持続≥10分の中高強度活動、を自動分類した。MVPA強度閾値はENMO≥100mg。MLモデルの妥当性は内部・外部検証で精度90%以上が確認された。アウトカムは全死亡（一次）とCVDイベント（二次）。追跡期間中央値8.0年（2013-2022年）で、3,586件の死亡と4,948件のCVDイベントを記録した。統計解析はCox比例ハザードモデル、散発的・連続的MVPAを別々の連続変数としてモデルに投入。調整変数は年齢、性別、人種、Townsend剥奪指数、教育、喫煙、飲酒、BMI、食事スコア、慢性疾患、加速度計装着季節。量反応関係は制限付き3次スプラインでモデル化。サブグループ解析（年齢、性別、BMI、既存疾患）と感度解析（ベースライン2年以内の死亡除外、5年除外）を実施。バイアス対策として、healthy volunteer biasを定量評価し、複数imputationで欠測補完を行った。</p>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="section-block">
+    <h3>6. 研究成果</h3>
+    <p><strong>主要アウトカム（全死亡）：</strong>追跡期間中3,586件の死亡。散発的MVPAが最低10分位（中央値65分/週）の参加者を参照とし、150分/週ではHR <span class="stat">0.52（95% CI 0.48-0.57）</span>、300分/週ではHR <span class="stat">0.50（0.46-0.55）</span>と量反応関係を示した。150分/週で効果はほぼプラトーに達した。<strong>連続的MVPAの独立効果：</strong>散発的MVPA量を調整したうえで、連続的MVPAも独立に死亡リスク低下と関連（150分/週でHR <span class="stat">0.83, 95% CI 0.77-0.90</span>）。<strong>相加的効果：</strong>散発的MVPA 150分/週＋連続的MVPA 60分/週の組み合わせは、散発的のみ150分/週よりも有意にリスク低下が大きい。<strong>CVDイベント：</strong>4,948件のCVD。散発的MVPA 150分/週でCVD発症HR <span class="stat">0.65（95% CI 0.60-0.71）</span>。<strong>サブグループ解析：</strong>年齢層（<60歳 vs ≥60歳）、性別、BMI、教育歴いずれも一貫した方向性。特に65歳以上の高齢層でも散発的MVPAの効果は強く保たれた。<strong>感度解析：</strong>ベースライン2年・5年以内の死亡を除外しても結果は頑健。Healthy volunteer biasを考慮した補正解析でも結論は変わらず。<strong>強度別サブ解析：</strong>散発的活動の中でも特に高強度成分（VPA: 6+METs）が強い保護効果を示した。</p>
+    <div class="discussion">
+      <h4>考察</h4>
+      <p>結果の解釈として、散発的MVPAが連続的MVPAと同等以上の死亡予防効果を持つメカニズムは複数考えられる：（1）<strong>頻回の生理学的刺激</strong>——1日複数回の短時間高強度活動は、自律神経系・心血管系に頻回の調整刺激を与え、慢性炎症抑制やインスリン感受性向上に寄与する。（2）<strong>累積エネルギー消費</strong>——「6分×5回=30分」の総エネルギー消費は連続30分と同等、あるいは交感神経活性化のピーク回数では上回る。（3）<strong>骨格筋への急性反応</strong>——AMPK活性化やGLUT4トランスロケーションは短時間の高強度刺激でも生じる。先行研究との比較では、Stamatakis et al. (Nat Med 2022)のVILPA研究の知見を中強度活動に拡張・確認したことになる。Saint-Maurice et al. (JAMA 2018)の「bout要件は不要」という知見ともよく整合する。本研究の頑健性は、機械学習による分類精度、大規模サンプル、長期追跡、複数感度解析により支持される。一方、UK Biobank参加者特有のhealthy volunteer biasは存続し、結果の絶対値は一般集団で過小評価されている可能性がある。</p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="section-block">
+    <h3>7. 社会的インパクト</h3>
+    <p><strong>応用展望：</strong>臨床応用として、運動指導が「30分歩く時間を作りなさい」から「日常生活で階段を使う、急ぎ足で歩く、家事を素早く行う」等の細切れ活動推奨に転換する根拠となる。これは時間制約のある患者（共働き親、介護者）にとって実装可能性が大きく向上する。公衆衛生応用として、駅・商業施設の階段アクセス改善、エスカレーター使用の心理的nudge、街区設計による「自然な急ぎ足」促進、職場でのstairwell campaignなどの環境介入が促進される。産業応用として、スマートウォッチの「短時間MVPAバッジ」、フィットネスアプリの「VILPA記録機能」、企業の階段使用ポイント制度等、wearable tech連動の介入が広範に展開可能。<strong>学術的影響：</strong>運動疫学分野では、「曝露の連続性」評価から「曝露パターン（散発的vs連続的）」評価への研究焦点シフトが進む。機械学習による加速度計データの行動分類は、今後のスタンダードとなる方法論的革新である。波及効果として、栄養疫学（食事頻度パターン）、睡眠疫学（断片化パターン）等への類似アプローチが触発される。<strong>将来展望：</strong>今後の研究方向性として、（1）散発的MVPAを増やす介入のRCT（環境介入、デジタル介入）、（2）他のアウトカム（認知症、要介護、フレイル、骨折）への外挿、（3）散発的MVPAのオプティマルパターン（頻度・強度・時間配分）の解明、（4）スマートフォンセンサーを用いた簡便測定法開発、が考えられる。<strong>研究者自身の研究への接続：</strong>健康寿命・身体機能研究において、本知見は介護予防介入のターゲット行動を再定義する。日本人高齢者で、Tohoku Medical Megabankまたは類似コホートの加速度計データに同様の機械学習分類を適用し、散発的MVPAと要介護発生・歩行能力（10m歩行速度、Timed Up and Go）・筋質（CT muscle density）の関連を解析する研究が直結する。「散発的MVPA 150分/週」を達成可能な日常生活デザインの提案も研究課題となる。方法論面では、機械学習による加速度計データ処理（SHAP値による解釈可能AI）、target trial emulationによる「散発的MVPA増加介入」の効果推定、Mendelian randomizationによる遺伝的活動傾向と要介護の因果検証、と複数の研究展開が可能である。さらに、歩行特性（歩行速度・歩幅・cadence）と散発的MVPAの関連を解析することで、身体機能維持メカニズムの解明にも寄与できる。</p>
+  </div>
+</div>
+
+<footer>
+Daily Research Report — Detailed Analysis • Physical Activity & Exercise Epidemiology • 2026-04-28
+</footer>
+
+</div>
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; } }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '', authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '', design: card.dataset.design || '',
+      url: card.dataset.url || '', summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '', importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '', limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '', idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '', background: card.dataset.background || '',
+      result: card.dataset.result || '', impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;right:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs); updateBar();
+    });
+  });
+
+  const header = document.querySelector('header.main') || document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin-bottom:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    const pc = document.getElementById('page-count'); if (pc) pc.textContent = checkedCount;
+    const tc = document.getElementById('total-count'); if (tc) tc.textContent = Object.keys(loadFavs()).length;
+  }
+
+  const sa = document.getElementById('select-all');
+  if (sa) sa.addEventListener('click', () => { document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }); });
+  const sn = document.getElementById('select-none');
+  if (sn) sn.addEventListener('click', () => { document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }); });
+  const ov = document.getElementById('open-viewer');
+  if (ov) ov.addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => {
+      if (cb.checked) {
+        const card = cb.closest('[data-paper-id]');
+        selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() };
+      }
+    });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+
+  updateBar();
+})();
+</script>
+<!-- favorites-injected-end -->
+
+</body>
+</html>

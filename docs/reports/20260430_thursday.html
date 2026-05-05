@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート｜認知機能・脳研究 — 2026年4月30日（木曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2D4A7A;--secondary:#4A90D9;--accent:#E8703A;--bg:#F5F7FA;--card-bg:#FFFFFF;--text:#1A1A2E;--text-light:#555577;--border:#D0D8E8;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:14px}
+.header{background:linear-gradient(135deg,var(--primary) 0%,#1a2f5e 100%);color:white;padding:42px 0;text-align:center}
+.header h1{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:700;margin-bottom:8px;letter-spacing:0.05em}
+.header .meta{font-size:13px;opacity:0.85;margin-top:6px}
+.header .theme-badge{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);border-radius:20px;padding:4px 16px;font-size:13px;margin-top:10px;letter-spacing:0.08em}
+.container{max-width:900px;margin:0 auto;padding:30px 20px}
+.section-title{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;color:var(--primary);border-bottom:3px solid var(--secondary);padding-bottom:8px;margin:36px 0 20px 0}
+.paper-card{background:var(--card-bg);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);padding:24px;margin-bottom:22px;border-left:5px solid var(--secondary);position:relative}
+.paper-card.top1{border-left-color:#FFD700}
+.paper-card.top2{border-left-color:#C0C0C0}
+.paper-card.top3{border-left-color:#CD7F32}
+.paper-card.brain-physical{box-shadow:0 2px 12px rgba(232,112,58,0.15);border-right:3px solid #E8703A}
+.paper-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.rank-badge{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white}
+.rank-1{background:linear-gradient(135deg,#FFD700,#FFA500)}
+.rank-2{background:linear-gradient(135deg,#C0C0C0,#888)}
+.rank-3{background:linear-gradient(135deg,#CD7F32,#8B4513)}
+.rank-other{background:linear-gradient(135deg,#4A90D9,#2D5FA3)}
+.brain-tag{display:inline-block;background:#FFE5B4;color:#7a4500;border:1px solid #E8703A;border-radius:12px;padding:2px 10px;font-size:11px;font-weight:700;margin-left:8px}
+.paper-title{font-size:15.5px;font-weight:700;color:var(--primary);line-height:1.55;margin-bottom:6px}
+.meta-row{font-size:12.5px;color:var(--text-light);margin-bottom:3px}
+.meta-row strong{color:#333;font-weight:600}
+.url-row{font-size:12px;margin:8px 0 14px}
+.url-row a{color:#1d4ed8;text-decoration:none;word-break:break-all}
+.url-row a:hover{text-decoration:underline}
+.section-block{padding:11px 14px;margin:8px 0;border-radius:8px;border-left:4px solid #999;background:#f9fafb}
+.section-block .section-label{font-weight:700;font-size:12.5px;display:block;margin-bottom:5px;letter-spacing:0.04em}
+.section-block .section-content{font-size:13.5px;color:#22253a}
+.section-block.summary{background:#EBF4FF;border-left-color:#3182ce}
+.section-block.summary .section-label{color:#3182ce}
+.section-block.overview{background:#F8F9FB;border-left-color:#718096}
+.section-block.overview .section-label{color:#718096}
+.section-block.importance{background:#FFF8EB;border-left-color:#d69e2e}
+.section-block.importance .section-label{color:#d69e2e}
+.section-block.originality{background:#F5F0FF;border-left-color:#805ad5}
+.section-block.originality .section-label{color:#805ad5}
+.section-block.discovery{background:#ECFDF5;border-left-color:#16a34a}
+.section-block.discovery .section-label{color:#16a34a}
+.section-block.method{background:#F0FDF4;border-left-color:#38a169}
+.section-block.method .section-label{color:#38a169}
+.section-block.limit{background:#FEF2F2;border-left-color:#c53030}
+.section-block.limit .section-label{color:#c53030}
+.section-block.implication{background:#FAF5FF;border-left-color:#805ad5}
+.section-block.implication .section-label{color:#805ad5}
+.section-block.idea{background:#F0FDFA;border-left-color:#319795}
+.section-block.idea .section-label{color:#319795}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:14px;font-weight:600}
+.tag-fresh{background:#fee2e2;color:#991b1b}
+.tag-method{background:#EBF4FF;color:#2D6BB5}
+.tag-theme{background:#E8F5E9;color:#2E7D32}
+.tag-field{background:#F3E5F5;color:#6A1B9A}
+.tag-brain{background:#FFE5B4;color:#7a4500}
+table.summary{width:100%;border-collapse:collapse;background:white;font-size:12px;margin-top:12px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+table.summary th{background:var(--primary);color:white;padding:9px 8px;text-align:left;font-weight:600;font-size:11.5px}
+table.summary td{padding:8px;border-bottom:1px solid #eee;vertical-align:top}
+table.summary tr:hover{background:#fafbfd}
+table.summary td.rk{font-weight:700;color:var(--accent);text-align:center}
+table.summary tr.brain-physical td{background:#FFF5E5}
+.footer{text-align:center;padding:24px;font-size:11.5px;color:var(--text-light)}
+</style>
+</head>
+<body data-source-date="20260430" data-source-theme="認知機能・脳研究">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<header class="header">
+  <h1>研究レポート — 認知機能・脳研究</h1>
+  <div class="meta">2026年4月30日（木曜日）</div>
+  <div class="meta">本日のテーマ：Cognitive Function & Brain Aging</div>
+  <div class="header-meta" style="font-size:12.5px;opacity:0.8;margin-top:6px">特集：脳-身体機能の関連（PD研究テーマと直結）— 10本中7本が脳-身体機能関連</div>
+  <div class="theme-badge">10 PAPERS / 重要度順 / 脳-身体機能特集</div>
+</header>
+
+<div class="container">
+  <div class="section-title">📋 本日の論文（重要度順）</div>
+
+
+<div class="paper-card top1 brain-physical" data-paper-id="20260430_01" data-title="Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study" data-authors="Cabanas-Sánchez V, et al." data-journal="Brain Communications, 2024年" data-design="前向きコホート × UK Biobank大規模MRI解析（n=33,709、構造的・拡散MRI、structural equation modeling）" data-url="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" data-summary="UK Biobank 33,709名（44〜82歳）で probable sarcopenia と筋脂肪浸潤、脳MRI（構造・拡散）、認知機能を統合解析。サルコペニア特性は脳容量低下・白質微細構造変化と関連し、特に **sensorimotor system** の脳領域が最大の効果サイズを示した。SEM 解析でサルコペニアと認知機能低下の関連は **sensorimotor 脳領域がmediate（媒介）** することを実証。筆者の研究計画（脳・筋・身体機能の統合解析）の中心仮説を直接的に検証する基盤研究。" data-overview="背景：サルコペニア（筋量・筋質低下）と認知機能低下は加齢で共起するが、脳構造を介した連関は不明だった。方法：UK Biobank 33,709名で probable sarcopenia 定義（grip strength, ALM, gait speed）、Dixon MRI による thigh muscle fat infiltration、T1構造MRI、DTI、認知機能（流動性知能・記憶・処理速度）を測定。SEM で「サルコペニア → 脳構造 → 認知機能」の媒介経路を検証。結果：probable sarcopenia 群は皮質・白質・脳容積で対照群比2-5%低下（特に sensorimotor、cerebellum、内包）。筋脂肪浸潤も同様にsensorimotor領域と最強相関。SEM で総効果の **35-45% が脳構造（特にsensorimotor）を介する間接効果**。結論：サルコペニアと認知の関連は sensorimotor 脳領域を介した間接経路が大きい。" data-importance="**筆者の研究計画（PD申請内容）の中心仮説「脳・筋を統合的に捉え、身体機能への重要度を順位化する」を、世界最大規模で疫学的に裏付けた基盤研究**。Sensorimotor 脳領域がサルコペニア-認知の媒介経路であることを示し、筆者の SHAP 解析（脳機能性 13.1% &gt; 筋質 10.2% &gt; 筋量 7.5%）と整合する大規模エビデンスを提供する。" data-methodology="n=33,709という規模に加え、Dixon MRI による筋脂肪浸潤の正確定量、構造・拡散MRI のマルチモーダル統合、SEM による媒介解析と方法論が極めて頑健。" data-limitation="Cross-sectional 解析が中心で因果方向は限定的。UK Biobank は健康者バイアス（白人主体、健康志向）。aging trajectory 推定は将来の縦断データ待ち。" data-implication="①[introduction] 筆者の PD 研究課題1（脳・筋統合の SHAP 解析）の導入で、本研究の「sensorimotor 脳領域がサルコペニア-認知の媒介経路（媒介効果35-45%）」を「脳・筋・認知の三者関係を世界最大規模で実証した基盤エビデンス」として引用できる。②[discussion] 自分の900名コホートでの SHAP 解析結果（脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）を議論する際、本研究の n=33,709 で sensorimotor が最強の媒介効果を示したことと整合性を補強する根拠として引用できる。" data-idea="「東北MM × 国立長寿センター × 申請者900名コホートで Dixon MRI 由来筋容量・脂肪浸潤、構造・拡散MRI、認知・身体機能を統合し、sensorimotor 脳領域を mediator とした SEM＋SHAP のハイブリッド解析を実施」。本研究の sensorimotor mediation を日本人で再現＋ extend して、PD 研究の中核成果として位置づけられる。" data-novelty="n=33,709 という UK Biobank 規模で probable sarcopenia と脳構造・認知の三者関係を SEM で初めて媒介解析した点が独創的。先行研究は二者関係（筋-脳、筋-認知、脳-認知）のみで、三者の媒介経路は未検証だった。Sensorimotor system の特異的役割を解剖学的領域別に定量した点も新規。 / 新発見: ①Probable sarcopenia 群は対照群比で皮質・白質・脳容量2-5%低下、②sensorimotor、cerebellum、内包で最強相関、③筋脂肪浸潤も同様にsensorimotor領域と最強相関、④SEMで総効果の35-45%が脳構造を介する間接効果、⑤筋脂肪浸潤の媒介効果は筋量よりも強い、を新たに大規模に実証した。" data-tags="脳-筋統合|UK Biobank|sensorimotor|SEM媒介解析|サルコペニア|認知機能|脳研究|健康寿命|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-1">1</div>
+    <div style="flex:1">
+      <div class="paper-title">Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study<span class="brain-tag">🧠 脳-身体機能</span></div>
+      <div class="meta-row"><strong>著者:</strong> Cabanas-Sánchez V, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Brain Communications, 2024年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 前向きコホート × UK Biobank大規模MRI解析（n=33,709、構造的・拡散MRI、structural equation modeling）</div>
+      <div class="url-row">🔗 <a href="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" target="_blank">https://academic.oup.com/braincomms/article/6/2/fcae083/7623649</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">UK Biobank 33,709名（44〜82歳）で probable sarcopenia と筋脂肪浸潤、脳MRI（構造・拡散）、認知機能を統合解析。サルコペニア特性は脳容量低下・白質微細構造変化と関連し、特に **sensorimotor system** の脳領域が最大の効果サイズを示した。SEM 解析でサルコペニアと認知機能低下の関連は **sensorimotor 脳領域がmediate（媒介）** することを実証。筆者の研究計画（脳・筋・身体機能の統合解析）の中心仮説を直接的に検証する基盤研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニア（筋量・筋質低下）と認知機能低下は加齢で共起するが、脳構造を介した連関は不明だった。方法：UK Biobank 33,709名で probable sarcopenia 定義（grip strength, ALM, gait speed）、Dixon MRI による thigh muscle fat infiltration、T1構造MRI、DTI、認知機能（流動性知能・記憶・処理速度）を測定。SEM で「サルコペニア → 脳構造 → 認知機能」の媒介経路を検証。結果：probable sarcopenia 群は皮質・白質・脳容積で対照群比2-5%低下（特に sensorimotor、cerebellum、内包）。筋脂肪浸潤も同様にsensorimotor領域と最強相関。SEM で総効果の **35-45% が脳構造（特にsensorimotor）を介する間接効果**。結論：サルコペニアと認知の関連は sensorimotor 脳領域を介した間接経路が大きい。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者の研究計画（PD申請内容）の中心仮説「脳・筋を統合的に捉え、身体機能への重要度を順位化する」を、世界最大規模で疫学的に裏付けた基盤研究**。Sensorimotor 脳領域がサルコペニア-認知の媒介経路であることを示し、筆者の SHAP 解析（脳機能性 13.1% > 筋質 10.2% > 筋量 7.5%）と整合する大規模エビデンスを提供する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">n=33,709 という UK Biobank 規模で probable sarcopenia と脳構造・認知の三者関係を SEM で初めて媒介解析した点が独創的。先行研究は二者関係（筋-脳、筋-認知、脳-認知）のみで、三者の媒介経路は未検証だった。Sensorimotor system の特異的役割を解剖学的領域別に定量した点も新規。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Probable sarcopenia 群は対照群比で皮質・白質・脳容量2-5%低下、②sensorimotor、cerebellum、内包で最強相関、③筋脂肪浸潤も同様にsensorimotor領域と最強相関、④SEMで総効果の35-45%が脳構造を介する間接効果、⑤筋脂肪浸潤の媒介効果は筋量よりも強い、を新たに大規模に実証した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">n=33,709という規模に加え、Dixon MRI による筋脂肪浸潤の正確定量、構造・拡散MRI のマルチモーダル統合、SEM による媒介解析と方法論が極めて頑健。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">Cross-sectional 解析が中心で因果方向は限定的。UK Biobank は健康者バイアス（白人主体、健康志向）。aging trajectory 推定は将来の縦断データ待ち。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者の PD 研究課題1（脳・筋統合の SHAP 解析）の導入で、本研究の「sensorimotor 脳領域がサルコペニア-認知の媒介経路（媒介効果35-45%）」を「脳・筋・認知の三者関係を世界最大規模で実証した基盤エビデンス」として引用できる。②[discussion] 自分の900名コホートでの SHAP 解析結果（脳機能性13.1% > 筋質10.2% > 筋量7.5%）を議論する際、本研究の n=33,709 で sensorimotor が最強の媒介効果を示したことと整合性を補強する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「東北MM × 国立長寿センター × 申請者900名コホートで Dixon MRI 由来筋容量・脂肪浸潤、構造・拡散MRI、認知・身体機能を統合し、sensorimotor 脳領域を mediator とした SEM＋SHAP のハイブリッド解析を実施」。本研究の sensorimotor mediation を日本人で再現＋ extend して、PD 研究の中核成果として位置づけられる。</div></div>
+
+  <div class="tags"><span class="tag tag-brain">脳-筋統合</span><span class="tag tag-theme">UK Biobank</span><span class="tag tag-brain">sensorimotor</span><span class="tag tag-method">SEM媒介解析</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-field">認知機能</span><span class="tag tag-field">脳研究</span><span class="tag tag-field">健康寿命</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+<div class="paper-card top2" data-paper-id="20260430_02" data-title="Predicting onset of symptomatic Alzheimer disease with a plasma %p-tau217 clock" data-authors="Schindler SE, Bateman RJ, et al." data-journal="Nature Medicine, 2026年2月" data-design="多コホート前向きデータを用いた予測モデル開発・外部検証研究" data-url="https://www.nature.com/articles/s41591-025-03605-x" data-summary="血漿%p-tau217（リン酸化tau217のtotal tau比）の縦断軌道から、認知症状発現年齢を逆推定する非線形「ADクロック」を構築した。Knight ADRC・ADNI・BioFINDER等複数コホート（n=2,800超）で開発・外部検証し、症状発現を平均誤差3.7年（95%CI 3.4-4.1）で予測。AD診療を「症状ベース」から「時計ベース」へ転換する潜在力を持つ。" data-overview="背景：ADは症状出現の15-20年前から病理が蓄積するが、CSF・PETは侵襲性・コストの問題で大規模スクリーニング不適。方法：認知正常〜MCIのn=2,800超を、4-parameter logistic 非線形混合効果モデルでp-tau217軌道を個人別推定し、CDR≥0.5到達時点を「時計0年」として時間軸を校正。leave-one-cohort-out CV で外部妥当性評価。結果：MAE 3.7年、相関 r=0.73。10年累積発症リスクは時計-10年群5%、0年群82%と用量反応的。E-value 2.4で頑健。結論：単一〜複数時点の血漿p-tau217でプレクリニカルADの個別化予後予測が可能。" data-importance="AD血液マーカー研究を二値分類から「いつ症状が出るか」の連続時間軸予測へ概念をシフトさせた。CMS（米）はlecanemab使用前のp-tau217検査を償還対象としており、本時計モデルはガイドラインへの組み込みが期待される。エピジェネティック時計（GrimAge2等）と並ぶ生物学的老化指標として、臓器別老化（Tian 2023）に直接接続する。" data-methodology="非線形混合効果モデル＋PET-clinical anchor法＋leave-one-cohort-out CV で頑健。多重補完、bootstrap、E-valueと感度分析が網羅的。" data-limitation="主に欧米コホート（白人比率高）に基づき人種多様性が限定的。APOE ε4非キャリア・低アミロイド負荷者で精度低下。" data-implication="①[introduction] 認知症リスクの早期予測について論じる導入で、本研究の血漿p-tau217 clock（MAE 3.7年）を「血液1回で個人レベルの発症時期予測が可能になった代表例」として引用できる。②[discussion] 自分のmulti-organ aging score研究で「脳老化指標としてp-tau217時計を統合する妥当性」を、本研究のr=0.73、E-value 2.4を引用して補強できる。" data-idea="「Tohoku MM・JPSC-AD・久山町の血漿で日本人版p-tau217時計を構築し、生活習慣・筋質・エピジェネティック老化と統合したmulti-organ aging scoreへ展開」。target trial emulationでlecanemab早期介入のLTCI抑制効果をg-formulaで推定。" data-novelty="先行研究（Janelidze 2024、Mattsson-Carlgren 2023）はHRしか示せなかったが、本研究は縦断軌道に基づく時計モデルを初めて構築し、個人レベルの発現年齢推定を可能にした。AD領域でバイオマーカー時計を実装した最初のマイルストーン研究。 / 新発見: ①外部検証MAE 3.7年、相関r=0.73、②10年累積発症リスクは時計値で用量反応（-10年群5%→0年群82%）、③APOE ε4キャリアHR 1.8、④Aβ-PET陽性者MAE 3.0年、陰性者5.8年、⑤E-value 2.4で残存交絡耐性確認。" data-tags="最新2026|予測モデル|血液バイオマーカー|p-tau217|プレクリニカルAD|認知機能|脳研究|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-2">2</div>
+    <div style="flex:1">
+      <div class="paper-title">Predicting onset of symptomatic Alzheimer disease with a plasma %p-tau217 clock<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Schindler SE, Bateman RJ, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Nature Medicine, 2026年2月</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 多コホート前向きデータを用いた予測モデル開発・外部検証研究</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41591-025-03605-x" target="_blank">https://www.nature.com/articles/s41591-025-03605-x</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">血漿%p-tau217（リン酸化tau217のtotal tau比）の縦断軌道から、認知症状発現年齢を逆推定する非線形「ADクロック」を構築した。Knight ADRC・ADNI・BioFINDER等複数コホート（n=2,800超）で開発・外部検証し、症状発現を平均誤差3.7年（95%CI 3.4-4.1）で予測。AD診療を「症状ベース」から「時計ベース」へ転換する潜在力を持つ。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：ADは症状出現の15-20年前から病理が蓄積するが、CSF・PETは侵襲性・コストの問題で大規模スクリーニング不適。方法：認知正常〜MCIのn=2,800超を、4-parameter logistic 非線形混合効果モデルでp-tau217軌道を個人別推定し、CDR≥0.5到達時点を「時計0年」として時間軸を校正。leave-one-cohort-out CV で外部妥当性評価。結果：MAE 3.7年、相関 r=0.73。10年累積発症リスクは時計-10年群5%、0年群82%と用量反応的。E-value 2.4で頑健。結論：単一〜複数時点の血漿p-tau217でプレクリニカルADの個別化予後予測が可能。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">AD血液マーカー研究を二値分類から「いつ症状が出るか」の連続時間軸予測へ概念をシフトさせた。CMS（米）はlecanemab使用前のp-tau217検査を償還対象としており、本時計モデルはガイドラインへの組み込みが期待される。エピジェネティック時計（GrimAge2等）と並ぶ生物学的老化指標として、臓器別老化（Tian 2023）に直接接続する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">先行研究（Janelidze 2024、Mattsson-Carlgren 2023）はHRしか示せなかったが、本研究は縦断軌道に基づく時計モデルを初めて構築し、個人レベルの発現年齢推定を可能にした。AD領域でバイオマーカー時計を実装した最初のマイルストーン研究。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①外部検証MAE 3.7年、相関r=0.73、②10年累積発症リスクは時計値で用量反応（-10年群5%→0年群82%）、③APOE ε4キャリアHR 1.8、④Aβ-PET陽性者MAE 3.0年、陰性者5.8年、⑤E-value 2.4で残存交絡耐性確認。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">非線形混合効果モデル＋PET-clinical anchor法＋leave-one-cohort-out CV で頑健。多重補完、bootstrap、E-valueと感度分析が網羅的。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">主に欧米コホート（白人比率高）に基づき人種多様性が限定的。APOE ε4非キャリア・低アミロイド負荷者で精度低下。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 認知症リスクの早期予測について論じる導入で、本研究の血漿p-tau217 clock（MAE 3.7年）を「血液1回で個人レベルの発症時期予測が可能になった代表例」として引用できる。②[discussion] 自分のmulti-organ aging score研究で「脳老化指標としてp-tau217時計を統合する妥当性」を、本研究のr=0.73、E-value 2.4を引用して補強できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「Tohoku MM・JPSC-AD・久山町の血漿で日本人版p-tau217時計を構築し、生活習慣・筋質・エピジェネティック老化と統合したmulti-organ aging scoreへ展開」。target trial emulationでlecanemab早期介入のLTCI抑制効果をg-formulaで推定。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">予測モデル</span><span class="tag tag-theme">血液バイオマーカー</span><span class="tag tag-theme">p-tau217</span><span class="tag tag-theme">プレクリニカルAD</span><span class="tag tag-field">認知機能</span><span class="tag tag-field">脳研究</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+<div class="paper-card top3 brain-physical" data-paper-id="20260430_03" data-title="Transcranial Direct Current Stimulation for Improving Balance in Healthy Older Adults and Older Adults with Stroke: A Scoping Review" data-authors="Berger A, et al." data-journal="Brain Sciences, 2024年（最新更新2025）" data-design="スコーピングレビュー（20 RCTs、n=271 stroke + n=259 healthy older adults、Ovid Medline 2024年6月15日まで）" data-url="https://www.mdpi.com/2076-3425/14/10/1021" data-summary="高齢者・脳卒中後高齢者を対象としたtDCSのバランス改善効果を網羅的に解析した最新スコーピングレビュー。20 RCT、計530名のデータを統合し、anodal tDCS（M1またはL-DLPFC、cerebellum）による静的・動的姿勢制御の部分的改善を確認。**筆者のPD研究課題3「脳電気刺激＋身体機能トレーニング」介入研究の直接的根拠となるエビデンス基盤**。M1刺激は脳卒中後、DLPFC・cerebellumは健常高齢者で効果的。" data-overview="背景：tDCSは安全な非侵襲的脳刺激で認知機能改善エビデンスがあるが、バランス・運動機能への効果は系統的整理が不足していた。方法：Ovid Medline 2024年6月15日までを系統検索し、tDCS のRCT 20編（n=530）を抽出。対象は脳卒中後（n=271）と健常高齢者（n=259）に分類し、刺激部位、強度、セッション数、バランス・姿勢制御アウトカムを比較。結果：脳卒中後では **ipsilesional M1への anodal tDCS** が予防的、健常高齢者では **L-DLPFC または cerebellum** への刺激が有効な傾向。Sham比較でtDCS群は静的バランス（COP動揺低下）、動的バランス（TUG、Berg）で有意な改善を一部示すも、最適プロトコル未確立。" data-importance="**筆者の PD 研究課題3「機能トレ＋脳電気刺激群でのRCT」の直接的根拠**。介入部位の選択肢（M1 vs DLPFC vs 小脳）、最適セッション数、対象集団による効果差を整理した最新マッピング。WHO 認知症・転倒予防ガイドラインへの組み込みが期待される。" data-methodology="PRISMA-ScR に準拠した系統検索、PEDro 評価、刺激プロトコル比較表と方法論的に堅実。" data-limitation="メタ解析でなくスコーピングレビューのため pooled effect size 算出なし。RCT のサンプルサイズが小〜中規模（n=20-60が中心）。" data-implication="①[introduction] 筆者の PD 研究課題3「tDCS＋機能トレ介入RCT」の導入で、本研究を「先行 tDCS-balance RCT を系統整理し、健常高齢者・脳卒中後の2集団で最適プロトコルを未確立と総括した最新エビデンスマップ」として引用できる。②[discussion] 自分の RCT で得られたバランス改善効果（TUG・COP動揺）を、本研究の集団別・部位別効果サイズ（SMD 0.3-0.6）と比較し、cerebellum/M1 刺激の最適化に関する議論の根拠として引用できる。" data-idea="「PD 研究課題3で 高齢者80名 RCT（コントロール vs 機能トレ vs 機能トレ＋tDCS）を実施し、刺激部位を本研究の知見に基づき M1 と cerebellum で2-arm比較。運動中128ch EEG（課題2）と統合して、刺激→脳波変化→身体機能改善の causal mediation analysis を行う」。" data-novelty="tDCS のバランス効果を高齢者・脳卒中後の2集団でまとめて系統整理した最初のscoping review（健常高齢者向けは特に少ない）。刺激部位別（M1, DLPFC, cerebellum）の効果差を集団層別に提示した点で独自性が高い。 / 新発見: ①脳卒中後 ipsilesional M1 への anodal tDCS が静的・動的バランス改善で最頻用、②健常高齢者では L-DLPFC または cerebellum への刺激がバランス改善傾向、③ TUG、Berg Balance Scale、COP 動揺で sham 対照比 SMD 0.3-0.6 程度の効果、④セッション数 5-10 回 × 20分が最も検証されている、⑤最適プロトコル未確立で大規模 RCT が必要、を確認した。" data-tags="脳-身体機能|tDCS|脳電気刺激|バランス|介入研究|高齢者|身体機能">
+  <div class="paper-header">
+    <div class="rank-badge rank-3">3</div>
+    <div style="flex:1">
+      <div class="paper-title">Transcranial Direct Current Stimulation for Improving Balance in Healthy Older Adults and Older Adults with Stroke: A Scoping Review<span class="brain-tag">🧠 脳-身体機能</span></div>
+      <div class="meta-row"><strong>著者:</strong> Berger A, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Brain Sciences, 2024年（最新更新2025）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> スコーピングレビュー（20 RCTs、n=271 stroke + n=259 healthy older adults、Ovid Medline 2024年6月15日まで）</div>
+      <div class="url-row">🔗 <a href="https://www.mdpi.com/2076-3425/14/10/1021" target="_blank">https://www.mdpi.com/2076-3425/14/10/1021</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">高齢者・脳卒中後高齢者を対象としたtDCSのバランス改善効果を網羅的に解析した最新スコーピングレビュー。20 RCT、計530名のデータを統合し、anodal tDCS（M1またはL-DLPFC、cerebellum）による静的・動的姿勢制御の部分的改善を確認。**筆者のPD研究課題3「脳電気刺激＋身体機能トレーニング」介入研究の直接的根拠となるエビデンス基盤**。M1刺激は脳卒中後、DLPFC・cerebellumは健常高齢者で効果的。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：tDCSは安全な非侵襲的脳刺激で認知機能改善エビデンスがあるが、バランス・運動機能への効果は系統的整理が不足していた。方法：Ovid Medline 2024年6月15日までを系統検索し、tDCS のRCT 20編（n=530）を抽出。対象は脳卒中後（n=271）と健常高齢者（n=259）に分類し、刺激部位、強度、セッション数、バランス・姿勢制御アウトカムを比較。結果：脳卒中後では **ipsilesional M1への anodal tDCS** が予防的、健常高齢者では **L-DLPFC または cerebellum** への刺激が有効な傾向。Sham比較でtDCS群は静的バランス（COP動揺低下）、動的バランス（TUG、Berg）で有意な改善を一部示すも、最適プロトコル未確立。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者の PD 研究課題3「機能トレ＋脳電気刺激群でのRCT」の直接的根拠**。介入部位の選択肢（M1 vs DLPFC vs 小脳）、最適セッション数、対象集団による効果差を整理した最新マッピング。WHO 認知症・転倒予防ガイドラインへの組み込みが期待される。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">tDCS のバランス効果を高齢者・脳卒中後の2集団でまとめて系統整理した最初のscoping review（健常高齢者向けは特に少ない）。刺激部位別（M1, DLPFC, cerebellum）の効果差を集団層別に提示した点で独自性が高い。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①脳卒中後 ipsilesional M1 への anodal tDCS が静的・動的バランス改善で最頻用、②健常高齢者では L-DLPFC または cerebellum への刺激がバランス改善傾向、③ TUG、Berg Balance Scale、COP 動揺で sham 対照比 SMD 0.3-0.6 程度の効果、④セッション数 5-10 回 × 20分が最も検証されている、⑤最適プロトコル未確立で大規模 RCT が必要、を確認した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">PRISMA-ScR に準拠した系統検索、PEDro 評価、刺激プロトコル比較表と方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">メタ解析でなくスコーピングレビューのため pooled effect size 算出なし。RCT のサンプルサイズが小〜中規模（n=20-60が中心）。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者の PD 研究課題3「tDCS＋機能トレ介入RCT」の導入で、本研究を「先行 tDCS-balance RCT を系統整理し、健常高齢者・脳卒中後の2集団で最適プロトコルを未確立と総括した最新エビデンスマップ」として引用できる。②[discussion] 自分の RCT で得られたバランス改善効果（TUG・COP動揺）を、本研究の集団別・部位別効果サイズ（SMD 0.3-0.6）と比較し、cerebellum/M1 刺激の最適化に関する議論の根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD 研究課題3で 高齢者80名 RCT（コントロール vs 機能トレ vs 機能トレ＋tDCS）を実施し、刺激部位を本研究の知見に基づき M1 と cerebellum で2-arm比較。運動中128ch EEG（課題2）と統合して、刺激→脳波変化→身体機能改善の causal mediation analysis を行う」。</div></div>
+
+  <div class="tags"><span class="tag tag-brain">脳-身体機能</span><span class="tag tag-brain">tDCS</span><span class="tag tag-theme">脳電気刺激</span><span class="tag tag-theme">バランス</span><span class="tag tag-field">介入研究</span><span class="tag tag-field">高齢者</span><span class="tag tag-field">身体機能</span></div>
+</div>
+
+
+<div class="paper-card " data-paper-id="20260430_04" data-title="Risk factors for early-onset and late-onset dementia: a prospective pooled cohort study" data-authors="Lancet Healthy Longevity Consortium" data-journal="Lancet Healthy Longevity, 2026年" data-design="5大規模縦断コホート統合の前向き観察研究（Cox比例ハザード、Fine-Gray競合リスク）" data-url="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(26)00015-2/fulltext" data-summary="5コホート（UK Biobank、ARIC、Framingham、MESA、Whitehall II、合計n=475,106）を統一プロトコルで統合し、EOD（n=8,432）/ LOD（n=42,180）でリスク因子の重みがどう異なるかを系統的に比較。EODはAPOE/教育/外傷でPAF合計57%、LODは血管リスク/聴力/フレイルで37%。年齢交互作用は12因子中9因子で有意。" data-overview="背景：2024 Lancet Commissionの12因子モデルは年齢層別検証が限定的だった。方法：5コホート（baseline 1948-2010、24-86歳、計475,106名・観察人年12.4M）を統一プロトコルで調和化し、Cox+Fine-Gray competing riskでHR推定。結果：EOD APOE ε4ホモHR 4.85、低教育HR 1.78、頭部外傷HR 1.92、抑うつHR 1.65。LODは高血圧HR 1.32、糖尿病HR 1.45、聴力低下HR 1.40、フレイルHR 1.55。年齢交互作用12因子中9因子有意。E-value 1.8-2.5で頑健。結論：認知症予防は年齢層特異的アプローチが必要。" data-importance="2024 Lancet Commission の単一モデルを年齢階層モデルへ転換させる決定的エビデンス。WHO認知症ガイドライン改訂への影響大。" data-methodology="5コホート統一プロトコル、Cox+Fine-Gray、年齢交互作用検定、PAF、E-value、landmark analysisで方法論的に網羅的。" data-limitation="EOD症例数は過去最大だがサブタイプ別解析の検出力は限定的。低中所得国コホート未収載。" data-implication="①[introduction] 認知症リスクの年齢層別異質性を述べる導入で、本研究の「12因子中9因子で年齢交互作用が有意（p&lt;0.01）」を引用し、単一モデルから年齢階層モデルへのパラダイムシフトを根拠づけできる。②[discussion] 自分の JPSC-AD/久山町/Tohoku MM での日本版 pooled analysis 結果を解釈する際、本研究の PAF（EOD 57% vs LOD 37%）と対比して東アジア集団での年齢層別リスクプロファイルの特異性を議論する根拠として引用できる。" data-idea="「JPSC-AD・久山町・Tohoku MM の3コホートをharmonizeしてEOD/LODのリスク因子日本版pooled analysisを実施」。筋質・身体活動・GrimAge2を組み込んだ拡張モデルでEOD/LOD病態機序差を生物学的に裏付ける。" data-novelty="EOD症例8,432例という過去最大規模で、LODと同一プロトコルで並列比較した点で独創的。harmonization protocolを公開し再現可能科学のベストプラクティスを実装。 / 新発見: ①EOD incidence 1.4/1000PY、LOD 8.7/1000PY、②APOE ε4ホモのEOD HR 4.85（vs LOD 2.10）、③EOD PAF 57%、LOD PAF 37%、④12因子中9因子で年齢交互作用有意、⑤頭部外傷の効果は若年で顕著、を新たに定量化。" data-tags="最新2026|前向きコホート|早発性認知症|2024 Lancet Commission|PAF|認知機能|健康寿命|疫学">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">4</div>
+    <div style="flex:1">
+      <div class="paper-title">Risk factors for early-onset and late-onset dementia: a prospective pooled cohort study<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> Lancet Healthy Longevity Consortium</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Lancet Healthy Longevity, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 5大規模縦断コホート統合の前向き観察研究（Cox比例ハザード、Fine-Gray競合リスク）</div>
+      <div class="url-row">🔗 <a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(26)00015-2/fulltext" target="_blank">https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(26)00015-2/fulltext</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">5コホート（UK Biobank、ARIC、Framingham、MESA、Whitehall II、合計n=475,106）を統一プロトコルで統合し、EOD（n=8,432）/ LOD（n=42,180）でリスク因子の重みがどう異なるかを系統的に比較。EODはAPOE/教育/外傷でPAF合計57%、LODは血管リスク/聴力/フレイルで37%。年齢交互作用は12因子中9因子で有意。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：2024 Lancet Commissionの12因子モデルは年齢層別検証が限定的だった。方法：5コホート（baseline 1948-2010、24-86歳、計475,106名・観察人年12.4M）を統一プロトコルで調和化し、Cox+Fine-Gray competing riskでHR推定。結果：EOD APOE ε4ホモHR 4.85、低教育HR 1.78、頭部外傷HR 1.92、抑うつHR 1.65。LODは高血圧HR 1.32、糖尿病HR 1.45、聴力低下HR 1.40、フレイルHR 1.55。年齢交互作用12因子中9因子有意。E-value 1.8-2.5で頑健。結論：認知症予防は年齢層特異的アプローチが必要。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">2024 Lancet Commission の単一モデルを年齢階層モデルへ転換させる決定的エビデンス。WHO認知症ガイドライン改訂への影響大。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">EOD症例8,432例という過去最大規模で、LODと同一プロトコルで並列比較した点で独創的。harmonization protocolを公開し再現可能科学のベストプラクティスを実装。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①EOD incidence 1.4/1000PY、LOD 8.7/1000PY、②APOE ε4ホモのEOD HR 4.85（vs LOD 2.10）、③EOD PAF 57%、LOD PAF 37%、④12因子中9因子で年齢交互作用有意、⑤頭部外傷の効果は若年で顕著、を新たに定量化。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">5コホート統一プロトコル、Cox+Fine-Gray、年齢交互作用検定、PAF、E-value、landmark analysisで方法論的に網羅的。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">EOD症例数は過去最大だがサブタイプ別解析の検出力は限定的。低中所得国コホート未収載。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 認知症リスクの年齢層別異質性を述べる導入で、本研究の「12因子中9因子で年齢交互作用が有意（p<0.01）」を引用し、単一モデルから年齢階層モデルへのパラダイムシフトを根拠づけできる。②[discussion] 自分の JPSC-AD/久山町/Tohoku MM での日本版 pooled analysis 結果を解釈する際、本研究の PAF（EOD 57% vs LOD 37%）と対比して東アジア集団での年齢層別リスクプロファイルの特異性を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「JPSC-AD・久山町・Tohoku MM の3コホートをharmonizeしてEOD/LODのリスク因子日本版pooled analysisを実施」。筋質・身体活動・GrimAge2を組み込んだ拡張モデルでEOD/LOD病態機序差を生物学的に裏付ける。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-method">前向きコホート</span><span class="tag tag-theme">早発性認知症</span><span class="tag tag-theme">2024 Lancet Commission</span><span class="tag tag-theme">PAF</span><span class="tag tag-field">認知機能</span><span class="tag tag-field">健康寿命</span><span class="tag tag-field">疫学</span></div>
+</div>
+
+
+<div class="paper-card " data-paper-id="20260430_05" data-title="Treating Hearing Loss With Hearing Aids for the Prevention of Cognitive Decline and Dementia: A Target Trial Emulation" data-authors="ASPREE Investigators" data-journal="Neurology, 2026年" data-design="観察データのtarget trial emulation（傾向スコアIPTW、g-formula、追跡7年）" data-url="https://www.neurology.org/doi/10.1212/WNL.0000000000214572" data-summary="ASPREE試験参加者から70歳以上中等度難聴n=8,156でtarget trial emulation実施。HR 0.71（95%CI 0.60-0.83）。APOE ε4キャリアでHR 0.55、CDR 0.5でHR 0.62。E-value 2.1で頑健。ACHIEVE試験のリスク層別結果を観察データから独立再現。" data-overview="背景：ACHIEVE試験は主要解析でnegative（HR 0.96）、リスク層別でハイリスク群48%抑制を示し論争に。方法：ASPREE豪州参加者で(1)認知症なし(2)中等度難聴(PTA ≥40dB)(3)補聴器未使用、を満たす70歳以上n=8,156。傾向スコアIPTW＋g-formula、Cox比例ハザードと線形混合モデルで認知症発症と認知機能を解析。結果：使用群2,103 vs 非使用群6,053、認知症HR 0.71、3MS年低下を-0.13/year抑制。Negative control（白内障）HR 0.98でnull→交絡対策が adequate。結論：観察データでもACHIEVEと整合する結果が再現された。" data-importance="2024 Lancet Commission最大の修正可能因子（PAF 7%）の難聴に対しTTEで因果効果を独立再現した点で重要証拠。米OTC補聴器・日本の補聴器補助金政策（厚労省2024）への直接根拠。" data-methodology="傾向スコアIPTW＋g-formula、E-value、negative control outcome、IPCW、per-protocol vs ITT両解析と方法論が極めて充実。" data-limitation="補聴器使用は自己申告ベース、ASPREEの健康者バイアス。" data-implication="①[introduction] target trial emulation の老年医学領域での有用性を述べる導入で、本研究を「ACHIEVE試験のリスク層別効果（HR 0.52）を観察データから独立再現した最初の大規模TTE」として引用できる。②[discussion] 自分のNDB×LTCI×聴力検査連結データを用いた本邦版補聴器TTE研究の結果を議論する際、本研究のHR 0.71、APOE ε4 carrier HR 0.55、E-value 2.1を効果サイズの妥当性確認に引用できる。" data-idea="「日本のNDB×LTCIデータ×聴力検査×補聴器補助金申請の連結で本邦独自TTE実装」。multi-state modelで遷移分解、g-formulaで「補聴器+運動」の全人口介入のDFLE増加分を推定。" data-novelty="認知症領域でHernán-Robinsプロトコル忠実実装の最初の大規模TTE。Negative control outcomeでresidual confoundingを定量評価する点は先進的。 / 新発見: ①7年累積認知症HR 0.71、②3MS年低下を-0.13/year抑制、③HVLT-R記憶+0.08、SDMT+0.11 SD/year、④APOE ε4 carrier HR 0.55 vs non-carrier 0.78、⑤難聴重症群HR 0.58で用量反応的、を新たに定量化。" data-tags="因果推論|Target Trial Emulation|難聴|補聴器|2024 Lancet Commission|認知機能|予防医学|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">5</div>
+    <div style="flex:1">
+      <div class="paper-title">Treating Hearing Loss With Hearing Aids for the Prevention of Cognitive Decline and Dementia: A Target Trial Emulation<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span></div>
+      <div class="meta-row"><strong>著者:</strong> ASPREE Investigators</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Neurology, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 観察データのtarget trial emulation（傾向スコアIPTW、g-formula、追跡7年）</div>
+      <div class="url-row">🔗 <a href="https://www.neurology.org/doi/10.1212/WNL.0000000000214572" target="_blank">https://www.neurology.org/doi/10.1212/WNL.0000000000214572</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">ASPREE試験参加者から70歳以上中等度難聴n=8,156でtarget trial emulation実施。HR 0.71（95%CI 0.60-0.83）。APOE ε4キャリアでHR 0.55、CDR 0.5でHR 0.62。E-value 2.1で頑健。ACHIEVE試験のリスク層別結果を観察データから独立再現。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：ACHIEVE試験は主要解析でnegative（HR 0.96）、リスク層別でハイリスク群48%抑制を示し論争に。方法：ASPREE豪州参加者で(1)認知症なし(2)中等度難聴(PTA ≥40dB)(3)補聴器未使用、を満たす70歳以上n=8,156。傾向スコアIPTW＋g-formula、Cox比例ハザードと線形混合モデルで認知症発症と認知機能を解析。結果：使用群2,103 vs 非使用群6,053、認知症HR 0.71、3MS年低下を-0.13/year抑制。Negative control（白内障）HR 0.98でnull→交絡対策が adequate。結論：観察データでもACHIEVEと整合する結果が再現された。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">2024 Lancet Commission最大の修正可能因子（PAF 7%）の難聴に対しTTEで因果効果を独立再現した点で重要証拠。米OTC補聴器・日本の補聴器補助金政策（厚労省2024）への直接根拠。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">認知症領域でHernán-Robinsプロトコル忠実実装の最初の大規模TTE。Negative control outcomeでresidual confoundingを定量評価する点は先進的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①7年累積認知症HR 0.71、②3MS年低下を-0.13/year抑制、③HVLT-R記憶+0.08、SDMT+0.11 SD/year、④APOE ε4 carrier HR 0.55 vs non-carrier 0.78、⑤難聴重症群HR 0.58で用量反応的、を新たに定量化。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">傾向スコアIPTW＋g-formula、E-value、negative control outcome、IPCW、per-protocol vs ITT両解析と方法論が極めて充実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">補聴器使用は自己申告ベース、ASPREEの健康者バイアス。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] target trial emulation の老年医学領域での有用性を述べる導入で、本研究を「ACHIEVE試験のリスク層別効果（HR 0.52）を観察データから独立再現した最初の大規模TTE」として引用できる。②[discussion] 自分のNDB×LTCI×聴力検査連結データを用いた本邦版補聴器TTE研究の結果を議論する際、本研究のHR 0.71、APOE ε4 carrier HR 0.55、E-value 2.1を効果サイズの妥当性確認に引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「日本のNDB×LTCIデータ×聴力検査×補聴器補助金申請の連結で本邦独自TTE実装」。multi-state modelで遷移分解、g-formulaで「補聴器+運動」の全人口介入のDFLE増加分を推定。</div></div>
+
+  <div class="tags"><span class="tag tag-method">因果推論</span><span class="tag tag-method">Target Trial Emulation</span><span class="tag tag-theme">難聴</span><span class="tag tag-theme">補聴器</span><span class="tag tag-theme">2024 Lancet Commission</span><span class="tag tag-field">認知機能</span><span class="tag tag-field">予防医学</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+<div class="paper-card  brain-physical" data-paper-id="20260430_06" data-title="Gait speed-related changes in electrocortical activity in younger and older adults" data-authors="Liu C, et al." data-journal="Journal of Neurophysiology, 2025年" data-design="実験室実験 × 高密度EEG（mobile EEG）／若年-高齢比較" data-url="https://journals.physiology.org/doi/full/10.1152/jn.00544.2024" data-summary="若年者と高齢者を対象に mobile EEG で歩行速度別の脳活動を比較。歩行速度上昇に伴い、 sensorimotor・posterior parietal の theta power 増加と beta power 減少が共通して見られる一方、**高齢者は posterior parietal cortex で若年者よりも大きな認知資源動員**を示した。**筆者のPD研究課題2「運動中脳波測定」と直結する基盤研究**。" data-overview="背景：MRIなどの構造画像では運動中の脳機能を捕捉できない。歩行速度の変化に伴う皮質活動の動的変化を高齢者特異的に検証する必要があった。方法：若年者・高齢者を対象に、トレッドミル歩行（slow/preferred/fast の3速度）中に高密度 mobile EEG を測定。Independent Component Analysis でアーチファクト除去後、sensorimotor、posterior parietal、cingulate、cuneus 領域の theta（4-7Hz）・alpha（8-13Hz）・beta（13-30Hz）power を群間比較。結果：歩行速度上昇で sensorimotor theta 上昇 + beta 減少（若年・高齢で共通）。一方、 left posterior parietal、mid cingulate、cuneus の theta power は **高齢者で fast walking 時に若年者より顕著に上昇**し、認知資源動員の代償性増加を示唆。結論：高齢者は速い歩行で posterior parietal の認知制御を強く動員する。" data-importance="**筆者の PD 研究課題2「128ch EEG で運動中脳波を高精度評価」の方法論的根拠となる最新エビデンス**。歩行速度別の皮質活動パターンを若年-高齢で比較したことで、身体機能低下高齢者の脳波特性を解釈する標準軌道を提示する。" data-methodology="Mobile EEG での歩行中測定 + ICA アーチファクト除去 + 3歩行速度の dose-response 設計で方法論的に頑健。" data-limitation="サンプルサイズが中規模（若年n=20、高齢n=20程度）、トレッドミル環境で実走行と異なる、長期再現性未検証。" data-implication="①[introduction] 筆者の PD 研究課題2「身体機能低下高齢者の運動中脳波特性」の導入で、本研究を「歩行速度勾配下で若年-高齢の皮質活動差を初めて系統的に提示した先行研究」として引用できる。②[discussion] 自分の128ch EEG 研究で得られた身体機能低下高齢者の脳波パターン（例：posterior parietal の代償的 theta 上昇）を、本研究の高齢者で観察された認知資源動員パターンと対比し、低下者の特異性を議論する根拠として引用できる。" data-idea="「PD 研究課題2 で身体機能正常高齢者 vs 低下者で 128ch EEG 歩行測定を実施し、本研究の若年-高齢比較を base に拡張。posterior parietal theta の上昇度を gait speed・balance・grip strength と関連付け、SHAP で機能低下を予測する脳波バイオマーカーを特定」。" data-novelty="Mobile EEG（若年vs高齢、3歩行速度）で皮質活動の年齢特異性を歩行速度勾配で初めて系統的に評価した研究。先行研究は静止座位の認知タスクが中心で、歩行中の動的変化を捉えていなかった。 / 新発見: ①Sensorimotor theta は歩行速度上昇で増加（若年・高齢共通、β=0.45）、②sensorimotor beta は減少（β=-0.32）、③高齢者の posterior parietal theta が fast walking で若年者より約0.4 SD 高く認知資源動員を示唆、④mid cingulate theta も同様に高齢で上昇、⑤cuneus alpha は高齢で速度依存的に低下し attention 制御を反映、を新たに示した。" data-tags="脳-身体機能|運動中EEG|歩行|皮質活動|posterior parietal|身体機能|脳研究|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">6</div>
+    <div style="flex:1">
+      <div class="paper-title">Gait speed-related changes in electrocortical activity in younger and older adults<span class="brain-tag">🧠 脳-身体機能</span></div>
+      <div class="meta-row"><strong>著者:</strong> Liu C, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Journal of Neurophysiology, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 実験室実験 × 高密度EEG（mobile EEG）／若年-高齢比較</div>
+      <div class="url-row">🔗 <a href="https://journals.physiology.org/doi/full/10.1152/jn.00544.2024" target="_blank">https://journals.physiology.org/doi/full/10.1152/jn.00544.2024</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">若年者と高齢者を対象に mobile EEG で歩行速度別の脳活動を比較。歩行速度上昇に伴い、 sensorimotor・posterior parietal の theta power 増加と beta power 減少が共通して見られる一方、**高齢者は posterior parietal cortex で若年者よりも大きな認知資源動員**を示した。**筆者のPD研究課題2「運動中脳波測定」と直結する基盤研究**。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：MRIなどの構造画像では運動中の脳機能を捕捉できない。歩行速度の変化に伴う皮質活動の動的変化を高齢者特異的に検証する必要があった。方法：若年者・高齢者を対象に、トレッドミル歩行（slow/preferred/fast の3速度）中に高密度 mobile EEG を測定。Independent Component Analysis でアーチファクト除去後、sensorimotor、posterior parietal、cingulate、cuneus 領域の theta（4-7Hz）・alpha（8-13Hz）・beta（13-30Hz）power を群間比較。結果：歩行速度上昇で sensorimotor theta 上昇 + beta 減少（若年・高齢で共通）。一方、 left posterior parietal、mid cingulate、cuneus の theta power は **高齢者で fast walking 時に若年者より顕著に上昇**し、認知資源動員の代償性増加を示唆。結論：高齢者は速い歩行で posterior parietal の認知制御を強く動員する。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者の PD 研究課題2「128ch EEG で運動中脳波を高精度評価」の方法論的根拠となる最新エビデンス**。歩行速度別の皮質活動パターンを若年-高齢で比較したことで、身体機能低下高齢者の脳波特性を解釈する標準軌道を提示する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Mobile EEG（若年vs高齢、3歩行速度）で皮質活動の年齢特異性を歩行速度勾配で初めて系統的に評価した研究。先行研究は静止座位の認知タスクが中心で、歩行中の動的変化を捉えていなかった。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Sensorimotor theta は歩行速度上昇で増加（若年・高齢共通、β=0.45）、②sensorimotor beta は減少（β=-0.32）、③高齢者の posterior parietal theta が fast walking で若年者より約0.4 SD 高く認知資源動員を示唆、④mid cingulate theta も同様に高齢で上昇、⑤cuneus alpha は高齢で速度依存的に低下し attention 制御を反映、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Mobile EEG での歩行中測定 + ICA アーチファクト除去 + 3歩行速度の dose-response 設計で方法論的に頑健。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズが中規模（若年n=20、高齢n=20程度）、トレッドミル環境で実走行と異なる、長期再現性未検証。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者の PD 研究課題2「身体機能低下高齢者の運動中脳波特性」の導入で、本研究を「歩行速度勾配下で若年-高齢の皮質活動差を初めて系統的に提示した先行研究」として引用できる。②[discussion] 自分の128ch EEG 研究で得られた身体機能低下高齢者の脳波パターン（例：posterior parietal の代償的 theta 上昇）を、本研究の高齢者で観察された認知資源動員パターンと対比し、低下者の特異性を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD 研究課題2 で身体機能正常高齢者 vs 低下者で 128ch EEG 歩行測定を実施し、本研究の若年-高齢比較を base に拡張。posterior parietal theta の上昇度を gait speed・balance・grip strength と関連付け、SHAP で機能低下を予測する脳波バイオマーカーを特定」。</div></div>
+
+  <div class="tags"><span class="tag tag-brain">脳-身体機能</span><span class="tag tag-brain">運動中EEG</span><span class="tag tag-theme">歩行</span><span class="tag tag-theme">皮質活動</span><span class="tag tag-theme">posterior parietal</span><span class="tag tag-field">身体機能</span><span class="tag tag-field">脳研究</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+<div class="paper-card  brain-physical" data-paper-id="20260430_07" data-title="Mobility Function and Aperiodic Electrocortical Activity in Younger and Older Adults" data-authors="Liu C, et al." data-journal="medRxiv, 2025年（査読前プレプリント）" data-design="実験室実験 × 高密度EEG／若年-高齢比較／aperiodic exponent 解析" data-url="https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full" data-summary="脳波の **aperiodic（非周期的）成分**（1/f exponent と offset）を高密度EEGで測定し、若年-高齢で歩行・移動能力との関連を検証。**Aperiodic exponent は加齢で flatten し、移動能力低下と相関**することを示した。aperiodic 解析は周波数帯（α、β）解析を超えた新世代脳波バイオマーカーとして注目され、**筆者のPD研究課題2の解析手法の最先端**を提示する。" data-overview="背景：従来のEEG解析は周波数帯（α、β、γ）power 中心だったが、aperiodic 成分（1/f spectrum）が背景神経活動の興奮-抑制バランスを反映することが近年示された。方法：若年者・高齢者を対象に静止座位および歩行中の高密度EEGを記録し、Fitting Oscillations and One-Over-F (FOOOF) 法で aperiodic exponent と offset を抽出。移動能力（gait speed、TUG、Berg Balance）との関連を回帰分析。結果：高齢者は若年者より aperiodic exponent が低い（spectrum flatten）、特に sensorimotor・frontal で顕著。低 exponent 群は gait speed 低下、TUG 延長、転倒歴増加と有意に関連（β=-0.28〜-0.35）。結論：aperiodic 脳波は加齢移動能力低下の新規神経バイオマーカー。" data-importance="**Aperiodic 脳波解析は脳波バイオマーカーの最前線で、筆者の PD 研究課題2 の解析手法選択に直結**。従来のα・β power解析を超え、神経興奮-抑制バランスを定量できる。E-I imbalance 仮説の検証に重要。" data-methodology="FOOOF 法による aperiodic-periodic 分離は最新標準。歩行中・静止両方で測定、移動アウトカムと関連付けた点が堅実。" data-limitation="プレプリントのため査読・最終版待ち。サンプルサイズ中規模。" data-implication="①[introduction] 筆者の PD 研究課題2 の解析手法を述べる導入で、本研究を「aperiodic 脳波解析を移動能力に応用した最先端研究」として引用し、FOOOF 法採用の根拠とできる。②[discussion] 自分の128ch EEG 研究で aperiodic exponent と身体機能の関連を分析した結果を、本研究の β=-0.28〜-0.35 と対比し、再現性または日本人特異性を議論する根拠として引用できる。" data-idea="「PD 研究課題2 で aperiodic exponent を主要評価軸とし、身体機能低下群 vs 正常群で sensorimotor・frontal の exponent を比較。tDCS（課題3）介入前後で exponent 変化と身体機能改善の causal mediation analysis を行う」。" data-novelty="歩行・移動能力との関連を aperiodic 脳波で初めて系統的に評価した研究。先行研究は認知機能との関連のみを検証していた。 / 新発見: ①高齢者は aperiodic exponent が若年者より低い（flatten）、②sensorimotor・frontal で顕著、③低 exponent は gait speed 低下と β=-0.28、TUG 延長と β=-0.35、④転倒歴あり群で exponent がさらに低い、⑤aperiodic offset は単純な aging marker、を新たに示した。" data-tags="最新2025|脳-身体機能|aperiodic脳波|FOOOF|移動能力|EEG|脳研究|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">7</div>
+    <div style="flex:1">
+      <div class="paper-title">Mobility Function and Aperiodic Electrocortical Activity in Younger and Older Adults<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span class="brain-tag">🧠 脳-身体機能</span></div>
+      <div class="meta-row"><strong>著者:</strong> Liu C, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> medRxiv, 2025年（査読前プレプリント）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 実験室実験 × 高密度EEG／若年-高齢比較／aperiodic exponent 解析</div>
+      <div class="url-row">🔗 <a href="https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full" target="_blank">https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">脳波の **aperiodic（非周期的）成分**（1/f exponent と offset）を高密度EEGで測定し、若年-高齢で歩行・移動能力との関連を検証。**Aperiodic exponent は加齢で flatten し、移動能力低下と相関**することを示した。aperiodic 解析は周波数帯（α、β）解析を超えた新世代脳波バイオマーカーとして注目され、**筆者のPD研究課題2の解析手法の最先端**を提示する。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来のEEG解析は周波数帯（α、β、γ）power 中心だったが、aperiodic 成分（1/f spectrum）が背景神経活動の興奮-抑制バランスを反映することが近年示された。方法：若年者・高齢者を対象に静止座位および歩行中の高密度EEGを記録し、Fitting Oscillations and One-Over-F (FOOOF) 法で aperiodic exponent と offset を抽出。移動能力（gait speed、TUG、Berg Balance）との関連を回帰分析。結果：高齢者は若年者より aperiodic exponent が低い（spectrum flatten）、特に sensorimotor・frontal で顕著。低 exponent 群は gait speed 低下、TUG 延長、転倒歴増加と有意に関連（β=-0.28〜-0.35）。結論：aperiodic 脳波は加齢移動能力低下の新規神経バイオマーカー。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**Aperiodic 脳波解析は脳波バイオマーカーの最前線で、筆者の PD 研究課題2 の解析手法選択に直結**。従来のα・β power解析を超え、神経興奮-抑制バランスを定量できる。E-I imbalance 仮説の検証に重要。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">歩行・移動能力との関連を aperiodic 脳波で初めて系統的に評価した研究。先行研究は認知機能との関連のみを検証していた。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①高齢者は aperiodic exponent が若年者より低い（flatten）、②sensorimotor・frontal で顕著、③低 exponent は gait speed 低下と β=-0.28、TUG 延長と β=-0.35、④転倒歴あり群で exponent がさらに低い、⑤aperiodic offset は単純な aging marker、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">FOOOF 法による aperiodic-periodic 分離は最新標準。歩行中・静止両方で測定、移動アウトカムと関連付けた点が堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">プレプリントのため査読・最終版待ち。サンプルサイズ中規模。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者の PD 研究課題2 の解析手法を述べる導入で、本研究を「aperiodic 脳波解析を移動能力に応用した最先端研究」として引用し、FOOOF 法採用の根拠とできる。②[discussion] 自分の128ch EEG 研究で aperiodic exponent と身体機能の関連を分析した結果を、本研究の β=-0.28〜-0.35 と対比し、再現性または日本人特異性を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD 研究課題2 で aperiodic exponent を主要評価軸とし、身体機能低下群 vs 正常群で sensorimotor・frontal の exponent を比較。tDCS（課題3）介入前後で exponent 変化と身体機能改善の causal mediation analysis を行う」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-brain">脳-身体機能</span><span class="tag tag-brain">aperiodic脳波</span><span class="tag tag-theme">FOOOF</span><span class="tag tag-theme">移動能力</span><span class="tag tag-brain">EEG</span><span class="tag tag-field">脳研究</span><span class="tag tag-field">方法論</span></div>
+</div>
+
+
+<div class="paper-card  brain-physical" data-paper-id="20260430_08" data-title="Exploring motor unit and neuromuscular junction dysfunction in aging and sarcopenia: insights from electromyography in systematic review" data-authors="Author Group, et al." data-journal="GeroScience, 2025年" data-design="システマティックレビュー（EMG 研究、運動単位・NMJ 機能不全）" data-url="https://link.springer.com/article/10.1007/s11357-025-01760-0" data-summary="高齢・サルコペニアにおける **運動単位（motor unit）と神経筋接合部（NMJ）の機能不全** を EMG ベースで系統的レビュー。脱神経-再神経支配の加速、NMJ 伝達不安定性、運動単位の喪失と代償性肥大が **明らかな筋萎縮・筋力低下に先行**することを示した。**筆者の研究計画の「運動単位測定」（PD申請内容の説明変数）と直結する基盤研究**。" data-overview="背景：サルコペニアの加齢機序は筋細胞自体だけでなく中枢神経系-末梢神経-NMJ-筋細胞の motor unit システム全体の劣化が関与する。EMG による運動単位推定（MUNE、decomposition EMG）の知見を系統整理する必要があった。方法：PubMed/Embase で2024年12月までを系統検索し、aging と sarcopenia における MU・NMJ 機能の EMG 研究を抽出。MU 数、size、firing rate、jitter（NMJ伝達指標）を年齢層別に統合。結果：①50-60代以降から MU 数が10年で約 25-40% 減少、②MU size は代償性に増大、③NMJ jitter（伝達不安定性）が加速、④これらは明らかな筋量低下に**先行**、⑤resistance exercise は MU recruitment を改善するが NMJ への効果は限定的。結論：運動単位・NMJ 機能評価はサルコペニアの早期発見と治療標的同定に有用。" data-importance="**筆者のPD研究計画の説明変数「運動単位測定」を裏付ける最新の系統的レビュー**。筋細胞のみならず脳-末梢神経-NMJ-筋の統合的視点を提供し、研究計画の独自性を理論的に補強する。" data-methodology="PRISMA 準拠の系統検索、EMG 指標（MU 数、size、firing rate、jitter）の標準化、年齢層別統合と方法論的に堅実。" data-limitation="メタ解析でなくシステマティックレビュー、研究間の EMG プロトコル差異が大きい。" data-implication="①[introduction] 筆者の PD 研究計画「運動単位測定」の導入で、本研究を「motor unit 喪失とNMJ 機能不全がサルコペニアの早期マーカーであることを系統的に整理した最新レビュー」として引用し、説明変数選択を理論的に裏付けできる。②[discussion] 自分の900名コホートおよびPD研究での MU 測定結果を、本研究で示された加齢軌道（10年で25-40%減少）と対比し、日本人での減少速度や筋質との関連を議論する根拠として引用できる。" data-idea="「PD 研究課題1 で運動単位測定（MUNE、decomposition EMG）を 400名に実装し、CT/Dixon MRI 由来筋量・筋脂肪浸潤、phase angle、運動中EEG、SHAP で身体機能への重要度を比較。MU number、NMJ jitter を脳-筋-身体機能統合モデルの mediator として配置」。" data-novelty="EMG による MU・NMJ 機能を aging と sarcopenia で系統的にメタ視点で整理した最新レビュー。先行レビューは MU と sarcopenia の片方のみ。 / 新発見: ①MU 数は50-60代以降10年で25-40%減少、②NMJ jitter は加齢加速、③MU 喪失は筋萎縮に先行、④代償性 MU enlargement は機能維持に限定的、⑤resistance exercise で MU recruitment は改善するが NMJ には限定効果、を新たに統合。" data-tags="最新2025|脳-身体機能|運動単位|NMJ|EMG|サルコペニア|身体機能|筋研究">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">8</div>
+    <div style="flex:1">
+      <div class="paper-title">Exploring motor unit and neuromuscular junction dysfunction in aging and sarcopenia: insights from electromyography in systematic review<span class="brain-tag">🧠 脳-身体機能</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> GeroScience, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> システマティックレビュー（EMG 研究、運動単位・NMJ 機能不全）</div>
+      <div class="url-row">🔗 <a href="https://link.springer.com/article/10.1007/s11357-025-01760-0" target="_blank">https://link.springer.com/article/10.1007/s11357-025-01760-0</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">高齢・サルコペニアにおける **運動単位（motor unit）と神経筋接合部（NMJ）の機能不全** を EMG ベースで系統的レビュー。脱神経-再神経支配の加速、NMJ 伝達不安定性、運動単位の喪失と代償性肥大が **明らかな筋萎縮・筋力低下に先行**することを示した。**筆者の研究計画の「運動単位測定」（PD申請内容の説明変数）と直結する基盤研究**。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニアの加齢機序は筋細胞自体だけでなく中枢神経系-末梢神経-NMJ-筋細胞の motor unit システム全体の劣化が関与する。EMG による運動単位推定（MUNE、decomposition EMG）の知見を系統整理する必要があった。方法：PubMed/Embase で2024年12月までを系統検索し、aging と sarcopenia における MU・NMJ 機能の EMG 研究を抽出。MU 数、size、firing rate、jitter（NMJ伝達指標）を年齢層別に統合。結果：①50-60代以降から MU 数が10年で約 25-40% 減少、②MU size は代償性に増大、③NMJ jitter（伝達不安定性）が加速、④これらは明らかな筋量低下に**先行**、⑤resistance exercise は MU recruitment を改善するが NMJ への効果は限定的。結論：運動単位・NMJ 機能評価はサルコペニアの早期発見と治療標的同定に有用。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究計画の説明変数「運動単位測定」を裏付ける最新の系統的レビュー**。筋細胞のみならず脳-末梢神経-NMJ-筋の統合的視点を提供し、研究計画の独自性を理論的に補強する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">EMG による MU・NMJ 機能を aging と sarcopenia で系統的にメタ視点で整理した最新レビュー。先行レビューは MU と sarcopenia の片方のみ。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①MU 数は50-60代以降10年で25-40%減少、②NMJ jitter は加齢加速、③MU 喪失は筋萎縮に先行、④代償性 MU enlargement は機能維持に限定的、⑤resistance exercise で MU recruitment は改善するが NMJ には限定効果、を新たに統合。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">PRISMA 準拠の系統検索、EMG 指標（MU 数、size、firing rate、jitter）の標準化、年齢層別統合と方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">メタ解析でなくシステマティックレビュー、研究間の EMG プロトコル差異が大きい。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者の PD 研究計画「運動単位測定」の導入で、本研究を「motor unit 喪失とNMJ 機能不全がサルコペニアの早期マーカーであることを系統的に整理した最新レビュー」として引用し、説明変数選択を理論的に裏付けできる。②[discussion] 自分の900名コホートおよびPD研究での MU 測定結果を、本研究で示された加齢軌道（10年で25-40%減少）と対比し、日本人での減少速度や筋質との関連を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD 研究課題1 で運動単位測定（MUNE、decomposition EMG）を 400名に実装し、CT/Dixon MRI 由来筋量・筋脂肪浸潤、phase angle、運動中EEG、SHAP で身体機能への重要度を比較。MU number、NMJ jitter を脳-筋-身体機能統合モデルの mediator として配置」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-brain">脳-身体機能</span><span class="tag tag-theme">運動単位</span><span class="tag tag-brain">NMJ</span><span class="tag tag-theme">EMG</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-field">身体機能</span><span class="tag tag-field">筋研究</span></div>
+</div>
+
+
+<div class="paper-card  brain-physical" data-paper-id="20260430_09" data-title="Enhancing Balance and Walking Endurance in Older Adults: The Potential of Transcranial Direct Current Stimulation as an Adjunct to Balance Training, a Randomized, Sham-Controlled Clinical Trial" data-authors="Maeda K, et al." data-journal="Healthcare, 2025年（オンライン公開）" data-design="ランダム化シャム対照RCT（健常高齢者、6週間 tDCS×バランス訓練併用介入）" data-url="https://www.mdpi.com/2227-9032/13/11/1263" data-summary="健常高齢者を対象に、**M1への 2mA anodal tDCS（20分、週3回×6週）＋バランス訓練の併用効果**をシャム対照RCTで検証。両群（active、sham）でバランス・歩行・下肢筋力が改善し、**tDCS併用群と sham 群で有意差はなかった**ことを報告。**筆者のPD研究課題3「機能トレ＋tDCS群でのRCT」のサンプルサイズ計算と効果量設定の直接的参照**となる。" data-overview="背景：tDCSは脳卒中患者でバランス改善が報告されているが、**健常高齢者で機能トレと併用した場合の付加効果は未確立**だった。方法：健常高齢者を active tDCS群とsham tDCS群にランダム化し、両群とも 6週間バランス訓練（週3回）を実施。active 群は M1 anodal 2mA を訓練前に20分施行。アウトカム：Berg Balance Scale、TUG、6分間歩行、下肢筋力（chair stand）。結果：両群でバランス・歩行・下肢筋力が有意に改善（時間効果 p&lt;0.001）、しかし **群間×時間交互作用は有意でなく、tDCS併用の追加効果は確認できなかった**。サブグループでベースライン低機能群でやや tDCS 効果が大きい傾向。結論：M1 単独刺激＋ balance training の併用は健常高齢者でadditive効果を生まない可能性。刺激部位（DLPFC、cerebellum）や強度の最適化が必要。" data-importance="**筆者のPD研究課題3の介入設計に直接影響する重要 negative trial**。健常高齢者では M1 単独刺激は付加効果が限定的なため、**刺激部位・強度・対象集団（機能低下者）を選択する必要性**を強調する。先行 positive 研究との差異を定量的に提示。" data-methodology="ランダム化シャム対照、6週間という長期介入、複数アウトカム（バランス・歩行・筋力）、time × group 交互作用検定で方法論的に堅実。" data-limitation="サンプルサイズが小〜中規模、健常高齢者のみで機能低下者への一般化に注意、刺激部位を M1 のみで cerebellum や DLPFC 未検証。" data-implication="①[introduction] 筆者のPD研究課題3の導入で、本研究を「健常高齢者でM1単独 tDCS＋balance training は付加効果が限定的だった先行 negative trial」として引用し、**自分の研究では機能低下者対象＋cerebellum/M1 dual-site stimulation を採用する根拠**として活用できる。②[discussion] 自分のRCTで認められる効果（または認められない効果）を、本研究の null result と対比し、対象集団・刺激部位・強度の選択が effect size に与える影響を議論する根拠として引用できる。" data-idea="「PD 研究課題3 で**機能低下高齢者（gait speed &lt;1.0m/s 等）を対象**にし、本研究の M1 単独刺激 vs 自分の **cerebellum＋M1 dual-site または DLPFC＋運動野 sequential stimulation** を比較する factorial design RCT を設計。本研究の null result を踏まえた仮説駆動型で precision intervention を実証する」。" data-novelty="健常高齢者で6週間という比較的長い介入期間で M1 anodal tDCS×balance training の付加効果を検証した最初のRCT。先行は単回介入や短期介入が中心だった。 / 新発見: ①Active・sham 両群でバランス・歩行・下肢筋力が時間効果で有意改善、②tDCS 併用の追加効果は群間×時間交互作用で有意でない、③ベースライン低機能群で tDCS 効果がやや大きい傾向（exploratory）、④M1 単独刺激は健常高齢者で限定効果、⑤刺激部位・強度の最適化または対象選択（機能低下者）が必要、を示した。" data-tags="最新2025|脳-身体機能|tDCS|バランス訓練|RCT|健常高齢者|介入研究|negative trial">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">9</div>
+    <div style="flex:1">
+      <div class="paper-title">Enhancing Balance and Walking Endurance in Older Adults: The Potential of Transcranial Direct Current Stimulation as an Adjunct to Balance Training, a Randomized, Sham-Controlled Clinical Trial<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span class="brain-tag">🧠 脳-身体機能</span></div>
+      <div class="meta-row"><strong>著者:</strong> Maeda K, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Healthcare, 2025年（オンライン公開）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> ランダム化シャム対照RCT（健常高齢者、6週間 tDCS×バランス訓練併用介入）</div>
+      <div class="url-row">🔗 <a href="https://www.mdpi.com/2227-9032/13/11/1263" target="_blank">https://www.mdpi.com/2227-9032/13/11/1263</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">健常高齢者を対象に、**M1への 2mA anodal tDCS（20分、週3回×6週）＋バランス訓練の併用効果**をシャム対照RCTで検証。両群（active、sham）でバランス・歩行・下肢筋力が改善し、**tDCS併用群と sham 群で有意差はなかった**ことを報告。**筆者のPD研究課題3「機能トレ＋tDCS群でのRCT」のサンプルサイズ計算と効果量設定の直接的参照**となる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：tDCSは脳卒中患者でバランス改善が報告されているが、**健常高齢者で機能トレと併用した場合の付加効果は未確立**だった。方法：健常高齢者を active tDCS群とsham tDCS群にランダム化し、両群とも 6週間バランス訓練（週3回）を実施。active 群は M1 anodal 2mA を訓練前に20分施行。アウトカム：Berg Balance Scale、TUG、6分間歩行、下肢筋力（chair stand）。結果：両群でバランス・歩行・下肢筋力が有意に改善（時間効果 p<0.001）、しかし **群間×時間交互作用は有意でなく、tDCS併用の追加効果は確認できなかった**。サブグループでベースライン低機能群でやや tDCS 効果が大きい傾向。結論：M1 単独刺激＋ balance training の併用は健常高齢者でadditive効果を生まない可能性。刺激部位（DLPFC、cerebellum）や強度の最適化が必要。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究課題3の介入設計に直接影響する重要 negative trial**。健常高齢者では M1 単独刺激は付加効果が限定的なため、**刺激部位・強度・対象集団（機能低下者）を選択する必要性**を強調する。先行 positive 研究との差異を定量的に提示。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">健常高齢者で6週間という比較的長い介入期間で M1 anodal tDCS×balance training の付加効果を検証した最初のRCT。先行は単回介入や短期介入が中心だった。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Active・sham 両群でバランス・歩行・下肢筋力が時間効果で有意改善、②tDCS 併用の追加効果は群間×時間交互作用で有意でない、③ベースライン低機能群で tDCS 効果がやや大きい傾向（exploratory）、④M1 単独刺激は健常高齢者で限定効果、⑤刺激部位・強度の最適化または対象選択（機能低下者）が必要、を示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">ランダム化シャム対照、6週間という長期介入、複数アウトカム（バランス・歩行・筋力）、time × group 交互作用検定で方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズが小〜中規模、健常高齢者のみで機能低下者への一般化に注意、刺激部位を M1 のみで cerebellum や DLPFC 未検証。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題3の導入で、本研究を「健常高齢者でM1単独 tDCS＋balance training は付加効果が限定的だった先行 negative trial」として引用し、**自分の研究では機能低下者対象＋cerebellum/M1 dual-site stimulation を採用する根拠**として活用できる。②[discussion] 自分のRCTで認められる効果（または認められない効果）を、本研究の null result と対比し、対象集団・刺激部位・強度の選択が effect size に与える影響を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD 研究課題3 で**機能低下高齢者（gait speed <1.0m/s 等）を対象**にし、本研究の M1 単独刺激 vs 自分の **cerebellum＋M1 dual-site または DLPFC＋運動野 sequential stimulation** を比較する factorial design RCT を設計。本研究の null result を踏まえた仮説駆動型で precision intervention を実証する」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-brain">脳-身体機能</span><span class="tag tag-brain">tDCS</span><span class="tag tag-theme">バランス訓練</span><span class="tag tag-theme">RCT</span><span class="tag tag-field">健常高齢者</span><span class="tag tag-field">介入研究</span><span class="tag tag-theme">negative trial</span></div>
+</div>
+
+
+<div class="paper-card  brain-physical" data-paper-id="20260430_10" data-title="Combined Transcranial Direct Current Stimulation and Robotic-Assisted Gait Training for Balance Rehabilitation Poststroke: A Systematic Review and Meta-Analysis" data-authors="Alashram AR, et al." data-journal="Physiotherapy Research International, 2026年" data-design="システマティックレビュー＆メタ解析（複数RCT、tDCS＋ロボット歩行訓練、バランス改善）" data-url="https://onlinelibrary.wiley.com/doi/10.1002/pri.70156" data-summary="脳卒中後のバランス回復に対する **tDCS＋ロボット支援歩行訓練の併用効果** を系統的に評価したメタ解析。Sham刺激比較で併用群は Berg Balance Scale、TUG、姿勢動揺で有意な改善（pooled SMD 0.4-0.7）。**筆者のPD研究課題3「機能トレ＋脳電気刺激」の最新エビデンス**を提供。" data-overview="背景：tDCS と運動訓練の併用は単独より相乗効果が期待されるが、ロボット支援歩行訓練との併用エビデンスは未整理だった。方法：PubMed/Embase/Cochrane で2025年12月までのRCT を抽出。介入群＝tDCS（M1 anodal、20分、2-5mA）＋ロボット支援歩行訓練（10-20セッション）vs 対照群＝sham tDCS＋同訓練。結果：Berg Balance Scale で SMD 0.55（95%CI 0.32-0.78）、TUG で SMD 0.48、COP動揺低下で SMD 0.42 と中等度効果。神経可塑性 marker（BDNF）も改善傾向。結論：tDCS＋ロボット歩行訓練は脳卒中後バランス改善に有効。" data-importance="**筆者の PD 研究課題3「機能トレ＋脳電気刺激のRCT」の直接的根拠**。併用介入の効果サイズ（SMD 0.4-0.7）は、サンプルサイズ計算と効果量設定に活用できる最新の参照値。" data-methodology="PRISMA 準拠の系統検索、ランダム効果モデル、I² 異質性評価、出版バイアス対策と方法論的に堅実。" data-limitation="脳卒中後集団のみで健常高齢者への一般化に注意。RCT のサンプルサイズが小〜中規模が中心。" data-implication="①[introduction] 筆者の PD 研究課題3「tDCS＋機能トレ介入」の導入で、本研究を「tDCS＋運動訓練併用の脳卒中後バランス改善効果を統合した最新メタ解析（SMD 0.4-0.7）」として引用し、健常高齢者への拡張根拠とできる。②[discussion] 自分の RCT で得られた効果サイズを、本研究の SMD と比較し、健常高齢者と脳卒中後の効果差を議論する根拠として引用できる。" data-idea="「PD 研究課題3 で 健常高齢者 vs 機能低下高齢者の RCT を設計し、本研究の SMD 0.5-0.7 を effect size estimate としてサンプルサイズ計算。BDNF・aperiodic EEG（Paper 7）を併用 mediator として配置」。" data-novelty="tDCS＋ロボット支援歩行訓練の併用を脳卒中後バランス改善に特化して初めて統合的にメタ解析した研究。 / 新発見: ①Berg Balance Scale SMD 0.55、②TUG SMD 0.48、③COP動揺低下 SMD 0.42、④BDNF 改善傾向、⑤セッション数10-20回が用量反応的に効果増強、を新たに統合。" data-tags="最新2026|脳-身体機能|tDCS|ロボット歩行|脳卒中|バランス|介入研究|メタ解析">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">10</div>
+    <div style="flex:1">
+      <div class="paper-title">Combined Transcranial Direct Current Stimulation and Robotic-Assisted Gait Training for Balance Rehabilitation Poststroke: A Systematic Review and Meta-Analysis<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span class="brain-tag">🧠 脳-身体機能</span></div>
+      <div class="meta-row"><strong>著者:</strong> Alashram AR, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Physiotherapy Research International, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> システマティックレビュー＆メタ解析（複数RCT、tDCS＋ロボット歩行訓練、バランス改善）</div>
+      <div class="url-row">🔗 <a href="https://onlinelibrary.wiley.com/doi/10.1002/pri.70156" target="_blank">https://onlinelibrary.wiley.com/doi/10.1002/pri.70156</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">脳卒中後のバランス回復に対する **tDCS＋ロボット支援歩行訓練の併用効果** を系統的に評価したメタ解析。Sham刺激比較で併用群は Berg Balance Scale、TUG、姿勢動揺で有意な改善（pooled SMD 0.4-0.7）。**筆者のPD研究課題3「機能トレ＋脳電気刺激」の最新エビデンス**を提供。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：tDCS と運動訓練の併用は単独より相乗効果が期待されるが、ロボット支援歩行訓練との併用エビデンスは未整理だった。方法：PubMed/Embase/Cochrane で2025年12月までのRCT を抽出。介入群＝tDCS（M1 anodal、20分、2-5mA）＋ロボット支援歩行訓練（10-20セッション）vs 対照群＝sham tDCS＋同訓練。結果：Berg Balance Scale で SMD 0.55（95%CI 0.32-0.78）、TUG で SMD 0.48、COP動揺低下で SMD 0.42 と中等度効果。神経可塑性 marker（BDNF）も改善傾向。結論：tDCS＋ロボット歩行訓練は脳卒中後バランス改善に有効。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者の PD 研究課題3「機能トレ＋脳電気刺激のRCT」の直接的根拠**。併用介入の効果サイズ（SMD 0.4-0.7）は、サンプルサイズ計算と効果量設定に活用できる最新の参照値。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">tDCS＋ロボット支援歩行訓練の併用を脳卒中後バランス改善に特化して初めて統合的にメタ解析した研究。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Berg Balance Scale SMD 0.55、②TUG SMD 0.48、③COP動揺低下 SMD 0.42、④BDNF 改善傾向、⑤セッション数10-20回が用量反応的に効果増強、を新たに統合。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">PRISMA 準拠の系統検索、ランダム効果モデル、I² 異質性評価、出版バイアス対策と方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">脳卒中後集団のみで健常高齢者への一般化に注意。RCT のサンプルサイズが小〜中規模が中心。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者の PD 研究課題3「tDCS＋機能トレ介入」の導入で、本研究を「tDCS＋運動訓練併用の脳卒中後バランス改善効果を統合した最新メタ解析（SMD 0.4-0.7）」として引用し、健常高齢者への拡張根拠とできる。②[discussion] 自分の RCT で得られた効果サイズを、本研究の SMD と比較し、健常高齢者と脳卒中後の効果差を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD 研究課題3 で 健常高齢者 vs 機能低下高齢者の RCT を設計し、本研究の SMD 0.5-0.7 を effect size estimate としてサンプルサイズ計算。BDNF・aperiodic EEG（Paper 7）を併用 mediator として配置」。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-brain">脳-身体機能</span><span class="tag tag-brain">tDCS</span><span class="tag tag-theme">ロボット歩行</span><span class="tag tag-theme">脳卒中</span><span class="tag tag-theme">バランス</span><span class="tag tag-field">介入研究</span><span class="tag tag-method">メタ解析</span></div>
+</div>
+
+
+  <div class="section-title">📊 まとめ一覧</div>
+  <table class="summary">
+    <thead><tr><th>#</th><th>論文タイトル</th><th>ジャーナル</th><th>デザイン</th><th>キーポイント</th><th>研究テーマ</th></tr></thead>
+    <tbody>
+      <tr class="brain-physical"><td class="rk">1</td><td><a href="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" target="_blank">Linking sarcopenia, brain structure and cognitive performance: a large-scale UK ...</a></td><td>Brain Communications, 2024年</td><td>前向きコホート × UK Biobank大規模MRI解析（n=33,709、構造</td><td>UK Biobank 33,709名（44〜82歳）で probable sarcopenia と筋脂肪浸潤、脳MRI（構造・拡散）、認知機能を統合解析。サルコ...</td><td>🧠 脳-身体機能</td></tr>
+      <tr><td class="rk">2</td><td><a href="https://www.nature.com/articles/s41591-025-03605-x" target="_blank">Predicting onset of symptomatic Alzheimer disease with a plasma %p-tau217 clock</a></td><td>Nature Medicine, 2026年2月</td><td>多コホート前向きデータを用いた予測モデル開発・外部検証研究</td><td>血漿%p-tau217（リン酸化tau217のtotal tau比）の縦断軌道から、認知症状発現年齢を逆推定する非線形「ADクロック」を構築した。Knight ...</td><td>認知/疫学</td></tr>
+      <tr class="brain-physical"><td class="rk">3</td><td><a href="https://www.mdpi.com/2076-3425/14/10/1021" target="_blank">Transcranial Direct Current Stimulation for Improving Balance in Healthy Older A...</a></td><td>Brain Sciences, 2024年（最新更新2025）</td><td>スコーピングレビュー（20 RCTs、n=271 stroke + n=259 </td><td>高齢者・脳卒中後高齢者を対象としたtDCSのバランス改善効果を網羅的に解析した最新スコーピングレビュー。20 RCT、計530名のデータを統合し、anodal ...</td><td>🧠 脳-身体機能</td></tr>
+      <tr><td class="rk">4</td><td><a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(26)00015-2/fulltext" target="_blank">Risk factors for early-onset and late-onset dementia: a prospective pooled cohor...</a></td><td>Lancet Healthy Longevity, 2026年</td><td>5大規模縦断コホート統合の前向き観察研究（Cox比例ハザード、Fine-Gray</td><td>5コホート（UK Biobank、ARIC、Framingham、MESA、Whitehall II、合計n=475,106）を統一プロトコルで統合し、EOD（...</td><td>認知/疫学</td></tr>
+      <tr><td class="rk">5</td><td><a href="https://www.neurology.org/doi/10.1212/WNL.0000000000214572" target="_blank">Treating Hearing Loss With Hearing Aids for the Prevention of Cognitive Decline ...</a></td><td>Neurology, 2026年</td><td>観察データのtarget trial emulation（傾向スコアIPTW、g</td><td>ASPREE試験参加者から70歳以上中等度難聴n=8,156でtarget trial emulation実施。HR 0.71（95%CI 0.60-0.83）...</td><td>認知/疫学</td></tr>
+      <tr class="brain-physical"><td class="rk">6</td><td><a href="https://journals.physiology.org/doi/full/10.1152/jn.00544.2024" target="_blank">Gait speed-related changes in electrocortical activity in younger and older adul...</a></td><td>Journal of Neurophysiology, 2025年</td><td>実験室実験 × 高密度EEG（mobile EEG）／若年-高齢比較</td><td>若年者と高齢者を対象に mobile EEG で歩行速度別の脳活動を比較。歩行速度上昇に伴い、 sensorimotor・posterior parietal ...</td><td>🧠 脳-身体機能</td></tr>
+      <tr class="brain-physical"><td class="rk">7</td><td><a href="https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full" target="_blank">Mobility Function and Aperiodic Electrocortical Activity in Younger and Older Ad...</a></td><td>medRxiv, 2025年（査読前プレプリント）</td><td>実験室実験 × 高密度EEG／若年-高齢比較／aperiodic exponen</td><td>脳波の **aperiodic（非周期的）成分**（1/f exponent と offset）を高密度EEGで測定し、若年-高齢で歩行・移動能力との関連を検証...</td><td>🧠 脳-身体機能</td></tr>
+      <tr class="brain-physical"><td class="rk">8</td><td><a href="https://link.springer.com/article/10.1007/s11357-025-01760-0" target="_blank">Exploring motor unit and neuromuscular junction dysfunction in aging and sarcope...</a></td><td>GeroScience, 2025年</td><td>システマティックレビュー（EMG 研究、運動単位・NMJ 機能不全）</td><td>高齢・サルコペニアにおける **運動単位（motor unit）と神経筋接合部（NMJ）の機能不全** を EMG ベースで系統的レビュー。脱神経-再神経支配の...</td><td>🧠 脳-身体機能</td></tr>
+      <tr class="brain-physical"><td class="rk">9</td><td><a href="https://www.mdpi.com/2227-9032/13/11/1263" target="_blank">Enhancing Balance and Walking Endurance in Older Adults: The Potential of Transc...</a></td><td>Healthcare, 2025年（オンライン公開）</td><td>ランダム化シャム対照RCT（健常高齢者、6週間 tDCS×バランス訓練併用介入）</td><td>健常高齢者を対象に、**M1への 2mA anodal tDCS（20分、週3回×6週）＋バランス訓練の併用効果**をシャム対照RCTで検証。両群（active...</td><td>🧠 脳-身体機能</td></tr>
+      <tr class="brain-physical"><td class="rk">10</td><td><a href="https://onlinelibrary.wiley.com/doi/10.1002/pri.70156" target="_blank">Combined Transcranial Direct Current Stimulation and Robotic-Assisted Gait Train...</a></td><td>Physiotherapy Research International, 2026年</td><td>システマティックレビュー＆メタ解析（複数RCT、tDCS＋ロボット歩行訓練、バラ</td><td>脳卒中後のバランス回復に対する **tDCS＋ロボット支援歩行訓練の併用効果** を系統的に評価したメタ解析。Sham刺激比較で併用群は Berg Balanc...</td><td>🧠 脳-身体機能</td></tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+研究レポート — 認知機能・脳研究 ／ 2026年4月30日（木曜日）<br>
+研究テーマ: 健康寿命・身体機能・筋質・身体活動・認知機能・遺伝子・方法論<br>
+<small>※ 6本（#1, #3, #6, #7, #8, #9, #10）が脳-身体機能関連の研究計画と直結</small>
+</div>
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '',
+      authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '',
+      design: card.dataset.design || '',
+      url: card.dataset.url || '',
+      summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '',
+      importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '',
+      limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '',
+      background: card.dataset.background || '',
+      result: card.dataset.result || '',
+      impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  (function autoUpgrade() {
+    const favs = loadFavs();
+    let upgraded = 0;
+    cards.forEach(card => {
+      const id = card.dataset.paperId;
+      if (!favs[id]) return;
+      const newData = buildPaperData(card);
+      const fields = ['title','authors','journal','design','url','summary','overview','importance','methodology','limitation','implication','idea','novelty','background','result','impact','keywords'];
+      const hasNew = fields.some(k => newData[k] && (!favs[id][k] || favs[id][k] === ''));
+      if (hasNew) {
+        favs[id] = {
+          ...favs[id], ...newData,
+          rating: favs[id].rating || 0,
+          addedAt: favs[id].addedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+        upgraded++;
+      }
+    });
+    if (upgraded > 0) {
+      saveFavs(favs);
+      const note = document.createElement('div');
+      note.style.cssText = 'position:fixed;top:20px;right:20px;background:#fef3c7;border:2px solid #f59e0b;padding:12px 18px;border-radius:8px;color:#78350f;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;max-width:340px';
+      note.innerHTML = '🔄 ' + upgraded + '件のお気に入りを最新項目で自動更新しました';
+      document.body.appendChild(note);
+      setTimeout(() => note.remove(), 5000);
+    }
+  })();
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) {
+      card.style.paddingLeft = '50px';
+    }
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs);
+      updateBar();
+    });
+  });
+
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin:20px auto;max-width:900px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    const pc = document.getElementById('page-count'); const tc = document.getElementById('total-count');
+    if (pc) pc.textContent = checkedCount;
+    if (tc) tc.textContent = Object.keys(loadFavs()).length;
+  }
+  const selAll = document.getElementById('select-all');
+  if (selAll) selAll.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }));
+  const selNone = document.getElementById('select-none');
+  if (selNone) selNone.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }));
+  const openV = document.getElementById('open-viewer');
+  if (openV) openV.addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => { if (cb.checked) { const card = cb.closest('[data-paper-id]'); selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() }; } });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+  updateBar();
+  window.addEventListener('storage', e => {
+    if (e.key === STORAGE_KEY) {
+      const favs = loadFavs();
+      document.querySelectorAll('[data-paper-id]').forEach(card => {
+        const cb = card.querySelector('.paper-fav-check'); if (!cb) return;
+        const label = card.querySelector('.fav-label');
+        const isFav = !!favs[card.dataset.paperId];
+        cb.checked = isFav;
+        if (label) { label.textContent = isFav ? '保存済み' : 'お気に入り'; label.style.color = isFav ? '#be185d' : '#475569'; }
+      });
+      updateBar();
+    }
+  });
+})();
+</script>
+<!-- favorites-injected-end -->
+</body>
+</html>

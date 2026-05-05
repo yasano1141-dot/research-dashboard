@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+詳細分析レポート（バージョンB）テンプレート
+プレースホルダ: {DATE}, {THEME_JP}, {DATE_DISPLAY}
+Top 3 の論文ごとに <div class="paper"> を3個生成する。
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>詳細分析レポート {THEME_JP} {DATE_DISPLAY}</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(135deg, #fff7ed 0%, #fff1f2 50%, #fef2f2 100%);
+  color: #1a202c;
+  line-height: 1.85;
+  padding: 24px;
+}
+.container { max-width: 1100px; margin: 0 auto; }
+
+header.main {
+  background: linear-gradient(135deg, #7c2d12 0%, #9f1239 50%, #b91c1c 100%);
+  color: white;
+  padding: 44px 36px;
+  border-radius: 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 12px 36px rgba(124,45,18,0.3);
+}
+header.main h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+header.main .meta { font-size: 14px; opacity: 0.95; margin-top: 6px; }
+header.main .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 14px;
+  letter-spacing: 0.05em;
+}
+
+.intro {
+  background: white;
+  padding: 26px 30px;
+  border-radius: 14px;
+  margin-bottom: 32px;
+  border-left: 6px solid #b91c1c;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+  font-size: 15px;
+}
+
+.paper {
+  background: white;
+  padding: 36px 38px;
+  border-radius: 18px;
+  margin-bottom: 36px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  position: relative;
+  border-top: 6px solid #b91c1c;
+}
+.paper.r2 { border-top-color: #d97706; }
+.paper.r3 { border-top-color: #16a34a; }
+
+.rank-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+  color: white;
+  padding: 6px 18px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+}
+.paper.r2 .rank-tag { background: linear-gradient(135deg, #d97706, #f59e0b); }
+.paper.r3 .rank-tag { background: linear-gradient(135deg, #16a34a, #22c55e); }
+
+.paper h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.meta-row {
+  font-size: 13px;
+  color: #4a5568;
+  margin-bottom: 4px;
+}
+.url-row { margin: 8px 0 24px 0; word-break: break-all; font-size: 12.5px; }
+.url-row a { color: #b91c1c; text-decoration: none; font-weight: 500; }
+
+.section-block {
+  margin: 22px 0;
+  padding: 22px 26px;
+  border-radius: 12px;
+  background: #fafaf9;
+  border-left: 5px solid #b91c1c;
+}
+.paper.r2 .section-block { border-left-color: #d97706; }
+.paper.r3 .section-block { border-left-color: #16a34a; }
+
+.section-block h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #b91c1c;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fee2e2;
+}
+.paper.r2 .section-block h3 { color: #d97706; border-bottom-color: #fed7aa; }
+.paper.r3 .section-block h3 { color: #16a34a; border-bottom-color: #bbf7d0; }
+
+.section-block p {
+  font-size: 14px;
+  line-height: 1.95;
+  text-align: justify;
+}
+
+.kw-item {
+  background: #fff7ed;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border-left: 3px solid #d97706;
+  font-size: 13.5px;
+}
+.kw-item strong { color: #9a3412; }
+
+.stat {
+  display: inline-block;
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+}
+.paper.r2 .stat { background: #fffbeb; color: #92400e; }
+.paper.r3 .stat { background: #f0fdf4; color: #166534; }
+
+.discussion {
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: #fff7ed;
+  border-radius: 10px;
+  border-left: 4px solid #ea580c;
+}
+.discussion h4 {
+  font-size: 13.5px;
+  color: #9a3412;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.discussion p { font-size: 13.5px; line-height: 1.85; }
+
+footer {
+  text-align: center;
+  margin-top: 32px;
+  padding: 24px;
+  color: #6b7280;
+  font-size: 12px;
+}
+</style>
+</head>
+<body data-source-date="{DATE}" data-source-theme="{THEME_JP}（詳細）">
+<div class="container">
+
+<header class="main">
+  <h1>詳細分析レポート — {THEME_JP}</h1>
+  <div class="meta">{DATE_DISPLAY}</div>
+  <div class="meta">Top 3論文の徹底分析（7セクション構成）</div>
+  <div class="badge">DEEP DIVE ANALYSIS</div>
+</header>
+
+<div class="intro">
+  <!-- イントロ文 -->
+</div>
+
+<!-- TOP 1 -->
+<div class="paper r1"
+     data-paper-id="{DATE}D_01"
+     data-title="..."
+     data-authors="..."
+     data-journal="..."
+     data-design="..."
+     data-url="..."
+     data-keywords="..."
+     data-summary="..."
+     data-novelty="..."
+     data-background="..."
+     data-methodology="..."
+     data-result="..."
+     data-impact="..."
+     data-tags="...">
+  <span class="rank-tag">RANK 1 — TOP 1</span>
+  <h2>論文タイトル（英語）</h2>
+  <div class="meta-row"><strong>著者:</strong> ...</div>
+  <div class="meta-row"><strong>ジャーナル:</strong> ...</div>
+  <div class="meta-row"><strong>研究デザイン:</strong> ...</div>
+  <div class="url-row"><a href="https://..." target="_blank">https://...</a></div>
+
+  <!-- 1. キーワード -->
+  <div class="section-block">
+    <h3>1. 論文の核心になるキーワード分析</h3>
+    <div class="kw-item"><strong>① キーワード1</strong> — 説明</div>
+    <div class="kw-item"><strong>② キーワード2</strong> — 説明</div>
+    <div class="kw-item"><strong>③ キーワード3</strong> — 説明</div>
+    <div class="kw-item"><strong>④ キーワード4</strong> — 説明</div>
+    <div class="kw-item"><strong>⑤ キーワード5</strong> — 説明</div>
+  </div>
+
+  <!-- 2. 要旨 -->
+  <div class="section-block">
+    <h3>2. 要旨</h3>
+    <p>本研究の目的は...（400〜500字、統計値<span class="stat">HR 0.52</span>を含めて記述）</p>
+  </div>
+
+  <!-- 3. 革新性・新規性 -->
+  <div class="section-block">
+    <h3>3. 革新性・新規性</h3>
+    <p>...（300〜400字）</p>
+  </div>
+
+  <!-- 4. 研究背景 -->
+  <div class="section-block">
+    <h3>4. 研究背景</h3>
+    <p>...（300〜400字）</p>
+  </div>
+
+  <!-- 5. 研究手法 -->
+  <div class="section-block">
+    <h3>5. 研究手法</h3>
+    <p>対象者は...（300〜400字）</p>
+  </div>
+
+  <!-- 6. 研究成果 + 考察 -->
+  <div class="section-block">
+    <h3>6. 研究成果</h3>
+    <p>主要アウトカム: ...（500〜600字、すべての統計値を明記）</p>
+    <div class="discussion">
+      <h4>考察</h4>
+      <p>結果の解釈として...（300〜400字）</p>
+    </div>
+  </div>
+
+  <!-- 7. 社会的インパクト -->
+  <div class="section-block">
+    <h3>7. 社会的インパクト</h3>
+    <p>応用展望、学術的影響、将来展望、研究者自身の研究への接続...（400〜500字）</p>
+  </div>
+</div>
+
+<!-- TOP 2, TOP 3 を同様に追加 -->
+
+<footer>
+Daily Research Report — Detailed Analysis • {THEME_JP} • {DATE}
+</footer>
+
+</div>
+</body>
+</html>

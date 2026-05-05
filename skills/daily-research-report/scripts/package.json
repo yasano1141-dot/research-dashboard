@@ -1,0 +1,12 @@
+{
+  "name": "daily-research-report-scripts",
+  "version": "1.0.0",
+  "description": "Helper scripts for daily research report generation",
+  "private": true,
+  "dependencies": {
+    "docx": "^9.0.0"
+  },
+  "scripts": {
+    "install-docx": "mkdir -p /tmp/npm-work && cd /tmp/npm-work && npm init -y > /dev/null 2>&1 && npm install docx"
+  }
+}

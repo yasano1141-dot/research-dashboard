@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート：脳・認知研究 — 2026年3月5日</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+  :root {
+    --primary: #1a3a5c;
+    --accent: #2e75b6;
+    --accent-light: #d5e8f4;
+    --bg: #fafbfc;
+    --card-bg: #ffffff;
+    --text: #2c3e50;
+    --text-light: #5a6a7a;
+    --border: #e2e8f0;
+    --rank1: #c9302c;
+    --rank2: #e67e22;
+    --rank3: #2980b9;
+    --rank4: #16a085;
+    --rank5: #8e44ad;
+    --rank6: #d35400;
+    --rank7: #2c3e50;
+    --rank8: #3498db;
+    --rank9: #27ae60;
+    --rank10: #f39c12;
+    --tag-method: #8e44ad;
+    --tag-theme: #16a085;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+
+  /* Header */
+  .report-header {
+    background: linear-gradient(135deg, var(--primary) 0%, #2c5f8a 100%);
+    color: white;
+    padding: 48px 40px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+  }
+  .report-header h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .report-header .subtitle {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 16px;
+  }
+  .report-header .meta {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    opacity: 0.75;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    border-left: 4px solid var(--accent);
+    padding-left: 16px;
+    margin: 40px 0 20px;
+  }
+
+  /* Trend summary */
+  .trend-box {
+    background: var(--accent-light);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 32px;
+    border: 1px solid #b8d4ea;
+  }
+  .trend-box p { font-size: 14.5px; color: var(--primary); }
+
+  /* Paper card - all treated equally */
+  .paper-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .paper-card.rank1 { border-top: 4px solid var(--rank1); }
+  .paper-card.rank2 { border-top: 4px solid var(--rank2); }
+  .paper-card.rank3 { border-top: 4px solid var(--rank3); }
+  .paper-card.rank4 { border-top: 4px solid var(--rank4); }
+  .paper-card.rank5 { border-top: 4px solid var(--rank5); }
+  .paper-card.rank6 { border-top: 4px solid var(--rank6); }
+  .paper-card.rank7 { border-top: 4px solid var(--rank7); }
+  .paper-card.rank8 { border-top: 4px solid var(--rank8); }
+  .paper-card.rank9 { border-top: 4px solid var(--rank9); }
+  .paper-card.rank10 { border-top: 4px solid var(--rank10); }
+
+  .card-header {
+    padding: 20px 24px 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .rank-badge {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .rank-badge.r1 { background: var(--rank1); }
+  .rank-badge.r2 { background: var(--rank2); }
+  .rank-badge.r3 { background: var(--rank3); }
+  .rank-badge.r4 { background: var(--rank4); }
+  .rank-badge.r5 { background: var(--rank5); }
+  .rank-badge.r6 { background: var(--rank6); }
+  .rank-badge.r7 { background: var(--rank7); }
+  .rank-badge.r8 { background: var(--rank8); }
+  .rank-badge.r9 { background: var(--rank9); }
+  .rank-badge.r10 { background: var(--rank10); }
+
+  .card-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.5;
+  }
+  .card-title-en {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  .card-meta {
+    padding: 0 24px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12.5px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .tag-journal { background: #eaf2fb; color: var(--accent); }
+  .tag-design { background: #f0e6f6; color: var(--tag-method); }
+  .tag-relevance { background: #e0f5ef; color: var(--tag-theme); }
+
+  .paper-url {
+    padding: 0 24px 10px;
+    font-size: 12.5px;
+  }
+  .paper-url a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .paper-url a:hover { text-decoration: underline; }
+  .paper-url .url-label {
+    font-weight: 500;
+    color: var(--text-light);
+    margin-right: 4px;
+  }
+
+  .card-body { padding: 0 24px 20px; }
+  .card-body h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 16px 0 6px;
+  }
+  .card-body p, .card-body li {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.75;
+  }
+  .card-body ul { padding-left: 20px; }
+  .card-body li { margin-bottom: 4px; }
+
+  .highlight-box {
+    background: #fffbe6;
+    border-left: 3px solid #f0c040;
+    padding: 10px 14px;
+    margin: 10px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 13.5px;
+  }
+
+  .idea-box {
+    background: #f0f8ff;
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 10px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 13.5px;
+  }
+
+  /* Summary table */
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 16px;
+  }
+  .summary-table th {
+    background: var(--primary);
+    color: white;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .summary-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .summary-table tr:nth-child(even) td { background: #f8fafc; }
+  .summary-table tr:hover td { background: var(--accent-light); }
+
+  /* Trend summary at end */
+  .trend-summary {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    padding: 28px;
+    margin-top: 32px;
+    border: 1px solid var(--border);
+  }
+  .trend-summary h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
+  .trend-summary p { font-size: 14px; margin-bottom: 12px; }
+
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-light);
+  }
+
+  @media print {
+    body { font-size: 11pt; }
+    .container { max-width: 100%; padding: 0; }
+    .report-header { border-radius: 0; }
+    .paper-card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="report-header">
+    <h1>研究レポート：脳・認知研究</h1>
+    <div class="subtitle">Thursday Report — Brain & Cognition</div>
+    <div class="meta">
+      <span>2026年3月5日（木）</span>
+      <span>論文数：10本</span>
+      <span>対象期間：2024〜2025年</span>
+    </div>
+  </div>
+
+  <!-- Trend overview -->
+  <div class="trend-box">
+    <p>脳老化の「異質性」と「速度」の定量化が急進展。DunedinPACNI等の新指標と身体活動の防御効果が大きなテーマ。</p>
+  </div>
+
+  <!-- ========== PAPER LIST (All 10 Equal) ========== -->
+  <h2 class="section-title">論文一覧（10本）</h2>
+
+  <!-- #1 -->
+  <div class="paper-card rank1">
+    <div class="card-header">
+      <div class="rank-badge r1">1</div>
+      <div>
+        <div class="card-title">DunedinPACNI estimates the longitudinal Pace of Aging from a single brain image</div>
+        <div class="card-title-en">DunedinPACNI: A neuroimaging-based biological aging clock for tracking health and disease</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Nature Aging (2025)</span>
+      <span class="tag tag-design">コホート研究・深層学習</span>
+      <span class="tag tag-relevance">健康寿命・脳・認知</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s43587-025-00897-z" target="_blank">https://www.nature.com/articles/s43587-025-00897-z</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>単一の脳MRI画像から縦断的な老化速度を推定する「DunedinPACNI」を開発。従来のbrain age gapと比較し、フレイル・認知機能障害・脳萎縮・認知症への進行をより強力に予測した。</p>
+
+      <h4>研究概要</h4>
+      <p>Dunedin縦断コホート（N=869）の3時点MRIデータで3D ResNetを訓練し、1枚のMRIから「老化のペース」を推定。UK Biobank等の外部コホートで検証し、認知症リスクHR=1.31、フレイル指数との相関r=0.25を確認。従来のbrain age gapを上回る予測能を示した。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">単一時点のMRIから老化速度を推定できる革新性。横断的指標から縦断的「ペース」への転換により、population-based研究での実用性が大幅に向上。brain age研究のパラダイムシフト。</div>
+
+      <h4>方法論評価</h4>
+      <p>縦断データで訓練した3D ResNetの設計は妥当。外部コホートでの検証により一般化可能性を確保。</p>
+
+      <h4>限界</h4>
+      <p>訓練データが単一コホート（Dunedin、主にNZ白人）。MRIプロトコルの違いによる一般化の課題。</p>
+
+      <h4>研究への示唆</h4>
+      <p>身体機能・フレイルと脳老化速度の関連を定量化する新ツール。健康寿命研究での脳老化縦断評価に応用可能。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> DunedinPACNIと歩行速度・握力・バランス能力の関連解析。日本人高齢者コホートでの妥当性検証。
+      </div>
+    </div>
+  </div>
+
+  <!-- #2 -->
+  <div class="paper-card rank2">
+    <div class="card-header">
+      <div class="rank-badge r2">2</div>
+      <div>
+        <div class="card-title">Brain aging patterns in a large and diverse cohort of 49,482 individuals</div>
+        <div class="card-title-en">Identifying distinct brain aging patterns across 49,482 individuals using deep learning</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Nature Medicine (2024)</span>
+      <span class="tag tag-design">大規模コホート・深層学習</span>
+      <span class="tag tag-relevance">脳・認知・方法論</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41591-024-03144-x" target="_blank">https://www.nature.com/articles/s41591-024-03144-x</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>49,482名・11コホートのMRIにSurreal-GANを適用し、5つの脳萎縮パターンを同定。各パターンがMCI・認知症リスクと差別的に関連することを実証した。</p>
+
+      <h4>研究概要</h4>
+      <p>深層表現学習（Surreal-GAN）を用いて脳老化の異質性を定量化。R2（海馬型）が認知症リスクと最も強く関連（HR=1.89）。R-indices組み合わせでAUC=0.78を達成し、brain age gap単独（0.71）を上回った。多様な人種・民族を含む集団で検証。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">脳老化を単一スコアではなく複数パターンとして捉える点が革新的。49,482名の多様な集団での検証により高い汎用性。個別化リスク評価の基盤を提供。</div>
+
+      <h4>方法論評価</h4>
+      <p>Surreal-GANによる非教師あり学習は先験的仮定なしにパターン発見可能。Cox比例ハザードモデルの適用は適切。</p>
+
+      <h4>限界</h4>
+      <p>横断的MRIが中心。一部コホートのサンプルサイズが限定的。生成モデルの解釈性に課題。</p>
+
+      <h4>研究への示唆</h4>
+      <p>脳萎縮パターンの個人差と身体機能低下パターンの対応関係を探る新しいアプローチ。認知・身体機能の統合的低下メカニズム理解に貢献。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 5つの脳萎縮パターンと歩行パラメータ（速度・変動性・左右対称性）の関連解析。日本人高齢者での脳老化パターン特性化。
+      </div>
+    </div>
+  </div>
+
+  <!-- #3 -->
+  <div class="paper-card rank3">
+    <div class="card-header">
+      <div class="rank-badge r3">3</div>
+      <div>
+        <div class="card-title">Physical activity as a modifiable risk factor in preclinical Alzheimer's disease</div>
+        <div class="card-title-en">Objective physical activity and tau accumulation in preclinical Alzheimer's disease</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Nature Medicine (2025)</span>
+      <span class="tag tag-design">コホート研究・MRI・PET</span>
+      <span class="tag tag-relevance">身体活動・脳・認知</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41591-025-03955-6" target="_blank">https://www.nature.com/articles/s41591-025-03955-6</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>歩数計測定による身体活動量と前臨床期ADの進行の関連を検証。高い身体活動はアミロイド陽性者においてタウ蓄積減速および認知低下抑制と関連した。</p>
+
+      <h4>研究概要</h4>
+      <p>ALFA+コホート（N=300+）で歩数計による客観的身体活動測定とアミロイド・タウPET、MRI、認知テストを実施。アミロイド陽性者で身体活動→タウ蓄積β=-0.18（p=0.008）。認知複合スコア低下が33%少ない（p=0.024）。歩数が最強の予測因子。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">身体活動がアミロイド病理存在下でもタウ蓄積を抑制する可能性を初めて客観的指標で実証。一次・二次予防の両面で重要な知見。</div>
+
+      <h4>方法論評価</h4>
+      <p>歩数計による客観的測定で自己報告バイアスを回避。PET+MRI+認知テストの複合評価が強み。</p>
+
+      <h4>限界</h4>
+      <p>単一コホート。因果関係は示せない（逆因果の可能性）。運動強度の詳細は不明。</p>
+
+      <h4>研究への示唆</h4>
+      <p>身体活動と認知機能の関連における脳内メカニズム（タウ蓄積抑制）の解明に貢献。運動処方の根拠強化。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 余暇時身体活動の種類別（有酸素 vs 筋力トレーニング）のタウ蓄積抑制効果の比較研究。
+      </div>
+    </div>
+  </div>
+
+  <!-- #4 -->
+  <div class="paper-card rank4">
+    <div class="card-header">
+      <div class="rank-badge r4">4</div>
+      <div>
+        <div class="card-title">Brain age gap as a predictive biomarker linking aging, lifestyle, and neuropsychiatric health</div>
+        <div class="card-title-en">Brain age gap: A comprehensive analysis of aging, lifestyle, and neuropsychiatric outcomes</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Communications Medicine (2025)</span>
+      <span class="tag tag-design">大規模コホート・メタ解析</span>
+      <span class="tag tag-relevance">健康寿命・脳・認知</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s43856-025-01100-5" target="_blank">https://www.nature.com/articles/s43856-025-01100-5</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>UK Biobank 38,967名等のデータからbrain age gapの臨床的意義を包括的に検証。認知機能低下・神経精神疾患・死亡率を予測し、健康的な生活習慣介入で脳老化加速が軽減。</p>
+
+      <h4>研究概要</h4>
+      <p>複数コホート（UK Biobank、ADNI、PPMI等）を統合し、brain age gapと多面的な臨床アウトカムの関連を系統的に評価。生活習慣介入（運動・食事・睡眠）が脳老化加速を有意に軽減することを確認。脳老化の可逆性を示唆する重要な知見。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">brain age gapの臨床的有用性を包括的に実証。特に生活習慣による脳老化の可逆性の示唆は、予防医学への応用可能性を広げる。</div>
+
+      <h4>方法論評価</h4>
+      <p>複数コホートの統合により結果の頑健性を確保。メタ解析的アプローチが適切。</p>
+
+      <h4>限界</h4>
+      <p>各コホートのMRIプロトコルの違い。生活習慣介入の評価が自己報告ベース。</p>
+
+      <h4>研究への示唆</h4>
+      <p>生活習慣介入（特に運動）による脳老化抑制効果の定量化は、健康寿命延伸の根拠となる。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 身体活動パターン（余暇時・通勤時・社会的運動）別のbrain age gap改善効果の検証。
+      </div>
+    </div>
+  </div>
+
+  <!-- #5 -->
+  <div class="paper-card rank5">
+    <div class="card-header">
+      <div class="rank-badge r5">5</div>
+      <div>
+        <div class="card-title">The mediating role of neuroimaging-derived biological brain age in the association between risk factors for dementia and cognitive decline</div>
+        <div class="card-title-en">Brain age as a mediator between dementia risk factors and cognitive function</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Lancet Healthy Longevity (2024)</span>
+      <span class="tag tag-design">コホート研究・媒介分析</span>
+      <span class="tag tag-relevance">健康寿命・脳・方法論</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(24)00025-4/fulltext" target="_blank">https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(24)00025-4/fulltext</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>ALFA+コホート（45-65歳）で脳年齢デルタが修正可能リスク因子と認知機能低下の媒介因子であることを確認。中年期からの早期介入の重要性を実証した。</p>
+
+      <h4>研究概要</h4>
+      <p>認知機能正常な中年成人を対象に、構造MRIから算出した脳年齢デルタと修正可能リスク因子（心血管・メンタルヘルス・代謝）、3年間の認知機能変化の媒介関係をPLS path modellingで評価。脳老化が複数のリスク因子経路を統合する共通の媒介因子として機能することを示した。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">脳年齢デルタが「リスク因子→脳老化→認知低下」の因果連鎖の媒介因子であることを統計的に実証。中年期介入の根拠を提供。</div>
+
+      <h4>方法論評価</h4>
+      <p>PLS path modellingは複数の媒介経路を同時に評価可能。3年間の縦断データが強み。</p>
+
+      <h4>限界</h4>
+      <p>単一コホート。3年間のフォローアップは比較的短い。</p>
+
+      <h4>研究への示唆</h4>
+      <p>中年期の身体活動・代謝リスク管理が脳老化を介して認知機能を保護する経路の定量化に貢献。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 身体機能指標（歩行速度・握力）を媒介分析に組み込み、身体機能→脳老化→認知低下の経路を検証。
+      </div>
+    </div>
+  </div>
+
+  <!-- #6 -->
+  <div class="paper-card rank6">
+    <div class="card-header">
+      <div class="rank-badge r6">6</div>
+      <div>
+        <div class="card-title">Brain clocks capture diversity and disparities in aging and dementia across geographically diverse populations</div>
+        <div class="card-title-en">Brain clocks and health disparities: A multinational analysis of neuroimaging aging</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Nature Medicine (2024)</span>
+      <span class="tag tag-design">多国籍コホート・深層学習</span>
+      <span class="tag tag-relevance">健康寿命・脳・方法論</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41591-024-03209-x" target="_blank">https://www.nature.com/articles/s41591-024-03209-x</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>15カ国5,306名のfMRI・EEGデータから脳時計を開発。ラテンアメリカ集団で脳年齢ギャップが大きく、社会経済・健康関連格差の影響を定量化した。</p>
+
+      <h4>研究概要</h4>
+      <p>fMRIとEEGの両モダリティを統合した脳年齢推定モデルを開発。15カ国の多様な集団で検証し、地理的・社会経済的要因による脳老化の格差を初めて定量化。ラテンアメリカでは高所得国と比較して脳年齢ギャップが有意に大きかった。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">脳老化評価における多様性・健康格差の問題を初めて大規模に提起。従来の欧米中心のモデルの限界を示した。</div>
+
+      <h4>方法論評価</h4>
+      <p>fMRI+EEGの複合アプローチにより、異なる医療環境でも適用可能なモデルを実現。</p>
+
+      <h4>限界</h4>
+      <p>各国のサンプルサイズにばらつき。社会経済指標の測定精度に地域差。</p>
+
+      <h4>研究への示唆</h4>
+      <p>日本人を含むアジア集団での脳老化モデルの妥当性検証の必要性を示唆。健康格差と脳老化の関連は公衆衛生的に重要。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 日本国内の地域格差（都市部 vs 農村部）とbrain ageの関連解析。東北メディカル・メガバンクでの検証。
+      </div>
+    </div>
+  </div>
+
+  <!-- #7 -->
+  <div class="paper-card rank7">
+    <div class="card-header">
+      <div class="rank-badge r7">7</div>
+      <div>
+        <div class="card-title">The neural correlates of cognitive training–induced gains in aging: a meta-analysis</div>
+        <div class="card-title-en">Neural mechanisms underlying cognitive training effects in older adults: A meta-analysis</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">npj Aging (2025)</span>
+      <span class="tag tag-design">メタ解析</span>
+      <span class="tag tag-relevance">脳・認知・方法論</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41514-025-00290-5" target="_blank">https://www.nature.com/articles/s41514-025-00290-5</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>24の神経画像研究のメタ解析。認知トレーニングにより左下前頭回・両側楔前部の活性化が増加（Hedges' g=0.38）。楔前部活性化のみが認知改善と直接相関。</p>
+
+      <h4>研究概要</h4>
+      <p>高齢者を対象とした認知トレーニング介入の24神経画像研究を統合。トレーニング群vs対照群で中程度の効果量（g=0.38）を確認。脳活性化パターンでは楔前部が認知改善と唯一直接相関した領域。年齢がトレーニング効果の調整因子として同定された。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">認知トレーニングの神経基盤を定量的に特定。楔前部の特異的役割は、介入ターゲットの精密化に貢献。</div>
+
+      <h4>方法論評価</h4>
+      <p>24研究の統合により個別研究の限界を克服。ALE（Activation Likelihood Estimation）の適用は適切。</p>
+
+      <h4>限界</h4>
+      <p>介入プロトコルの異質性。fMRI課題の統一性不足。出版バイアスの可能性。</p>
+
+      <h4>研究への示唆</h4>
+      <p>認知トレーニングと身体運動の組み合わせ介入の脳内効果を比較する根拠を提供。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 運動トレーニング vs 認知トレーニング vs 複合介入の脳活性化パターン比較メタ解析。
+      </div>
+    </div>
+  </div>
+
+  <!-- #8 -->
+  <div class="paper-card rank8">
+    <div class="card-header">
+      <div class="rank-badge r8">8</div>
+      <div>
+        <div class="card-title">Vulnerability to memory decline in aging revealed by a mega-analysis of structural brain change</div>
+        <div class="card-title-en">Brain structural thresholds for memory decline: A mega-analysis of aging cohorts</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Nature Communications (2025)</span>
+      <span class="tag tag-design">メガ解析</span>
+      <span class="tag tag-relevance">脳・認知・方法論</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41467-025-66354-y" target="_blank">https://www.nature.com/articles/s41467-025-66354-y</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>記憶低下と脳萎縮の非線形関係を大規模解析で解明。平均以上の脳構造低下を示す個人が主に記憶低下の影響を受ける閾値効果を発見した。</p>
+
+      <h4>研究概要</h4>
+      <p>複数コホートの縦断データを統合したメガ解析により、脳萎縮と記憶低下の関係が非線形であることを実証。平均的な脳構造変化の範囲内では記憶は比較的保たれるが、一定の閾値を超えると急速に低下する。この閾値効果は特に海馬と前頭前皮質で顕著だった。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">脳構造変化の「閾値効果」の発見は、介入のタイミングを決定する上で重要。閾値前の予防介入の重要性を示唆。</div>
+
+      <h4>方法論評価</h4>
+      <p>メガ解析により個別研究では検出困難な非線形関係を統計的に検出。十分なサンプルサイズが強み。</p>
+
+      <h4>限界</h4>
+      <p>閾値の個人差・集団差の評価が不十分。測定ツールの統一性に課題。</p>
+
+      <h4>研究への示唆</h4>
+      <p>身体機能低下にも同様の閾値効果がある可能性。筋量・筋質と身体機能の非線形関係の検証に応用。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 脳萎縮閾値と身体機能閾値の同時推定モデルの開発。「二重閾値仮説」の検証。
+      </div>
+    </div>
+  </div>
+
+  <!-- #9 -->
+  <div class="paper-card rank9">
+    <div class="card-header">
+      <div class="rank-badge r9">9</div>
+      <div>
+        <div class="card-title">Physical activity changes during midlife link to brain integrity and amyloid burden</div>
+        <div class="card-title-en">Longitudinal patterns of physical activity and their association with brain structure and amyloid pathology</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Alzheimer's & Dementia (2025)</span>
+      <span class="tag tag-design">コホート研究</span>
+      <span class="tag tag-relevance">身体活動・脳・認知</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.70007" target="_blank">https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.70007</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>中年期の身体活動変化パターンと脳の完全性・アミロイド負荷の関連を検証。座位行動維持は皮質厚低下と関連し、WHO推奨への適合開始はアミロイド低減と関連した。</p>
+
+      <h4>研究概要</h4>
+      <p>中年期の身体活動を複数時点で評価し、動的な変化パターン（維持・増加・減少・開始）と脳構造・アミロイド負荷の関連を検証。座位行動を維持した群は皮質厚が有意に低下。WHO推奨の身体活動に「新たに適合」した群はアミロイド負荷が有意に低かった。変化パターンが重要。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">身体活動の「レベル」だけでなく「変化パターン」が脳老化に影響することを示した初の研究。中年期からの行動変容の意義を実証。</div>
+
+      <h4>方法論評価</h4>
+      <p>複数時点の身体活動評価により動的パターンを捉えた点が独自。PETバイオマーカーとの組み合わせが強み。</p>
+
+      <h4>限界</h4>
+      <p>身体活動の変化パターン分類がやや恣意的。中年期のみで高齢期への延長が不明。</p>
+
+      <h4>研究への示唆</h4>
+      <p>余暇時身体活動の長期的変化パターンと健康寿命の関連解析の根拠。行動変容介入の設計に応用。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 日本人中年コホートでの身体活動変化パターンと脳老化・身体機能低下の同時追跡研究。
+      </div>
+    </div>
+  </div>
+
+  <!-- #10 -->
+  <div class="paper-card rank10">
+    <div class="card-header">
+      <div class="rank-badge r10">10</div>
+      <div>
+        <div class="card-title">Neuroimaging-derived biological brain age and its associations with glial reactivity and synaptic dysfunction biomarkers</div>
+        <div class="card-title-en">Brain aging biomarkers: Integration of neuroimaging and molecular pathology markers</div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <span class="tag tag-journal">Molecular Psychiatry (2025)</span>
+      <span class="tag tag-design">バイオマーカー研究</span>
+      <span class="tag tag-relevance">脳・認知・方法論</span>
+    </div>
+    <div class="paper-url"><span class="url-label">原本：</span><a href="https://www.nature.com/articles/s41380-025-02961-x" target="_blank">https://www.nature.com/articles/s41380-025-02961-x</a></div>
+    <div class="card-body">
+      <h4>一言要約</h4>
+      <p>MRI由来の脳年齢とCSFバイオマーカー（グリア反応性・シナプス機能障害）の関連を検証。加速的脳老化がADの神経炎症・シナプス病理と関連することを確認した。</p>
+
+      <h4>研究概要</h4>
+      <p>構造MRIから算出した脳年齢と、CSF中のグリア反応性マーカー（GFAP、sTREM2）およびシナプス機能障害マーカー（neurogranin）の関連を認知機能正常〜AD連続体の参加者で評価。加速的脳老化はグリア反応性の上昇およびシナプス機能障害と有意に関連し、AD病理の進行を反映。</p>
+
+      <h4>重要な点</h4>
+      <div class="highlight-box">脳年齢と分子レベルのAD病理マーカーを直接結びつけた研究。脳老化の分子基盤理解に貢献。バイオマーカーカスケードにおける脳老化の位置づけを明確化。</div>
+
+      <h4>方法論評価</h4>
+      <p>MRI+CSFバイオマーカーの組み合わせにより、構造と分子の両レベルでの評価を実現。</p>
+
+      <h4>限界</h4>
+      <p>CSF採取の侵襲性。サンプルサイズが比較的小さい。横断的デザイン。</p>
+
+      <h4>研究への示唆</h4>
+      <p>脳老化の分子メカニズム理解は、血液バイオマーカーベースの簡便なスクリーニングツール開発につながる。</p>
+
+      <div class="idea-box">
+        <strong>研究アイデア：</strong> 血漿プロテオミクスと脳年齢の関連解析。非侵襲的バイオマーカーパネルの開発。
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SUMMARY TABLE ========== -->
+  <h2 class="section-title">まとめ一覧表</h2>
+
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>番号</th>
+        <th>論文</th>
+        <th>ジャーナル</th>
+        <th>デザイン</th>
+        <th>一言要約</th>
+        <th>関連</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>DunedinPACNI estimates longitudinal pace</td><td>Nat Aging (2025)</td><td>コホート・深層学習</td><td>縦断老化速度推定モデル</td><td>健康寿命・脳・認知</td></tr>
+      <tr><td>2</td><td>Brain aging patterns in 49,482 individuals</td><td>Nat Med (2024)</td><td>大規模コホート・深層学習</td><td>5つの脳萎縮パターン同定</td><td>脳・認知・方法論</td></tr>
+      <tr><td>3</td><td>Physical activity and tau accumulation</td><td>Nat Med (2025)</td><td>コホート・MRI・PET</td><td>身体活動のタウ抑制効果</td><td>身体活動・脳・認知</td></tr>
+      <tr><td>4</td><td>Brain age gap as predictive biomarker</td><td>Commun Med (2025)</td><td>大規模コホート・メタ解析</td><td>生活習慣による脳老化可逆性</td><td>健康寿命・脳・認知</td></tr>
+      <tr><td>5</td><td>Brain age as mediator of risk and cognition</td><td>Lancet Healthy Long (2024)</td><td>コホート・媒介分析</td><td>リスク→脳老化→認知低下経路</td><td>健康寿命・脳・方法論</td></tr>
+      <tr><td>6</td><td>Brain clocks and health disparities</td><td>Nat Med (2024)</td><td>多国籍コホート・深層学習</td><td>社会経済的脳老化格差定量化</td><td>健康寿命・脳・方法論</td></tr>
+      <tr><td>7</td><td>Neural correlates of cognitive training</td><td>npj Aging (2025)</td><td>メタ解析</td><td>楔前部活性化の特異的役割</td><td>脳・認知・方法論</td></tr>
+      <tr><td>8</td><td>Memory decline and brain structure thresholds</td><td>Nat Commun (2025)</td><td>メガ解析</td><td>脳構造変化の非線形閾値効果</td><td>脳・認知・方法論</td></tr>
+      <tr><td>9</td><td>Activity changes and brain integrity</td><td>Alzheimers Dement (2025)</td><td>コホート研究</td><td>身体活動変化パターンと脳老化</td><td>身体活動・脳・認知</td></tr>
+      <tr><td>10</td><td>Brain age and glial/synaptic biomarkers</td><td>Mol Psychiatry (2025)</td><td>バイオマーカー研究</td><td>脳年齢と分子病理の関連</td><td>脳・認知・方法論</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ========== TREND SUMMARY ========== -->
+  <div class="trend-summary">
+    <h3>本日の研究トレンド総括</h3>
+    <p>2024〜2025年の脳・認知研究における3つの重要な潮流が確認できた。</p>
+    <p><strong>第一に、「脳老化の異質性」の定量化。</strong>従来の単一的な脳年齢（brain age）から、複数の脳萎縮パターン（R1〜R5など）や個人ごとの老化速度（DunedinPACNI）への転換。49,482名規模での脳老化パターン同定により、「一つの脳老化」ではなく「多様な脳老化のプロファイル」が存在することが明確化された。</p>
+    <p><strong>第二に、「身体活動の防御効果」の実証的強化。</strong>歩数計による客観的身体活動測定とPET/MRI による脳内メカニズムの同時評価により、身体活動がアミロイド陽性者のタウ蓄積を抑制する可能性、中年期の活動パターン変化が脳構造と関連することを示した。運動→脳老化抑制→認知機能保護の因果連鎖が実装化段階に。</p>
+    <p><strong>第三に、「多層的バイオマーカー統合」の進展。</strong>構造MRI + 機能画像（fMRI・EEG）+ 分子マーカー（CSF・血漿）の統合により、脳老化の構造・機能・分子レベルでの包括的理解が可能になった。非線形関係（閾値効果）や因果経路（媒介分析）の検出も高度化。</p>
+  </div>
+
+  <div class="footer">
+    本レポートは研究者の知識インフラとして作成されています。<br>
+    作成日：2026年3月5日
+  </div>
+
+</div>
+</body>
+</html>

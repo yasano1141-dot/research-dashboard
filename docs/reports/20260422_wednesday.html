@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート｜筋質・体組成 — 2026年4月22日（水曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #2D4A7A;
+    --secondary: #4A90D9;
+    --accent: #E8703A;
+    --bg: #F5F7FA;
+    --card-bg: #FFFFFF;
+    --text: #1A1A2E;
+    --text-light: #555577;
+    --border: #D0D8E8;
+    --tag-blue: #EBF4FF;
+    --tag-blue-text: #2D6BB5;
+    --tag-green: #E8F5E9;
+    --tag-green-text: #2E7D32;
+    --tag-orange: #FFF3E0;
+    --tag-orange-text: #E65100;
+    --tag-purple: #F3E5F5;
+    --tag-purple-text: #6A1B9A;
+    --tag-red: #FFEBEE;
+    --tag-red-text: #C62828;
+    --rank1: #FFD700;
+    --rank2: #C0C0C0;
+    --rank3: #CD7F32;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2f5e 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .header h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+  .header .meta {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 6px;
+  }
+  .header .theme-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 0.08em;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: 8px;
+    margin: 36px 0 20px 0;
+  }
+  .paper-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 24px;
+    margin-bottom: 22px;
+    border-left: 5px solid var(--secondary);
+    transition: box-shadow 0.2s;
+  }
+  .paper-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+  .paper-card.top1 { border-left-color: #FFD700; }
+  .paper-card.top2 { border-left-color: #C0C0C0; }
+  .paper-card.top3 { border-left-color: #CD7F32; }
+  .paper-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .rank-badge {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .rank-1 { background: linear-gradient(135deg, #FFD700, #FFA500); }
+  .rank-2 { background: linear-gradient(135deg, #C0C0C0, #888); }
+  .rank-3 { background: linear-gradient(135deg, #CD7F32, #8B4513); }
+  .rank-other { background: linear-gradient(135deg, #4A90D9, #2D5FA3); }
+  .paper-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.5;
+    flex: 1;
+  }
+  .paper-title a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .paper-title a:hover { text-decoration: underline; color: var(--secondary); }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: var(--text-light);
+  }
+  .meta-item {
+    background: #F0F4FA;
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  .design-badge {
+    background: var(--tag-blue);
+    color: var(--tag-blue-text);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .summary-block {
+    background: #F8FAFF;
+    border-left: 3px solid var(--secondary);
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 12px;
+    font-size: 13.5px;
+    font-style: italic;
+    color: #344;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .detail-item {
+    background: #FAFBFE;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .detail-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+  .detail-content {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .detail-item.full-width {
+    grid-column: 1 / -1;
+  }
+  .tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .tag {
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .tag-blue { background: var(--tag-blue); color: var(--tag-blue-text); }
+  .tag-green { background: var(--tag-green); color: var(--tag-green-text); }
+  .tag-orange { background: var(--tag-orange); color: var(--tag-orange-text); }
+  .tag-purple { background: var(--tag-purple); color: var(--tag-purple-text); }
+  .tag-red { background: var(--tag-red); color: var(--tag-red-text); }
+  .new-badge {
+    display: inline-block;
+    background: #FF3D00;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-left: 6px;
+    vertical-align: middle;
+    letter-spacing: 0.05em;
+  }
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 12.5px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  .summary-table th {
+    background: var(--primary);
+    color: white;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .summary-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #EEF2F8;
+    vertical-align: top;
+  }
+  .summary-table tr:nth-child(even) td { background: #F8FAFF; }
+  .summary-table tr:last-child td { border-bottom: none; }
+  .summary-table a { color: var(--secondary); text-decoration: none; }
+  .summary-table a:hover { text-decoration: underline; }
+  .footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  @media (max-width: 600px) {
+    .detail-grid { grid-template-columns: 1fr; }
+    .paper-header { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<div class="header">
+  <div class="container">
+    <h1>💪 研究レポート｜筋質・体組成</h1>
+    <div class="meta">2026年4月22日（水曜日）｜水曜日テーマ: 筋質・体組成</div>
+    <div class="theme-badge">📋 通常レポート（バージョンA）｜論文10本</div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section-title">📚 今週の選定論文（10本）</div>
+
+  <!-- Paper 1 -->
+  <div class="paper-card top1">
+    <div class="paper-header">
+      <div class="rank-badge rank-1">1</div>
+      <div class="paper-title">
+        <a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(25)00075-3/fulltext" target="_blank">
+          Capturing what counts in muscle failure: a critical appraisal of the current operational models of sarcopenia
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Lancet Healthy Longevity, 2025; 6: e100204</span>
+      <span class="meta-item">レビュー（サルコペニア診断モデル全体を評価）</span>
+      <span class="design-badge">批判的レビュー</span>
+    </div>
+    <div class="summary-block">
+      サルコペニアの現行診断モデル（EWGSOP2、AWGS2、SDOCなど）を体系的に批判評価した総説。筋力と身体機能の低下が筋量の減少よりも障害予測に優位であることを示し、「筋不全（muscle failure）」概念の再構築を提唱。診断基準の統一と筋質評価の組み込みの必要性を主張。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">現行のサルコペニア診断基準（EWGSOP2、AWGS2、SDOC、ICSMFなど）の構成要素・カットオフ値・予測能を比較検討。筋量・筋力・身体機能の各ドメインの相対的寄与を評価し、筋力と身体パフォーマンスが筋量よりも障害・死亡の予測に優れることを明確化。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">サルコペニア研究の方向性を左右する重要論文。筋質（CT筋密度、超音波エコー強度、BIA位相角など）の診断基準への統合を強く支持する根拠を提示。Lancet系列での発表であり、国際的議論を牽引する影響力を持つ。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">ナラティブレビュー形式だが、各診断モデルの構造と予測妥当性を体系的に比較。観察研究・メタ解析のエビデンスを統合して評価基準の優劣を論じている。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">系統的レビューではなくナラティブレビューであり、文献選択にバイアスの可能性。特定の診断基準を推奨するための定量的比較は行っていない。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">筋質指標（CT筋密度、エコー強度、位相角）を用いた独自の診断フレームワーク開発研究への示唆大。日本人高齢者コホートでのAWGS2基準 vs 筋質統合基準の予測能比較研究が有望。ECW/ICW比を加えた新しい診断アルゴリズムの開発にも貢献。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-red">サルコペニア</span>
+      <span class="tag tag-blue">診断基準</span>
+      <span class="tag tag-orange">筋不全</span>
+      <span class="tag tag-green">筋質</span>
+      <span class="tag tag-purple">レビュー</span>
+    </div>
+  </div>
+
+  <!-- Paper 2 -->
+  <div class="paper-card top2">
+    <div class="paper-header">
+      <div class="rank-badge rank-2">2</div>
+      <div class="paper-title">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/39549478/" target="_blank">
+          Phase angle as a marker of muscle quality: A systematic review and meta-analysis
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Clinical Nutrition, 2024; 43(12): 308-326</span>
+      <span class="meta-item">17研究、2,710名</span>
+      <span class="design-badge">系統的レビュー・メタ解析</span>
+    </div>
+    <div class="summary-block">
+      BIA位相角（PhA）と筋質指標の関連を体系的に評価。PhAはCT筋密度と中等度正相関（r=0.54）、超音波エコー強度と中等度逆相関（r=-0.42）を示し、筋質の簡便な代替指標としての有用性を実証。筋質評価の臨床普及に向けた重要なエビデンスを提供。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">PubMed・Embase・Web of Scienceを検索し、BIA由来PhAと筋質の直接測定指標（CT筋密度、超音波エコー強度、筋質指数）の相関を評価した17研究を統合。PhAとSMDの相関（4研究、924名; r=0.54）、PhAとエコー強度の逆相関（8研究、1,401名; r=-0.42）を確認。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">PhAが筋質のスクリーニング指標として臨床実装可能であることを初めて系統的に定量化。CT・超音波と比較して非侵襲・低コスト・迅速なBIA測定で筋質を推定できることは、大規模疫学研究や臨床現場での実用性が極めて高い。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">PRISMA準拠の系統的レビュー。ランダム効果モデルによる相関係数の統合。研究の質評価にはNewcastle-Ottawa Scaleを使用。異質性はI²統計量で評価。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">研究間の異質性が高い（I²＞50%の解析あり）。BIA機器・周波数の違い、筋質測定部位の不一致が結果に影響。縦断研究がほぼなく、因果関係の検討が不十分。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">PhAを筋質代替指標として大規模日本人コホートで検証する研究が有望。CT筋密度・エコー強度との日本人高齢者でのクロスバリデーション研究、および縦断的PhA変化と機能低下の関連研究が重要課題。ECW/ICW比との組み合わせによる筋質総合評価スコアの開発も検討可能。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">位相角</span>
+      <span class="tag tag-blue">BIA</span>
+      <span class="tag tag-green">筋質</span>
+      <span class="tag tag-purple">メタ解析</span>
+      <span class="tag tag-orange">CT筋密度</span>
+      <span class="tag tag-orange">エコー強度</span>
+    </div>
+  </div>
+
+  <!-- Paper 3 -->
+  <div class="paper-card top3">
+    <div class="paper-header">
+      <div class="rank-badge rank-3">3</div>
+      <div class="paper-title">
+        <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1589888/full" target="_blank">
+          Low lean mass and all-cause mortality risk in the middle-aged and older population: a dose-response meta-analysis of prospective cohort studies
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Frontiers in Medicine, 2025; 12: 1589888</span>
+      <span class="meta-item">11研究、130,079名</span>
+      <span class="design-badge">用量反応メタ解析</span>
+    </div>
+    <div class="summary-block">
+      中高年・高齢者における低除脂肪量と全死亡リスクの関連を用量反応的に検討。低除脂肪量は全死亡リスクを30%増加（RR 1.30, 95%CI 1.16-1.47）。除脂肪量と死亡リスクの間に逆非線形の用量反応関係が存在し、筋量維持の重要性を定量的に示した大規模エビデンス。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">研究概要</div>
+        <div class="detail-content">PubMed、Web of Science、Scopusを検索し、DXA法による除脂肪量と全死亡の関連を前向きに検討した11の前向きコホート研究（130,079名）を統合。ランダム効果モデルで最低カテゴリー vs 基準カテゴリーのRRを算出。restricted cubic splineによる用量反応分析を実施。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">13万人超のデータで除脂肪量と死亡リスクの定量的関連を示した。低筋量の閾値効果を非線形モデルで明確化し、サルコペニア予防の公衆衛生的意義を強固に支持。DXAベースの測定法に限定した統一的解析が強み。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">方法論評価</div>
+        <div class="detail-content">PRISMA準拠。ランダム効果モデル、I²統計量による異質性評価、Eggerの検定による出版バイアス評価、サブグループ解析（性別、年齢層、追跡期間、地域）を実施。用量反応にはrestricted cubic spline回帰を適用。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">DXAベースの除脂肪量のみを対象としBIAやCTベースの研究を除外。筋質（脂肪浸潤）は評価していない。観察研究の統合であり交絡の完全な制御は不可能。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆・研究アイデア</div>
+        <div class="detail-content">日本人コホートにおけるDXA除脂肪量の至適カットオフ値の検討が課題。CT筋密度や位相角など筋質指標と組み合わせた複合リスクスコアの開発研究が有望。健康寿命（DFLE）をアウトカムとした場合の用量反応関係の検討も独自の貢献となる。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-green">除脂肪量</span>
+      <span class="tag tag-red">全死亡</span>
+      <span class="tag tag-blue">用量反応</span>
+      <span class="tag tag-purple">メタ解析</span>
+      <span class="tag tag-orange">DXA</span>
+      <span class="tag tag-blue">高齢者</span>
+    </div>
+  </div>
+
+  <!-- Paper 4 -->
+  <div class="paper-card ">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">4</div>
+      <div class="paper-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0531556525002852" target="_blank">
+          Beyond quantity: Muscle quality as the cornerstone for sarcopenia diagnosis and healthy aging
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Ageing Research Reviews, 2025</span>
+      <span class="meta-item">コメンタリー（Asano et al.の研究への論評）</span>
+      <span class="design-badge">論評・コメンタリー</span>
+    </div>
+    <div class="summary-block">
+      Asano et al.による日本人高齢者コホート研究の結果を受け、筋質がサルコペニア診断の要として筋量に代わるべきことを主張するコメンタリー。筋力・身体機能の低下が筋量減少より急速であること、筋質の機能的・形態的指標が早期サルコペニア検出に優れることを強調。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">自身の研究（Asano et al.）への国際的な論評であり、筋質研究の国際的認知度向上を示す。診断基準への筋質統合を国際的に推進する議論の中核。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">コメンタリーであり新規データは含まない。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆</div>
+        <div class="detail-content">Asano et al.のデータを拡張し、筋質指標（超音波エコー強度、CT筋密度、位相角）の縦断的変化パターンの性差・年齢差を更に詳細に検討する研究が推奨される。国際共同研究での筋質カットオフ値標準化への貢献も期待。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-green">筋質</span>
+      <span class="tag tag-red">サルコペニア</span>
+      <span class="tag tag-blue">診断基準</span>
+      <span class="tag tag-orange">加齢</span>
+      <span class="tag tag-purple">コメンタリー</span>
+    </div>
+  </div>
+
+  <!-- Paper 5 -->
+  <div class="paper-card ">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">5</div>
+      <div class="paper-title">
+        <a href="https://onlinelibrary.wiley.com/doi/10.1002/jcsm.70184" target="_blank">
+          Reference Methods for Measuring Skeletal Muscle Mass: A Critical Perspective
+        </a>
+        <span class="new-badge">NEW 2026</span>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">J Cachexia Sarcopenia Muscle, 2026; 17(1): e70184</span>
+      <span class="meta-item">包括的レビュー（51件の剖検データ含む）</span>
+      <span class="design-badge">総説</span>
+    </div>
+    <div class="summary-block">
+      骨格筋量の測定方法をin vitro（剖検）とin vivo（CT、MRI、DXA）の2カテゴリーに分類し体系的に評価。CT・MRI・DXAを上位参照法と位置づけ、各方法の精度・限界・標準化の現状と課題を批判的に検討。測定法の選択が研究結果の解釈に与える影響を明確化。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">Heymsfield（体組成研究の世界的権威）による筋量測定法の決定的レビュー。研究デザインにおける測定法選択の根拠を提供し、CT筋密度測定の重要性を再確認。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">既存文献のレビューに基づく。新規の測定法開発や比較データは含まない。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆</div>
+        <div class="detail-content">CT筋密度を用いた筋質研究の方法論的妥当性を支持。BIAベースの筋量推定値とCT/MRI参照値の系統的比較研究が示唆される。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-green">骨格筋量</span>
+      <span class="tag tag-blue">測定法</span>
+      <span class="tag tag-orange">CT</span>
+      <span class="tag tag-orange">MRI</span>
+      <span class="tag tag-orange">DXA</span>
+      <span class="tag tag-purple">総説</span>
+    </div>
+  </div>
+
+  <!-- Paper 6 -->
+  <div class="paper-card ">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">6</div>
+      <div class="paper-title">
+        <a href="https://link.springer.com/article/10.1007/s11357-025-01726-2" target="_blank">
+          Impact of sarcopenia and obesity on skeletal muscle size, gene expression, and mitochondrial function
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">GeroScience, 2025; 48: 1219-1240</span>
+      <span class="meta-item">動物実験（若齢・老齢マウス）</span>
+      <span class="design-badge">実験研究</span>
+    </div>
+    <div class="summary-block">
+      高脂肪食誘導性肥満がサルコペニアの文脈で骨格筋サイズ・遺伝子発現・ミトコンドリア機能に与える影響を検討。加齢と肥満の複合効果（サルコペニア肥満）がミトコンドリアComplex Iプロトンリークを増加させ、酸化的リン酸化を障害することを示した。筋線維型特異的な応答パターンも解明。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">サルコペニア肥満の分子メカニズム（ミトコンドリア機能障害）を明確化し、トランスレーショナル研究への橋渡しを提供。筋質低下の分子基盤理解に貢献。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">動物実験であり、ヒトへの直接外挿には限界。高脂肪食モデルはヒトの食事パターンを完全に再現しない。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆</div>
+        <div class="detail-content">ヒトでのミトコンドリア機能マーカー（血中NAD+代謝物等）と筋質（CT密度）の関連を検討する橋渡し研究が示唆される。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-red">サルコペニア肥満</span>
+      <span class="tag tag-blue">ミトコンドリア</span>
+      <span class="tag tag-purple">遺伝子発現</span>
+      <span class="tag tag-orange">動物実験</span>
+      <span class="tag tag-blue">GeroScience</span>
+    </div>
+  </div>
+
+  <!-- Paper 7 -->
+  <div class="paper-card ">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">7</div>
+      <div class="paper-title">
+        <a href="https://www.thelancet.com/journals/lanhl/article/piis2666-7568(25)00034-0/fulltext" target="_blank">
+          Blood biomarkers of Alzheimer's disease and 12-year muscle strength trajectories in community-dwelling older adults: a cohort study
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Lancet Healthy Longevity, 2025</span>
+      <span class="meta-item">n=1,953（SNAC-Kコホート、スウェーデン）</span>
+      <span class="design-badge">前向きコホート研究</span>
+    </div>
+    <div class="summary-block">
+      アルツハイマー病（AD）関連血液バイオマーカー（Aβ42/40比、p-tau181、NfL、GFAP）と12年間の握力軌跡の関連を検討。AD関連バイオマーカーの異常が、認知症発症前から筋力低下の加速と関連することを発見。脳-筋肉連関の新しいエビデンスを提供。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">脳と骨格筋の加齢における連関（brain-muscle axis）を血液バイオマーカーレベルで初めて縦断的に実証。認知症予防と筋力維持の統合的介入の根拠を強化。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">スウェーデン単一コホートで人種的多様性に欠ける。バイオマーカーはベースライン1時点のみ測定。逆因果の可能性を完全に排除できない。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆</div>
+        <div class="detail-content">日本人コホートでADバイオマーカーと筋質（CT密度、位相角）・身体機能の縦断的関連を検討する研究が有望。脳萎縮パターンと筋質変化の並行的解析も独自テーマとなる。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-red">アルツハイマー</span>
+      <span class="tag tag-green">筋力</span>
+      <span class="tag tag-blue">バイオマーカー</span>
+      <span class="tag tag-purple">縦断研究</span>
+      <span class="tag tag-orange">脳-筋連関</span>
+    </div>
+  </div>
+
+  <!-- Paper 8 -->
+  <div class="paper-card ">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">8</div>
+      <div class="paper-title">
+        <a href="https://academic.oup.com/ageing/article/54/7/afaf189/8190201" target="_blank">
+          Interactions between bone density and muscle mass in predicting all-cause mortality: a 10-year prospective cohort study of 1388 older men (aged 77–101 years)
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Age and Ageing, 2025; 54(7): afaf189</span>
+      <span class="meta-item">n=1,388（MrOS Studyオーストラリアコホート、77-101歳男性）</span>
+      <span class="design-badge">前向きコホート研究</span>
+    </div>
+    <div class="summary-block">
+      骨密度と筋量の相互作用が全死亡に与える影響を10年追跡で検討。低筋量の高齢男性では、骨密度1SD低下ごとに全死亡リスクが19-29%増加。骨と筋肉の健康は独立ではなく相互依存的に死亡リスクに影響することを実証。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">骨-筋連関の疫学的エビデンスを提供し、サルコペニアと骨粗鬆症の統合的評価・介入の必要性を支持。超高齢男性（77-101歳）の大規模データは貴重。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">男性のみが対象で女性への一般化不可。オーストラリアの白人コホートが主体。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆</div>
+        <div class="detail-content">骨密度・筋量・筋質の3指標統合による死亡予測モデルの開発研究が示唆される。日本人高齢者コホートでの骨-筋-体組成の相互作用の検討も有望。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">骨密度</span>
+      <span class="tag tag-green">筋量</span>
+      <span class="tag tag-red">全死亡</span>
+      <span class="tag tag-purple">コホート研究</span>
+      <span class="tag tag-orange">高齢男性</span>
+    </div>
+  </div>
+
+  <!-- Paper 9 -->
+  <div class="paper-card ">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">9</div>
+      <div class="paper-title">
+        <a href="https://www.tandfonline.com/doi/full/10.1080/15502783.2025.2536693" target="_blank">
+          Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults
+        </a>
+        
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">J Int Soc Sports Nutr, 2025; 22(1)</span>
+      <span class="meta-item">地域在住中高年・高齢者</span>
+      <span class="design-badge">横断研究</span>
+    </div>
+    <div class="summary-block">
+      ECW/TBW比と位相角（PhA）の組み合わせが筋機能低下と有意に関連することを実証。ECW/TBW高値かつPhA低値の群は、握力・歩行速度・椅子立ち上がりテストすべてが有意に低下。BIAプロファイルの複合評価が機能低下リスクのスクリーニングに有用であることを示した。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">ECW/ICW比と位相角の組み合わせによる筋機能評価は、非侵襲的かつ迅速な臨床スクリーニングツールとして実用性が高い。大規模疫学研究への応用可能性大。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">横断研究であり因果関係の推定不可。BIA機器の種類・測定条件の影響未検討。カットオフ値の外的妥当性未確認。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆</div>
+        <div class="detail-content">ECW/ICW比×位相角の複合指標を用いた縦断的フレイル予測研究が有望。CT筋密度との3指標統合による筋質総合スコア開発も検討すべき。日本人高齢者での基準値策定が急務。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">ECW/TBW</span>
+      <span class="tag tag-blue">位相角</span>
+      <span class="tag tag-green">BIA</span>
+      <span class="tag tag-green">筋機能</span>
+      <span class="tag tag-orange">スクリーニング</span>
+    </div>
+  </div>
+
+  <!-- Paper 10 -->
+  <div class="paper-card ">
+    <div class="paper-header">
+      <div class="rank-badge rank-other">10</div>
+      <div class="paper-title">
+        <a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1721126/full" target="_blank">
+          Body roundness index: superior predictors of intramuscular fat infiltration in general population
+        </a>
+        <span class="new-badge">NEW 2026</span>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-item">Frontiers in Nutrition, 2026; 13: 1721126</span>
+      <span class="meta-item">一般集団（CT・MRIによるIMFI評価）</span>
+      <span class="design-badge">横断研究</span>
+    </div>
+    <div class="summary-block">
+      Body Roundness Index（BRI）がBMIよりも筋肉内脂肪浸潤（IMFI）の予測に優れることをCT・MRIデータで実証。BMIでは捕捉できない体脂肪分布と筋質の関連をBRIが反映。簡便な人体計測指標で筋脂肪浸潤リスクを評価する新たなアプローチを提案。
+    </div>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">重要な点</div>
+        <div class="detail-content">人体計測指標で筋脂肪浸潤（myosteatosis）を推定する新規アプローチ。大規模スクリーニングでのCT/MRI不要な筋質推定の可能性を示唆。</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">限界</div>
+        <div class="detail-content">中国の単一施設データで外的妥当性に限界。横断デザインで筋脂肪浸潤の進行予測はできない。</div>
+      </div>
+      <div class="detail-item full-width">
+        <div class="detail-label">研究への示唆</div>
+        <div class="detail-content">BRIとBIA指標（位相角、ECW/ICW）の組み合わせによる非画像筋質推定モデルの開発が示唆される。多民族コホートでの検証が重要。</div>
+      </div>
+    </div>
+    <div class="tags-row">
+      <span class="tag tag-blue">BRI</span>
+      <span class="tag tag-red">筋脂肪浸潤</span>
+      <span class="tag tag-orange">CT</span>
+      <span class="tag tag-orange">MRI</span>
+      <span class="tag tag-green">体組成</span>
+      <span class="tag tag-blue">人体計測</span>
+    </div>
+  </div>
+
+  <div class="section-title">📊 まとめ一覧表</div>
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>論文タイトル</th>
+        <th>ジャーナル</th>
+        <th>デザイン</th>
+        <th>キーワード</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(25)00075-3/fulltext" target="_blank">Capturing what counts in muscle failure: a critical appraisal of the current ope...</a></td>
+        <td>Lancet Healthy Longevity</td>
+        <td>批判的レビュー</td>
+        <td>サルコペニア, 診断基準, 筋不全</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><a href="https://pubmed.ncbi.nlm.nih.gov/39549478/" target="_blank">Phase angle as a marker of muscle quality: A systematic review and meta-analysis</a></td>
+        <td>Clinical Nutrition</td>
+        <td>系統的レビュー・メタ解析</td>
+        <td>位相角, BIA, 筋質</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1589888/full" target="_blank">Low lean mass and all-cause mortality risk in the middle-aged and older populati...</a></td>
+        <td>Frontiers in Medicine</td>
+        <td>用量反応メタ解析</td>
+        <td>除脂肪量, 全死亡, 用量反応</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S0531556525002852" target="_blank">Beyond quantity: Muscle quality as the cornerstone for sarcopenia diagnosis and ...</a></td>
+        <td>Ageing Research Reviews</td>
+        <td>論評・コメンタリー</td>
+        <td>筋質, サルコペニア, 診断基準</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><a href="https://onlinelibrary.wiley.com/doi/10.1002/jcsm.70184" target="_blank">Reference Methods for Measuring Skeletal Muscle Mass: A Critical Perspective</a></td>
+        <td>J Cachexia Sarcopenia Muscle</td>
+        <td>総説</td>
+        <td>骨格筋量, 測定法, CT</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><a href="https://link.springer.com/article/10.1007/s11357-025-01726-2" target="_blank">Impact of sarcopenia and obesity on skeletal muscle size, gene expression, and m...</a></td>
+        <td>GeroScience</td>
+        <td>実験研究</td>
+        <td>サルコペニア肥満, ミトコンドリア, 遺伝子発現</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><a href="https://www.thelancet.com/journals/lanhl/article/piis2666-7568(25)00034-0/fulltext" target="_blank">Blood biomarkers of Alzheimer's disease and 12-year muscle strength trajectories...</a></td>
+        <td>Lancet Healthy Longevity</td>
+        <td>前向きコホート研究</td>
+        <td>アルツハイマー, 筋力, バイオマーカー</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><a href="https://academic.oup.com/ageing/article/54/7/afaf189/8190201" target="_blank">Interactions between bone density and muscle mass in predicting all-cause mortal...</a></td>
+        <td>Age and Ageing</td>
+        <td>前向きコホート研究</td>
+        <td>骨密度, 筋量, 全死亡</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><a href="https://www.tandfonline.com/doi/full/10.1080/15502783.2025.2536693" target="_blank">Elevated extracellular water to total body water ratio and low phase angle in re...</a></td>
+        <td>J Int Soc Sports Nutr</td>
+        <td>横断研究</td>
+        <td>ECW/TBW, 位相角, BIA</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1721126/full" target="_blank">Body roundness index: superior predictors of intramuscular fat infiltration in g...</a></td>
+        <td>Frontiers in Nutrition</td>
+        <td>横断研究</td>
+        <td>BRI, 筋脂肪浸潤, CT</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<div class="footer">
+  <p>研究レポート — 自動生成 by Claude｜2026年4月22日（水曜日）</p>
+  <p>テーマ: 筋質・体組成｜Powered by Anthropic Claude</p>
+</div>
+
+</body>
+</html>

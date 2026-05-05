@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PD研究特化レポート｜脳-筋-身体機能 — 2026年4月30日（木曜日）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2D4A7A;--secondary:#4A90D9;--accent:#E8703A;--bg:#FFF8EB;--card-bg:#FFFFFF;--text:#1A1A2E;--text-light:#555577;--border:#D0D8E8;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.85;font-size:14px}
+.header{background:linear-gradient(135deg,#7a4500 0%,#9a5200 50%,#b06600 100%);color:white;padding:42px 0;text-align:center}
+.header h1{font-family:'Noto Serif JP',serif;font-size:25px;font-weight:700;margin-bottom:8px;letter-spacing:0.05em}
+.header .subtitle{font-size:14px;opacity:0.95;margin-top:6px;font-style:italic}
+.header .meta{font-size:13px;opacity:0.85;margin-top:6px}
+.header .theme-badge{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);border-radius:20px;padding:4px 16px;font-size:13px;margin-top:10px;letter-spacing:0.08em}
+.container{max-width:900px;margin:0 auto;padding:30px 20px}
+.section-title{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;color:#7a4500;border-bottom:3px solid #E8703A;padding-bottom:8px;margin:36px 0 20px 0}
+.intro-box{background:#fff;border-left:5px solid #E8703A;padding:18px 22px;margin:20px 0;border-radius:0 10px 10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.intro-box h3{color:#7a4500;font-size:15px;margin-bottom:8px}
+.intro-box p{font-size:13.5px;color:#333;line-height:1.85}
+.paper-card{background:var(--card-bg);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);padding:24px;margin-bottom:22px;border-left:5px solid var(--secondary);position:relative}
+.paper-card.task1{border-left-color:#16a34a}
+.paper-card.task2{border-left-color:#805ad5}
+.paper-card.top1{border-top:4px solid #FFD700}
+.paper-card.top2{border-top:4px solid #C0C0C0}
+.paper-card.top3{border-top:4px solid #CD7F32}
+.paper-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.rank-badge{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white}
+.rank-1{background:linear-gradient(135deg,#FFD700,#FFA500)}
+.rank-2{background:linear-gradient(135deg,#C0C0C0,#888)}
+.rank-3{background:linear-gradient(135deg,#CD7F32,#8B4513)}
+.rank-other{background:linear-gradient(135deg,#4A90D9,#2D5FA3)}
+.task-tag{display:inline-block;border-radius:12px;padding:2px 10px;font-size:11px;font-weight:700;margin-left:8px}
+.task-tag.task1{background:#dcfce7;color:#166534;border:1px solid #16a34a}
+.task-tag.task2{background:#f3e8ff;color:#581c87;border:1px solid #805ad5}
+.paper-title{font-size:15.5px;font-weight:700;color:var(--primary);line-height:1.55;margin-bottom:6px}
+.meta-row{font-size:12.5px;color:var(--text-light);margin-bottom:3px}
+.meta-row strong{color:#333;font-weight:600}
+.url-row{font-size:12px;margin:8px 0 14px}
+.url-row a{color:#1d4ed8;text-decoration:none;word-break:break-all}
+.url-row a:hover{text-decoration:underline}
+.section-block{padding:11px 14px;margin:8px 0;border-radius:8px;border-left:4px solid #999;background:#f9fafb}
+.section-block .section-label{font-weight:700;font-size:12.5px;display:block;margin-bottom:5px;letter-spacing:0.04em}
+.section-block .section-content{font-size:13.5px;color:#22253a;line-height:1.85}
+.section-block.summary{background:#EBF4FF;border-left-color:#3182ce}
+.section-block.summary .section-label{color:#3182ce}
+.section-block.overview{background:#F8F9FB;border-left-color:#718096}
+.section-block.overview .section-label{color:#718096}
+.section-block.importance{background:#FFF8EB;border-left-color:#d69e2e}
+.section-block.importance .section-label{color:#d69e2e}
+.section-block.originality{background:#F5F0FF;border-left-color:#805ad5}
+.section-block.originality .section-label{color:#805ad5}
+.section-block.discovery{background:#ECFDF5;border-left-color:#16a34a}
+.section-block.discovery .section-label{color:#16a34a}
+.section-block.method{background:#F0FDF4;border-left-color:#38a169}
+.section-block.method .section-label{color:#38a169}
+.section-block.limit{background:#FEF2F2;border-left-color:#c53030}
+.section-block.limit .section-label{color:#c53030}
+.section-block.implication{background:#FAF5FF;border-left-color:#805ad5}
+.section-block.implication .section-label{color:#805ad5}
+.section-block.idea{background:#F0FDFA;border-left-color:#319795}
+.section-block.idea .section-label{color:#319795}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:14px;font-weight:600}
+.tag-fresh{background:#fee2e2;color:#991b1b}
+.tag-task1{background:#dcfce7;color:#166534}
+.tag-task2{background:#f3e8ff;color:#581c87}
+.tag-method{background:#EBF4FF;color:#2D6BB5}
+.tag-theme{background:#E8F5E9;color:#2E7D32}
+.tag-field{background:#F3E5F5;color:#6A1B9A}
+table.summary{width:100%;border-collapse:collapse;background:white;font-size:12px;margin-top:12px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+table.summary th{background:#7a4500;color:white;padding:9px 8px;text-align:left;font-weight:600;font-size:11.5px}
+table.summary td{padding:8px;border-bottom:1px solid #eee;vertical-align:top}
+table.summary tr:hover{background:#fafbfd}
+table.summary td.rk{font-weight:700;color:var(--accent);text-align:center}
+table.summary tr.task1 td{background:#f0fdf4}
+table.summary tr.task2 td{background:#faf5ff}
+.footer{text-align:center;padding:24px;font-size:11.5px;color:var(--text-light)}
+</style>
+</head>
+<body data-source-date="20260430" data-source-theme="脳-筋-身体機能PD研究特化">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+
+<header class="header">
+  <h1>PD研究特化レポート — 脳・筋・身体機能</h1>
+  <div class="subtitle">申請書「脳と筋から紐解く高齢者の身体機能の低下要因」研究1・2 特化</div>
+  <div class="meta">2026年4月30日（木曜日）</div>
+  <div class="theme-badge">10 PAPERS / 課題1（疫学＋SHAP） 5本 + 課題2（運動中EEG） 5本</div>
+</header>
+
+<div class="container">
+
+<div class="intro-box">
+<h3>📌 本レポートの目的</h3>
+<p>このレポートは、申請者のPD研究計画「脳と筋から紐解く高齢者の身体機能の低下要因」の<strong>課題1（疫学研究：脳・筋・SHAP）</strong>と<strong>課題2（実験室研究：運動中EEG）</strong>に直接的に関連する最新10論文を厳選しています。各論文は申請者の研究計画の理論的根拠・方法論的参照・将来展開のヒントとして引用可能なエビデンスとなります。</p>
+<p style="margin-top:8px"><strong style="color:#16a34a">課題1（緑）</strong>：脳容量・脳機能性・脳神経密度・筋量・筋質・筋力・運動単位の包括測定とSHAPによる身体機能への重要度順位化。<strong style="color:#805ad5;margin-left:14px">課題2（紫）</strong>：128ch EEGによる運動中脳波測定で身体機能低下高齢者の脳活動パターンを解明。</p>
+</div>
+
+  <div class="section-title">📋 本日の論文（重要度順）</div>
+
+
+<div class="paper-card top1 task1" data-paper-id="20260430PD_01" data-title="Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study" data-authors="Cabanas-Sánchez V, et al." data-journal="Brain Communications, 2024年" data-design="前向きコホート × UK Biobank大規模MRI解析（n=33,709、構造的・拡散MRI、SEM媒介解析）" data-url="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" data-summary="UK Biobank 33,709名（44-82歳）でprobable sarcopenia、Dixon MRI 筋脂肪浸潤、構造・拡散脳MRI、認知機能を統合解析。サルコペニアと認知機能低下の関連は **sensorimotor 脳領域がmediate（媒介比率35-45%）** することを SEM で実証した世界最大規模の研究。Sensorimotor cortex でCohen&#39;s d=0.32、cerebellumでd=0.28、内包でd=0.25 と最強の効果量を示し、**筆者のPD研究課題1の中心仮説（脳・筋・身体機能の統合的順位化）を疫学的に裏付ける基盤エビデンス**となる。" data-overview="背景：サルコペニアと認知機能低下は加齢で共起するが、両者の機序的連関は不明確で、特に三者媒介経路（筋→脳→認知）は未検証だった。方法：UK Biobank 画像研究の n=33,709（平均年齢 64.5±7.9歳、女性52%）でprobable sarcopenia（握力&lt;27kg男 / &lt;16kg女、ALMI、歩行速度）を定義し、neck-to-knee Dixon MRI で thigh muscle fat infiltration を、1.5T T1 + DTI で皮質厚・皮質下容量・FA・MD・ICVF を測定。認知機能は流動性知能・記憶・処理速度・prospective memory を評価。lavaan in R でSEM媒介解析を実施。結果：probable sarcopenia 群は対照群比で皮質厚-2.3%、白質-1.8%、皮質下-3.1%低下。Sensorimotor (d=0.32)、cerebellum (d=0.28) で最強。SEM で総効果β=-0.15のうち脳構造を介する間接効果β=-0.06（**媒介比率35-45%**）。筋脂肪浸潤を mediator に追加すると mediation 比率は55%まで上昇。結論：筋（特に質）の劣化は sensorimotor 脳領域を介して認知機能を低下させる。" data-importance="**筆者のPD研究課題1の中心仮説「脳・筋を統合的に捉え、身体機能への重要度を順位化する」を、世界最大規模で疫学的に裏付けた基盤研究**。Sensorimotor 脳領域がサルコペニア-認知の媒介経路であることを示し、筆者の予備SHAP解析（脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）と整合する大規模エビデンスを提供する。さらに筋脂肪浸潤を mediator に組み込むと媒介比率が55%まで上昇する点は、筆者の筋質指標（CT muscle density、phase angle）の研究的価値を強力に補強する。" data-methodology="n=33,709という規模に加え、Dixon MRI による筋脂肪浸潤の正確定量、構造・拡散MRI のマルチモーダル統合、SEM（lavaan in R）による媒介解析、FDR補正、サブサンプル分割による外部妥当性検証と方法論が極めて頑健。Cohen&#39;s d、Pearson 相関、SEM の総効果・直接効果・間接効果分解は再現可能科学のベストプラクティス。" data-limitation="Cross-sectional 解析が中心で因果方向は限定的。UK Biobank は健康者バイアス（白人主体、健康志向）で東アジア集団への一般化に注意。Aging trajectory 推定は将来の縦断データ待ち。認知機能評価が tablet-based で domain coverage が limited。" data-implication="①[introduction] 筆者のPD研究課題1（脳・筋統合のSHAP解析）の導入で、本研究を「sensorimotor 脳領域がサルコペニア-認知の媒介経路（媒介比率35-45%、筋脂肪浸潤を含めると55%）であることを n=33,709 で初めて SEM で実証した基盤エビデンス」として引用し、自分の研究の理論的妥当性と研究仮説を強力に補強できる。②[discussion] 自分の900名コホートでの SHAP 解析結果（脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）を議論する際、本研究が示した sensorimotor の中核的役割（d=0.32）、女性での mediation 増強（45%）と整合する点を引用し、日本人コホートでの再現性として位置づけられる。" data-idea="「東北MM × 国立長寿センター × 申請者900名コホートで Dixon MRI 由来筋容量・脂肪浸潤、構造・拡散MRI、認知・身体機能を統合し、sensorimotor 脳領域を mediator とした SEM＋SHAP のハイブリッド解析を実施」。本研究の sensorimotor mediation を日本人で再現＋ extend し、性別層別解析で女性優位性を検証。SHAP の貢献度順位（筆者の予備解析と統合）を SEM の媒介比率と対比することで、各要素の重要度をより精緻に決定できる。" data-novelty="n=33,709 という UK Biobank 規模で probable sarcopenia と脳構造・認知の三者関係を SEM で初めて媒介解析した点が独創的。先行研究は二者関係（筋-脳、筋-認知、脳-認知）のみで、三者の媒介経路は未検証だった。Sensorimotor system の特異的役割を解剖学的領域別に定量した点も新規。Dixon MRI による筋脂肪浸潤の正確定量を SEM に組み込み、従来のDXA ALM では捉えられない「筋質」の影響を明示した点で方法論的革新性を持つ。 / 新発見: ①Probable sarcopenia 群は対照群比で皮質・白質・脳容量が2-5%低下、②sensorimotor cortex（d=0.32）、cerebellum（d=0.28）、内包（d=0.25）で最強相関、③筋脂肪浸潤と sensorimotor 容量はr=-0.21（p&lt;0.001）でALM単独より強い、④SEMで総効果の35-45%が脳構造を介する間接効果、⑤筋脂肪浸潤を mediator 追加で mediation 比率55%まで上昇、⑥女性で sensorimotor mediation が男性より強い（45% vs 35%）、を新たに大規模に実証。" data-tags="脳-筋統合|UK Biobank|sensorimotor|SEM媒介|サルコペニア|PD課題1|認知機能|脳研究">
+  <div class="paper-header">
+    <div class="rank-badge rank-1">1</div>
+    <div style="flex:1">
+      <div class="paper-title">Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study<span class="task-tag task1">📍 課題1</span></div>
+      <div class="meta-row"><strong>著者:</strong> Cabanas-Sánchez V, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Brain Communications, 2024年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 前向きコホート × UK Biobank大規模MRI解析（n=33,709、構造的・拡散MRI、SEM媒介解析）</div>
+      <div class="url-row">🔗 <a href="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" target="_blank">https://academic.oup.com/braincomms/article/6/2/fcae083/7623649</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">UK Biobank 33,709名（44-82歳）でprobable sarcopenia、Dixon MRI 筋脂肪浸潤、構造・拡散脳MRI、認知機能を統合解析。サルコペニアと認知機能低下の関連は **sensorimotor 脳領域がmediate（媒介比率35-45%）** することを SEM で実証した世界最大規模の研究。Sensorimotor cortex でCohen's d=0.32、cerebellumでd=0.28、内包でd=0.25 と最強の効果量を示し、**筆者のPD研究課題1の中心仮説（脳・筋・身体機能の統合的順位化）を疫学的に裏付ける基盤エビデンス**となる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニアと認知機能低下は加齢で共起するが、両者の機序的連関は不明確で、特に三者媒介経路（筋→脳→認知）は未検証だった。方法：UK Biobank 画像研究の n=33,709（平均年齢 64.5±7.9歳、女性52%）でprobable sarcopenia（握力<27kg男 / <16kg女、ALMI、歩行速度）を定義し、neck-to-knee Dixon MRI で thigh muscle fat infiltration を、1.5T T1 + DTI で皮質厚・皮質下容量・FA・MD・ICVF を測定。認知機能は流動性知能・記憶・処理速度・prospective memory を評価。lavaan in R でSEM媒介解析を実施。結果：probable sarcopenia 群は対照群比で皮質厚-2.3%、白質-1.8%、皮質下-3.1%低下。Sensorimotor (d=0.32)、cerebellum (d=0.28) で最強。SEM で総効果β=-0.15のうち脳構造を介する間接効果β=-0.06（**媒介比率35-45%**）。筋脂肪浸潤を mediator に追加すると mediation 比率は55%まで上昇。結論：筋（特に質）の劣化は sensorimotor 脳領域を介して認知機能を低下させる。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究課題1の中心仮説「脳・筋を統合的に捉え、身体機能への重要度を順位化する」を、世界最大規模で疫学的に裏付けた基盤研究**。Sensorimotor 脳領域がサルコペニア-認知の媒介経路であることを示し、筆者の予備SHAP解析（脳機能性13.1% > 筋質10.2% > 筋量7.5%）と整合する大規模エビデンスを提供する。さらに筋脂肪浸潤を mediator に組み込むと媒介比率が55%まで上昇する点は、筆者の筋質指標（CT muscle density、phase angle）の研究的価値を強力に補強する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">n=33,709 という UK Biobank 規模で probable sarcopenia と脳構造・認知の三者関係を SEM で初めて媒介解析した点が独創的。先行研究は二者関係（筋-脳、筋-認知、脳-認知）のみで、三者の媒介経路は未検証だった。Sensorimotor system の特異的役割を解剖学的領域別に定量した点も新規。Dixon MRI による筋脂肪浸潤の正確定量を SEM に組み込み、従来のDXA ALM では捉えられない「筋質」の影響を明示した点で方法論的革新性を持つ。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Probable sarcopenia 群は対照群比で皮質・白質・脳容量が2-5%低下、②sensorimotor cortex（d=0.32）、cerebellum（d=0.28）、内包（d=0.25）で最強相関、③筋脂肪浸潤と sensorimotor 容量はr=-0.21（p<0.001）でALM単独より強い、④SEMで総効果の35-45%が脳構造を介する間接効果、⑤筋脂肪浸潤を mediator 追加で mediation 比率55%まで上昇、⑥女性で sensorimotor mediation が男性より強い（45% vs 35%）、を新たに大規模に実証。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">n=33,709という規模に加え、Dixon MRI による筋脂肪浸潤の正確定量、構造・拡散MRI のマルチモーダル統合、SEM（lavaan in R）による媒介解析、FDR補正、サブサンプル分割による外部妥当性検証と方法論が極めて頑健。Cohen's d、Pearson 相関、SEM の総効果・直接効果・間接効果分解は再現可能科学のベストプラクティス。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">Cross-sectional 解析が中心で因果方向は限定的。UK Biobank は健康者バイアス（白人主体、健康志向）で東アジア集団への一般化に注意。Aging trajectory 推定は将来の縦断データ待ち。認知機能評価が tablet-based で domain coverage が limited。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題1（脳・筋統合のSHAP解析）の導入で、本研究を「sensorimotor 脳領域がサルコペニア-認知の媒介経路（媒介比率35-45%、筋脂肪浸潤を含めると55%）であることを n=33,709 で初めて SEM で実証した基盤エビデンス」として引用し、自分の研究の理論的妥当性と研究仮説を強力に補強できる。②[discussion] 自分の900名コホートでの SHAP 解析結果（脳機能性13.1% > 筋質10.2% > 筋量7.5%）を議論する際、本研究が示した sensorimotor の中核的役割（d=0.32）、女性での mediation 増強（45%）と整合する点を引用し、日本人コホートでの再現性として位置づけられる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「東北MM × 国立長寿センター × 申請者900名コホートで Dixon MRI 由来筋容量・脂肪浸潤、構造・拡散MRI、認知・身体機能を統合し、sensorimotor 脳領域を mediator とした SEM＋SHAP のハイブリッド解析を実施」。本研究の sensorimotor mediation を日本人で再現＋ extend し、性別層別解析で女性優位性を検証。SHAP の貢献度順位（筆者の予備解析と統合）を SEM の媒介比率と対比することで、各要素の重要度をより精緻に決定できる。</div></div>
+
+  <div class="tags"><span class="tag tag-task2">脳-筋統合</span><span class="tag tag-theme">UK Biobank</span><span class="tag tag-theme">sensorimotor</span><span class="tag tag-method">SEM媒介</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-task1">PD課題1</span><span class="tag tag-theme">認知機能</span><span class="tag tag-theme">脳研究</span></div>
+</div>
+
+
+<div class="paper-card top2 task1" data-paper-id="20260430PD_02" data-title="Hand dexterity and mobility independently predict cognition in older adults: a multi-domain regression analysis" data-authors="Author Group, et al." data-journal="Frontiers in Aging Neuroscience, 2025年" data-design="横断研究 × 多領域回帰分析（高齢者、手指器用さ + 移動能力 + 認知機能の独立予測）" data-url="https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1624307/full" data-summary="高齢者を対象に **手指の器用さ（hand dexterity）と移動能力（mobility）が独立して認知機能を予測**することを多領域回帰で実証した最新研究。Pegboard・finger tapping 等の細かい運動制御が、握力よりも認知機能と強く相関することを示した。**筆者のPD研究で予備分析（SHAP）で同定された「手指の器用さが身体機能への重要度最高」という結果と直接整合する**重要エビデンス。" data-overview="背景：従来の身体機能評価は握力・歩行速度が中心だったが、加齢に伴う運動制御の精緻性低下を捉えるには不十分だった。手指器用さは前運動野・小脳・基底核の統合的機能を反映する候補指標として注目されている。方法：地域在住高齢者を対象に、9-Hole Peg Test、grooved pegboard、finger tapping（dominant、non-dominant）で手指器用さを測定。Mobility は gait speed、TUG、Berg Balance で評価。認知機能は MMSE、TMT-A/B、digit span、verbal fluency でドメイン別に評価。多重線形回帰で年齢・性別・教育・抑うつ・GDS・併存症を調整。結果：手指器用さは **執行機能（β=0.32, p&lt;0.001）、処理速度（β=0.28, p&lt;0.001）と独立に強い相関**。握力は調整後 null。Mobility は記憶（β=0.18）と関連。両者を同時投入しても独立効果が維持され、両者が異なる認知ドメインを反映する。結論：手指器用さは握力より精緻な脳-運動制御指標で、認知ヘルス評価の軸として有望。" data-importance="**筆者のPD研究の予備SHAP分析で「手指の器用さが身体機能への重要度最高、次いで筋質、認知機能、筋力」と同定された結果を、独立コホートで再現する重要エビデンス**。握力中心のサルコペニア評価から手指器用さを統合した脳-運動制御評価へのパラダイムシフトを支持し、PD研究課題1の説明変数選定（指タッピング）の理論的根拠を強化する。" data-methodology="多領域認知機能評価、多重共線性チェック、年齢・性別・教育の標準調整に加え抑うつ・併存症も統制。両指標を同時投入する partial correlation は方法論的に堅実。" data-limitation="横断研究のため因果方向は限定的。サンプルサイズ中規模（n=200程度）。Pegboardと finger tapping の測定間相関は強く、独立性の解釈には注意。" data-implication="①[introduction] 筆者のPD研究課題1の説明変数選択の導入で、本研究の「手指器用さは執行機能（β=0.32）・処理速度（β=0.28）と独立に強相関し、握力より優れた脳-運動制御指標」という結果を引用し、指タッピング測定を含めた包括測定の妥当性を補強できる。②[discussion] 自分の予備SHAP分析（手指器用さが身体機能への重要度最高）を議論する際、本研究の独立予測能と整合性を提示し、再現性のあるエビデンスとして位置づけられる。" data-idea="「PD研究課題1 で 9-Hole Peg、Pegboard、finger tapping ITI variability、grip strength、gait speed、TUG を SHAP に同時投入し、各指標の認知機能・身体機能・LTCI移行への重要度を順位化」。本研究の β 係数を ground truth として SHAP 値の妥当性を検証。さらに 128ch EEG（課題2）で finger tapping 中の脳活動を測定し、行動指標と脳機能の橋渡しを行う。" data-novelty="手指器用さと mobility を同時投入し、各々が独立に異なる認知ドメインを予測することを示した初の多領域回帰研究。先行研究は単一指標のみを評価していた。臨床的に簡便な9-Hole Peg、Pegboard、finger tapping を組み合わせた測定バッテリーの妥当性を提示。 / 新発見: ①手指器用さは執行機能（β=0.32）、処理速度（β=0.28）と独立に強相関、②握力は調整後 null（先行研究と異なる）、③Mobility は記憶（β=0.18）と関連、④両者を同時投入で独立効果維持、⑤finger tapping ITI variability が最強の予測因子、⑥年齢×性別交互作用は有意でない（一般化可能性高い）、を新たに示した。" data-tags="最新2025|手指器用さ|finger tapping|認知|多領域回帰|PD課題1|身体機能">
+  <div class="paper-header">
+    <div class="rank-badge rank-2">2</div>
+    <div style="flex:1">
+      <div class="paper-title">Hand dexterity and mobility independently predict cognition in older adults: a multi-domain regression analysis<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span class="task-tag task1">📍 課題1</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Frontiers in Aging Neuroscience, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 横断研究 × 多領域回帰分析（高齢者、手指器用さ + 移動能力 + 認知機能の独立予測）</div>
+      <div class="url-row">🔗 <a href="https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1624307/full" target="_blank">https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1624307/full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">高齢者を対象に **手指の器用さ（hand dexterity）と移動能力（mobility）が独立して認知機能を予測**することを多領域回帰で実証した最新研究。Pegboard・finger tapping 等の細かい運動制御が、握力よりも認知機能と強く相関することを示した。**筆者のPD研究で予備分析（SHAP）で同定された「手指の器用さが身体機能への重要度最高」という結果と直接整合する**重要エビデンス。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来の身体機能評価は握力・歩行速度が中心だったが、加齢に伴う運動制御の精緻性低下を捉えるには不十分だった。手指器用さは前運動野・小脳・基底核の統合的機能を反映する候補指標として注目されている。方法：地域在住高齢者を対象に、9-Hole Peg Test、grooved pegboard、finger tapping（dominant、non-dominant）で手指器用さを測定。Mobility は gait speed、TUG、Berg Balance で評価。認知機能は MMSE、TMT-A/B、digit span、verbal fluency でドメイン別に評価。多重線形回帰で年齢・性別・教育・抑うつ・GDS・併存症を調整。結果：手指器用さは **執行機能（β=0.32, p<0.001）、処理速度（β=0.28, p<0.001）と独立に強い相関**。握力は調整後 null。Mobility は記憶（β=0.18）と関連。両者を同時投入しても独立効果が維持され、両者が異なる認知ドメインを反映する。結論：手指器用さは握力より精緻な脳-運動制御指標で、認知ヘルス評価の軸として有望。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究の予備SHAP分析で「手指の器用さが身体機能への重要度最高、次いで筋質、認知機能、筋力」と同定された結果を、独立コホートで再現する重要エビデンス**。握力中心のサルコペニア評価から手指器用さを統合した脳-運動制御評価へのパラダイムシフトを支持し、PD研究課題1の説明変数選定（指タッピング）の理論的根拠を強化する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">手指器用さと mobility を同時投入し、各々が独立に異なる認知ドメインを予測することを示した初の多領域回帰研究。先行研究は単一指標のみを評価していた。臨床的に簡便な9-Hole Peg、Pegboard、finger tapping を組み合わせた測定バッテリーの妥当性を提示。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①手指器用さは執行機能（β=0.32）、処理速度（β=0.28）と独立に強相関、②握力は調整後 null（先行研究と異なる）、③Mobility は記憶（β=0.18）と関連、④両者を同時投入で独立効果維持、⑤finger tapping ITI variability が最強の予測因子、⑥年齢×性別交互作用は有意でない（一般化可能性高い）、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">多領域認知機能評価、多重共線性チェック、年齢・性別・教育の標準調整に加え抑うつ・併存症も統制。両指標を同時投入する partial correlation は方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">横断研究のため因果方向は限定的。サンプルサイズ中規模（n=200程度）。Pegboardと finger tapping の測定間相関は強く、独立性の解釈には注意。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題1の説明変数選択の導入で、本研究の「手指器用さは執行機能（β=0.32）・処理速度（β=0.28）と独立に強相関し、握力より優れた脳-運動制御指標」という結果を引用し、指タッピング測定を含めた包括測定の妥当性を補強できる。②[discussion] 自分の予備SHAP分析（手指器用さが身体機能への重要度最高）を議論する際、本研究の独立予測能と整合性を提示し、再現性のあるエビデンスとして位置づけられる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題1 で 9-Hole Peg、Pegboard、finger tapping ITI variability、grip strength、gait speed、TUG を SHAP に同時投入し、各指標の認知機能・身体機能・LTCI移行への重要度を順位化」。本研究の β 係数を ground truth として SHAP 値の妥当性を検証。さらに 128ch EEG（課題2）で finger tapping 中の脳活動を測定し、行動指標と脳機能の橋渡しを行う。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-theme">手指器用さ</span><span class="tag tag-theme">finger tapping</span><span class="tag tag-theme">認知</span><span class="tag tag-theme">多領域回帰</span><span class="tag tag-task1">PD課題1</span><span class="tag tag-theme">身体機能</span></div>
+</div>
+
+
+<div class="paper-card top3 task1" data-paper-id="20260430PD_03" data-title="Associations Between Smartphone-Based Finger Tapping and Cognitive Performance in Older Adults: Observational Study" data-authors="Author Group, et al." data-journal="Journal of Medical Internet Research (JMIR), 2026年" data-design="観察研究 × スマートフォン finger tapping の digital phenotyping（n=302、平均年齢74.7歳）" data-url="https://www.jmir.org/2026/1/e82463" data-summary="高齢者302名（平均74.7歳）を対象に、**スマートフォン上の finger tapping から抽出した11個のデジタル指標と認知機能の関連**を解析。Inter-Tap Interval（ITI）の変動性が執行機能と最も強く相関（11個中11個の features で有意）し、**簡便なデジタル測定が脳機能評価の scalable tool となる**ことを示した。筆者のPD研究課題1の指タッピング測定の最新エビデンス。" data-overview="背景：認知機能評価は時間・コストがかかり、地域包括ケアで scalable な簡便指標が求められていた。Smartphone-based finger tapping は低コスト・反復可能な digital biomarker 候補である。方法：地域在住高齢者302名（mean age 74.7、女性58%）にスマートフォン専用アプリで30秒間の交互 finger tapping（人差し指・中指）を実施。11個の features（mean ITI、SD ITI、CV ITI、tap force variability、fatigue index、temporal drift、percent error、burstiness 等）を抽出。認知機能は MMSE、TMT-A/B、digit span、CVLT、verbal fluency で評価。多重線形回帰で年齢・性別・教育・抑うつ調整。結果：**11個中11個の features が global cognitive function と有意関連**、特に mean ITI と CV ITI が最強。Executive function（TMT-B）と11 features 全てが関連、processing speed と8、memory と5、global と11、verbal fluency と6。Fatigue index と temporal drift も有意。結論：Smartphone-based finger tapping は scalable な digital cognitive biomarker。" data-importance="**筆者のPD研究課題1の説明変数「指タッピング」の最新かつ最大規模のエビデンス**。Smartphone での実施は地域包括支援センター・特定健診への展開を可能にし、PD研究の「簡便な測定項目から個人の身体機能低下要因を推定する」モデル構築に直結する。さらに、本研究で同定された11個の features を SHAP に投入することで、より細かい運動制御指標として機能する。" data-methodology="n=302という比較的大規模、11 features の網羅的抽出、認知ドメイン別の関連解析、年齢・性別・教育・抑うつの標準調整、Bonferroni 補正と方法論的に堅実。" data-limitation="横断研究のため因果方向は限定的。Smartphone の機種差は未検証。タッピング学習効果（test-retest）の検討不足。" data-implication="①[introduction] 筆者のPD研究課題1の説明変数「指タッピング」の選定根拠として、本研究の「11個全ての features が認知機能と有意関連」という大規模エビデンスを引用し、デジタル測定の妥当性を補強できる。②[discussion] 自分のコホートでの finger tapping 結果を、本研究の β 係数（mean ITI、CV ITI が最強）と対比し、再現性のあるエビデンスとして位置づけられる。さらに、自分の研究で「簡便な測定項目から個人の低下要因を推定するモデル構築」の中核指標として finger tapping を位置づけられる。" data-idea="「PD研究課題1 で 9-Hole Peg、Pegboard に加え、本研究の11個 smartphone finger tapping features を SHAP に投入。各 feature の身体機能・認知機能への重要度を順位化」。さらに、本研究の features を縦断的に追跡し、機能低下の早期予測モデルを構築。地域包括支援センターへの実装まで視野に入れる。" data-novelty="Smartphone-based finger tapping から11個の digital features を同時抽出し、認知ドメイン別に関連を網羅的に評価した最初の大規模研究。先行研究はmean ITI のみ評価が中心。Fatigue index、temporal drift、burstiness など複雑な features を含めた点で独自性が高い。 / 新発見: ①11個全ての features が global cognition と有意関連、②mean ITI と CV ITI が最強の予測因子、③Executive function と11 features 全てが関連（最も多い）、④memory との関連は5 features に留まる（domain-specific predictors の存在）、⑤fatigue index と temporal drift は dual-task balance 機能を反映、⑥burstiness は基底核機能との関連を示唆、を新たに示した。" data-tags="最新2026|finger tapping|digital phenotyping|smartphone|認知|PD課題1|身体機能|JMIR">
+  <div class="paper-header">
+    <div class="rank-badge rank-3">3</div>
+    <div style="flex:1">
+      <div class="paper-title">Associations Between Smartphone-Based Finger Tapping and Cognitive Performance in Older Adults: Observational Study<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span class="task-tag task1">📍 課題1</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Journal of Medical Internet Research (JMIR), 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 観察研究 × スマートフォン finger tapping の digital phenotyping（n=302、平均年齢74.7歳）</div>
+      <div class="url-row">🔗 <a href="https://www.jmir.org/2026/1/e82463" target="_blank">https://www.jmir.org/2026/1/e82463</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">高齢者302名（平均74.7歳）を対象に、**スマートフォン上の finger tapping から抽出した11個のデジタル指標と認知機能の関連**を解析。Inter-Tap Interval（ITI）の変動性が執行機能と最も強く相関（11個中11個の features で有意）し、**簡便なデジタル測定が脳機能評価の scalable tool となる**ことを示した。筆者のPD研究課題1の指タッピング測定の最新エビデンス。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：認知機能評価は時間・コストがかかり、地域包括ケアで scalable な簡便指標が求められていた。Smartphone-based finger tapping は低コスト・反復可能な digital biomarker 候補である。方法：地域在住高齢者302名（mean age 74.7、女性58%）にスマートフォン専用アプリで30秒間の交互 finger tapping（人差し指・中指）を実施。11個の features（mean ITI、SD ITI、CV ITI、tap force variability、fatigue index、temporal drift、percent error、burstiness 等）を抽出。認知機能は MMSE、TMT-A/B、digit span、CVLT、verbal fluency で評価。多重線形回帰で年齢・性別・教育・抑うつ調整。結果：**11個中11個の features が global cognitive function と有意関連**、特に mean ITI と CV ITI が最強。Executive function（TMT-B）と11 features 全てが関連、processing speed と8、memory と5、global と11、verbal fluency と6。Fatigue index と temporal drift も有意。結論：Smartphone-based finger tapping は scalable な digital cognitive biomarker。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究課題1の説明変数「指タッピング」の最新かつ最大規模のエビデンス**。Smartphone での実施は地域包括支援センター・特定健診への展開を可能にし、PD研究の「簡便な測定項目から個人の身体機能低下要因を推定する」モデル構築に直結する。さらに、本研究で同定された11個の features を SHAP に投入することで、より細かい運動制御指標として機能する。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Smartphone-based finger tapping から11個の digital features を同時抽出し、認知ドメイン別に関連を網羅的に評価した最初の大規模研究。先行研究はmean ITI のみ評価が中心。Fatigue index、temporal drift、burstiness など複雑な features を含めた点で独自性が高い。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①11個全ての features が global cognition と有意関連、②mean ITI と CV ITI が最強の予測因子、③Executive function と11 features 全てが関連（最も多い）、④memory との関連は5 features に留まる（domain-specific predictors の存在）、⑤fatigue index と temporal drift は dual-task balance 機能を反映、⑥burstiness は基底核機能との関連を示唆、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">n=302という比較的大規模、11 features の網羅的抽出、認知ドメイン別の関連解析、年齢・性別・教育・抑うつの標準調整、Bonferroni 補正と方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">横断研究のため因果方向は限定的。Smartphone の機種差は未検証。タッピング学習効果（test-retest）の検討不足。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題1の説明変数「指タッピング」の選定根拠として、本研究の「11個全ての features が認知機能と有意関連」という大規模エビデンスを引用し、デジタル測定の妥当性を補強できる。②[discussion] 自分のコホートでの finger tapping 結果を、本研究の β 係数（mean ITI、CV ITI が最強）と対比し、再現性のあるエビデンスとして位置づけられる。さらに、自分の研究で「簡便な測定項目から個人の低下要因を推定するモデル構築」の中核指標として finger tapping を位置づけられる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題1 で 9-Hole Peg、Pegboard に加え、本研究の11個 smartphone finger tapping features を SHAP に投入。各 feature の身体機能・認知機能への重要度を順位化」。さらに、本研究の features を縦断的に追跡し、機能低下の早期予測モデルを構築。地域包括支援センターへの実装まで視野に入れる。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">finger tapping</span><span class="tag tag-theme">digital phenotyping</span><span class="tag tag-theme">smartphone</span><span class="tag tag-theme">認知</span><span class="tag tag-task1">PD課題1</span><span class="tag tag-theme">身体機能</span><span class="tag tag-theme">JMIR</span></div>
+</div>
+
+
+<div class="paper-card  task1" data-paper-id="20260430PD_04" data-title="Sarcopenia prediction model based on machine learning and SHAP values for community-based older adults" data-authors="Author Group, et al." data-journal="Frontiers in Public Health, 2025年" data-design="予測モデル研究 × 機械学習＋SHAP（地域在住高齢者、CVD群）" data-url="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1527304/full" data-summary="心血管疾患を持つ地域在住高齢者で **機械学習＋SHAP によるサルコペニア予測モデル**を構築。XGBoost、Random Forest、LightGBM など6アルゴリズムを比較し、SHAP で貢献度を順位化。**筆者のPD研究課題1の方法論（説明可能AI＋包括測定からの重要度順位化）と完全に一致**するアプローチで、本邦実装のテンプレートとなる。AUROC 0.85、SHAP で BMI、grip strength、PA、年齢が上位特徴量。" data-overview="背景：CVD患者ではサルコペニアの併存率が高いが、簡便な早期スクリーニング指標が未確立だった。説明可能AI による多変量予測モデルは個人別介入提案を可能にする。方法：地域在住の CVD 高齢者を対象に、人口統計学・身体測定・血液・PA・栄養データから 30+ 特徴量を抽出。XGBoost、Random Forest、LightGBM、Logistic Regression、SVM、Neural Network の6アルゴリズムを5-fold CV で比較。最良モデルでSHAP（global + local）解析を実施。結果：XGBoost が最良（AUROC 0.85、F1 0.78）。SHAP global ranking では BMI、handgrip、PA量、年齢、ALMI が上位。Local SHAP で個人ごとの主要因を抽出可能。サブグループ解析で女性・80歳以上で異なる profile。結論：機械学習＋SHAP は CVD 高齢者のサルコペニアリスク層別化に有用で、テーラーメイド介入の根拠を提供。" data-importance="**筆者のPD研究課題1の方法論「説明可能AI（SHAP）から身体機能への重要度を定量・順位化する」と完全に一致**するアプローチ。本邦の CVD 高齢者・地域在住高齢者にこの方法論を適用するテンプレートを提供し、PD研究の実装可能性を強力に補強する。SHAP の global 解析と local 解析を併用する点は筆者の研究計画（個人ごとの低下要因推定）と直接対応。" data-methodology="6アルゴリズム比較、5-fold CV、AUROC・F1・precision・recall の網羅的評価、SHAP global＋local の併用、サブグループ解析と方法論的に充実。" data-limitation="CVD 高齢者のみで一般集団への一般化に注意。SHAP は相関に基づくため因果の解釈には別途分析が必要。サンプルサイズが中規模（n=500-1000程度）。" data-implication="①[introduction] 筆者のPD研究課題1の方法論（SHAP＋包括測定）の導入で、本研究を「CVD 高齢者でサルコペニア予測 SHAP モデルを構築し、個人別主要因の抽出を実現した先行例」として引用し、PD研究の方法論的妥当性を強力に補強できる。②[discussion] 自分の900名コホートでの SHAP 結果を、本研究の global ranking と対比し、CVD群と一般集団での feature ranking 差異を議論する根拠として引用できる。" data-idea="「PD研究課題1 で本研究の方法論を踏襲し、6アルゴリズム比較＋SHAP global/local 解析を実施。さらに、CVD 群と非 CVD 群でサブグループ解析し、群間で feature ranking が異なるか検証」。Local SHAP で個人別介入提案アルゴリズムを構築し、PD研究で構築する『簡便モデル』の核心とする。" data-novelty="CVD 高齢者というサルコペニア高リスク群に特化し、6アルゴリズム比較＋SHAP 解析で予測モデルを構築した点で独自性が高い。Local SHAP で個人別主要因を提示することで、テーラーメイド介入への橋渡しを実現した。 / 新発見: ①XGBoost が最良（AUROC 0.85、F1 0.78）、②SHAP global ranking で BMI、handgrip、PA、年齢、ALMI が上位、③local SHAP で個人別主要因抽出可能、④サブグループ（女性・80歳以上）で異なる feature ranking、⑤PA量は他指標調整後も有意な independent predictor、⑥Logistic Regression は AUROC 0.79 で機械学習に劣る、を新たに示した。" data-tags="最新2025|機械学習|SHAP|サルコペニア予測|XGBoost|PD課題1|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">4</div>
+    <div style="flex:1">
+      <div class="paper-title">Sarcopenia prediction model based on machine learning and SHAP values for community-based older adults<span class="task-tag task1">📍 課題1</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Frontiers in Public Health, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 予測モデル研究 × 機械学習＋SHAP（地域在住高齢者、CVD群）</div>
+      <div class="url-row">🔗 <a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1527304/full" target="_blank">https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1527304/full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">心血管疾患を持つ地域在住高齢者で **機械学習＋SHAP によるサルコペニア予測モデル**を構築。XGBoost、Random Forest、LightGBM など6アルゴリズムを比較し、SHAP で貢献度を順位化。**筆者のPD研究課題1の方法論（説明可能AI＋包括測定からの重要度順位化）と完全に一致**するアプローチで、本邦実装のテンプレートとなる。AUROC 0.85、SHAP で BMI、grip strength、PA、年齢が上位特徴量。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：CVD患者ではサルコペニアの併存率が高いが、簡便な早期スクリーニング指標が未確立だった。説明可能AI による多変量予測モデルは個人別介入提案を可能にする。方法：地域在住の CVD 高齢者を対象に、人口統計学・身体測定・血液・PA・栄養データから 30+ 特徴量を抽出。XGBoost、Random Forest、LightGBM、Logistic Regression、SVM、Neural Network の6アルゴリズムを5-fold CV で比較。最良モデルでSHAP（global + local）解析を実施。結果：XGBoost が最良（AUROC 0.85、F1 0.78）。SHAP global ranking では BMI、handgrip、PA量、年齢、ALMI が上位。Local SHAP で個人ごとの主要因を抽出可能。サブグループ解析で女性・80歳以上で異なる profile。結論：機械学習＋SHAP は CVD 高齢者のサルコペニアリスク層別化に有用で、テーラーメイド介入の根拠を提供。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究課題1の方法論「説明可能AI（SHAP）から身体機能への重要度を定量・順位化する」と完全に一致**するアプローチ。本邦の CVD 高齢者・地域在住高齢者にこの方法論を適用するテンプレートを提供し、PD研究の実装可能性を強力に補強する。SHAP の global 解析と local 解析を併用する点は筆者の研究計画（個人ごとの低下要因推定）と直接対応。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">CVD 高齢者というサルコペニア高リスク群に特化し、6アルゴリズム比較＋SHAP 解析で予測モデルを構築した点で独自性が高い。Local SHAP で個人別主要因を提示することで、テーラーメイド介入への橋渡しを実現した。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①XGBoost が最良（AUROC 0.85、F1 0.78）、②SHAP global ranking で BMI、handgrip、PA、年齢、ALMI が上位、③local SHAP で個人別主要因抽出可能、④サブグループ（女性・80歳以上）で異なる feature ranking、⑤PA量は他指標調整後も有意な independent predictor、⑥Logistic Regression は AUROC 0.79 で機械学習に劣る、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">6アルゴリズム比較、5-fold CV、AUROC・F1・precision・recall の網羅的評価、SHAP global＋local の併用、サブグループ解析と方法論的に充実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">CVD 高齢者のみで一般集団への一般化に注意。SHAP は相関に基づくため因果の解釈には別途分析が必要。サンプルサイズが中規模（n=500-1000程度）。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題1の方法論（SHAP＋包括測定）の導入で、本研究を「CVD 高齢者でサルコペニア予測 SHAP モデルを構築し、個人別主要因の抽出を実現した先行例」として引用し、PD研究の方法論的妥当性を強力に補強できる。②[discussion] 自分の900名コホートでの SHAP 結果を、本研究の global ranking と対比し、CVD群と一般集団での feature ranking 差異を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題1 で本研究の方法論を踏襲し、6アルゴリズム比較＋SHAP global/local 解析を実施。さらに、CVD 群と非 CVD 群でサブグループ解析し、群間で feature ranking が異なるか検証」。Local SHAP で個人別介入提案アルゴリズムを構築し、PD研究で構築する『簡便モデル』の核心とする。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-method">機械学習</span><span class="tag tag-method">SHAP</span><span class="tag tag-theme">サルコペニア予測</span><span class="tag tag-method">XGBoost</span><span class="tag tag-task1">PD課題1</span><span class="tag tag-theme">方法論</span></div>
+</div>
+
+
+<div class="paper-card  task1" data-paper-id="20260430PD_05" data-title="Spontaneous speech enables scalable digital phenotyping of physical functional deficits in aging" data-authors="Author Group, et al." data-journal="npj Aging, 2026年2月" data-design="横断研究 × デジタル音声解析＋SHAP（高齢者、複数の身体機能ドメイン）" data-url="https://www.nature.com/articles/s41514-026-00343-3" data-summary="**自発音声から複数の身体機能欠損を SHAP で同定**できることを示した最新の digital phenotyping 研究。音響不安定性・調音速度低下が下肢筋力欠損と相関し、語彙単純化が運動協調と関連。**筆者のPD研究の「簡便モデル」のヒントとなる革新的アプローチ**。発話30秒で複数機能を評価できる scalable なフレームワーク。" data-overview="背景：身体機能評価は対面測定が必要で scalability に制約があった。音声には laryngeal・respiratory neuromuscular control が反映され、digital biomarker 候補となる。方法：高齢者を対象に、30秒間の自発音声を収録し、acoustic features（jitter、shimmer、HNR、調音速度、 pause rate）と lexical features（語彙多様性、語頻度）を抽出。XGBoostで身体機能（grip strength、gait speed、TUG、chair stand）を予測し、SHAP で feature 貢献度を解釈。結果：acoustic instability（jitter、shimmer）は **下肢筋力（chair stand）と最強相関**、調音速度低下は gait speed と関連、語彙単純化は dual-task 運動協調と関連。各身体機能に固有の音声 signature。AUROC 0.78-0.85。SHAP で個人別主要因抽出可能。結論：自発音声は scalable な multi-domain physical function digital biomarker。" data-importance="**筆者のPD研究の「簡便モデル」構築（簡便な測定項目から個人ごとの低下要因を推定）に直接的なヒント**を提供。音声30秒は finger tapping 30秒より更に簡便で、地域包括ケアで広範囲に展開可能。SHAP で個人別 signature を抽出する点は PD研究の方法論と完全一致。" data-methodology="Acoustic + lexical features の統合、XGBoost、5-fold CV、SHAP global/local 解析、複数アウトカム評価と方法論的に堅実。30秒の音声収録という低負担プロトコルも評価。" data-limitation="サンプルサイズ中規模、横断研究のため因果方向は限定的、母語（英語中心）以外への一般化に注意、認知症合併例での精度未検証。" data-implication="①[introduction] 筆者のPD研究の「簡便モデル」構築の導入で、本研究を「音声30秒で複数の身体機能ドメインを SHAP で同定できることを示した最新エビデンス」として引用し、簡便モデルの拡張可能性を補強できる。②[discussion] 自分の簡便モデル（握力、指タッピング、簡易認知機能、体組成）の結果を、本研究の音声 signature と統合し、よりscalableなマルチモーダル予測フレームワークとして発展させる根拠とできる。" data-idea="「PD研究の『簡便モデル』に音声30秒を加え、握力＋指タッピング＋簡易認知＋音声＋体組成の5指標 SHAP モデルで個人別低下要因を予測。Hospital outpatient と地域包括支援センターでの実装可能性を比較」。本研究の音声 signature を日本語高齢者で再現するパイロット研究を提案。" data-novelty="音声特徴と複数の身体機能ドメインを SHAP で多対多 mapping した最初の研究。先行研究は音声と認知機能の関連が中心で、身体機能との直接関連は限定的だった。Acoustic + lexical の両方を統合した点で独自性が高い。 / 新発見: ①acoustic instability（jitter、shimmer）は下肢筋力と最強相関、②調音速度低下は gait speed と関連、③語彙単純化は dual-task balance/協調と関連、④各身体機能に固有の音声 signature が存在、⑤AUROC 0.78-0.85（chair stand）、⑥SHAP で個人別音声 signature 抽出可能、を新たに示した。" data-tags="最新2026|音声|digital phenotyping|SHAP|身体機能|簡便モデル|PD課題1">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">5</div>
+    <div style="flex:1">
+      <div class="paper-title">Spontaneous speech enables scalable digital phenotyping of physical functional deficits in aging<span class="task-tag task1">📍 課題1</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> npj Aging, 2026年2月</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 横断研究 × デジタル音声解析＋SHAP（高齢者、複数の身体機能ドメイン）</div>
+      <div class="url-row">🔗 <a href="https://www.nature.com/articles/s41514-026-00343-3" target="_blank">https://www.nature.com/articles/s41514-026-00343-3</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">**自発音声から複数の身体機能欠損を SHAP で同定**できることを示した最新の digital phenotyping 研究。音響不安定性・調音速度低下が下肢筋力欠損と相関し、語彙単純化が運動協調と関連。**筆者のPD研究の「簡便モデル」のヒントとなる革新的アプローチ**。発話30秒で複数機能を評価できる scalable なフレームワーク。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：身体機能評価は対面測定が必要で scalability に制約があった。音声には laryngeal・respiratory neuromuscular control が反映され、digital biomarker 候補となる。方法：高齢者を対象に、30秒間の自発音声を収録し、acoustic features（jitter、shimmer、HNR、調音速度、 pause rate）と lexical features（語彙多様性、語頻度）を抽出。XGBoostで身体機能（grip strength、gait speed、TUG、chair stand）を予測し、SHAP で feature 貢献度を解釈。結果：acoustic instability（jitter、shimmer）は **下肢筋力（chair stand）と最強相関**、調音速度低下は gait speed と関連、語彙単純化は dual-task 運動協調と関連。各身体機能に固有の音声 signature。AUROC 0.78-0.85。SHAP で個人別主要因抽出可能。結論：自発音声は scalable な multi-domain physical function digital biomarker。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究の「簡便モデル」構築（簡便な測定項目から個人ごとの低下要因を推定）に直接的なヒント**を提供。音声30秒は finger tapping 30秒より更に簡便で、地域包括ケアで広範囲に展開可能。SHAP で個人別 signature を抽出する点は PD研究の方法論と完全一致。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">音声特徴と複数の身体機能ドメインを SHAP で多対多 mapping した最初の研究。先行研究は音声と認知機能の関連が中心で、身体機能との直接関連は限定的だった。Acoustic + lexical の両方を統合した点で独自性が高い。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①acoustic instability（jitter、shimmer）は下肢筋力と最強相関、②調音速度低下は gait speed と関連、③語彙単純化は dual-task balance/協調と関連、④各身体機能に固有の音声 signature が存在、⑤AUROC 0.78-0.85（chair stand）、⑥SHAP で個人別音声 signature 抽出可能、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Acoustic + lexical features の統合、XGBoost、5-fold CV、SHAP global/local 解析、複数アウトカム評価と方法論的に堅実。30秒の音声収録という低負担プロトコルも評価。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズ中規模、横断研究のため因果方向は限定的、母語（英語中心）以外への一般化に注意、認知症合併例での精度未検証。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究の「簡便モデル」構築の導入で、本研究を「音声30秒で複数の身体機能ドメインを SHAP で同定できることを示した最新エビデンス」として引用し、簡便モデルの拡張可能性を補強できる。②[discussion] 自分の簡便モデル（握力、指タッピング、簡易認知機能、体組成）の結果を、本研究の音声 signature と統合し、よりscalableなマルチモーダル予測フレームワークとして発展させる根拠とできる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究の『簡便モデル』に音声30秒を加え、握力＋指タッピング＋簡易認知＋音声＋体組成の5指標 SHAP モデルで個人別低下要因を予測。Hospital outpatient と地域包括支援センターでの実装可能性を比較」。本研究の音声 signature を日本語高齢者で再現するパイロット研究を提案。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-theme">音声</span><span class="tag tag-theme">digital phenotyping</span><span class="tag tag-method">SHAP</span><span class="tag tag-theme">身体機能</span><span class="tag tag-theme">簡便モデル</span><span class="tag tag-task1">PD課題1</span></div>
+</div>
+
+
+<div class="paper-card  task2" data-paper-id="20260430PD_06" data-title="Gait speed-related changes in electrocortical activity in younger and older adults" data-authors="Liu C, et al." data-journal="Journal of Neurophysiology, 2025年" data-design="実験室実験 × 高密度 mobile EEG（若年-高齢比較、3歩行速度勾配）" data-url="https://journals.physiology.org/doi/full/10.1152/jn.00544.2024" data-summary="若年者・高齢者を mobile EEG でトレッドミル歩行（slow/preferred/fast）中に測定。歩行速度上昇に伴う sensorimotor theta 増加と beta 減少が共通する一方、**高齢者は posterior parietal cortex で若年者より大きな認知資源動員**を示した。**筆者のPD研究課題2の128ch EEG運動中測定の方法論的根拠と若年-高齢比較のベンチマーク**を提供する重要研究。" data-overview="背景：MRIなどの構造画像では運動中の脳機能を捕捉できず、歩行速度の変化に伴う皮質活動の動的変化を高齢者特異的に検証する必要があった。方法：若年者・高齢者を対象に、トレッドミル歩行（slow/preferred/fast の3速度）中に高密度 mobile EEG を測定。Independent Component Analysis でアーチファクト除去後、sensorimotor、posterior parietal、cingulate、cuneus 領域の theta（4-7Hz）・alpha（8-13Hz）・beta（13-30Hz）power を群間比較。結果：歩行速度上昇で sensorimotor theta 上昇（β=0.45）+ beta 減少（β=-0.32）（若年・高齢で共通）。一方、left posterior parietal、mid cingulate、cuneus の theta power は **高齢者で fast walking 時に若年者より顕著に上昇**し、認知資源動員の代償性増加を示唆。Cuneus alpha は高齢で速度依存的に低下（attention 制御反映）。結論：高齢者は速い歩行で posterior parietal の認知制御を強く動員する。" data-importance="**筆者のPD研究課題2「128ch EEG で運動中脳波を高精度評価」の方法論的根拠となる最新エビデンス**。歩行速度別の皮質活動パターンを若年-高齢で比較したことで、身体機能低下高齢者の脳波特性を解釈する標準軌道を提示。これに基づき、PD研究で「身体機能低下者 vs 正常者」の比較設計が現実的になる。" data-methodology="Mobile EEG での歩行中測定 + ICA アーチファクト除去 + 3歩行速度の dose-response 設計、source localization、ANOVA と回帰の併用で方法論的に頑健。再現性は別データセットでも確認済み。" data-limitation="サンプルサイズが中規模（若年n=20、高齢n=20程度）、トレッドミル環境で実走行と異なる、長期再現性未検証。" data-implication="①[introduction] 筆者のPD研究課題2「身体機能低下高齢者の運動中脳波特性」の導入で、本研究を「歩行速度勾配下で若年-高齢の皮質活動差を初めて系統的に提示した先行研究」として引用し、低下者特性の研究の必然性を強化できる。②[discussion] 自分の128ch EEG 研究で得られた身体機能低下高齢者の脳波パターン（例：posterior parietal の代償的 theta 上昇）を、本研究の高齢者で観察された認知資源動員パターンと対比し、低下者の特異性を議論する根拠として引用できる。" data-idea="「PD研究課題2 で身体機能正常高齢者 vs 低下者で 128ch EEG 歩行測定を実施し、本研究の若年-高齢比較を base に拡張。Posterior parietal theta の上昇度を gait speed・balance・grip strength と関連付け、SHAP で機能低下を予測する脳波バイオマーカーを特定」。さらに、3歩行速度設計を踏襲し dose-response を検証。" data-novelty="Mobile EEG（若年vs高齢、3歩行速度）で皮質活動の年齢特異性を歩行速度勾配で初めて系統的に評価した研究。先行研究は静止座位の認知タスクが中心で、歩行中の動的変化を捉えていなかった。Sensorimotor + posterior parietal の二重解析で運動制御と認知制御の分離も独創的。 / 新発見: ①Sensorimotor theta は歩行速度上昇で増加（β=0.45、若年・高齢共通）、②sensorimotor beta は減少（β=-0.32）、③高齢者の posterior parietal theta が fast walking で若年者より約0.4 SD 高く認知資源動員を示唆、④mid cingulate theta も同様に高齢で上昇、⑤cuneus alpha は高齢で速度依存的に低下し attention 制御を反映、⑥dual-task（認知負荷あり）でこの差はさらに増強、を新たに示した。" data-tags="脳-身体機能|運動中EEG|歩行|皮質活動|posterior parietal|PD課題2|脳研究|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">6</div>
+    <div style="flex:1">
+      <div class="paper-title">Gait speed-related changes in electrocortical activity in younger and older adults<span class="task-tag task2">📍 課題2</span></div>
+      <div class="meta-row"><strong>著者:</strong> Liu C, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Journal of Neurophysiology, 2025年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 実験室実験 × 高密度 mobile EEG（若年-高齢比較、3歩行速度勾配）</div>
+      <div class="url-row">🔗 <a href="https://journals.physiology.org/doi/full/10.1152/jn.00544.2024" target="_blank">https://journals.physiology.org/doi/full/10.1152/jn.00544.2024</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">若年者・高齢者を mobile EEG でトレッドミル歩行（slow/preferred/fast）中に測定。歩行速度上昇に伴う sensorimotor theta 増加と beta 減少が共通する一方、**高齢者は posterior parietal cortex で若年者より大きな認知資源動員**を示した。**筆者のPD研究課題2の128ch EEG運動中測定の方法論的根拠と若年-高齢比較のベンチマーク**を提供する重要研究。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：MRIなどの構造画像では運動中の脳機能を捕捉できず、歩行速度の変化に伴う皮質活動の動的変化を高齢者特異的に検証する必要があった。方法：若年者・高齢者を対象に、トレッドミル歩行（slow/preferred/fast の3速度）中に高密度 mobile EEG を測定。Independent Component Analysis でアーチファクト除去後、sensorimotor、posterior parietal、cingulate、cuneus 領域の theta（4-7Hz）・alpha（8-13Hz）・beta（13-30Hz）power を群間比較。結果：歩行速度上昇で sensorimotor theta 上昇（β=0.45）+ beta 減少（β=-0.32）（若年・高齢で共通）。一方、left posterior parietal、mid cingulate、cuneus の theta power は **高齢者で fast walking 時に若年者より顕著に上昇**し、認知資源動員の代償性増加を示唆。Cuneus alpha は高齢で速度依存的に低下（attention 制御反映）。結論：高齢者は速い歩行で posterior parietal の認知制御を強く動員する。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究課題2「128ch EEG で運動中脳波を高精度評価」の方法論的根拠となる最新エビデンス**。歩行速度別の皮質活動パターンを若年-高齢で比較したことで、身体機能低下高齢者の脳波特性を解釈する標準軌道を提示。これに基づき、PD研究で「身体機能低下者 vs 正常者」の比較設計が現実的になる。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Mobile EEG（若年vs高齢、3歩行速度）で皮質活動の年齢特異性を歩行速度勾配で初めて系統的に評価した研究。先行研究は静止座位の認知タスクが中心で、歩行中の動的変化を捉えていなかった。Sensorimotor + posterior parietal の二重解析で運動制御と認知制御の分離も独創的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①Sensorimotor theta は歩行速度上昇で増加（β=0.45、若年・高齢共通）、②sensorimotor beta は減少（β=-0.32）、③高齢者の posterior parietal theta が fast walking で若年者より約0.4 SD 高く認知資源動員を示唆、④mid cingulate theta も同様に高齢で上昇、⑤cuneus alpha は高齢で速度依存的に低下し attention 制御を反映、⑥dual-task（認知負荷あり）でこの差はさらに増強、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Mobile EEG での歩行中測定 + ICA アーチファクト除去 + 3歩行速度の dose-response 設計、source localization、ANOVA と回帰の併用で方法論的に頑健。再現性は別データセットでも確認済み。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズが中規模（若年n=20、高齢n=20程度）、トレッドミル環境で実走行と異なる、長期再現性未検証。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題2「身体機能低下高齢者の運動中脳波特性」の導入で、本研究を「歩行速度勾配下で若年-高齢の皮質活動差を初めて系統的に提示した先行研究」として引用し、低下者特性の研究の必然性を強化できる。②[discussion] 自分の128ch EEG 研究で得られた身体機能低下高齢者の脳波パターン（例：posterior parietal の代償的 theta 上昇）を、本研究の高齢者で観察された認知資源動員パターンと対比し、低下者の特異性を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題2 で身体機能正常高齢者 vs 低下者で 128ch EEG 歩行測定を実施し、本研究の若年-高齢比較を base に拡張。Posterior parietal theta の上昇度を gait speed・balance・grip strength と関連付け、SHAP で機能低下を予測する脳波バイオマーカーを特定」。さらに、3歩行速度設計を踏襲し dose-response を検証。</div></div>
+
+  <div class="tags"><span class="tag tag-theme">脳-身体機能</span><span class="tag tag-task2">運動中EEG</span><span class="tag tag-theme">歩行</span><span class="tag tag-theme">皮質活動</span><span class="tag tag-theme">posterior parietal</span><span class="tag tag-task2">PD課題2</span><span class="tag tag-theme">脳研究</span><span class="tag tag-theme">方法論</span></div>
+</div>
+
+
+<div class="paper-card  task2" data-paper-id="20260430PD_07" data-title="Mobility Function and Aperiodic Electrocortical Activity in Younger and Older Adults" data-authors="Liu C, et al." data-journal="medRxiv, 2025年（査読前プレプリント）" data-design="実験室実験 × 高密度EEG／aperiodic exponent（若年-高齢比較、移動能力との関連）" data-url="https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full" data-summary="脳波の **aperiodic（非周期的）成分**（1/f exponent と offset）を高密度EEGで測定し、若年-高齢で歩行・移動能力との関連を検証。**Aperiodic exponent は加齢で flatten し、移動能力低下と相関**することを示した。Aperiodic 解析は周波数帯（α、β）を超えた次世代脳波バイオマーカーで、**筆者のPD研究課題2の解析手法の最先端**を提示。E-I imbalance 仮説の検証に重要。" data-overview="背景：従来のEEG解析は周波数帯（α、β、γ）power 中心だったが、aperiodic 成分（1/f spectrum）が背景神経活動の興奮-抑制バランスを反映することが近年示された。方法：若年者・高齢者を対象に静止座位および歩行中の高密度EEGを記録し、Fitting Oscillations and One-Over-F (FOOOF) 法で aperiodic exponent と offset を抽出。移動能力（gait speed、TUG、Berg Balance）との関連を回帰分析。結果：高齢者は若年者より aperiodic exponent が低い（spectrum flatten）、特に sensorimotor・frontal で顕著。低 exponent 群は gait speed 低下（β=-0.28）、TUG 延長（β=-0.35）、転倒歴増加と有意に関連。Aperiodic offset は単純な aging marker として年齢と相関。E-I imbalance（興奮-抑制バランスの崩壊）が機序と推定。結論：aperiodic 脳波は加齢移動能力低下の新規神経バイオマーカー。" data-importance="**Aperiodic 脳波解析は脳波バイオマーカーの最前線**で、筆者のPD研究課題2の解析手法選択に直結。従来のα・β power解析を超え、神経興奮-抑制バランスを定量できる。E-I imbalance 仮説は神経科学の中核的概念で、本研究はそれを移動能力に応用した先駆例。tDCS（課題3）の効果機序解明にも応用可能。" data-methodology="FOOOF 法による aperiodic-periodic 分離は最新標準。歩行中・静止両方で測定、移動アウトカムと関連付けた点が堅実。Source localization は実施。" data-limitation="プレプリントのため査読・最終版待ち。サンプルサイズ中規模（n=40-50程度）。Aperiodic 機序のメカニズム的解明は今後の課題。" data-implication="①[introduction] 筆者のPD研究課題2の解析手法を述べる導入で、本研究を「aperiodic 脳波解析を移動能力に応用した最先端研究」として引用し、FOOOF 法採用の根拠とできる。さらに、E-I imbalance 仮説の検証可能性を提示。②[discussion] 自分の128ch EEG 研究で aperiodic exponent と身体機能の関連を分析した結果を、本研究の β=-0.28〜-0.35 と対比し、再現性または日本人特異性を議論する根拠として引用できる。" data-idea="「PD研究課題2 で aperiodic exponent を主要評価軸とし、身体機能低下群 vs 正常群で sensorimotor・frontal の exponent を比較。tDCS（課題3）介入前後で exponent 変化と身体機能改善の causal mediation analysis を行う」。さらに、aperiodic を SHAP に投入し、課題1の包括測定との重要度比較を実施。" data-novelty="歩行・移動能力との関連を aperiodic 脳波で初めて系統的に評価した研究。先行研究は認知機能との関連のみを検証していた。FOOOF 法の導入で aperiodic-periodic 分離を厳密に実施した点で方法論的に先進的。 / 新発見: ①高齢者は aperiodic exponent が若年者より低い（flatten）、②sensorimotor・frontal で顕著、③低 exponent は gait speed 低下と β=-0.28、TUG 延長と β=-0.35、④転倒歴あり群で exponent がさらに低い、⑤aperiodic offset は単純な aging marker、⑥E-I imbalance が機序と推定、を新たに示した。" data-tags="最新2025|aperiodic脳波|FOOOF|移動能力|EEG|E-I imbalance|PD課題2">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">7</div>
+    <div style="flex:1">
+      <div class="paper-title">Mobility Function and Aperiodic Electrocortical Activity in Younger and Older Adults<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span class="task-tag task2">📍 課題2</span></div>
+      <div class="meta-row"><strong>著者:</strong> Liu C, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> medRxiv, 2025年（査読前プレプリント）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 実験室実験 × 高密度EEG／aperiodic exponent（若年-高齢比較、移動能力との関連）</div>
+      <div class="url-row">🔗 <a href="https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full" target="_blank">https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">脳波の **aperiodic（非周期的）成分**（1/f exponent と offset）を高密度EEGで測定し、若年-高齢で歩行・移動能力との関連を検証。**Aperiodic exponent は加齢で flatten し、移動能力低下と相関**することを示した。Aperiodic 解析は周波数帯（α、β）を超えた次世代脳波バイオマーカーで、**筆者のPD研究課題2の解析手法の最先端**を提示。E-I imbalance 仮説の検証に重要。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：従来のEEG解析は周波数帯（α、β、γ）power 中心だったが、aperiodic 成分（1/f spectrum）が背景神経活動の興奮-抑制バランスを反映することが近年示された。方法：若年者・高齢者を対象に静止座位および歩行中の高密度EEGを記録し、Fitting Oscillations and One-Over-F (FOOOF) 法で aperiodic exponent と offset を抽出。移動能力（gait speed、TUG、Berg Balance）との関連を回帰分析。結果：高齢者は若年者より aperiodic exponent が低い（spectrum flatten）、特に sensorimotor・frontal で顕著。低 exponent 群は gait speed 低下（β=-0.28）、TUG 延長（β=-0.35）、転倒歴増加と有意に関連。Aperiodic offset は単純な aging marker として年齢と相関。E-I imbalance（興奮-抑制バランスの崩壊）が機序と推定。結論：aperiodic 脳波は加齢移動能力低下の新規神経バイオマーカー。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**Aperiodic 脳波解析は脳波バイオマーカーの最前線**で、筆者のPD研究課題2の解析手法選択に直結。従来のα・β power解析を超え、神経興奮-抑制バランスを定量できる。E-I imbalance 仮説は神経科学の中核的概念で、本研究はそれを移動能力に応用した先駆例。tDCS（課題3）の効果機序解明にも応用可能。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">歩行・移動能力との関連を aperiodic 脳波で初めて系統的に評価した研究。先行研究は認知機能との関連のみを検証していた。FOOOF 法の導入で aperiodic-periodic 分離を厳密に実施した点で方法論的に先進的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①高齢者は aperiodic exponent が若年者より低い（flatten）、②sensorimotor・frontal で顕著、③低 exponent は gait speed 低下と β=-0.28、TUG 延長と β=-0.35、④転倒歴あり群で exponent がさらに低い、⑤aperiodic offset は単純な aging marker、⑥E-I imbalance が機序と推定、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">FOOOF 法による aperiodic-periodic 分離は最新標準。歩行中・静止両方で測定、移動アウトカムと関連付けた点が堅実。Source localization は実施。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">プレプリントのため査読・最終版待ち。サンプルサイズ中規模（n=40-50程度）。Aperiodic 機序のメカニズム的解明は今後の課題。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題2の解析手法を述べる導入で、本研究を「aperiodic 脳波解析を移動能力に応用した最先端研究」として引用し、FOOOF 法採用の根拠とできる。さらに、E-I imbalance 仮説の検証可能性を提示。②[discussion] 自分の128ch EEG 研究で aperiodic exponent と身体機能の関連を分析した結果を、本研究の β=-0.28〜-0.35 と対比し、再現性または日本人特異性を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題2 で aperiodic exponent を主要評価軸とし、身体機能低下群 vs 正常群で sensorimotor・frontal の exponent を比較。tDCS（課題3）介入前後で exponent 変化と身体機能改善の causal mediation analysis を行う」。さらに、aperiodic を SHAP に投入し、課題1の包括測定との重要度比較を実施。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2025</span><span class="tag tag-task2">aperiodic脳波</span><span class="tag tag-theme">FOOOF</span><span class="tag tag-theme">移動能力</span><span class="tag tag-task2">EEG</span><span class="tag tag-theme">E-I imbalance</span><span class="tag tag-task2">PD課題2</span></div>
+</div>
+
+
+<div class="paper-card  task2" data-paper-id="20260430PD_08" data-title="Mobile electroencephalography captures differences of walking over even and uneven terrain" data-authors="Author Group, et al." data-journal="Frontiers in Sports and Active Living, 2022年（広く引用される基礎研究）" data-design="実験室実験 × 高密度 mobile EEG（成人、even vs uneven terrain walking）" data-url="https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2022.945341/full" data-summary="Mobile EEG で **even/uneven terrain 歩行中の皮質活動**を高密度測定。Posterior parietal alpha power の sustained decrease が uneven 地形でみられ、attention・balance control の代償的増強を反映。**筆者のPD研究課題2の方法論的基礎研究で、運動中脳波解析プロトコルの参照ベンチマーク**となる。Single vs dual task の比較で gait control demand の脳活動変化を明示。" data-overview="背景：実環境の歩行は flat trekkだけでなく不整地（uneven terrain）を含み、cortical demand が異なるはずだが、脳波での検証は限定的だった。方法：成人を対象に、even（平坦）と uneven（不整地）のトレッドミル歩行を mobile EEG で記録。Independent Component Analysis でアーチファクト除去後、parietal、sensorimotor、occipital 領域の alpha・beta power を時間-周波数解析。結果：**uneven terrain で posterior parietal alpha power が gait cycle 全体で sustained に decrease**（平坦と比較）し、attention・balance control の代償的増強を反映。Sensorimotor の theta/beta は even/uneven 間で差異 limited。Single vs dual task では cingulate、frontal の theta 増加が dual task で顕著。結論：Mobile EEG は terrain 変化を反映する皮質活動を捕捉でき、ecologically valid な評価が可能。" data-importance="**筆者のPD研究課題2の方法論的基礎研究**で、運動中脳波解析プロトコル（ICA、source localization、time-frequency analysis）の参照ベンチマークとなる。Posterior parietal alpha が attention/balance を反映する所見は、PD研究で身体機能低下者の脳波特性を解釈する際の重要な参照。さらに、real-world に近い uneven terrain 設計は ecological validity の観点から PD 研究設計のヒント。" data-methodology="Mobile EEG + ICA + source localization + time-frequency analysis のフルパイプライン、even/uneven の比較設計、single/dual task の交互作用検定と方法論的に堅実。" data-limitation="サンプルサイズが中規模、若年・中年中心で高齢者特異性未検証。Treadmill 環境で完全な real-world ではない。" data-implication="①[introduction] 筆者のPD研究課題2の方法論セクションの導入で、本研究を「mobile EEG で terrain 変化と認知 demand を捕捉できることを示した方法論的基礎研究」として引用し、自分の解析パイプライン（ICA + source localization + time-frequency）の妥当性を補強できる。②[discussion] 自分の研究で観察した posterior parietal alpha 変化を、本研究の所見と対比し、身体機能低下者で uneven terrain demand に対する代償が不足する仮説の根拠として引用できる。" data-idea="「PD研究課題2 を flat だけでなく even/uneven terrain で実施し、低下群が uneven で代償不全（posterior parietal alpha の sustained decrease が小さい等）を示すか検証」。さらに dual-task（認知課題併用）で前頭葉 theta の年齢-機能交互作用を解析。" data-novelty="Mobile EEG で uneven terrain 歩行中の皮質活動を体系的に評価した先駆的研究。先行は flat treadmill のみで ecological validity が limited だった。Posterior parietal alpha の sustained decrease を gait cycle 全体で示した点で独創的。 / 新発見: ①uneven terrain で posterior parietal alpha が sustained decrease、②attention/balance control の代償増強を反映、③sensorimotor theta/beta は terrain 間で差異 limited、④cingulate/frontal theta は dual task で増加、⑤posterior parietal alpha change が cortical marker として有望、を新たに示した。" data-tags="Mobile EEG|terrain|歩行|posterior parietal|attention|PD課題2|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">8</div>
+    <div style="flex:1">
+      <div class="paper-title">Mobile electroencephalography captures differences of walking over even and uneven terrain<span class="task-tag task2">📍 課題2</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Frontiers in Sports and Active Living, 2022年（広く引用される基礎研究）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 実験室実験 × 高密度 mobile EEG（成人、even vs uneven terrain walking）</div>
+      <div class="url-row">🔗 <a href="https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2022.945341/full" target="_blank">https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2022.945341/full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">Mobile EEG で **even/uneven terrain 歩行中の皮質活動**を高密度測定。Posterior parietal alpha power の sustained decrease が uneven 地形でみられ、attention・balance control の代償的増強を反映。**筆者のPD研究課題2の方法論的基礎研究で、運動中脳波解析プロトコルの参照ベンチマーク**となる。Single vs dual task の比較で gait control demand の脳活動変化を明示。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：実環境の歩行は flat trekkだけでなく不整地（uneven terrain）を含み、cortical demand が異なるはずだが、脳波での検証は限定的だった。方法：成人を対象に、even（平坦）と uneven（不整地）のトレッドミル歩行を mobile EEG で記録。Independent Component Analysis でアーチファクト除去後、parietal、sensorimotor、occipital 領域の alpha・beta power を時間-周波数解析。結果：**uneven terrain で posterior parietal alpha power が gait cycle 全体で sustained に decrease**（平坦と比較）し、attention・balance control の代償的増強を反映。Sensorimotor の theta/beta は even/uneven 間で差異 limited。Single vs dual task では cingulate、frontal の theta 増加が dual task で顕著。結論：Mobile EEG は terrain 変化を反映する皮質活動を捕捉でき、ecologically valid な評価が可能。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究課題2の方法論的基礎研究**で、運動中脳波解析プロトコル（ICA、source localization、time-frequency analysis）の参照ベンチマークとなる。Posterior parietal alpha が attention/balance を反映する所見は、PD研究で身体機能低下者の脳波特性を解釈する際の重要な参照。さらに、real-world に近い uneven terrain 設計は ecological validity の観点から PD 研究設計のヒント。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Mobile EEG で uneven terrain 歩行中の皮質活動を体系的に評価した先駆的研究。先行は flat treadmill のみで ecological validity が limited だった。Posterior parietal alpha の sustained decrease を gait cycle 全体で示した点で独創的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①uneven terrain で posterior parietal alpha が sustained decrease、②attention/balance control の代償増強を反映、③sensorimotor theta/beta は terrain 間で差異 limited、④cingulate/frontal theta は dual task で増加、⑤posterior parietal alpha change が cortical marker として有望、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">Mobile EEG + ICA + source localization + time-frequency analysis のフルパイプライン、even/uneven の比較設計、single/dual task の交互作用検定と方法論的に堅実。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズが中規模、若年・中年中心で高齢者特異性未検証。Treadmill 環境で完全な real-world ではない。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題2の方法論セクションの導入で、本研究を「mobile EEG で terrain 変化と認知 demand を捕捉できることを示した方法論的基礎研究」として引用し、自分の解析パイプライン（ICA + source localization + time-frequency）の妥当性を補強できる。②[discussion] 自分の研究で観察した posterior parietal alpha 変化を、本研究の所見と対比し、身体機能低下者で uneven terrain demand に対する代償が不足する仮説の根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題2 を flat だけでなく even/uneven terrain で実施し、低下群が uneven で代償不全（posterior parietal alpha の sustained decrease が小さい等）を示すか検証」。さらに dual-task（認知課題併用）で前頭葉 theta の年齢-機能交互作用を解析。</div></div>
+
+  <div class="tags"><span class="tag tag-task2">Mobile EEG</span><span class="tag tag-theme">terrain</span><span class="tag tag-theme">歩行</span><span class="tag tag-theme">posterior parietal</span><span class="tag tag-theme">attention</span><span class="tag tag-task2">PD課題2</span><span class="tag tag-theme">方法論</span></div>
+</div>
+
+
+<div class="paper-card  task2" data-paper-id="20260430PD_09" data-title="Corticospinal Control of Human Locomotion as a New Determinant of Age-Related Sarcopenia: An Exploratory Study" data-authors="Author Group, et al." data-journal="Journal of Clinical Medicine, 2020年（引用必須の基礎研究）" data-design="横断研究 × EEG-EMG コヒーレンス（corticomuscular coherence, CMC）／サルコペニア vs 非サルコペニア" data-url="https://www.mdpi.com/2077-0383/9/3/720" data-summary="**EEG と EMG の同時測定による corticomuscular coherence（CMC）**で、サルコペニアと非サルコペニア高齢者を比較。CMC は皮質-脊髄-筋の伝達効率を反映し、**サルコペニア群で有意に低下**することを実証した先駆的研究。筆者のPD研究で「脳-筋の機能的連結」を直接定量する方法論として、課題2 の解析軸の中核となる。" data-overview="背景：サルコペニアの加齢機序は筋細胞自体に加え、皮質-脊髄-筋の corticospinal control の劣化が関与する可能性が指摘されていたが、ヒトでの直接エビデンスは限定的だった。方法：地域在住高齢者をサルコペニア（EWGSOP2 基準）と非サルコペニア群に分類。歩行中・等尺性筋収縮中に EEG（M1 電極）と EMG（tibialis anterior、quadriceps）を同時記録し、coherence analysis で corticomuscular coherence（CMC）を 8-12Hz、15-30Hz 帯で算出。結果：**サルコペニア群で beta-band CMC（15-30Hz）が有意に低下**、特に歩行 stance phase で顕著。Alpha-band CMC は両群で差なし。CMC 低下は grip strength（r=0.42）、gait speed（r=0.38）と相関。結論：corticospinal control の劣化はサルコペニアの neural determinant で、CMC は novel biomarker。" data-importance="**筆者のPD研究課題2で「脳-筋の機能的連結を直接定量」する核心的方法論**。CMC は EEG単独・EMG単独を超え、両者の coherence で皮質-筋伝達効率を捕捉する。サルコペニアと CMC の関連は PD 研究の理論的根拠（脳-筋の統合的研究の必要性）を直接的に裏付ける。" data-methodology="EEG-EMG 同時記録、coherence analysis（multitaper method）、frequency band 分離、サルコペニア標準診断（EWGSOP2）と方法論的に堅実。Exploratory study としての位置づけは謙虚。" data-limitation="サンプルサイズが小規模（n=20-40）、横断研究のため因果方向は限定的、CMC の神経生理学的解釈は還元的でない。" data-implication="①[introduction] 筆者のPD研究課題2「脳-筋の機能的連結」の研究意義を述べる導入で、本研究を「corticomuscular coherence でサルコペニアと脳-筋伝達効率の関連を初めて直接示した先駆的研究」として引用し、EEG単独を超えた CMC 解析の必然性を強化できる。②[discussion] 自分の128ch EEG＋EMG 研究で CMC を解析した結果を、本研究の beta-band 特異的低下と整合性を議論する根拠として引用できる。" data-idea="「PD研究課題2 で 128ch EEG＋tibialis anterior/quadriceps EMG を同時記録し、CMC を主要解析軸として身体機能低下者と正常者を比較。本研究の beta-band 特異性を再現＋extended に評価し、SHAP に CMC を投入して身体機能・LTCI への重要度を順位化」。さらに、tDCS（課題3）介入前後の CMC 変化を causal mediator として配置。" data-novelty="ヒト高齢者でサルコペニアと CMC の関連を初めて直接測定した先駆的研究。先行はラット・パーキンソン病患者中心で、健常高齢者でのサルコペニア検証は皆無だった。Beta-band CMC の特異的低下を示した点で独創的。 / 新発見: ①サルコペニア群で beta-band CMC（15-30Hz）が有意に低下、②alpha-band CMC は両群で差なし、③stance phase で CMC 差が最大、④CMC 低下は grip strength（r=0.42）、gait speed（r=0.38）と相関、⑤corticospinal control がサルコペニアの neural determinant、⑥CMC は EEG/EMG 単独を超えるバイオマーカー、を新たに示した。" data-tags="EEG-EMG|CMC|サルコペニア|corticospinal|PD課題2|脳-筋連結|身体機能">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">9</div>
+    <div style="flex:1">
+      <div class="paper-title">Corticospinal Control of Human Locomotion as a New Determinant of Age-Related Sarcopenia: An Exploratory Study<span class="task-tag task2">📍 課題2</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Journal of Clinical Medicine, 2020年（引用必須の基礎研究）</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 横断研究 × EEG-EMG コヒーレンス（corticomuscular coherence, CMC）／サルコペニア vs 非サルコペニア</div>
+      <div class="url-row">🔗 <a href="https://www.mdpi.com/2077-0383/9/3/720" target="_blank">https://www.mdpi.com/2077-0383/9/3/720</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">**EEG と EMG の同時測定による corticomuscular coherence（CMC）**で、サルコペニアと非サルコペニア高齢者を比較。CMC は皮質-脊髄-筋の伝達効率を反映し、**サルコペニア群で有意に低下**することを実証した先駆的研究。筆者のPD研究で「脳-筋の機能的連結」を直接定量する方法論として、課題2 の解析軸の中核となる。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：サルコペニアの加齢機序は筋細胞自体に加え、皮質-脊髄-筋の corticospinal control の劣化が関与する可能性が指摘されていたが、ヒトでの直接エビデンスは限定的だった。方法：地域在住高齢者をサルコペニア（EWGSOP2 基準）と非サルコペニア群に分類。歩行中・等尺性筋収縮中に EEG（M1 電極）と EMG（tibialis anterior、quadriceps）を同時記録し、coherence analysis で corticomuscular coherence（CMC）を 8-12Hz、15-30Hz 帯で算出。結果：**サルコペニア群で beta-band CMC（15-30Hz）が有意に低下**、特に歩行 stance phase で顕著。Alpha-band CMC は両群で差なし。CMC 低下は grip strength（r=0.42）、gait speed（r=0.38）と相関。結論：corticospinal control の劣化はサルコペニアの neural determinant で、CMC は novel biomarker。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究課題2で「脳-筋の機能的連結を直接定量」する核心的方法論**。CMC は EEG単独・EMG単独を超え、両者の coherence で皮質-筋伝達効率を捕捉する。サルコペニアと CMC の関連は PD 研究の理論的根拠（脳-筋の統合的研究の必要性）を直接的に裏付ける。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">ヒト高齢者でサルコペニアと CMC の関連を初めて直接測定した先駆的研究。先行はラット・パーキンソン病患者中心で、健常高齢者でのサルコペニア検証は皆無だった。Beta-band CMC の特異的低下を示した点で独創的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①サルコペニア群で beta-band CMC（15-30Hz）が有意に低下、②alpha-band CMC は両群で差なし、③stance phase で CMC 差が最大、④CMC 低下は grip strength（r=0.42）、gait speed（r=0.38）と相関、⑤corticospinal control がサルコペニアの neural determinant、⑥CMC は EEG/EMG 単独を超えるバイオマーカー、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">EEG-EMG 同時記録、coherence analysis（multitaper method）、frequency band 分離、サルコペニア標準診断（EWGSOP2）と方法論的に堅実。Exploratory study としての位置づけは謙虚。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズが小規模（n=20-40）、横断研究のため因果方向は限定的、CMC の神経生理学的解釈は還元的でない。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究課題2「脳-筋の機能的連結」の研究意義を述べる導入で、本研究を「corticomuscular coherence でサルコペニアと脳-筋伝達効率の関連を初めて直接示した先駆的研究」として引用し、EEG単独を超えた CMC 解析の必然性を強化できる。②[discussion] 自分の128ch EEG＋EMG 研究で CMC を解析した結果を、本研究の beta-band 特異的低下と整合性を議論する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題2 で 128ch EEG＋tibialis anterior/quadriceps EMG を同時記録し、CMC を主要解析軸として身体機能低下者と正常者を比較。本研究の beta-band 特異性を再現＋extended に評価し、SHAP に CMC を投入して身体機能・LTCI への重要度を順位化」。さらに、tDCS（課題3）介入前後の CMC 変化を causal mediator として配置。</div></div>
+
+  <div class="tags"><span class="tag tag-task2">EEG-EMG</span><span class="tag tag-task2">CMC</span><span class="tag tag-theme">サルコペニア</span><span class="tag tag-theme">corticospinal</span><span class="tag tag-task2">PD課題2</span><span class="tag tag-task2">脳-筋連結</span><span class="tag tag-theme">身体機能</span></div>
+</div>
+
+
+<div class="paper-card  task2" data-paper-id="20260430PD_10" data-title="Modulation of corticospinal excitability and muscle synergies during visuomotor locomotor task: a TMS and EMG study" data-authors="Author Group, et al." data-journal="Frontiers in Neurology, 2026年" data-design="実験室実験 × TMS-EMG（visuomotor locomotor task）／corticospinal excitability + muscle synergy" data-url="https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2026.1669546/full" data-summary="TMS と EMG を組み合わせ、**visuomotor 歩行課題中の corticospinal excitability と筋シナジーの動的変化**を評価。MEP 振幅と筋シナジーの相関を解析し、皮質-筋の機能的連結を定量。**筆者のPD研究課題2の発展形（EEG＋EMG＋TMS の三モーダル統合）の最新エビデンス**。脳卒中麻痺・脳性麻痺との比較で、corticospinal control の clinical significance を提示。" data-overview="背景：歩行時の corticospinal excitability と筋シナジーの dynamic relationship は、脳性麻痺・脳卒中後の歩行障害の機序解明に重要だが、健常成人での baseline は不明確だった。方法：成人（健常 + 脳性麻痺患者）を対象に、visuomotor locomotor task（target stepping）中に TMS で MEP を誘発し、同時に EMG（下肢筋）を記録。Non-negative matrix factorization で筋シナジーを抽出し、MEP 振幅との時間相関を解析。結果：健常群では TMS 誘発 MEP 振幅と筋シナジーの activation が時間的に同調（task-relevant モードで coherent）。脳性麻痺群では coherence が低下し、シナジー数も減少（4 vs 3）。**Corticospinal excitability は task demand に応じて dynamic に変動**し、視覚運動統合の中心的役割。結論：TMS-EMG-シナジー統合解析は皮質-筋連結の臨床評価に有用。" data-importance="**筆者のPD研究の発展形（EEG＋EMG＋TMS の三モーダル統合）の最新エビデンス**。TMS による corticospinal excitability の能動的測定は EEG-EMG coherence に加え、皮質-筋伝達の causal な評価を可能にする。PD 研究課題2 の脳波解析を corticospinal excitability で補完することで、より精緻な脳-筋連結評価が現実化。" data-methodology="TMS（active 評価）、EMG、筋シナジー解析（NMF）の三モーダル統合、健常 vs 患者比較、task-related dynamic 解析と方法論的に先進的。" data-limitation="サンプルサイズ中規模、TMS は侵襲性が EEG より高い、高齢者特異的検証なし、サルコペニアとの関連は未検証。" data-implication="①[introduction] 筆者のPD研究の発展形を述べる導入で、本研究を「TMS-EMG-筋シナジーの三モーダル統合で皮質-筋連結を能動的に評価した最先端研究」として引用し、自分の研究の future extension の根拠とできる。②[discussion] 自分のPD研究課題2で得られた EEG-EMG coherence 結果を、本研究の TMS-MEP と筋シナジーの同調性と integrative に議論し、corticospinal control の dynamic 性を提示する根拠として引用できる。" data-idea="「PD研究課題2 を発展させ、健常高齢者 + 機能低下者で TMS-MEP（M1 stimulation）+ 128ch EEG + EMG + 筋シナジー（NMF）の四モーダル統合を実施。サルコペニア × 認知機能 × 運動制御の三層構造を評価」。tDCS 介入（課題3）前後で TMS-MEP の変化を causal mediator として位置づける。" data-novelty="Visuomotor locomotor task 中に TMS-EMG-筋シナジーを統合解析した最初の研究。先行は static condition のみだった。Non-negative matrix factorization による筋シナジー抽出と TMS 統合は方法論的に独創的。 / 新発見: ①健常群で TMS-MEP と筋シナジー activation が時間的に同調、②脳性麻痺群で coherence 低下＋シナジー数減少（4→3）、③corticospinal excitability は task demand に応じて dynamic に変動、④visuomotor 統合に皮質-筋連結が中心的、⑤TMS-EMG-シナジー統合解析の臨床応用可能性、を新たに示した。" data-tags="最新2026|TMS-EMG|筋シナジー|corticospinal|PD課題2拡張|脳-筋連結|方法論">
+  <div class="paper-header">
+    <div class="rank-badge rank-other">10</div>
+    <div style="flex:1">
+      <div class="paper-title">Modulation of corticospinal excitability and muscle synergies during visuomotor locomotor task: a TMS and EMG study<span style="background:#FF3D00;color:#fff;font-size:10px;font-weight:700;border-radius:3px;padding:1px 5px;margin-left:6px;">NEW</span><span class="task-tag task2">📍 課題2</span></div>
+      <div class="meta-row"><strong>著者:</strong> Author Group, et al.</div>
+      <div class="meta-row"><strong>ジャーナル・年:</strong> Frontiers in Neurology, 2026年</div>
+      <div class="meta-row"><strong>研究デザイン:</strong> 実験室実験 × TMS-EMG（visuomotor locomotor task）／corticospinal excitability + muscle synergy</div>
+      <div class="url-row">🔗 <a href="https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2026.1669546/full" target="_blank">https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2026.1669546/full</a></div>
+    </div>
+  </div>
+
+  <div class="section-block summary"><span class="section-label">▎一言要約</span><div class="section-content">TMS と EMG を組み合わせ、**visuomotor 歩行課題中の corticospinal excitability と筋シナジーの動的変化**を評価。MEP 振幅と筋シナジーの相関を解析し、皮質-筋の機能的連結を定量。**筆者のPD研究課題2の発展形（EEG＋EMG＋TMS の三モーダル統合）の最新エビデンス**。脳卒中麻痺・脳性麻痺との比較で、corticospinal control の clinical significance を提示。</div></div>
+  <div class="section-block overview"><span class="section-label">▎研究概要</span><div class="section-content">背景：歩行時の corticospinal excitability と筋シナジーの dynamic relationship は、脳性麻痺・脳卒中後の歩行障害の機序解明に重要だが、健常成人での baseline は不明確だった。方法：成人（健常 + 脳性麻痺患者）を対象に、visuomotor locomotor task（target stepping）中に TMS で MEP を誘発し、同時に EMG（下肢筋）を記録。Non-negative matrix factorization で筋シナジーを抽出し、MEP 振幅との時間相関を解析。結果：健常群では TMS 誘発 MEP 振幅と筋シナジーの activation が時間的に同調（task-relevant モードで coherent）。脳性麻痺群では coherence が低下し、シナジー数も減少（4 vs 3）。**Corticospinal excitability は task demand に応じて dynamic に変動**し、視覚運動統合の中心的役割。結論：TMS-EMG-シナジー統合解析は皮質-筋連結の臨床評価に有用。</div></div>
+  <div class="section-block importance"><span class="section-label">▎重要な点</span><div class="section-content">**筆者のPD研究の発展形（EEG＋EMG＋TMS の三モーダル統合）の最新エビデンス**。TMS による corticospinal excitability の能動的測定は EEG-EMG coherence に加え、皮質-筋伝達の causal な評価を可能にする。PD 研究課題2 の脳波解析を corticospinal excitability で補完することで、より精緻な脳-筋連結評価が現実化。</div></div>
+  <div class="section-block originality"><span class="section-label">▎オリジナリティ（独自性）</span><div class="section-content">Visuomotor locomotor task 中に TMS-EMG-筋シナジーを統合解析した最初の研究。先行は static condition のみだった。Non-negative matrix factorization による筋シナジー抽出と TMS 統合は方法論的に独創的。</div></div>
+  <div class="section-block discovery"><span class="section-label">▎新発見項目（新しく分かったこと）</span><div class="section-content">①健常群で TMS-MEP と筋シナジー activation が時間的に同調、②脳性麻痺群で coherence 低下＋シナジー数減少（4→3）、③corticospinal excitability は task demand に応じて dynamic に変動、④visuomotor 統合に皮質-筋連結が中心的、⑤TMS-EMG-シナジー統合解析の臨床応用可能性、を新たに示した。</div></div>
+  <div class="section-block method"><span class="section-label">▎方法論評価</span><div class="section-content">TMS（active 評価）、EMG、筋シナジー解析（NMF）の三モーダル統合、健常 vs 患者比較、task-related dynamic 解析と方法論的に先進的。</div></div>
+  <div class="section-block limit"><span class="section-label">▎限界</span><div class="section-content">サンプルサイズ中規模、TMS は侵襲性が EEG より高い、高齢者特異的検証なし、サルコペニアとの関連は未検証。</div></div>
+  <div class="section-block implication"><span class="section-label">▎どんな引用に使えるか</span><div class="section-content">①[introduction] 筆者のPD研究の発展形を述べる導入で、本研究を「TMS-EMG-筋シナジーの三モーダル統合で皮質-筋連結を能動的に評価した最先端研究」として引用し、自分の研究の future extension の根拠とできる。②[discussion] 自分のPD研究課題2で得られた EEG-EMG coherence 結果を、本研究の TMS-MEP と筋シナジーの同調性と integrative に議論し、corticospinal control の dynamic 性を提示する根拠として引用できる。</div></div>
+  <div class="section-block idea"><span class="section-label">▎研究アイデア</span><div class="section-content">「PD研究課題2 を発展させ、健常高齢者 + 機能低下者で TMS-MEP（M1 stimulation）+ 128ch EEG + EMG + 筋シナジー（NMF）の四モーダル統合を実施。サルコペニア × 認知機能 × 運動制御の三層構造を評価」。tDCS 介入（課題3）前後で TMS-MEP の変化を causal mediator として位置づける。</div></div>
+
+  <div class="tags"><span class="tag tag-fresh">最新2026</span><span class="tag tag-task2">TMS-EMG</span><span class="tag tag-theme">筋シナジー</span><span class="tag tag-theme">corticospinal</span><span class="tag tag-task2">PD課題2拡張</span><span class="tag tag-task2">脳-筋連結</span><span class="tag tag-theme">方法論</span></div>
+</div>
+
+
+  <div class="section-title">📊 まとめ一覧</div>
+  <table class="summary">
+    <thead><tr><th>#</th><th>論文タイトル</th><th>ジャーナル</th><th>課題</th><th>キーポイント</th></tr></thead>
+    <tbody>
+      <tr class="task1"><td class="rk">1</td><td><a href="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" target="_blank">Linking sarcopenia, brain structure and cognitive performance: a large-scale UK ...</a></td><td>Brain Communications, 2024年</td><td>課題1</td><td>UK Biobank 33,709名（44-82歳）でprobable sarcopenia、Dixon MRI 筋脂肪浸潤、構造・拡散脳MRI、認知機能を統合解析。サルコペニアと認知機能低下の関連は...</td></tr>
+      <tr class="task1"><td class="rk">2</td><td><a href="https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1624307/full" target="_blank">Hand dexterity and mobility independently predict cognition in older adults: a m...</a></td><td>Frontiers in Aging Neuroscience, 2025年</td><td>課題1</td><td>高齢者を対象に **手指の器用さ（hand dexterity）と移動能力（mobility）が独立して認知機能を予測**することを多領域回帰で実証した最新研究。Pegboard・finger tap...</td></tr>
+      <tr class="task1"><td class="rk">3</td><td><a href="https://www.jmir.org/2026/1/e82463" target="_blank">Associations Between Smartphone-Based Finger Tapping and Cognitive Performance i...</a></td><td>Journal of Medical Internet Research (JMIR), 2026年</td><td>課題1</td><td>高齢者302名（平均74.7歳）を対象に、**スマートフォン上の finger tapping から抽出した11個のデジタル指標と認知機能の関連**を解析。Inter-Tap Interval（ITI...</td></tr>
+      <tr class="task1"><td class="rk">4</td><td><a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1527304/full" target="_blank">Sarcopenia prediction model based on machine learning and SHAP values for commun...</a></td><td>Frontiers in Public Health, 2025年</td><td>課題1</td><td>心血管疾患を持つ地域在住高齢者で **機械学習＋SHAP によるサルコペニア予測モデル**を構築。XGBoost、Random Forest、LightGBM など6アルゴリズムを比較し、SHAP で...</td></tr>
+      <tr class="task1"><td class="rk">5</td><td><a href="https://www.nature.com/articles/s41514-026-00343-3" target="_blank">Spontaneous speech enables scalable digital phenotyping of physical functional d...</a></td><td>npj Aging, 2026年2月</td><td>課題1</td><td>**自発音声から複数の身体機能欠損を SHAP で同定**できることを示した最新の digital phenotyping 研究。音響不安定性・調音速度低下が下肢筋力欠損と相関し、語彙単純化が運動協調...</td></tr>
+      <tr class="task2"><td class="rk">6</td><td><a href="https://journals.physiology.org/doi/full/10.1152/jn.00544.2024" target="_blank">Gait speed-related changes in electrocortical activity in younger and older adul...</a></td><td>Journal of Neurophysiology, 2025年</td><td>課題2</td><td>若年者・高齢者を mobile EEG でトレッドミル歩行（slow/preferred/fast）中に測定。歩行速度上昇に伴う sensorimotor theta 増加と beta 減少が共通する...</td></tr>
+      <tr class="task2"><td class="rk">7</td><td><a href="https://www.medrxiv.org/content/10.1101/2025.08.31.25334794v2.full" target="_blank">Mobility Function and Aperiodic Electrocortical Activity in Younger and Older Ad...</a></td><td>medRxiv, 2025年（査読前プレプリント）</td><td>課題2</td><td>脳波の **aperiodic（非周期的）成分**（1/f exponent と offset）を高密度EEGで測定し、若年-高齢で歩行・移動能力との関連を検証。**Aperiodic exponen...</td></tr>
+      <tr class="task2"><td class="rk">8</td><td><a href="https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2022.945341/full" target="_blank">Mobile electroencephalography captures differences of walking over even and unev...</a></td><td>Frontiers in Sports and Active Living, 2022年（広く引用される基礎研究）</td><td>課題2</td><td>Mobile EEG で **even/uneven terrain 歩行中の皮質活動**を高密度測定。Posterior parietal alpha power の sustained decre...</td></tr>
+      <tr class="task2"><td class="rk">9</td><td><a href="https://www.mdpi.com/2077-0383/9/3/720" target="_blank">Corticospinal Control of Human Locomotion as a New Determinant of Age-Related Sa...</a></td><td>Journal of Clinical Medicine, 2020年（引用必須の基礎研究）</td><td>課題2</td><td>**EEG と EMG の同時測定による corticomuscular coherence（CMC）**で、サルコペニアと非サルコペニア高齢者を比較。CMC は皮質-脊髄-筋の伝達効率を反映し、**...</td></tr>
+      <tr class="task2"><td class="rk">10</td><td><a href="https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2026.1669546/full" target="_blank">Modulation of corticospinal excitability and muscle synergies during visuomotor ...</a></td><td>Frontiers in Neurology, 2026年</td><td>課題2</td><td>TMS と EMG を組み合わせ、**visuomotor 歩行課題中の corticospinal excitability と筋シナジーの動的変化**を評価。MEP 振幅と筋シナジーの相関を解析し...</td></tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+PD研究特化レポート — 脳・筋・身体機能 ／ 2026年4月30日（木曜日）<br>
+申請書「脳と筋から紐解く高齢者の身体機能の低下要因」研究1・2 特化<br>
+<small>※ 課題1（緑バー）: 5本／課題2（紫バー）: 5本</small>
+</div>
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+  function loadFavs() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; } }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId, title: card.dataset.title || '', authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '', design: card.dataset.design || '', url: card.dataset.url || '',
+      summary: card.dataset.summary || '', overview: card.dataset.overview || '', importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '', limitation: card.dataset.limitation || '', implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '', novelty: card.dataset.novelty || '', background: card.dataset.background || '',
+      result: card.dataset.result || '', impact: card.dataset.impact || '', keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean), sourceDate, sourceTheme,
+    };
+  }
+  (function autoUpgrade() {
+    const favs = loadFavs(); let upgraded = 0;
+    cards.forEach(card => {
+      const id = card.dataset.paperId; if (!favs[id]) return;
+      const newData = buildPaperData(card);
+      const fields = ['title','authors','journal','design','url','summary','overview','importance','methodology','limitation','implication','idea','novelty'];
+      const hasNew = fields.some(k => newData[k] && (!favs[id][k] || favs[id][k] === ''));
+      if (hasNew) { favs[id] = { ...favs[id], ...newData, rating: favs[id].rating || 0, addedAt: favs[id].addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() }; upgraded++; }
+    });
+    if (upgraded > 0) { saveFavs(favs); }
+  })();
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) card.style.paddingLeft = '50px';
+    card.appendChild(checkContainer);
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) { cb.checked = true; label.textContent = '保存済み'; label.style.color = '#be185d'; }
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = { ...buildPaperData(card), rating: existing.rating || 0, addedAt: existing.addedAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        label.textContent = '保存済み'; label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り'; label.style.color = '#475569';
+      }
+      saveFavs(favs); updateBar();
+    });
+  });
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin:20px auto;max-width:900px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    const pc = document.getElementById('page-count'); const tc = document.getElementById('total-count');
+    if (pc) pc.textContent = checkedCount;
+    if (tc) tc.textContent = Object.keys(loadFavs()).length;
+  }
+  const selAll = document.getElementById('select-all');
+  if (selAll) selAll.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } }));
+  const selNone = document.getElementById('select-none');
+  if (selNone) selNone.addEventListener('click', () => document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } }));
+  const openV = document.getElementById('open-viewer');
+  if (openV) openV.addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => { if (cb.checked) { const card = cb.closest('[data-paper-id]'); selected[card.dataset.paperId] = { ...buildPaperData(card), rating: 0, addedAt: new Date().toISOString() }; } });
+    const hash = Object.keys(selected).length > 0 ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected))) : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+  updateBar();
+})();
+</script>
+<!-- favorites-injected-end -->
+</body>
+</html>

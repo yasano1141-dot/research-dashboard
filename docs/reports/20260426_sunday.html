@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究レポート：遺伝子・オミクス研究 — 2026年4月26日</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+  :root{
+    --primary:#1a3a5c; --accent:#2e75b6; --accent-light:#d5e8f4;
+    --bg:#fafbfc; --card-bg:#fff; --text:#2c3e50; --text-light:#5a6a7a;
+    --border:#e2e8f0; --rank1:#c9302c; --rank2:#e67e22; --rank3:#2980b9;
+    --tag-method:#8e44ad; --tag-theme:#16a085; --tag-fresh:#27ae60;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:15px;}
+  .container{max-width:960px;margin:0 auto;padding:40px 24px;}
+  .report-header{background:linear-gradient(135deg,var(--primary) 0%,#2c5f8a 100%);color:#fff;padding:48px 40px;border-radius:12px;margin-bottom:32px;position:relative;overflow:hidden;}
+  .report-header::after{content:'';position:absolute;top:-50%;right:-10%;width:300px;height:300px;background:rgba(255,255,255,0.05);border-radius:50%;}
+  .report-header h1{font-family:'Noto Serif JP',serif;font-size:28px;font-weight:700;margin-bottom:8px;}
+  .report-header .subtitle{font-size:16px;opacity:.85;margin-bottom:16px;}
+  .report-header .meta{display:flex;gap:24px;font-size:13px;opacity:.75;}
+  .section-title{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:var(--primary);margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--accent);}
+  .paper-card{background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:28px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.04);position:relative;}
+  .paper-card.rank1{border-left:5px solid var(--rank1);}
+  .paper-card.rank2{border-left:5px solid var(--rank2);}
+  .paper-card.rank3{border-left:5px solid var(--rank3);}
+  .rank-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;color:#fff;margin-right:10px;}
+  .rank-badge.r1{background:var(--rank1);} .rank-badge.r2{background:var(--rank2);} .rank-badge.r3{background:var(--rank3);}
+  .rank-badge.r-other{background:var(--text-light);}
+  .fresh-badge{display:inline-block;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;background:var(--tag-fresh);color:#fff;margin-left:8px;}
+  .paper-title{font-family:'Noto Serif JP',serif;font-size:17px;font-weight:700;color:var(--primary);margin:8px 0 6px;line-height:1.5;}
+  .paper-meta{font-size:13px;color:var(--text-light);margin-bottom:16px;}
+  .paper-meta a{color:var(--accent);text-decoration:none;}
+  .paper-meta a:hover{text-decoration:underline;}
+  .field-block{margin:14px 0;}
+  .field-label{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
+  .field-content{font-size:14px;line-height:1.75;color:var(--text);}
+  .tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+  .tag{display:inline-block;padding:3px 10px;border-radius:4px;font-size:11px;color:#fff;}
+  .tag.method{background:var(--tag-method);} .tag.theme{background:var(--tag-theme);}
+  table.summary{width:100%;border-collapse:collapse;margin-top:16px;font-size:13px;background:#fff;}
+  table.summary th{background:var(--primary);color:#fff;padding:10px;text-align:left;}
+  table.summary td{padding:10px;border-bottom:1px solid var(--border);vertical-align:top;}
+  table.summary tr:nth-child(even){background:#f7fafc;}
+  .footer{text-align:center;color:var(--text-light);font-size:12px;margin-top:48px;padding-top:24px;border-top:1px solid var(--border);}
+</style>
+</head>
+<body data-source-date="20260426" data-source-theme="遺伝子・オミクス">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">📅 過去アーカイブ</span>
+</div>
+
+<div class="container">
+<div class="report-header">
+<h1>研究レポート：遺伝子・オミクス研究</h1>
+<div class="subtitle">2026年4月26日（日曜日）— 注目論文10本のレビュー</div>
+<div class="meta"><span>テーマ：遺伝子・オミクス</span><span>論文数：10本</span><span>うち最新（2026年）：5本</span></div>
+</div>
+
+<div class="section-title">本日の注目論文（重要度順）</div>
+
+<div class="paper-card rank1" data-paper-id="20260426_01" data-title="Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI cohort" data-authors="著者：Bandinelli S, Ferrucci L et al." data-journal="Nature Aging, 2026" data-design="" data-url="https://www.nature.com/articles/s43587-026-01066-6" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r1">RANK 1</span><span class="fresh-badge">最新（2026年3月）</span>
+<div class="paper-title">Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI cohort</div>
+<div class="paper-meta">著者：Bandinelli S, Ferrucci L et al. ／ Nature Aging, 2026 ／ 縦断コホート研究 ／ <a href="https://www.nature.com/articles/s43587-026-01066-6" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">エピジェネティック時計の「変化速度」が、ベースライン値とは独立に長期死亡率を予測することを24年追跡で示した縦断研究。単一時点測定では捉えられない加齢動態の重要性を実証した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">InCHIANTIコホートの699名のイタリア人高齢者を最長24年追跡し、第1〜第3世代のエピジェネティック時計（Horvath, Hannum, PhenoAge, GrimAge v1/v2, DunedinPACE）の縦断的変化を測定した。混合効果モデルとCox回帰で、各時計の変化速度と全死因死亡との関連を検討。GrimAge v1/v2とDunedinPACEの変化速度は加齢とともに加速し、いずれの時計も変化速度の上位1SD増加で死亡リスクが有意に上昇した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">これまでのエピジェネティック時計研究は単一時点に依存していたが、本研究は「動的バイオマーカー」としての価値を初めて実証した。臨床応用において経時測定の有用性を支持する重要な証拠である。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">24年という超長期追跡と複数時計の同時評価は強み。一方でイタリア地中海沿岸の集団に限られ、外部妥当性の検証が必要。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">バッチ効果や測定誤差の影響を完全には排除できておらず、白血球組成変化との交絡も残存する。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">健康寿命研究において、ベースラインのエピジェネティック年齢ではなく経時変化を曝露として扱う設計（target trial emulation）が新たな研究軸となりうる。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">日本人高齢者コホート（TMM、JAGES）でDunedinPACEの2時点測定を実施し、変化速度と要介護移行（multi-state model）との関連を検証する。</div></div>
+<div class="tag-row"><span class="tag method">縦断コホート</span><span class="tag method">エピジェネティック時計</span><span class="tag theme">バイオマーカー of aging</span><span class="tag theme">死亡率予測</span></div>
+</div>
+
+<div class="paper-card rank2" data-paper-id="20260426_02" data-title="OMICmAge quantifies biological age by integrating multi-omics with electronic medical records" data-authors="著者：Chen Q, Levine ME et al." data-journal="Nature Aging, 2026" data-design="" data-url="https://www.nature.com/articles/s43587-026-01073-7" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r2">RANK 2</span><span class="fresh-badge">最新（2026年）</span>
+<div class="paper-title">OMICmAge quantifies biological age by integrating multi-omics with electronic medical records</div>
+<div class="paper-meta">著者：Chen Q, Levine ME et al. ／ Nature Aging, 2026 ／ マルチオミクス・機械学習 ／ <a href="https://www.nature.com/articles/s43587-026-01073-7" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">DNAメチル化・電子カルテ（EMR）・血液オミクスを統合した新規生物学的年齢「OMICmAge」と「DNAmEMRAge」を開発。既存バイオマーカーと同等以上に死亡・慢性疾患を予測した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">Mass General Brigham Biobankの約31,000名から日常検査値を用いてEMRAgeを構築し、それをアウトカムとするDNAメチル化サロゲート（DNAmEMRAge）を作成。さらに代謝物・タンパク質を含めOMICmAgeを構築した。複数の独立検証コホートで全死因死亡・心血管・認知症等のリスクと有意に関連した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">日常診療データに統合可能な生物学的年齢指標は、臨床実装可能性が極めて高い。研究と臨床のギャップを埋める実装科学的価値が大きい。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">elastic netとアンサンブル学習により高い予測精度を達成。一方で「年齢」を回帰目標にする設計は健康vs年齢の混同リスクを内包する。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">EMRデータの欠測パターン依存と、米国白人中心の構築で人種差・国別差の検証が不十分。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">日本のレセプト・健診データから類似のEMRAgeを構築すれば、国民皆保険下での要介護・健康寿命の予測モデルとして強力な臨床ツールとなる。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">JMDC・KDB等の健診データを用いて日本人版EMRAgeを構築し、g-formulaで生活習慣介入の介入効果を推定する。</div></div>
+<div class="tag-row"><span class="tag method">機械学習</span><span class="tag method">マルチオミクス統合</span><span class="tag theme">生物学的年齢</span><span class="tag theme">EMR/EHR</span></div>
+</div>
+
+<div class="paper-card rank3" data-paper-id="20260426_03" data-title="Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated with All-Cause Mortality" data-authors="著者：Lothian Birth Cohort Group" data-journal="medRxiv preprint, 2026" data-design="" data-url="https://www.medrxiv.org/content/10.64898/2026.03.09.26347914v1" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r3">RANK 3</span><span class="fresh-badge">最新（2026年3月）</span>
+<div class="paper-title">Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated with All-Cause Mortality</div>
+<div class="paper-meta">著者：Lothian Birth Cohort Group ／ medRxiv preprint, 2026 ／ プロテオミクス・コホート研究 ／ <a href="https://www.medrxiv.org/content/10.64898/2026.03.09.26347914v1" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">Lothian Birth Cohort 1936の861名で、臓器別プロテオミクス年齢・GrimAge2・テロメア長・身体機能を統合し、全死因死亡との関連を比較したマルチモーダル研究。肝・免疫・心臓の加速老化が最も強く死亡を予測した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">UK Biobank由来の臓器別ProtBAGモデルをLothian Birth Cohort 1936に適用し、複数のエピジェネティック時計、テロメア長、握力・歩行・認知機能と並列比較した。Cox比例ハザードモデルで死亡リスクを推定。臓器別proteomic ageが他の指標を上回る予測能を示した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">「どの加齢バイオマーカーが最も有用か」という臨床判断の基準を提供。臓器特異的なプロテオミクス年齢が次世代の標準になりうることを示唆。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">複数モダリティの直接比較は希少で価値が高い。ただしプレプリント段階で査読を経ていない点に留意。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">サンプルサイズが861名と限定的で、人種同質性・コホート特異性が外部妥当性を制限する。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">筋質・身体機能との関連を探る上で、プロテオミクス由来の「筋肉・骨格年齢」を構築する研究の余地が大きい。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">CT muscle density・echo intensityを目的変数としたプロテオミクス由来「筋年齢」を構築し、フレイル進行を縦断的に予測する。</div></div>
+<div class="tag-row"><span class="tag method">プロテオミクス</span><span class="tag method">マルチモーダル比較</span><span class="tag theme">臓器別生物学的年齢</span><span class="tag theme">死亡率</span></div>
+</div>
+
+<div class="paper-card" data-paper-id="20260426_04" data-title="Uncovering the multivariate genetic architecture of frailty with genomic structural equation modeling" data-authors="著者：Pilling LC, Atkins JL et al." data-journal="Nature Genetics, 2025" data-design="" data-url="https://www.nature.com/articles/s41588-025-02269-0" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r-other">RANK 4</span>
+<div class="paper-title">Uncovering the multivariate genetic architecture of frailty with genomic structural equation modeling</div>
+<div class="paper-meta">著者：Pilling LC, Atkins JL et al. ／ Nature Genetics, 2025 ／ マルチバリエートGWAS ／ <a href="https://www.nature.com/articles/s41588-025-02269-0" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">フレイルを構成する30の欠損項目をgenomic SEMで統合解析し、408の遺伝座位と6つの新規潜在因子を同定した大規模GWAS。フレイルの遺伝的多次元性を明らかにした。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">UK Biobank等から30種類のfrailty deficit項目のGWAS要約統計量をgenomic structural equation modelingで結合し、共通因子と6つの特異的因子を抽出した。各因子のpolygenic risk score（PRS）が外部コホートでフレイル関連アウトカムを予測した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">単一フレイル指標を超えた「遺伝的下位構造」の発見は、表現型の異質性を分離する新たな枠組みを提供する。介入のターゲティングに直結する。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">genomic SEMによる共有遺伝因子の抽出は最先端。一方で項目選択の恣意性は残る。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">主にヨーロッパ系祖先で実施され、東アジア人での再現性は未検証。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">健康寿命研究で「どの遺伝的サブタイプが要介護に至りやすいか」を識別する基盤となる。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">日本人コホートで6因子PRSを算出し、要介護認定（LTCI）への移行をmulti-state Cox modelで解析する。</div></div>
+<div class="tag-row"><span class="tag method">GWAS</span><span class="tag method">Genomic SEM</span><span class="tag theme">フレイル</span><span class="tag theme">PRS</span></div>
+</div>
+
+<div class="paper-card" data-paper-id="20260426_05" data-title="Large-scale genome-wide analyses with proteomics integration reveal novel loci and biological insights into frailty" data-authors="著者：Liu D, Atkins JL et al." data-journal="Nature Aging, 2025" data-design="" data-url="https://www.nature.com/articles/s43587-025-00925-y" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r-other">RANK 5</span>
+<div class="paper-title">Large-scale genome-wide analyses with proteomics integration reveal novel loci and biological insights into frailty</div>
+<div class="paper-meta">著者：Liu D, Atkins JL et al. ／ Nature Aging, 2025 ／ GWAS+プロテオミクス統合 ／ <a href="https://www.nature.com/articles/s43587-025-00925-y" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">フレイル指標のGWASで45の新規座位を同定し、プロテオミクスとの統合により因果遺伝子（CHST9, ILRUN, MET, APOE等）を絞り込んだ。創薬ターゲット同定に資する研究。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">UK Biobankで53独立lead variantを同定（うち45新規）。プロテオミクス由来のpQTLとMendelian randomization、コロカリゼーション解析を組み合わせ、CHST9・ILRUN・KHK・MET・APOE・CGREF1・PPP6Cを因果候補として同定した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">遺伝学からタンパク質、創薬ターゲットへと連結する統合的戦略は、フレイル予防医薬開発の道筋を示す。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">複数の因果推論手法（MR・コロカリゼーション）の三角測量が手堅い。pQTLの組織特異性は今後の課題。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">UK Biobankのfrailty index定義に依存し、欧州系集団偏重。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">METは筋再生に関与し、自身の筋質研究と接続する強力な分子標的になりうる。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">フレイル因果遺伝子のtissue-specific expressionを骨格筋RNA-seqで検証し、CT muscle densityとの関連をMRで推定する。</div></div>
+<div class="tag-row"><span class="tag method">GWAS</span><span class="tag method">Mendelian Randomization</span><span class="tag theme">フレイル</span><span class="tag theme">創薬ターゲット</span></div>
+</div>
+
+<div class="paper-card" data-paper-id="20260426_06" data-title="Metabolomic signatures of extreme old age: findings from the New England Centenarian Study" data-authors="著者：Sebastiani P, Perls TT et al." data-journal="GeroScience, 2026" data-design="" data-url="https://link.springer.com/article/10.1007/s11357-026-02174-2" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r-other">RANK 6</span><span class="fresh-badge">最新（2026年）</span>
+<div class="paper-title">Metabolomic signatures of extreme old age: findings from the New England Centenarian Study</div>
+<div class="paper-meta">著者：Sebastiani P, Perls TT et al. ／ GeroScience, 2026 ／ メタボロミクス・コホート研究 ／ <a href="https://link.springer.com/article/10.1007/s11357-026-02174-2" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">100歳以上の極長寿者213名で1,400以上の代謝物をunbiased serum metabolomicsで解析し、胆汁酸（CDCA, LCA）の上昇を含む特徴的代謝プロファイルを同定した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">New England Centenarian Studyの213名で血清代謝物プロファイルを取得。極長寿者は一次・二次胆汁酸の上昇、ビリルビン低下、安定したステロイドプロファイルを示した。NAD+関連、腸内細菌代謝、酸化ストレス関連の代謝物比が死亡と独立に関連した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">胆汁酸シグナルは腸内細菌叢と連動し、新規長寿介入標的としての可能性を示す。タウリン・クエン酸の予測能も注目すべき発見。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">untargeted metabolomicsの網羅性は強み。一方で横断研究のため因果推論には限界がある。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">サンプルサイズが小さく、欧米系集団のため日本人への外挿には注意が必要。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">日本人長寿者（沖縄・島根等）でメタボローム比較を行えば、日本人特有の長寿シグナルを発見できる可能性。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">TMMサンプルから80歳以上の健康長寿者を抽出し、胆汁酸プロファイルとフレイル・身体機能の関連を解析する。</div></div>
+<div class="tag-row"><span class="tag method">メタボロミクス</span><span class="tag method">横断研究</span><span class="tag theme">長寿研究</span><span class="tag theme">胆汁酸代謝</span></div>
+</div>
+
+<div class="paper-card" data-paper-id="20260426_07" data-title="Plasma proteomics links brain and immune system aging with healthspan and longevity" data-authors="著者：Oh HSH, Wyss-Coray T et al." data-journal="Nature Medicine, 2025" data-design="" data-url="https://www.nature.com/articles/s41591-025-03798-1" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r-other">RANK 7</span>
+<div class="paper-title">Plasma proteomics links brain and immune system aging with healthspan and longevity</div>
+<div class="paper-meta">著者：Oh HSH, Wyss-Coray T et al. ／ Nature Medicine, 2025 ／ プロテオミクス・コホート研究 ／ <a href="https://www.nature.com/articles/s41591-025-03798-1" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">UK Biobank 44,498名の血漿プロテオーム（2,916タンパク質）から11臓器の生物学的年齢を推定。脳と免疫系の若さが健康寿命延長と独立に関連した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">人体11臓器の組織特異的タンパク質サインから臓器別生物学的年齢を構築し、17年間の追跡で心不全・COPD・糖尿病・アルツハイマー病等の発症との関連を解析。脳と免疫系の若年化はdisease-free longevityと特に強く関連した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">「どの臓器を若く保つべきか」を定量化した最初の大規模研究。健康寿命研究の新たな基盤となる。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">10万人規模のOlinkプロテオミクスは強力。臓器特異性の定義（GTExベース）には改善余地。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">UK Biobankは健康な志願者バイアスを含み、超高齢者の代表性に課題。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">脳年齢と認知機能、自身の脳画像研究を結びつける有力な分子フィンガープリントとなる。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">脳プロテオミクス年齢とMRI由来brain ageの一致度を評価し、両者の独立寄与を健康寿命予測に統合する。</div></div>
+<div class="tag-row"><span class="tag method">プロテオミクス</span><span class="tag method">大規模コホート</span><span class="tag theme">臓器別老化</span><span class="tag theme">健康寿命</span></div>
+</div>
+
+<div class="paper-card" data-paper-id="20260426_08" data-title="Single-cell transcriptomic and genomic changes in the ageing human brain" data-authors="著者：Mathys H, Tsai L-H et al." data-journal="Nature, 2025" data-design="" data-url="https://www.nature.com/articles/s41586-025-09435-8" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r-other">RANK 8</span>
+<div class="paper-title">Single-cell transcriptomic and genomic changes in the ageing human brain</div>
+<div class="paper-meta">著者：Mathys H, Tsai L-H et al. ／ Nature, 2025 ／ シングルセル・空間トランスクリプトミクス ／ <a href="https://www.nature.com/articles/s41586-025-09435-8" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">乳児から100歳超までのヒト前頭前野をsnRNA-seqと空間トランスクリプトミクスで解析。リボソーム・輸送・代謝関連のhomeostaticな遺伝子発現低下を全細胞型で同定した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">幅広い年齢層のヒト前頭前野からsnRNA-seqと空間トランスクリプトミクスデータを取得し、加齢に伴う細胞型特異的・空間的変化を解析。神経細胞・グリア・血管細胞それぞれで加齢パターンを記述した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">細胞解像度のヒト脳老化アトラスは、認知症介入のターゲット同定に決定的な解像度を提供する。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">空間情報の付加は革新的。死後脳の保存条件によるバイアス管理は厳密。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">死後脳のため疾患前駆状態の同定は間接的。前頭前野以外の領域のカバレッジは限定的。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">脳構造MRIで観察される萎縮パターンを細胞レベルで解釈する基盤となる。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">高齢者MRIデータと細胞型サインを統合し、領域別の細胞型脆弱性をimaging genetics的に検証する。</div></div>
+<div class="tag-row"><span class="tag method">シングルセル</span><span class="tag method">空間トランスクリプトミクス</span><span class="tag theme">脳老化</span><span class="tag theme">認知機能</span></div>
+</div>
+
+<div class="paper-card" data-paper-id="20260426_09" data-title="Life-course influence of birthweight and subsequent pathways on healthy aging: a Mendelian randomization study" data-authors="著者：BMC Medicine 2026年" data-journal="Mendelian randomization" data-design="" data-url="https://link.springer.com/article/10.1186/s12916-026-04737-8" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r-other">RANK 9</span><span class="fresh-badge">最新（2026年）</span>
+<div class="paper-title">Life-course influence of birthweight and subsequent pathways on healthy aging: a Mendelian randomization study</div>
+<div class="paper-meta">著者：BMC Medicine 2026年 ／ Mendelian randomization ／ <a href="https://link.springer.com/article/10.1186/s12916-026-04737-8" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">出生体重が健康寿命に与える因果効果を2-sample MRで検証し、社会経済・行動・身体機能・疾患を経由する経路をmediation MRで定量化した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">EGGコンソーシアム由来の出生体重GWASと、複数のhealthy aging GWASを用いてMR解析を実施。教育年数・喫煙・BMI・血圧・糖尿病等を媒介変数としてmediation MRを実施。出生体重の保護効果と複数経路の媒介寄与を定量化。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">DOHaD仮説を遺伝学的に支持し、ライフコース疫学に分子的証拠を加える。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">multi-step MRはplausibilityを高めるが、horizontal pleiotropyの感度分析は不可欠。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">出生体重GWASは欧州系中心、healthy aging指標の操作的定義に依存する。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">健康寿命の決定要因をライフコース全体で捉える戦略を補強。乳幼児期環境の重要性を再強調。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">日本人GWAS（BBJ）の出生体重PRSを用いて、TMMのライフコース健康寿命と関連を検証する。</div></div>
+<div class="tag-row"><span class="tag method">Mendelian Randomization</span><span class="tag method">ライフコース疫学</span><span class="tag theme">DOHaD</span><span class="tag theme">健康寿命</span></div>
+</div>
+
+<div class="paper-card" data-paper-id="20260426_10" data-title="A blood-based epigenetic clock for intrinsic capacity predicts mortality and is associated with clinical, immunological and lifestyle factors" data-authors="著者：Belsky DW et al." data-journal="Nature Aging, 2025" data-design="" data-url="https://www.nature.com/articles/s43587-025-00883-5" data-summary="" data-overview="" data-importance="" data-methodology="" data-limitation="" data-implication="" data-idea="" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="">
+<span class="rank-badge r-other">RANK 10</span>
+<div class="paper-title">A blood-based epigenetic clock for intrinsic capacity predicts mortality and is associated with clinical, immunological and lifestyle factors</div>
+<div class="paper-meta">著者：Belsky DW et al. ／ Nature Aging, 2025 ／ エピジェネティック時計開発 ／ <a href="https://www.nature.com/articles/s43587-025-00883-5" target="_blank">原本URL</a></div>
+<div class="field-block"><div class="field-label">一言要約</div><div class="field-content">WHOのintrinsic capacity（運動・認知・感覚・心理・活力）を反映する新規血液エピジェネティック時計「DNAm-IC」を開発し、死亡を独立予測した。</div></div>
+<div class="field-block"><div class="field-label">研究概要</div><div class="field-content">DNAメチル化データからWHOのintrinsic capacityをサロゲートするclockを構築し、複数コホートで検証。臨床指標・免疫・生活習慣との関連を解析した。</div></div>
+<div class="field-block"><div class="field-label">重要な点</div><div class="field-content">機能的健康概念をエピジェネティクスに翻訳した点で、健康寿命研究にとって直接的に意味のあるバイオマーカー。</div></div>
+<div class="field-block"><div class="field-label">方法論評価</div><div class="field-content">臨床的に意味のあるアウトカムを目的変数に据えた点が革新的。</div></div>
+<div class="field-block"><div class="field-label">限界</div><div class="field-content">intrinsic capacityの操作的定義はコホート間で異なり、移植性に課題が残る。</div></div>
+<div class="field-block"><div class="field-label">研究への示唆</div><div class="field-content">身体機能を含むIC概念は、自身のmobility・gait・balance研究と直結する。</div></div>
+<div class="field-block"><div class="field-label">研究アイデア</div><div class="field-content">日本人高齢者のDNAm-ICを測定し、CT筋密度・BIA phase angleとの関連、要介護移行への独立寄与を検証する。</div></div>
+<div class="tag-row"><span class="tag method">エピジェネティック時計</span><span class="tag method">機械学習</span><span class="tag theme">Intrinsic Capacity</span><span class="tag theme">健康寿命</span></div>
+</div>
+
+<div class="section-title">10本の論文まとめ一覧表</div>
+<table class="summary">
+<tr><th>順位</th><th>タイトル（短縮）</th><th>ジャーナル/年</th><th>デザイン</th><th>主要な貢献</th></tr>
+<tr><td>1</td><td>InCHIANTI epigenetic clock longitudinal change</td><td>Nature Aging 2026</td><td>縦断コホート</td><td>時計の変化速度が独立に死亡予測</td></tr>
+<tr><td>2</td><td>OMICmAge: multi-omics + EMR biological age</td><td>Nature Aging 2026</td><td>マルチオミクス</td><td>EMR統合型生物学的年齢</td></tr>
+<tr><td>3</td><td>Multimodal aging biomarkers (Lothian)</td><td>medRxiv 2026</td><td>コホート研究</td><td>臓器別proteomic ageの優位性</td></tr>
+<tr><td>4</td><td>Multivariate frailty genetic architecture</td><td>Nature Genetics 2025</td><td>GWAS+SEM</td><td>408座位、6潜在因子</td></tr>
+<tr><td>5</td><td>Frailty GWAS + proteomics</td><td>Nature Aging 2025</td><td>GWAS+pQTL</td><td>45新規座位、創薬ターゲット</td></tr>
+<tr><td>6</td><td>Centenarian metabolomics (NECS)</td><td>GeroScience 2026</td><td>横断研究</td><td>胆汁酸シグナルの長寿関連</td></tr>
+<tr><td>7</td><td>Plasma proteomics organ aging</td><td>Nature Medicine 2025</td><td>大規模コホート</td><td>脳・免疫の若さが長寿に直結</td></tr>
+<tr><td>8</td><td>Single-cell aging human brain</td><td>Nature 2025</td><td>snRNA-seq+空間</td><td>細胞型・空間レベルの脳老化アトラス</td></tr>
+<tr><td>9</td><td>Birthweight MR healthy aging</td><td>BMC Medicine 2026</td><td>Mendelian Randomization</td><td>DOHaDの遺伝学的検証</td></tr>
+<tr><td>10</td><td>DNAm clock for intrinsic capacity</td><td>Nature Aging 2025</td><td>クロック開発</td><td>WHO IC連動エピジェネティック時計</td></tr>
+</table>
+
+<div class="footer">研究レポート — 2026年4月26日（日曜日）／ 遺伝子・オミクス研究 ／ 自動生成</div>
+</div>
+
+
+
+
+
+<!-- favorites-injected-start -->
+<script>
+(function() {
+  const STORAGE_KEY = 'researchFavorites_v2';
+  const VIEWER_PATH = '../お気に入りビューア.html';
+
+  function loadFavs() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function saveFavs(f) { localStorage.setItem(STORAGE_KEY, JSON.stringify(f)); }
+
+  const sourceDate = document.body.dataset.sourceDate || '';
+  const sourceTheme = document.body.dataset.sourceTheme || '';
+  const cards = document.querySelectorAll('[data-paper-id]');
+  if (cards.length === 0) return;
+
+  function buildPaperData(card) {
+    return {
+      id: card.dataset.paperId,
+      title: card.dataset.title || '',
+      authors: card.dataset.authors || '',
+      journal: card.dataset.journal || '',
+      design: card.dataset.design || '',
+      url: card.dataset.url || '',
+      summary: card.dataset.summary || '',
+      overview: card.dataset.overview || '',
+      importance: card.dataset.importance || '',
+      methodology: card.dataset.methodology || '',
+      limitation: card.dataset.limitation || '',
+      implication: card.dataset.implication || '',
+      idea: card.dataset.idea || '',
+      novelty: card.dataset.novelty || '',
+      background: card.dataset.background || '',
+      result: card.dataset.result || '',
+      impact: card.dataset.impact || '',
+      keywords: card.dataset.keywords || '',
+      tags: (card.dataset.tags || '').split('|').filter(Boolean),
+      sourceDate, sourceTheme,
+    };
+  }
+
+  // === 自動アップグレード：既に保存済みのお気に入りに不足データがあれば、このページのdata-*属性で補充する ===
+  (function autoUpgrade() {
+    const favs = loadFavs();
+    let upgraded = 0;
+    cards.forEach(card => {
+      const id = card.dataset.paperId;
+      if (!favs[id]) return;
+      const newData = buildPaperData(card);
+      const fields = ['title','authors','journal','design','url','summary','overview','importance','methodology','limitation','implication','idea','novelty','background','result','impact','keywords'];
+      const hasNew = fields.some(k => newData[k] && (!favs[id][k] || favs[id][k] === ''));
+      if (hasNew) {
+        favs[id] = {
+          ...favs[id],
+          ...newData,
+          rating: favs[id].rating || 0,
+          addedAt: favs[id].addedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+        upgraded++;
+      }
+    });
+    if (upgraded > 0) {
+      saveFavs(favs);
+      const note = document.createElement('div');
+      note.style.cssText = 'position:fixed;top:20px;right:20px;background:#fef3c7;border:2px solid #f59e0b;padding:12px 18px;border-radius:8px;color:#78350f;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;max-width:340px';
+      note.innerHTML = '🔄 ' + upgraded + '件のお気に入りを最新項目で自動更新しました';
+      document.body.appendChild(note);
+      setTimeout(() => note.remove(), 5000);
+    }
+  })();
+
+  cards.forEach(card => {
+    const id = card.dataset.paperId;
+    const data = buildPaperData(card);
+
+    const checkContainer = document.createElement('div');
+    checkContainer.style.cssText = 'position:absolute;top:14px;left:14px;z-index:10';
+    checkContainer.innerHTML = '<label style="display:flex;align-items:center;gap:6px;cursor:pointer;background:rgba(255,255,255,0.95);padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:12px;font-weight:600;color:#475569;user-select:none"><input type="checkbox" class="paper-fav-check" style="width:16px;height:16px;cursor:pointer" /><span class="fav-label">お気に入り</span></label>';
+    card.style.position = 'relative';
+    if (!card.style.paddingLeft || parseInt(card.style.paddingLeft) < 50) {
+      card.style.paddingLeft = '50px';
+    }
+    card.appendChild(checkContainer);
+
+    const cb = checkContainer.querySelector('input');
+    const label = checkContainer.querySelector('.fav-label');
+    const favs = loadFavs();
+    if (favs[id]) {
+      cb.checked = true;
+      label.textContent = '保存済み';
+      label.style.color = '#be185d';
+    }
+
+    cb.addEventListener('change', () => {
+      const favs = loadFavs();
+      if (cb.checked) {
+        const existing = favs[id] || {};
+        favs[id] = {
+          ...buildPaperData(card),
+          rating: existing.rating || 0,
+          addedAt: existing.addedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+        label.textContent = '保存済み';
+        label.style.color = '#be185d';
+      } else {
+        delete favs[id];
+        label.textContent = 'お気に入り';
+        label.style.color = '#475569';
+      }
+      saveFavs(favs);
+      updateBar();
+    });
+  });
+
+  const header = document.querySelector('header');
+  const bar = document.createElement('div');
+  bar.style.cssText = 'background:white;border-radius:12px;padding:12px 18px;margin-bottom:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,0.05)';
+  bar.innerHTML = '<div style="font-size:14px;color:#0f172a;font-weight:600">📌 このページの選択：<span id="page-count" style="color:#be185d;font-size:18px">0</span> / ' + cards.length + ' 件</div><div style="font-size:13px;color:#64748b">全体保存：<span id="total-count" style="font-weight:700;color:#be185d">0</span> 件</div><button id="open-viewer" style="margin-left:auto;padding:8px 14px;background:#be185d;color:white;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">📤 お気に入りビューアを開く</button><button id="select-all" style="padding:8px 14px;background:#e0e7ff;color:#3730a3;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全選択</button><button id="select-none" style="padding:8px 14px;background:#fee2e2;color:#991b1b;border:none;border-radius:6px;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer">全解除</button>';
+  header.parentNode.insertBefore(bar, header.nextSibling);
+
+  function updateBar() {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const checkedCount = [...checks].filter(c => c.checked).length;
+    document.getElementById('page-count').textContent = checkedCount;
+    document.getElementById('total-count').textContent = Object.keys(loadFavs()).length;
+  }
+
+  document.getElementById('select-all').addEventListener('click', () => {
+    document.querySelectorAll('.paper-fav-check').forEach(c => { if (!c.checked) { c.checked = true; c.dispatchEvent(new Event('change')); } });
+  });
+  document.getElementById('select-none').addEventListener('click', () => {
+    document.querySelectorAll('.paper-fav-check').forEach(c => { if (c.checked) { c.checked = false; c.dispatchEvent(new Event('change')); } });
+  });
+
+  document.getElementById('open-viewer').addEventListener('click', () => {
+    const checks = document.querySelectorAll('.paper-fav-check');
+    const selected = {};
+    checks.forEach(cb => {
+      if (cb.checked) {
+        const card = cb.closest('[data-paper-id]');
+        selected[card.dataset.paperId] = {
+          ...buildPaperData(card),
+          rating: 0,
+          addedAt: new Date().toISOString(),
+        };
+      }
+    });
+    const hash = Object.keys(selected).length > 0
+      ? '#add=' + btoa(encodeURIComponent(JSON.stringify(selected)))
+      : '';
+    window.open(VIEWER_PATH + hash, '_blank');
+  });
+
+  updateBar();
+
+  window.addEventListener('storage', e => {
+    if (e.key === STORAGE_KEY) {
+      const favs = loadFavs();
+      document.querySelectorAll('[data-paper-id]').forEach(card => {
+        const cb = card.querySelector('.paper-fav-check');
+        if (!cb) return;
+        const label = card.querySelector('.fav-label');
+        const isFav = !!favs[card.dataset.paperId];
+        cb.checked = isFav;
+        label.textContent = isFav ? '保存済み' : 'お気に入り';
+        label.style.color = isFav ? '#be185d' : '#475569';
+      });
+      updateBar();
+    }
+  });
+})();
+</script>
+<!-- favorites-injected-end -->
+</body>
+</html>
+

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--
+通常レポート（バージョンA）テンプレート
+プレースホルダ: {DATE}, {THEME_JP}, {THEME_EN}, {DATE_DISPLAY}
+各論文ごとに <div class="paper"> を10個生成する。
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>研究レポート {THEME_JP} {DATE_DISPLAY}</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+  color: #2d3748;
+  line-height: 1.7;
+  padding: 24px;
+}
+.container { max-width: 1100px; margin: 0 auto; }
+
+header.main {
+  background: linear-gradient(135deg, #2c5282 0%, #2b6cb0 50%, #4299e1 100%);
+  color: white;
+  padding: 40px 36px;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(44,82,130,0.25);
+}
+header.main h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+header.main .meta { font-size: 14px; opacity: 0.95; margin-top: 6px; }
+header.main .theme {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.intro {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  border-left: 5px solid #2b6cb0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 14.5px;
+}
+
+.paper {
+  background: white;
+  padding: 28px 30px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  position: relative;
+  border-left: 4px solid #4299e1;
+}
+.paper.top1 { border-left-color: #c53030; }
+.paper.top2 { border-left-color: #d69e2e; }
+.paper.top3 { border-left-color: #38a169; }
+
+.rank-badge {
+  position: absolute;
+  top: -10px; left: 22px;
+  background: #4299e1;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+.paper.top1 .rank-badge { background: #c53030; }
+.paper.top2 .rank-badge { background: #d69e2e; }
+.paper.top3 .rank-badge { background: #38a169; }
+
+.paper h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a365d;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.meta-line {
+  font-size: 12.5px;
+  color: #4a5568;
+  margin-bottom: 4px;
+}
+.meta-line strong { color: #2d3748; }
+.url-line { font-size: 12px; margin: 6px 0 14px 0; word-break: break-all; }
+.url-line a { color: #2b6cb0; text-decoration: none; }
+.url-line a:hover { text-decoration: underline; }
+
+.section {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13.5px;
+}
+.section.summary { background: #ebf8ff; border-left: 3px solid #3182ce; }
+.section.overview { background: #f7fafc; border-left: 3px solid #718096; }
+.section.importance { background: #fef5e7; border-left: 3px solid #d69e2e; }
+.section.originality { background: #faf5ff; border-left: 3px solid #805ad5; }
+.section.discovery { background: #f0fdf4; border-left: 3px solid #16a34a; }
+.section.method { background: #f0fff4; border-left: 3px solid #38a169; }
+.section.limit { background: #fff5f5; border-left: 3px solid #c53030; }
+.section.implication { background: #f5f3ff; border-left: 3px solid #7c3aed; }
+.section.idea { background: #e6fffa; border-left: 3px solid #319795; }
+
+.section .label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+
+.tags { margin-top: 14px; }
+.tag {
+  display: inline-block;
+  background: #edf2f7;
+  color: #2d3748;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  margin: 2px 4px 2px 0;
+  font-weight: 500;
+}
+.tag.method { background: #c6f6d5; color: #22543d; }
+.tag.theme { background: #bee3f8; color: #2a4365; }
+.tag.field { background: #fbd5e0; color: #702459; }
+.tag.fresh { background: #fed7d7; color: #742a2a; }
+
+.summary-table {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  margin-top: 30px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  overflow-x: auto;
+}
+.summary-table h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 19px;
+  color: #1a365d;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2b6cb0;
+}
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { background: #2b6cb0; color: white; padding: 9px 8px; text-align: left; font-weight: 600; }
+td { padding: 9px 8px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+tr:hover { background: #f7fafc; }
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  color: #718096;
+  font-size: 12px;
+}
+</style>
+</head>
+<body data-source-date="{DATE}" data-source-theme="{THEME_JP}">
+<div class="container">
+
+<header class="main">
+  <h1>研究レポート — {THEME_JP}</h1>
+  <div class="meta">{DATE_DISPLAY}</div>
+  <div class="meta">本日のテーマ: {THEME_EN}</div>
+  <div class="theme">10 papers / 重要度順</div>
+</header>
+
+<div class="intro">
+  <!-- イントロ文（テーマと最新論文の言及） -->
+</div>
+
+<!-- 各論文（10個）のテンプレート例 -->
+<!-- Paper 1 -->
+<div class="paper top1"
+     data-paper-id="{DATE}_01"
+     data-title="..."
+     data-authors="..."
+     data-journal="..."
+     data-design="..."
+     data-url="..."
+     data-summary="..."
+     data-overview="..."
+     data-importance="..."
+     data-originality="..."
+     data-discovery="..."
+     data-methodology="..."
+     data-limitation="..."
+     data-implication="..."
+     data-idea="..."
+     data-tags="tag1|tag2|tag3">
+  <span class="rank-badge">RANK 1</span>
+  <h2>論文タイトル（英語）</h2>
+  <div class="meta-line"><strong>著者:</strong> First Author, et al.</div>
+  <div class="meta-line"><strong>ジャーナル・年:</strong> The Lancet, 2026年1月</div>
+  <div class="meta-line"><strong>研究デザイン:</strong> 前向きコホート研究</div>
+  <div class="url-line"><a href="https://..." target="_blank">https://...</a></div>
+
+  <div class="section summary"><span class="label">一言要約</span><br>
+  ここに2〜3文の凝縮された結論を書く。
+  </div>
+
+  <div class="section overview"><span class="label">研究概要</span><br>
+  ここに3〜4文で背景・方法・結果を書く。
+  </div>
+
+  <div class="section importance"><span class="label">重要な点</span><br>
+  なぜこの研究が重要か2〜3文で。
+  </div>
+
+  <div class="section originality"><span class="label">オリジナリティ</span><br>
+  先行研究と比較して「初めて／新しく／独自に」やった点を2〜3文で具体的に。
+  </div>
+
+  <div class="section discovery"><span class="label">新発見項目</span><br>
+  この研究で新たに分かった事実・知見を、数値や効果量とともに2〜3文で。
+  </div>
+
+  <div class="section method"><span class="label">方法論評価</span><br>
+  統計的妥当性を1〜2文で。
+  </div>
+
+  <div class="section limit"><span class="label">限界</span><br>
+  残存交絡など1〜2文で。
+  </div>
+
+  <div class="section implication"><span class="label">研究への示唆</span><br>
+  自分の研究分野（健康寿命・身体機能・筋質等）との関連を1〜2文で。
+  </div>
+
+  <div class="section idea"><span class="label">研究アイデア</span><br>
+  日本コホート（JAGES、TMM等）での応用案を1〜2文で。
+  </div>
+
+  <div class="tags">
+    <span class="tag fresh">最新2026</span>
+    <span class="tag method">方法論タグ</span>
+    <span class="tag theme">テーマタグ</span>
+    <span class="tag field">関連分野</span>
+  </div>
+</div>
+
+<!-- Paper 2-10 を同様に追加 -->
+
+<!-- まとめ一覧表 -->
+<div class="summary-table">
+  <h2>まとめ一覧表（10論文）</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>論文タイトル（短縮）</th>
+        <th>ジャーナル/年</th>
+        <th>デザイン</th>
+        <th>主要結果</th>
+        <th>注目点</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 10 行 -->
+    </tbody>
+  </table>
+</div>
+
+<footer>
+Daily Research Report • {THEME_JP} • {DATE}
+</footer>
+
+</div>
+</body>
+</html>
