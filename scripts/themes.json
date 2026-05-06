@@ -1,0 +1,122 @@
+{
+  "_comment": "曜日テーマ定義。新しい検索式・優先ジャーナルの追加はこのファイルだけで完結します。",
+
+  "monday": {
+    "jp": "老年医学・健康寿命",
+    "en": "geriatrics-healthspan",
+    "color": "#c026d3",
+    "pubmed_queries": [
+      "(\"healthy aging\"[Title/Abstract] OR \"healthspan\"[Title/Abstract] OR \"life expectancy\"[Title/Abstract] OR \"frailty\"[Title/Abstract] OR \"intrinsic capacity\"[Title/Abstract]) AND (\"2026\"[PDAT])",
+      "(\"older adults\" OR \"aging\") AND (\"functional decline\" OR \"long-term care\" OR \"disability-free survival\") AND 2026",
+      "(\"epigenetic clock\" OR \"biological age\") AND (\"mortality\" OR \"healthspan\") AND 2026"
+    ],
+    "biorxiv_categories": ["epidemiology", "geriatric medicine"],
+    "priority_journals": ["Nature Aging", "JAMA Internal Medicine", "Lancet Healthy Longevity", "Age and Ageing", "J Gerontol A", "Journals of Gerontology"]
+  },
+
+  "tuesday": {
+    "jp": "身体活動・運動疫学",
+    "en": "physical-activity-epidemiology",
+    "color": "#16a34a",
+    "pubmed_queries": [
+      "(\"physical activity\"[Title/Abstract] OR \"exercise\"[Title/Abstract] OR \"sedentary behavior\"[Title/Abstract]) AND (\"cohort\" OR \"epidemiology\" OR \"meta-analysis\") AND 2026",
+      "(\"accelerometer\" OR \"wearable\") AND (\"physical activity\" OR \"step count\") AND (\"mortality\" OR \"cardiovascular\" OR \"cognitive\") AND 2026",
+      "(\"exercise\" OR \"physical activity\") AND (\"older adults\" OR \"elderly\") AND (\"randomized\" OR \"intervention\") AND 2026"
+    ],
+    "biorxiv_categories": ["epidemiology"],
+    "priority_journals": ["BJSM", "Med Sci Sports Exerc", "J Sport Health Sci", "Int J Epidemiol", "Lancet Public Health", "JAMA"]
+  },
+
+  "wednesday": {
+    "jp": "筋質・体組成",
+    "en": "muscle-body-composition",
+    "color": "#ea580c",
+    "pubmed_queries": [
+      "(\"muscle quality\"[Title/Abstract] OR \"sarcopenia\"[Title/Abstract] OR \"echo intensity\"[Title/Abstract] OR \"muscle thickness\"[Title/Abstract]) AND 2026",
+      "(\"body composition\" OR \"DXA\" OR \"BIA\" OR \"appendicular lean mass\") AND (\"older adults\" OR \"aging\") AND 2026",
+      "(\"muscle\" OR \"sarcopenia\") AND (\"function\" OR \"strength\" OR \"power\") AND (\"longitudinal\" OR \"cohort\") AND 2026"
+    ],
+    "biorxiv_categories": ["physiology", "systems biology"],
+    "priority_journals": ["J Cachexia Sarcopenia Muscle", "Age and Ageing", "Clin Nutr", "Am J Clin Nutr", "Med Sci Sports Exerc", "Bone"]
+  },
+
+  "thursday": {
+    "jp": "脳・認知",
+    "en": "brain-cognition",
+    "color": "#2563eb",
+    "pubmed_queries": [
+      "(\"cognitive function\"[Title/Abstract] OR \"dementia\"[Title/Abstract] OR \"cognitive decline\"[Title/Abstract]) AND (\"physical activity\" OR \"exercise\" OR \"muscle\") AND 2026",
+      "(\"brain\" OR \"hippocampus\" OR \"white matter\") AND (\"physical function\" OR \"motor\" OR \"gait\") AND (\"older adults\" OR \"aging\") AND 2026",
+      "(\"MRI\" OR \"fNIRS\" OR \"EEG\") AND (\"physical activity\" OR \"motor control\") AND 2026"
+    ],
+    "biorxiv_categories": ["neuroscience"],
+    "priority_journals": ["Nature Neuroscience", "Lancet Neurology", "JAMA Neurology", "Neurology", "NeuroImage", "Brain"]
+  },
+
+  "thursday_pd": {
+    "jp": "脳・認知（PD研究特化）",
+    "en": "brain-cognition-pd",
+    "color": "#be123c",
+    "pubmed_queries": [
+      "(\"brain-muscle\" OR \"brain-body\" OR \"motor cortex\") AND (\"older adults\" OR \"aging\") AND 2026",
+      "(\"EEG\" OR \"electroencephalography\") AND (\"exercise\" OR \"motor task\" OR \"physical activity\") AND 2026",
+      "(\"SHAP\" OR \"explainable AI\" OR \"feature importance\") AND (\"brain\" OR \"physical function\" OR \"cognition\") AND 2026",
+      "(\"brain age\" OR \"neural correlates\") AND (\"muscle\" OR \"body composition\" OR \"sarcopenia\") AND 2026"
+    ],
+    "biorxiv_categories": ["neuroscience", "physiology"],
+    "priority_journals": ["NeuroImage", "Cerebral Cortex", "Neurobiology of Aging", "GeroScience", "Brain Stimulation"]
+  },
+
+  "friday": {
+    "jp": "疫学方法論",
+    "en": "epidemiology-methods",
+    "color": "#db2777",
+    "pubmed_queries": [
+      "(\"causal inference\"[Title/Abstract] OR \"target trial emulation\"[Title/Abstract] OR \"Mendelian randomization\"[Title/Abstract]) AND 2026",
+      "(\"propensity score\" OR \"instrumental variable\" OR \"g-methods\") AND \"epidemiology\" AND 2026",
+      "(\"missing data\" OR \"multiple imputation\" OR \"selection bias\") AND \"cohort\" AND 2026",
+      "(\"machine learning\" OR \"causal machine learning\") AND (\"epidemiology\" OR \"observational\") AND 2026"
+    ],
+    "biorxiv_categories": ["epidemiology"],
+    "priority_journals": ["Int J Epidemiol", "Am J Epidemiol", "Epidemiology", "Stat Med", "BMJ", "Nature Methods"]
+  },
+
+  "saturday": {
+    "jp": "AI・データ科学",
+    "en": "ai-data-science",
+    "color": "#0891b2",
+    "pubmed_queries": [
+      "(\"machine learning\" OR \"deep learning\") AND (\"healthcare\" OR \"medical\" OR \"clinical\") AND 2026",
+      "(\"foundation model\" OR \"large language model\" OR \"LLM\") AND (\"medicine\" OR \"healthcare\") AND 2026",
+      "(\"explainable AI\" OR \"SHAP\" OR \"interpretability\") AND (\"clinical\" OR \"prediction\") AND 2026"
+    ],
+    "biorxiv_categories": ["bioinformatics", "scientific communication and education"],
+    "priority_journals": ["Nature", "Science", "Nature Medicine", "Nature Methods", "Nat Mach Intell", "JAMA"]
+  },
+
+  "sunday": {
+    "jp": "遺伝子・オミクス",
+    "en": "genetics-omics",
+    "color": "#d97706",
+    "pubmed_queries": [
+      "(\"GWAS\" OR \"polygenic\" OR \"transcriptomics\") AND (\"aging\" OR \"longevity\" OR \"healthspan\") AND 2026",
+      "(\"DNA methylation\" OR \"epigenome\") AND (\"aging\" OR \"mortality\" OR \"healthspan\") AND 2026",
+      "(\"single-cell\" OR \"scRNA-seq\") AND (\"muscle\" OR \"brain\" OR \"aging\") AND 2026"
+    ],
+    "biorxiv_categories": ["genetics", "genomics", "bioinformatics"],
+    "priority_journals": ["Nature Genetics", "Nature Aging", "Nature", "Science", "Cell"]
+  },
+
+  "_pd_keywords": {
+    "_comment": "PD研究計画（脳・身体機能・SHAP・EEG）関連と判定するキーワード",
+    "must_match_any": [
+      "brain", "脳", "cognition", "認知", "neural", "EEG", "fMRI", "MRI",
+      "motor cortex", "運動野", "hippocampus",
+      "muscle quality", "筋質", "echo intensity", "sarcopenia",
+      "physical function", "身体機能", "gait", "歩行",
+      "SHAP", "explainable", "feature importance",
+      "brain-body", "brain-muscle", "neuromuscular",
+      "Parkinson", "パーキンソン"
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PD研究 — Research Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<meta property="og:title" content="PD研究関連論文 — Research Dashboard">
+<meta property="og:description" content="脳・身体機能・EEG・SHAP・筋質と認知に関する論文の集約ビュー">
+<meta property="og:type" content="website">
+<link rel="alternate" type="application/rss+xml" title="Research Dashboard RSS" href="rss.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23be123c'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='40' fill='white' font-family='Arial' font-weight='800'%3EPD%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="logo">R</span><span>Research Dashboard</span></a>
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      <a href="papers.html">論文一覧</a>
+      <a href="themes.html">曜日テーマ</a>
+      <a href="pd.html">📍 PD研究</a>
+      <a href="favorites.html">お気に入り</a>
+    </nav>
+    <div class="spacer"></div>
+    <a class="fav-pill" href="favorites.html"><span class="star">★</span><span>お気に入り</span><span class="count">0</span></a>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title" style="color:#be123c">📍 PD研究関連論文</h1>
+  <p class="page-subtitle">脳-身体機能・EEG（運動中）・SHAP（特徴量重要度）・筋質と認知 ／ <span id="pd-count">0</span>本</p>
+
+  <div class="hero-grid">
+    <div class="latest-card" id="pd-summary" style="--theme-color:#be123c">
+      <div class="latest-label">PD研究計画の柱</div>
+      <h2 class="latest-title">脳・身体機能の関係性</h2>
+      <p class="latest-meta">これらに関連する論文を全曜日テーマから自動収集。お気に入りに★3を付けると申請書執筆時のリーディングリストになります。</p>
+      <div class="latest-actions">
+        <a class="btn" href="papers.html?pd=1">論文一覧で開く →</a>
+        <a class="btn" href="favorites.html">★ お気に入り</a>
+      </div>
+    </div>
+    <div class="stats-card">
+      <h3>分布</h3>
+      <div class="stats-grid" id="pd-stats">
+        <div class="stat"><div class="num" id="stat-pd-papers">—</div><div class="label">PD関連論文</div></div>
+        <div class="stat"><div class="num" id="stat-pd-reports">—</div><div class="label">含むレポート</div></div>
+        <div class="stat"><div class="num" id="stat-pd-fav">—</div><div class="label">お気に入り</div></div>
+        <div class="stat"><div class="num" id="stat-pd-3star">—</div><div class="label">★3つ</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="q" class="search-input" placeholder="🔍 タイトル・著者・要約で検索…">
+    <select id="sort" class="sort">
+      <option value="date-desc">新しい順</option>
+      <option value="fav">お気に入り順</option>
+      <option value="rating">★評価順</option>
+    </select>
+    <select id="show-detail" class="filter">
+      <option value="0">概要のみ</option>
+      <option value="1">詳細を全展開</option>
+    </select>
+  </div>
+
+  <div class="papers-list" id="pd-papers"></div>
+</main>
+
+<footer class="site-footer"><p>© 2026 Yujiro Asano · Tohoku University · <a href="rss.xml">RSS</a></p></footer>
+
+<script src="js/favorites.js"></script>
+<script src="js/site.js"></script>
+<script>
+(async () => {
+  const [papers, reports] = await Promise.all([SITE.loadPapers(), SITE.loadReports()]);
+  const reportById = new Map(reports.map(r => [r.id, r]));
+
+  const pdPapers = papers.filter(p => p.is_pd_related);
+  document.getElementById("pd-count").textContent = pdPapers.length;
+  document.getElementById("stat-pd-papers").textContent = pdPapers.length;
+
+  const reportsWithPD = new Set();
+  pdPapers.forEach(p => (p.source_reports || []).forEach(r => reportsWithPD.add(r)));
+  document.getElementById("stat-pd-reports").textContent = reportsWithPD.size;
+
+  function updateFavStats() {
+    const favs = Favorites.list();
+    const pdFavIds = new Set(pdPapers.map(p => p.id));
+    const pdFavs = favs.filter(f => pdFavIds.has(f.id));
+    document.getElementById("stat-pd-fav").textContent = pdFavs.length;
+    document.getElementById("stat-pd-3star").textContent = pdFavs.filter(f => (f.rating||0) >= 3).length;
+  }
+  updateFavStats();
+  document.addEventListener("favorites:change", updateFavStats);
+
+  const q = document.getElementById("q");
+  const sortSel = document.getElementById("sort");
+  const detailSel = document.getElementById("show-detail");
+  q.addEventListener("input", debounce(render, 120));
+  sortSel.addEventListener("change", render);
+  detailSel.addEventListener("change", render);
+
+  function render() {
+    const term = q.value.trim().toLowerCase();
+    const expand = detailSel.value === "1";
+    let arr = pdPapers.slice();
+
+    if (term) {
+      arr = arr.filter(p => {
+        const haystack = [p.title, p.authors, p.journal, p.summary, p.overview,
+                          (p.tags||[]).join(" "), p.implication, p.idea].filter(Boolean).join(" ").toLowerCase();
+        return haystack.includes(term);
+      });
+    }
+
+    const dateOf = p => {
+      const r = (p.source_reports || []).map(rid => reportById.get(rid)).filter(Boolean)[0];
+      return r ? r.date : "";
+    };
+    const sortBy = sortSel.value;
+    arr.sort((a, b) => {
+      if (sortBy === "date-desc") return (dateOf(b)||"").localeCompare(dateOf(a)||"");
+      if (sortBy === "fav") {
+        const af = Favorites.has(a.id) ? 1 : 0;
+        const bf = Favorites.has(b.id) ? 1 : 0;
+        if (bf !== af) return bf - af;
+        return (dateOf(b)||"").localeCompare(dateOf(a)||"");
+      }
+      if (sortBy === "rating") {
+        const ar = (Favorites.get(a.id) || {}).rating || 0;
+        const br = (Favorites.get(b.id) || {}).rating || 0;
+        return br - ar;
+      }
+      return 0;
+    });
+
+    const list = document.getElementById("pd-papers");
+    if (arr.length === 0) {
+      list.innerHTML = `<div class="empty-state"><div class="em">📭</div>該当する論文がありません</div>`;
+      return;
+    }
+    list.innerHTML = arr.map(p => renderPaper(p, expand)).join("");
+    attachActions(list);
+  }
+
+  function renderPaper(p, expand) {
+    const r = (p.source_reports || []).map(rid => reportById.get(rid)).filter(Boolean)[0];
+    const wd = r ? r.weekday : null;
+    const t = wd ? SITE.THEME[wd] : null;
+    const c = "#be123c";
+    const isFav = Favorites.has(p.id);
+    const fav = Favorites.get(p.id) || {};
+    const detailFields = [
+      ["要約", p.summary], ["概要", p.overview], ["重要な点", p.importance],
+      ["方法論", p.methodology], ["限界", p.limitation], ["示唆", p.implication],
+      ["研究アイデア", p.idea], ["新規性", p.novelty],
+    ].filter(([_, v]) => v && String(v).trim());
+
+    return `
+      <article class="paper-row" id="paper-${p.id}" style="--c:${c}">
+        <div class="row-head">
+          <button class="fav-btn ${isFav ? "on" : ""}" data-pid="${p.id}">${isFav ? "★" : "☆"}</button>
+          <h3><a href="${p.url || "#"}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a></h3>
+        </div>
+        <p class="meta">${escapeHtml(p.authors || "")} · <i>${escapeHtml(p.journal || "")}</i></p>
+        ${p.summary ? `<p class="summary">${escapeHtml(p.summary)}</p>` : ""}
+        <div class="footer">
+          <span class="pd-chip">📍 PD</span>
+          ${t ? `<span class="theme-chip" style="--c:${t.color}">${t.short}</span>` : ""}
+          ${(p.tags || []).slice(0, 4).map(tg => `<span class="tag-chip">${escapeHtml(tg)}</span>`).join("")}
+          ${r ? `<a href="reports/${r.id}.html">レポート（${SITE.fmtDateShort(r.date)}）</a>` : ""}
+          ${detailFields.length ? `<button class="btn expand-btn" data-pid="${p.id}" style="margin-left:auto;padding:4px 10px;font-size:12px">詳細</button>` : ""}
+          <span class="rating" data-pid="${p.id}">
+            ${[1,2,3].map(n => `<span class="r-star ${(fav.rating||0)>=n?'on':''}" data-r="${n}">★</span>`).join("")}
+          </span>
+        </div>
+        <div class="row-detail ${expand ? 'open' : ''}" id="detail-${p.id}">
+          ${detailFields.map(([label, v]) => `<div class="field"><div class="field-label">${label}</div><div class="field-val">${escapeHtml(v)}</div></div>`).join("")}
+        </div>
+      </article>`;
+  }
+
+  function attachActions(scope) {
+    scope.querySelectorAll(".fav-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const p = pdPapers.find(x => x.id === btn.dataset.pid);
+        if (!p) return;
+        const added = Favorites.toggle(p);
+        btn.classList.toggle("on", added);
+        btn.textContent = added ? "★" : "☆";
+        SITE.toast(added ? "お気に入りに追加" : "お気に入りから削除");
+      });
+    });
+    scope.querySelectorAll(".rating").forEach(rt => {
+      rt.querySelectorAll(".r-star").forEach(s => {
+        s.addEventListener("click", () => {
+          const pid = rt.dataset.pid;
+          const r = parseInt(s.dataset.r, 10);
+          const p = pdPapers.find(x => x.id === pid);
+          if (!p) return;
+          if (!Favorites.has(p.id)) Favorites.add(p);
+          const cur = Favorites.get(p.id);
+          const newRating = (cur && cur.rating === r) ? 0 : r;
+          Favorites.rate(p.id, newRating);
+          rt.querySelectorAll(".r-star").forEach((x, i) => x.classList.toggle("on", (i+1) <= newRating));
+        });
+      });
+    });
+    scope.querySelectorAll(".expand-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.getElementById("detail-" + btn.dataset.pid).classList.toggle("open");
+      });
+    });
+  }
+
+  function escapeHtml(s) {
+    return (s || "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+  }
+  function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+
+  render();
+  document.addEventListener("favorites:change", render);
+})();
+</script>
+</body>
+</html>

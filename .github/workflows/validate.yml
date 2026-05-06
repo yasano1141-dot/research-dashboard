@@ -12,10 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Validate JSON files
         run: |
           set -e
-          for f in docs/data/*.json; do
+          for f in docs/data/*.json scripts/themes.json; do
             echo "Validating $f"
             python3 -c "import json; json.load(open('$f'))"
           done
@@ -31,21 +35,20 @@ jobs:
           test -f docs/js/site.js
           test -f docs/data/papers.json
           test -f docs/data/reports.json
+          test -f vercel.json
+          test -f scripts/daily_generator.py
+          test -f scripts/themes.json
+          test -f scripts/requirements.txt
           echo "✅ all required files present"
 
-      - name: Lint HTML (basic check)
+      - name: Python syntax check
+        run: |
+          python3 -m py_compile scripts/*.py
+          echo "✅ Python syntax OK"
+
+      - name: Lint HTML (basic)
         run: |
           for f in docs/*.html; do
-            if ! grep -q "</html>" "$f"; then
-              echo "❌ $f missing closing tag"
-              exit 1
-            fi
+            grep -q "</html>" "$f" || (echo "❌ $f missing closing tag" && exit 1)
           done
           echo "✅ HTML files look closed"
-
-  notify-pages:
-    needs: validate
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - run: echo "✅ Site validated. GitHub Pages will auto-deploy from /docs."

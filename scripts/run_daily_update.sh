@@ -3,7 +3,7 @@
 #  毎朝8:00 JSTにlaunchdから呼ばれるエントリポイント
 #  - daily-research-report スキルを起動
 #  - 生成完了後、自動で git add / commit / push
-#  - GitHub Pagesが自動デプロイ → https://<username>.github.io/research-dashboard/
+#  - GitHub Pagesが自動デプロイ → https://yasano1141-dot.github.io/research-dashboard/
 # =============================================================
 
 set -euo pipefail

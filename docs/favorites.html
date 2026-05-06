@@ -16,6 +16,7 @@
       <a href="index.html">ホーム</a>
       <a href="papers.html">論文一覧</a>
       <a href="themes.html">曜日テーマ</a>
+      <a href="pd.html">📍 PD</a>
       <a href="favorites.html">お気に入り</a>
     </nav>
     <div class="spacer"></div>
@@ -51,6 +52,7 @@
     <button class="btn" id="btn-export">📥 JSON書き出し</button>
     <button class="btn" id="btn-import">📤 JSON取り込み</button>
     <button class="btn" id="btn-html">🖨 HTML書き出し</button>
+    <button class="btn" id="btn-bibtex">📚 BibTeX書き出し</button>
     <button class="btn" id="btn-clear" style="margin-left:auto;color:#c53030">🗑 全削除</button>
   </div>
 
@@ -63,6 +65,7 @@
 
 <script src="js/favorites.js"></script>
 <script src="js/site.js"></script>
+<script src="js/bibtex.js"></script>
 <script>
 (async () => {
   const reports = await SITE.loadReports();
@@ -104,6 +107,12 @@
   document.getElementById("btn-import").addEventListener("click", () => document.getElementById("file-import").click());
   document.getElementById("file-import").addEventListener("change", importJSON);
   document.getElementById("btn-html").addEventListener("click", exportHTML);
+  document.getElementById("btn-bibtex").addEventListener("click", () => {
+    const arr = Favorites.list();
+    if (arr.length === 0) { SITE.toast("お気に入りがありません"); return; }
+    BibTeX.download(arr);
+    SITE.toast(`${arr.length}件をBibTeXで書き出しました`);
+  });
   document.getElementById("btn-clear").addEventListener("click", () => {
     if (confirm(`お気に入り ${Favorites.list().length} 件をすべて削除します。よろしいですか？`)) {
       Favorites.clear();
