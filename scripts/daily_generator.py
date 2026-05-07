@@ -578,7 +578,13 @@ def generate_report(weekday: str, report_type: str = "regular", dry_run: bool = 
     pd_keywords = themes["_pd_keywords"]["must_match_any"]
 
     is_pd_focused = (report_type == "pd_focused")
-    theme_key = "thursday_pd" if is_pd_focused else weekday
+    is_pd_standalone = (weekday == "pd")
+    if is_pd_standalone:
+        theme_key = "pd"
+    elif is_pd_focused:
+        theme_key = "thursday_pd"
+    else:
+        theme_key = weekday
     if theme_key not in themes:
         print(f"  ❌ unknown theme key: {theme_key}", file=sys.stderr)
         return None
@@ -587,7 +593,10 @@ def generate_report(weekday: str, report_type: str = "regular", dry_run: bool = 
     today = datetime.now(JST)
     date_str = today.strftime("%Y-%m-%d")
     yyyymmdd = today.strftime("%Y%m%d")
-    report_id = f"{yyyymmdd}_{weekday}{'_pd' if is_pd_focused else ''}"
+    if is_pd_standalone:
+        report_id = f"{yyyymmdd}_pd"
+    else:
+        report_id = f"{yyyymmdd}_{weekday}{'_pd' if is_pd_focused else ''}"
 
     print(f"=== Generating {report_id} ({theme['jp']}) ===")
 
@@ -663,7 +672,8 @@ def generate_report(weekday: str, report_type: str = "regular", dry_run: bool = 
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--weekday", choices=WEEKDAY_ORDER + ["auto"], default="auto")
+    p.add_argument("--weekday", choices=WEEKDAY_ORDER + ["auto", "pd"], default="auto",
+                   help="auto = JSTの今日の曜日。'pd' は曜日に依存しないPD研究テーマ")
     p.add_argument("--type", choices=["regular", "pd_focused", "auto"], default="auto")
     p.add_argument("--dry-run", action="store_true")
     args = p.parse_args()

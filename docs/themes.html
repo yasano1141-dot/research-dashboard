@@ -69,7 +69,7 @@
   function renderOverview() {
     const grid = document.getElementById("theme-grid");
     grid.innerHTML = "";
-    for (const wd of SITE.WEEKDAY_ORDER) {
+    for (const wd of SITE.THEME_ORDER) {
       const t = SITE.THEME[wd];
       const wReports = reports.filter(r => r.weekday === wd);
       const wPapers = new Set();

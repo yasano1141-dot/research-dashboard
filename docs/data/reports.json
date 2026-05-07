@@ -559,5 +559,27 @@
       "a6aff7e597a2"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260507_pd",
+    "date": "2026-05-07",
+    "weekday": "pd",
+    "theme_jp": "PD研究",
+    "theme_en": "pd-research",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260507_pd.html",
+    "paper_ids": [
+      "20260425_01",
+      "0d2f36e7da74",
+      "20260503_02",
+      "20260503_06",
+      "20260502_02",
+      "20260502_03",
+      "20260502_04",
+      "20260430PD_01",
+      "20260430PD_02",
+      "20260430PD_03"
+    ],
+    "paper_count": 10
   }
 ]

@@ -76,7 +76,7 @@
   const themeBox = document.getElementById("theme-pills");
   const allCount = papers.length;
   themeBox.innerHTML = `<span class="pill ${activeTheme==='all'?'active':''}" data-th="all">すべて<span class="ct">${allCount}</span></span>` +
-    SITE.WEEKDAY_ORDER.map(wd => {
+    SITE.THEME_ORDER.map(wd => {
       const t = SITE.THEME[wd];
       const cnt = papers.filter(p => belongsToWeekday(p, wd)).length;
       return `<span class="pill ${activeTheme===wd?'active':''}" data-th="${wd}">${t.short}<span class="ct">${cnt}</span></span>`;

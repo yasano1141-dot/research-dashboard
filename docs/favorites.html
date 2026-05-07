@@ -78,13 +78,13 @@
   function buildThemePills() {
     const favs = Favorites.list();
     const counts = {};
-    SITE.WEEKDAY_ORDER.forEach(wd => counts[wd] = 0);
+    SITE.THEME_ORDER.forEach(wd => counts[wd] = 0);
     favs.forEach(p => {
       const r = (p.source_reports || []).map(rid => reportById.get(rid)).filter(Boolean)[0];
       if (r) counts[r.weekday] = (counts[r.weekday] || 0) + 1;
     });
     themeBox.innerHTML = `<span class="pill ${activeTheme==='all'?'active':''}" data-th="all">すべて<span class="ct">${favs.length}</span></span>` +
-      SITE.WEEKDAY_ORDER.map(wd => {
+      SITE.THEME_ORDER.map(wd => {
         const t = SITE.THEME[wd];
         return `<span class="pill ${activeTheme===wd?'active':''}" data-th="${wd}">${t.short}<span class="ct">${counts[wd]}</span></span>`;
       }).join("");

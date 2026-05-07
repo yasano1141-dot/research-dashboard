@@ -45,6 +45,8 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 
 - ユーザーが「研究レポート作って」「daily research report」「今日の研究論文」などと言った時
 - スケジュールタスクとして毎朝7:00 JSTに自動実行（ユーザー側で設定する場合）
+- **PD研究専用枠の起動**：ユーザーが「PD研究のレポート作って」「PD専用枠」「PD curated」などと言った時
+  → 通常の曜日テーマと並列の独立枠として動作（後述の Step 2-PD 参照）
 
 ## 実行手順
 
@@ -64,6 +66,18 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 ### Step 2: 今日の曜日テーマを確認
 
 `references/themes-by-day.md` を読み、本日の曜日に対応するテーマを特定する。
+
+### Step 2-PD: PD研究専用枠が起動された場合（曜日とは独立）
+
+ユーザーが「PD研究のレポート」を要求した時：
+- テーマ: PD研究（jp: "PD研究", en: "pd-research", color: #be123c）
+- ファイル名: `docs/reports/{YYYYMMDD}_pd.html`
+- reports.json の weekday: "pd"、theme_jp: "PD研究"、theme_en: "pd-research"、report_type: "regular"
+- 検索式: `scripts/themes.json` の `pd` エントリ参照（脳-身体機能・EEG・SHAP・筋質と認知）
+- **10本すべて** がPD研究計画関連（通常曜日の「2本以上PD」ルールではなく、全10本がPD関連必須）
+- 全カードに `<span class="task-tag pd">📍 PD研究</span>` バッジを付ける（10本×PDタグ）
+- 木曜の `_PD研究特化.html`（thursday_pd）とは別物。PD専用枠は曜日に依存しない独立カテゴリ
+- `<body data-source-theme="pd-research">` 必須
 
 **木曜日の特例**: テーマは「認知機能・脳研究」だが、必ず2つのHTMLを生成する：
 - `YYYYMMDD_brain-cognition.html` — 一般的な認知機能・脳研究（10本中6-7本を脳-身体機能関連）

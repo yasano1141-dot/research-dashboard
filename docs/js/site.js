@@ -10,6 +10,7 @@ const THEME = {
   friday:    { jp: "疫学方法論",            short: "疫学方法",   color: "var(--t-friday)" },
   saturday:  { jp: "AI・データ科学",        short: "AI",         color: "var(--t-saturday)" },
   sunday:    { jp: "遺伝子・オミクス",      short: "オミクス",   color: "var(--t-sunday)" },
+  pd:        { jp: "PD研究",                short: "PD研究",     color: "var(--t-pd)" },
 };
 
 const THEME_BY_EN = {
@@ -21,10 +22,13 @@ const THEME_BY_EN = {
   "epidemiology-methods":          "friday",
   "ai-data-science":               "saturday",
   "genetics-omics":                "sunday",
+  "pd-research":                   "pd",
 };
 
 const WEEKDAY_JP = ["日", "月", "火", "水", "木", "金", "土"];
 const WEEKDAY_ORDER = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
+// 8番目の独立テーマ「PD研究」を含む完全リスト（曜日カレンダーには使わない）
+const THEME_ORDER = [...WEEKDAY_ORDER, "pd"];
 
 // ---- Data loading ----------------------------------------------------------
 
@@ -148,5 +152,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Expose
-window.SITE = { THEME, THEME_BY_EN, WEEKDAY_ORDER, loadPapers, loadReports,
+window.SITE = { THEME, THEME_BY_EN, WEEKDAY_ORDER, THEME_ORDER, loadPapers, loadReports,
                 parseYMD, fmtDateJP, fmtDateShort, toast, updateFavBadge };

@@ -107,6 +107,25 @@
     "priority_journals": ["Nature Genetics", "Nature Aging", "Nature", "Science", "Cell"]
   },
 
+  "pd": {
+    "_comment": "PD研究専用枠（曜日に依存せず、ユーザーが手動で起動した時に生成）。10本すべてがPD研究計画関連。",
+    "jp": "PD研究",
+    "en": "pd-research",
+    "short": "PD研究",
+    "color": "#be123c",
+    "all_papers_pd_relevant": true,
+    "pubmed_queries": [
+      "(\"brain-muscle\" OR \"brain-body\" OR \"motor cortex\") AND (\"older adults\" OR \"aging\" OR \"physical function\") AND 2026",
+      "(\"EEG\" OR \"electroencephalography\" OR \"fNIRS\") AND (\"exercise\" OR \"motor task\" OR \"physical activity\" OR \"gait\") AND 2026",
+      "(\"SHAP\" OR \"explainable AI\" OR \"feature importance\") AND (\"brain\" OR \"physical function\" OR \"cognition\" OR \"aging\") AND 2026",
+      "(\"brain age\" OR \"neural correlates\" OR \"cognitive function\") AND (\"muscle quality\" OR \"sarcopenia\" OR \"body composition\") AND 2026",
+      "(\"hippocampus\" OR \"white matter\" OR \"gray matter\") AND (\"physical function\" OR \"gait\" OR \"motor\") AND (\"older adults\" OR \"aging\") AND 2026",
+      "(\"echo intensity\" OR \"muscle thickness\" OR \"intramuscular adipose\") AND (\"cognitive\" OR \"brain\" OR \"function\") AND 2026"
+    ],
+    "biorxiv_categories": ["neuroscience", "physiology"],
+    "priority_journals": ["NeuroImage", "Cerebral Cortex", "Neurobiology of Aging", "GeroScience", "Brain Stimulation", "Nature Aging", "JAMA Neurology"]
+  },
+
   "_pd_keywords": {
     "_comment": "PD研究計画（脳・身体機能・SHAP・EEG）関連と判定するキーワード",
     "must_match_any": [

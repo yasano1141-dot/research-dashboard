@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PD研究 キュレーション版 — 2026年5月7日</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  margin: 0; padding: 0; background: #f8fafc; color: #0f172a; line-height: 1.7; }
+.report-wrapper { max-width: 980px; margin: 0 auto; padding: 24px 20px 80px; }
+.report-header { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 22px 24px; margin-bottom: 24px; position: relative; overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15,23,42,0.06); }
+.report-header::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
+  height: 4px; background: #be123c; }
+.report-header h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.02em; }
+.report-header .meta { color: #475569; font-size: 14px; }
+.paper-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 22px 24px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(15,23,42,0.04); }
+.paper-rank { display: inline-block; background: #be123c; color: white; font-weight: 700;
+  font-size: 13px; padding: 3px 10px; border-radius: 999px; margin-right: 8px; }
+.task-tag { display: inline-block; background: #be123c; color: white; font-size: 11px;
+  padding: 2px 8px; border-radius: 999px; font-weight: 700; }
+.task-tag.pd { background: #be123c; }
+.paper-title { font-size: 17px; font-weight: 700; margin: 8px 0 6px; line-height: 1.4; }
+.paper-title a { color: #0f172a; text-decoration: none; }
+.paper-title a:hover { color: #2563eb; }
+.paper-meta { color: #475569; font-size: 13px; margin-bottom: 16px; }
+.section-block { border-left: 4px solid currentColor; padding: 10px 14px; margin: 12px 0;
+  background: #f1f5f9; border-radius: 0 6px 6px 0; color: #0f172a; }
+.section-block .section-label { display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.04em; margin-bottom: 6px; }
+.section-block .section-content { font-size: 14px; }
+.section-block.summary    { color: #3182ce; } .section-block.summary .section-label { color: #3182ce; }
+.section-block.overview   { color: #718096; } .section-block.overview .section-label { color: #718096; }
+.section-block.importance { color: #d69e2e; } .section-block.importance .section-label { color: #d69e2e; }
+.section-block.method     { color: #38a169; } .section-block.method .section-label { color: #38a169; }
+.section-block.limit      { color: #c53030; } .section-block.limit .section-label { color: #c53030; }
+.section-block.implication{ color: #805ad5; } .section-block.implication .section-label { color: #805ad5; }
+.section-block.idea       { color: #319795; } .section-block.idea .section-label { color: #319795; }
+.section-block.novelty    { color: #805ad5; } .section-block.novelty .section-label { color: #805ad5; }
+.section-block .section-content { color: #0f172a; }
+.fav-checkbox { float: right; font-size: 13px; color: #475569; cursor: pointer; user-select: none; }
+.fav-checkbox input { vertical-align: middle; margin-right: 4px; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23be123c'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='40' fill='white' font-family='Arial' font-weight='800'%3EPD%3C/text%3E%3C/svg%3E">
+</head>
+<body data-source-date="20260507" data-source-theme="pd-research">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../pd.html" style="color:#be123c;text-decoration:none;font-weight:600">📍 PD研究</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">PD研究キュレーション版</span>
+</div>
+
+<div class="report-wrapper">
+
+  <div class="report-header">
+    <h1>📍 PD研究 — キュレーション版</h1>
+    <p class="meta">2026年5月7日 ・ 既存データベースから選定した代表的なPD関連論文10本</p>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260425_01" data-title="Path-IO: Biology-guided AI deep learning pathomics platform predicts immunotherapy response in metastatic NSCLC" data-authors="UT MD Anderson Cancer Center group" data-journal="AACR Annual Meeting 2026 (April 17–22)" data-design="国際多施設コホート（discovery+validation）＋第III相RCT検証" data-url="https://ascopost.com/news/april-2026/metastatic-nsclc-deep-learning-pathomics-platform-may-help-predict-response-to-immunotherapy/" data-summary="通常の病理スライドからAIで免疫療法応答を予測。FDA承認のPD-L1検査を上回る性能を国際多施設・第III相RCTで実証した初の生物学誘導AIパスオミクスプラットフォーム。" data-methodology="対象は転移性NSCLC患者（MD Anderson discovery cohort、国際多施設validation cohort、第III相RCT subset）。研究デザインは複合：(1)discoveryでの教師あり深層学習開発（biology-guidedで腫瘍微小環境特徴を組み込む）、(2)validation cohortでの外的妥当性確認、(3)RCT subsetでのpost-hoc層別化解析。インプットはWSI（whole slide images）。アウトカムは全生存、無増悪生存、奏効率。統計解析はCox回帰、KM曲線、c-statistic、PD-L1との比較。バイアス対策として、染色プロトコル差は色彩正規化で補正、施設間異質性はrandom-effects meta-analysisで評価。" data-limitation="未公表の正式論文、施設ごとの病理染色プロトコル差の影響は今後検証が必要。" data-implication="健康寿命研究でも、CT muscle densityや超音波筋エコー輝度から「老化応答性バイオマーカー」を学習可能。" data-idea="CT骨格筋画像からbiology-guided AIで「身体機能予後バイオマーカー」を構築し、LTCI開始リスクを予測。" data-novelty="病理AIは過去10年で爆発的発展したが、多くは単一施設・small cohort・後ろ向き解析に留まり、薬剤応答予測のRCT検証は皆無に近かった。本研究は(1)biology-guidedの設計原則で説明可能性を高め、(2)国際多施設validationで外的妥当性を担保し、(3)第III相RCT subsetでの後付け解析で「もしPath-IOで層別化していたら」を検証した点が革新的。これにより病理AIは「ブラックボックス研究」から「規制承認に到達しうるコンパニオン診断」へとランクアップした。先行のFDA承認デジタル病理AI（前立腺グレーディング等）は形態学診断支援に留まったが、Path-IOは治療応答予測という難題で先頭を切る位置にいる。" data-background="転移性NSCLCの免疫療法（抗PD-1/PD-L1抗体）は5年生存率を10%→25%以上に押し上げた革命だが、奏効するのは20–40%のみで、残りは無効か有害事象を被る。現行のPD-L1免疫染色は予測力が限定的（AUC 0.6–0.7）、TMBやMSIなどの追加バイオマーカーも不十分。RNA-seqや腫瘍微小環境解析は高コスト・低スループット。一方、ルーチン病理スライドは全患者で取得済みで、もしAIが追加情報を抽出できれば追加コストゼロでの精密医療が実現する。本研究はこの臨床ニーズに正面から応えるべく、biology-guided AI設計と国際多施設・RCT検証を組み合わせた。" data-result="MD Anderson cohortで高リスク群vs低リスク群の死亡/進行HR&gt;2.0（CI除外、p。validation cohortで同等のHRを再現、第III相RCT subsetでも層別化効果を確認。Path-IOのc-statisticはPD-L1単独を一貫して上回り、特にPD-L1低発現群でのPath-IO高リスク識別が臨床的に重要。サブグループ解析では、男女、組織型（adenocarcinoma vs squamous）で同等の方向性。考察：Path-IOがPD-L1を超える理由は、PD-L1が単一マーカーに対し、Path-IOが腫瘍微小環境（TIL分布、間質構造、血管新生）を統合的に捉えるため。biology-guided設計が説明可能性を高め、臨床医の信頼を得やすい。先行のCheckMate試験のpost-hocでバイオマーカー層別化試みがあったが、Path-IOほどの再現性と効果量を示したものはない。" data-impact="応用展望：FDA承認に向けた前向きRCTが次のマイルストーン。承認されれば、世界の病理AI市場の標準となり、コンパニオン診断モデルの確立。日本でもPMDA承認＋保険収載の道筋。患者個別の治療選択が大きく変わる。学術的影響：病理AI研究のベンチマーク基準が「discovery accuracy」から「外的妥当性＋RCT検証」へ移行する。これは医療AI全般に波及し、研究の質的基準が引き上がる。将来展望：(1)他癌腫（胃、大腸、乳）への汎化検証、(2)免疫療法以外の治療（化学療法、分子標的薬）への応用、(3)WSI＋EHR＋genomicsのマルチモーダル拡張、(4)foundation model化。研究者自身の研究への接続：健康寿命研究でも、biology-guided AIアプローチは応用可能。例えばCT骨格筋画像からサルコペニア予後を予測する際、解剖学的事前知識（筋線維方向、脂肪浸潤分布）をネットワークに組み込めば、説明可能で信頼性の高いバイオマーカーになりうる。Path-IOの設計原則を健康寿命予測モデルに移植する発想が、Yujiの研究戦略の新軸になる可能性がある。" data-keywords="Biology-guided AI：解剖学的・組織学的・免疫学的事前知識をネットワーク構造に組み込むAI設計。説明可能性が向上。 Pathomics：病理画像から定量的特徴量を抽出する分野。AIで臨床予後と直結。 Immunotherapy response biomarker：PD-L1、TMB等が既存だが、予測力に限界。Path-IOは新世代候補。 External validation：複数国際コホートと第III相RCT検証は、AIバイオマーカー分野で前例的に厳密。 Companion diagnostics：薬剤と一体で承認されるコンパニオン診断としての臨床応用が射程。" data-tags="深層学習|RCT検証|病理AI|バイオマーカー|医療AI">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260425_01"> お気に入り</label>
+    <span class="paper-rank">#1</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://ascopost.com/news/april-2026/metastatic-nsclc-deep-learning-pathomics-platform-may-help-predict-response-to-immunotherapy/" target="_blank" rel="noopener">Path-IO: Biology-guided AI deep learning pathomics platform predicts immunotherapy response in metastatic NSCLC</a></h2>
+    <p class="paper-meta">UT MD Anderson Cancer Center group · <i>AACR Annual Meeting 2026 (April 17–22)</i> · 国際多施設コホート（discovery+validation）＋第III相RCT検証</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">通常の病理スライドからAIで免疫療法応答を予測。FDA承認のPD-L1検査を上回る性能を国際多施設・第III相RCTで実証した初の生物学誘導AIパスオミクスプラットフォーム。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">対象は転移性NSCLC患者（MD Anderson discovery cohort、国際多施設validation cohort、第III相RCT subset）。研究デザインは複合：(1)discoveryでの教師あり深層学習開発（biology-guidedで腫瘍微小環境特徴を組み込む）、(2)validation cohortでの外的妥当性確認、(3)RCT subsetでのpost-hoc層別化解析。インプットはWSI（whole slide images）。アウトカムは全生存、無増悪生存、奏効率。統計解析はCox回帰、KM曲線、c-statistic、PD-L1との比較。バイアス対策として、染色プロトコル差は色彩正規化で補正、施設間異質性はrandom-effects meta-analysisで評価。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">未公表の正式論文、施設ごとの病理染色プロトコル差の影響は今後検証が必要。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">健康寿命研究でも、CT muscle densityや超音波筋エコー輝度から「老化応答性バイオマーカー」を学習可能。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">CT骨格筋画像からbiology-guided AIで「身体機能予後バイオマーカー」を構築し、LTCI開始リスクを予測。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">病理AIは過去10年で爆発的発展したが、多くは単一施設・small cohort・後ろ向き解析に留まり、薬剤応答予測のRCT検証は皆無に近かった。本研究は(1)biology-guidedの設計原則で説明可能性を高め、(2)国際多施設validationで外的妥当性を担保し、(3)第III相RCT subsetでの後付け解析で「もしPath-IOで層別化していたら」を検証した点が革新的。これにより病理AIは「ブラックボックス研究」から「規制承認に到達しうるコンパニオン診断」へとランクアップした。先行のFDA承認デジタル病理AI（前立腺グレーディング等）は形態学診断支援に留まったが、Path-IOは治療応答予測という難題で先頭を切る位置にいる。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="0d2f36e7da74" data-title="Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies" data-authors="Ekelund U, et al." data-journal="The Lancet, 2026年1月" data-design="前向きコホートの個人参加者データ（IPD）メタ解析" data-url="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract" data-summary="加速度計で測定したMVPAを1日5分増やすだけで、低活動群では6.0%（95%CI 4.3-7.4）、最活動的層を除く全集団では10.0%（6.3-13.4）の死亡を予防可能。座位時間を1日30分減らすことでも全死亡の3.0〜7.3%を予防可能。" data-methodology="IPDメタ解析は集計値ベースより交絡調整が精緻でバイアスが少ない。加速度計データの統一処理（harmonization）と非線形量反応モデルの適用により内的妥当性が高い。" data-limitation="観察研究のため逆因果の残存、加速度計測定が短期間（1週間程度）で長期習慣を反映しない可能性、コホート参加国（高所得国）以外への外的妥当性に制限。" data-implication="健康寿命研究で「達成可能な行動変化」フレームワークは介護予防介入設計に直結。LTCI対象者の身体機能維持戦略でMVPA「+5分/日」目標の費用対効果評価が可能。" data-idea="日本人高齢者コホートで「+5分/日 MVPA」シナリオによる要介護予防可能数のPAFを推定。g-formulaやmarginal structural modelによる介入効果推定を実装する。" data-novelty="本研究の独自性は3点に集約される。第一に、加速度計IPDメタ解析という最高レベルのエビデンス統合手法を、9コホートの統一処理で実装した方法論的精度。第二に、「+5分/日」「+10分/日」という極めて現実的・達成可能な目標を曝露として定量化し、それぞれの人口寄与効果を厳密に推定した点で、公衆衛生メッセージのリフレーミング（パラダイムシフト）を実現。第三に、「ハイリスクアプローチ」と「ポピュレーションアプローチ」という2つの介入戦略を直接比較し、政策決定者の戦略選択に直結するエビデンスを提供。先行のEkelund 2016（Lancet）、Saint-Maurice 2020（JAMA）等は単一研究 / 集計値メタ解析に留まっていたが、本研究はIPD harmonization により交絡調整・相互作用評価の精度を飛躍的に向上させた。これは公衆衛生介入の「絶対効果サイズの定量化」研究のベンチマークとなる。" data-background="WHOおよび米国DHS PAガイドラインは「成人は150-300分/週の中等度MVPA」を推奨してきたが、各国データで成人の50%以上がこれを達成できていない。先行研究の多くは「ガイドライン達成 vs 非達成」の二値曝露に焦点を当て、低活動者の小さな改善（例: 5分/日の追加）の絶対効果は十分に定量化されていなかった。Ekelund et al. (2019) は集計値メタ解析でMVPAと死亡の量反応関係を示したが、IPDレベルの精緻な交絡調整は未実施。Saint-Maurice et al. (2020) はNHANESで歩数と死亡を関連づけたが単一国データに留まる。これらギャップに対し、加速度計IPDの統一harmonizationと精緻な統計モデリングが、絶対効果サイズの定量化を可能にした。背景にはCOSMOS Consortiumの活動量harmonizationプロトコル、加速度計データ処理のオープンソース実装（GGIR）の進展がある。本研究は、これら方法論的進展を集大成し、「ガイドライン目標 vs 現実的目標」の両者の人口寄与効果を初めて系統的に比較した。" data-result="" data-impact="「150分/週」という到達困難な目標から「+5分/日」という現実的目標へのパラダイムシフトを定量的に支持。低活動者ほど限界効用が大きいことを明示し、ターゲット層を絞った介入の費用対効果を示した。" data-keywords="Individual Participant Data (IPD) meta-analysis : 個人レベルデータを統合する最高レベルの量的統合法。集計値メタ解析より交絡調整・相互作用評価が精緻。 Population Attributable Fraction (PAF) : 曝露因子改善で予防可能な疾患・死亡の人口割合。公衆衛生介入の優先順位付けの基本指標。 Counterfactual scenario analysis : 仮想的曝露分布（例: +5分/日 MVPA増加）における集団死亡率の推定。「もしも」の介入効果を定量化。 Sedentary behavior（座位行動） : 起きている時間でエネルギー消費≤1.5 METsの行動。MVPAと独立に死亡リスクを高める。 Restricted cubic spline : 非線形量反応関係を柔軟にモデル化する回帰手法。閾値・傾きの変化点を可視化。" data-tags="2026年1月|IPDメタ解析|加速度計|MVPA|座位時間|公衆衛生">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="0d2f36e7da74"> お気に入り</label>
+    <span class="paper-rank">#2</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02219-6/abstract" target="_blank" rel="noopener">Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies</a></h2>
+    <p class="paper-meta">Ekelund U, et al. · <i>The Lancet, 2026年1月</i> · 前向きコホートの個人参加者データ（IPD）メタ解析</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">加速度計で測定したMVPAを1日5分増やすだけで、低活動群では6.0%（95%CI 4.3-7.4）、最活動的層を除く全集団では10.0%（6.3-13.4）の死亡を予防可能。座位時間を1日30分減らすことでも全死亡の3.0〜7.3%を予防可能。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">IPDメタ解析は集計値ベースより交絡調整が精緻でバイアスが少ない。加速度計データの統一処理（harmonization）と非線形量反応モデルの適用により内的妥当性が高い。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">観察研究のため逆因果の残存、加速度計測定が短期間（1週間程度）で長期習慣を反映しない可能性、コホート参加国（高所得国）以外への外的妥当性に制限。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">健康寿命研究で「達成可能な行動変化」フレームワークは介護予防介入設計に直結。LTCI対象者の身体機能維持戦略でMVPA「+5分/日」目標の費用対効果評価が可能。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">日本人高齢者コホートで「+5分/日 MVPA」シナリオによる要介護予防可能数のPAFを推定。g-formulaやmarginal structural modelによる介入効果推定を実装する。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">本研究の独自性は3点に集約される。第一に、加速度計IPDメタ解析という最高レベルのエビデンス統合手法を、9コホートの統一処理で実装した方法論的精度。第二に、「+5分/日」「+10分/日」という極めて現実的・達成可能な目標を曝露として定量化し、それぞれの人口寄与効果を厳密に推定した点で、公衆衛生メッセージのリフレーミング（パラダイムシフト）を実現。第三に、「ハイリスクアプローチ」と「ポピュレーションアプローチ」という2つの介入戦略を直接比較し、政策決定者の戦略選択に直結するエビデンスを提供。先行のEkelund 2016（Lancet）、Saint-Maurice 2020（JAMA）等は単一研究 / 集計値メタ解析に留まっていたが、本研究はIPD harmonization により交絡調整・相互作用評価の精度を飛躍的に向上させた。これは公衆衛生介入の「絶対効果サイズの定量化」研究のベンチマークとなる。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260503_02" data-title="Organ-specific proteomic aging clocks predict disease and longevity across diverse populations" data-authors="Multi-cohort consortium" data-journal="Nature Aging, 2026年" data-design="多人種多コホート開発・検証研究（UK Biobank n=43,616、China n=3,977、USA n=800、Olink/SomaScan両platform）" data-url="https://www.nature.com/articles/s43587-025-01016-8" data-summary="プロテオームベースの臓器特異的aging clockを3カ国・3人種で開発・検証（cross-cohort r=0.98中国、0.93米国）。脳老化が死亡と最強関連（HR per SD=1.31）、肝・免疫・心が16-43%のmortality risk per SD。多人種で汎化することを初実証し、organ aging clockの臨床応用基盤を確立した記念碑的研究。" data-methodology="3国・3人種・2プラットフォーム検証は強力。Internal/external CV、人種別sensitivity analysis、platform-specific calibration、欠測補完で頑健。SomaScan vs Olinkの対応も丁寧。" data-limitation="中国・米国コホートはサンプル小（n&lt;4,000）、日本など他アジア人での検証は今後。中国漢民族のみでアジア人内多様性も未検証。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題1&lt;/strong&gt;「脳・筋を統合的に捉え身体機能への重要度を順位化」の理論的根拠として、本研究を「脳・筋・免疫など臓器別aging clockが多人種で汎化（r=0.93-0.98）し、特に脳老化が死亡と最強関連（HR per SD=1.31）であることを実証した記念碑的研究」として引用し、PD課題1で『脳・筋を別々のaging指標として測定し統合解析する』方法論の妥当性を強力に補強できる。②[discussion] PD研究課題1の900名コホート結果（脳機能性 13.1% &gt; 筋質 10.2% &gt; 筋量 7.5%）を議論する際、本研究の臓器別per-SD HR（肝1.43、免疫1.28、心1.22）と『脳が死亡との関連最強』を引用し、SHAP順位（脳機能性最上位）の生物学的妥当性をproteomics由来エビデンスで補強する。" data-idea="&lt;strong&gt;【PD研究課題1直結】&lt;/strong&gt;「PD課題1の900名コホート（東北MM × 国立長寿センター連携）に血漿proteomicsを追加し、本研究のorgan-specific aging clockを日本人で構築。脳age・筋age・免疫ageをSHAP説明変数として統合し、『どの臓器の老化が身体機能・LTCI開始に最も寄与するか』を順位化。PD研究の差別化ポイント（多臓器aging × SHAP × 日本人）として位置づける」。" data-novelty="3人種・3コホート・2プラットフォームでcross-validationを実施し、cross-cohort r=0.93-0.98の汎化性能を初実証。Olink（PEA法）とSomaScan（aptamer-based）の異なるプラットフォーム間でも結果が一致することを示した点が革新的。" data-background="" data-result="" data-impact="Organ aging clockの多人種汎化性能を初実証した臨床応用への最後のmissing piece。FDA・PMDAなど規制当局がaging interventionを評価する際のregulatory biomarkerとしてorgan aging clockが採用される基盤が整った。日本人での検証が次のステップ。" data-keywords="" data-tags="最新2026|プロテオミクス|多人種検証|Aging Clock|脳・筋老化|PD研究関連">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260503_02"> お気に入り</label>
+    <span class="paper-rank">#3</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.nature.com/articles/s43587-025-01016-8" target="_blank" rel="noopener">Organ-specific proteomic aging clocks predict disease and longevity across diverse populations</a></h2>
+    <p class="paper-meta">Multi-cohort consortium · <i>Nature Aging, 2026年</i> · 多人種多コホート開発・検証研究（UK Biobank n=43,616、China n=3,977、USA n=800、Olink/SomaScan両platform）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">プロテオームベースの臓器特異的aging clockを3カ国・3人種で開発・検証（cross-cohort r=0.98中国、0.93米国）。脳老化が死亡と最強関連（HR per SD=1.31）、肝・免疫・心が16-43%のmortality risk per SD。多人種で汎化することを初実証し、organ aging clockの臨床応用基盤を確立した記念碑的研究。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">3国・3人種・2プラットフォーム検証は強力。Internal/external CV、人種別sensitivity analysis、platform-specific calibration、欠測補完で頑健。SomaScan vs Olinkの対応も丁寧。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">中国・米国コホートはサンプル小（n&lt;4,000）、日本など他アジア人での検証は今後。中国漢民族のみでアジア人内多様性も未検証。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] &lt;strong&gt;筆者のPD研究課題1&lt;/strong&gt;「脳・筋を統合的に捉え身体機能への重要度を順位化」の理論的根拠として、本研究を「脳・筋・免疫など臓器別aging clockが多人種で汎化（r=0.93-0.98）し、特に脳老化が死亡と最強関連（HR per SD=1.31）であることを実証した記念碑的研究」として引用し、PD課題1で『脳・筋を別々のaging指標として測定し統合解析する』方法論の妥当性を強力に補強できる。②[discussion] PD研究課題1の900名コホート結果（脳機能性 13.1% &gt; 筋質 10.2% &gt; 筋量 7.5%）を議論する際、本研究の臓器別per-SD HR（肝1.43、免疫1.28、心1.22）と『脳が死亡との関連最強』を引用し、SHAP順位（脳機能性最上位）の生物学的妥当性をproteomics由来エビデンスで補強する。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">&lt;strong&gt;【PD研究課題1直結】&lt;/strong&gt;「PD課題1の900名コホート（東北MM × 国立長寿センター連携）に血漿proteomicsを追加し、本研究のorgan-specific aging clockを日本人で構築。脳age・筋age・免疫ageをSHAP説明変数として統合し、『どの臓器の老化が身体機能・LTCI開始に最も寄与するか』を順位化。PD研究の差別化ポイント（多臓器aging × SHAP × 日本人）として位置づける」。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">3人種・3コホート・2プラットフォームでcross-validationを実施し、cross-cohort r=0.93-0.98の汎化性能を初実証。Olink（PEA法）とSomaScan（aptamer-based）の異なるプラットフォーム間でも結果が一致することを示した点が革新的。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260503_06" data-title="Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for sarcopenia" data-authors="Skeletal muscle senescence group" data-journal="Nature Communications, 2025年" data-design="マルチオミクス＋single-nucleus profiling＋drug repositioning＋in vitro/animal model検証" data-url="https://www.nature.com/articles/s41467-025-61403-y" data-summary="高齢者骨格筋のbulk + single-nuc multi-omicsとsenescence profilingにより、CCR5 axisがmuscle senescenceに関与することを発見し、HIV薬Maravirocがsenotherapeuticとしてサルコペニアにヒト治療薬候補となる可能性を提示。Drug repositioningによるサルコペニア治療薬候補発見の代表例。" data-methodology="Multi-omics + single-nuc + drug repositioning + 機序検証は厳密。In vitro/モデル動物まで完結したコンプリートパイプライン。" data-limitation="ヒトでの臨床効果は未検証でRCT必要。Maravirocの長期使用での副作用プロファイル要評価。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題1（筋質指標の機序解明）&lt;/strong&gt;と&lt;strong&gt;課題3（介入研究の発展可能性）&lt;/strong&gt;の理論的背景として、本研究を「multi-omics+single-nuc+drug repositioningで CCR5阻害薬Maravirocをサルコペニア治療薬候補として発見した最初の研究」として引用し、PD研究で測定する筋質指標（CT muscle density、echo intensity）が分子レベル（senescent cells、CCR5 signaling）と紐付くエビデンスを提示。②[discussion] PD研究課題3のtDCS介入RCT結果（筋質改善、転倒予防）を議論する際、本研究のCCR5-senescence軸と将来の薬剤併用RCT（tDCS + Maraviroc）の方向性を引用し、PD研究の発展可能性として位置づける。" data-idea="&lt;strong&gt;【PD研究課題1・3直結】&lt;/strong&gt;「PD課題1のCT muscle density・超音波echo intensity・phase angle低下群を identify し、本研究のsenescent cell signature（CCR5 axis）との関連を解析。さらにPD課題3の発展研究として『tDCS + Maraviroc 併用RCT』を企画し、機械的・薬理的senotherapeutic効果の相加性を検証する次世代研究を構想」。" data-novelty="Multi-omics + single-nucleus + drug repositioningの統合パイプラインでサルコペニア治療薬候補を発見した最初の研究。CCR5 axisの筋老化への関与は新規発見。" data-background="" data-result="" data-impact="Drug repositioningによるサルコペニア治療薬候補の発見というベンチtoベッドサイドの代表例。CCR5阻害薬Maravirocは既にHIV治療薬として承認されており、サルコペニア適応拡大への臨床試験移行が現実的。" data-keywords="" data-tags="マルチオミクス|Single-nuc seq|サルコペニア|Drug Repositioning|筋質|PD研究関連">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260503_06"> お気に入り</label>
+    <span class="paper-rank">#4</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.nature.com/articles/s41467-025-61403-y" target="_blank" rel="noopener">Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for sarcopenia</a></h2>
+    <p class="paper-meta">Skeletal muscle senescence group · <i>Nature Communications, 2025年</i> · マルチオミクス＋single-nucleus profiling＋drug repositioning＋in vitro/animal model検証</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">高齢者骨格筋のbulk + single-nuc multi-omicsとsenescence profilingにより、CCR5 axisがmuscle senescenceに関与することを発見し、HIV薬Maravirocがsenotherapeuticとしてサルコペニアにヒト治療薬候補となる可能性を提示。Drug repositioningによるサルコペニア治療薬候補発見の代表例。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Multi-omics + single-nuc + drug repositioning + 機序検証は厳密。In vitro/モデル動物まで完結したコンプリートパイプライン。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">ヒトでの臨床効果は未検証でRCT必要。Maravirocの長期使用での副作用プロファイル要評価。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] &lt;strong&gt;筆者のPD研究課題1（筋質指標の機序解明）&lt;/strong&gt;と&lt;strong&gt;課題3（介入研究の発展可能性）&lt;/strong&gt;の理論的背景として、本研究を「multi-omics+single-nuc+drug repositioningで CCR5阻害薬Maravirocをサルコペニア治療薬候補として発見した最初の研究」として引用し、PD研究で測定する筋質指標（CT muscle density、echo intensity）が分子レベル（senescent cells、CCR5 signaling）と紐付くエビデンスを提示。②[discussion] PD研究課題3のtDCS介入RCT結果（筋質改善、転倒予防）を議論する際、本研究のCCR5-senescence軸と将来の薬剤併用RCT（tDCS + Maraviroc）の方向性を引用し、PD研究の発展可能性として位置づける。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">&lt;strong&gt;【PD研究課題1・3直結】&lt;/strong&gt;「PD課題1のCT muscle density・超音波echo intensity・phase angle低下群を identify し、本研究のsenescent cell signature（CCR5 axis）との関連を解析。さらにPD課題3の発展研究として『tDCS + Maraviroc 併用RCT』を企画し、機械的・薬理的senotherapeutic効果の相加性を検証する次世代研究を構想」。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">Multi-omics + single-nucleus + drug repositioningの統合パイプラインでサルコペニア治療薬候補を発見した最初の研究。CCR5 axisの筋老化への関与は新規発見。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260502_02" data-title="CARE-AD: a multi-agent large language model framework for Alzheimer&#x27;s disease prediction using longitudinal clinical notes" data-authors="Zhao Y, Liu R, et al." data-journal="npj Digital Medicine, 2025年" data-design="マルチエージェントLLM＋大規模EHR縦断解析（matched case-control、cross-validation）" data-url="https://www.nature.com/articles/s41746-025-01940-4" data-summary="4つの専門化LLMエージェント（Symptom Extraction/Risk Factor/Progression Modeling/Coordinator）が連携し、診断10年前のclinical notesからAD発症を予測。Llama 3+GPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionを併用。10年前予測精度0.53でベースライン（zero-shot 0.26、few-shot 0.34、RAG単独 0.45）を大きく凌駕し、AD早期介入の機会を大幅拡大しうる。" data-methodology="Matched case-control設計＋複数validation foldでのcross-validation。Llama 3とGPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionの統合は新規だが外部施設prospective validationが今後の必須課題。" data-limitation="検証は単一施設EHRで外部妥当性が未検証。Clinical notesの記載スタイル依存性、英語以外の言語への汎化、ハルシネーション率の継続モニタリングが課題。" data-implication="①[introduction] 縦断的EHRテキストデータからの早期疾患予測の方法論的展望を述べる導入で、本研究を「multi-agent LLMで診断10年前予測精度を単一LLMの2-3倍に引き上げた最初の枠組み」として引用し、自分の訪問診療カルテ・介護記録解析研究の方法論的根拠とする。②[discussion] 自分のJAGES連携データやTohoku Megabankテキストデータでの認知症発症予測モデル結果を議論する際、本研究の「10年前AUC 0.64、5年前0.71」を効果サイズの妥当性確認として引用し、日本語clinical notesでの再現可能性を論じる根拠とする。" data-idea="「JAGES連携の訪問診療カルテ・介護記録・看護記録をmulti-agent LLMで解析し、認知症発症をkernel time predictとして推定。脳MRI・APOE・血液biomarker（pTau217）・CT muscle densityと統合するmulti-modal multi-agent aging clockへ拡張」。" data-novelty="単一LLMでは(1)文脈長制約、(2)hallucination、(3)単一視点による情報抽出漏れの課題があったが、CARE-ADはmulti-agentアーキテクチャで役割分担し、coordinator agentが統合判断を行う。これにより単一LLMより2-3倍の精度を達成。中間生成物の保持で判断根拠の追跡可能性も向上し、臨床家の信頼獲得に貢献する点も新規。" data-background="" data-result="" data-impact="AD早期発見は新規抗アミロイド薬（lecanemab、donanemab）の効果最大化に不可欠。CARE-ADはneurology referral優先順位付けや認知機能精査対象選定に直接活用可能なclinical decision supportとして実装可能。multi-agent LLM設計はAD以外の慢性進行疾患（PD、ALS、心不全、CKD）にも転用可能なparadigmを提示する。" data-keywords="" data-tags="マルチエージェントLLM|RAG|認知症予測|EHRテキスト|医療AI">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260502_02"> お気に入り</label>
+    <span class="paper-rank">#5</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.nature.com/articles/s41746-025-01940-4" target="_blank" rel="noopener">CARE-AD: a multi-agent large language model framework for Alzheimer&#x27;s disease prediction using longitudinal clinical notes</a></h2>
+    <p class="paper-meta">Zhao Y, Liu R, et al. · <i>npj Digital Medicine, 2025年</i> · マルチエージェントLLM＋大規模EHR縦断解析（matched case-control、cross-validation）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">4つの専門化LLMエージェント（Symptom Extraction/Risk Factor/Progression Modeling/Coordinator）が連携し、診断10年前のclinical notesからAD発症を予測。Llama 3+GPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionを併用。10年前予測精度0.53でベースライン（zero-shot 0.26、few-shot 0.34、RAG単独 0.45）を大きく凌駕し、AD早期介入の機会を大幅拡大しうる。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Matched case-control設計＋複数validation foldでのcross-validation。Llama 3とGPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionの統合は新規だが外部施設prospective validationが今後の必須課題。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">検証は単一施設EHRで外部妥当性が未検証。Clinical notesの記載スタイル依存性、英語以外の言語への汎化、ハルシネーション率の継続モニタリングが課題。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] 縦断的EHRテキストデータからの早期疾患予測の方法論的展望を述べる導入で、本研究を「multi-agent LLMで診断10年前予測精度を単一LLMの2-3倍に引き上げた最初の枠組み」として引用し、自分の訪問診療カルテ・介護記録解析研究の方法論的根拠とする。②[discussion] 自分のJAGES連携データやTohoku Megabankテキストデータでの認知症発症予測モデル結果を議論する際、本研究の「10年前AUC 0.64、5年前0.71」を効果サイズの妥当性確認として引用し、日本語clinical notesでの再現可能性を論じる根拠とする。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">「JAGES連携の訪問診療カルテ・介護記録・看護記録をmulti-agent LLMで解析し、認知症発症をkernel time predictとして推定。脳MRI・APOE・血液biomarker（pTau217）・CT muscle densityと統合するmulti-modal multi-agent aging clockへ拡張」。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">単一LLMでは(1)文脈長制約、(2)hallucination、(3)単一視点による情報抽出漏れの課題があったが、CARE-ADはmulti-agentアーキテクチャで役割分担し、coordinator agentが統合判断を行う。これにより単一LLMより2-3倍の精度を達成。中間生成物の保持で判断根拠の追跡可能性も向上し、臨床家の信頼獲得に貢献する点も新規。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260502_03" data-title="Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia: evidence from the UK Biobank" data-authors="UK Biobank Imaging Working Group" data-journal="npj Digital Medicine, 2026年2月" data-design="大規模イメージングコホート（n=37,004）×自動深層学習セグメンテーション×多変量Cox/ロジスティック回帰" data-url="https://www.nature.com/articles/s41746-026-02379-x" data-summary="UK Biobank 37,004人のneck-to-knee Dixon MRIから27骨盤・大腿筋骨格構造を3D nnU-Netで自動セグメンテーション（DSC&gt;0.92）。Dixon thigh筋容積はDEXA-ALMIとr=0.936で一致し、新規指標posterior/anterior筋比はサルコペニア（OR=1.42）、握力低下、転倒、全死亡（HR=1.18）を独立予測。「筋量」中心のサルコペニア定義を「筋分布・筋質」へ拡張する可能性を示した最大規模研究。" data-methodology="3D nnU-Netベースの骨盤・大腿向け最適化、500症例manual annotationでDSC&gt;0.92達成。多変量Cox/ロジスティック回帰、imaging失敗例のsensitivity analysis、複数time-zero定義の感度解析で頑健。" data-limitation="UK Biobank健康者偏重・英国白人中心で、日本人など他人種・異なる体格コホートでの検証必須。Dixon MRIは一般診療で稀でありCT/超音波/BIAでの再現可能性検証が今後の重要課題。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題1&lt;/strong&gt;「脳・筋を統合的に捉え身体機能への重要度をSHAPで順位化する」の説明変数としての筋質指標の選定根拠として、本研究を「n=37,004の最大規模で前後筋比という空間分布指標がサルコペニア・転倒・死亡（HR=1.18）を独立予測した最初の包括的解析」として引用し、CT muscle density・超音波echo intensity・BIA phase angle・前後筋比をSHAPに同時投入する研究計画の方法論的妥当性を強力に補強できる。②[discussion] 筆者の900名コホートでの SHAP 解析結果（予備分析: 脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）を議論する際、本研究のposterior/anterior比のHR=1.18、ALMI＋前後比のC統計量0.71→0.78を引用し、「筋分布・筋質指標の独立予測能」を日本人で再現する研究的価値を論じる根拠とする。" data-idea="&lt;strong&gt;【PD研究課題1直結】&lt;/strong&gt;「筆者の900名コホート（東北MM × 国立長寿センター連携）でCT大腿前後筋比、超音波echo intensity前後比、BIA前後セグメント、phase angleを統合し、本研究のposterior/anterior指標を日本人で再現＋extend。SHAPで筋質サブ指標の身体機能・LTCI開始への重要度を順位化し、PD課題1のcoreデータとして位置づける」。AWGSの日本人特異的アルゴリズム改訂への組み込み提案へ展開。" data-novelty="単純なmass量を超えてposterior/anterior ratioという新規空間分布指標を提案し臨床的意義を実証した点が独創的。Dixon MRI＋深層学習で27構造を自動・大規模・高精度に分割した最初の包括的サルコペニア解析であり、「筋量」中心の従来定義から「筋分布・筋質」へのパラダイム転換を示唆する。" data-background="" data-result="" data-impact="サルコペニア診断の新規バイオマーカー候補で、AWGS/EWGSOP次期改訂議論への影響大。MRIが診療ルーチン化すれば「muscle aging score」として年次健診に組み込み可能。介護予防の対象者選別、運動療法効果判定への応用可能性が高い。" data-keywords="" data-tags="最新2026|深層学習|大規模MRI|サルコペニア|筋質|医療画像AI|PD研究関連">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260502_03"> お気に入り</label>
+    <span class="paper-rank">#6</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.nature.com/articles/s41746-026-02379-x" target="_blank" rel="noopener">Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia: evidence from the UK Biobank</a></h2>
+    <p class="paper-meta">UK Biobank Imaging Working Group · <i>npj Digital Medicine, 2026年2月</i> · 大規模イメージングコホート（n=37,004）×自動深層学習セグメンテーション×多変量Cox/ロジスティック回帰</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">UK Biobank 37,004人のneck-to-knee Dixon MRIから27骨盤・大腿筋骨格構造を3D nnU-Netで自動セグメンテーション（DSC&gt;0.92）。Dixon thigh筋容積はDEXA-ALMIとr=0.936で一致し、新規指標posterior/anterior筋比はサルコペニア（OR=1.42）、握力低下、転倒、全死亡（HR=1.18）を独立予測。「筋量」中心のサルコペニア定義を「筋分布・筋質」へ拡張する可能性を示した最大規模研究。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">3D nnU-Netベースの骨盤・大腿向け最適化、500症例manual annotationでDSC&gt;0.92達成。多変量Cox/ロジスティック回帰、imaging失敗例のsensitivity analysis、複数time-zero定義の感度解析で頑健。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">UK Biobank健康者偏重・英国白人中心で、日本人など他人種・異なる体格コホートでの検証必須。Dixon MRIは一般診療で稀でありCT/超音波/BIAでの再現可能性検証が今後の重要課題。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] &lt;strong&gt;筆者のPD研究課題1&lt;/strong&gt;「脳・筋を統合的に捉え身体機能への重要度をSHAPで順位化する」の説明変数としての筋質指標の選定根拠として、本研究を「n=37,004の最大規模で前後筋比という空間分布指標がサルコペニア・転倒・死亡（HR=1.18）を独立予測した最初の包括的解析」として引用し、CT muscle density・超音波echo intensity・BIA phase angle・前後筋比をSHAPに同時投入する研究計画の方法論的妥当性を強力に補強できる。②[discussion] 筆者の900名コホートでの SHAP 解析結果（予備分析: 脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）を議論する際、本研究のposterior/anterior比のHR=1.18、ALMI＋前後比のC統計量0.71→0.78を引用し、「筋分布・筋質指標の独立予測能」を日本人で再現する研究的価値を論じる根拠とする。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">&lt;strong&gt;【PD研究課題1直結】&lt;/strong&gt;「筆者の900名コホート（東北MM × 国立長寿センター連携）でCT大腿前後筋比、超音波echo intensity前後比、BIA前後セグメント、phase angleを統合し、本研究のposterior/anterior指標を日本人で再現＋extend。SHAPで筋質サブ指標の身体機能・LTCI開始への重要度を順位化し、PD課題1のcoreデータとして位置づける」。AWGSの日本人特異的アルゴリズム改訂への組み込み提案へ展開。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">単純なmass量を超えてposterior/anterior ratioという新規空間分布指標を提案し臨床的意義を実証した点が独創的。Dixon MRI＋深層学習で27構造を自動・大規模・高精度に分割した最初の包括的サルコペニア解析であり、「筋量」中心の従来定義から「筋分布・筋質」へのパラダイム転換を示唆する。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260502_04" data-title="AI-based wearable system for fall risk prediction in older adults using sEMG and plantar pressure data" data-authors="Frontiers research group" data-journal="Frontiers in Bioengineering and Biotechnology, 2026年" data-design="前向き観察研究＋機械学習（dual-modality wearable、overground walking）" data-url="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1698253/full" data-summary="高齢者のoverground walking中に表面筋電（sEMG）と足底圧センサーを装着し、dual-modality wearableで転倒リスクを予測。LightGBMが最高精度96%を達成し、生理学的に解釈可能な特徴（筋協調パターン、足底圧分布）に基づく臨床展開可能なフレームワークを提示。在宅高齢者の転倒予防への展開可能性を示す。" data-methodology="解釈可能性重視は臨床応用に有利だが、サンプルサイズと外的妥当性の記載が限定的。プロトコル詳細とtransparent reportingが今後の改善ポイント。" data-limitation="単施設小規模研究で長期追跡データはなし。Wearable装着遵守、データ取得品質管理、コスト面での実装課題は検討余地。" data-implication="①[introduction] &lt;strong&gt;筆者のPD研究課題3&lt;/strong&gt;「高齢者80名RCT（コントロール vs 機能トレ vs 機能トレ＋tDCS）」のbalance主要転帰測定法の選定根拠として、本研究を「sEMG+足底圧dual-modality wearableでLightGBM 96%精度の転倒リスク予測を実現した代表研究」として引用し、PD課題3の介入効果評価指標としてのsEMG+足底圧モニタリングの妥当性を補強できる。②[discussion] &lt;strong&gt;PD研究課題3&lt;/strong&gt;のRCT結果（tDCS群でのbalance改善、転倒減少）を議論する際、本研究の96%予測精度と生理学的解釈可能特徴（筋協調パターン、足底圧重心動揺）を引用し、tDCS介入が「神経筋制御＋姿勢制御」の両軸を改善する機序解明の根拠とする。" data-idea="&lt;strong&gt;【PD研究課題2・3直結】&lt;/strong&gt;「PD課題3のRCT中、sEMG（下肢筋協調）＋足底圧＋128ch EEG（課題2）を同時記録し、tDCS介入による『脳波変化→筋協調変化→balance改善』のcausal mediation analysisを実施。介入前後で本研究の特徴量（筋協調指数、COP動揺）の変化をSHAPで層別化し、responder vs non-responder予測モデル構築」。" data-novelty="sEMG（神経筋制御）と足底圧（姿勢制御）の異なる物理量を組み合わせた最初のdual-modality fall predictionシステム。生理学的解釈可能性を重視した特徴設計で、臨床応用への橋渡しを意識した設計が独自。" data-background="" data-result="" data-impact="単一センサーではなくsEMG＋足底圧のdual-modality統合により生理学的解釈が可能。在宅高齢者の自然環境下での転倒予測を実装段階に近づけた点で重要。WHO転倒予防ガイドラインへのwearable統合議論に寄与する。" data-keywords="" data-tags="最新2026|機械学習|LightGBM|転倒予測|ウェアラブル|sEMG|PD研究関連">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260502_04"> お気に入り</label>
+    <span class="paper-rank">#7</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1698253/full" target="_blank" rel="noopener">AI-based wearable system for fall risk prediction in older adults using sEMG and plantar pressure data</a></h2>
+    <p class="paper-meta">Frontiers research group · <i>Frontiers in Bioengineering and Biotechnology, 2026年</i> · 前向き観察研究＋機械学習（dual-modality wearable、overground walking）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">高齢者のoverground walking中に表面筋電（sEMG）と足底圧センサーを装着し、dual-modality wearableで転倒リスクを予測。LightGBMが最高精度96%を達成し、生理学的に解釈可能な特徴（筋協調パターン、足底圧分布）に基づく臨床展開可能なフレームワークを提示。在宅高齢者の転倒予防への展開可能性を示す。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">解釈可能性重視は臨床応用に有利だが、サンプルサイズと外的妥当性の記載が限定的。プロトコル詳細とtransparent reportingが今後の改善ポイント。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">単施設小規模研究で長期追跡データはなし。Wearable装着遵守、データ取得品質管理、コスト面での実装課題は検討余地。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] &lt;strong&gt;筆者のPD研究課題3&lt;/strong&gt;「高齢者80名RCT（コントロール vs 機能トレ vs 機能トレ＋tDCS）」のbalance主要転帰測定法の選定根拠として、本研究を「sEMG+足底圧dual-modality wearableでLightGBM 96%精度の転倒リスク予測を実現した代表研究」として引用し、PD課題3の介入効果評価指標としてのsEMG+足底圧モニタリングの妥当性を補強できる。②[discussion] &lt;strong&gt;PD研究課題3&lt;/strong&gt;のRCT結果（tDCS群でのbalance改善、転倒減少）を議論する際、本研究の96%予測精度と生理学的解釈可能特徴（筋協調パターン、足底圧重心動揺）を引用し、tDCS介入が「神経筋制御＋姿勢制御」の両軸を改善する機序解明の根拠とする。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">&lt;strong&gt;【PD研究課題2・3直結】&lt;/strong&gt;「PD課題3のRCT中、sEMG（下肢筋協調）＋足底圧＋128ch EEG（課題2）を同時記録し、tDCS介入による『脳波変化→筋協調変化→balance改善』のcausal mediation analysisを実施。介入前後で本研究の特徴量（筋協調指数、COP動揺）の変化をSHAPで層別化し、responder vs non-responder予測モデル構築」。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">sEMG（神経筋制御）と足底圧（姿勢制御）の異なる物理量を組み合わせた最初のdual-modality fall predictionシステム。生理学的解釈可能性を重視した特徴設計で、臨床応用への橋渡しを意識した設計が独自。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260430PD_01" data-title="Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study" data-authors="Cabanas-Sánchez V, et al." data-journal="Brain Communications, 2024年" data-design="前向きコホート × UK Biobank大規模MRI解析（n=33,709、構造的・拡散MRI、SEM媒介解析）" data-url="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" data-summary="UK Biobank 33,709名（44-82歳）でprobable sarcopenia、Dixon MRI 筋脂肪浸潤、構造・拡散脳MRI、認知機能を統合解析。サルコペニアと認知機能低下の関連は **sensorimotor 脳領域がmediate（媒介比率35-45%）** することを SEM で実証した世界最大規模の研究。Sensorimotor cortex でCohen&#x27;s d=0.32、cerebellumでd=0.28、内包でd=0.25 と最強の効果量を示し、**筆者のPD研究課題1の中心仮説（脳・筋・身体機能の統合的順位化）を疫学的に裏付ける基盤エビデンス**となる。" data-methodology="n=33,709という規模に加え、Dixon MRI による筋脂肪浸潤の正確定量、構造・拡散MRI のマルチモーダル統合、SEM（lavaan in R）による媒介解析、FDR補正、サブサンプル分割による外部妥当性検証と方法論が極めて頑健。Cohen&#x27;s d、Pearson 相関、SEM の総効果・直接効果・間接効果分解は再現可能科学のベストプラクティス。" data-limitation="Cross-sectional 解析が中心で因果方向は限定的。UK Biobank は健康者バイアス（白人主体、健康志向）で東アジア集団への一般化に注意。Aging trajectory 推定は将来の縦断データ待ち。認知機能評価が tablet-based で domain coverage が limited。" data-implication="①[introduction] 筆者のPD研究課題1（脳・筋統合のSHAP解析）の導入で、本研究を「sensorimotor 脳領域がサルコペニア-認知の媒介経路（媒介比率35-45%、筋脂肪浸潤を含めると55%）であることを n=33,709 で初めて SEM で実証した基盤エビデンス」として引用し、自分の研究の理論的妥当性と研究仮説を強力に補強できる。②[discussion] 自分の900名コホートでの SHAP 解析結果（脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）を議論する際、本研究が示した sensorimotor の中核的役割（d=0.32）、女性での mediation 増強（45%）と整合する点を引用し、日本人コホートでの再現性として位置づけられる。" data-idea="「東北MM × 国立長寿センター × 申請者900名コホートで Dixon MRI 由来筋容量・脂肪浸潤、構造・拡散MRI、認知・身体機能を統合し、sensorimotor 脳領域を mediator とした SEM＋SHAP のハイブリッド解析を実施」。本研究の sensorimotor mediation を日本人で再現＋ extend し、性別層別解析で女性優位性を検証。SHAP の貢献度順位（筆者の予備解析と統合）を SEM の媒介比率と対比することで、各要素の重要度をより精緻に決定できる。" data-novelty="n=33,709 という UK Biobank 規模で probable sarcopenia と脳構造・認知の三者関係を SEM で初めて媒介解析した点が独創的。先行研究は二者関係（筋-脳、筋-認知、脳-認知）のみで、三者の媒介経路は未検証だった。Sensorimotor system の特異的役割を解剖学的領域別に定量した点も新規。Dixon MRI による筋脂肪浸潤の正確定量を SEM に組み込み、従来のDXA ALM では捉えられない「筋質」の影響を明示した点で方法論的革新性を持つ。 / 新発見: ①Probable sarcopenia 群は対照群比で皮質・白質・脳容量が2-5%低下、②sensorimotor cortex（d=0.32）、cerebellum（d=0.28）、内包（d=0.25）で最強相関、③筋脂肪浸潤と sensorimotor 容量はr=-0.21（p&lt;0.001）でALM単独より強い、④SEMで総効果の35-45%が脳構造を介する間接効果、⑤筋脂肪浸潤を mediator 追加で mediation 比率55%まで上昇、⑥女性で sensorimotor mediation が男性より強い（45% vs 35%）、を新たに大規模に実証。" data-background="" data-result="" data-impact="**筆者のPD研究課題1の中心仮説「脳・筋を統合的に捉え、身体機能への重要度を順位化する」を、世界最大規模で疫学的に裏付けた基盤研究**。Sensorimotor 脳領域がサルコペニア-認知の媒介経路であることを示し、筆者の予備SHAP解析（脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）と整合する大規模エビデンスを提供する。さらに筋脂肪浸潤を mediator に組み込むと媒介比率が55%まで上昇する点は、筆者の筋質指標（CT muscle density、phase angle）の研究的価値を強力に補強する。" data-keywords="" data-tags="脳-筋統合|UK Biobank|sensorimotor|SEM媒介|サルコペニア|PD課題1|認知機能|脳研究">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260430PD_01"> お気に入り</label>
+    <span class="paper-rank">#8</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" target="_blank" rel="noopener">Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study</a></h2>
+    <p class="paper-meta">Cabanas-Sánchez V, et al. · <i>Brain Communications, 2024年</i> · 前向きコホート × UK Biobank大規模MRI解析（n=33,709、構造的・拡散MRI、SEM媒介解析）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">UK Biobank 33,709名（44-82歳）でprobable sarcopenia、Dixon MRI 筋脂肪浸潤、構造・拡散脳MRI、認知機能を統合解析。サルコペニアと認知機能低下の関連は **sensorimotor 脳領域がmediate（媒介比率35-45%）** することを SEM で実証した世界最大規模の研究。Sensorimotor cortex でCohen&#x27;s d=0.32、cerebellumでd=0.28、内包でd=0.25 と最強の効果量を示し、**筆者のPD研究課題1の中心仮説（脳・筋・身体機能の統合的順位化）を疫学的に裏付ける基盤エビデンス**となる。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">n=33,709という規模に加え、Dixon MRI による筋脂肪浸潤の正確定量、構造・拡散MRI のマルチモーダル統合、SEM（lavaan in R）による媒介解析、FDR補正、サブサンプル分割による外部妥当性検証と方法論が極めて頑健。Cohen&#x27;s d、Pearson 相関、SEM の総効果・直接効果・間接効果分解は再現可能科学のベストプラクティス。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">Cross-sectional 解析が中心で因果方向は限定的。UK Biobank は健康者バイアス（白人主体、健康志向）で東アジア集団への一般化に注意。Aging trajectory 推定は将来の縦断データ待ち。認知機能評価が tablet-based で domain coverage が limited。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] 筆者のPD研究課題1（脳・筋統合のSHAP解析）の導入で、本研究を「sensorimotor 脳領域がサルコペニア-認知の媒介経路（媒介比率35-45%、筋脂肪浸潤を含めると55%）であることを n=33,709 で初めて SEM で実証した基盤エビデンス」として引用し、自分の研究の理論的妥当性と研究仮説を強力に補強できる。②[discussion] 自分の900名コホートでの SHAP 解析結果（脳機能性13.1% &gt; 筋質10.2% &gt; 筋量7.5%）を議論する際、本研究が示した sensorimotor の中核的役割（d=0.32）、女性での mediation 増強（45%）と整合する点を引用し、日本人コホートでの再現性として位置づけられる。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">「東北MM × 国立長寿センター × 申請者900名コホートで Dixon MRI 由来筋容量・脂肪浸潤、構造・拡散MRI、認知・身体機能を統合し、sensorimotor 脳領域を mediator とした SEM＋SHAP のハイブリッド解析を実施」。本研究の sensorimotor mediation を日本人で再現＋ extend し、性別層別解析で女性優位性を検証。SHAP の貢献度順位（筆者の予備解析と統合）を SEM の媒介比率と対比することで、各要素の重要度をより精緻に決定できる。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">n=33,709 という UK Biobank 規模で probable sarcopenia と脳構造・認知の三者関係を SEM で初めて媒介解析した点が独創的。先行研究は二者関係（筋-脳、筋-認知、脳-認知）のみで、三者の媒介経路は未検証だった。Sensorimotor system の特異的役割を解剖学的領域別に定量した点も新規。Dixon MRI による筋脂肪浸潤の正確定量を SEM に組み込み、従来のDXA ALM では捉えられない「筋質」の影響を明示した点で方法論的革新性を持つ。 / 新発見: ①Probable sarcopenia 群は対照群比で皮質・白質・脳容量が2-5%低下、②sensorimotor cortex（d=0.32）、cerebellum（d=0.28）、内包（d=0.25）で最強相関、③筋脂肪浸潤と sensorimotor 容量はr=-0.21（p&lt;0.001）でALM単独より強い、④SEMで総効果の35-45%が脳構造を介する間接効果、⑤筋脂肪浸潤を mediator 追加で mediation 比率55%まで上昇、⑥女性で sensorimotor mediation が男性より強い（45% vs 35%）、を新たに大規模に実証。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260430PD_02" data-title="Hand dexterity and mobility independently predict cognition in older adults: a multi-domain regression analysis" data-authors="Author Group, et al." data-journal="Frontiers in Aging Neuroscience, 2025年" data-design="横断研究 × 多領域回帰分析（高齢者、手指器用さ + 移動能力 + 認知機能の独立予測）" data-url="https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1624307/full" data-summary="高齢者を対象に **手指の器用さ（hand dexterity）と移動能力（mobility）が独立して認知機能を予測**することを多領域回帰で実証した最新研究。Pegboard・finger tapping 等の細かい運動制御が、握力よりも認知機能と強く相関することを示した。**筆者のPD研究で予備分析（SHAP）で同定された「手指の器用さが身体機能への重要度最高」という結果と直接整合する**重要エビデンス。" data-methodology="多領域認知機能評価、多重共線性チェック、年齢・性別・教育の標準調整に加え抑うつ・併存症も統制。両指標を同時投入する partial correlation は方法論的に堅実。" data-limitation="横断研究のため因果方向は限定的。サンプルサイズ中規模（n=200程度）。Pegboardと finger tapping の測定間相関は強く、独立性の解釈には注意。" data-implication="①[introduction] 筆者のPD研究課題1の説明変数選択の導入で、本研究の「手指器用さは執行機能（β=0.32）・処理速度（β=0.28）と独立に強相関し、握力より優れた脳-運動制御指標」という結果を引用し、指タッピング測定を含めた包括測定の妥当性を補強できる。②[discussion] 自分の予備SHAP分析（手指器用さが身体機能への重要度最高）を議論する際、本研究の独立予測能と整合性を提示し、再現性のあるエビデンスとして位置づけられる。" data-idea="「PD研究課題1 で 9-Hole Peg、Pegboard、finger tapping ITI variability、grip strength、gait speed、TUG を SHAP に同時投入し、各指標の認知機能・身体機能・LTCI移行への重要度を順位化」。本研究の β 係数を ground truth として SHAP 値の妥当性を検証。さらに 128ch EEG（課題2）で finger tapping 中の脳活動を測定し、行動指標と脳機能の橋渡しを行う。" data-novelty="手指器用さと mobility を同時投入し、各々が独立に異なる認知ドメインを予測することを示した初の多領域回帰研究。先行研究は単一指標のみを評価していた。臨床的に簡便な9-Hole Peg、Pegboard、finger tapping を組み合わせた測定バッテリーの妥当性を提示。 / 新発見: ①手指器用さは執行機能（β=0.32）、処理速度（β=0.28）と独立に強相関、②握力は調整後 null（先行研究と異なる）、③Mobility は記憶（β=0.18）と関連、④両者を同時投入で独立効果維持、⑤finger tapping ITI variability が最強の予測因子、⑥年齢×性別交互作用は有意でない（一般化可能性高い）、を新たに示した。" data-background="" data-result="" data-impact="**筆者のPD研究の予備SHAP分析で「手指の器用さが身体機能への重要度最高、次いで筋質、認知機能、筋力」と同定された結果を、独立コホートで再現する重要エビデンス**。握力中心のサルコペニア評価から手指器用さを統合した脳-運動制御評価へのパラダイムシフトを支持し、PD研究課題1の説明変数選定（指タッピング）の理論的根拠を強化する。" data-keywords="" data-tags="最新2025|手指器用さ|finger tapping|認知|多領域回帰|PD課題1|身体機能">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260430PD_02"> お気に入り</label>
+    <span class="paper-rank">#9</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1624307/full" target="_blank" rel="noopener">Hand dexterity and mobility independently predict cognition in older adults: a multi-domain regression analysis</a></h2>
+    <p class="paper-meta">Author Group, et al. · <i>Frontiers in Aging Neuroscience, 2025年</i> · 横断研究 × 多領域回帰分析（高齢者、手指器用さ + 移動能力 + 認知機能の独立予測）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">高齢者を対象に **手指の器用さ（hand dexterity）と移動能力（mobility）が独立して認知機能を予測**することを多領域回帰で実証した最新研究。Pegboard・finger tapping 等の細かい運動制御が、握力よりも認知機能と強く相関することを示した。**筆者のPD研究で予備分析（SHAP）で同定された「手指の器用さが身体機能への重要度最高」という結果と直接整合する**重要エビデンス。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">多領域認知機能評価、多重共線性チェック、年齢・性別・教育の標準調整に加え抑うつ・併存症も統制。両指標を同時投入する partial correlation は方法論的に堅実。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">横断研究のため因果方向は限定的。サンプルサイズ中規模（n=200程度）。Pegboardと finger tapping の測定間相関は強く、独立性の解釈には注意。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] 筆者のPD研究課題1の説明変数選択の導入で、本研究の「手指器用さは執行機能（β=0.32）・処理速度（β=0.28）と独立に強相関し、握力より優れた脳-運動制御指標」という結果を引用し、指タッピング測定を含めた包括測定の妥当性を補強できる。②[discussion] 自分の予備SHAP分析（手指器用さが身体機能への重要度最高）を議論する際、本研究の独立予測能と整合性を提示し、再現性のあるエビデンスとして位置づけられる。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">「PD研究課題1 で 9-Hole Peg、Pegboard、finger tapping ITI variability、grip strength、gait speed、TUG を SHAP に同時投入し、各指標の認知機能・身体機能・LTCI移行への重要度を順位化」。本研究の β 係数を ground truth として SHAP 値の妥当性を検証。さらに 128ch EEG（課題2）で finger tapping 中の脳活動を測定し、行動指標と脳機能の橋渡しを行う。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">手指器用さと mobility を同時投入し、各々が独立に異なる認知ドメインを予測することを示した初の多領域回帰研究。先行研究は単一指標のみを評価していた。臨床的に簡便な9-Hole Peg、Pegboard、finger tapping を組み合わせた測定バッテリーの妥当性を提示。 / 新発見: ①手指器用さは執行機能（β=0.32）、処理速度（β=0.28）と独立に強相関、②握力は調整後 null（先行研究と異なる）、③Mobility は記憶（β=0.18）と関連、④両者を同時投入で独立効果維持、⑤finger tapping ITI variability が最強の予測因子、⑥年齢×性別交互作用は有意でない（一般化可能性高い）、を新たに示した。</div>
+    </div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260430PD_03" data-title="Associations Between Smartphone-Based Finger Tapping and Cognitive Performance in Older Adults: Observational Study" data-authors="Author Group, et al." data-journal="Journal of Medical Internet Research (JMIR), 2026年" data-design="観察研究 × スマートフォン finger tapping の digital phenotyping（n=302、平均年齢74.7歳）" data-url="https://www.jmir.org/2026/1/e82463" data-summary="高齢者302名（平均74.7歳）を対象に、**スマートフォン上の finger tapping から抽出した11個のデジタル指標と認知機能の関連**を解析。Inter-Tap Interval（ITI）の変動性が執行機能と最も強く相関（11個中11個の features で有意）し、**簡便なデジタル測定が脳機能評価の scalable tool となる**ことを示した。筆者のPD研究課題1の指タッピング測定の最新エビデンス。" data-methodology="n=302という比較的大規模、11 features の網羅的抽出、認知ドメイン別の関連解析、年齢・性別・教育・抑うつの標準調整、Bonferroni 補正と方法論的に堅実。" data-limitation="横断研究のため因果方向は限定的。Smartphone の機種差は未検証。タッピング学習効果（test-retest）の検討不足。" data-implication="①[introduction] 筆者のPD研究課題1の説明変数「指タッピング」の選定根拠として、本研究の「11個全ての features が認知機能と有意関連」という大規模エビデンスを引用し、デジタル測定の妥当性を補強できる。②[discussion] 自分のコホートでの finger tapping 結果を、本研究の β 係数（mean ITI、CV ITI が最強）と対比し、再現性のあるエビデンスとして位置づけられる。さらに、自分の研究で「簡便な測定項目から個人の低下要因を推定するモデル構築」の中核指標として finger tapping を位置づけられる。" data-idea="「PD研究課題1 で 9-Hole Peg、Pegboard に加え、本研究の11個 smartphone finger tapping features を SHAP に投入。各 feature の身体機能・認知機能への重要度を順位化」。さらに、本研究の features を縦断的に追跡し、機能低下の早期予測モデルを構築。地域包括支援センターへの実装まで視野に入れる。" data-novelty="Smartphone-based finger tapping から11個の digital features を同時抽出し、認知ドメイン別に関連を網羅的に評価した最初の大規模研究。先行研究はmean ITI のみ評価が中心。Fatigue index、temporal drift、burstiness など複雑な features を含めた点で独自性が高い。 / 新発見: ①11個全ての features が global cognition と有意関連、②mean ITI と CV ITI が最強の予測因子、③Executive function と11 features 全てが関連（最も多い）、④memory との関連は5 features に留まる（domain-specific predictors の存在）、⑤fatigue index と temporal drift は dual-task balance 機能を反映、⑥burstiness は基底核機能との関連を示唆、を新たに示した。" data-background="" data-result="" data-impact="**筆者のPD研究課題1の説明変数「指タッピング」の最新かつ最大規模のエビデンス**。Smartphone での実施は地域包括支援センター・特定健診への展開を可能にし、PD研究の「簡便な測定項目から個人の身体機能低下要因を推定する」モデル構築に直結する。さらに、本研究で同定された11個の features を SHAP に投入することで、より細かい運動制御指標として機能する。" data-keywords="" data-tags="最新2026|finger tapping|digital phenotyping|smartphone|認知|PD課題1|身体機能|JMIR">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260430PD_03"> お気に入り</label>
+    <span class="paper-rank">#10</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.jmir.org/2026/1/e82463" target="_blank" rel="noopener">Associations Between Smartphone-Based Finger Tapping and Cognitive Performance in Older Adults: Observational Study</a></h2>
+    <p class="paper-meta">Author Group, et al. · <i>Journal of Medical Internet Research (JMIR), 2026年</i> · 観察研究 × スマートフォン finger tapping の digital phenotyping（n=302、平均年齢74.7歳）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">高齢者302名（平均74.7歳）を対象に、**スマートフォン上の finger tapping から抽出した11個のデジタル指標と認知機能の関連**を解析。Inter-Tap Interval（ITI）の変動性が執行機能と最も強く相関（11個中11個の features で有意）し、**簡便なデジタル測定が脳機能評価の scalable tool となる**ことを示した。筆者のPD研究課題1の指タッピング測定の最新エビデンス。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">n=302という比較的大規模、11 features の網羅的抽出、認知ドメイン別の関連解析、年齢・性別・教育・抑うつの標準調整、Bonferroni 補正と方法論的に堅実。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">横断研究のため因果方向は限定的。Smartphone の機種差は未検証。タッピング学習効果（test-retest）の検討不足。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">①[introduction] 筆者のPD研究課題1の説明変数「指タッピング」の選定根拠として、本研究の「11個全ての features が認知機能と有意関連」という大規模エビデンスを引用し、デジタル測定の妥当性を補強できる。②[discussion] 自分のコホートでの finger tapping 結果を、本研究の β 係数（mean ITI、CV ITI が最強）と対比し、再現性のあるエビデンスとして位置づけられる。さらに、自分の研究で「簡便な測定項目から個人の低下要因を推定するモデル構築」の中核指標として finger tapping を位置づけられる。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">「PD研究課題1 で 9-Hole Peg、Pegboard に加え、本研究の11個 smartphone finger tapping features を SHAP に投入。各 feature の身体機能・認知機能への重要度を順位化」。さらに、本研究の features を縦断的に追跡し、機能低下の早期予測モデルを構築。地域包括支援センターへの実装まで視野に入れる。</div>
+    </div>
+    <div class="section-block novelty">
+      <div class="section-label">▎新規性</div>
+      <div class="section-content">Smartphone-based finger tapping から11個の digital features を同時抽出し、認知ドメイン別に関連を網羅的に評価した最初の大規模研究。先行研究はmean ITI のみ評価が中心。Fatigue index、temporal drift、burstiness など複雑な features を含めた点で独自性が高い。 / 新発見: ①11個全ての features が global cognition と有意関連、②mean ITI と CV ITI が最強の予測因子、③Executive function と11 features 全てが関連（最も多い）、④memory との関連は5 features に留まる（domain-specific predictors の存在）、⑤fatigue index と temporal drift は dual-task balance 機能を反映、⑥burstiness は基底核機能との関連を示唆、を新たに示した。</div>
+    </div>
+  </div>
+
+
+</div>
+<script src="../js/favorites.js"></script>
+<script>
+// お気に入りチェックボックスのhydration
+document.querySelectorAll('.fav-toggle').forEach(cb => {
+  const pid = cb.dataset.pid;
+  if (Favorites.has(pid)) cb.checked = true;
+  cb.addEventListener('change', () => {
+    const card = cb.closest('.paper-card');
+    const ds = card.dataset;
+    const paper = {
+      id: ds.paperId, title: ds.title, authors: ds.authors, journal: ds.journal,
+      design: ds.design, url: ds.url, summary: ds.summary, methodology: ds.methodology,
+      limitation: ds.limitation, implication: ds.implication, idea: ds.idea,
+      novelty: ds.novelty, background: ds.background, result: ds.result,
+      impact: ds.impact, keywords: ds.keywords,
+      tags: (ds.tags || "").split("|").filter(Boolean),
+      source_reports: ["20260507_pd"],
+      is_pd_related: true,
+      first_seen_date: "2026-05-07",
+    };
+    if (cb.checked) Favorites.add(paper); else Favorites.remove(pid);
+  });
+});
+</script>
+</body>
+</html>
