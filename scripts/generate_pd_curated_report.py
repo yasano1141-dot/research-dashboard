@@ -155,30 +155,51 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic Pro
 .section-block .section-label { display: inline-block; font-size: 12px; font-weight: 700;
   letter-spacing: 0.04em; margin-bottom: 6px; }
 .section-block .section-content { font-size: 14px; }
-.section-block.summary    { color: #3182ce; } .section-block.summary .section-label { color: #3182ce; }
-.section-block.overview   { color: #718096; } .section-block.overview .section-label { color: #718096; }
-.section-block.importance { color: #d69e2e; } .section-block.importance .section-label { color: #d69e2e; }
-.section-block.method     { color: #38a169; } .section-block.method .section-label { color: #38a169; }
-.section-block.limit      { color: #c53030; } .section-block.limit .section-label { color: #c53030; }
-.section-block.implication{ color: #805ad5; } .section-block.implication .section-label { color: #805ad5; }
-.section-block.idea       { color: #319795; } .section-block.idea .section-label { color: #319795; }
-.section-block.novelty    { color: #805ad5; } .section-block.novelty .section-label { color: #805ad5; }
-.section-block .section-content { color: #0f172a; }
+.section-block.summary     { color: #3182ce; } .section-block.summary .section-label     { color: #3182ce; }
+.section-block.overview    { color: #718096; } .section-block.overview .section-label    { color: #718096; }
+.section-block.importance  { color: #d69e2e; } .section-block.importance .section-label  { color: #d69e2e; }
+.section-block.originality { color: #805ad5; } .section-block.originality .section-label { color: #805ad5; }
+.section-block.discovery   { color: #16a34a; } .section-block.discovery .section-label   { color: #16a34a; }
+.section-block.method      { color: #38a169; } .section-block.method .section-label      { color: #38a169; }
+.section-block.limit       { color: #c53030; } .section-block.limit .section-label       { color: #c53030; }
+.section-block.citation    { color: #805ad5; } .section-block.citation .section-label    { color: #805ad5; }
+.section-block.implication { color: #805ad5; } .section-block.implication .section-label { color: #805ad5; }
+.section-block.idea        { color: #319795; } .section-block.idea .section-label        { color: #319795; }
+.section-block .section-content { color: #0f172a; line-height: 1.8; }
+.tag-list { margin-top: 12px; font-size: 11px; color: #64748b; }
+.tag-list .tag { display: inline-block; background: #f1f5f9; padding: 2px 8px; border-radius: 999px; margin-right: 4px; }
 .fav-checkbox { float: right; font-size: 13px; color: #475569; cursor: pointer; user-select: none; }
 .fav-checkbox input { vertical-align: middle; margin-right: 4px; }
 """
 
 
 SECTION_DEFS = [
-    ("summary",     "▎一言要約",   "summary"),
-    ("overview",    "▎研究概要",   "overview"),
-    ("importance",  "▎重要な点",   "importance"),
-    ("methodology", "▎方法論評価", "method"),
-    ("limitation",  "▎限界",       "limit"),
-    ("implication", "▎研究への示唆", "implication"),
-    ("idea",        "▎研究アイデア", "idea"),
-    ("novelty",     "▎新規性",     "novelty"),
+    ("summary",     "▎一言要約",                "summary"),
+    ("overview",    "▎研究概要",                "overview"),
+    ("importance",  "▎重要な点",                "importance"),
+    ("originality", "▎オリジナリティ（独自性）", "originality"),
+    ("discovery",   "▎新発見項目（新しく分かったこと）", "discovery"),
+    ("methodology", "▎方法論評価",              "method"),
+    ("limitation",  "▎限界",                    "limit"),
+    ("citation",    "▎どんな引用に使えるか",    "citation"),
+    ("implication", "▎研究への示唆",            "implication"),
+    ("idea",        "▎研究アイデア",            "idea"),
 ]
+
+
+def _format_discovery(text: str) -> str:
+    """新発見項目を①②③形式に整形（既に①などがあれば改行で分割表示）。"""
+    if not text:
+        return ""
+    # ①②③④⑤⑥⑦⑧⑨⑩ を各行頭に
+    import re
+    # 既に①等が含まれているかチェック
+    if re.search(r'[①-⑩]', text):
+        # 分割：①の前で改行
+        parts = re.split(r'(?=[①-⑩])', text)
+        return "<br>".join(html.escape(p.strip()) for p in parts if p.strip())
+    # 番号なしテキストはそのまま
+    return html.escape(text)
 
 
 def render_paper_card(rank: int, paper: dict) -> str:
@@ -215,10 +236,15 @@ def render_paper_card(rank: int, paper: dict) -> str:
         val = paper.get(field, "")
         if not val or not str(val).strip():
             continue
+        # discovery は①②③形式に整形
+        if field == "discovery":
+            content_html = _format_discovery(str(val))
+        else:
+            content_html = html.escape(str(val))
         sections_html += f"""
     <div class="section-block {css_class}">
       <div class="section-label">{label}</div>
-      <div class="section-content">{html.escape(str(val))}</div>
+      <div class="section-content">{content_html}</div>
     </div>"""
 
     meta_parts = []
@@ -226,6 +252,13 @@ def render_paper_card(rank: int, paper: dict) -> str:
     if journal: meta_parts.append(f"<i>{journal}</i>")
     if design: meta_parts.append(design)
     meta_line = " · ".join(meta_parts)
+
+    tags = paper.get("tags", []) or []
+    tags_html = ""
+    if tags:
+        tags_html = '<div class="tag-list">' + "".join(
+            f'<span class="tag">{html.escape(t)}</span>' for t in tags
+        ) + '</div>'
 
     return f"""
   <div class="paper-card" {data_attrs}>
@@ -235,6 +268,7 @@ def render_paper_card(rank: int, paper: dict) -> str:
     <h2 class="paper-title"><a href="{url}" target="_blank" rel="noopener">{title}</a></h2>
     <p class="paper-meta">{meta_line}</p>
     {sections_html}
+    {tags_html}
   </div>
 """
 
@@ -297,6 +331,33 @@ document.querySelectorAll('.fav-toggle').forEach(cb => {{
 # Main
 # ============================================================
 
+def _merge_curated_content(paper: dict) -> dict:
+    """pd_curated_content.CONTENT があればその論文をリッチコンテンツでoverlayする。"""
+    try:
+        from pd_curated_content import CONTENT
+    except ImportError:
+        return paper
+
+    pid = paper.get("id")
+    rich = CONTENT.get(pid)
+    if not rich:
+        return paper
+
+    enriched = dict(paper)
+    # rich側で値があれば既存をoverwrite。空の値はスキップ
+    for k, v in rich.items():
+        if v in (None, ""):
+            continue
+        if k == "tags" and isinstance(v, list):
+            # マージ：rich側のタグをユニーク化して優先
+            existing_tags = enriched.get("tags") or []
+            merged = list(dict.fromkeys(list(v) + list(existing_tags)))
+            enriched["tags"] = merged
+        else:
+            enriched[k] = v
+    return enriched
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.now().strftime("%Y%m%d"),
@@ -310,20 +371,36 @@ def main():
     if len(selected) < 10:
         print(f"⚠️  PD関連論文が10本未満（{len(selected)}本のみ）。続行します。")
 
+    # Merge rich curated content (pd_curated_content.py) を各論文に適用
+    selected_enriched = [_merge_curated_content(p) for p in selected]
+
     # Generate HTML
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     report_id = f"{args.date}_pd"
     out_path = REPORTS_DIR / f"{report_id}.html"
-    html_content = render_report(args.date, selected)
+    html_content = render_report(args.date, selected_enriched)
     out_path.write_text(html_content, encoding="utf-8")
     print(f"✅ wrote {out_path}")
 
-    # Update papers.json: add this report id to source_reports for selected papers
-    selected_ids = {p["id"] for p in selected}
+    # Update papers.json: rich content も書き戻す（次回サイト全体で参照可能に）
+    selected_ids = {p["id"] for p in selected_enriched}
     paper_index = {p["id"]: p for p in papers}
+    enriched_index = {p["id"]: p for p in selected_enriched}
     for pid in selected_ids:
         if pid in paper_index:
-            srcs = paper_index[pid].setdefault("source_reports", [])
+            # rich contentで既存を上書き（空値はスキップ）
+            base = paper_index[pid]
+            rich = enriched_index[pid]
+            for k, v in rich.items():
+                if v in (None, ""):
+                    continue
+                if k == "source_reports":
+                    continue  # 別途処理
+                if k == "tags" and isinstance(v, list):
+                    base[k] = list(dict.fromkeys(v + (base.get(k) or [])))
+                else:
+                    base[k] = v
+            srcs = base.setdefault("source_reports", [])
             if report_id not in srcs:
                 srcs.append(report_id)
     PAPERS_PATH.write_text(json.dumps(papers, ensure_ascii=False, indent=2), encoding="utf-8")

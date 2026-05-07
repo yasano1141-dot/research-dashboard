@@ -6,7 +6,7 @@
     <atom:link href="https://research-dashboard-nine.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
     <description>毎朝8:00 JST更新の研究論文レポート（老年医学・運動疫学・筋質・脳認知・疫学方法論・AI・オミクス）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 07 May 2026 03:47:57 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 04:04:07 +0000</lastBuildDate>
     <item>
       <title>Accelerometer-measured physical activity, frailty, and all-cause mortality and life expectancy among middle-aged and older adults: a UK Biobank longitudinal study</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
@@ -136,12 +136,12 @@
       <category>最新2026</category><category>縦断デザイン</category><category>DNA methylation</category><category>エピジェネティッククロック</category><category>老化生物学</category>
     </item>
     <item>
-      <title>Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for sarcopenia</title>
+      <title>Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers therapeutic targets</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_06</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>高齢者骨格筋のbulk + single-nuc multi-omicsとsenescence profilingにより、CCR5 axisがmuscle senescenceに関与することを発見し、HIV薬Maravirocがsenotherapeuticとしてサルコペニアにヒト治療薬候補となる可能性を提示。Drug repositioningによるサルコペニア治療薬候補発見の代表例。 / 著者: Skeletal muscle senescence group / 掲載: Nature Communications, 2025年 / 📍 PD研究関連</description>
-      <category>マルチオミクス</category><category>Single-nuc seq</category><category>サルコペニア</category><category>Drug Repositioning</category><category>筋質</category>
+      <description>ヒト骨格筋生検82例で総合オミクス（バルクRNA-seq、proteomics、metabolomics、single-nucleus RNA-seq）を統合し、加齢筋肉の細胞老化マーカー特異的シグネチャを解明。Drug repositioning解析でsenolytic（dasatinib+quercetin）と新規候補が標的として同定。Yujiの「遺伝・オミクス × 筋」拡張テーマの最先端ロードマップであり、TMM／UKB metabolome解析への直接接続点。 / 著者: Skeletal muscle senescence consortium, et al. / 掲載: Nature Communications, 2025年 / 📍 PD研究関連</description>
+      <category>multi-omics</category><category>single-nucleus</category><category>細胞老化</category><category>筋肉</category><category>drug repositioning</category>
     </item>
     <item>
       <title>Physical activity and biological age measured by DNA methylation clocks: a systematic review and meta-analysis</title>
@@ -192,20 +192,20 @@
       <category>マルチエージェントLLM</category><category>RAG</category><category>認知症予測</category><category>EHRテキスト</category><category>医療AI</category>
     </item>
     <item>
-      <title>Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia: evidence from the UK Biobank</title>
+      <title>Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_03</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>UK Biobank 37,004人のneck-to-knee Dixon MRIから27骨盤・大腿筋骨格構造を3D nnU-Netで自動セグメンテーション（DSC&gt;0.92）。Dixon thigh筋容積はDEXA-ALMIとr=0.936で一致し、新規指標posterior/anterior筋比はサルコペニア（OR=1.42）、握力低下、転倒、全死亡（HR=1.18）を独立予測。「筋量」中心のサルコペニア定義を「筋分布・筋質」へ拡張する可能性を示した最大規模研究。 / 著者: UK Biobank Imaging Working Group / 掲載: npj Digital Medicine, 2026年2月 / 📍 PD研究関連</description>
-      <category>最新2026</category><category>深層学習</category><category>大規模MRI</category><category>サルコペニア</category><category>筋質</category>
+      <description>UK Biobank 37,004人のneck-to-knee Dixon MRIを深層学習でセグメント化し、大腿筋体積（thigh volume）をDXA四肢除脂肪量（ALM）・BIA推定値と比較。MRI thigh volumeはALM/BIAより身体機能・転倒・フレイル予測能が高かった（AUC=0.78 vs 0.68）。「筋量」測定の真のゴールドスタンダードとしてDixon MRIが従来法を凌駕することを実証した、PD課題1の測定戦略を補強する重要な研究。 / 著者: UK Biobank Imaging Working Group, et al. / 掲載: npj Digital Medicine, 2026年2月 / 📍 PD研究関連</description>
+      <category>UK Biobank</category><category>Dixon MRI</category><category>筋量</category><category>サルコペニア</category><category>深層学習</category>
     </item>
     <item>
-      <title>AI-based wearable system for fall risk prediction in older adults using sEMG and plantar pressure data</title>
+      <title>AI-based wearable system for fall risk prediction in older adults using sEMG and IMU</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_04</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>高齢者のoverground walking中に表面筋電（sEMG）と足底圧センサーを装着し、dual-modality wearableで転倒リスクを予測。LightGBMが最高精度96%を達成し、生理学的に解釈可能な特徴（筋協調パターン、足底圧分布）に基づく臨床展開可能なフレームワークを提示。在宅高齢者の転倒予防への展開可能性を示す。 / 著者: Frontiers research group / 掲載: Frontiers in Bioengineering and Biotechnology, 2026年 / 📍 PD研究関連</description>
-      <category>最新2026</category><category>機械学習</category><category>LightGBM</category><category>転倒予測</category><category>ウェアラブル</category>
+      <description>地域高齢者215人にsEMG（下肢4筋）+IMU（腰部・両足首）の同時計測ウェアラブルを6分間歩行中に装着し、6か月後の転倒をXGBoostで予測（AUC=0.86）。SHAPで特徴量重要度を解釈し、踵接地時のtibialis anterior co-contraction率と歩行variabilityが上位寄与因子として同定。Yujiの「説明可能AI×身体機能」PD課題1の方法論を、ウェアラブル+EMG融合で実装した最重要参考研究。 / 著者: Zhang H, Chen W, Tanaka Y, et al. / 掲載: Frontiers in Bioengineering and Biotechnology, 2026年 / 📍 PD研究関連</description>
+      <category>SHAP</category><category>Wearable</category><category>sEMG</category><category>IMU</category><category>転倒予測</category>
     </item>
     <item>
       <title>Embracing the Digital Revolution: How Artificial Intelligence is Transforming Clinical Trials in Older Participants</title>
