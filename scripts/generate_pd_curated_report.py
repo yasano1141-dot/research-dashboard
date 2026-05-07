@@ -33,11 +33,76 @@ def richness_score(p: dict) -> int:
     return sum(1 for f in fields if p.get(f) and str(p[f]).strip())
 
 
+def _load_pd_keywords():
+    """themes.json から PD関連の高重み・中重みキーワードを取得。"""
+    themes_path = REPO / "scripts" / "themes.json"
+    themes = json.loads(themes_path.read_text(encoding="utf-8"))
+    pd = themes.get("pd", {})
+    ck = pd.get("core_keywords", {})
+    return ck.get("high_weight", []), ck.get("middle_weight", [])
+
+
+def relevance_score(p: dict, high_kw: list[str], mid_kw: list[str]) -> int:
+    """PD研究計画への接続度スコア。high=+3、middle=+1、tagsはhighと同等の重み。"""
+    haystack = " ".join([
+        p.get("title", ""), p.get("summary", ""), p.get("overview", ""),
+        p.get("methodology", ""), p.get("implication", ""), p.get("idea", ""),
+        p.get("novelty", ""), p.get("background", ""), p.get("result", ""),
+        p.get("impact", ""), p.get("keywords", ""),
+        " ".join(p.get("tags", []) or []),
+    ]).lower()
+
+    score = 0
+    matched_high = []
+    for kw in high_kw:
+        if kw.lower() in haystack:
+            score += 3
+            matched_high.append(kw)
+    for kw in mid_kw:
+        if kw.lower() in haystack:
+            score += 1
+    return score, matched_high
+
+
+def _normalize_title(t: str) -> str:
+    """重複検出用：タイトルを大小文字・記号無視で正規化。"""
+    import re
+    return re.sub(r'[^a-z0-9]', '', (t or '').lower())
+
+
 def select_top_pd_papers(papers: list[dict], n: int = 10) -> list[dict]:
+    high_kw, mid_kw = _load_pd_keywords()
     pd_papers = [p for p in papers if p.get("is_pd_related")]
-    # richnessでソート、tiebreaker は first_seen_date 新しい順
-    pd_papers.sort(key=lambda p: (-richness_score(p), -(_date_key(p))))
-    return pd_papers[:n]
+
+    # スコアリング
+    scored = []
+    for idx, p in enumerate(pd_papers):
+        rel, matched = relevance_score(p, high_kw, mid_kw)
+        rich = richness_score(p)
+        composite = rel * 1000 + rich * 10 + min(_date_key(p), 99999999) // 10000
+        scored.append((composite, idx, p, rel, matched))
+
+    scored.sort(key=lambda x: (-x[0], x[1]))
+
+    # 重複除去（タイトルベース）
+    seen_titles = set()
+    selected = []
+    for _, _, p, rel, matched in scored:
+        norm = _normalize_title(p.get("title", ""))
+        if norm in seen_titles:
+            continue
+        seen_titles.add(norm)
+        selected.append((p, rel, matched))
+        if len(selected) >= n:
+            break
+
+    # 採点ログを表示
+    print("\n=== Relevance scoring (top 10) ===")
+    for i, (p, rel, matched) in enumerate(selected, 1):
+        print(f"  {i:2d}. score={rel:3d}  match={matched[:3]}  {p['title'][:60]}")
+    print()
+
+    return [p for p, _, _ in selected]
 
 
 def _date_key(p: dict) -> int:

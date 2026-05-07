@@ -108,22 +108,50 @@
   },
 
   "pd": {
-    "_comment": "PD研究専用枠（曜日に依存せず、ユーザーが手動で起動した時に生成）。10本すべてがPD研究計画関連。",
+    "_comment": "PD研究専用枠（曜日に依存せず、手動で起動した時に生成）。10本すべてがYujiのPD計画＋拡張テーマに強く該当。詳細は references/research-plan/research-plan-extended.md 参照。",
     "jp": "PD研究",
     "en": "pd-research",
     "short": "PD研究",
     "color": "#be123c",
     "all_papers_pd_relevant": true,
+    "research_plan_doc": "references/research-plan/research-plan-extended.md",
     "pubmed_queries": [
-      "(\"brain-muscle\" OR \"brain-body\" OR \"motor cortex\") AND (\"older adults\" OR \"aging\" OR \"physical function\") AND 2026",
-      "(\"EEG\" OR \"electroencephalography\" OR \"fNIRS\") AND (\"exercise\" OR \"motor task\" OR \"physical activity\" OR \"gait\") AND 2026",
-      "(\"SHAP\" OR \"explainable AI\" OR \"feature importance\") AND (\"brain\" OR \"physical function\" OR \"cognition\" OR \"aging\") AND 2026",
-      "(\"brain age\" OR \"neural correlates\" OR \"cognitive function\") AND (\"muscle quality\" OR \"sarcopenia\" OR \"body composition\") AND 2026",
-      "(\"hippocampus\" OR \"white matter\" OR \"gray matter\") AND (\"physical function\" OR \"gait\" OR \"motor\") AND (\"older adults\" OR \"aging\") AND 2026",
-      "(\"echo intensity\" OR \"muscle thickness\" OR \"intramuscular adipose\") AND (\"cognitive\" OR \"brain\" OR \"function\") AND 2026"
+      "(\"echo intensity\" OR \"phase angle\" OR \"muscle quality\" OR \"intramuscular adipose tissue\" OR \"extracellular water\") AND (\"physical function\" OR \"cognition\" OR \"brain\" OR \"frailty\") AND 2026",
+      "(\"brain-muscle\" OR \"brain-body\" OR \"sarcopenia\") AND (\"cognitive function\" OR \"brain structure\" OR \"hippocampus\" OR \"white matter\") AND (\"older adults\" OR \"aging\") AND 2026",
+      "(\"EEG\" OR \"electroencephalography\" OR \"fNIRS\" OR \"motor cortex\") AND (\"exercise\" OR \"motor task\" OR \"gait\" OR \"walking\") AND (\"older adults\" OR \"aging\") AND 2026",
+      "(\"transcranial direct current stimulation\" OR \"tDCS\" OR \"tACS\" OR \"TMS\" OR \"non-invasive brain stimulation\") AND (\"physical function\" OR \"motor\" OR \"gait\" OR \"balance\") AND 2026",
+      "(\"SHAP\" OR \"explainable AI\" OR \"interpretable machine learning\" OR \"feature importance\") AND (\"physical function\" OR \"frailty\" OR \"sarcopenia\" OR \"cognition\") AND 2026",
+      "(\"GWAS\" OR \"polygenic\" OR \"PRS\" OR \"Mendelian randomization\") AND (\"sarcopenia\" OR \"muscle\" OR \"physical function\" OR \"frailty\") AND 2026",
+      "(\"DNA methylation\" OR \"epigenetic clock\" OR \"GrimAge\" OR \"DunedinPACE\") AND (\"physical function\" OR \"frailty\" OR \"healthspan\" OR \"disability\") AND 2026",
+      "(\"UK Biobank\" OR \"Tohoku Medical Megabank\" OR \"All of Us\") AND (\"physical function\" OR \"sarcopenia\" OR \"brain\" OR \"muscle quality\") AND 2026",
+      "(\"proteomics\" OR \"metabolomics\" OR \"multi-omics\" OR \"transcriptomics\") AND (\"sarcopenia\" OR \"muscle\" OR \"frailty\" OR \"physical function\") AND 2026",
+      "(\"24-hour movement\" OR \"compositional data\" OR \"accelerometer\") AND (\"physical function\" OR \"muscle\" OR \"cognition\" OR \"sarcopenia\") AND (\"older adults\" OR \"aging\") AND 2026"
     ],
-    "biorxiv_categories": ["neuroscience", "physiology"],
-    "priority_journals": ["NeuroImage", "Cerebral Cortex", "Neurobiology of Aging", "GeroScience", "Brain Stimulation", "Nature Aging", "JAMA Neurology"]
+    "biorxiv_categories": ["neuroscience", "physiology", "epidemiology", "genetics", "genomics"],
+    "priority_journals": [
+      "Nature Aging", "Lancet Healthy Longevity", "NeuroImage", "Cerebral Cortex",
+      "Neurobiology of Aging", "GeroScience", "Brain Stimulation", "JAMA Neurology",
+      "J Cachexia Sarcopenia Muscle", "Age and Ageing", "Nature Genetics", "Nature Medicine"
+    ],
+    "core_keywords": {
+      "_comment": "選定スコアリング用。high_weightキーは1論文に1つでも含まれれば+3点、middle_weightは+1点。",
+      "high_weight": [
+        "echo intensity", "phase angle", "muscle quality", "intramuscular adipose",
+        "ECW/ICW", "extracellular water", "SHAP", "explainable AI", "interpretable",
+        "tDCS", "tACS", "TMS", "non-invasive brain stimulation", "transcranial",
+        "EEG", "fNIRS", "motor cortex", "brain-muscle", "brain-body", "neuromuscular",
+        "Mendelian randomization", "polygenic", "epigenetic clock", "GrimAge",
+        "DunedinPACE", "UK Biobank", "Tohoku Medical Megabank", "TMM",
+        "compositional data", "CoDA", "feature importance"
+      ],
+      "middle_weight": [
+        "muscle thickness", "DXA", "sarcopenia", "frailty", "physical function",
+        "gait", "walking", "balance", "fall", "cognitive function", "hippocampus",
+        "white matter", "gray matter", "brain volume", "GWAS", "SNP", "polygenic risk",
+        "DNA methylation", "proteomics", "metabolomics", "transcriptomics", "biobank",
+        "older adults", "elderly", "aging", "longitudinal", "cohort"
+      ]
+    }
   },
 
   "_pd_keywords": {

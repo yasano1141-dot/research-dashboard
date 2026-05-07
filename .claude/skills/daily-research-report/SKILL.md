@@ -55,13 +55,14 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 スキル実行前に **必ず** 以下を読むこと：
 
 1. `references/critical-rules.md` — 🔴 絶対遵守ルール（最優先）
-2. `references/pd-research-plan.md` — Yuji の PD 研究計画（毎日2本以上の選定基準）
-3. `references/themes-by-day.md` — 曜日別テーマ
-4. `references/priority-journals.md` — 優先ジャーナルと検索戦略
-5. `references/researcher-profile.md` — Yuji の研究プロフィール
-6. `references/output-spec-regular.md` — 通常レポートの詳細仕様（10セクション）
-7. `references/file-naming.md` — ファイル命名規則とフォルダ構造
-8. `references/website-update-spec.md` — ウェブサイト連携仕様（papers.json / reports.json 追記）
+2. **`references/research-plan/research-plan-extended.md` — 🔴 Yuji の PD 研究計画（PD申請書原本＋遺伝・オミクス拡張版）。PD研究テーマでは特にこれが正典**
+3. `references/pd-research-plan.md` — 旧版（簡易・参考扱い）
+4. `references/themes-by-day.md` — 曜日別テーマ
+5. `references/priority-journals.md` — 優先ジャーナルと検索戦略
+6. `references/researcher-profile.md` — Yuji の研究プロフィール
+7. `references/output-spec-regular.md` — 通常レポートの詳細仕様（10セクション）
+8. `references/file-naming.md` — ファイル命名規則とフォルダ構造
+9. `references/website-update-spec.md` — ウェブサイト連携仕様（papers.json / reports.json 追記）
 
 ### Step 2: 今日の曜日テーマを確認
 
@@ -73,11 +74,29 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 - テーマ: PD研究（jp: "PD研究", en: "pd-research", color: #be123c）
 - ファイル名: `docs/reports/{YYYYMMDD}_pd.html`
 - reports.json の weekday: "pd"、theme_jp: "PD研究"、theme_en: "pd-research"、report_type: "regular"
-- 検索式: `scripts/themes.json` の `pd` エントリ参照（脳-身体機能・EEG・SHAP・筋質と認知）
-- **10本すべて** がPD研究計画関連（通常曜日の「2本以上PD」ルールではなく、全10本がPD関連必須）
-- 全カードに `<span class="task-tag pd">📍 PD研究</span>` バッジを付ける（10本×PDタグ）
+- 検索式: `scripts/themes.json` の `pd` エントリ参照（10種類のクエリ）
+- **必読**: `references/research-plan/research-plan-extended.md` を最初に読む
+- **10本すべて** がPD計画＋拡張テーマに強く該当（曖昧該当・関連薄は除外）
+- 全カードに `<span class="task-tag pd">📍 PD研究</span>` バッジ（10本×PDタグ）
+- 各論文の **研究への示唆** には「PD計画の課題1／2／3 または 拡張テーマ（遺伝・オミクス・biobank等）のどれに接続するか」を必ず明記
+- 各論文の **研究アイデア** には「Yujiのデータ／TMM／UK Biobankで再現・拡張する具体案」を必ず明記
 - 木曜の `_PD研究特化.html`（thursday_pd）とは別物。PD専用枠は曜日に依存しない独立カテゴリ
 - `<body data-source-theme="pd-research">` 必須
+
+#### 選定優先軸（research-plan-extended.md より）
+**コア軸（PD申請書）**:
+- 脳構造／機能／脳波 × 身体機能・運動・歩行
+- 筋質（echo intensity・phase angle・水分分画・筋間脂肪）× 身体機能・認知
+- 説明可能AI（SHAP）× 高齢者・身体機能・脳・認知
+- 非侵襲的脳刺激（tDCS/tACS/TMS）× 身体機能・運動学習
+- 運動神経・神経筋接合部 × 加齢
+
+**拡張軸（遺伝・オミクス・biobank）**:
+- GWAS／PRS／Mendelian randomization × 筋・身体機能・脳
+- DNA メチル化／epigenetic clock（GrimAge・DunedinPACE）× 身体機能・健康寿命
+- プロテオーム／メタボローム／トランスクリプトーム × 加齢・筋・脳
+- 大規模biobank（TMM／UK Biobank／All of Us／HRS／ELSA）× 身体・脳機能
+- 24h CoDA（身体活動・座位・睡眠）× 筋質・脳・認知
 
 **木曜日の特例**: テーマは「認知機能・脳研究」だが、必ず2つのHTMLを生成する：
 - `YYYYMMDD_brain-cognition.html` — 一般的な認知機能・脳研究（10本中6-7本を脳-身体機能関連）
