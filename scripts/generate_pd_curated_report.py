@@ -74,24 +74,39 @@ def select_top_pd_papers(papers: list[dict], n: int = 10) -> list[dict]:
     high_kw, mid_kw = _load_pd_keywords()
     pd_papers = [p for p in papers if p.get("is_pd_related")]
 
+    # rich content がある論文には大幅ブースト（執筆済みなので優先選定）
+    try:
+        from pd_curated_content import CONTENT
+        prepared_ids = set(CONTENT.keys())
+    except ImportError:
+        prepared_ids = set()
+
     # スコアリング
     scored = []
     for idx, p in enumerate(pd_papers):
         rel, matched = relevance_score(p, high_kw, mid_kw)
         rich = richness_score(p)
-        composite = rel * 1000 + rich * 10 + min(_date_key(p), 99999999) // 10000
+        prepared_bonus = 50 if p["id"] in prepared_ids else 0
+        composite = rel * 1000 + prepared_bonus * 100 + rich * 10 + min(_date_key(p), 99999999) // 10000
         scored.append((composite, idx, p, rel, matched))
 
     scored.sort(key=lambda x: (-x[0], x[1]))
 
-    # 重複除去（タイトルベース）
+    # 重複除去：完全一致タイトル or URL の重複のみ排除
     seen_titles = set()
+    seen_urls = set()
     selected = []
     for _, _, p, rel, matched in scored:
-        norm = _normalize_title(p.get("title", ""))
-        if norm in seen_titles:
+        norm_title = _normalize_title(p.get("title", ""))
+        url = (p.get("url") or "").rstrip("/").lower()
+        if norm_title and norm_title in seen_titles:
             continue
-        seen_titles.add(norm)
+        if url and url in seen_urls:
+            continue
+        if norm_title:
+            seen_titles.add(norm_title)
+        if url:
+            seen_urls.add(url)
         selected.append((p, rel, matched))
         if len(selected) >= n:
             break
@@ -386,16 +401,23 @@ def main():
     selected_ids = {p["id"] for p in selected_enriched}
     paper_index = {p["id"]: p for p in papers}
     enriched_index = {p["id"]: p for p in selected_enriched}
+
+    # Idempotent cleanup: 既存の papers.json から report_id への参照をすべて削除
+    # → 今回選定された10本にだけ追加し直す（過去runのstale参照を残さない）
+    for p in papers:
+        srcs = p.get("source_reports") or []
+        if report_id in srcs:
+            p["source_reports"] = [s for s in srcs if s != report_id]
+
     for pid in selected_ids:
         if pid in paper_index:
-            # rich contentで既存を上書き（空値はスキップ）
             base = paper_index[pid]
             rich = enriched_index[pid]
             for k, v in rich.items():
                 if v in (None, ""):
                     continue
                 if k == "source_reports":
-                    continue  # 別途処理
+                    continue
                 if k == "tags" and isinstance(v, list):
                     base[k] = list(dict.fromkeys(v + (base.get(k) or [])))
                 else:

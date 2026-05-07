@@ -2143,8 +2143,7 @@
     ],
     "source_reports": [
       "20260425_saturday",
-      "20260425_saturday_detail",
-      "20260507_pd"
+      "20260425_saturday_detail"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-04-25"
@@ -3808,8 +3807,7 @@
       "脳研究"
     ],
     "source_reports": [
-      "20260430_thursday_pd_focused",
-      "20260507_pd"
+      "20260430_thursday_pd_focused"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-04-30"
@@ -3841,8 +3839,7 @@
       "身体機能"
     ],
     "source_reports": [
-      "20260430_thursday_pd_focused",
-      "20260507_pd"
+      "20260430_thursday_pd_focused"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-04-30"
@@ -3875,8 +3872,7 @@
       "JMIR"
     ],
     "source_reports": [
-      "20260430_thursday_pd_focused",
-      "20260507_pd"
+      "20260430_thursday_pd_focused"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-04-30"
@@ -4577,8 +4573,7 @@
       "tDCS / バランス / 高齢者 / 脳卒中 / 介入研究 / PD研究課題3 / 因果推論"
     ],
     "source_reports": [
-      "20260430_thursday_detail",
-      "20260507_pd"
+      "20260430_thursday_detail"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-04-30"
@@ -4960,8 +4955,7 @@
       "医療AI"
     ],
     "source_reports": [
-      "20260502_saturday",
-      "20260507_pd"
+      "20260502_saturday"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-05-02"
@@ -5285,8 +5279,7 @@
       "PD研究関連"
     ],
     "source_reports": [
-      "20260503_sunday",
-      "20260507_pd"
+      "20260503_sunday"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-05-03"
@@ -5601,8 +5594,7 @@
     ],
     "source_reports": [
       "20260505_tuesday",
-      "20260505_tuesday_detail",
-      "20260507_pd"
+      "20260505_tuesday_detail"
     ],
     "is_pd_related": true,
     "first_seen_date": "2026-05-05"

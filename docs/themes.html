@@ -77,10 +77,14 @@
       const lastDate = wReports.sort((a,b)=> (b.date||"").localeCompare(a.date||""))[0];
       const card = document.createElement("a");
       card.className = "theme-card";
-      card.href = `themes.html?day=${wd}`;
+      // PDは独立ページへ
+      card.href = wd === "pd" ? "pd.html" : `themes.html?day=${wd}`;
       card.style.setProperty("--c", t.color);
+      const labelHtml = wd === "pd"
+        ? `<div class="day-label">📍 SPECIAL</div>`
+        : `<div class="day-label">${wd.toUpperCase()}</div>`;
       card.innerHTML = `
-        <div class="day-label">${wd.toUpperCase()}</div>
+        ${labelHtml}
         <div class="day-name">${t.jp}</div>
         <div class="day-stats">
           <span><b>${wReports.length}</b> レポート</span>

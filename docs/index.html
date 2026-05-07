@@ -51,6 +51,12 @@
     </div>
   </div>
 
+  <!-- PD研究の最新キュレーション版 -->
+  <div class="latest-card" id="pd-latest-card" style="margin-bottom:32px">
+    <div class="latest-label" style="color:var(--t-pd)">📍 PD研究 最新キュレーション</div>
+    <div class="latest-title">読み込み中…</div>
+  </div>
+
   <h2 class="section-title">曜日テーマ</h2>
   <div class="theme-grid" id="theme-grid"></div>
 
@@ -73,8 +79,9 @@
   const [papers, reports] = await Promise.all([SITE.loadPapers(), SITE.loadReports()]);
 
   // --- Latest report card ---
+  // 曜日テーマの最新（PDキュレーション版を除外）
   reports.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-  const latest = reports.find(r => r.report_type !== "detail") || reports[0];
+  const latest = reports.find(r => r.report_type !== "detail" && r.weekday !== "pd") || reports[0];
   const latestCard = document.getElementById("latest-card");
   if (!latest) {
     latestCard.innerHTML = `<div class="latest-label">レポートがまだありません</div>
@@ -85,7 +92,7 @@
     latestCard.style.setProperty("--theme-color", t.color || "");
     const top = (latest.paper_ids || []).slice(0, 5).map(id => papers.find(p => p.id === id)).filter(Boolean);
     latestCard.innerHTML = `
-      <div class="latest-label">最新レポート ・ ${t.jp || latest.theme_jp || latest.weekday}</div>
+      <div class="latest-label">最新の曜日テーマレポート ・ ${t.jp || latest.theme_jp || latest.weekday}</div>
       <h2 class="latest-title">${SITE.fmtDateJP(latest.date)}</h2>
       <p class="latest-meta">${(latest.paper_count || (latest.paper_ids||[]).length) + "本"} ／ ${t.jp || latest.theme_jp || ""}</p>
       <div class="latest-papers">
@@ -95,6 +102,29 @@
         <a class="btn btn-primary" href="reports/${latest.id}.html">レポートを開く →</a>
         <a class="btn" href="papers.html?report=${latest.id}">論文一覧で見る</a>
       </div>`;
+  }
+
+  // --- 最新PDキュレーション版 ---
+  const latestPD = reports.filter(r => r.weekday === "pd").sort((a,b) => (b.date||"").localeCompare(a.date||""))[0];
+  const pdCard = document.getElementById("pd-latest-card");
+  if (pdCard) {
+    if (latestPD) {
+      const top = (latestPD.paper_ids || []).slice(0, 3).map(id => papers.find(p => p.id === id)).filter(Boolean);
+      pdCard.innerHTML = `
+        <div class="latest-label" style="color:var(--t-pd)">📍 PD研究 最新キュレーション</div>
+        <h3 class="latest-title" style="font-size:18px;margin:6px 0">${SITE.fmtDateJP(latestPD.date)}</h3>
+        <p class="latest-meta">${latestPD.paper_count || (latestPD.paper_ids||[]).length}本 ／ 全曜日テーマからPD研究計画関連のみ</p>
+        <div class="latest-papers" style="margin-top:8px">
+          ${top.map((p, i) => `<div class="paper-mini" style="font-size:13px"><span class="num">${i+1}.</span><a href="papers.html#paper-${p.id}">${escapeHtml(p.title.length > 70 ? p.title.slice(0,70)+"…" : p.title)}</a></div>`).join("")}
+        </div>
+        <div class="latest-actions" style="margin-top:12px">
+          <a class="btn btn-primary" href="reports/${latestPD.id}.html" style="background:var(--t-pd);border-color:var(--t-pd)">PD研究レポートを開く →</a>
+          <a class="btn" href="pd.html">📍 PD研究ページ</a>
+        </div>`;
+      pdCard.style.setProperty("--theme-color", "var(--t-pd)");
+    } else {
+      pdCard.style.display = "none";
+    }
   }
 
   // --- Stats ---
@@ -113,10 +143,14 @@
     wReports.forEach(r => (r.paper_ids || []).forEach(id => wPapers.add(id)));
     const card = document.createElement("a");
     card.className = "theme-card";
-    card.href = `themes.html?day=${wd}`;
+    // PDテーマは曜日と別の独立ページに飛ばす
+    card.href = wd === "pd" ? "pd.html" : `themes.html?day=${wd}`;
     card.style.setProperty("--c", t.color);
+    const labelHtml = wd === "pd"
+      ? `<div class="day-label">📍 SPECIAL</div>`
+      : `<div class="day-label">${wd.toUpperCase()}</div>`;
     card.innerHTML = `
-      <div class="day-label">${wd.toUpperCase()}</div>
+      ${labelHtml}
       <div class="day-name">${t.jp}</div>
       <div class="day-stats">
         <span><b>${wReports.length}</b> レポート</span>
@@ -135,10 +169,11 @@
     d.setDate(d.getDate() - i);
     days.push(d);
   }
-  // Pad to start on Sunday-aligned grid (Mon-first weeks would be cleaner; use simple linear)
   for (const d of days) {
     const ymd = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
-    const r = reports.find(r => r.date === ymd && r.report_type !== "detail");
+    // Prefer weekday report over PD curated when both exist on same day
+    const onDate = reports.filter(r => r.date === ymd && r.report_type !== "detail");
+    const r = onDate.find(r => r.weekday !== "pd") || onDate[0];
     const cell = document.createElement(r ? "a" : "div");
     cell.className = "cal-day" + (r ? " has-report" : "");
     if (r) {
@@ -146,8 +181,12 @@
       cell.style.setProperty("--c", t.color);
       cell.href = `reports/${r.id}.html`;
       cell.title = `${ymd} ${t.jp}`;
+      // PD curated 同日に別途あればドット表示
+      const hasPDToo = onDate.some(x => x.weekday === "pd") && r.weekday !== "pd";
+      cell.innerHTML = `<div class="num">${d.getDate()}</div>${hasPDToo ? '<span class="dot" style="background:white"></span>' : ''}`;
+    } else {
+      cell.innerHTML = `<div class="num">${d.getDate()}</div>`;
     }
-    cell.innerHTML = `<div class="num">${d.getDate()}</div>`;
     cal.appendChild(cell);
   }
 
