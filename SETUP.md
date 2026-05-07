@@ -1,146 +1,131 @@
-# セットアップ手順（10分・電源OFF対応版）
+# セットアップ手順
 
-クラウド完全運用：
-- **Vercel** がサイトをホスト（GitHub連携で自動デプロイ）
-- **GitHub Actions** が毎朝8:00 JSTにcron実行 → 論文検索＋HTML生成 → push
-- Macが電源OFFでも動きます
+毎日Macを開いて **📊 Daily Report** をダブルクリックするだけの運用。
+**API課金なし**（Claude Codeサブスクリプション枠で動作）。
 
 ---
 
-## ステップ1: GitHubリポジトリを作る（1分）
+## ✅ 完了済み
 
-1. https://github.com/new を開く
-2. **Repository name**: `research-dashboard`
-3. **Public** を選択（プライバシーが必要なら別途相談）
-4. オプションは **すべてOFF**（READMEなど。ローカルにすでにあります）
-5. 「Create repository」
-
----
-
-## ステップ2: ローカルをGitHubにpush（30秒）
-
-```bash
-cd ~/github/research-dashboard
-git remote add origin https://github.com/yasano1141-dot/research-dashboard.git
-git push -u origin main
-```
-
-初回はGitHubの認証画面（ブラウザ）が開きます。**Personal Access Token (PAT)** が必要：
-
-- https://github.com/settings/tokens/new
-- Note: `research-dashboard`、Expiration: `90 days`、Scope: `repo` をチェック
-- Generate → トークンをコピー
-- `git push` 時にユーザー名 `yasano1141-dot`、パスワードに **トークンを貼る**
-- 1回認証すれば macOS Keychain に保存されて以降は自動
+- ✅ GitHubリポジトリ作成・初回push
+  → https://github.com/yasano1141-dot/research-dashboard
+- ✅ `gh` CLI 認証＆git credential helper 設定（以降のpushは認証不要）
+- ✅ Desktopに **📊 Daily Report.command** エイリアス配置（ダブルクリックで起動）
+- ✅ `.claude/skills/daily-research-report/` にスキル本体配置（プロジェクトスコープ）
 
 ---
 
-## ステップ3: Vercelで公開（2分）
+## 🔵 残り作業：Vercel連携（3分）
 
-1. https://vercel.com/new を開く（GitHubアカウントでログイン）
-2. **Import Git Repository** で `research-dashboard` を選んで Import
+[https://vercel.com/new](https://vercel.com/new) を開く
+
+1. **Continue with GitHub** → `yasano1141-dot` でログイン → Authorize Vercel
+2. **Import Git Repository** 一覧から `research-dashboard` を選んで **Import**
 3. Configure Project：
    - Framework Preset: **Other**
-   - Root Directory: `./`（変更不要）
-   - Build Command, Output Directory: 空欄でOK（`vercel.json` で `outputDirectory: "docs"` を指定済み）
+   - Root Directory: `./`
+   - Build / Output Directory: 空欄（`vercel.json`で指定済み）
 4. **Deploy** クリック
 
-数十秒で完了。サイトURL：
-
-> **`https://research-dashboard-yasano1141-dot.vercel.app/`**
-> （または `https://research-dashboard.vercel.app/` のような自動URL）
-
-正確なURLはVercelのダッシュボードで確認できます。
-
-### カスタムドメイン（任意）
-Vercel Project → Settings → Domains で独自ドメイン追加可能。
+数十秒で完了。Vercelダッシュボード上部に表示される **ライブURL** を控えておいてください
+（`https://research-dashboard-xxxx.vercel.app/` のような形式）。
 
 ---
 
-## ステップ4: GitHub Secretsを登録（1分）
+## 🟢 動作確認：毎日の運用テスト
 
-毎朝8:00自動更新でClaude APIを使うため、APIキーをGitHub Secretsに登録します。
-
-1. https://github.com/yasano1141-dot/research-dashboard/settings/secrets/actions
-2. **New repository secret** をクリック
-3. 必須: **`ANTHROPIC_API_KEY`** = `sk-ant-...`（Anthropic Console から取得）
-4. 任意: **`NCBI_API_KEY`** = NCBI のAPIキー（PubMed検索を高速化、無料）
-5. 任意: **`USE_OPUS`** = `1`（Sonnet 4.6→Opus 4.7 に切替、コスト3〜5倍だが品質向上）
-
-### Anthropic API キーの取得
-https://console.anthropic.com/settings/keys → Create Key → コピー
-
-### NCBI API キー（任意・推奨）
-https://www.ncbi.nlm.nih.gov/account/settings/ → API Keys → Create
-登録すると 3 req/sec → 10 req/sec に。無料・登録30秒。
-
----
-
-## ステップ5: 自動更新の動作確認（30秒）
-
-GitHub Actionsを手動でテスト実行できます。
-
-1. https://github.com/yasano1141-dot/research-dashboard/actions
-2. 左サイドバーの **Daily Research Report** を選択
-3. **Run workflow** をクリック → デフォルト（auto）のまま **Run workflow**
-4. 数分待つ → 緑のチェックマークで成功
-
-成功すると：
-- `docs/reports/` に新しいHTMLレポートが追加され
-- `docs/data/papers.json` と `reports.json` が更新され
-- 自動コミット → Vercelが自動デプロイ → サイトに反映
-
-### 8:00 JSTの自動実行を確認
-
-ワークフローには `cron: '0 23 * * *'`（23:00 UTC = 8:00 JST 翌日）が設定済み。
-何もしなくても毎日この時刻に自動実行されます。
+1. Finder でデスクトップを開く
+2. **📊 Daily Report.command** をダブルクリック
+3. ターミナルが自動で開き、進捗が表示される：
+   ```
+   ╔══════════════════════════════════════════════════════════════╗
+   ║      📊 Daily Research Report — 2026-05-07 木曜日
+   ╚══════════════════════════════════════════════════════════════╝
+   🔄 Step 1/5: GitHubから最新を取得
+   🤖 Step 2/5: Claude Codeで論文検索＋レポート生成
+      （5〜10分かかります...）
+   ...
+   ✅ 完了！
+   ```
+4. 完了するとmacOS通知＋ブラウザでサイト自動オープン
+5. Vercel側の反映には1〜2分かかります（自動デプロイ中）
 
 ---
 
 ## トラブルシューティング
 
-### 「git push」で認証エラー
-PAT方式（上記ステップ2参照）か SSH方式：
+### ダブルクリックしてもターミナルが開かない
+- Finderで右クリック → **このアプリケーションで開く** → **ターミナル.app** を選択
+- もしくは：システム設定 → セキュリティとプライバシー → 「.command ファイルの実行を許可」
 
-```bash
-ssh-keygen -t ed25519 -C "yujiro.asano.rs@gmail.com"
-cat ~/.ssh/id_ed25519.pub
-# https://github.com/settings/ssh/new に登録
-git remote set-url origin git@github.com:yasano1141-dot/research-dashboard.git
-```
+### Claude CLIが見つからないエラー
+- `claude --version` をターミナルで叩いて確認
+- なければ [https://docs.claude.com/claude-code](https://docs.claude.com/claude-code) からインストール
 
 ### Vercelデプロイが失敗する
-- vercel.json のJSON構文を確認: `python3 -c "import json; json.load(open('vercel.json'))"`
+- vercel.json の構文確認: `python3 -c "import json; json.load(open('vercel.json'))"`
 - Vercelダッシュボードのビルドログで具体的なエラーを確認
 
-### GitHub Actionsで生成器が失敗
-- Settings → Secrets で `ANTHROPIC_API_KEY` が登録されているか確認
-- Actionsログで具体的なエラーを確認
-- ローカルで dry-run テスト：
-  ```bash
-  cd ~/github/research-dashboard
-  pip install -r scripts/requirements.txt
-  ANTHROPIC_API_KEY=sk-ant-... python scripts/daily_generator.py --weekday monday --dry-run
-  ```
-
-### Vercelのfree tierを超えそう
-- Deploys: 100/day まで（1日1pushなので余裕）
-- Bandwidth: 100GB/month まで（個人用なら余裕）
-- Build minutes: 6,000/month（静的サイトはほぼゼロ）
-
-### コストが気になる
-Claude API使用量：
-- Sonnet 4.6（デフォルト）：1日約 $0.50〜$1（11本のセクション生成）
-- Opus 4.7（USE_OPUS=1）：1日約 $2〜$5
-- 月額: Sonnet $15〜30、Opus $60〜150
+### git push で認証エラー
+gh CLIで再認証：
+```bash
+~/.local/bin/gh auth refresh
+```
 
 ---
 
-## 旧 launchd（ローカル）方式について
+## オプション設定
 
-`scripts/run_daily_update.sh` `install_launchd.sh` `com.yujiro.research-dashboard.plist` は**フォールバック用**として残しています。
+### NCBI APIキー（PubMed検索を3req/sec→10req/secに加速）
 
-- 通常運用：Vercel + GitHub Actions（電源OFF対応）
-- ローカルバックアップ：Macの常時起動運用＋スキル経由のリッチ生成（MCP使用可能）
+[https://www.ncbi.nlm.nih.gov/account/settings/](https://www.ncbi.nlm.nih.gov/account/settings/) → API Keys → Create
 
-両方併用も可能ですが、push競合に注意。基本はGitHub Actions単独運用を推奨。
+取得した値を `~/.zshrc` に追加：
+```bash
+export NCBI_API_KEY="your_key_here"
+```
+
+スキルが自動で利用します。
+
+### カスタムドメイン
+
+Vercel Project → Settings → Domains で独自ドメイン追加可能。
+
+---
+
+## 🟡 万一のフォールバック：API版に切替（電源OFFが続く時）
+
+長期出張・電源OFF期間中だけ自動化したい場合：
+
+1. https://console.anthropic.com/settings/keys でAPIキー取得
+2. https://github.com/yasano1141-dot/research-dashboard/settings/secrets/actions/new で `ANTHROPIC_API_KEY` 登録
+3. `.github/workflows/daily-update.yml` の `# - cron: '0 23 * * *'` のコメントを外して push
+
+戻す時は cron をコメントアウトしてsecretを削除すればOK。
+
+---
+
+## 🔧 メンテナンス
+
+### 検索式・優先ジャーナルを変更したい
+`scripts/themes.json` を編集 → 次回 daily.command 実行時から反映。
+
+### スキルの絶対遵守ルールを更新したい
+`.claude/skills/daily-research-report/SKILL.md` を編集 → 次回実行から反映。
+
+### Macを買い替えた時
+```bash
+git clone https://github.com/yasano1141-dot/research-dashboard.git ~/github/research-dashboard
+cd ~/github/research-dashboard
+~/.local/bin/gh auth login   # gh CLIインストール後
+chmod +x daily.command
+ln -s "$HOME/github/research-dashboard/daily.command" "$HOME/Desktop/📊 Daily Report.command"
+```
+
+---
+
+## 📊 ライブサイト
+
+**`https://research-dashboard.vercel.app/`**（Vercelデプロイ後に確定）
+
+GitHub: https://github.com/yasano1141-dot/research-dashboard

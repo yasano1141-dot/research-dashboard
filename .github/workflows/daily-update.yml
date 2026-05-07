@@ -1,8 +1,13 @@
-name: Daily Research Report
+name: Daily Research Report (manual / fallback)
+
+# 通常運用は、ローカルの daily.command（Claude Codeサブスクリプション）で行う。
+# このワークフローはAPI課金が発生するため、cronは無効化（コメントアウト）。
+# 電源OFF時の万一のフォールバックとして手動でのみ起動可能。
+# 実行には ANTHROPIC_API_KEY secret が必要。
 
 on:
-  schedule:
-    - cron: '0 23 * * *'   # 23:00 UTC = 8:00 JST (翌日)
+  # schedule:
+  #   - cron: '0 23 * * *'   # 必要時はコメント解除（API従量課金が発生）
   workflow_dispatch:
     inputs:
       weekday:

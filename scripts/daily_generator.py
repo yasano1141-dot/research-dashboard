@@ -38,7 +38,7 @@ REPO = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO / "docs" / "data"
 REPORTS_DIR = REPO / "docs" / "reports"
 THEMES_PATH = REPO / "scripts" / "themes.json"
-TEMPLATE_PATH = REPO / "skills" / "daily-research-report" / "templates" / "regular-report.html"
+TEMPLATE_PATH = REPO / ".claude" / "skills" / "daily-research-report" / "templates" / "regular-report.html"
 
 JST = timezone(timedelta(hours=9))
 
