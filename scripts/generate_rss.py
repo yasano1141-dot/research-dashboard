@@ -15,7 +15,7 @@ REPO = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO / "docs" / "data"
 OUT = REPO / "docs" / "rss.xml"
 
-SITE_URL = "https://research-dashboard.vercel.app"   # Vercel自動URL — カスタムドメイン使うなら変更
+SITE_URL = "https://research-dashboard-nine.vercel.app"   # Vercel自動URL — カスタムドメイン使うなら変更
 
 
 def main():

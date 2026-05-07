@@ -6,7 +6,7 @@
 
 ## 🚀 ライブサイト
 
-**`https://research-dashboard.vercel.app/`**
+**`https://research-dashboard-nine.vercel.app/`**
 （正確なURLはVercelダッシュボードで確認）
 
 GitHub: [yasano1141-dot/research-dashboard](https://github.com/yasano1141-dot/research-dashboard)

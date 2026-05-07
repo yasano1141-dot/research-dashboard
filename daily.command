@@ -8,7 +8,7 @@
 set -uo pipefail
 
 REPO_DIR="$HOME/github/research-dashboard"
-SITE_URL="https://research-dashboard.vercel.app"  # Vercel自動URL（後でREADMEと一緒に更新）
+SITE_URL="https://research-dashboard-nine.vercel.app"  # Vercel自動URL（後でREADMEと一緒に更新）
 
 # Color helpers
 B="\033[1m"; G="\033[32m"; Y="\033[33m"; R="\033[31m"; C="\033[36m"; N="\033[0m"

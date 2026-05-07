@@ -2,247 +2,247 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research Dashboard — Yujiro Asano</title>
-    <link>https://research-dashboard.vercel.app</link>
-    <atom:link href="https://research-dashboard.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
+    <link>https://research-dashboard-nine.vercel.app</link>
+    <atom:link href="https://research-dashboard-nine.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
     <description>毎朝8:00 JST更新の研究論文レポート（老年医学・運動疫学・筋質・脳認知・疫学方法論・AI・オミクス）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 07 May 2026 02:21:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 03:03:51 +0000</lastBuildDate>
     <item>
       <title>Accelerometer-measured physical activity, frailty, and all-cause mortality and life expectancy among middle-aged and older adults: a UK Biobank longitudinal study</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/0702b268a737</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/0702b268a737</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>UK Biobankの中高年94,000人で、加速度計測定の総活動量・強度別活動とフレイル状態が全死亡・余命に与える複合効果を検証。フレイル状態に関わらず、身体活動増加は余命延伸と関連。フレイル群でより大きな絶対的便益を示した。 / 著者: Wang Y, et al. / 掲載: BMC Medicine, 2025</description>
       <category>縦断コホート</category><category>加速度計</category><category>フレイル</category><category>余命</category><category>健康寿命</category>
     </item>
     <item>
       <title>Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/0d2f36e7da74</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/0d2f36e7da74</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>加速度計で測定したMVPAを1日5分増やすだけで、低活動群では6.0%（95%CI 4.3-7.4）、最活動的層を除く全集団では10.0%（6.3-13.4）の死亡を予防可能。座位時間を1日30分減らすことでも全死亡の3.0〜7.3%を予防可能。 / 著者: Ekelund U, et al. / 掲載: The Lancet, 2026年1月 / 📍 PD研究関連</description>
       <category>2026年1月</category><category>IPDメタ解析</category><category>加速度計</category><category>MVPA</category><category>座位時間</category>
     </item>
     <item>
       <title>Physical activity types, variety, and mortality: results from two prospective cohort studies</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday_detail</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/156f24c14879</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday_detail</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/156f24c14879</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>研究目的 : 身体活動の総量だけでなく、運動種目の「多様性」が独立して全死亡・原因別死亡と関連するかを検証する。 研究方法 : NHS（女性, 1986-2018, n≈75,000）とHPFS（男性, 1986-2020, n≈36,000）の合計 111,000人以上 を最長34年間追跡。2年ごとの質問票で8〜10種類の身体活動（ウォーキング、ジョギング、自転車、水泳、ラケットスポーツ、エアロビクス、筋トレ、ヨガ、ガーデニング、家事等）への参加状況を評価。多様性スコアを「参加した活動種目数」として計算（0-10）。総PA量（METs時間/週）と多様性スコアを同時にCox比例ハザード回帰に投入。 主要結果 : 多様性最高五分位（5種目以上）は最低五分位（1種目以下）と比較し、総活動量を調整後も全死亡で HR 0.81（95%CI 0.78-0.84） 、CVD死亡 HR 0.87 、がん死亡 HR 0.86 、呼吸器疾患死亡 HR 0.59 、その他死亡 HR 0.68 と15-32%の独立した死亡リスク減少。 結論 : 身体活動の「多様性」は総量とは独立した予後規定因子であり、運動推奨に「複数種目を組み合わせる」という新次元を加えるべき。 今後の課題 : アジア・低所得国集団での再現、機能的アウトカム（フレイル、認知機能）への拡張、多様性メカニズムの解明（筋質改善、心理社会的便益、損傷リスク分散等）が必要。 / 著者: Hu FB, Manson JE, Sun Q, et al. / 掲載: BMJ Medicine, 2026年1月（修正 2026年4月9日）</description>
       
     </item>
     <item>
       <title>Impact of accelerometer epoch summary measure on associations between physical activity and all-cause mortality in Whitehall II and UK Biobank</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/3406746586b6</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/3406746586b6</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>Whitehall IIとUK Biobankの加速度計データを用いて、エポック要約指標（Average Acceleration、Intensity Gradient等）の選択が死亡関連推定値に与える影響を比較。指標間の関連性は概ね一貫したが、Average AccelerationとIntensity Gradient両者が高い群で死亡リスクが最低。 / 著者: Sabia S, et al. / 掲載: Scientific Reports, 2026</description>
       <category>2026</category><category>加速度計</category><category>方法論比較</category><category>UK Biobank</category><category>身体機能</category>
     </item>
     <item>
       <title>Association of Weekend Warrior and Other Physical Activity Patterns With Mortality Among Adults With Diabetes: A Cohort Study</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/4c4cdb4e5424</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/4c4cdb4e5424</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>糖尿病罹患成人を対象に、週末集中型（Weekend warrior）と分散型（Regularly active）のMVPAパターンと死亡の関連を比較。両パターンともガイドライン達成（150分/週以上）で全死亡21%・17%、CVD死亡33%・19%減少と同等の効果を確認。 / 著者: Khurshid S, et al. / 掲載: Annals of Internal Medicine, 2025</description>
       <category>前向きコホート</category><category>Weekend warrior</category><category>糖尿病</category><category>公衆衛生</category>
     </item>
     <item>
       <title>Daily steps and health outcomes in adults: a systematic review and dose-response meta-analysis</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/4cbf8bf01519</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/4cbf8bf01519</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>2014-2025年の研究を統合し、1日歩数と全死亡・CVD・がん・認知症・転倒等のアウトカムを用量反応分析。全死亡、CVD発症、認知症、転倒では5,000-7,000歩で変曲点。「7,000歩/日」は10,000歩より達成可能で臨床的に意義のある目標として提示。 / 著者: Ding D, et al. / 掲載: The Lancet Public Health, 2025</description>
       <category>用量反応メタ解析</category><category>スプライン回帰</category><category>歩数</category><category>7,000歩</category><category>公衆衛生</category>
     </item>
     <item>
       <title>Epidemiology and Cardiovascular Benefits of Physical Activity and Exercise</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/a6aff7e597a2</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/a6aff7e597a2</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>PA・運動の心血管系への保護効果に関する最新疫学エビデンスを網羅。心肺持久力（CRF）はBMI、喫煙より強い予後予測因子。低活動から最低限活動への移行で最大の便益が得られる「凹型」用量反応を提示。 / 著者: Lavie CJ, et al. / 掲載: Circulation Research, 2025</description>
       <category>レビュー</category><category>心血管</category><category>CRF</category><category>心血管疫学</category>
     </item>
     <item>
       <title>Physical activity types, variety, and mortality: results from two prospective cohort studies</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/af84784c000b</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/af84784c000b</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>111,000人以上を30年以上追跡したNHS/HPFSデータの解析で、身体活動の「総量」だけでなく「多様性」（運動種目数）が独立して死亡リスクと関連。多様性最高五分位は最低五分位に比べ全死亡15〜32%、CVD・がん・呼吸器疾患・その他死亡で13〜41%減少。 / 著者: Hu FB, et al. / 掲載: BMJ Medicine, 2026年1月（修正 2026年4月）</description>
       <category>最新2026年1月-4月</category><category>大規模コホート</category><category>Cox回帰</category><category>運動多様性</category><category>原因別死亡</category>
     </item>
     <item>
       <title>Physical Activity Volume, Intensity, and Mortality: Harmonized Meta-Analysis of Prospective Cohort Studies</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/cde8b14cc0ff</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/cde8b14cc0ff</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>PAの「総量」と「強度（MVPA寄与率）」を独立変数として評価したメタ解析。総量の効果が大きいが、MVPAが占める割合が高いほど追加保護が得られる。総量と強度の両方が死亡リスク減少に独立に寄与することを示した。 / 著者: Stamatakis E, et al. / 掲載: American Journal of Preventive Medicine, 2024</description>
       <category>メタ解析</category><category>加速度計</category><category>総量vs強度</category><category>公衆衛生</category>
     </item>
     <item>
       <title>Physical Activity and All-Cause Mortality by Age in 4 Multinational Megacohorts</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/d5ffbfb73f41</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/d5ffbfb73f41</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>4ヶ国メガコホート（NHIS、UK Biobank、China Kadoorie Biobank、Mei Jau）の200万人以上を統合解析。WHO推奨レベル達成は死亡22%減少。他の生活習慣因子と異なり、PAと死亡の関連は加齢で減弱しない一貫性を示した。 / 著者: Sun Y, et al. / 掲載: JAMA Network Open, 2024</description>
       <category>プール解析</category><category>大規模コホート</category><category>国際比較</category><category>年齢別</category><category>健康寿命</category>
     </item>
     <item>
       <title>Physical activity across mid-life and mortality outcomes in Australian women: A target trial emulation using a prospective cohort</title>
-      <link>https://research-dashboard.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/fa96a50ff244</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/fa96a50ff244</guid>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>オーストラリア女性11,169人を対象に、中年期（50〜65歳）の15年間に一貫してWHOガイドライン（150分/週以上のMVPA）を達成した女性は、達成しなかった女性と比べて全死亡リスクが約半分（HR 0.49前後）に低下した。中年期からの開始でも一定の保護効果が示唆された。 / 著者: Coenen P, et al. / 掲載: PLOS Medicine, 2026年3月</description>
       <category>最新2026年3月</category><category>target trial emulation</category><category>g-formula</category><category>中年期</category><category>女性</category>
     </item>
     <item>
       <title>Plasma proteomics links brain and immune system aging with healthspan and longevity</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_01</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_01</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>UK Biobank 44,498人の血漿2,916タンパク（Olink Explore 3072）から11臓器のbiological ageを推定。脳老化はAD HR=3.1（APOE4 1コピー相当）、若い脳はHR=0.26（APOE2 2コピー相当）。脳・免疫いずれも若いと全死亡HR=0.44。「老化は全身均一でなく臓器ごとに進む」というorgan-specific aging概念を確立した記念碑的研究。 / 著者: Oh HS-H, Le Guen Y, Rappoport N, et al. / 掲載: Nature Medicine, 2025年7月</description>
       <category>大規模プロテオーム</category><category>機械学習</category><category>臓器特異的老化</category><category>Brain Age</category><category>老化生物学</category>
     </item>
     <item>
       <title>Organ-specific proteomic aging clocks predict disease and longevity across diverse populations</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_02</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_02</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>プロテオームベースの臓器特異的aging clockを3カ国・3人種で開発・検証（cross-cohort r=0.98中国、0.93米国）。脳老化が死亡と最強関連（HR per SD=1.31）、肝・免疫・心が16-43%のmortality risk per SD。多人種で汎化することを初実証し、organ aging clockの臨床応用基盤を確立した記念碑的研究。 / 著者: Multi-cohort consortium / 掲載: Nature Aging, 2026年 / 📍 PD研究関連</description>
       <category>最新2026</category><category>プロテオミクス</category><category>多人種検証</category><category>Aging Clock</category><category>脳・筋老化</category>
     </item>
     <item>
       <title>Integrative Proteomic and Metabolomic Signatures of Accelerated PhenoAge in the UK Biobank</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_03</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_03</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>UK Biobank約20,000人の血漿proteomicsとmetabolomicsを統合し、accelerated PhenoAgeの分子背景を初の大規模解明。Proteomics単独AUC=0.83、Metabolomics単独 0.71、統合 0.86でproteomicsの優位性を実証。GDF15・NTproBNP・cystatin Cがtop SHAP contributorで、inflammation/complement/lipid pathwayが主要メカニズム。 / 著者: UK Biobank multi-omics group / 掲載: medRxiv, 2026年3月（preprint）</description>
       <category>最新2026</category><category>マルチオミクス統合</category><category>SHAP</category><category>PhenoAge</category><category>老化生物学</category>
     </item>
     <item>
       <title>Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated with All-Cause Mortality</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_04</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_04</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>複数のaging biomarker（PhenoAge、GrimAge、proteomic age等）と血漿proteomeを統合し、all-cause mortality予測のbiomarker署名を同定。複数aging clockが共通する分子経路を持つことを示し、臨床応用可能なbiomarker候補を絞り込む方向性を示した先進的preprint。 / 著者: Multi-cohort proteomics group / 掲載: medRxiv, 2026年3月（preprint）</description>
       <category>最新2026</category><category>マルチクロック統合</category><category>プロテオミクス</category><category>死亡予測</category><category>老化生物学</category>
     </item>
     <item>
       <title>Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI cohort</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_05</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_05</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>InCHIANTIコホート（イタリア高齢者）で複数エピジェネティック・クロック（Horvath、Hannum、PhenoAge、GrimAge、DunedinPACE）の時間的加速が死亡と関連。Baseline epigenetic ageを補正してもsurvival prediction改善。「変化率」がbaseline absoluteより重要であることを示した先駆的縦断研究。 / 著者: InCHIANTI epigenetic group / 掲載: Nature Aging, 2026年</description>
       <category>最新2026</category><category>縦断デザイン</category><category>DNA methylation</category><category>エピジェネティッククロック</category><category>老化生物学</category>
     </item>
     <item>
       <title>Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for sarcopenia</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_06</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_06</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>高齢者骨格筋のbulk + single-nuc multi-omicsとsenescence profilingにより、CCR5 axisがmuscle senescenceに関与することを発見し、HIV薬Maravirocがsenotherapeuticとしてサルコペニアにヒト治療薬候補となる可能性を提示。Drug repositioningによるサルコペニア治療薬候補発見の代表例。 / 著者: Skeletal muscle senescence group / 掲載: Nature Communications, 2025年 / 📍 PD研究関連</description>
       <category>マルチオミクス</category><category>Single-nuc seq</category><category>サルコペニア</category><category>Drug Repositioning</category><category>筋質</category>
     </item>
     <item>
       <title>Physical activity and biological age measured by DNA methylation clocks: a systematic review and meta-analysis</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_07</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_07</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>身体活動とDNAメチル化クロックの関連を観察・介入研究で統合解析。Higher PAで複数clockがdecelerate、特にGrimAgeが最大の減速効果を示すことをmeta-analysisで実証。介護予防における運動の重要性を分子レベルで裏付けた決定的レビュー。 / 著者: Lancet Healthy Longevity research group / 掲載: The Lancet Healthy Longevity, 2026年</description>
       <category>最新2026</category><category>系統的レビュー</category><category>メタ解析</category><category>身体活動</category><category>エピジェネティッククロック</category>
     </item>
     <item>
       <title>Large-scale genome-wide analyses with proteomics integration reveal novel loci and biological insights into frailty</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_08</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_08</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>FinnGen（n=500,737）+ UK Biobank（n=407,463）のフレイルGWAS。Hospital Frailty Risk Scoreで53独立loci（うち45新規）を同定。Colocalization解析でCHST9、ILRUN、KHK、MET、APOE、CGREF1、PPP6Cがcausal候補。プロテオームMRで遺伝→蛋白→フレイルの分子経路を解明し、複数のdruggable targetを提示。 / 著者: Frailty GWAS+proteomics consortium / 掲載: Nature Aging, 2025年</description>
       <category>GWAS</category><category>プロテオームMR</category><category>フレイル</category><category>老化遺伝学</category>
     </item>
     <item>
       <title>Aging Out of the Blue: Region-Specific Epigenetic Clock</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_09</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_09</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>脳組織サンプルで複数領域のDNA methylationを解析し、領域特異的エピジェネティッククロックを構築。脳領域ごとに老化速度が異なることを定量し、AD病理進展との関連解明への基盤を提示。脳老化の領域不均一性を分子レベルで実証した先駆的preprint。 / 著者: Brain epigenetic group / 掲載: medRxiv, 2026年3月（preprint）</description>
       <category>最新2026</category><category>DNA methylation</category><category>領域特異的</category><category>脳老化</category><category>神経科学</category>
     </item>
     <item>
       <title>Multivariate genome-wide analysis of sarcopenia reveals genetic comorbidity with urological diseases</title>
-      <link>https://research-dashboard.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260503_10</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_10</guid>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>サルコペニアの多変量GWASで215 lociと30,869 SNPsを同定。LDSC解析で泌尿器疾患（前立腺・腎）との遺伝的併存性を発見。サルコペニアと併存疾患の遺伝的pleiotropyを解明し、多臓器加齢の遺伝基盤理解に貢献する重要研究。 / 著者: Sarcopenia GWAS group / 掲載: Bone, 2025年</description>
       <category>多変量GWAS</category><category>Genetic Correlation</category><category>サルコペニア</category><category>老化遺伝学</category>
     </item>
     <item>
       <title>An operational target trial emulation framework for causal inference using electronic health record data</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_01</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_01</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>EHRを用いたTarget Trial Emulation（TTE）の運用課題（time-zero、不死時間バイアス、protocol violation）を体系的に解決する運用フレームワークを提示。「trial specification」と「EHR realization」を明確に分離し、再現可能な運用ステップ・テンプレートを提供。複数EHR（Optum、CPRD、MIMICなど）での実装事例で運用可能性を実証し、real-world evidence生成の質を底上げする方法論的マイルストーン。 / 著者: Wang Y, Li Y, Lin T, et al. / 掲載: npj Digital Medicine, 2026年</description>
       <category>最新2026</category><category>Target Trial Emulation</category><category>因果推論</category><category>EHR</category><category>疫学方法論</category>
     </item>
     <item>
       <title>CARE-AD: a multi-agent large language model framework for Alzheimer's disease prediction using longitudinal clinical notes</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_02</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_02</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>4つの専門化LLMエージェント（Symptom Extraction/Risk Factor/Progression Modeling/Coordinator）が連携し、診断10年前のclinical notesからAD発症を予測。Llama 3+GPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionを併用。10年前予測精度0.53でベースライン（zero-shot 0.26、few-shot 0.34、RAG単独 0.45）を大きく凌駕し、AD早期介入の機会を大幅拡大しうる。 / 著者: Zhao Y, Liu R, et al. / 掲載: npj Digital Medicine, 2025年 / 📍 PD研究関連</description>
       <category>マルチエージェントLLM</category><category>RAG</category><category>認知症予測</category><category>EHRテキスト</category><category>医療AI</category>
     </item>
     <item>
       <title>Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia: evidence from the UK Biobank</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_03</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_03</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>UK Biobank 37,004人のneck-to-knee Dixon MRIから27骨盤・大腿筋骨格構造を3D nnU-Netで自動セグメンテーション（DSC&gt;0.92）。Dixon thigh筋容積はDEXA-ALMIとr=0.936で一致し、新規指標posterior/anterior筋比はサルコペニア（OR=1.42）、握力低下、転倒、全死亡（HR=1.18）を独立予測。「筋量」中心のサルコペニア定義を「筋分布・筋質」へ拡張する可能性を示した最大規模研究。 / 著者: UK Biobank Imaging Working Group / 掲載: npj Digital Medicine, 2026年2月 / 📍 PD研究関連</description>
       <category>最新2026</category><category>深層学習</category><category>大規模MRI</category><category>サルコペニア</category><category>筋質</category>
     </item>
     <item>
       <title>AI-based wearable system for fall risk prediction in older adults using sEMG and plantar pressure data</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_04</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_04</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>高齢者のoverground walking中に表面筋電（sEMG）と足底圧センサーを装着し、dual-modality wearableで転倒リスクを予測。LightGBMが最高精度96%を達成し、生理学的に解釈可能な特徴（筋協調パターン、足底圧分布）に基づく臨床展開可能なフレームワークを提示。在宅高齢者の転倒予防への展開可能性を示す。 / 著者: Frontiers research group / 掲載: Frontiers in Bioengineering and Biotechnology, 2026年 / 📍 PD研究関連</description>
       <category>最新2026</category><category>機械学習</category><category>LightGBM</category><category>転倒予測</category><category>ウェアラブル</category>
     </item>
     <item>
       <title>Embracing the Digital Revolution: How Artificial Intelligence is Transforming Clinical Trials in Older Participants</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_05</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_05</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>高齢者向け臨床試験におけるAI活用の現状と将来展望を体系的にレビュー。機械学習・深層学習・AI駆動デジタルヘルスプラットフォームによるintelligent stratification、frailty assessment、digital adherence monitoringを高齢者特化で議論。高齢者試験の参加者選定・脱落予測・遵守度評価といったボトルネックをAIで解決する道筋を提示する。 / 著者: Drugs &amp; Aging editorial group / 掲載: Drugs &amp; Aging, 2026年3月</description>
       <category>最新2026</category><category>総説</category><category>高齢者RCT</category><category>デジタルヘルス</category><category>老年医学</category>
     </item>
     <item>
       <title>Imaging biomarkers of ageing: a review of artificial intelligence-based approaches for age estimation</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_06</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_06</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>脳・胸部・腹部・骨・顔面画像からのAI年齢推定研究を統合レビュー。delta age（予測−実年齢）が複数臓器で疾患リスク・死亡と関連し、imaging-based aging clockが分子クロックと並ぶbiological age指標として確立しつつある。健康寿命指標としてimaging delta ageの活用可能性を整理した重要総説。 / 著者: Lancet Healthy Longevity research group / 掲載: The Lancet Healthy Longevity, 2025年</description>
       <category>系統的レビュー</category><category>深層学習</category><category>画像バイオマーカー</category><category>aging clock</category><category>老化生物学</category>
     </item>
     <item>
       <title>A transformer-based prognostic signature integrating tumor and body composition CT images predicts postoperative recurrence in gastric cancer</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_07</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_07</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>Vision Transformerが腫瘍・骨格筋・脂肪のCT画像を統合し、胃癌術後再発を予測。tumor image単独より体組成情報の付加で予測精度が大幅向上することを実証し、年齢層別解析でも有効性を確認。Cancer cachexia/sarcopenia評価の精緻化と癌予後予測の新パラダイムを示す。 / 著者: Multi-institution cancer imaging group / 掲載: npj Digital Medicine, 2025年</description>
       <category>Vision Transformer</category><category>マルチモーダル</category><category>体組成</category><category>サルコペニア</category><category>癌・老年腫瘍</category>
     </item>
     <item>
       <title>Leveraging AI to Advance Age-Friendly Care in the Veterans Health Administration</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_08</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_08</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>米国退役軍人病院（VA）でAge-Friendly 4Mフレームワーク（Mentation, Mobility, Medication, What Matters）にAIを統合する実装戦略を提示。NLP・機械学習・clinical decision supportを4M枠組みに統合し、多剤併用最適化、認知評価、移動度評価、価値観聴取をAIで支援。包括的高齢者ケア体系へのAI組み込みの先進事例。 / 著者: VA-AI working group / 掲載: JMIR Aging, 2026年2月</description>
       <category>最新2026</category><category>Implementation</category><category>NLP</category><category>高齢者ケア</category><category>老年医学</category>
     </item>
     <item>
       <title>Protocol for development of an AI-driven individualized frailty prediction and intervention framework for elderly patients with chronic kidney disease</title>
-      <link>https://research-dashboard.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard.vercel.app/papers/20260502_09</guid>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_09</guid>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <description>CKD高齢者のフレイル予測にcausal feature learningとknowledge distillationを組み合わせる新規プロトコル。SHAPとcausal effect visualizationで解釈性を担保し、「予測精度」と「因果解釈性」を同時追求する次世代AI設計を提示。介入可能な特徴を因果的に発見する仕組みで、観察予測から介入支援への進化を象徴する研究。 / 著者: Multi-center cohort study group / 掲載: BMC Geriatrics, 2026年</description>
       <category>最新2026</category><category>因果機械学習</category><category>SHAP</category><category>フレイル予測</category><category>老年医学</category>

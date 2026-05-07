@@ -126,6 +126,6 @@ ln -s "$HOME/github/research-dashboard/daily.command" "$HOME/Desktop/📊 Daily 
 
 ## 📊 ライブサイト
 
-**`https://research-dashboard.vercel.app/`**（Vercelデプロイ後に確定）
+**`https://research-dashboard-nine.vercel.app/`**（Vercelデプロイ後に確定）
 
 GitHub: https://github.com/yasano1141-dot/research-dashboard
