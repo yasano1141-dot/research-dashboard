@@ -23,7 +23,52 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 5. **毎日10本中2本以上を Yuji の PD 研究計画関連にする**（2026-05-03 指示。`references/research-plan/research-plan-extended.md` 必読）
 6. **木曜日は2つのHTMLレポート**を作成（`YYYYMMDD_brain-cognition.html` ＋ `YYYYMMDD_brain-cognition-pd.html`）
 7. **メール送信は廃止された**（rev5 / 2026-05-05）。Gmail下書き作成・送信などのメール処理は一切行わない。代わりに `docs/data/papers.json` と `docs/data/reports.json` を更新し、ウェブサイト（Vercel）に自動デプロイされる。
-8. **🆕 本文は日本語を主体に書く**（rev6 / 2026-05-08 指示）。技術用語は初出時のみ「日本語訳（English original）」の形式で英語を併記し、それ以降は日本語表現を使う。プロセ全体で英語比率を最小化。例：「ターゲット試行模倣（target trial emulation）法」「メンデルランダム化（Mendelian randomization）」「説明可能AI」「因果フォレスト」など。専門用語の頭字略語（MR、TMLE、SHAP、RCT、HR、AUCなど）は許可するが、文章自体は日本語で構成する。
+8. **🆕 本文の日本語ポリシー**（rev6 / 2026-05-08 指示、rev6.1 / 2026-05-08 詳細化）。
+
+   **英語のままにする**：
+   - 論文タイトル（ "Sensitivity Analysis: E-Values" など）
+   - 雑誌名（Nature Medicine、Lancet、JAMA、BMJ など）
+   - 著者名
+   - 専門度の高い手法名（p-hacking、phase angle、target trial emulation、Mendelian randomization、propensity score、causal forest、synthetic control、staggered DiD、SHAP、TMLE、DR-learner、g-formula、DAG など）
+   - 略語（MR、HR、OR、AUC、ATE、ATT、ITT、PEHE、E-value、CMC、tDCS、EEG、MRI、CT、DXA、BIA、FA、MD など）
+   - 固有名詞（UK Biobank、TMM、JAGES、Nurses' Health Study、SPRINT、ACCORD、OHDSI、CPRD、HRS、ELSA、InCHIANTI など）
+   - データ・指標の単位（β=、HR=、OR=、p=、95%CI、I²= など）
+
+   **日本語にする**（一般的な英語の医学・研究語彙）：
+   - all-cause mortality → 全原因死亡
+   - cardiovascular disease（CVD） → 心血管疾患
+   - cancer → ガン（または癌）
+   - cohort → コホート
+   - reporting standard → 報告の基準（または報告基準）
+   - treatment effect → 治療効果
+   - sensitivity analysis → 感度分析
+   - observational study → 観察研究
+   - randomized → ランダム化
+   - subgroup → サブグループ
+   - regression → 回帰
+   - intervention → 介入
+   - effect size → 効果サイズ
+   - odds ratio → オッズ比（OR は併記可）
+   - hazard ratio → ハザード比（HR は併記可）
+   - confidence interval → 信頼区間（95%CI は併記可）
+   - meta-analysis → メタ解析
+   - cross-sectional → 横断的
+   - longitudinal → 縦断的
+   - bias → バイアス
+   - confounder/confounding → 交絡（変数）
+   - exposure → 曝露
+   - outcome → アウトカム
+   - dementia → 認知症
+   - frailty → フレイル
+   - sarcopenia → サルコペニア
+   - gait speed → 歩行速度
+   - grip strength → 握力
+   - physical activity → 身体活動
+   - mediator/mediation → 媒介変数／媒介
+   - placebo → プラセボ
+   - validation → 検証
+
+   **判断基準**：「日本語論文・教科書で日本語表現が定着している語」は日本語、「研究分野独自の用語で英語のまま読まれている語」は英語のまま。
 9. **🆕 同じ論文を重複して紹介しない**（rev6 / 2026-05-08 指示）。レポート生成前に **必ず** `docs/data/papers.json` と `docs/data/reports.json` を読み込み、過去のレポートで紹介済みの論文（タイトル＋ジャーナル＋著者の組み合わせで判定）を除外。新規論文だけで10本を構成する。万一、特に重要な過去論文を再掲する必要がある場合は、本文冒頭で「再掲（前回 YYYY-MM-DD レポート）」と明示する。
 
 ### 実行前チェック（必ず確認）

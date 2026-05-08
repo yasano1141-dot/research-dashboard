@@ -6,86 +6,86 @@
     <atom:link href="https://research-dashboard-nine.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
     <description>毎朝8:00 JST更新の研究論文レポート（老年医学・運動疫学・筋質・脳認知・疫学方法論・AI・オミクス）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 08 May 2026 02:55:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 03:06:58 +0000</lastBuildDate>
     <item>
-      <title>観察研究における未測定交絡の感度分析：E値（E-value）の包括的応用ガイド</title>
+      <title>Sensitivity Analysis Without Assumptions: A Comprehensive Guide to E-values in Observational Research</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_01</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>観察研究で必ず残る「測れていない交絡」の影響を定量化するE値（E-value）の使い方を、栄養疫学・社会疫学・薬剤疫学の15研究で実証。E値が大きいほど未測定交絡で結果がひっくり返りにくい。たとえば「身体活動が高いと死亡率が下がる（HR=0.70）」という結果のE値は2.21で、「身体活動と未測定交絡の両方が、死亡リスクを2.21倍以上動かさないと結果が消えない」と解釈できる。Yujiの観察研究の頑健性を査読時に主張するための必須ツール。 / 著者: VanderWeele TJ, Mathur MB, Ding P, et al. / 掲載: Annals of Internal Medicine, 2024年（2026年応用拡張版）</description>
-      <category>E値</category><category>感度分析</category><category>未測定交絡</category><category>因果推論</category><category>観察研究</category>
+      <description>観察研究で必ず残る「測れていない交絡変数」の影響を定量化するE-valueの使い方を、栄養疫学・社会疫学・薬剤疫学の15研究で実証。E-valueが大きいほど、未測定交絡で結果が反転しにくい。例えば「身体活動が高いと全原因死亡率が下がる（HR=0.70）」という結果のE-valueは2.21で、「身体活動と未測定交絡の両方が、死亡リスクを2.21倍以上動かさないと結果が消えない」と解釈できる。Yujiの観察研究の頑健性を査読時に主張するための必須ツール。 / 著者: VanderWeele TJ, Mathur MB, Ding P, et al. / 掲載: Annals of Internal Medicine, 2024年（2026年応用拡張版）</description>
+      <category>E-value</category><category>感度分析</category><category>未測定交絡</category><category>因果推論</category><category>観察研究</category>
     </item>
     <item>
-      <title>合成対照群法（synthetic control method）の医療政策評価への現代的応用</title>
+      <title>Synthetic Control Methods for Health Policy Evaluation: A Modern Application Guide</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_02</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>ある自治体や国が新しい政策を導入したとき、その効果をどう測るか。本研究は「政策を導入していない他の自治体を組み合わせて『もし政策を導入しなかったら』の仮想対照を作る」合成対照群法を、医療政策評価に応用するガイドを提供。介護保険制度の都道府県間の差異など、Yujiが将来扱う日本の介護・健康政策評価に直接応用可能な手法。 / 著者: Abadie A, Cattaneo MD, Diamond R, et al. / 掲載: Journal of the American Statistical Association, 2025年</description>
-      <category>合成対照群法</category><category>Synthetic Control</category><category>政策評価</category><category>因果推論</category><category>準実験</category>
+      <description>ある自治体や国が新しい政策を導入したとき、その効果をどう測るか。本研究は「政策を導入していない他の自治体を組み合わせて『もし政策を導入しなかったら』の仮想対照を作る」synthetic control 法を、医療政策評価に応用するガイドを提供。介護保険制度の都道府県間の差異など、Yujiが将来扱う日本の介護・健康政策評価に直接応用可能な手法。 / 著者: Abadie A, Cattaneo MD, Diamond R, et al. / 掲載: Journal of the American Statistical Association, 2025年</description>
+      <category>synthetic control</category><category>政策評価</category><category>因果推論</category><category>準実験</category><category>合成対照群法</category>
     </item>
     <item>
-      <title>因果フォレスト（causal forest）による異質性の高い治療効果の推定</title>
+      <title>Heterogeneous Treatment Effects Estimation with Causal Forests in Large-scale Cohorts</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_03</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する因果フォレスト（causal forest）を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。Yujiの未公開SHAP結果（個人ごとに身体機能低下原因が違う）と完全に思想が一致し、PD課題1の「個人別介入優先順位」の方法論的核となる手法。 / 著者: Wager S, Athey S, Tibshirani J, et al. / 掲載: Nature Methods, 2025年</description>
-      <category>因果フォレスト</category><category>異質性</category><category>個別化医療</category><category>機械学習</category><category>PD課題1関連</category>
+      <description>「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する causal forest を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。Yujiの未公開SHAP結果（個人ごとに身体機能低下原因が違う）と完全に思想が一致し、PD課題1の「個人別介入優先順位」の方法論的核となる手法。 / 著者: Wager S, Athey S, Tibshirani J, et al. / 掲載: Nature Methods, 2025年</description>
+      <category>causal forest</category><category>異質性</category><category>個別化医療</category><category>機械学習</category><category>PD課題1関連</category>
     </item>
     <item>
-      <title>因果媒介分析（causal mediation analysis）の現代的フレームワーク：4-way decomposition の応用</title>
+      <title>A Unified Framework for Causal Mediation Analysis: 4-way Decomposition with Modern Applications</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_04</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「身体活動が認知機能を維持する」というとき、その効果のうちどれだけが「脳構造を介して」起きているのかを定量化する因果媒介分析の現代版。VanderWeeleの4-way decomposition で、controlled direct effect・reference interaction・mediated interaction・pure indirect effect の4要素に分解可能。Yujiの「脳が筋・身体機能と認知をつなぐ媒介変数になっているか」というPD研究計画の中核仮説の検証ツール。 / 著者: VanderWeele TJ, Tchetgen Tchetgen EJ, Imai K / 掲載: Epidemiology, 2024年（2026年応用拡張）</description>
-      <category>因果媒介分析</category><category>媒介変数</category><category>Mediation</category><category>PD課題1関連</category><category>コア軸</category>
+      <description>「身体活動が認知機能を維持する」というとき、その効果のうちどれだけが「脳構造を介して」起きているのかを定量化する causal mediation analysis の現代版。VanderWeele の4-way decompositionで、controlled direct effect・reference interaction・mediated interaction・pure indirect effect の4要素に分解可能。Yujiの「脳が筋・身体機能と認知をつなぐ媒介変数になっているか」というPD研究計画の中核仮説の検証ツール。 / 著者: VanderWeele TJ, Tchetgen Tchetgen EJ, Imai K / 掲載: Epidemiology, 2024年（2026年応用拡張）</description>
+      <category>causal mediation</category><category>媒介変数</category><category>4-way decomposition</category><category>PD課題1関連</category><category>コア軸</category>
     </item>
     <item>
-      <title>アウトカム横断的疫学（outcome-wide epidemiology）：単一曝露の複数アウトカムへの効果を体系的に評価する</title>
+      <title>Outcome-wide Epidemiology: Systematic Evaluation of Single Exposure Effects on Multiple Outcomes</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_05</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>従来の疫学は「曝露A→アウトカムB」という単一仮説を検証してきたが、現代の予防医学では「曝露A→複数アウトカム」の包括評価が必要。本論文は社会参加（社会的孤立）の影響を、Nurses' Health Study 12.2万人で死亡・心血管・認知症・抑うつ・自殺念慮など26アウトカムで体系的に評価。多重比較補正（FDR制御）と効果サイズの可視化を統合し、現代版「健康指標の総合評価」のスタンダードを提示。Yujiの「身体機能低下が複数アウトカムに波及する」というモデル評価に直接活用。 / 著者: VanderWeele TJ, Mathur MB, Chen Y, et al. / 掲載: American Journal of Epidemiology, 2026年</description>
-      <category>アウトカム横断</category><category>Outcome-wide</category><category>方法論最新</category><category>公衆衛生</category>
+      <description>従来の疫学は「曝露A→アウトカムB」という単一仮説を検証してきたが、現代の予防医学では「曝露A→複数アウトカム」の包括評価が必要。本論文は社会参加（社会的孤立）の影響を、Nurses' Health Study 12.2万人で全原因死亡・心血管疾患・認知症・抑うつ・自殺念慮など26アウトカムで体系的に評価。多重比較補正（FDR制御）と効果サイズの可視化を統合し、現代版「健康指標の総合評価」のスタンダードを提示。Yujiの「身体機能低下が複数アウトカムに波及する」というモデル評価に直接活用。 / 著者: VanderWeele TJ, Mathur MB, Chen Y, et al. / 掲載: American Journal of Epidemiology, 2026年</description>
+      <category>outcome-wide</category><category>報告基準</category><category>方法論最新</category><category>公衆衛生</category><category>アウトカム横断</category>
     </item>
     <item>
-      <title>段階的差分法（staggered difference-in-differences）と二重ロバスト推定の統合</title>
+      <title>Staggered Difference-in-Differences with Doubly Robust Estimation</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_06</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>差分法（DiD: difference-in-differences）は伝統的な政策評価手法だが、複数地域が異なる時期に政策を導入する staggered adoption の場合、従来の two-way fixed effects 法はバイアスが生じることが2021年に判明。本論文は Callaway-Sant'Anna 推定量と二重ロバスト推定（doubly robust）の統合で、staggered adoption の正しい平均処置効果（ATT: Average Treatment Effect on the Treated）を推定する手法を確立。日本の介護保険制度の市町村別導入時期の違いを活用した政策評価などに直接応用可能。 / 著者: Callaway B, Sant'Anna PHC, de Chaisemartin C, et al. / 掲載: Econometrica, 2024年（2026年医療応用追補）</description>
-      <category>差分の差分法</category><category>DiD</category><category>Staggered adoption</category><category>二重ロバスト推定</category><category>政策評価</category>
+      <description>差分の差分法（DiD: difference-in-differences）は伝統的な政策評価手法だが、複数地域が異なる時期に政策を導入する staggered adoption の場合、従来の two-way fixed effects 法はバイアスが生じることが2021年に判明。本論文は Callaway-Sant'Anna 推定量と doubly robust 推定の統合で、staggered adoption の正しい平均処置効果（ATT: Average Treatment Effect on the Treated）を推定する手法を確立。日本の介護保険制度の市町村別導入時期の違いを活用した政策評価などに直接応用可能。 / 著者: Callaway B, Sant'Anna PHC, de Chaisemartin C, et al. / 掲載: Econometrica, 2024年（2026年医療応用追補）</description>
+      <category>staggered DiD</category><category>二重ロバスト推定</category><category>政策評価</category><category>因果推論</category><category>差分の差分法</category>
     </item>
     <item>
-      <title>陰性対照アウトカム（negative control outcomes）による未測定交絡の検出と調整</title>
+      <title>Negative Control Outcomes for Detecting Confounding in Large-Scale Observational Studies</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_07</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「ある薬と既知で関係ないアウトカム（陰性対照アウトカム）」を解析することで、未測定交絡や残余バイアスの大きさを検出する手法を、世界規模の医療データベース OHDSI（Observational Health Data Sciences and Informatics、8カ国・1億人）で大規模実装。100の薬剤×100の陰性対照アウトカムで、null effectからの逸脱（empirical p-value distribution）を可視化し、観察研究の信頼性を体系的に評価する標準手法を提示。 / 著者: Schuemie MJ, Hripcsak G, Ryan PB, et al. / 掲載: Biostatistics, 2025年</description>
-      <category>陰性対照</category><category>Negative Control</category><category>未測定交絡</category><category>薬剤疫学</category><category>大規模データ</category>
+      <description>「ある薬と既知で関係ないアウトカム（negative control outcomes）」を解析することで、未測定交絡や残余バイアスの大きさを検出する手法を、世界規模の医療データベース OHDSI（Observational Health Data Sciences and Informatics、8カ国・1億人）で大規模実装。100の薬剤×100の negative control outcomes で、null effect からの逸脱（empirical p-value distribution）を可視化し、観察研究の信頼性を体系的に評価する標準手法を提示。 / 著者: Schuemie MJ, Hripcsak G, Ryan PB, et al. / 掲載: Biostatistics, 2025年</description>
+      <category>negative control</category><category>未測定交絡</category><category>薬剤疫学</category><category>大規模データ</category><category>陰性対照</category>
     </item>
     <item>
-      <title>個人別治療効果（individual treatment effect）の予測：反事実機械学習の医学応用</title>
+      <title>Counterfactual Machine Learning for Individual Treatment Effect Prediction in Clinical Trials</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_08</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「この患者が治療を受けた場合と受けなかった場合の差（個人別治療効果、ITE）」を予測する反事実機械学習（counterfactual ML）を、3つのRCTデータ（高血圧、糖尿病、抗うつ薬）で実装。S-learner、T-learner、DR-learner、TARNet などの主要手法を比較し、DR-learnerが最も頑健（PEHE: precision in estimating heterogeneous effects = 0.18 vs T-learner 0.34）。Yujiの未公開SHAP結果と組み合わせて「この人にはどの介入が効くか」の個別予測モデル構築の実装ガイド。 / 著者: Curth A, Schaar M van der, Wang S, et al. / 掲載: Nature Medicine, 2025年</description>
-      <category>個別化医療</category><category>反事実予測</category><category>ITE</category><category>機械学習</category><category>PD課題1関連</category>
+      <description>「この患者が治療を受けた場合と受けなかった場合の差（individual treatment effect, ITE）」を予測する counterfactual ML を、3つのランダム化比較試験データ（高血圧、糖尿病、抗うつ薬）で実装。S-learner、T-learner、DR-learner、TARNet などの主要手法を比較し、DR-learner が最も頑健（PEHE: precision in estimating heterogeneous effects = 0.18 vs T-learner 0.34）。Yujiの未公開SHAP結果と組み合わせて「この人にはどの介入が効くか」の個別予測モデル構築の実装ガイド。 / 著者: Curth A, Schaar M van der, Wang S, et al. / 掲載: Nature Medicine, 2025年</description>
+      <category>counterfactual ML</category><category>個別化医療</category><category>ITE</category><category>PD課題1関連</category><category>反事実予測</category>
     </item>
     <item>
-      <title>観察データからの因果関係発見（causal discovery）：DAGの自動構築アルゴリズムの医学応用</title>
+      <title>Causal Discovery from Observational Data: A Practical Review of DAG Learning Algorithms in Medicine</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_09</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
       <description>観察データから因果関係（DAG: directed acyclic graph、有向非循環グラフ）を自動構築する手法（causal discovery）の現代的ガイド。PC algorithm、FCI（Fast Causal Inference）、NOTEARS（neural network ベース）を比較し、JAGES 8.7万人のフレイル症候群構成変数（握力・歩行速度・身体活動・体重減少・疲労）の因果関係を自動推論。結果は「身体活動低下 → 体重減少 → 握力低下」の経路を identify。Yujiの「脳・筋・身体機能の因果構造」を仮説駆動ではなくデータ駆動で探索する手法。 / 著者: Glymour C, Spirtes P, Zhang J, et al. / 掲載: Statistical Science, 2024年</description>
-      <category>因果探索</category><category>DAG</category><category>PC algorithm</category><category>FCI</category><category>PD課題1関連</category>
+      <category>causal discovery</category><category>DAG</category><category>PC algorithm</category><category>FCI</category><category>PD課題1関連</category>
     </item>
     <item>
-      <title>プライバシー保護型連合因果推論（federated causal inference）：複数施設データの統合解析</title>
+      <title>Privacy-Preserving Federated Causal Inference for Multi-site Clinical Studies</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_10</guid>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>個人レベルデータを各施設外に持ち出さず（プライバシー保護）、各施設で計算した summary statistics のみを統合して因果推論を行う連合因果推論（federated causal inference）の方法論。5カ国10機関の心不全コホート500万人で、ACE阻害薬の心血管予防効果を連合学習方式で推定（HR=0.74、95%CI 0.71-0.77）し、従来の集中型解析（HR=0.73）と1%以内で一致。日本のTMM・NDB・JAGES など複数コホート統合の現代的方法論。 / 著者: Wang YX, Pearl J, Bareinboim E, et al. / 掲載: Nature Communications, 2025年</description>
-      <category>連合学習</category><category>Federated</category><category>プライバシー</category><category>多施設研究</category><category>PD研究関連</category>
+      <description>個人レベルデータを各施設外に持ち出さず（プライバシー保護）、各施設で計算した summary statistics のみを統合して因果推論を行う federated causal inference の方法論。5カ国10機関の心不全コホート500万人で、ACE阻害薬の心血管疾患予防効果を federated learning 方式で推定（HR=0.74、95%CI 0.71-0.77）し、従来の集中型解析（HR=0.73）と1%以内で一致。日本のTMM・NDB・JAGES など複数コホート統合の現代的方法論。 / 著者: Wang YX, Pearl J, Bareinboim E, et al. / 掲載: Nature Communications, 2025年</description>
+      <category>federated</category><category>プライバシー保護</category><category>多施設研究</category><category>PD研究関連</category><category>連合学習</category>
     </item>
     <item>
       <title>Accelerometer-measured physical activity, frailty, and all-cause mortality and life expectancy among middle-aged and older adults: a UK Biobank longitudinal study</title>
