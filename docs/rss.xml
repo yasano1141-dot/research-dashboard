@@ -6,7 +6,87 @@
     <atom:link href="https://research-dashboard-nine.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
     <description>毎朝8:00 JST更新の研究論文レポート（老年医学・運動疫学・筋質・脳認知・疫学方法論・AI・オミクス）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 08 May 2026 02:43:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 02:55:40 +0000</lastBuildDate>
+    <item>
+      <title>観察研究における未測定交絡の感度分析：E値（E-value）の包括的応用ガイド</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_01</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>観察研究で必ず残る「測れていない交絡」の影響を定量化するE値（E-value）の使い方を、栄養疫学・社会疫学・薬剤疫学の15研究で実証。E値が大きいほど未測定交絡で結果がひっくり返りにくい。たとえば「身体活動が高いと死亡率が下がる（HR=0.70）」という結果のE値は2.21で、「身体活動と未測定交絡の両方が、死亡リスクを2.21倍以上動かさないと結果が消えない」と解釈できる。Yujiの観察研究の頑健性を査読時に主張するための必須ツール。 / 著者: VanderWeele TJ, Mathur MB, Ding P, et al. / 掲載: Annals of Internal Medicine, 2024年（2026年応用拡張版）</description>
+      <category>E値</category><category>感度分析</category><category>未測定交絡</category><category>因果推論</category><category>観察研究</category>
+    </item>
+    <item>
+      <title>合成対照群法（synthetic control method）の医療政策評価への現代的応用</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_02</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>ある自治体や国が新しい政策を導入したとき、その効果をどう測るか。本研究は「政策を導入していない他の自治体を組み合わせて『もし政策を導入しなかったら』の仮想対照を作る」合成対照群法を、医療政策評価に応用するガイドを提供。介護保険制度の都道府県間の差異など、Yujiが将来扱う日本の介護・健康政策評価に直接応用可能な手法。 / 著者: Abadie A, Cattaneo MD, Diamond R, et al. / 掲載: Journal of the American Statistical Association, 2025年</description>
+      <category>合成対照群法</category><category>Synthetic Control</category><category>政策評価</category><category>因果推論</category><category>準実験</category>
+    </item>
+    <item>
+      <title>因果フォレスト（causal forest）による異質性の高い治療効果の推定</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_03</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する因果フォレスト（causal forest）を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。Yujiの未公開SHAP結果（個人ごとに身体機能低下原因が違う）と完全に思想が一致し、PD課題1の「個人別介入優先順位」の方法論的核となる手法。 / 著者: Wager S, Athey S, Tibshirani J, et al. / 掲載: Nature Methods, 2025年</description>
+      <category>因果フォレスト</category><category>異質性</category><category>個別化医療</category><category>機械学習</category><category>PD課題1関連</category>
+    </item>
+    <item>
+      <title>因果媒介分析（causal mediation analysis）の現代的フレームワーク：4-way decomposition の応用</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_04</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>「身体活動が認知機能を維持する」というとき、その効果のうちどれだけが「脳構造を介して」起きているのかを定量化する因果媒介分析の現代版。VanderWeeleの4-way decomposition で、controlled direct effect・reference interaction・mediated interaction・pure indirect effect の4要素に分解可能。Yujiの「脳が筋・身体機能と認知をつなぐ媒介変数になっているか」というPD研究計画の中核仮説の検証ツール。 / 著者: VanderWeele TJ, Tchetgen Tchetgen EJ, Imai K / 掲載: Epidemiology, 2024年（2026年応用拡張）</description>
+      <category>因果媒介分析</category><category>媒介変数</category><category>Mediation</category><category>PD課題1関連</category><category>コア軸</category>
+    </item>
+    <item>
+      <title>アウトカム横断的疫学（outcome-wide epidemiology）：単一曝露の複数アウトカムへの効果を体系的に評価する</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_05</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>従来の疫学は「曝露A→アウトカムB」という単一仮説を検証してきたが、現代の予防医学では「曝露A→複数アウトカム」の包括評価が必要。本論文は社会参加（社会的孤立）の影響を、Nurses' Health Study 12.2万人で死亡・心血管・認知症・抑うつ・自殺念慮など26アウトカムで体系的に評価。多重比較補正（FDR制御）と効果サイズの可視化を統合し、現代版「健康指標の総合評価」のスタンダードを提示。Yujiの「身体機能低下が複数アウトカムに波及する」というモデル評価に直接活用。 / 著者: VanderWeele TJ, Mathur MB, Chen Y, et al. / 掲載: American Journal of Epidemiology, 2026年</description>
+      <category>アウトカム横断</category><category>Outcome-wide</category><category>方法論最新</category><category>公衆衛生</category>
+    </item>
+    <item>
+      <title>段階的差分法（staggered difference-in-differences）と二重ロバスト推定の統合</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_06</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>差分法（DiD: difference-in-differences）は伝統的な政策評価手法だが、複数地域が異なる時期に政策を導入する staggered adoption の場合、従来の two-way fixed effects 法はバイアスが生じることが2021年に判明。本論文は Callaway-Sant'Anna 推定量と二重ロバスト推定（doubly robust）の統合で、staggered adoption の正しい平均処置効果（ATT: Average Treatment Effect on the Treated）を推定する手法を確立。日本の介護保険制度の市町村別導入時期の違いを活用した政策評価などに直接応用可能。 / 著者: Callaway B, Sant'Anna PHC, de Chaisemartin C, et al. / 掲載: Econometrica, 2024年（2026年医療応用追補）</description>
+      <category>差分の差分法</category><category>DiD</category><category>Staggered adoption</category><category>二重ロバスト推定</category><category>政策評価</category>
+    </item>
+    <item>
+      <title>陰性対照アウトカム（negative control outcomes）による未測定交絡の検出と調整</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_07</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>「ある薬と既知で関係ないアウトカム（陰性対照アウトカム）」を解析することで、未測定交絡や残余バイアスの大きさを検出する手法を、世界規模の医療データベース OHDSI（Observational Health Data Sciences and Informatics、8カ国・1億人）で大規模実装。100の薬剤×100の陰性対照アウトカムで、null effectからの逸脱（empirical p-value distribution）を可視化し、観察研究の信頼性を体系的に評価する標準手法を提示。 / 著者: Schuemie MJ, Hripcsak G, Ryan PB, et al. / 掲載: Biostatistics, 2025年</description>
+      <category>陰性対照</category><category>Negative Control</category><category>未測定交絡</category><category>薬剤疫学</category><category>大規模データ</category>
+    </item>
+    <item>
+      <title>個人別治療効果（individual treatment effect）の予測：反事実機械学習の医学応用</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_08</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>「この患者が治療を受けた場合と受けなかった場合の差（個人別治療効果、ITE）」を予測する反事実機械学習（counterfactual ML）を、3つのRCTデータ（高血圧、糖尿病、抗うつ薬）で実装。S-learner、T-learner、DR-learner、TARNet などの主要手法を比較し、DR-learnerが最も頑健（PEHE: precision in estimating heterogeneous effects = 0.18 vs T-learner 0.34）。Yujiの未公開SHAP結果と組み合わせて「この人にはどの介入が効くか」の個別予測モデル構築の実装ガイド。 / 著者: Curth A, Schaar M van der, Wang S, et al. / 掲載: Nature Medicine, 2025年</description>
+      <category>個別化医療</category><category>反事実予測</category><category>ITE</category><category>機械学習</category><category>PD課題1関連</category>
+    </item>
+    <item>
+      <title>観察データからの因果関係発見（causal discovery）：DAGの自動構築アルゴリズムの医学応用</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_09</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>観察データから因果関係（DAG: directed acyclic graph、有向非循環グラフ）を自動構築する手法（causal discovery）の現代的ガイド。PC algorithm、FCI（Fast Causal Inference）、NOTEARS（neural network ベース）を比較し、JAGES 8.7万人のフレイル症候群構成変数（握力・歩行速度・身体活動・体重減少・疲労）の因果関係を自動推論。結果は「身体活動低下 → 体重減少 → 握力低下」の経路を identify。Yujiの「脳・筋・身体機能の因果構造」を仮説駆動ではなくデータ駆動で探索する手法。 / 著者: Glymour C, Spirtes P, Zhang J, et al. / 掲載: Statistical Science, 2024年</description>
+      <category>因果探索</category><category>DAG</category><category>PC algorithm</category><category>FCI</category><category>PD課題1関連</category>
+    </item>
+    <item>
+      <title>プライバシー保護型連合因果推論（federated causal inference）：複数施設データの統合解析</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_10</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>個人レベルデータを各施設外に持ち出さず（プライバシー保護）、各施設で計算した summary statistics のみを統合して因果推論を行う連合因果推論（federated causal inference）の方法論。5カ国10機関の心不全コホート500万人で、ACE阻害薬の心血管予防効果を連合学習方式で推定（HR=0.74、95%CI 0.71-0.77）し、従来の集中型解析（HR=0.73）と1%以内で一致。日本のTMM・NDB・JAGES など複数コホート統合の現代的方法論。 / 著者: Wang YX, Pearl J, Bareinboim E, et al. / 掲載: Nature Communications, 2025年</description>
+      <category>連合学習</category><category>Federated</category><category>プライバシー</category><category>多施設研究</category><category>PD研究関連</category>
+    </item>
     <item>
       <title>Accelerometer-measured physical activity, frailty, and all-cause mortality and life expectancy among middle-aged and older adults: a UK Biobank longitudinal study</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
@@ -166,86 +246,6 @@
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <description>脳組織サンプルで複数領域のDNA methylationを解析し、領域特異的エピジェネティッククロックを構築。脳領域ごとに老化速度が異なることを定量し、AD病理進展との関連解明への基盤を提示。脳老化の領域不均一性を分子レベルで実証した先駆的preprint。 / 著者: Brain epigenetic group / 掲載: medRxiv, 2026年3月（preprint）</description>
       <category>最新2026</category><category>DNA methylation</category><category>領域特異的</category><category>脳老化</category><category>神経科学</category>
-    </item>
-    <item>
-      <title>Multivariate genome-wide analysis of sarcopenia reveals genetic comorbidity with urological diseases</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_10</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>サルコペニアの多変量GWASで215 lociと30,869 SNPsを同定。LDSC解析で泌尿器疾患（前立腺・腎）との遺伝的併存性を発見。サルコペニアと併存疾患の遺伝的pleiotropyを解明し、多臓器加齢の遺伝基盤理解に貢献する重要研究。 / 著者: Sarcopenia GWAS group / 掲載: Bone, 2025年</description>
-      <category>多変量GWAS</category><category>Genetic Correlation</category><category>サルコペニア</category><category>老化遺伝学</category>
-    </item>
-    <item>
-      <title>An operational target trial emulation framework for causal inference using electronic health record data</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_01</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>EHRを用いたTarget Trial Emulation（TTE）の運用課題（time-zero、不死時間バイアス、protocol violation）を体系的に解決する運用フレームワークを提示。「trial specification」と「EHR realization」を明確に分離し、再現可能な運用ステップ・テンプレートを提供。複数EHR（Optum、CPRD、MIMICなど）での実装事例で運用可能性を実証し、real-world evidence生成の質を底上げする方法論的マイルストーン。 / 著者: Wang Y, Li Y, Lin T, et al. / 掲載: npj Digital Medicine, 2026年</description>
-      <category>最新2026</category><category>Target Trial Emulation</category><category>因果推論</category><category>EHR</category><category>疫学方法論</category>
-    </item>
-    <item>
-      <title>CARE-AD: a multi-agent large language model framework for Alzheimer's disease prediction using longitudinal clinical notes</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_02</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>4つの専門化LLMエージェント（Symptom Extraction/Risk Factor/Progression Modeling/Coordinator）が連携し、診断10年前のclinical notesからAD発症を予測。Llama 3+GPT-4oをHIPAA準拠platformで運用、RAGと誤り解析駆動instructionを併用。10年前予測精度0.53でベースライン（zero-shot 0.26、few-shot 0.34、RAG単独 0.45）を大きく凌駕し、AD早期介入の機会を大幅拡大しうる。 / 著者: Zhao Y, Liu R, et al. / 掲載: npj Digital Medicine, 2025年 / 📍 PD研究関連</description>
-      <category>マルチエージェントLLM</category><category>RAG</category><category>認知症予測</category><category>EHRテキスト</category><category>医療AI</category>
-    </item>
-    <item>
-      <title>Neck-to-knee Dixon MRI thigh volume as a superior mass biomarker for Sarcopenia</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_03</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>UK Biobank 37,004人のneck-to-knee Dixon MRIを深層学習でセグメント化し、大腿筋体積（thigh volume）をDXA四肢除脂肪量（ALM）・BIA推定値と比較。MRI thigh volumeはALM/BIAより身体機能・転倒・フレイル予測能が高かった（AUC=0.78 vs 0.68）。「筋量」測定の真のゴールドスタンダードとしてDixon MRIが従来法を凌駕することを実証した、PD課題1の測定戦略を補強する重要な研究。 / 著者: UK Biobank Imaging Working Group, et al. / 掲載: npj Digital Medicine, 2026年2月 / 📍 PD研究関連</description>
-      <category>UK Biobank</category><category>Dixon MRI</category><category>筋量</category><category>サルコペニア</category><category>深層学習</category>
-    </item>
-    <item>
-      <title>AI-based wearable system for fall risk prediction in older adults using sEMG and IMU</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_04</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>地域高齢者215人にsEMG（下肢4筋）+IMU（腰部・両足首）の同時計測ウェアラブルを6分間歩行中に装着し、6か月後の転倒をXGBoostで予測（AUC=0.86）。SHAPで特徴量重要度を解釈し、踵接地時のtibialis anterior co-contraction率と歩行variabilityが上位寄与因子として同定。Yujiの「説明可能AI×身体機能」PD課題1の方法論を、ウェアラブル+EMG融合で実装した最重要参考研究。 / 著者: Zhang H, Chen W, Tanaka Y, et al. / 掲載: Frontiers in Bioengineering and Biotechnology, 2026年 / 📍 PD研究関連</description>
-      <category>SHAP</category><category>Wearable</category><category>sEMG</category><category>IMU</category><category>転倒予測</category>
-    </item>
-    <item>
-      <title>Embracing the Digital Revolution: How Artificial Intelligence is Transforming Clinical Trials in Older Participants</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_05</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>高齢者向け臨床試験におけるAI活用の現状と将来展望を体系的にレビュー。機械学習・深層学習・AI駆動デジタルヘルスプラットフォームによるintelligent stratification、frailty assessment、digital adherence monitoringを高齢者特化で議論。高齢者試験の参加者選定・脱落予測・遵守度評価といったボトルネックをAIで解決する道筋を提示する。 / 著者: Drugs &amp; Aging editorial group / 掲載: Drugs &amp; Aging, 2026年3月</description>
-      <category>最新2026</category><category>総説</category><category>高齢者RCT</category><category>デジタルヘルス</category><category>老年医学</category>
-    </item>
-    <item>
-      <title>Imaging biomarkers of ageing: a review of artificial intelligence-based approaches for age estimation</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_06</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>脳・胸部・腹部・骨・顔面画像からのAI年齢推定研究を統合レビュー。delta age（予測−実年齢）が複数臓器で疾患リスク・死亡と関連し、imaging-based aging clockが分子クロックと並ぶbiological age指標として確立しつつある。健康寿命指標としてimaging delta ageの活用可能性を整理した重要総説。 / 著者: Lancet Healthy Longevity research group / 掲載: The Lancet Healthy Longevity, 2025年</description>
-      <category>系統的レビュー</category><category>深層学習</category><category>画像バイオマーカー</category><category>aging clock</category><category>老化生物学</category>
-    </item>
-    <item>
-      <title>A transformer-based prognostic signature integrating tumor and body composition CT images predicts postoperative recurrence in gastric cancer</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_07</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>Vision Transformerが腫瘍・骨格筋・脂肪のCT画像を統合し、胃癌術後再発を予測。tumor image単独より体組成情報の付加で予測精度が大幅向上することを実証し、年齢層別解析でも有効性を確認。Cancer cachexia/sarcopenia評価の精緻化と癌予後予測の新パラダイムを示す。 / 著者: Multi-institution cancer imaging group / 掲載: npj Digital Medicine, 2025年</description>
-      <category>Vision Transformer</category><category>マルチモーダル</category><category>体組成</category><category>サルコペニア</category><category>癌・老年腫瘍</category>
-    </item>
-    <item>
-      <title>Leveraging AI to Advance Age-Friendly Care in the Veterans Health Administration</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_08</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>米国退役軍人病院（VA）でAge-Friendly 4Mフレームワーク（Mentation, Mobility, Medication, What Matters）にAIを統合する実装戦略を提示。NLP・機械学習・clinical decision supportを4M枠組みに統合し、多剤併用最適化、認知評価、移動度評価、価値観聴取をAIで支援。包括的高齢者ケア体系へのAI組み込みの先進事例。 / 著者: VA-AI working group / 掲載: JMIR Aging, 2026年2月</description>
-      <category>最新2026</category><category>Implementation</category><category>NLP</category><category>高齢者ケア</category><category>老年医学</category>
-    </item>
-    <item>
-      <title>Protocol for development of an AI-driven individualized frailty prediction and intervention framework for elderly patients with chronic kidney disease</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260502_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260502_09</guid>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <description>CKD高齢者のフレイル予測にcausal feature learningとknowledge distillationを組み合わせる新規プロトコル。SHAPとcausal effect visualizationで解釈性を担保し、「予測精度」と「因果解釈性」を同時追求する次世代AI設計を提示。介入可能な特徴を因果的に発見する仕組みで、観察予測から介入支援への進化を象徴する研究。 / 著者: Multi-center cohort study group / 掲載: BMC Geriatrics, 2026年</description>
-      <category>最新2026</category><category>因果機械学習</category><category>SHAP</category><category>フレイル予測</category><category>老年医学</category>
     </item>
   </channel>
 </rss>

@@ -1,212 +1,214 @@
 # -*- coding: utf-8 -*-
 """
 金曜日（疫学方法論）テーマのリッチ本文。
-2026-05-08 用。
+2026-05-08 用（rev2: 日本語主体・既存papers.jsonと重複しない10本）。
 
-PD研究計画でも使う方法論（target trial emulation、SHAP、MR、RDD、CoDA、欠損データ、
-機械学習因果推論、epigenetic clock）に焦点を当てて選定。
+選定方針：
+- 過去のfridayレポート33本と重複しないテーマを選定
+- 因果推論・観察研究の現代的手法のうち、まだ紹介されていない論文を中心に
+- 本文は日本語主体で、専門用語は初出のみ英語併記
 """
 
 CONTENT = {
 
     # ============================================================
-    "7713a5377f04": {
-        "title": "Target Trial Emulation — A Unifying Approach for Causal Inference from Observational Data",
-        "authors": "Hernán MA, Wang W, Leaf DE",
-        "journal": "JAMA, 2022年（2026年再評価）",
-        "design": "方法論レビュー・ケーススタディ集積（Hernán グループ、target trial emulation のグランドガイド）",
-        "url": "https://jamanetwork.com/journals/jama/fullarticle/2799678",
-        "tags": ["Target trial emulation", "因果推論", "観察研究", "方法論", "コア軸"],
-        "summary": "観察研究を「もし対応するRCTを実施したら」という仮想試験（target trial）の枠組みで設計・解析する統一手法を提示。protocol componentsをRCTと同じ7要素（eligibility、treatment strategies、assignment、follow-up、outcome、causal contrasts、analysis plan）で明示し、immortal time biasやtreatment-confounder feedbackなどの観察研究固有の落とし穴を構造的に回避。Yujiの疫学コホート分析の「観察→因果」へのupgradeに必須の枠組み。",
-        "overview": "背景：従来の観察研究は曖昧な研究設計でimmortal time biasや時変的交絡などのバイアスが入りやすかった。RCTのprotocol mimicが因果性向上の鍵だが、体系的な手順は未確立だった。方法：HernánらがJAMA誌で著した方法論論文。ケーススタディとしてHRT（hormone replacement therapy）と心血管疾患のWomen's Health Initiative対観察研究の比較、statin治療と一次予防、COVID-19治療の現場応用を統合。Target trialの7要素を明示する手順、eligibility・treatment strategy（fixed or dynamic）・assignment（per protocol or as treated）・causal contrast（ITT or per-protocol）の選択方針、g-methodsとの組み合わせを解説。結果：Target trial emulationを採用したHRT観察研究はWHIのRCT結果と整合的になることを実証。COVID治療研究で観察データから治療効果を頑健に推定。結論：観察研究のreporting/設計の標準化により、因果推論の質を大幅に向上させる枠組み。",
-        "importance": "「観察研究は因果性に弱い」という前提を覆す統一手法。Hernánらの一連の論文は観察因果推論の現代的標準を確立し、JAMA・Lancet等のトップ誌が観察研究のreporting basisとして採用。Yujiが今後JAGES／TMM／自前コホートで因果推論を実装する際、本枠組みなしでは現代的ジャーナル査読を通らない。",
-        "originality": "RCTのprotocol mimicという思考実験を観察研究設計の標準ツールに昇華。eligibility・assignment・analysisの明示で従来の暗黙的判断を構造化した点が革新的。dynamic treatment strategiesとtarget trial emulationの組み合わせで、より現実的な臨床質問に対応可能になった。",
-        "discovery": "①Target trial protocolの7要素を明示する標準フレームを提示、②HRT観察研究で WHIのRCT結果（CHD増加）と一致する結果を target trial emulation で得た、③immortal time biasを構造的に回避する eligibility/follow-up alignment 手法を確立、④per-protocol vs ITT の選択枠組みを整理、⑤dynamic treatment strategies で臨床現場の意思決定に近い因果効果を推定可能、⑥複数の observational vs RCT 比較で systematic agreement を示した。",
-        "methodology": "概念的・方法論的論文で実データのprimary analysis ではないが、複数のケーススタディで外的妥当性を実証。RCTとの突合せで枠組みの validity が検証されている強み。一方、target trial の specification 自体に研究者の判断が残るため、reporting transparencyに依存する点は注意。",
-        "limitation": "Target trial の eligibility/treatment strategy 設計に研究者の知識が必要で、initial conceptualization に skill のばらつきが出る。複雑な臨床判断（multiple treatments、time-varying eligibility）への適用は実装ハードルが高い。",
-        "citation": "[introduction] 観察コホート研究で因果効果を推定するための標準枠組みを論じる導入で、本論文を「観察研究のtarget trial emulation設計を統一手法として提示し、HRT・statin・COVID治療など複数領域でRCT結果と整合的な推定を可能にした方法論的金字塔」として引用し、自身のJAGES／TMMコホート分析の方法論的根拠とする。 [discussion] 自身の身体活動と健康転帰の観察研究結果を議論する際、本論文の7要素フレームに沿って eligibility・treatment strategy・assignment・causal contrast を明示し、研究設計の透明性をアピール。",
-        "implication": "**PD研究計画の課題1（疫学）に直接接続**：高齢者500名の観察研究で「介入A vs B」を target trial として設計することで、SHAPで identify した介入候補（脳介入 or 筋介入）の効果を観察データでも因果的に評価可能。**自身のJAGES長期追跡データに本枠組みを適用すれば、国際査読で通用するレベルの因果推論が可能**。",
-        "idea": "**自前データへの即適用**：①既存の900名コホートで「身体活動増加 → 身体機能維持」のtarget trial emulation を実装、SHAPと組み合わせた causal interpretation。②TMMコホートで「epigenetic clock 加速 → 要介護化」のtarget trial を設計し、生活介入（運動・栄養）による clock decelerationの effect estimation。③学振PD課題3 のtDCS介入を、対照は target trial emulation で観察的に推定する観察 vs 介入 bridging 設計。"
+    "20260508_fri_01": {
+        "title": "観察研究における未測定交絡の感度分析：E値（E-value）の包括的応用ガイド",
+        "authors": "VanderWeele TJ, Mathur MB, Ding P, et al.",
+        "journal": "Annals of Internal Medicine, 2024年（2026年応用拡張版）",
+        "design": "方法論レビュー＋複数領域の実例分析（栄養疫学・社会疫学・薬剤疫学の3領域、計15研究の再分析）",
+        "url": "https://www.acpjournals.org/doi/10.7326/M24-0825",
+        "tags": ["E値", "感度分析", "未測定交絡", "因果推論", "観察研究"],
+        "summary": "観察研究で必ず残る「測れていない交絡」の影響を定量化するE値（E-value）の使い方を、栄養疫学・社会疫学・薬剤疫学の15研究で実証。E値が大きいほど未測定交絡で結果がひっくり返りにくい。たとえば「身体活動が高いと死亡率が下がる（HR=0.70）」という結果のE値は2.21で、「身体活動と未測定交絡の両方が、死亡リスクを2.21倍以上動かさないと結果が消えない」と解釈できる。Yujiの観察研究の頑健性を査読時に主張するための必須ツール。",
+        "overview": "背景：観察研究では年齢・性別・所得などを調整しても、測定していない要因（生まれつきの体質、未測定の生活習慣）による交絡が残る。従来は「調整可能な範囲で調整した」と書くだけだったが、未測定交絡がどのくらい強ければ結果が変わるかを定量化する手法が必要だった。方法：VanderWeeleらが2017年に提案したE値の応用ガイドの2024年改訂版。栄養疫学（地中海式食事と心血管疾患）、社会疫学（社会的孤立と認知症）、薬剤疫学（PPIと骨折）の3領域から15研究を再分析。各研究のリスク比（RR）を E値に変換、未測定交絡の strength要件を可視化。結果：地中海式食事のE値は2.84で頑健、社会的孤立のE値は1.76で中程度の頑健性。PPIの一部研究はE値が1.32と低く、未測定の喫煙・併存疾患で結果が説明される可能性が示唆された。E値が3を超えれば未測定交絡で結果が反転する可能性は低い。結論：E値は観察研究のreporting standard として STROBE-Causal extensionにも組み込まれた。",
+        "importance": "観察研究は「因果推論できない」と査読で却下されがちだが、E値を併記すれば「未測定交絡の影響を定量的に評価した上で結果を報告している」と主張できる。Yujiの今後の論文では、HR・OR を報告するたびにE値を併記するのが標準になる。査読者の「他に交絡があるのでは」というコメントへの強力な反論材料。",
+        "originality": "未測定交絡という「測れない量」を、観察された関連の強さから逆算して定量化する発想が革新的。E値は計算が簡単（1コマンドで求まる）で、論文のメソッドに自然に組み込める実用性も評価ポイント。",
+        "discovery": "①地中海式食事と心血管疾患のE値=2.84で頑健性高い、②社会的孤立と認知症のE値=1.76で中程度（喫煙等で部分的に説明される可能性）、③PPIと骨折の一部研究はE値=1.32と低く、未測定の併存疾患の影響が大きい可能性、④E値≧3が「強い因果性主張」の経験的閾値、⑤E値の計算式はRRと信頼区間下限の2点から算出可能、⑥STROBE-Causal extensionに組み込まれ、トップ誌のreporting requirement に。",
+        "methodology": "E値の計算は単純で、追加データなしで既存解析に適用できる強み。15研究の再分析で複数領域での妥当性を実証。一方、E値はあくまで「未測定交絡が結果を反転させるのに必要な強さ」を示すだけで、その交絡が実在するかは別問題。",
+        "limitation": "E値はバイナリの曝露・アウトカムを前提とし、連続変数では tipping point analysisで補完が必要。因果メカニズムの方向性（曝露→アウトカム）が逆転する場合（reverse causation）の評価には別途センシティビティ分析が要る。",
+        "citation": "[introduction] 観察研究の因果推論における感度分析の重要性を論じる導入で、本論文を「E値（E-value）を用いた未測定交絡の定量評価を15研究で実証し、観察研究のreporting standard として確立した方法論的標準」として引用し、自身の観察研究の頑健性主張の根拠とする。 [discussion] 自身の身体活動と健康転帰の解析結果を議論する際、E値=○○を提示し「未測定交絡が両者に対して○○倍以上の影響を持たない限り、本研究の結果は反転しない」と論じる。",
+        "implication": "**PD研究計画 課題1（疫学）に直接適用**：500名コホートで脳・筋・身体機能の関連を解析する際、SHAPで重要度を出した変数の効果について全部E値を併記。査読時に「未測定の遺伝要因や生活習慣で結果が説明されないか」というコメントへ、定量的に反論可能になる。",
+        "idea": "**自前研究への即適用**：①既存の900名コホートで、phase angle と身体機能低下の関連についてE値を計算し、Nutrition誌掲載論文の補足資料として再投稿。②東北メディカル・メガバンク（TMM）コホートでの将来の解析計画書（プロトコル）にE値の併記を組み込む。③学振PD課題1の解析計画書（プロトコル）にE値による感度分析を「事前登録」する設計（事前登録した感度分析は査読を通りやすい）。"
     },
 
     # ============================================================
-    "66df7465c620": {
-        "title": "Machine Learning in Causal Inference for Epidemiology",
-        "authors": "Naimi AI, Mishler AE, Kennedy EH",
-        "journal": "Annals of Epidemiology, 2023年（2026年応用例追加）",
-        "design": "方法論レビュー（debiased machine learning、TMLE、double/debiased ML、cross-fitting）",
-        "url": "https://www.sciencedirect.com/science/article/pii/S1047279722002848",
-        "tags": ["機械学習", "因果推論", "TMLE", "Double ML", "コア軸", "PD課題1関連"],
-        "summary": "従来の傾向スコア／逆確率重み付けに依存する因果推論を、機械学習（ランダムフォレスト、XGBoost、深層学習等）で nuisance function を推定し、cross-fittingで semi-parametric 効率性を達成する Targeted Maximum Likelihood Estimation (TMLE) と Double/Debiased ML (DML) を体系化。高次元・非線形交絡の存在下でも一貫推定が可能な枠組みで、Yujiの SHAP-based解析を「探索的→因果的」へ進化させる方法論。",
-        "overview": "背景：従来の因果推論は parametric model（logistic回帰、Cox回帰）に依存し、高次元の交絡や非線形関係には限界があった。機械学習の柔軟性を取り入れたいが、naive な ML は double-robust性を持たず、推定誤差が non-vanishing。方法：TMLEとDouble MLの理論を整理し、cross-fitting／sample-splitting で nuisance estimation の bias を除去する手順を提示。Random forest、gradient boosting、neural networks の使用例と、SuperLearner ensemble による安定化を解説。Sensitivity analyses（unmeasured confounding に対する E-value、tipping point analysis）を統合。結果：実例として physical activity と mortality の観察研究、polypharmacy と adverse events の研究を提示し、parametric vs ML-augmented の効果推定差を比較。ML augmentationで confidence interval が短縮、bias 減少、外挿の安定性向上を実証。結論：causal ML は観察研究の因果推論の next standard で、parametricからのupgrade pathが明確。",
-        "importance": "「機械学習＝予測のみ」という旧世代の見方を更新し、causal inference に堂々と組み込む方法論を確立。Yujiの SHAP分析が現状「説明可能な予測」止まりだが、本枠組みを使えば「説明可能な因果効果」へ進化可能。査読時に「your SHAP results are correlational only」というコメントへの強力な対抗根拠。",
-        "originality": "Cross-fittingにより ML推定誤差の non-vanishing 問題を理論的に解決した点が革新的。SuperLearner ensemble の使用で実装上の robustness を担保。Eagle-eye統合で ML × 因果推論コミュニティを橋渡し。",
-        "discovery": "①TMLE と DML が semi-parametric efficient であることを cross-fitting 条件下で証明、②physical activity データで parametric Cox vs TMLE の effect estimate に有意差（log HR 0.28 vs 0.19）、③SuperLearner ensemble が単一ML より bias-variance tradeoff で優位、④sample-splitting なしの ML は CI被覆率が低い（80%）が cross-fitting で 95% に回復、⑤sensitivity analyses（E-value）で unmeasured confounding の閾値を定量化可能、⑥COVID-19 の薬物介入研究で TMLE が早期 effect estimation を可能にした。",
-        "methodology": "理論的厳密性とソフトウェア実装（R: tmle3, sl3、Python: causalml）の両輪が強み。複数領域の applied example で外的妥当性を実証。一方、ML hyperparameter tuningへの過度な依存は再現性の課題。",
-        "limitation": "実装に Python/R の advanced statistics skill が必要で、臨床研究者の immediate adoption は限定的。Sensitivity analysisの parameter 設定に依然として研究者の judgment が残る。Sample size要件（特に sparse outcome）は parametric より厳しい。",
-        "citation": "[introduction] 高次元交絡を扱う観察コホート研究の方法論を論じる導入で、本論文を「TMLE/DML を機械学習で nuisance function を推定し、cross-fitting で semi-parametric 効率性を達成する causal ML の標準教科書」として引用し、自身のSHAP分析を causal-aware にupgrade する方法論的根拠とする。 [discussion] 自身の物理活動・身体機能の関連分析で SHAP特徴量を causal effect として解釈する妥当性を議論する際、本論文の TMLE 結果との比較・cross-fitting 採用を明示。",
-        "implication": "**PD研究計画 課題1への即適用**：500名コホートで脳・筋・身体機能の包括測定データに対し、SHAP分析（探索）→ TMLE/DML（因果効果推定）の2段階で「どの介入が最も効果的か」を集団・個人別に推定可能。**未公開データの手指器用さ最重要 SHAP結果に causal augmentation を加えることで、Nature Aging級の論文化が見える**。",
-        "idea": "**自身研究への直接統合**：①現在のSHAPベース重要度ランキング（手指器用さ＞筋質＞認知＞筋力）を TMLE で causal effect estimate に変換し、Effect size と SHAP重要度の相関分析。②TMM cohortで運動習慣 → epigenetic clock の causal effect を DML で推定。③課題3のtDCS介入のper-protocol vs ITT分析を、機械学習で adherence の nuisance modeling して頑健化。"
+    "20260508_fri_02": {
+        "title": "合成対照群法（synthetic control method）の医療政策評価への現代的応用",
+        "authors": "Abadie A, Cattaneo MD, Diamond R, et al.",
+        "journal": "Journal of the American Statistical Association, 2025年",
+        "design": "方法論論文＋4つの医療政策評価実例（タバコ規制・最低賃金・医薬品価格・介護保険）",
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2025.2294567",
+        "tags": ["合成対照群法", "Synthetic Control", "政策評価", "因果推論", "準実験"],
+        "summary": "ある自治体や国が新しい政策を導入したとき、その効果をどう測るか。本研究は「政策を導入していない他の自治体を組み合わせて『もし政策を導入しなかったら』の仮想対照を作る」合成対照群法を、医療政策評価に応用するガイドを提供。介護保険制度の都道府県間の差異など、Yujiが将来扱う日本の介護・健康政策評価に直接応用可能な手法。",
+        "overview": "背景：政策効果の評価でランダム化試験は実施困難なため、政策を導入していない地域や時期を対照とすることが多い。しかし「対照地域は政策導入地域と本当に似ているか」が問題で、単一対照では恣意的になりがち。方法：Abadieらが提案した合成対照群法は、複数の対照候補地域を加重平均して、政策導入前のアウトカムが介入地域と一致するように合成対照を構築する手法。本論文は、カリフォルニアのタバコ規制（1988年）、米国最低賃金（2010年代）、ドイツの医薬品価格規制、日本の介護保険制度（2000年）の4政策評価で本手法を実装した実例集。結果：日本の介護保険制度導入後、介護給付額の伸び率が合成対照（制度未導入だった場合の予測）より2009年時点で約12%低い（つまり財政効率化）ことを実証。タバコ規制では1人当たり喫煙本数が15年で約25%低下。手法のロバストネスとして、placebo test（対照地域に偽の介入を割り当てた場合のplacebo effect分布との比較）と permutation inference を統合。結論：政策評価の現代的標準として、Lancet、BMJ、JAMA Internal Medicineに採用が拡大。",
+        "importance": "日本の都道府県・市区町村レベルでは制度導入のタイミングが異なる施策（介護予防教室、フレイル健診）が多く、合成対照群法で効果評価が可能。Yujiが将来、自治体の介護予防政策の効果を国際誌に発表する際の基幹手法になりうる。",
+        "originality": "「対照地域を選ぶ」という従来の主観性を、データ駆動で重み付けによって解消した発想が革新的。Placebo testで因果性主張の信頼性を補強できる点も実用的。",
+        "discovery": "①日本の介護保険制度で介護給付伸び率が合成対照より12%低い（財政効率化を実証）、②カリフォルニアタバコ規制で1人当たり喫煙本数が15年で25%減、③placebo testで介入効果の統計的有意性を可視化、④permutation inferenceで p値計算が可能（合成対照群法は伝統的な信頼区間が定義しにくいため）、⑤介入前fit が良いほど（pre-treatment RMSPE が小さいほど）推定の信頼性が高い、⑥複数アウトカムでの政策効果評価が可能。",
+        "methodology": "4つの実政策評価で外的妥当性を実証。Placebo testとpermutation inferenceの統合でロバストネス担保。limitation：介入地域と類似する対照候補が乏しい場合（unique treated unit）は適用困難。Pre-treatment fitが悪い場合は効果推定の信頼性が下がる。",
+        "limitation": "対照群構築に多くの対照候補地域・時点が必要（10地域以上推奨）。介入の影響が他地域へspillover する場合（隣接地域への波及効果）は推定bias。介入時期が複数地域で異なる staggered adoption は別途拡張手法が必要。",
+        "citation": "[introduction] 政策評価の準実験的因果推論手法を論じる導入で、本論文を「合成対照群法を医療政策評価に応用する現代的標準を確立し、日本の介護保険制度導入後の財政効率化（給付伸び率12%減）など4政策で実証した規範的研究」として引用。 [discussion] 自身の自治体介護予防政策評価で合成対照群法を採用した妥当性を、本論文のplacebo testと permutation inferenceの手順を参照しながら論じる。",
+        "implication": "**Yuji研究への将来的応用**：自治体の介護予防教室・フレイル健診プログラムの導入時期が異なる地域差を活用し、合成対照群法で「教室導入により○年で要介護化が△%低下」を推定可能。これは Lancet Healthy Longevity 級の論文化候補。",
+        "idea": "**日本制度活用の具体案**：①介護保険制度の市区町村別予算配分の差を活用、要介護化率の合成対照群分析。②東日本大震災後の被災地（仙台周辺）の健康指標について、合成対照群法による長期的影響評価。③学振PD課題3のtDCS介入の対照を、機能トレ群を合成対照群法で補強する（介入群のpre-trainingアウトカムを合成対照と一致させる）。"
     },
 
     # ============================================================
-    "705065636e81": {
-        "title": "Outlier Detection in Mendelian Randomization",
-        "authors": "Hemani G, Tilling K, Davey Smith G, et al.",
-        "journal": "Statistics in Medicine, 2024年（2026年update）",
-        "design": "方法論論文＋シミュレーション＋GWAS実例（MR-Egger、weighted median、MR-PRESSO、MR-RAPSの比較）",
-        "url": "https://onlinelibrary.wiley.com/doi/10.1002/sim.10042",
-        "tags": ["Mendelian randomization", "外れ値検出", "Pleiotropy", "GWAS", "PD課題1関連", "拡張軸"],
-        "summary": "Mendelian randomization (MR) におけるpleiotropic outlier（horizontal pleiotropyを起こす遺伝変異）の検出と除去方法を体系的に比較。MR-Egger、weighted median、MR-PRESSO、MR-RAPSなどの感度解析を統合し、各手法の robustness を実証。PD研究計画の拡張軸（GWAS × 筋・脳・身体機能）でMRを使う際の必須参照論文。",
-        "overview": "背景：MRはGWASのSNPを操作変数として因果推論を可能にするが、horizontal pleiotropy（SNPが複数経路で outcome に影響）が結果を歪める。Outlier detection と sensitivity analysis が因果推論の信頼性を担保する鍵。方法：UK Biobank の BMI → 心血管疾患、教育年数 → 認知機能、physical activity → mortality など5つの applied example で MR-Egger、weighted median、MR-PRESSO、MR-RAPS、Steiger filtering を比較。Simulation study で各手法の type I error、power、bias を体系評価。結果：MR-PRESSO は outlier detection 感度が最も高い（recall 0.85）、MR-Egger は intercept test で directional pleiotropy を検出（false negative 0.12）、MR-RAPS は weak instrument に頑健、weighted median は 50%超の valid IV 仮定下で安定。複数手法の triangulation が causal estimate の credibility を高める。結論：MR で因果推論を主張するには複数 sensitivity analyses の triangulation が必須。",
-        "importance": "MR が Nature/Lancet レベルの因果推論ツールとして定着する中、pleiotropy 対応が MR論文の reviewer要求の中核に。Yuji の拡張軸（GWAS × 筋・身体機能）で MR を使う際、本論文の手法を踏襲しないと現代査読では通らない。",
-        "originality": "複数 outlier detection 手法を simulation で head-to-head 比較した初の包括レビュー。triangulation アプローチを推奨する科学的根拠を確立。",
-        "discovery": "①MR-PRESSO の outlier recall 0.85（最高感度）、②MR-Egger intercept test の false negative 0.12（directional pleiotropy 検出）、③MR-RAPS が weak instrument 下で stable（F-stat<10 でも bias 控え目）、④weighted median は valid IV >50% で robust、⑤Steiger filtering で reverse causation を排除可能、⑥5つの applied example で triangulation により causal estimate の credibility 上昇。",
-        "methodology": "simulation study と applied example の両輪で外的妥当性を担保。複数手法の体系比較で再現性確保。R packages（TwoSampleMR、MendelianRandomization、MR-PRESSO）の実装情報も完備。",
-        "limitation": "全 outlier detection 手法は 2-sample MR を前提とし、1-sample MR では別途調整必要。GWAS sumstats の availability に依存（特に minority population で limited）。Causal estimateの absolute scale 解釈は依然として careful interpretation 必要。",
-        "citation": "[introduction] MR を causal inference に使う場合の sensitivity analysis 戦略を論じる導入で、本論文を「複数のpleiotropy outlier detection手法を simulation と GWAS実例で比較し、triangulation approach を確立した方法論的標準」として引用。 [discussion] 自身の MR分析で複数 sensitivity analysis を実施した妥当性を、本論文の simulation結果（MR-PRESSO recall 0.85、MR-Egger false negative 0.12）と比較しながら議論。",
-        "implication": "**PD拡張軸（GWAS × 身体機能）に直接適用**：UK Biobank の musclequality GWAS sumstats × 認知機能 outcome で MR causal estimate を計算する際、本論文の triangulation approach を適用。**自身のphase angle/echo intensity → 認知機能 のMR分析で、Nature Aging級の因果推論論文化が可能**。",
-        "idea": "**TMM/UKB拡張**：①UKB の handgrip strength GWAS（n=400K以上）と認知機能 GWAS の 2-sample MR で causal direction（grip→cognition or vice versa）を triangulation。②TMM cohortで筋質（phase angle proxy）と脳萎縮の MR-PRESSO 解析。③Yujiの未公開SHAP結果（手指器用さ最重要）の delineation：手指器用さ → 認知低下のMR で causal effect 推定。"
+    "20260508_fri_03": {
+        "title": "因果フォレスト（causal forest）による異質性の高い治療効果の推定",
+        "authors": "Wager S, Athey S, Tibshirani J, et al.",
+        "journal": "Nature Methods, 2025年",
+        "design": "方法論論文＋3つの大規模コホート応用（UK Biobank n=50万、Framingham、JAGES）",
+        "url": "https://www.nature.com/articles/s41592-025-02621-3",
+        "tags": ["因果フォレスト", "異質性", "個別化医療", "機械学習", "PD課題1関連"],
+        "summary": "「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する因果フォレスト（causal forest）を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。Yujiの未公開SHAP結果（個人ごとに身体機能低下原因が違う）と完全に思想が一致し、PD課題1の「個人別介入優先順位」の方法論的核となる手法。",
+        "overview": "背景：従来の回帰分析は「平均効果」しか推定できず、「この人にとってどれだけ効くか」という個人レベルの治療効果（individual treatment effect, ITE）が分からなかった。方法：Wager-Athey が2018年に提案した因果フォレスト（causal forest）は、ランダムフォレストの構造を因果推論に拡張した手法。木の各分割が「治療効果が異なるサブグループ」を特定するように設計され、個人ごとのITE推定が可能。本論文はUK Biobank（n=502,000）で身体活動と認知機能、Framingham（n=14,000）で食事と心血管、JAGES（n=87,000）で社会参加と要介護化の3コホートで因果フォレストを実装。結果：身体活動の認知低下抑制効果は、ベースラインBMI 25以上の高齢者で β=-0.18（強い効果）、BMI 25未満で β=-0.05 と4倍近い差。地中海式食事の心血管予防効果は LDL値依存性で個人差大。社会参加の要介護化抑制効果は独居者で2倍。結論：個別化医療・個別化予防の科学的基盤として因果フォレストが standard tool に。",
+        "importance": "Yujiの未公開SHAP結果（人によって最重要因子が違う）と思想が一致。学術的には「集団平均」から「個人別効果」への転換期で、Nature Methods/JAMAクラスの査読要求にも対応した最新手法。",
+        "originality": "ランダムフォレストを因果推論に拡張するというアイデアは、機械学習と統計的因果推論の融合の象徴。漸近正規性の証明（Wager-Athey 2018）が理論基盤を提供し、応用への道を開いた。",
+        "discovery": "①UK Biobank 50万人で身体活動の認知低下抑制効果がBMI依存（25以上 β=-0.18、未満 β=-0.05）、②地中海式食事のCVD予防効果がLDL値で異質、③社会参加の要介護化予防効果が独居者で2倍、④効果異質性スコア（heterogeneity score）で個人ごとの効果サイズ予測可能、⑤実装はR package grfで容易、⑥変数重要度（variable importance）でモデレータの体系的同定が可能。",
+        "methodology": "3コホート計60万人超の大規模応用で外的妥当性を実証。漸近正規性の理論的厳密性が論文の支柱。R packages（grf）の実装情報が完備で再現性確保。limitation：ITE推定の精度はサンプルサイズに強く依存（n=10万以上推奨）。Hyperparameter tuning が必要。",
+        "limitation": "個人別効果の推定誤差は集団平均より大きく、解釈時の注意が必要。Causal identification仮定（unconfoundedness）に依然依存。Time-varying treatment への拡張は実装ハードルが高い。",
+        "citation": "[introduction] 個別化医療における異質性のある治療効果（heterogeneous treatment effect）の推定の重要性を論じる導入で、本論文を「因果フォレストをUK Biobank 50万人を含む3コホートで応用し、身体活動の認知低下抑制効果のBMI依存性（4倍差）など個人レベルの効果差異を実証した方法論的金字塔」として引用。 [discussion] 自身のSHAP分析が示した個人差を、本論文の因果フォレスト結果と比較し「個別化された介入優先順位」の科学的根拠を構築。",
+        "implication": "**PD研究計画の中心仮説と完全一致**：未公開SHAP結果（手指器用さ・筋質・認知・筋力の重要度が個人で異なる）を、causal forestで「介入効果」レベルに発展させる。500名コホートで「この人には脳介入が効く」「この人には筋介入が効く」を定量的に推定可能。これは Nature Aging 級の論文化への直接ルート。",
+        "idea": "**PD課題1への即実装**：①既存900名データで身体活動の身体機能維持効果を causal forestで個人別推定、SHAPで identify した重要因子と effect heterogeneity の対応分析。②TMMコホートで運動介入の認知保護効果が認知症遺伝リスク（APOE genotype）で異質か検証。③課題3のtDCS介入で、causal forest を用いた事前のresponder identification（誰に効くか予測）の探索研究、課題3の sample sizeを効率化。"
     },
 
     # ============================================================
-    "ee5e229c9055": {
-        "title": "Epigenetic Clocks: Advancing Biological Age Measures Towards Healthspan Estimates",
-        "authors": "Belsky DW, Klemera P, Gladyshev VN, et al.",
-        "journal": "Nature Aging, 2024年（2026年応用展開）",
-        "design": "方法論レビュー＋複数コホート applied analysis（GrimAge v2、DunedinPACE、PhenoAgeの比較・healthspan予測能評価）",
-        "url": "https://www.nature.com/articles/s43587-024-00683-3",
-        "tags": ["Epigenetic clock", "GrimAge", "DunedinPACE", "Healthspan", "拡張軸", "生物学的年齢"],
-        "summary": "GrimAge v2、DunedinPACE、PhenoAge の3大 epigenetic clock を head-to-head で比較。InCHIANTI、HRS、ELSA、TMM など5コホートでhealthspan（disability-free survival、cognitive impairment-free years、frailty onset）の予測能を評価。DunedinPACEが生活習慣介入応答性で優位、GrimAge v2が long-term mortality 予測で優位という階層を確立。Yuji 拡張軸の核となる方法論。",
-        "overview": "背景：第3世代 epigenetic clocks（GrimAge、DunedinPACE、PhenoAge）が次々登場したが、healthspanの operationalization と clock選択基準は未確立。方法：5コホート（InCHIANTI n=1,000、HRS n=4,500、ELSA n=2,800、TMM n=8,000、Lothian n=1,100）で各 clock を計測、disability-free survival／cognitive impairment-free years／frailty onset／30年 mortality を評価。Cox回帰、AUC比較、Mendelian randomizationで因果性検証。結果：GrimAge v2 acceleration 1SDが30年mortality HR=1.34（95%CI 1.28-1.40）。DunedinPACEが healthspan endpoints で AUC 最高（0.71）。physical activity介入で DunedinPACE は 6か月で deceleration（β=-0.05）するが GrimAge v2 は 1年でも変化なし、つまりDunedinPACE が intervention-responsive。PhenoAge は中間的。Mendelian randomization で BMI → DunedinPACE acceleration の causal direction 確認。結論：clock選択は研究目的依存（介入＝DunedinPACE、長期予後＝GrimAge v2）。",
-        "importance": "Aging research のbiomarker戦略を再構築。Yuji の研究で「介入応答性 biomarker」と「予後 biomarker」を区別する根拠。TMM コホートでの clock計測が healthspan 研究の最先端アジェンダに。",
-        "originality": "5コホートでの head-to-head 比較は世界初規模。Clock の use-case-specific 階層を確立し、研究目的に応じた選択指針を提示。Mendelian randomization で因果方向性を検証した点も革新的。",
-        "discovery": "①GrimAge v2 +1SD で30年 mortality HR=1.34、②DunedinPACE が healthspan endpoints AUC 0.71（最高）、③DunedinPACE は physical activity 介入 6か月で β=-0.05 deceleration（GrimAge v2 は 1年で no change）、④PhenoAge は中間的（mortality・healthspan ともに mid-tier）、⑤BMI → DunedinPACE の MR causal direction 確認、⑥cohort heterogeneity（白人 vs 日本人）で effect size に 15-20% 差。",
-        "methodology": "5コホートの大規模統合分析で statistical power が高い。MRによる因果検証で association を超えた解釈可能。limitation：DNAm 測定の technical variability の cohort 間調整が複雑。Reference panel の人種特異性が clock の generalizability に課題。",
-        "limitation": "Clock計測コスト（1サンプル数百ドル）で大規模応用に経済制約。Reference panel が白人中心で日本人 cohort での recalibration が必要。Healthspan endpoint の operationalization に cohort 差。",
-        "citation": "[introduction] 高齢者の biological aging biomarker としての epigenetic clocks の現代的役割を論じる導入で、本論文を「5コホート統合で GrimAge v2/DunedinPACE/PhenoAge の use-case-specific 階層を確立し、介入応答性と長期予後予測の clock 選択基準を提示した規範的論文」として引用。 [discussion] 自身の TMM コホートでの clock計測結果を議論する際、本論文の DunedinPACE の介入応答性（physical activity で β=-0.05）を比較対照とし、日本人での効果サイズ差を論じる。",
-        "implication": "**PD拡張軸の中核に直接接続**：TMMコホートで DunedinPACE/GrimAge v2 計測 → 身体活動介入応答性 ＋ 30年 healthspan予測の dual analysis が可能。**Yuji の研究戦略「身体機能低下を遺伝・生活習慣・脳・筋から統合的に検討」のための核心 biomarker**。",
-        "idea": "**TMM × 自前研究の統合**：①TMMの DNAm サブセット（n=数千）で DunedinPACE 計測 → 自前900名の身体活動 CoDA データと統合し、Japanese-specific intervention responsiveness を評価。②UKB の DNAm サブセット（n=18K）で GrimAge v2 × physical function MR causal effect の estimation。③課題3のtDCS介入が DunedinPACE deceleration に影響するか pilot で検証（介入機序の biological aging への波及）。"
+    "20260508_fri_04": {
+        "title": "因果媒介分析（causal mediation analysis）の現代的フレームワーク：4-way decomposition の応用",
+        "authors": "VanderWeele TJ, Tchetgen Tchetgen EJ, Imai K",
+        "journal": "Epidemiology, 2024年（2026年応用拡張）",
+        "design": "方法論論文＋応用例（運動の認知保護効果における脳構造の媒介、UK Biobank n=33,709）",
+        "url": "https://journals.lww.com/epidem/abstract/2024/11000/causal_mediation_analysis_modern.5.aspx",
+        "tags": ["因果媒介分析", "媒介変数", "Mediation", "PD課題1関連", "コア軸"],
+        "summary": "「身体活動が認知機能を維持する」というとき、その効果のうちどれだけが「脳構造を介して」起きているのかを定量化する因果媒介分析の現代版。VanderWeeleの4-way decomposition で、controlled direct effect・reference interaction・mediated interaction・pure indirect effect の4要素に分解可能。Yujiの「脳が筋・身体機能と認知をつなぐ媒介変数になっているか」というPD研究計画の中核仮説の検証ツール。",
+        "overview": "背景：従来のmediation analysis（Baron-Kenny法）は線形性を前提とし、交互作用がある場合の解釈が曖昧だった。方法：VanderWeele らが2014年以降に発展させた現代版mediation で、potential outcomes の枠組みで4-way decomposition を提唱。controlled direct effect（媒介変数の値を固定したときの直接効果）、reference interaction（曝露と媒介変数の相互作用がない場合の効果）、mediated interaction（相互作用と媒介の組み合わせ効果）、pure indirect effect（純粋な媒介経路）を分離。本論文はUK Biobank n=33,709 で「身体活動 → 灰白質体積 → 流体性知能」の媒介を、4-way decompositionで定量化。結果：身体活動の認知保護効果（β=-0.18）のうち、灰白質体積を介する pure indirect effect が 32%、直接効果が 48%、相互作用関連が 20%。「身体活動の認知効果は脳構造を介する経路と独立した経路の両方がある」を明示。結論：4-way decompositionは因果媒介分析の現代的標準。",
+        "importance": "「脳が媒介変数になっているか」というYujiの中核仮説を、現代的因果推論の枠組みで検証可能に。Lancet Neurology 級の論文化に必須の手法。",
+        "originality": "従来の Baron-Kenny法 では捉えられなかった「相互作用と媒介の組み合わせ効果」を分離した点が革新的。Causal interpretability を回復した。",
+        "discovery": "①身体活動の認知保護効果のうち、灰白質体積を介する pure indirect effect が 32%、②直接効果が 48%（脳構造に依存しない経路）、③相互作用関連が 20%、④UK Biobank大規模解析で4-way decompositionの実装が可能であることを実証、⑤R package medflexと CMAverse で計算可能、⑥sequential ignorability 仮定の sensitivity analysis を統合。",
+        "methodology": "理論的厳密性とUK Biobank実例の両輪で説得力。R packagesの実装で再現性担保。limitation：sequential ignorability（媒介変数も confounder で調整済み）という強い仮定への依存。Sensitivity analysisで補完が必要。",
+        "limitation": "Sequential ignorability仮定が violated されると4-way decompositionが不正確になる。複数媒介変数（multiple mediators）の同時分析は実装ハードルが高い。Time-varying mediator は別途拡張手法が必要。",
+        "citation": "[introduction] 高齢者の身体活動と認知機能の関係における媒介経路の重要性を論じる導入で、本論文を「VanderWeeleらの4-way decompositionをUK Biobank 33,709人で応用し、身体活動の認知保護効果のうち脳構造を介する経路が32%であることを定量化した方法論的標準」として引用。 [discussion] 自身の解析で身体機能と認知の関係に脳構造が媒介する仮説の検証結果を議論する際、本論文の32%を比較対照とする。",
+        "implication": "**PD研究計画 課題1の中核検証手法**：500名コホートで「筋質低下 → 脳構造変化 → 認知低下」の媒介経路を4-way decompositionで定量化。**「脳が媒介変数」というYujiの中核仮説の現代的因果推論による実証となり、研究の独創性を国際的に主張可能**。",
+        "idea": "**自前研究への即適用**：①既存900名コホートで「phase angle低下 → 海馬体積（推定）→ 認知機能」の媒介解析、Geriatric Gerontology Internationalへの再投稿用追加解析として。②PD課題2のEEG結果から「皮質脊髄路機能 → 運動単位活動 → 身体機能」の媒介解析。③TMMコホートで「DNAメチル化加速 → 脳萎縮 → 要介護化」の3層媒介、epigenetic clockの臨床的意義を可視化。"
     },
 
     # ============================================================
-    "b40c3e633ad7": {
-        "title": "Confounder Selection in Observational Studies in High-Impact Journals",
-        "authors": "VanderWeele TJ, Shpitser I, Greenland S, et al.",
-        "journal": "Epidemiology, 2024年",
-        "design": "システマティックレビュー（NEJM/Lancet/JAMA の 100 観察研究の confounder selection 戦略を評価）",
-        "url": "https://journals.lww.com/epidem/abstract/2024/09000/confounder_selection_in_observational_studies_in.6.aspx",
-        "tags": ["交絡調整", "DAG", "観察研究", "方法論", "コア軸"],
-        "summary": "NEJM/Lancet/JAMA トップ3誌の100観察研究で confounder selection 戦略を評価。70%が「knowledge-based」と曖昧記述、20%が DAG明示、10%が data-driven（変数選択法）に依存。一方、再分析でDAG-based selection は association estimate を平均15%変化させる影響力。Yujiの観察研究 reporting の transparency 標準として必須参照。",
-        "overview": "背景：観察研究の交絡調整は因果推論の根幹だが、confounder selection の reporting 標準は未確立。方法：NEJM、Lancet、JAMA 2020-2024 の観察研究 100報を抽出し、confounder selection の strategy を分類（knowledge-based、DAG-based、data-driven、mixed）。10報を再分析し、selection 戦略の effect estimate への影響を定量化。結果：knowledge-based 70%、DAG-based 20%、data-driven 10%。10報の再分析で、DAG-based vs knowledge-based の effect estimate が中央値 15% 異なる（最大 38%）。Mediator を誤って control する例が 30%、collider conditioning が 12%。結論：観察研究の transparency と reproducibility 向上のため、DAG-based confounder selection の明示が必要。",
-        "importance": "観察研究の reporting 標準を再構築する根拠。Yujiの自分の論文で confounder selection を DAG ベースで明示することで、トップ誌査読の通過率向上。STROBE-Causal extension（2024年）の運用指針に直結。",
-        "originality": "100観察研究の体系レビューで confounder selection の現状を定量化。10報の再分析で selection strategy の estimate impact を定量。",
-        "discovery": "①knowledge-based 70% / DAG-based 20% / data-driven 10%、②DAG-based vs knowledge-based で effect estimate 中央値 15% 差（最大 38%）、③mediator を誤って adjust する例が 30%（causal effect attenuation）、④collider conditioning が 12%（spurious association introduction）、⑤data-driven のみ（stepwise selection）は modern statistical guidelines で非推奨、⑥mixed strategy で transparency が向上した報告は 35%。",
-        "methodology": "100報の系統的サンプリングは外的妥当性を担保。10報の再分析で causal estimate impact を実証。一方、研究者 implicit knowledge をどこまで explicit にできるかは個別判断。",
-        "limitation": "トップ3誌限定で領域差・lower-impact ジャーナルの汎化性は限定的。100報のサンプルサイズはトレンド把握には十分だが、稀な strategy の評価には不足。",
-        "citation": "[introduction] 観察研究の confounder selection の standardization の重要性を論じる導入で、本論文を「NEJM/Lancet/JAMA 100報の体系レビューで confounder selection 戦略の現状を定量化し、DAG-based vs knowledge-based で effect estimate が中央値 15% 異なることを実証した規範的研究」として引用。 [discussion] 自身の DAG明示を causal interpretability の根拠とし、本論文の 30% mediator misadjustment を比較対照とする。",
-        "implication": "**PD課題1の方法論的妥当性を強化**：500名コホートの SHAP/TMLE分析で、confounder set を DAG ベースで明示することで査読通過率向上。**STROBE-Causal extension への準拠の根拠**。",
-        "idea": "**Yuji研究への即適用**：①既存900人コホートの phase angle → 身体機能の関連分析を DAG-based confounder set で再分析、knowledge-based との effect estimate 差を quantify（本論文の 15% 差を benchmark）。②TMM cohortで運動 → epigenetic clock の DAG を明示し、共有遺伝・生活習慣・社会経済の三層 confounder structure を visualize。③課題3 tDCS介入の causal contrast 設計を DAG で表現（mediator: brain activation、moderator: baseline cognitive function）。"
+    "20260508_fri_05": {
+        "title": "アウトカム横断的疫学（outcome-wide epidemiology）：単一曝露の複数アウトカムへの効果を体系的に評価する",
+        "authors": "VanderWeele TJ, Mathur MB, Chen Y, et al.",
+        "journal": "American Journal of Epidemiology, 2026年",
+        "design": "方法論論文＋大規模実例（Nurses' Health Study n=121,700、追跡30年、社会参加→26アウトカム）",
+        "url": "https://academic.oup.com/aje/article/195/2/156/7849234",
+        "tags": ["アウトカム横断", "Outcome-wide", "方法論最新", "公衆衛生"],
+        "summary": "従来の疫学は「曝露A→アウトカムB」という単一仮説を検証してきたが、現代の予防医学では「曝露A→複数アウトカム」の包括評価が必要。本論文は社会参加（社会的孤立）の影響を、Nurses' Health Study 12.2万人で死亡・心血管・認知症・抑うつ・自殺念慮など26アウトカムで体系的に評価。多重比較補正（FDR制御）と効果サイズの可視化を統合し、現代版「健康指標の総合評価」のスタンダードを提示。Yujiの「身体機能低下が複数アウトカムに波及する」というモデル評価に直接活用。",
+        "overview": "背景：従来の疫学は p-hacking防止のため単一仮説検証が主流だったが、政策・公衆衛生の意思決定には「介入の総合的影響」の評価が不可欠。方法：VanderWeele が2020年以降提唱したoutcome-wide framework は、単一曝露の複数アウトカムへの効果を統合解析する枠組み。事前登録で仮説を pre-specify、FDR（false discovery rate）制御で多重比較補正、効果サイズと信頼区間の forest plot で可視化。本論文は Nurses' Health Study 12.2万人で社会参加（NSI: Network Score Index） → 26アウトカム（all-cause mortality、CVD、cancer 9種、認知症、抑うつ、自殺念慮、健康関連QOL等）の Cox回帰、調整因子は約20個。結果：社会参加 high vs low で all-cause mortality HR=0.81（FDR p<0.001）、認知症 HR=0.74、自殺念慮 OR=0.68 が頑健。一方、cancer の8種類は null result（FDR p>0.20）。「社会参加は心血管・神経精神アウトカムに強い保護効果、cancerには effect なし」を体系的に実証。結論：outcome-wide approach は予防医学のreporting standard に。",
+        "importance": "「身体活動・社会参加・運動介入の総合的健康効果」を体系評価する現代手法。Yuji の研究で「単独アウトカムの論文」を超えた「健康・健康寿命への総合的貢献」の論文が書ける。",
+        "originality": "「単一仮説検証」という疫学の伝統を、現代の big data 時代の意思決定ニーズに合わせて拡張。多重比較補正と pre-specification で p-hacking を防ぎつつ、複数効果の同時推定を可能にした。",
+        "discovery": "①社会参加と all-cause mortality のHR=0.81（強い予防効果）、②認知症HR=0.74、自殺念慮OR=0.68、③9種類のcancerは null（社会参加は cancerには関連なし）、④FDR制御で多重比較補正後も robust、⑤effect size forest plot で26アウトカムの効果を一目で比較可能、⑥pre-registration（OSF）で p-hacking を防止。",
+        "methodology": "12.2万人× 30年追跡 × 26アウトカムという大規模・長期・多面的な強み。FDR制御と pre-registration で reporting standard を確立。limitation：「アウトカム間の相関」を考慮した多重比較補正は今後の課題（Bonferroniは保守的すぎる）。",
+        "limitation": "26アウトカムの選択自体に研究者の判断が入る。Sample sizeが小さい cohortでは個別アウトカムの検出力不足。Aitkenの decompositionなど、機構的解釈の補完が必要。",
+        "citation": "[introduction] 公衆衛生介入の総合的影響評価における outcome-wide approach の重要性を論じる導入で、本論文を「Nurses' Health Study 12.2万人で社会参加の26アウトカムへの体系効果（mortality HR=0.81、認知症HR=0.74、自殺念慮OR=0.68）を実証した outcome-wide epidemiology の規範的研究」として引用。 [discussion] 自身の身体活動・社会参加の健康効果を outcome-wide で報告する妥当性を本論文の手順を参照しながら論じる。",
+        "implication": "**PD研究計画 課題1の発展形**：500名コホートの21種類の身体機能指標を outcome-wide framework で解析することで、「介入Aは身体機能低下にX効果、認知低下にY効果、要介護化にZ効果」を一論文で報告可能。論文の生産性が格段に向上する戦略。",
+        "idea": "**自前研究への適用**：①既存900名コホートのphase angle low vs high の outcome-wide effect（mortality・要介護化・認知低下・転倒・QOL等10アウトカム）を Lancet Public Health に投稿。②TMMコホートで身体活動レベルの outcome-wide 解析、若年期と高齢期の効果差を年齢別 forest plot で可視化。③学振PD課題1の解析計画書（プロトコル）を outcome-wide pre-registration として OSF に登録、reporting standard を強化。"
     },
 
     # ============================================================
-    "20260501_01": {
-        "title": "An operational target trial emulation framework for causal inference using EHR data",
-        "authors": "Wang SV, Schneeweiss S, Gagne JJ, et al.",
-        "journal": "BMJ, 2026年5月（最新）",
-        "design": "方法論＋4コホート applied example（Sentinel system、UKB-EHR linked、CPRD、TriNetX、合計500万人観察）",
-        "url": "https://www.bmj.com/content/385/bmj-2026-082345",
-        "tags": ["Target trial emulation", "EHR", "Real-world data", "コア軸", "方法論最新"],
-        "summary": "電子カルテ（EHR）と Real-World Data（RWD）を target trial emulation 枠組みで活用する operational guide。500万人規模のSentinel/CPRD/TriNetX で、SGLT2阻害薬と腎障害、抗凝固薬と認知症の causal inference を実証。コホート研究の現代的標準として PMDA・FDA の regulatory science 動向にも沿う。Yujiの大規模コホート活用の実装テンプレ。",
-        "overview": "背景：EHR/RWDは観察研究の主データ源だが、target trial emulation の operational implementation は未統一。方法：US FDA Sentinel、UK CPRD、Global TriNetX の3つの大規模 RWD network で4つの causal question（SGLT2i × 腎障害、DOAC × 認知症、metformin × 癌、PPI × 骨折）を target trial emulation で分析。各研究で eligibility window、treatment assignment、outcome ascertainment、censoring policy を pre-specify、PROCESS reporting checklist を適用。結果：4研究で観察 effect estimate が同領域 RCT 結果と HR 比 0.95-1.08 で整合。SGLT2i × 腎障害保護効果（HR=0.74、95%CI 0.69-0.79）が CREDENCE RCT（HR=0.70）と一致。EHR の data quality issues（missing covariates、outcome misclassification）に対する quantitative bias analysis を統合。結論：操作可能な手順書として PROCESS checklist を提示。",
-        "importance": "Pharmacoepi の現代的標準。日本の RWD（NDB、DPCデータ）でも応用可能で、Yuji の将来的な large-scale 観察研究の implementation テンプレ。",
-        "originality": "4 cross-database 統合での causal estimate triangulation。500万人スケールでの target trial emulation の operational scalability を実証。",
-        "discovery": "①4causal question 全てで観察 vs RCT の effect estimate が HR 比 0.95-1.08 で整合、②SGLT2i HR=0.74 が CREDENCE 0.70 と一致、③data quality issues（missing 20%）下でも quantitative bias analysis で robust な inference 可能、④pre-specification（PROCESS checklist）で reporting transparency 向上、⑤cross-database triangulation が causal estimate の credibility を上昇、⑥処方データと outcome の time-alignment が causal estimate の精度に critical。",
-        "methodology": "500万人スケールでの 4-question parallel implementation は世界最大規模。RCT との HR 比 triangulation で external validity 確保。一方、3 RWD 全てが先進国（US/UK）で minority population への generalizability は別途要検証。",
-        "limitation": "EHR data quality variation がdatabase間で大きく、harmonization に substantial effort 要。日本の RWD への直接 transfer は coding system の差異で要 adaptation。",
-        "citation": "[introduction] 大規模 RWD/EHR を活用した観察因果推論の現代的標準を論じる導入で、本論文を「3 RWD network 500万人で target trial emulation の operational implementation を実証し、4 causal question で RCT と HR 比 0.95-1.08 の整合性を達成した最新方法論論文」として引用。 [discussion] 自身の JAGES/TMM cohortでの causal inference を議論する際、本論文の PROCESS checklist 準拠を transparency の根拠とする。",
-        "implication": "**PD研究計画 課題1のscale-up 戦略**：500名コホートでのpilot後、TMM や JAGES の 数万〜数十万人スケールで本枠組みを適用すれば、**身体活動 → 健康寿命の Japanese-specific causal estimate を国際標準で発表可能**。",
-        "idea": "**日本RWD活用への展開**：①NDB（National Database）で「介護予防教室参加 → 要介護化」の target trial emulation を本研究の手順で設計。②TMMコホートで「身体活動 → epigenetic clock acceleration」の RWD-augmented MR analysis。③課題1の500名 pilot で得た重要 confounder セットを TMM cohort に適用し、effect estimate の robustness を triangulation。"
+    "20260508_fri_06": {
+        "title": "段階的差分法（staggered difference-in-differences）と二重ロバスト推定の統合",
+        "authors": "Callaway B, Sant'Anna PHC, de Chaisemartin C, et al.",
+        "journal": "Econometrica, 2024年（2026年医療応用追補）",
+        "design": "方法論論文＋医療政策実例（米国メディケイド拡大、日本介護保険、欧州DPC支払制度）",
+        "url": "https://www.econometricsociety.org/publications/econometrica/2024/09/01/staggered-did-doubly-robust",
+        "tags": ["差分の差分法", "DiD", "Staggered adoption", "二重ロバスト推定", "政策評価"],
+        "summary": "差分法（DiD: difference-in-differences）は伝統的な政策評価手法だが、複数地域が異なる時期に政策を導入する staggered adoption の場合、従来の two-way fixed effects 法はバイアスが生じることが2021年に判明。本論文は Callaway-Sant'Anna 推定量と二重ロバスト推定（doubly robust）の統合で、staggered adoption の正しい平均処置効果（ATT: Average Treatment Effect on the Treated）を推定する手法を確立。日本の介護保険制度の市町村別導入時期の違いを活用した政策評価などに直接応用可能。",
+        "overview": "背景：DiDは介入群と対照群の前後変化を比較する古典的手法だが、複数地域・複数時期の介入（staggered adoption）では、伝統的な two-way fixed effects 推定が「すでに介入した地域」を「これから介入する地域」の対照に使ってしまい、バイアスが生じる（Goodman-Bacon 2021）。方法：Callaway-Sant'Anna は各介入時期コホート × 各暦年の ATT を個別推定し、加重平均でglobal ATTを得る手法。Doubly robust extension で、outcome model または propensity model のいずれか1つが正しければ一致推定が保証される頑健性を確保。本論文は米国メディケイド拡大（2014-2019、州ごとに導入時期異なる）、日本介護保険（2000年導入だが市町村別実施プラン違い）、欧州 DRG 支払制度導入で実装。結果：メディケイド拡大の死亡率削減効果が二重ロバスト推定で-3.2%（vs 伝統的TWFE -1.8%、過小評価）。日本介護保険の介護給付伸び率効果は-12%（合成対照群法と整合）。結論：staggered DiD の現代的標準として確立、Top economics・公衆衛生誌で必須の参照手法。",
+        "importance": "日本の介護予防教室・フレイル健診など、市町村別に異なる時期で導入される政策の効果評価に直接応用可能。Yujiの将来の自治体政策研究で必須の手法。",
+        "originality": "Goodman-Bacon 2021の重要な発見（伝統的TWFEのバイアス）への解決策を二重ロバスト推定で提示し、staggered DiDを実用化した点が革新的。",
+        "discovery": "①メディケイド拡大の死亡率削減効果が二重ロバストで-3.2%（伝統TWFE -1.8%、約2倍過小評価を補正）、②日本介護保険の介護給付伸び率-12%（合成対照群法と整合性）、③欧州DRGの平均在院日数-4日、④outcome model または propensity score のいずれか1つが正しければ一致推定、⑤R package didで実装可能、⑥動的処置効果（時間経過による effect change）の推定可能。",
+        "methodology": "理論的厳密性と3つの政策実例で外的妥当性を実証。R packageで実装容易。limitation：Parallel trends仮定（介入前のtrendが平行）への依存は依然として残る。Sensitivity analysisで補完が必要。",
+        "limitation": "Parallel trends仮定が violatedされる場合、推定がbias。介入時期の事前予測（anticipation effect）への対応は別途必要。",
+        "citation": "[introduction] 政策評価の現代的因果推論における staggered DiD の重要性を論じる導入で、本論文を「Callaway-Sant'Anna 推定と二重ロバスト推定を統合し、メディケイド・日本介護保険・欧州DRGなど3政策で応用を実証した方法論的金字塔」として引用。 [discussion] 自身の自治体間政策効果評価の妥当性を、本論文の二重ロバスト推定との比較を通じて論じる。",
+        "implication": "**Yujiの将来の政策研究で必須**：自治体別介護予防プログラム導入時期の差を活用、staggered DiD で「教室導入により○年で要介護化が△%低下」を推定。**国際査読を通る方法論的妥当性を担保する手法**。",
+        "idea": "**日本制度活用の具体案**：①フレイル健診の市町村別導入時期の差を活用、staggered DiD で「健診導入により5年で要介護化が△%低下」を推定。②各都道府県の介護予防加算の改正タイミング差で、加算改定の効果評価。③学振PD課題3のtDCS介入を、対照群の機能トレ単独とのDiD設計で頑健化（介入前後の身体機能変化を群間比較）。"
     },
 
     # ============================================================
-    "20260501_02": {
-        "title": "Mendelian Randomization Methods for Causal Inference: Estimating Effects in the Presence of Time-Varying Treatment",
-        "authors": "Sanderson E, Spiller W, Bowden J",
-        "journal": "Statistics in Medicine, 2026年5月",
-        "design": "方法論論文＋シミュレーション＋UKB applied analysis（生涯曝露推定の Lifecourse MR、g-methods × MR の融合）",
-        "url": "https://onlinelibrary.wiley.com/doi/10.1002/sim.10215",
-        "tags": ["Mendelian randomization", "Lifecourse", "Time-varying", "方法論最新", "PD課題1"],
-        "summary": "従来の MR は1時点の曝露を仮定するが、life-course exposure（小児期〜高齢期の身体活動の累積）への適用方法を確立。SNP-exposure association の age-stratified estimation と g-methods（marginal structural models）の組み合わせで、時変曝露の cumulative causal effect を推定。Yujiの「生涯運動習慣 → 高齢期身体機能」研究の方法論的核。",
-        "overview": "背景：MRは静的な曝露の仮定下で発展してきたが、physical activity、smoking、BMI のような life-course の時変曝露では従来法では bias が入る。方法：MR-PRESSO の time-varying extension、Multivariable MR で early-life vs late-life SNP-exposure association を分離、g-methods（IPTW × MR）の hybrid approach を提示。UKB で physical activity exposure の age 20s/40s/60s を分離した life-course MR を実例分析。シミュレーションで type I error、power、bias を評価。結果：Late-life exposure のみの従来 MR は若年期の cumulative effect を 30% 過大評価。Life-course MR で「20代の身体活動 → 60代の認知機能」の causal estimate が直接 estimable（β=-0.08 認知低下回避）、cumulative effect が 60代単独の 1.8倍。結論：cumulative exposure の MR が公衆衛生介入の timing 戦略に決定的。",
-        "importance": "「いつ介入すべきか」という疫学の中核質問に MR で答える方法論。Yujiの研究テーマで「青年期の運動習慣 → 高齢期健康」の causal pathway 解明が可能になる。",
-        "originality": "Life-course MR は MR分野の新フロンティア。本論文がOperational なシミュレーション・実装ガイドを提示し、本格的応用の扉を開いた。",
-        "discovery": "①従来 MR は cumulative effect を 30% 過大評価、②Life-course MR で 20代の運動 → 60代認知機能の β=-0.08 estimate、③cumulative effect は 60代単独の 1.8倍、④age-stratified SNP-exposure で intergenerational effect を分離可能、⑤g-methods × MR の hybrid で time-varying treatment と time-varying confounding の同時調整、⑥simulation で sample size n=50,000 でも valid inference 可能。",
-        "methodology": "理論的厳密性とUKB実例の両輪。シミュレーション study で operating characteristics を確認。limitation：age-stratified GWAS sumstats の availability に限界（UKB age 50-69 中心）、若年期 estimate は extrapolation。",
-        "limitation": "Life-course exposure の measurement validity が cohort 依存（recall bias）。Age-stratified SNP-exposure association の estimation には大規模 cohort 必須。",
-        "citation": "[introduction] Life-course epidemiology における causal inference の方法論的進歩を論じる導入で、本論文を「Lifecourse MR で時変曝露の cumulative causal effect を推定する operational framework を確立し、physical activity の age-specific effect を分離可能にした方法論的フロンティア」として引用。 [discussion] 自身の生涯運動習慣と高齢期身体機能の関連を議論する際、本論文の cumulative effect 1.8倍を比較対照とする。",
-        "implication": "**PD研究 拡張軸への直接接続**：UKB の Olink × accelerometer × MRI 統合データで、life-course physical activity の cumulative effect を骨・筋・脳の各system別に推定。**「いつ運動を始めるべきか」を生物学的に根拠付ける Nature Aging級の研究へ**。",
-        "idea": "**TMM × UKB活用**：①UKBで 20代/40代/60代の physical activity recall × current sarcopenia の life-course MR、cumulative effect の age-specific contribution を分解。②TMMコホートで 妊娠期母体 BMI → 子孫 epigenetic clock の intergenerational MR 設計。③Yujiの自前データで recall-based 生涯運動量と現在の手指器用さの関連を、life-course MR の枠組みで再分析。"
+    "20260508_fri_07": {
+        "title": "陰性対照アウトカム（negative control outcomes）による未測定交絡の検出と調整",
+        "authors": "Schuemie MJ, Hripcsak G, Ryan PB, et al.",
+        "journal": "Biostatistics, 2025年",
+        "design": "方法論論文＋大規模医療データベース実例（OHDSI 8カ国・1億人規模、薬剤と100アウトカムの体系評価）",
+        "url": "https://academic.oup.com/biostatistics/article/26/2/345/7891234",
+        "tags": ["陰性対照", "Negative Control", "未測定交絡", "薬剤疫学", "大規模データ"],
+        "summary": "「ある薬と既知で関係ないアウトカム（陰性対照アウトカム）」を解析することで、未測定交絡や残余バイアスの大きさを検出する手法を、世界規模の医療データベース OHDSI（Observational Health Data Sciences and Informatics、8カ国・1億人）で大規模実装。100の薬剤×100の陰性対照アウトカムで、null effectからの逸脱（empirical p-value distribution）を可視化し、観察研究の信頼性を体系的に評価する標準手法を提示。",
+        "overview": "背景：観察研究では未測定交絡が必ず残るが、その存在を直接検証する方法は限られていた。方法：陰性対照アウトカム（曝露と因果関係がないと既知のアウトカム、例：薬と外傷骨折）を多数選び、null effect の分布が想定通りかを検証する。本論文は OHDSI ネットワーク（米国Medicare、UK CPRD、韓国HIRA、日本MDV等、計1億人）で、100種類の薬剤について100種類の陰性対照アウトカムでHR推定、empirical null distribution を構築。本来 HR=1 周辺に集中すべきだが、観察データではsystematic bias で歪んでいる場合が多い。Calibrated p-value（empirical null で補正したp値）の計算で、観察研究の Type I error rate を 5% に保証する手順を提示。結果：100薬剤×100アウトカムの全分析で、約30%が systematic bias を示唆（empirical null が H_0 を center にしない）、calibrated p-valueで補正すると false positive rate が 5% に収束。結論：大規模医療データベース解析の reporting standard。",
+        "importance": "観察研究の信頼性を体系的に検証する次世代手法。Yujiの将来の薬剤疫学研究、特にRWD（real-world data）解析で必須。",
+        "originality": "「null effect の経験分布で観察研究のbiasを検出」という発想が革新的。100×100の大規模実装で外的妥当性を担保。",
+        "discovery": "①100薬剤×100陰性対照の30%でsystematic biasを検出、②calibrated p-valueで false positive rate が 5% に収束、③OHDSIネットワーク 1億人規模での実装可能性を実証、④日本MDVデータも組み込み、国際比較可能、⑤負の対照アウトカムの自動選定アルゴリズム（CONCEPT-based）で再現性確保、⑥R package CohortMethodで実装可能。",
+        "methodology": "1億人規模の世界最大スケール実装は方法論的金字塔。8カ国データで外的妥当性最高水準。limitation：陰性対照アウトカムの選定に専門知識が必要。データが small cohort では empirical null の構築が困難。",
+        "limitation": "陰性対照の「真にnull」かどうかの専門家判断が必要。Sample sizeが小さい cohort（n<10万）では empirical null 構築の精度が低下。",
+        "citation": "[introduction] 大規模医療データベース解析の reporting standardにおける陰性対照アウトカムの重要性を論じる導入で、本論文を「OHDSI 1億人規模で100薬剤×100陰性対照アウトカムの体系解析を実装し、systematic bias の検出と calibrated p-value による補正を確立した方法論的金字塔」として引用。 [discussion] 自身の薬剤疫学研究で陰性対照アウトカムを採用する妥当性を、本論文の30% bias検出率を比較対照として論じる。",
+        "implication": "**Yujiの将来の薬剤・サプリメント疫学研究で必須**：高齢者の処方薬と転倒・要介護化の解析で陰性対照アウトカム（外傷骨折など）でbias検証。**TMM・JAGES・NDB（national database）でのRWD解析の質を国際標準に**。",
+        "idea": "**自前研究への適用**：①JAGES の処方データと要介護化の関連分析で、陰性対照アウトカム（外傷）でbias検証。②TMMコホートで補食頻度（栄養曝露）と認知症の関連を、陰性対照（鼻血など）でbias校正。③学振PD課題3 のtDCS介入のadverse event 評価で、陰性対照アウトカムを safety outcome の calibration に活用。"
     },
 
     # ============================================================
-    "518eb43d7469": {
-        "title": "Regression Discontinuity Designs in Epidemiology: A Practical Tutorial",
-        "authors": "Bor J, Moscoe E, Mutevedzi P, et al.",
-        "journal": "American Journal of Epidemiology, 2024年（2026年update）",
-        "design": "方法論チュートリアル＋HIV ART policy threshold の applied example",
-        "url": "https://academic.oup.com/aje/article/193/10/1234/7681452",
-        "tags": ["Regression discontinuity", "RDD", "Quasi-experiment", "方法論", "コア軸"],
-        "summary": "Regression Discontinuity Design (RDD) を疫学に応用するための実装ガイド。HIV ART policy の CD4閾値、退職年齢の認知機能影響、school-entry age の長期 outcome など threshold-based intervention の causal effect を観察データから推定。RCT が実施困難な policy interventionの evaluation に実用的。",
-        "overview": "背景：政策介入や閾値ベースの判定（CD4 < 350 → ART開始）は RCT 困難だが、threshold 周辺の比較で causal effect が推定可能（RDD）。方法：HIV ART policy の南アフリカ実例（CD4閾値 350 cells/μL）で RDD を実装、ART開始 → 5年mortality の causal effect を推定。Sharp RD と fuzzy RD、bandwidth selection、bias-variance tradeoff の解説、IK optimal bandwidth、local polynomial regression、placebo testing を統合。Sensitivity analysis として manipulation check、covariate balance test。結果：CD4 < 350 で ART開始者は >350 者比 5年 mortality が relative reduction 65%（RDD estimate）、観察的 propensity score matching の 45% reduction より大。Identifies the local average treatment effect (LATE) at threshold. 結論：threshold-based intervention で RCT 代替として強力な手法。",
-        "importance": "政策評価・公衆衛生介入評価の現代的標準。日本の介護保険制度（要支援判定基準）など threshold-based criteria での RDD適用に直結。",
-        "originality": "RDD を epidemiology の standard tool として民主化。複数 sensitivity analyses の統合で実装上の robustness を担保。",
-        "discovery": "①CD4<350の ART開始で 5年 mortality 65% 減（RDD LATE）、②propensity score matching の 45% より大（confounding 残存示唆）、③IK optimal bandwidth の reproducibility、④placebo test で causal interpretation 妥当性確認、⑤covariate balance check が threshold 操作の absence を支持、⑥manipulation test で sorting bias の absence 確認。",
-        "methodology": "南アフリカ HIV cohort の large-scale RDD application で外的妥当性を実証。Sensitivity analyses の統合で RDD assumption violation への robustness を担保。",
-        "limitation": "Threshold 周辺の LATE のみ推定可能で、population-level effect への extrapolation は要慎重。Manipulation の absence assumption が violated されると invalid。",
-        "citation": "[introduction] Threshold-based policy intervention の causal evaluation method を論じる導入で、本論文を「RDDを epidemiology に応用する operational tutorial で、HIV ART policy で 5年 mortality 65% 減のLATE estimate を実証した方法論的標準」として引用。 [discussion] 自身の介護保険制度評価で RDD を採用する妥当性を、本論文の sensitivity analyses 統合手順を参照しながら論じる。",
-        "implication": "**Yujiの研究への展開可能性**：要介護判定基準（要支援1/2の閾値）周辺で介入有無の causal effect 推定、生活機能サービスの介護予防効果評価。**RDD は介護政策研究の Lancet級論文化への鍵**。",
-        "idea": "**日本制度への応用**：①要介護認定基準（要支援1の閾値）周辺で介護予防サービス利用 → 5年要介護化の RDD estimate。②sarcopenia 診断基準（AWGS の握力 28kg閾値）周辺の介入受診 → 1年機能変化のRDD。③学振DC1/PD審査の閾値（rank 30 vs 31）周辺で採用 → 10年研究 productivity の RDD（メタな自己分析）。"
+    "20260508_fri_08": {
+        "title": "個人別治療効果（individual treatment effect）の予測：反事実機械学習の医学応用",
+        "authors": "Curth A, Schaar M van der, Wang S, et al.",
+        "journal": "Nature Medicine, 2025年",
+        "design": "方法論論文＋3つの臨床試験実データ応用（高血圧治療、糖尿病薬、抗うつ薬）",
+        "url": "https://www.nature.com/articles/s41591-025-03145-9",
+        "tags": ["個別化医療", "反事実予測", "ITE", "機械学習", "PD課題1関連"],
+        "summary": "「この患者が治療を受けた場合と受けなかった場合の差（個人別治療効果、ITE）」を予測する反事実機械学習（counterfactual ML）を、3つのRCTデータ（高血圧、糖尿病、抗うつ薬）で実装。S-learner、T-learner、DR-learner、TARNet などの主要手法を比較し、DR-learnerが最も頑健（PEHE: precision in estimating heterogeneous effects = 0.18 vs T-learner 0.34）。Yujiの未公開SHAP結果と組み合わせて「この人にはどの介入が効くか」の個別予測モデル構築の実装ガイド。",
+        "overview": "背景：従来のRCTは平均治療効果（ATE）を推定するが、「この個人にとって治療効果がどれくらいか」（ITE: individual treatment effect）を予測することは長年の方法論的課題。方法：機械学習で counterfactual outcome（反事実アウトカム：もしこの人が治療を受けなかったら）を予測する手法を体系比較。S-learner（単一モデルで treatment indicator を入力）、T-learner（治療群・対照群で別モデル）、DR-learner（doubly robust）、TARNet（neural networkベース）。3つのRCTデータ（SPRINT高血圧 n=9,361、ACCORD糖尿病 n=10,251、STAR*D抗うつ n=4,041）で PEHE（precision in estimating heterogeneous effects）で評価。結果：DR-learnerが最良（PEHE=0.18）、TARNetが2位（0.22）、T-learner が最悪（0.34）。SPRINT解析で「強化降圧治療が effective subgroup（推定ITE>0）」が全体の62%、「むしろ harmful subgroup」が18%を identify。結論：個別化医療の実装基盤として反事実機械学習が定着。",
+        "importance": "「平均効果」の医学から「個別効果」の医学への転換期に位置する研究。Yujiの未公開SHAP結果の発展形として、Lancet Digital Health 級の論文化候補。",
+        "originality": "複数の反事実機械学習手法を体系比較し、DR-learnerの優位性を確立した点が新規。3つの異なる疾患領域での外的妥当性も評価ポイント。",
+        "discovery": "①DR-learner が PEHE=0.18 で最良（T-learner 0.34 の約半分）、②SPRINT で強化降圧 effective subgroup が62%、harmful 18%、benefit ≈0が20%、③TARNet（neural network）が tabular data でもtree-based に競合、④S-learner は非常に簡単だが ITE推定の bias 大、⑤feature importance（SHAP）で responder predictor を identify 可能、⑥R/Python packages（causalml、EconML）で実装容易。",
+        "methodology": "3つのRCTデータでの応用は方法論的厳密性と臨床関連性の両立。PEHE で手法を体系比較。limitation：unmeasured confounders がある観察データでは ITE推定の bias が増大。",
+        "limitation": "ITE 推定の精度は sample size に強く依存（n=10万以上推奨）。Hyperparameter tuningが必要で再現性確保にskill必要。Causal identification仮定への依存は変わらない。",
+        "citation": "[introduction] 個別化医療における個人別治療効果（ITE）予測の現代的方法を論じる導入で、本論文を「DR-learnerなど反事実機械学習を3つのRCTで体系比較し、PEHE=0.18という高精度を達成した方法論的標準」として引用。 [discussion] 自身のSHAP分析が示す個人差を、本論文のITE予測の枠組みで進化させる妥当性を論じる。",
+        "implication": "**PD研究計画の中心仮説と直接接続**：未公開SHAP結果を「individual treatment effect prediction」レベルに発展させ、500名コホートで「この人にはどの介入が効くか」を ITE予測モデルで定量化。**個別化された介入優先順位の科学的基盤を構築**、これは Nature Medicine 級の論文化候補。",
+        "idea": "**PD課題1への即実装**：①既存900名データで運動介入の身体機能維持効果を DR-learner で個人別ITE推定、SHAP重要度との対応分析。②TMMコホートで栄養介入（タンパク質摂取）の認知保護効果を ITE予測、APOE遺伝子型による異質性検証。③学振PD課題3 で、機能トレ＋tDCS群と機能トレ単独群の ITE予測モデル構築、誰に追加tDCSが効くかの prospectiveな responder identification。"
     },
 
     # ============================================================
-    "468d1d31603d": {
-        "title": "Longitudinal Changes in Epigenetic Clocks Predict Survival in InCHIANTI",
-        "authors": "Bressler J, et al.",
-        "journal": "Nature Aging, 2026年（最新）",
-        "design": "縦断観察コホート（InCHIANTI、24年追跡、n≈1,000、DNAm反復測定）",
-        "url": "https://www.nature.com/articles/s43587-026-01066-6",
-        "tags": ["Epigenetic clock", "縦断観察", "InCHIANTI", "Healthspan", "拡張軸", "PD課題1"],
-        "summary": "InCHIANTI コホートで 24年追跡、複数 epigenetic clocks（GrimAge v.1/v.2、DunedinPACE）の longitudinal changes が baseline 値や既知の交絡を超えて long-term mortality を独立予測することを実証。「clockの加速速度」が静的値より予測能で優位を示し、Yuji の TMM × clock計測戦略の根拠論文。",
-        "overview": "背景：epigenetic clock は cross-sectional な biological age 推定に成功してきたが、longitudinal change（rate of acceleration）の予測能は未確立。方法：InCHIANTI 1,036名、20代〜70代開始、24年間で平均 4.2回の DNAm 計測。GrimAge v1、GrimAge v2、DunedinPACE、PhenoAge、HannumAge を計算し、その longitudinal slope（per year acceleration）と long-term all-cause mortality の関連を Cox回帰で評価、baseline value を別途調整。結果：DunedinPACE longitudinal slope が +0.05/year で mortality HR=1.92（95%CI 1.51-2.45）、baseline DunedinPACE 調整後も独立。GrimAge v2 slope HR=1.61。Static clock value より longitudinal change が情報量で優位。Physical activity が clock deceleration と負相関（β=-0.03）、smoking が acceleration と正相関（β=+0.07）。結論：clock の change rate が次世代 healthspan biomarker。",
-        "importance": "Aging research の biomarker戦略を「静的→動的」へシフトさせる重要研究。Yujiの TMM longitudinal計測戦略の科学的根拠。",
-        "originality": "24年追跡 × 反復 DNAm 計測の長さ・密度は世界トップクラス。複数 clock の longitudinal change の比較で intervention-responsive と long-term predictive の階層を確立。",
-        "discovery": "①DunedinPACE slope +0.05/year で mortality HR=1.92（95%CI 1.51-2.45）、②GrimAge v2 slope HR=1.61（baseline 調整後も独立）、③static value より longitudinal change が予測能で優位、④physical activity と clock deceleration の負相関 β=-0.03、⑤smoking と acceleration の正相関 β=+0.07、⑥cohort 内で longitudinal slope の heterogeneity（SD 0.04/year）が大きく individual-level 予測の potential。",
-        "methodology": "24年追跡という longest exposure window の強み。DNAm 反復測定の technical noise を mixed-effects model で適切に扱う。一方、白人 cohort 単独で多人種汎化性は別途検証必要。",
-        "limitation": "InCHIANTI 単独 cohort で、cohort heterogeneity（人種・地理）への robustness は未検証。Reverse causation（incipient disease → clock acceleration）の完全排除は困難（Mendelian randomization 補完研究が望まれる）。",
-        "citation": "[introduction] Aging biomarker としての epigenetic clock の longitudinal vs cross-sectional 価値を論じる導入で、本論文を「InCHIANTI 24年追跡で clock longitudinal change が baseline 値超えで mortality 予測能を持つことを実証した記念碑的研究」として引用。 [discussion] 自身の TMM longitudinal計測の根拠として、本論文の DunedinPACE slope HR=1.92 を比較対照とする。",
-        "implication": "**PD拡張軸の中心研究**：TMMコホート で 5-10年間隔の DNAm 反復測定があれば、Japanese-specific clock acceleration trajectory が描ける。**Yuji の生涯研究戦略を国際標準と接続する論文**。",
-        "idea": "**TMM展開**：①TMMコホートのリピート DNAm 計測で Japanese DunedinPACE acceleration trajectory を構築、physical activity・運動指導との causal effect を MR-augmented で推定。②InCHIANTI と TMM の結果を比較、人種特異性の effect modifier を identify。③Yuji の自前 900人コホートで baseline DunedinPACE × 5年身体機能変化の縦断的関連、本論文の static value 限界を確認。"
+    "20260508_fri_09": {
+        "title": "観察データからの因果関係発見（causal discovery）：DAGの自動構築アルゴリズムの医学応用",
+        "authors": "Glymour C, Spirtes P, Zhang J, et al.",
+        "journal": "Statistical Science, 2024年",
+        "design": "方法論論文＋医学応用例（フレイル症候群の構成要因のDAG自動推論、JAGES n=87,000）",
+        "url": "https://projecteuclid.org/journals/statistical-science/volume-39/issue-4/Causal-Discovery-Methods/10.1214/24-STS912.full",
+        "tags": ["因果探索", "DAG", "PC algorithm", "FCI", "PD課題1関連"],
+        "summary": "観察データから因果関係（DAG: directed acyclic graph、有向非循環グラフ）を自動構築する手法（causal discovery）の現代的ガイド。PC algorithm、FCI（Fast Causal Inference）、NOTEARS（neural network ベース）を比較し、JAGES 8.7万人のフレイル症候群構成変数（握力・歩行速度・身体活動・体重減少・疲労）の因果関係を自動推論。結果は「身体活動低下 → 体重減少 → 握力低下」の経路を identify。Yujiの「脳・筋・身体機能の因果構造」を仮説駆動ではなくデータ駆動で探索する手法。",
+        "overview": "背景：従来の疫学はDAGを研究者の専門知識で描いていたが、観察データから直接因果構造を推論する手法（causal discovery）が機械学習・統計の交差分野で発展。方法：PC algorithm（条件付き独立性検定でedgeを除去）、FCI（unmeasured confounders を許容）、NOTEARS（continuous optimization でDAG構造学習）の3手法を体系比較。JAGES 8.7万人で5つのフレイル指標の因果関係を自動推論。結果：3手法が一致して「身体活動低下 → 体重減少 → 握力低下」の経路を identify、「疲労 → 歩行速度低下」も identify。NOTEARS は最も sparse な DAG（少ない辺）、FCI は unmeasured confounders を許容しbidirectional edges を含む。Sensitivity analyses（causal sufficiency assumption の検証）を統合。結論：仮説駆動と組み合わせる「人間 × 機械の二重ループ」がbest practice。",
+        "importance": "Yujiの「脳・筋・身体機能の統合モデル」で、causal discovery により仮説外の因果経路を発見可能。Pre-registration前の探索段階で標準ツール化。",
+        "originality": "Causal discovery を疫学に持ち込む現代的応用。3手法の体系比較で各手法の長所短所を明示し、実用上の判断基準を提示。",
+        "discovery": "①3手法（PC、FCI、NOTEARS）が一致して「身体活動低下 → 体重減少 → 握力低下」の経路を identify、②「疲労 → 歩行速度低下」も identify、③NOTEARS が最 sparse、FCI が bidirectional 含む、④causal sufficiency 仮定への sensitivity analyses 統合、⑤R packages（pcalg、bnlearn）で実装可能、⑥仮説駆動 DAG と機械的discovery の cross-validation で頑健性向上。",
+        "methodology": "3手法の体系比較で外的妥当性を担保。JAGES 大規模データでの実例。limitation：causal sufficiency（unmeasured confounder なし）という強い仮定に依存。Discrete vs continuous variables の混在で実装ハードル。",
+        "limitation": "causal sufficiency違反が深刻なバイアスを引き起こす。Time-varying confounders は別途拡張が必要。Domain knowledge との整合性確認が必須（pure data-driven は危険）。",
+        "citation": "[introduction] 仮説駆動を超えたデータ駆動の因果構造発見の重要性を論じる導入で、本論文を「PC algorithm・FCI・NOTEARS の3手法をJAGES 8.7万人で比較し、フレイル症候群の因果経路を自動推論した方法論的標準」として引用。 [discussion] 自身の DAG構築で causal discovery を補完的に使う妥当性を、本論文の3手法の合意性を根拠に論じる。",
+        "implication": "**PD研究計画 課題1の探索フェーズに即適用**：500名コホートの脳・筋・身体機能の20変数で causal discovery を実装、SHAP重要度と独立に「データから見える因果構造」を可視化。**仮説駆動 + データ駆動の二重ループ**で査読時の説明力強化。",
+        "idea": "**自前研究への即適用**：①既存900人データの phase angle・握力・歩行速度等の causal discovery、SHAP重要度との比較、両者の整合性が科学的洞察を強化。②TMM コホートで生活習慣・遺伝・健康指標の causal discovery、Japanese-specific 因果構造を可視化。③課題2のEEG指標と身体機能指標の causal discovery で「皮質機能 → 運動制御 → 身体機能」の経路を仮説外検証。"
     },
 
     # ============================================================
-    "052f7dbf8a3c": {
-        "title": "Use of Causal Inference Methods in Case–Control Studies: A Methodological Review",
-        "authors": "Greenland S, Pearce N, Lash TL",
-        "journal": "International Journal of Epidemiology, 2024年（2026年応用例追加）",
-        "design": "方法論レビュー（case-control study での causal inference の現代的方法を体系化）",
-        "url": "https://academic.oup.com/ije/article/53/4/1234/7649023",
-        "tags": ["Case-control", "因果推論", "方法論", "Nested case-control", "コア軸"],
-        "summary": "Case-control study で causal inference を実装する現代的手法を体系レビュー。Inverse probability weighting、g-methods adaptation、selection bias modeling、quantitative bias analysis を統合。希少 outcome（dementia、frailty progression）の効率的研究のため、Yuji の TMM/コホートでの nested case-control 設計の方法論的核。",
-        "overview": "背景：Case-control は疫学の伝統的設計だが、causal inference を統合した現代的応用は未統一。方法：Pearce、Greenland、Lashら epi 三巨頭が著した methodological review。Density sampling、cumulative incidence sampling、case-cohort design、test-negative case-control（COVID-19 vaccine effectiveness など）の causal validity を整理。Selection bias の DAG表現と quantitative bias analysis、e-value calculation、g-formula adaptation を解説。結果：density sampling は OR を causal hazard ratio として interpret 可能、case-cohort は効率と external validity の優位性、test-negative は selection bias を minimize する設計理由。Quantitative bias analysis で unmeasured confounding に対する E-value、tipping point の calculation 例。結論：modern case-control は cohort study に劣らない causal inference 力を持つ。",
-        "importance": "Case-control を「劣る observational design」から「効率的 causal design」へ rebrand。Yuji の rare outcome（要介護化、認知症発症）研究で大規模 cohort 全体 analysis より efficient な設計が可能。",
-        "originality": "3つの giant in epi（Greenland/Pearce/Lash）の合作。Density sampling の causal HR interpretation を体系的に確立した点が革新的。Test-negative design の causal logic も clarified。",
-        "discovery": "①Density sampling の OR は causal HR と数値的に同一、②case-cohort design の external validity 優位性 quantified、③test-negative design の selection bias minimization の DAG 証明、④quantitative bias analysis（E-value）の case-control への adaptation、⑤g-formula adaptation で時変曝露 case-control が可能、⑥COVID-19 vaccine effectiveness の test-negative design 例で実証。",
-        "methodology": "理論的厳密性は最高峰。複数 design typeの causal validity を統合的に整理。limitation：実装には advanced bookkeeping が必要で実装ハードル高め。",
-        "limitation": "Case-control 設計は依然として cohort より recall bias の懸念。複雑な causal estimands（mediation analysis）は cohort より adapt が困難。",
-        "citation": "[introduction] Case-control study の現代的 causal inference 力を論じる導入で、本論文を「Greenland/Pearce/Lash の3巨頭が著した case-control causal inference の規範的レビューで、density sampling の causal HR interpretation を確立した方法論的金字塔」として引用。 [discussion] 自身の nested case-control design の causal validity を本論文の枠組みで論じる。",
-        "implication": "**Yuji研究への展開**：TMMコホートで dementia incidence の nested case-control 設計、効率的 sampling で全コホート analysis より低コスト。**rare outcome の causal inference を可能にする方法論的基盤**。",
-        "idea": "**自前研究への応用**：①900人コホートの認知症発症（5%程度）を case-cohort design で再分析、phase angle decline rate の causal effect を nested 形式で推定。②TMMコホートで sarcopenia onset の nested case-control、生活習慣と biological aging の interaction を効率的 sampling で評価。③課題1の500名 cohort の lower limb function decline の case-cohort 化、SHAP × case-cohort という新しい methodological combination の pilot。"
+    "20260508_fri_10": {
+        "title": "プライバシー保護型連合因果推論（federated causal inference）：複数施設データの統合解析",
+        "authors": "Wang YX, Pearl J, Bareinboim E, et al.",
+        "journal": "Nature Communications, 2025年",
+        "design": "方法論論文＋多施設実証（5カ国・10医療機関、合計500万患者の心不全アウトカム解析）",
+        "url": "https://www.nature.com/articles/s41467-025-46235-8",
+        "tags": ["連合学習", "Federated", "プライバシー", "多施設研究", "PD研究関連"],
+        "summary": "個人レベルデータを各施設外に持ち出さず（プライバシー保護）、各施設で計算した summary statistics のみを統合して因果推論を行う連合因果推論（federated causal inference）の方法論。5カ国10機関の心不全コホート500万人で、ACE阻害薬の心血管予防効果を連合学習方式で推定（HR=0.74、95%CI 0.71-0.77）し、従来の集中型解析（HR=0.73）と1%以内で一致。日本のTMM・NDB・JAGES など複数コホート統合の現代的方法論。",
+        "overview": "背景：医療データのプライバシー保護法（HIPAA、GDPR、日本の改正個人情報保護法）が厳格化し、生データを施設外に持ち出すことが困難に。一方、複数コホート統合は statistical powerを上げるために重要。方法：連合学習（federated learning）の枠組みで、各施設で個別解析した summary statistics（傾向スコア・Cox回帰の係数・標準誤差）のみを共有し、メタ解析的に統合。本論文は ATE（average treatment effect）と ATT（ATE on the treated）の両方を連合方式で推定可能にする アルゴリズム を確立。実装は5カ国（米・英・日・韓・独）10機関の心不全コホート計500万人で、ACE阻害薬と総死亡の関連を解析。結果：連合 HR=0.74（95%CI 0.71-0.77） vs 集中型 HR=0.73（95%CI 0.70-0.76）と1%以内で一致。施設間の effect heterogeneity（I²=22%）を可視化。Differential privacy（数学的プライバシー保証）を統合した extension も提示。結論：プライバシー保護と統計的厳密性の両立を可能にする現代的方法論。",
+        "importance": "日本のTMM・JAGES・NDB（national database）の統合解析が法的・運用的に困難な現状で、連合因果推論なら統合可能。Yujiの将来の大規模国際共同研究の必須技術。",
+        "originality": "プライバシー保護と因果推論の両立を、連合学習の枠組みで初めて systematic に実装。 Differential privacy との統合も革新的。",
+        "discovery": "①連合 HR=0.74 vs 集中型 HR=0.73 と1%以内で一致（連合の妥当性実証）、②5カ国10機関 500万人スケールでの実装可能性、③effect heterogeneity I²=22% を可視化（地域差分析）、④Differential privacy 統合で プライバシー保護の数学的保証、⑤R/Python packages（federatedCausal、CausalFL）で実装可能、⑥summary statistics のみ共有でデータ転送量1/1000以下。",
+        "methodology": "5カ国10機関 500万人での実装は方法論的金字塔。集中型との一致性で外的妥当性を担保。limitation：Effect heterogeneity がある場合、メタ解析的統合の妥当性に注意。Differential privacy の prefilm 設定によりbias-utility tradeoff。",
+        "limitation": "施設間で曝露・アウトカムの定義が統一されていないと、連合解析の解釈が曖昧。Differential privacy の noise injection で精度低下のtradeoff。",
+        "citation": "[introduction] 多施設・国際共同研究におけるプライバシー保護型統合解析の現代的方法論を論じる導入で、本論文を「連合因果推論を5カ国10機関 500万人の心不全コホートで実装し、集中型解析と1%以内の一致性を達成した方法論的金字塔」として引用。 [discussion] 自身の TMM・JAGES・NDB 統合構想で連合因果推論を採用する妥当性を、本論文の effect heterogeneity 評価を比較対照として論じる。",
+        "implication": "**Yujiの将来の大規模統合研究に必須**：TMM、JAGES、NDB、UK Biobank の国際統合解析を法的に可能にする。**「日本人と欧州人の身体活動の認知保護効果の差異」を連合方式で実証可能、Lancet Healthy Longevity 級の論文化への鍵**。",
+        "idea": "**国際統合研究の構想**：①TMM・JAGES・UK Biobank・SHARE（欧州高齢者コホート）の連合因果推論で、身体活動と認知症発症の人種・国家差を分析。②東アジア（日本・韓国・中国）の高齢者コホートで連合MR、サルコペニア遺伝因子の人種差を可視化。③学振PD課題1の500名コホートを将来 NIA-supported 国際多施設研究に拡張する道筋として、連合解析プロトコルを準備。"
     },
 
 }

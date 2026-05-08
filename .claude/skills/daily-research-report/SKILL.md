@@ -14,15 +14,17 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 
 **以下のルールは Yuji が過去に明示的に指示したものであり、例外なくすべての daily-research-report 実行で適用すること。今後、別のセッションでも、別の Claude インスタンスでも、これらは絶対に守る。**
 
-### 過去の指示の永続化（rev5 / 2026-05-05 時点）
+### 過去の指示の永続化（rev6 / 2026-05-08 時点）
 
 1. **DOCX 生成は絶対に行わない**（HTMLのみで運用、2026-04-30 指示、rev3 にて確定）
 2. **詳細分析レポート（バージョンB）は絶対に作らない**（通常レポートのみ、2026-04-30 指示、rev3 にて確定）
 3. **10色分けセクションブロック様式（後述）を絶対に守る**（2026-04-30 指示、2026-05-03 再指示）
 4. **お気に入りJSは外部ファイル（`../js/favorites.js`）として読み込む**（rev5 で導入。各レポートHTMLは共通JSをsrc参照する）
-5. **毎日10本中2本以上を Yuji の PD 研究計画関連にする**（2026-05-03 指示。`references/pd-research-plan.md` 必読）
+5. **毎日10本中2本以上を Yuji の PD 研究計画関連にする**（2026-05-03 指示。`references/research-plan/research-plan-extended.md` 必読）
 6. **木曜日は2つのHTMLレポート**を作成（`YYYYMMDD_brain-cognition.html` ＋ `YYYYMMDD_brain-cognition-pd.html`）
-7. **メール送信は廃止された**（rev5 / 2026-05-05）。Gmail下書き作成・送信などのメール処理は一切行わない。代わりに `docs/data/papers.json` と `docs/data/reports.json` を更新し、ウェブサイト（GitHub Pages）に自動デプロイされる。
+7. **メール送信は廃止された**（rev5 / 2026-05-05）。Gmail下書き作成・送信などのメール処理は一切行わない。代わりに `docs/data/papers.json` と `docs/data/reports.json` を更新し、ウェブサイト（Vercel）に自動デプロイされる。
+8. **🆕 本文は日本語を主体に書く**（rev6 / 2026-05-08 指示）。技術用語は初出時のみ「日本語訳（English original）」の形式で英語を併記し、それ以降は日本語表現を使う。プロセ全体で英語比率を最小化。例：「ターゲット試行模倣（target trial emulation）法」「メンデルランダム化（Mendelian randomization）」「説明可能AI」「因果フォレスト」など。専門用語の頭字略語（MR、TMLE、SHAP、RCT、HR、AUCなど）は許可するが、文章自体は日本語で構成する。
+9. **🆕 同じ論文を重複して紹介しない**（rev6 / 2026-05-08 指示）。レポート生成前に **必ず** `docs/data/papers.json` と `docs/data/reports.json` を読み込み、過去のレポートで紹介済みの論文（タイトル＋ジャーナル＋著者の組み合わせで判定）を除外。新規論文だけで10本を構成する。万一、特に重要な過去論文を再掲する必要がある場合は、本文冒頭で「再掲（前回 YYYY-MM-DD レポート）」と明示する。
 
 ### 実行前チェック（必ず確認）
 - [ ] DOCXを作っていないか？
@@ -36,6 +38,8 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 - [ ] `<body>` に `data-source-date` と `data-source-theme` があるか？
 - [ ] `docs/data/papers.json` と `docs/data/reports.json` を更新したか？
 - [ ] メール処理を一切実行していないか？
+- [ ] **🆕 本文の日本語化を確認したか**（英語の長文・専門用語の連発を避けたか、初出英語に日本語訳を付けたか）？
+- [ ] **🆕 既存papers.jsonと重複していないか**（10本すべて新規論文か、再掲なら明示しているか）？
 
 詳細は `references/critical-rules.md` を参照。
 

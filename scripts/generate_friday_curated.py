@@ -35,42 +35,88 @@ def richness_score(p: dict) -> int:
     return sum(1 for f in fields if p.get(f) and str(p[f]).strip())
 
 
-def select_top_papers(papers: list[dict], reports_by_id: dict, n: int = 10):
-    """金曜日の論文（source_reportsにfriday weekdayがあるもの）から選定。"""
-    fri_papers = []
-    for p in papers:
-        for rid in (p.get("source_reports") or []):
-            r = reports_by_id.get(rid)
-            if r and r.get("weekday") == "friday":
-                fri_papers.append(p)
-                break
+def select_top_papers(papers: list[dict], reports_by_id: dict, n: int = 10,
+                      report_id: str = ""):
+    """rev2 (2026-05-08): friday_curated_content.py に書かれた新規論文を最優先で採用。
 
-    # rich content 持ちは大幅ブースト
+    新規論文（CONTENT keys with ID like '20260508_fri_NN'）が papers.json にまだ
+    存在しない場合は、本関数の戻り値に含めて呼び出し側で papers.json に追加する。
+    既存papers との重複（タイトル正規化＋URLで判定）は除外。
+    """
     try:
         from friday_curated_content import CONTENT
-        prepared = set(CONTENT.keys())
     except ImportError:
-        prepared = set()
+        CONTENT = {}
 
-    scored = []
-    for idx, p in enumerate(fri_papers):
-        bonus = 50000 if p["id"] in prepared else 0
-        score = bonus + richness_score(p) * 100
-        scored.append((-score, idx, p))
-    scored.sort()
+    # 既存friday報告書に含まれる論文のタイトル・URL（重複検出用）
+    # ただし今回再生成中の report_id は除外（idempotent処理）
+    existing_titles = set()
+    existing_urls = set()
+    for p in papers:
+        for rid in (p.get("source_reports") or []):
+            if rid == report_id: continue
+            r = reports_by_id.get(rid)
+            if r and r.get("weekday") == "friday":
+                nt = _normalize_title(p.get("title", ""))
+                url = (p.get("url") or "").rstrip("/").lower()
+                if nt: existing_titles.add(nt)
+                if url: existing_urls.add(url)
+                break
 
+    # 新規論文（CONTENT keys）を最優先で組み立て
+    selected = []
     seen_titles = set()
     seen_urls = set()
-    selected = []
-    for _, _, p in scored:
-        nt = _normalize_title(p.get("title", ""))
-        url = (p.get("url") or "").rstrip("/").lower()
+    paper_index = {p["id"]: p for p in papers}
+
+    for cid, content in CONTENT.items():
+        # CONTENT のタイトル/URL が既存friday報告書と重複していたらskip
+        nt = _normalize_title(content.get("title", ""))
+        url = (content.get("url") or "").rstrip("/").lower()
+        if nt and nt in existing_titles:
+            print(f"  ⚠️  skip (duplicates existing friday paper): {content['title'][:60]}")
+            continue
+        if url and url in existing_urls:
+            print(f"  ⚠️  skip (duplicate URL): {content['title'][:60]}")
+            continue
         if nt and nt in seen_titles: continue
         if url and url in seen_urls: continue
+
+        # papers.jsonに既存ならそれを使う、なければ CONTENT から構築
+        if cid in paper_index:
+            p = paper_index[cid]
+        else:
+            # 新規論文を papers.json用に構築（後で呼び出し側で追加）
+            p = {
+                "id": cid,
+                "title": content.get("title", ""),
+                "authors": content.get("authors", ""),
+                "journal": content.get("journal", ""),
+                "design": content.get("design", ""),
+                "url": content.get("url", ""),
+                "summary": content.get("summary", ""),
+                "methodology": content.get("methodology", ""),
+                "limitation": content.get("limitation", ""),
+                "implication": content.get("implication", ""),
+                "idea": content.get("idea", ""),
+                "novelty": content.get("originality", ""),
+                "background": content.get("overview", ""),
+                "result": content.get("discovery", ""),
+                "impact": content.get("importance", ""),
+                "keywords": "",
+                "tags": list(content.get("tags", [])),
+                "source_reports": [],
+                "is_pd_related": False,
+                "first_seen_date": "2026-05-08",
+                "_is_new": True,  # マーカー（呼び出し側でpapers.json追加用）
+            }
+        selected.append(p)
         if nt: seen_titles.add(nt)
         if url: seen_urls.add(url)
-        selected.append(p)
         if len(selected) >= n: break
+
+    if len(selected) < n:
+        print(f"  ⚠️  CONTENTに{n}本未満のリッチ本文（{len(selected)}本のみ）")
 
     return selected
 
@@ -288,29 +334,40 @@ def main():
     reports = json.loads(REPORTS_JSON_PATH.read_text(encoding="utf-8"))
     rep_by_id = {r["id"]: r for r in reports}
 
-    selected = select_top_papers(papers, rep_by_id, n=10)
+    report_id = f"{args.date}_{THEME_KEY}"
+    selected = select_top_papers(papers, rep_by_id, n=10, report_id=report_id)
     selected_enriched = [merge_curated_content(p) for p in selected]
 
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    report_id = f"{args.date}_{THEME_KEY}"
     out_path = REPORTS_DIR / f"{report_id}.html"
     out_path.write_text(render_report(args.date, selected_enriched), encoding="utf-8")
     print(f"✅ wrote {out_path}")
 
-    # idempotent cleanup
+    # idempotent cleanup: stale source_reports 参照を削除
     for p in papers:
         srcs = p.get("source_reports") or []
         if report_id in srcs:
             p["source_reports"] = [s for s in srcs if s != report_id]
 
-    selected_ids = {p["id"] for p in selected_enriched}
+    # 新規論文を papers.json に追加 + 既存論文を更新
     paper_index = {p["id"]: p for p in papers}
     enriched_index = {p["id"]: p for p in selected_enriched}
-    for pid in selected_ids:
-        if pid in paper_index:
+    new_papers_added = 0
+    for pid in enriched_index.keys():
+        rich = enriched_index[pid]
+        is_new = rich.pop("_is_new", False)
+        if is_new and pid not in paper_index:
+            # 新規論文 → papers.json に追加
+            new_paper = {k: v for k, v in rich.items() if k != "_is_new"}
+            new_paper["source_reports"] = [report_id]
+            papers.append(new_paper)
+            paper_index[pid] = new_paper
+            new_papers_added += 1
+        else:
+            # 既存論文 → rich content で update
             base = paper_index[pid]
-            rich = enriched_index[pid]
             for k, v in rich.items():
+                if k == "_is_new": continue
                 if v in (None, ""): continue
                 if k == "source_reports": continue
                 if k == "tags" and isinstance(v, list):
@@ -321,7 +378,7 @@ def main():
             if report_id not in srcs:
                 srcs.append(report_id)
     PAPERS_PATH.write_text(json.dumps(papers, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"✅ updated papers.json")
+    print(f"✅ updated papers.json (added {new_papers_added} new papers, total now {len(papers)})")
 
     new_report = {
         "id": report_id,
