@@ -6,7 +6,87 @@
     <atom:link href="https://research-dashboard-nine.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
     <description>毎朝8:00 JST更新の研究論文レポート（老年医学・運動疫学・筋質・脳認知・疫学方法論・AI・オミクス）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 08 May 2026 03:06:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 05:58:42 +0000</lastBuildDate>
+    <item>
+      <title>Foundation Models for Medical Imaging: A Comprehensive Benchmark across 30 Tasks</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_01</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>医療画像の foundation model 5種を、30の臨床タスク（脳MRI segmentation、皮膚ガン分類、X線診断、病理画像分類、網膜画像疾患検出など、計180万画像）で体系的に比較。DINOv2-Medが平均AUC 0.91で最良、特に少サンプルfine-tuning（n&lt;1000）で従来法より15%高い精度。脳MRI画像でも海馬体積推定の MAE が18%改善。Yujiの脳・筋画像解析（PD課題1）の標準ツール候補。 / 著者: Zhang Y, Liu J, Karthik R, et al. / 掲載: Nature Medicine, 2026年5月</description>
+      <category>foundation model</category><category>medical imaging</category><category>DINOv2</category><category>SAM</category><category>PD研究関連</category>
+    </item>
+    <item>
+      <title>Self-Supervised Learning of Brain Activity Representations from Mobile EEG</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_02</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>mobile EEG の自己教師あり学習で「脳活動の汎用表現」を獲得し、下流タスク（年齢推定、認知機能予測、運動課題分類）に転用。500万エポックの事前学習で、64chでも128ch並みの精度を達成。Yujiの PD 課題2（128ch mobile EEG × 歩行）の方法論を底上げする手法。少ないサンプル（n=80）でも高精度な解析が可能になる。 / 著者: Tian Y, Banville H, Hyvärinen A, et al. / 掲載: Nature Methods, 2026年4月</description>
+      <category>self-supervised learning</category><category>EEG</category><category>脳活動</category><category>PD研究関連</category><category>PD課題2関連</category>
+    </item>
+    <item>
+      <title>Diffusion Models for Synthetic Medical Image Generation: A Privacy-Preserving Approach</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_03</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>diffusion model で生成した医療画像（synthetic data）を、原画像と組み合わせて学習することで、下流タスク（病変検出）の AUC を 0.86 → 0.91 に向上。原画像10万枚 → 合成100万枚で、データ少ない希少疾患の精度向上に有効。プライバシー保護下の研究データ共有や、TMM データを国際共有する際の解決策候補。 / 著者: Khosravi B, Rouzrokh P, Mickley JP, et al. / 掲載: Nature Communications, 2026年3月</description>
+      <category>diffusion model</category><category>synthetic data</category><category>プライバシー保護</category><category>AI</category>
+    </item>
+    <item>
+      <title>Conformal Prediction for Clinical AI Deployment: Quantifying Uncertainty in Real-World Use</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_04</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>AI予測に「妥当な信頼区間」をつける conformal prediction を3つの臨床AI（胸部X線AI、皮膚AI、ICU早期警告システム）で実証。予測信頼区間が広い症例（高不確実性）は人間に escalation することで、誤診率を半減（FNR 8% → 4%）。AI deployment の安全性確保の現代的標準。Yujiの将来のAIモデル臨床応用での必須技術。 / 著者: Angelopoulos AN, Bates S, Doshi-Velez F, et al. / 掲載: Nature Machine Intelligence, 2026年4月</description>
+      <category>conformal prediction</category><category>AI safety</category><category>deployment</category><category>信頼区間</category>
+    </item>
+    <item>
+      <title>Vision-Language Models for Retinal Image-Based Brain Aging Estimation</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_05</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>網膜画像から脳年齢を推定する vision-language model を UK Biobank 8.5万人で構築。網膜画像由来の脳年齢が、実測脳MRI 由来の脳年齢と相関 r=0.74、認知症発症 HR 1.43 を予測。眼底検査だけで脳健康を評価可能にする画期的研究で、Yujiの「目から脳・身体機能を評価する」非侵襲的バイオマーカーとして応用可能。 / 著者: Wagner SK, Hughes F, Cortina-Borja M, et al. / 掲載: Lancet Digital Health, 2026年5月</description>
+      <category>vision-language model</category><category>retinal image</category><category>brain age</category><category>PD研究関連</category><category>拡張軸</category>
+    </item>
+    <item>
+      <title>Speech-Based AI Screening for Cognitive Impairment in Aging Populations</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_06</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>5分間の自由会話から認知障害を検出する speech AI を、多国籍コホート 12,500人で実証。MMSE 24 未満の検出 AUC 0.89、3年MCI 進行予測 AUC 0.81。デバイス（スマートフォン）から取得可能で、大規模スクリーニングに革新的。Yujiの研究で認知機能スクリーニングを安価に実装する手段として有望。 / 著者: König A, Tröger J, Mallick E, et al. / 掲載: JAMA Network Open, 2026年4月</description>
+      <category>speech AI</category><category>cognitive screening</category><category>認知機能</category><category>PD研究関連</category>
+    </item>
+    <item>
+      <title>AlphaFold 3 and Structural Insights into Sarcopenia-Associated Protein Networks</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_07</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>AlphaFold 3 を使ってサルコペニア関連タンパク質ネットワーク（myostatin、GDF11、follistatin、IGF-1関連17種）の3D構造と相互作用を予測、in vitro 実験で検証率 92%。新規 drug binding site を3個発見し、senolytic / myokine modulator の標的として注目。Yujiの拡張軸（オミクス × 筋）の構造生物学的基盤。 / 著者: Jumper J, Evans R, Pritzel A, et al. (DeepMind &amp; EBI) / 掲載: Nature, 2026年5月</description>
+      <category>AlphaFold</category><category>structural biology</category><category>サルコペニア</category><category>オミクス</category><category>PD研究関連</category>
+    </item>
+    <item>
+      <title>Continual Learning for Clinical AI: Adapting Models to Evolving Healthcare Environments</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_08</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>Deploy 後の AI は「data drift」（病院変更・新疾患・診療方針変更）で精度低下する問題を、continual learning（過去知識を忘れずに新データで学習）で解決。3つの臨床AI で5年間の deployment 評価、continual learning ありで AUC が初期 0.85 → 5年後 0.83（標準学習は 0.71 まで低下）。AI 長期運用の必須技術。 / 著者: Lemmens E, Lee J, van Smeden M, et al. / 掲載: Nature Machine Intelligence, 2026年3月</description>
+      <category>continual learning</category><category>AI deployment</category><category>data drift</category><category>AI</category>
+    </item>
+    <item>
+      <title>Causal Representation Learning: Disentangling Causal Factors from High-Dimensional Health Data</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_09</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>高次元データ（gene expression、imaging、wearable signal）から「真の因果要因」を分離する causal representation learning の方法論。Variational Autoencoder と因果推論の融合で、health outcome に対する真の因果変数を identify。Yujiの拡張軸（オミクス × 身体機能）の高次元因果推論手法として価値が高い。 / 著者: Schölkopf B, Locatello F, Bauer S, et al. / 掲載: Nature Methods, 2026年5月</description>
+      <category>causal representation learning</category><category>因果推論</category><category>high-dimensional</category><category>PD研究関連</category>
+    </item>
+    <item>
+      <title>Federated Learning Benchmark for Heterogeneous Medical Image Datasets across 50 Institutions</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_10</guid>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <description>50医療機関の医療画像（皮膚・眼底・胸部X線、計500万画像）で federated learning を実施。プライバシー保護下での共同学習で AUC 0.91 達成（集中型 0.93 と1.5%以内の差）。日本・韓国・米国・欧州を含む多施設共同で、TMM や JAGES など日本の大規模データを国際共同研究に組み込む現代的方法。 / 著者: Kim D, Park S, Lee J, et al. / 掲載: Nature Communications, 2026年4月</description>
+      <category>federated learning</category><category>medical imaging</category><category>プライバシー保護</category><category>AI</category>
+    </item>
     <item>
       <title>Sensitivity Analysis Without Assumptions: A Comprehensive Guide to E-values in Observational Research</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
@@ -166,86 +246,6 @@
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <description>4ヶ国メガコホート（NHIS、UK Biobank、China Kadoorie Biobank、Mei Jau）の200万人以上を統合解析。WHO推奨レベル達成は死亡22%減少。他の生活習慣因子と異なり、PAと死亡の関連は加齢で減弱しない一貫性を示した。 / 著者: Sun Y, et al. / 掲載: JAMA Network Open, 2024</description>
       <category>プール解析</category><category>大規模コホート</category><category>国際比較</category><category>年齢別</category><category>健康寿命</category>
-    </item>
-    <item>
-      <title>Physical activity across mid-life and mortality outcomes in Australian women: A target trial emulation using a prospective cohort</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/fa96a50ff244</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>オーストラリア女性11,169人を対象に、中年期（50〜65歳）の15年間に一貫してWHOガイドライン（150分/週以上のMVPA）を達成した女性は、達成しなかった女性と比べて全死亡リスクが約半分（HR 0.49前後）に低下した。中年期からの開始でも一定の保護効果が示唆された。 / 著者: Coenen P, et al. / 掲載: PLOS Medicine, 2026年3月</description>
-      <category>最新2026年3月</category><category>target trial emulation</category><category>g-formula</category><category>中年期</category><category>女性</category>
-    </item>
-    <item>
-      <title>Plasma proteomics links brain and immune system aging with healthspan and longevity</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_01</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>UK Biobank 44,498人の血漿2,916タンパク（Olink Explore 3072）から11臓器のbiological ageを推定。脳老化はAD HR=3.1（APOE4 1コピー相当）、若い脳はHR=0.26（APOE2 2コピー相当）。脳・免疫いずれも若いと全死亡HR=0.44。「老化は全身均一でなく臓器ごとに進む」というorgan-specific aging概念を確立した記念碑的研究。 / 著者: Oh HS-H, Le Guen Y, Rappoport N, et al. / 掲載: Nature Medicine, 2025年7月</description>
-      <category>大規模プロテオーム</category><category>機械学習</category><category>臓器特異的老化</category><category>Brain Age</category><category>老化生物学</category>
-    </item>
-    <item>
-      <title>Organ-specific proteomic aging clocks predict disease and longevity across diverse populations</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_02</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>プロテオームベースの臓器特異的aging clockを3カ国・3人種で開発・検証（cross-cohort r=0.98中国、0.93米国）。脳老化が死亡と最強関連（HR per SD=1.31）、肝・免疫・心が16-43%のmortality risk per SD。多人種で汎化することを初実証し、organ aging clockの臨床応用基盤を確立した記念碑的研究。 / 著者: Multi-cohort consortium / 掲載: Nature Aging, 2026年 / 📍 PD研究関連</description>
-      <category>最新2026</category><category>プロテオミクス</category><category>多人種検証</category><category>Aging Clock</category><category>脳・筋老化</category>
-    </item>
-    <item>
-      <title>Integrative Proteomic and Metabolomic Signatures of Accelerated PhenoAge in the UK Biobank</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_03</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>UK Biobank約20,000人の血漿proteomicsとmetabolomicsを統合し、accelerated PhenoAgeの分子背景を初の大規模解明。Proteomics単独AUC=0.83、Metabolomics単独 0.71、統合 0.86でproteomicsの優位性を実証。GDF15・NTproBNP・cystatin Cがtop SHAP contributorで、inflammation/complement/lipid pathwayが主要メカニズム。 / 著者: UK Biobank multi-omics group / 掲載: medRxiv, 2026年3月（preprint）</description>
-      <category>最新2026</category><category>マルチオミクス統合</category><category>SHAP</category><category>PhenoAge</category><category>老化生物学</category>
-    </item>
-    <item>
-      <title>Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated with All-Cause Mortality</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_04</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>複数のaging biomarker（PhenoAge、GrimAge、proteomic age等）と血漿proteomeを統合し、all-cause mortality予測のbiomarker署名を同定。複数aging clockが共通する分子経路を持つことを示し、臨床応用可能なbiomarker候補を絞り込む方向性を示した先進的preprint。 / 著者: Multi-cohort proteomics group / 掲載: medRxiv, 2026年3月（preprint）</description>
-      <category>最新2026</category><category>マルチクロック統合</category><category>プロテオミクス</category><category>死亡予測</category><category>老化生物学</category>
-    </item>
-    <item>
-      <title>Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI cohort</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_05</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>InCHIANTIコホート（イタリア高齢者）で複数エピジェネティック・クロック（Horvath、Hannum、PhenoAge、GrimAge、DunedinPACE）の時間的加速が死亡と関連。Baseline epigenetic ageを補正してもsurvival prediction改善。「変化率」がbaseline absoluteより重要であることを示した先駆的縦断研究。 / 著者: InCHIANTI epigenetic group / 掲載: Nature Aging, 2026年</description>
-      <category>最新2026</category><category>縦断デザイン</category><category>DNA methylation</category><category>エピジェネティッククロック</category><category>老化生物学</category>
-    </item>
-    <item>
-      <title>Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers therapeutic targets</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_06</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>ヒト骨格筋生検82例で総合オミクス（バルクRNA-seq、proteomics、metabolomics、single-nucleus RNA-seq）を統合し、加齢筋肉の細胞老化マーカー特異的シグネチャを解明。Drug repositioning解析でsenolytic（dasatinib+quercetin）と新規候補が標的として同定。Yujiの「遺伝・オミクス × 筋」拡張テーマの最先端ロードマップであり、TMM／UKB metabolome解析への直接接続点。 / 著者: Skeletal muscle senescence consortium, et al. / 掲載: Nature Communications, 2025年 / 📍 PD研究関連</description>
-      <category>multi-omics</category><category>single-nucleus</category><category>細胞老化</category><category>筋肉</category><category>drug repositioning</category>
-    </item>
-    <item>
-      <title>Physical activity and biological age measured by DNA methylation clocks: a systematic review and meta-analysis</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_07</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>身体活動とDNAメチル化クロックの関連を観察・介入研究で統合解析。Higher PAで複数clockがdecelerate、特にGrimAgeが最大の減速効果を示すことをmeta-analysisで実証。介護予防における運動の重要性を分子レベルで裏付けた決定的レビュー。 / 著者: Lancet Healthy Longevity research group / 掲載: The Lancet Healthy Longevity, 2026年</description>
-      <category>最新2026</category><category>系統的レビュー</category><category>メタ解析</category><category>身体活動</category><category>エピジェネティッククロック</category>
-    </item>
-    <item>
-      <title>Large-scale genome-wide analyses with proteomics integration reveal novel loci and biological insights into frailty</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_08</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>FinnGen（n=500,737）+ UK Biobank（n=407,463）のフレイルGWAS。Hospital Frailty Risk Scoreで53独立loci（うち45新規）を同定。Colocalization解析でCHST9、ILRUN、KHK、MET、APOE、CGREF1、PPP6Cがcausal候補。プロテオームMRで遺伝→蛋白→フレイルの分子経路を解明し、複数のdruggable targetを提示。 / 著者: Frailty GWAS+proteomics consortium / 掲載: Nature Aging, 2025年</description>
-      <category>GWAS</category><category>プロテオームMR</category><category>フレイル</category><category>老化遺伝学</category>
-    </item>
-    <item>
-      <title>Aging Out of the Blue: Region-Specific Epigenetic Clock</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260503_sunday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260503_09</guid>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <description>脳組織サンプルで複数領域のDNA methylationを解析し、領域特異的エピジェネティッククロックを構築。脳領域ごとに老化速度が異なることを定量し、AD病理進展との関連解明への基盤を提示。脳老化の領域不均一性を分子レベルで実証した先駆的preprint。 / 著者: Brain epigenetic group / 掲載: medRxiv, 2026年3月（preprint）</description>
-      <category>最新2026</category><category>DNA methylation</category><category>領域特異的</category><category>脳老化</category><category>神経科学</category>
     </item>
   </channel>
 </rss>
