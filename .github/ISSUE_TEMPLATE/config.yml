@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: 🌐 ライブサイト
-    url: https://research-dashboard-nine.vercel.app/
-    about: 公開済みのレポート・論文一覧・お気に入り
-  - name: 📚 ドキュメント
-    url: https://github.com/yasano1141-dot/research-dashboard/blob/main/README.md
-    about: セットアップ・運用ガイド
