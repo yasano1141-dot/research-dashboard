@@ -71,6 +71,29 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
    **判断基準**：「日本語論文・教科書で日本語表現が定着している語」は日本語、「研究分野独自の用語で英語のまま読まれている語」は英語のまま。
 9. **🆕 同じ論文を重複して紹介しない**（rev6 / 2026-05-08 指示）。レポート生成前に **必ず** `docs/data/papers.json` と `docs/data/reports.json` を読み込み、過去のレポートで紹介済みの論文（タイトル＋ジャーナル＋著者の組み合わせで判定）を除外。新規論文だけで10本を構成する。万一、特に重要な過去論文を再掲する必要がある場合は、本文冒頭で「再掲（前回 YYYY-MM-DD レポート）」と明示する。
 
+10. **🔴 実在の論文だけを紹介する（rev7 / 2026-05-09 指示・最重要）**。
+
+    **絶対禁止**：
+    - DOI／URLを fabricate する（例：将来の偽の DOI、検証していない URL）
+    - 論文タイトルを fabricate する（実在の研究領域から「ありそうなタイトル」を作る）
+    - 著者名・雑誌名・発表年を fabricate する
+    - 「2026年最新版」など実在しない年の論文を作る
+
+    **必須プロセス**：
+    1. WebSearch・PubMed・Google Scholar 等で**実在することを確認**してから論文を選定
+    2. URL は実際にブラウザで開ける状態であることを確認（HTTP 200/403=paywall は OK、303=redirect/404=not found は NG）
+    3. レポート生成前に `python3 scripts/validate_urls.py scripts/{theme}_curated_content.py` を実行し、すべて pass することを確認
+    4. validate_urls.py が NG を返した場合は、その論文を**実在のものに差し替え**てから生成
+
+    **背景（rev7制定の経緯）**：
+    過去に rev6 で saturday/friday の curated content を作成した際、私が「ありそうな」論文タイトル・DOI・年（2025-2026年の Nature Medicine など）を fabricate してしまい、ユーザーが原本URLにアクセスすると 404/redirect になる問題が発生した。実在しない論文を紹介することは研究倫理に反し、ユーザーの信頼を著しく損なう重大なミス。再発防止のため、本ルールを最優先の絶対遵守ルールとして永続化する。
+
+    **チェック方法（実装済みツール）**：
+    ```bash
+    python3 scripts/validate_urls.py scripts/{theme}_curated_content.py
+    ```
+    すべて HTTP 200 または HTTP 403（paywall）であれば pass。HTTP 303 や 404 は fabricate された URL の可能性が高いので、論文自体を差し替える。
+
 ### 実行前チェック（必ず確認）
 - [ ] DOCXを作っていないか？
 - [ ] 「詳細分析」HTMLを作っていないか？
@@ -85,6 +108,8 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 - [ ] メール処理を一切実行していないか？
 - [ ] **🆕 本文の日本語化を確認したか**（英語の長文・専門用語の連発を避けたか、初出英語に日本語訳を付けたか）？
 - [ ] **🆕 既存papers.jsonと重複していないか**（10本すべて新規論文か、再掲なら明示しているか）？
+- [ ] **🔴 実在の論文だけを紹介しているか**（DOI/URL/タイトル/著者をfabricateしていないか）？
+- [ ] **🔴 `python3 scripts/validate_urls.py scripts/{theme}_curated_content.py` を実行し、すべての URL が pass したか**？
 
 詳細は `references/critical-rules.md` を参照。
 

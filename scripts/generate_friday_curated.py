@@ -325,10 +325,32 @@ document.querySelectorAll('.fav-toggle').forEach(cb => {{
 </html>"""
 
 
+def _validate_urls_or_exit():
+    """SKILL.md rev7: 生成前に必ず URL 検証。fabricated URL があれば exit。"""
+    import subprocess
+    content_file = REPO / "scripts" / f"{THEME_KEY}_curated_content.py"
+    print(f"🔍 URL validation ({content_file.name})...")
+    result = subprocess.run(
+        ["python3", str(REPO / "scripts" / "validate_urls.py"), str(content_file)],
+        capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        print(result.stdout)
+        print(result.stderr, file=__import__('sys').stderr)
+        print("\n❌ URL validation failed. Fix fabricated URLs before generating report.", file=__import__('sys').stderr)
+        __import__('sys').exit(1)
+    print("✅ All URLs verified\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.now().strftime("%Y%m%d"))
+    ap.add_argument("--skip-url-check", action="store_true",
+                    help="URL検証をスキップ（緊急時のみ。SKILL.md rev7では非推奨）")
     args = ap.parse_args()
+
+    if not args.skip_url_check:
+        _validate_urls_or_exit()
 
     papers = json.loads(PAPERS_PATH.read_text(encoding="utf-8"))
     reports = json.loads(REPORTS_JSON_PATH.read_text(encoding="utf-8"))

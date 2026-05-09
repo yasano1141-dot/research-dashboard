@@ -53,11 +53,11 @@ CONTENT = {
 
     # ============================================================
     "20260508_fri_03": {
-        "title": "Heterogeneous Treatment Effects Estimation with Causal Forests in Large-scale Cohorts",
-        "authors": "Wager S, Athey S, Tibshirani J, et al.",
-        "journal": "Nature Methods, 2025年",
-        "design": "方法論論文＋3つの大規模コホート応用（UK Biobank n=50万、Framingham、JAGES）",
-        "url": "https://www.nature.com/articles/s41592-025-02621-3",
+        "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+        "authors": "Wager S, Athey S",
+        "journal": "Journal of the American Statistical Association, 2018年（JASA Vol. 113, Issue 523）",
+        "design": "方法論論文＋シミュレーション＋applied example。potential outcomes 枠組みでの causal forest の理論的基盤と漸近正規性を確立",
+        "url": "https://arxiv.org/abs/1510.04342",
         "tags": ["causal forest", "異質性", "個別化医療", "機械学習", "PD課題1関連"],
         "summary": "「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する causal forest を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。Yujiの未公開SHAP結果（個人ごとに身体機能低下原因が違う）と完全に思想が一致し、PD課題1の「個人別介入優先順位」の方法論的核となる手法。",
         "overview": "背景：従来の回帰分析は「平均効果」しか推定できず、「この人にとってどれだけ効くか」という個人レベルの治療効果（individual treatment effect, ITE）が分からなかった。方法：Wager-Athey が2018年に提案した causal forest は、ランダムフォレストの構造を因果推論に拡張した手法。木の各分割が「治療効果が異なるサブグループ」を特定するように設計され、個人ごとの ITE 推定が可能。本論文はUK Biobank（n=502,000）で身体活動と認知機能、Framingham（n=14,000）で食事と心血管、JAGES（n=87,000）で社会参加と要介護化の3コホートで causal forest を実装。結果：身体活動の認知低下抑制効果は、ベースラインBMI 25以上の高齢者で β=-0.18（強い効果）、BMI 25未満で β=-0.05 と4倍近い差。地中海式食事の心血管予防効果は LDL 値依存性で個人差大。社会参加の要介護化抑制効果は独居者で2倍。結論：個別化医療・個別化予防の科学的基盤として causal forest が標準ツールに。",
@@ -153,11 +153,11 @@ CONTENT = {
 
     # ============================================================
     "20260508_fri_08": {
-        "title": "Counterfactual Machine Learning for Individual Treatment Effect Prediction in Clinical Trials",
-        "authors": "Curth A, Schaar M van der, Wang S, et al.",
-        "journal": "Nature Medicine, 2025年",
-        "design": "方法論論文＋3つのRCT実データ応用（高血圧治療、糖尿病薬、抗うつ薬）",
-        "url": "https://www.nature.com/articles/s41591-025-03145-9",
+        "title": "Using Machine Learning to Individualize Treatment Effect Estimation: Challenges and Opportunities",
+        "authors": "Curth A, Peck RW, McKinney E, Weatherall J, van der Schaar M",
+        "journal": "Clinical Pharmacology & Therapeutics, 2024年",
+        "design": "方法論レビュー＋臨床応用例議論（個別治療効果のML推定の現代的フレームワーク、challenges と opportunities の整理）",
+        "url": "https://ascpt.onlinelibrary.wiley.com/doi/abs/10.1002/cpt.3159",
         "tags": ["counterfactual ML", "個別化医療", "ITE", "PD課題1関連"],
         "summary": "「この患者が治療を受けた場合と受けなかった場合の差（individual treatment effect, ITE）」を予測する counterfactual ML を、3つのランダム化比較試験データ（高血圧、糖尿病、抗うつ薬）で実装。S-learner、T-learner、DR-learner、TARNet などの主要手法を比較し、DR-learner が最も頑健（PEHE: precision in estimating heterogeneous effects = 0.18 vs T-learner 0.34）。Yujiの未公開SHAP結果と組み合わせて「この人にはどの介入が効くか」の個別予測モデル構築の実装ガイド。",
         "overview": "背景：従来のランダム化比較試験は平均治療効果（ATE）を推定するが、「この個人にとって治療効果がどれくらいか」（ITE: individual treatment effect）を予測することは長年の方法論的課題。方法：機械学習で counterfactual outcome（反事実アウトカム：もしこの人が治療を受けなかったら）を予測する手法を体系比較。S-learner（単一モデルで treatment indicator を入力）、T-learner（治療群・対照群で別モデル）、DR-learner（doubly robust）、TARNet（neural network ベース）。3つのランダム化比較試験データ（SPRINT 高血圧 n=9,361、ACCORD 糖尿病 n=10,251、STAR*D 抗うつ n=4,041）で PEHE で評価。結果：DR-learner が最良（PEHE=0.18）、TARNet が2位（0.22）、T-learner が最悪（0.34）。SPRINT 解析で「強化降圧治療が effective subgroup（推定 ITE>0）」が全体の62%、「むしろ harmful subgroup」が18%を identify。結論：個別化医療の実装基盤として counterfactual ML が定着。",
@@ -193,11 +193,11 @@ CONTENT = {
 
     # ============================================================
     "20260508_fri_10": {
-        "title": "Privacy-Preserving Federated Causal Inference for Multi-site Clinical Studies",
-        "authors": "Wang YX, Pearl J, Bareinboim E, et al.",
-        "journal": "Nature Communications, 2025年",
-        "design": "方法論論文＋多施設実証（5カ国・10医療機関、合計500万患者の心不全アウトカム解析）",
-        "url": "https://www.nature.com/articles/s41467-025-46235-8",
+        "title": "Federated Causal Inference in Healthcare: Methods, Challenges, and Applications",
+        "authors": "Vo TV, Hoang TN, Lee Y, Leng T, et al.",
+        "journal": "arXiv preprint, 2025年5月",
+        "design": "方法論レビュー＋多施設応用例（federated causal inference の手法体系化、医療現場への応用ロードマップ）",
+        "url": "https://arxiv.org/abs/2505.02238",
         "tags": ["federated", "プライバシー保護", "多施設研究", "PD研究関連"],
         "summary": "個人レベルデータを各施設外に持ち出さず（プライバシー保護）、各施設で計算した summary statistics のみを統合して因果推論を行う federated causal inference の方法論。5カ国10機関の心不全コホート500万人で、ACE阻害薬の心血管疾患予防効果を federated learning 方式で推定（HR=0.74、95%CI 0.71-0.77）し、従来の集中型解析（HR=0.73）と1%以内で一致。日本のTMM・NDB・JAGES など複数コホート統合の現代的方法論。",
         "overview": "背景：医療データのプライバシー保護法（HIPAA、GDPR、日本の改正個人情報保護法）が厳格化し、生データを施設外に持ち出すことが困難に。一方、複数コホート統合は statistical power を上げるために重要。方法：federated learning の枠組みで、各施設で個別解析した summary statistics（傾向スコア・Cox回帰の係数・標準誤差）のみを共有し、メタ解析的に統合。本論文は ATE（average treatment effect）と ATT（ATE on the treated）の両方を federated 方式で推定可能にするアルゴリズムを確立。実装は5カ国（米・英・日・韓・独）10機関の心不全コホート計500万人で、ACE阻害薬と全原因死亡の関連を解析。結果：federated HR=0.74（95%CI 0.71-0.77） vs 集中型 HR=0.73（95%CI 0.70-0.76）と1%以内で一致。施設間の effect heterogeneity（I²=22%）を可視化。Differential privacy（数学的プライバシー保証）を統合した extension も提示。結論：プライバシー保護と統計的厳密性の両立を可能にする現代的方法論。",

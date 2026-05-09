@@ -583,28 +583,6 @@
     "paper_count": 10
   },
   {
-    "id": "20260508_friday",
-    "date": "2026-05-08",
-    "weekday": "friday",
-    "theme_jp": "疫学方法論",
-    "theme_en": "epidemiology-methods",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260508_friday.html",
-    "paper_ids": [
-      "20260508_fri_01",
-      "20260508_fri_02",
-      "20260508_fri_03",
-      "20260508_fri_04",
-      "20260508_fri_05",
-      "20260508_fri_06",
-      "20260508_fri_07",
-      "20260508_fri_08",
-      "20260508_fri_09",
-      "20260508_fri_10"
-    ],
-    "paper_count": 10
-  },
-  {
     "id": "20260509_saturday",
     "date": "2026-05-09",
     "weekday": "saturday",
@@ -623,6 +601,28 @@
       "20260509_sat_08",
       "20260509_sat_09",
       "20260509_sat_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260508_friday",
+    "date": "2026-05-08",
+    "weekday": "friday",
+    "theme_jp": "疫学方法論",
+    "theme_en": "epidemiology-methods",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260508_friday.html",
+    "paper_ids": [
+      "20260508_fri_01",
+      "20260508_fri_02",
+      "20260508_fri_03",
+      "20260508_fri_04",
+      "20260508_fri_05",
+      "20260508_fri_06",
+      "20260508_fri_07",
+      "20260508_fri_08",
+      "20260508_fri_09",
+      "20260508_fri_10"
     ],
     "paper_count": 10
   }
