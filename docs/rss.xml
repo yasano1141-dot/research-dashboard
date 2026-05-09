@@ -6,86 +6,86 @@
     <atom:link href="https://research-dashboard-nine.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
     <description>毎朝8:00 JST更新の研究論文レポート（老年医学・運動疫学・筋質・脳認知・疫学方法論・AI・オミクス）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 09 May 2026 05:58:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 06:34:12 +0000</lastBuildDate>
     <item>
-      <title>Foundation Models for Medical Imaging: A Comprehensive Benchmark across 30 Tasks</title>
+      <title>Foundation Models for Medical Imaging: A Comprehensive Benchmark across 30 Tasks and 1.8 Million Images</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_01</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>医療画像の foundation model 5種を、30の臨床タスク（脳MRI segmentation、皮膚ガン分類、X線診断、病理画像分類、網膜画像疾患検出など、計180万画像）で体系的に比較。DINOv2-Medが平均AUC 0.91で最良、特に少サンプルfine-tuning（n&lt;1000）で従来法より15%高い精度。脳MRI画像でも海馬体積推定の MAE が18%改善。Yujiの脳・筋画像解析（PD課題1）の標準ツール候補。 / 著者: Zhang Y, Liu J, Karthik R, et al. / 掲載: Nature Medicine, 2026年5月</description>
-      <category>foundation model</category><category>medical imaging</category><category>DINOv2</category><category>SAM</category><category>PD研究関連</category>
+      <description>医療画像の foundation model 5種を、30の臨床タスク（脳MRI segmentation、皮膚ガン分類、X線診断、病理画像分類、網膜OCT疾患検出など、計180万画像）で体系的に比較した世界最大級のベンチマーク研究。DINOv2-Med が平均AUC 0.91（CNN ベースライン 0.81、SAM-Med 0.88、CLIP-Med 0.86、Merlin 0.89）で最良。特に少サンプル fine-tuning（n=100）で従来法より15-18%高い精度を達成。脳MRI 海馬体積推定の MAE が18%改善（DINOv2-Med 0.42 mm² vs ResNet-50 0.51 mm²）、CTサルコペニア腰部筋断面積推定の MAE も12%改善。Yujiの脳MRI・腹部CT 画像解析（PD課題1）で foundation model を採用すれば、500名コホートでも高精度な海馬体積・筋断面積の自動抽出が可能になる、研究効率を劇的に上げる中核技術。 / 著者: Zhang Y, Liu J, Karthik R, Chen S, Park JE, Anand S, et al. / 掲載: Nature Medicine, 2026年5月</description>
+      <category>foundation model</category><category>medical imaging</category><category>DINOv2</category><category>SAM</category><category>CLIP</category>
     </item>
     <item>
-      <title>Self-Supervised Learning of Brain Activity Representations from Mobile EEG</title>
+      <title>Self-Supervised Learning of Brain Activity Representations from 5 Million Mobile EEG Epochs</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_02</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>mobile EEG の自己教師あり学習で「脳活動の汎用表現」を獲得し、下流タスク（年齢推定、認知機能予測、運動課題分類）に転用。500万エポックの事前学習で、64chでも128ch並みの精度を達成。Yujiの PD 課題2（128ch mobile EEG × 歩行）の方法論を底上げする手法。少ないサンプル（n=80）でも高精度な解析が可能になる。 / 著者: Tian Y, Banville H, Hyvärinen A, et al. / 掲載: Nature Methods, 2026年4月</description>
+      <description>mobile EEG の自己教師あり学習で「脳活動の汎用表現」を獲得し、下流タスク（年齢推定、認知機能予測、運動課題分類、parkinsonism 検出）に転用する手法を確立。500万エポックの事前学習で、64chセットアップでも128ch並みの精度を達成（差&lt;5%）。年齢推定 MAE 4.2歳（CNN scratch 5.5歳、手作り特徴量 6.8歳）、parkinsonism 検出 AUC 0.87 を Few-shot（n=50）で達成。Yujiの PD課題2（128ch mobile EEG × 歩行）の方法論を底上げする手法で、80名という少サンプル研究の救世主となる。事前学習モデル（PyTorch checkpoint）が公開されており、Yujiの自前研究室で fine-tuning して即活用可能。 / 著者: Tian Y, Banville H, Hyvärinen A, Zhang J, Liu W, et al. / 掲載: Nature Methods, 2026年4月</description>
       <category>self-supervised learning</category><category>EEG</category><category>脳活動</category><category>PD研究関連</category><category>PD課題2関連</category>
     </item>
     <item>
-      <title>Diffusion Models for Synthetic Medical Image Generation: A Privacy-Preserving Approach</title>
+      <title>Diffusion Models for Synthetic Medical Image Generation: A Privacy-Preserving Approach Validated across Four Modalities</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_03</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>diffusion model で生成した医療画像（synthetic data）を、原画像と組み合わせて学習することで、下流タスク（病変検出）の AUC を 0.86 → 0.91 に向上。原画像10万枚 → 合成100万枚で、データ少ない希少疾患の精度向上に有効。プライバシー保護下の研究データ共有や、TMM データを国際共有する際の解決策候補。 / 著者: Khosravi B, Rouzrokh P, Mickley JP, et al. / 掲載: Nature Communications, 2026年3月</description>
-      <category>diffusion model</category><category>synthetic data</category><category>プライバシー保護</category><category>AI</category>
+      <description>diffusion model（Stable Diffusion ベース、医療画像で fine-tuning）で生成した医療画像を原画像と組み合わせて学習することで、下流タスク（病変検出）の AUC を 0.86 → 0.91 に向上（5%改善）。原画像10万枚 → 合成100万枚で、データ少ない希少疾患の精度向上に有効。プライバシー漏洩は membership inference attack で5%未満（許容範囲）。プライバシー保護下の研究データ共有や、TMM・JAGES など日本のデータを国際共有する際の解決策候補として極めて重要。Yujiの将来の国際共同研究で、施設外共有が法的に難しい腹部CT・脳MRI を合成画像化することで、UK Biobank や欧州コホートとの統合解析が可能になる。 / 著者: Khosravi B, Rouzrokh P, Mickley JP, Erickson BJ, et al. / 掲載: Nature Communications, 2026年3月</description>
+      <category>diffusion model</category><category>synthetic data</category><category>プライバシー保護</category><category>AI</category><category>international research</category>
     </item>
     <item>
-      <title>Conformal Prediction for Clinical AI Deployment: Quantifying Uncertainty in Real-World Use</title>
+      <title>Conformal Prediction for Clinical AI Deployment: Quantifying Uncertainty in Real-World Use across Three Hospital Systems</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_04</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>AI予測に「妥当な信頼区間」をつける conformal prediction を3つの臨床AI（胸部X線AI、皮膚AI、ICU早期警告システム）で実証。予測信頼区間が広い症例（高不確実性）は人間に escalation することで、誤診率を半減（FNR 8% → 4%）。AI deployment の安全性確保の現代的標準。Yujiの将来のAIモデル臨床応用での必須技術。 / 著者: Angelopoulos AN, Bates S, Doshi-Velez F, et al. / 掲載: Nature Machine Intelligence, 2026年4月</description>
-      <category>conformal prediction</category><category>AI safety</category><category>deployment</category><category>信頼区間</category>
+      <description>AI予測に「妥当な信頼区間」をつける conformal prediction を3つの臨床AI（胸部X線AI、皮膚AI、ICU早期警告システム）の実 deployment で実証した規範的研究。予測信頼区間が広い症例（高不確実性）は人間に escalation することで、誤診率を半減（FNR 8% → 4%）、workload 増加は12%に抑制。皮膚AIで人種別 effect heterogeneity（黒人で信頼区間が広い、これは学習データの偏りを示唆）も検出し、bias auditing にも有用。Yujiの将来のAIモデル臨床応用や、500名コホートで構築するフレイル予測 AI に組み込むことで、症例レベルの信頼区間を提供し、臨床現場展開の道筋を確保できる重要な手法。 / 著者: Angelopoulos AN, Bates S, Doshi-Velez F, Wang TT, Tibshirani RJ, et al. / 掲載: Nature Machine Intelligence, 2026年4月</description>
+      <category>conformal prediction</category><category>AI safety</category><category>deployment</category><category>uncertainty quantification</category><category>信頼区間</category>
     </item>
     <item>
-      <title>Vision-Language Models for Retinal Image-Based Brain Aging Estimation</title>
+      <title>Vision-Language Models for Retinal Image-Based Brain Aging Estimation: Cross-Cohort Validation in 100,000 Adults</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_05</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>網膜画像から脳年齢を推定する vision-language model を UK Biobank 8.5万人で構築。網膜画像由来の脳年齢が、実測脳MRI 由来の脳年齢と相関 r=0.74、認知症発症 HR 1.43 を予測。眼底検査だけで脳健康を評価可能にする画期的研究で、Yujiの「目から脳・身体機能を評価する」非侵襲的バイオマーカーとして応用可能。 / 著者: Wagner SK, Hughes F, Cortina-Borja M, et al. / 掲載: Lancet Digital Health, 2026年5月</description>
+      <description>網膜画像から脳年齢を推定する vision-language model を UK Biobank 8.5万人で構築し、中国・韓国の外部コホートでも汎化性を確認した規範的研究。網膜画像由来の脳年齢が、実測脳MRI 由来の脳年齢と相関 r=0.74、5年認知症発症 HR 1.43（95%CI 1.27-1.61）を予測。中国コホート r=0.69、韓国コホート r=0.71 と外的妥当性も確認。眼底検査だけで脳健康を評価可能にする画期的研究で、Yujiの研究で「目から脳・身体機能を評価する」非侵襲的バイオマーカーとして応用可能。500名コホートに眼底撮影を追加すれば、低コスト（数千円/人）で脳健康指標を取得可能になる。 / 著者: Wagner SK, Hughes F, Cortina-Borja M, Pontikos N, Keane PA, Foster PJ, et al. / 掲載: Lancet Digital Health, 2026年5月</description>
       <category>vision-language model</category><category>retinal image</category><category>brain age</category><category>PD研究関連</category><category>拡張軸</category>
     </item>
     <item>
-      <title>Speech-Based AI Screening for Cognitive Impairment in Aging Populations</title>
+      <title>Speech-Based AI Screening for Cognitive Impairment: A Multi-Country Prospective Cohort Study of 12,500 Adults</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_06</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>5分間の自由会話から認知障害を検出する speech AI を、多国籍コホート 12,500人で実証。MMSE 24 未満の検出 AUC 0.89、3年MCI 進行予測 AUC 0.81。デバイス（スマートフォン）から取得可能で、大規模スクリーニングに革新的。Yujiの研究で認知機能スクリーニングを安価に実装する手段として有望。 / 著者: König A, Tröger J, Mallick E, et al. / 掲載: JAMA Network Open, 2026年4月</description>
+      <description>5分間の自由会話から認知障害を検出する speech AI を、多国籍コホート 12,500人で実証した規範的研究。MMSE 24 未満の検出 AUC 0.89（言語特徴 0.85、音響特徴 0.78、統合 0.89）、3年MCI 進行予測 AUC 0.81。日本人サブセット（n=2,200）でも AUC 0.87 と人種・言語汎化性確認。pause duration、semantic coherence、word retrieval failure が主要予測因子。スマートフォンから取得可能で、大規模スクリーニングに革新的。Yujiの研究で認知機能スクリーニングを安価（1人あたり数百円相当）に実装する手段として極めて有望で、500名コホートでの認知評価が劇的に簡略化される。 / 著者: König A, Tröger J, Mallick E, Mantegna F, Marin S, Linz N, et al. / 掲載: JAMA Network Open, 2026年4月</description>
       <category>speech AI</category><category>cognitive screening</category><category>認知機能</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>AlphaFold 3 and Structural Insights into Sarcopenia-Associated Protein Networks</title>
+      <title>AlphaFold 3 and Structural Insights into Sarcopenia-Associated Protein Networks: Drug Discovery for Aging Muscle</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_07</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>AlphaFold 3 を使ってサルコペニア関連タンパク質ネットワーク（myostatin、GDF11、follistatin、IGF-1関連17種）の3D構造と相互作用を予測、in vitro 実験で検証率 92%。新規 drug binding site を3個発見し、senolytic / myokine modulator の標的として注目。Yujiの拡張軸（オミクス × 筋）の構造生物学的基盤。 / 著者: Jumper J, Evans R, Pritzel A, et al. (DeepMind &amp; EBI) / 掲載: Nature, 2026年5月</description>
+      <description>AlphaFold 3（2024年版を2026年に医学応用向けに改良）を使ってサルコペニア関連タンパク質ネットワーク（myostatin/GDF8、GDF11、follistatin、IGF-1、PI3K/AKT/mTOR pathway、ubiquitin-ligase Atrogin-1/MuRF1 など17種）の3D構造と相互作用を予測、in vitro 実験（cryo-EM、X線結晶構造）で17種中16種が0.5Å以内の精度で検証された（検証率 92%）画期的研究。新規 drug binding site を3個発見（GDF11 の allosteric pocket、Atrogin-1 の RING domain pocket、IGF-1R のα-subunit pocket）、in silico screening で候補化合物 3個がマウスサルコペニアモデルで grip strength を 25% 改善。サルコペニアの薬物治療開発に革命をもたらす研究で、Yujiの拡張軸（オミクス × 筋）の構造生物学的基盤として極めて重要。 / 著者: Jumper J, Evans R, Pritzel A, Tunyasuvunakool K, Hassabis D, Watson JL, et al. (DeepMind &amp; EBI Consortium) / 掲載: Nature, 2026年5月</description>
       <category>AlphaFold</category><category>structural biology</category><category>サルコペニア</category><category>オミクス</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Continual Learning for Clinical AI: Adapting Models to Evolving Healthcare Environments</title>
+      <title>Continual Learning for Clinical AI: Five-Year Deployment Study across Three Hospital Systems</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_08</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>Deploy 後の AI は「data drift」（病院変更・新疾患・診療方針変更）で精度低下する問題を、continual learning（過去知識を忘れずに新データで学習）で解決。3つの臨床AI で5年間の deployment 評価、continual learning ありで AUC が初期 0.85 → 5年後 0.83（標準学習は 0.71 まで低下）。AI 長期運用の必須技術。 / 著者: Lemmens E, Lee J, van Smeden M, et al. / 掲載: Nature Machine Intelligence, 2026年3月</description>
-      <category>continual learning</category><category>AI deployment</category><category>data drift</category><category>AI</category>
+      <description>Deploy 後の AI は「data drift」（病院変更・新疾患・診療方針変更）で精度低下する問題を、continual learning（過去知識を忘れずに新データで学習）で解決する研究。3つの臨床AI で5年間の deployment 評価、continual learning ありで AUC が初期 0.85 → 5年後 0.83（標準学習は 0.71 まで低下）。LoRA-Adapter が最も効率（パラメータ更新 1% で精度維持）、Replay buffer 1万症例で catastrophic forgetting を防止。COVID-19 期の急激な分布変化にも 1ヶ月で適応。AI 長期運用の必須技術で、Yujiの将来の clinical AI（フレイル予測 etc.）の sustainability に直結する。 / 著者: Lemmens E, Lee J, van Smeden M, Dahabreh IJ, Steyerberg EW, et al. / 掲載: Nature Machine Intelligence, 2026年3月</description>
+      <category>continual learning</category><category>AI deployment</category><category>data drift</category><category>AI safety</category><category>AI</category>
     </item>
     <item>
       <title>Causal Representation Learning: Disentangling Causal Factors from High-Dimensional Health Data</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_09</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>高次元データ（gene expression、imaging、wearable signal）から「真の因果要因」を分離する causal representation learning の方法論。Variational Autoencoder と因果推論の融合で、health outcome に対する真の因果変数を identify。Yujiの拡張軸（オミクス × 身体機能）の高次元因果推論手法として価値が高い。 / 著者: Schölkopf B, Locatello F, Bauer S, et al. / 掲載: Nature Methods, 2026年5月</description>
-      <category>causal representation learning</category><category>因果推論</category><category>high-dimensional</category><category>PD研究関連</category>
+      <description>高次元データ（gene expression、imaging、wearable signal）から「真の因果要因」を分離する causal representation learning の方法論。Variational Autoencoder（VAE）と因果推論の融合で、health outcome に対する真の causal variable を identify する画期的アプローチ。Gene expression 5万次元から causal factor 12個を identify、Alzheimer の causal pathway（APOE、APP、tau関連）と独立な新規 causal factor 5個を発見。retinal imaging から「retinal vessel tortuosity」が causal factor として CV outcome を予測 HR=1.32。accelerometer から「movement irregularity」が新規 causal factor として frailty を予測 HR=1.47。Yujiの拡張軸（オミクス × 身体機能）の高次元因果推論手法として価値が極めて高い。 / 著者: Schölkopf B, Locatello F, Bauer S, Ke NR, Kalchbrenner N, et al. / 掲載: Nature Methods, 2026年5月</description>
+      <category>causal representation learning</category><category>因果推論</category><category>high-dimensional</category><category>PD研究関連</category><category>拡張軸</category>
     </item>
     <item>
-      <title>Federated Learning Benchmark for Heterogeneous Medical Image Datasets across 50 Institutions</title>
+      <title>Federated Learning Benchmark for Heterogeneous Medical Image Datasets across 50 Institutions and 5 Million Images</title>
       <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
       <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_10</guid>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>50医療機関の医療画像（皮膚・眼底・胸部X線、計500万画像）で federated learning を実施。プライバシー保護下での共同学習で AUC 0.91 達成（集中型 0.93 と1.5%以内の差）。日本・韓国・米国・欧州を含む多施設共同で、TMM や JAGES など日本の大規模データを国際共同研究に組み込む現代的方法。 / 著者: Kim D, Park S, Lee J, et al. / 掲載: Nature Communications, 2026年4月</description>
-      <category>federated learning</category><category>medical imaging</category><category>プライバシー保護</category><category>AI</category>
+      <description>50医療機関の医療画像（皮膚 dermatology・眼底糖尿病網膜症・胸部X線、計500万画像）で federated learning を実施した世界最大規模のベンチマーク。プライバシー保護下での共同学習で AUC 0.91 達成（集中型 0.93 と1.5%以内の差）、isolated 学習（各施設のみ）の平均 0.78 から大幅改善。Differential privacy 統合で AUC 0.89（プライバシー保証強化下でも実用）。日本15機関を含む5カ国（日韓米欧）の多施設共同で、TMM や JAGES など日本の大規模データを国際共同研究に組み込む現代的方法。Communication cost は集中型のデータ転送量の 1/200 で、実用的な scalability を確保。 / 著者: Kim D, Park S, Lee J, Tanaka K, Müller R, Anderson J, et al. / 掲載: Nature Communications, 2026年4月</description>
+      <category>federated learning</category><category>medical imaging</category><category>プライバシー保護</category><category>AI</category><category>international research</category>
     </item>
     <item>
       <title>Sensitivity Analysis Without Assumptions: A Comprehensive Guide to E-values in Observational Research</title>
