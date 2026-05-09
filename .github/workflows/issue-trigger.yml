@@ -1,0 +1,144 @@
+name: 📱 Issue Trigger (Mac-independent)
+
+# スマホからのIssue trigger を GitHub Actions だけで処理。
+# Macが閉じていても動作。キュレーション済みテーマ（friday/saturday/pd）に対応。
+# キュレーション済みでないテーマ（monday/tuesday/wednesday/thursday/sunday）は
+# Macが起動した時に Mac poller が処理する（フォールバック）。
+#
+# このワークフローは Anthropic API を使わない（=API課金なし）。
+# scripts/{theme}_curated_content.py のリッチ本文を使ってHTML生成のみ。
+
+on:
+  issues:
+    types: [opened, labeled, reopened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: issue-trigger-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  process:
+    # "trigger" label が付いている open issue のみ処理
+    if: |
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'trigger')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Parse theme from issue body
+        id: parse
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          # body から theme keyword 抽出（auto/pd/monday-sunday）
+          theme=$(echo "$ISSUE_BODY" | grep -oE '\b(auto|pd|monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b' | head -1)
+          theme="${theme:-auto}"
+          if [ "$theme" = "auto" ]; then
+            case $(TZ=Asia/Tokyo date +%a) in
+              Mon) theme=monday;;
+              Tue) theme=tuesday;;
+              Wed) theme=wednesday;;
+              Thu) theme=thursday;;
+              Fri) theme=friday;;
+              Sat) theme=saturday;;
+              Sun) theme=sunday;;
+            esac
+          fi
+          echo "theme=$theme" >> $GITHUB_OUTPUT
+          echo "theme=$theme"
+
+      - name: Comment "received"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: ${{ steps.parse.outputs.theme }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} \
+            --body "🤖 GitHub Actions が受信しました（テーマ: \`$THEME\`）。生成中..."
+
+      - name: Generate report (if curated content exists)
+        id: generate
+        env:
+          THEME: ${{ steps.parse.outputs.theme }}
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%Y%m%d)
+          case "$THEME" in
+            friday)
+              python3 scripts/generate_friday_curated.py --date "$TODAY"
+              echo "status=success" >> $GITHUB_OUTPUT
+              echo "report_id=${TODAY}_friday" >> $GITHUB_OUTPUT
+              ;;
+            saturday)
+              python3 scripts/generate_saturday_curated.py --date "$TODAY"
+              echo "status=success" >> $GITHUB_OUTPUT
+              echo "report_id=${TODAY}_saturday" >> $GITHUB_OUTPUT
+              ;;
+            pd)
+              python3 scripts/generate_pd_curated_report.py
+              echo "status=success" >> $GITHUB_OUTPUT
+              echo "report_id=${TODAY}_pd" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              echo "::warning::Theme '$THEME' has no curated content yet. Falls back to Mac poller."
+              echo "status=needs_mac" >> $GITHUB_OUTPUT
+              ;;
+          esac
+
+      - name: Generate RSS
+        if: steps.generate.outputs.status == 'success'
+        run: python3 scripts/generate_rss.py
+
+      - name: Commit and push
+        if: steps.generate.outputs.status == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain docs/)" ]]; then
+            git add docs/data/ docs/reports/ docs/rss.xml
+            git commit -m "📱 Issue #${{ github.event.issue.number }}: ${{ steps.parse.outputs.theme }} report"
+            git push origin main
+          fi
+
+      - name: Comment + close (success)
+        if: steps.generate.outputs.status == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: ${{ steps.parse.outputs.theme }}
+          REPORT_ID: ${{ steps.generate.outputs.report_id }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "✅ 完了しました（GitHub Actions処理、Mac不要）！
+
+レポート → https://research-dashboard-nine.vercel.app/reports/${REPORT_ID}.html
+最新一覧 → https://research-dashboard-nine.vercel.app/
+
+Vercel自動デプロイで1〜2分後に反映されます。"
+          gh issue close ${{ github.event.issue.number }}
+
+      - name: Comment (needs Mac)
+        if: steps.generate.outputs.status == 'needs_mac'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: ${{ steps.parse.outputs.theme }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "⚠️ このテーマ（\`$THEME\`）はキュレーション済みコンテンツがないため、Macが必要です。
+Mac起動・ログイン中であれば10分以内に処理されます。
+（friday/saturday/pd のキュレーション版はGitHub Actionsだけで完結します）"
+
+      - name: Comment (failure)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "❌ エラーが発生しました。
+GitHub Actions のログを確認してください: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

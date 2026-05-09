@@ -32,25 +32,36 @@
 
 ---
 
-## 📱 スマホから生成リクエスト（Mobile Trigger Poller）
+## 📱 スマホから生成リクエスト（2層構成）
 
-外出先・iPad・スマホからレポート生成をリクエストできる機能。GitHub Issues をトリガーに、Macが10分おきにポーリングして処理。
+外出先・iPad・スマホからレポート生成をリクエスト可能。**Macが閉じていても動作**します。
 
-### 初回セットアップ（Macで1コマンド）
-```bash
-bash ~/github/research-dashboard/scripts/install_poller.sh
-```
-これでMacのlaunchdに10分おきのpollerが登録されます。
+### アーキテクチャ：GitHub Actions（メイン）+ Mac poller（フォールバック）
+
+| ケース | 処理担当 | Mac必要？ |
+|---|---|---|
+| `friday` リクエスト | **GitHub Actions** で即時処理 | ❌ 不要 |
+| `saturday` リクエスト | **GitHub Actions** で即時処理 | ❌ 不要 |
+| `pd` リクエスト | **GitHub Actions** で即時処理 | ❌ 不要 |
+| `monday`/`tuesday`/`wednesday`/`thursday`/`sunday` リクエスト | Mac poller（起動時に処理） | ✅ 必要（キュレーション本文未作成のため） |
+| `auto`（今日の曜日） | 上記いずれかに振り分け | 曜日依存 |
+
+GitHub Actions は `scripts/{theme}_curated_content.py` のリッチ本文を使うので、Anthropic API を呼ばず、**API課金もMacも不要**で完結します。
 
 ### スマホでの使い方
 1. **GitHub アプリ**（iOS/Android、無料）をインストール
 2. アプリで `yasano1141-dot/research-dashboard` リポジトリを開く
 3. Issues タブ → 右上「**+**」→ **📊 今日のレポートを生成** を選択
-4. テーマを選択（auto／pd／曜日指定）→ Submit
-5. 10分以内にMacが受信開始（Issueにコメントが付く）
+4. テーマを選択 → Submit
+5. **30秒以内**に GitHub Actions（curated 対応）または **10分以内**に Mac poller がコメント
 6. 完了時に自動でIssueが閉じられ、Vercelに反映
 
-**重要**：Macが起動・ログイン中である必要があります（スリープ中は復帰時にcatch-up）。完全電源OFFだとリクエストが処理されないので、その場合はMac起動時に処理されます（Issueは open のまま残るため、再度処理）。
+### Mac poller のセットアップ（オプション）
+キュレーション未対応の曜日（月火水木日）も対応したいなら、Macで：
+```bash
+bash ~/github/research-dashboard/scripts/install_poller.sh
+```
+GitHub Actionsだけで足りる用途（金/土/PDのみ使う）なら **不要**。
 
 ### 管理コマンド
 ```bash
