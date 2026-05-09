@@ -32,6 +32,37 @@
 
 ---
 
+## 📱 スマホから生成リクエスト（Mobile Trigger Poller）
+
+外出先・iPad・スマホからレポート生成をリクエストできる機能。GitHub Issues をトリガーに、Macが10分おきにポーリングして処理。
+
+### 初回セットアップ（Macで1コマンド）
+```bash
+bash ~/github/research-dashboard/scripts/install_poller.sh
+```
+これでMacのlaunchdに10分おきのpollerが登録されます。
+
+### スマホでの使い方
+1. **GitHub アプリ**（iOS/Android、無料）をインストール
+2. アプリで `yasano1141-dot/research-dashboard` リポジトリを開く
+3. Issues タブ → 右上「**+**」→ **📊 今日のレポートを生成** を選択
+4. テーマを選択（auto／pd／曜日指定）→ Submit
+5. 10分以内にMacが受信開始（Issueにコメントが付く）
+6. 完了時に自動でIssueが閉じられ、Vercelに反映
+
+**重要**：Macが起動・ログイン中である必要があります（スリープ中は復帰時にcatch-up）。完全電源OFFだとリクエストが処理されないので、その場合はMac起動時に処理されます（Issueは open のまま残るため、再度処理）。
+
+### 管理コマンド
+```bash
+launchctl list | grep poller          # 状態確認
+launchctl start com.yujiro.research-dashboard.poller  # 即時テスト実行
+launchctl unload ~/Library/LaunchAgents/com.yujiro.research-dashboard.poller.plist  # 停止
+tail -f /tmp/research-dashboard-poller.err.log  # エラー監視
+tail -f ~/github/research-dashboard/scripts/logs/poller_$(date +%Y%m%d).log  # 実行ログ
+```
+
+---
+
 ## 🟢 動作確認：毎日の運用テスト
 
 1. Finder でデスクトップを開く

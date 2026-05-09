@@ -1,0 +1,41 @@
+name: 📊 今日のレポートを生成
+description: 今日の曜日テーマ、または指定したテーマのレポートを生成（Macに送信）
+title: "[Daily Report] {{ date | now('YYYY-MM-DD') }} の生成依頼"
+labels: ["trigger", "daily"]
+body:
+  - type: dropdown
+    id: theme
+    attributes:
+      label: テーマ
+      description: |
+        今日の曜日に従う場合は「auto」を選択。それ以外は明示的に曜日テーマを指定。
+      options:
+        - "auto（今日の曜日）"
+        - "pd（PD研究キュレーション版）"
+        - "monday（老年医学・健康寿命）"
+        - "tuesday（身体活動・運動疫学）"
+        - "wednesday（筋質・体組成）"
+        - "thursday（脳・認知）"
+        - "friday（疫学方法論）"
+        - "saturday（AI・データ科学）"
+        - "sunday（遺伝子・オミクス）"
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: メモ（任意）
+      description: 特定の論文を含めたい・除外したい・特定のテーマで深掘りしたいなど、Macに伝えたい情報
+      placeholder: 例：「今日は脳とオミクスの統合系を多めに」
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **このIssueがトリガーされた後の流れ：**
+        1. Macが10分以内にこのIssueを検出
+        2. 自動でレポート生成を開始（Issueにコメントが付く）
+        3. 完了後、Vercelに自動デプロイ → サイトに反映
+        4. このIssueは自動的にCloseされます
