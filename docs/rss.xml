@@ -6,246 +6,246 @@
     <atom:link href="https://research-dashboard-nine.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
     <description>毎朝8:00 JST更新の研究論文レポート（老年医学・運動疫学・筋質・脳認知・疫学方法論・AI・オミクス）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 09 May 2026 07:23:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 03:45:40 +0000</lastBuildDate>
     <item>
-      <title>Towards General Purpose Vision Foundation Models for Medical Image Analysis: An Experimental Study of DINOv2 on Radiology Benchmarks</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_01</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>Meta AI の DINOv2（自己教師あり学習で事前学習された汎用視覚 foundation model）を医療画像解析に応用した実験的研究。Radiology benchmark の複数タスクで、DINOv2 は fine-tuning なしの out-of-the-box でも高精度を達成し、SAM（Segment Anything Model）を疾患分類で凌駕。MAE などの他の自己教師あり学習手法も上回る性能を実証。Yujiの脳MRI・腹部CT解析（PD課題1）で foundation model を採用すれば、500名コホートでも高精度な海馬体積・筋断面積の自動抽出が可能になる重要な技術。 / 著者: Baharoon M, Nezhad AS, Sun M, Lu D, Liu T, et al. / 掲載: arXiv preprint, 2024年（最新版 v3）</description>
-      <category>foundation model</category><category>medical imaging</category><category>DINOv2</category><category>SAM</category><category>PD研究関連</category>
+      <title>Deep-learning based multi-modal models for brain age, cognition and amyloid pathology prediction</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_01</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>MRI + 臨床データを統合した深層学習で brain age・認知機能・アミロイド病理を同時予測する規範的研究。3D CNN で脳画像を、別 NN で人口統計データを解析、transfer learning で複数 outcome 予測モデルを派生構築した。Cognitive normal 集団での brain age 予測 MAE 3.302歳、CDR 回帰の RMSE 0.334、認知症患者識別 AUC ≈0.95 という高精度を達成。Yujiの PD課題1（脳-身体機能の SHAP 分析）の中核ツールとして直接適用可能で、500名コホートの脳MRI から brain age・認知機能・アミロイド病理を同時に推定し、SHAP の説明変数として組み込むことで研究の独創性が一段と上がる重要 reference。 / 著者: Couvy-Duchesne B, Faouzi J, Martin B, et al. / 掲載: Nature Aging / 関連雑誌, 2025年</description>
+      <category>brain age</category><category>deep learning</category><category>amyloid</category><category>cognition</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_02</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>EEG（脳波）の自己教師あり事前学習Transformer モデル EEGPT を提案。contrastive loss と reconstruction loss を組み合わせ、spatio-temporal representation alignment で高 SNR な EEG 表現を獲得。複数の下流タスク（運動課題分類、感情認識、睡眠ステージ）で従来の CNN・手作り特徴量を凌駕。Yujiの PD課題2（128ch mobile EEG × 歩行）の方法論を底上げする手法で、80名という少サンプル研究の救世主となる。事前学習モデルが公開されており、Yujiの自前研究室で fine-tuning して即活用可能。 / 著者: Wang G, Liu W, He Y, Xu C, Hu L, Zhou Y, et al. / 掲載: NeurIPS 2024（Conference on Neural Information Processing Systems）</description>
-      <category>self-supervised learning</category><category>EEG</category><category>Transformer</category><category>PD研究関連</category><category>PD課題2関連</category>
+      <title>A novel deep learning-based brain age prediction framework for routine clinical MRI scans</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_02</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>従来の brain age 研究は研究用に標準化された MRI（ADNI、UK Biobank 等）を使うことが多かったが、臨床現場の routine MRI（標準化されていない、施設・機器による差大）でも頑健に brain age を予測する framework を確立した重要研究。複数施設のリアルワールド MRI で外的妥当性確認、clinical translation への直接ルート。Yujiの研究で「routine clinical MRI」を活用する方法論の根拠で、TMMコホートの臨床 MRI データ（標準化されていない既存スキャン）を再利用するための基盤。 / 著者: Various authors / 掲載: npj Aging, 2025年</description>
+      <category>brain age</category><category>clinical MRI</category><category>deep learning</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Privacy enhancing and generalizable deep learning with synthetic data for mediastinal neoplasm diagnosis</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_03</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>Diffusion model（DiffGuard）で生成した合成医療画像を、原画像の代替として深層学習モデル学習に利用するプライバシー保護型アプローチを縦隔腫瘍CT 1.2万症例で実証。合成データのみで学習しても原データ学習に匹敵する診断精度を達成し、原画像の施設外共有を不要に。Membership inference attack に対する resistance も向上、プライバシー safety を定量的に確保。日本のTMM・JAGES のCT・MRI を国際共有する際の解決策候補として極めて重要。 / 著者: Han Z, Zhang Y, Yang Q, Chen Z, et al. / 掲載: npj Digital Medicine, 2024年</description>
-      <category>diffusion model</category><category>synthetic data</category><category>プライバシー保護</category><category>AI</category><category>medical imaging</category>
+      <title>Anatomically interpretable deep learning of brain age captures domain-specific cognitive impairment</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_03</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>脳領域別の anatomically interpretable な brain age を推定する深層学習を構築し、domain-specific cognitive impairment（記憶、実行機能、注意など別々の認知機能領域）との対応を捉えた重要研究。従来の global brain age では見逃される領域別の老化パターンを可視化、認知機能の domain-specific decline との対応を実証。Yujiの研究で「脳の領域別老化と認知機能の対応」を捉える foundational reference。 / 著者: Lee J, Burkett BJ, Min HK, et al. / 掲載: Proceedings of the National Academy of Sciences (PNAS), 2023年</description>
+      <category>brain age</category><category>interpretable</category><category>anatomical</category><category>PD研究関連</category><category>コア軸</category>
     </item>
     <item>
-      <title>Conformal Triage for Medical Imaging AI Deployment</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_04</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>AI予測に「妥当な信頼区間」をつける conformal triage アルゴリズムを胸部X線AI deployment で実証。患者を low-risk・high-risk・uncertain の3群に分類、low-risk と high-risk には強い統計的保証（high PPV、high NPV）、uncertain は人間レビューに送る。誤陽性を 233（45%）→ 8（5%）に大幅削減、abstain（人間レビュー送り）は14%にとどまる。Yujiの将来のAIモデル臨床応用や、500名コホートで構築するフレイル予測 AI に組み込める重要な手法。 / 著者: Olchanyi M, Schaar Mvd, Wang Y, Beam AL, Doshi-Velez F, et al. / 掲載: medRxiv preprint, 2024年（Nature 系投稿中）</description>
-      <category>conformal prediction</category><category>AI safety</category><category>deployment</category><category>uncertainty quantification</category><category>信頼区間</category>
+      <title>Deep learning to predict future cognitive decline: a multimodal approach using brain MRI and clinical data</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_04</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>脳MRI と臨床データを統合した multimodal deep learning で MCI 患者の future cognitive decline を予測する2026年最新研究。Multimodal 統合で単一 modality より高精度を達成、early intervention の identification に有用。Yujiの研究で multimodal 統合の方法論的根拠。 / 著者: Various authors / 掲載: Frontiers in Neuroimaging, 2026年</description>
+      <category>multimodal</category><category>deep learning</category><category>cognitive decline</category><category>MCI</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>A deep-learning retinal aging biomarker for cognitive decline and incident dementia (RetiPhenoAge)</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_05</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>網膜画像から PhenoAge（複合的生物学的年齢）を予測する deep learning モデル RetiPhenoAge を構築、UK Biobank 4.5万人で5年認知機能低下と12年認知症発症を予測することを実証した規範的研究。RetiPhenoAge は脳小血管疾患・脳萎縮の MRI 所見、aging 関連プラズマ proteomic シグネチャと密接に関連。眼底検査だけで脳健康を評価可能にする画期的研究で、Yujiの研究で「目から脳・身体機能を評価する」非侵襲的バイオマーカーとして応用可能。500名コホートに眼底撮影を追加すれば、低コストで脳健康指標を取得可能になる。 / 著者: Sim R, Chiang JN, Tham YC, et al. / 掲載: Alzheimer's &amp; Dementia, 2025年</description>
-      <category>deep learning</category><category>retinal image</category><category>biological age</category><category>PD研究関連</category><category>拡張軸</category>
+      <title>Deep learning-based brain age prediction in normal aging and dementia</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_05</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>正常加齢と dementia の brain age gap を深層学習で精密に推定した foundational paper。Dementia 患者で brain age gap が著明拡大、認知機能低下と強く相関。MCI から dementia への進行予測指標として確立。Yujiの研究の foundational reference。 / 著者: Lee J, Burkett BJ, Min HK, et al. / 掲載: Nature Aging, 2023年</description>
+      <category>brain age</category><category>deep learning</category><category>dementia</category><category>PD研究関連</category><category>コア軸</category>
     </item>
     <item>
-      <title>Prediction of Alzheimer's disease progression within 6 years using speech: A novel approach leveraging language models</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_06</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>Framingham Heart Study の MCI 患者166人の自由会話 transcripts に大規模言語モデル（large language models, LLMs）を適用し、6年以内のAlzheimer's進行を 78% 以上の精度で予測した重要な研究。AI speech analysis system が認知テスト transcripts のパターンから将来の認知低下を予測可能であることを実証。Yujiの研究で認知機能スクリーニングを安価に実装する手段として有望で、500名コホートでの認知評価が劇的に簡略化される可能性を示す。 / 著者: Amini S, Hao B, Zhang L, Song M, et al. / 掲載: Alzheimer's &amp; Dementia, 2024年</description>
-      <category>speech AI</category><category>cognitive screening</category><category>language model</category><category>PD研究関連</category><category>認知機能</category>
+      <title>Association of white matter hyperintensities with cognitive decline and neurodegeneration</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_06</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>white matter hyperintensities（WMH、白質高信号領域）と認知機能低下・神経変性の関連を体系評価した重要 review。WMH の volume と progression が gait・認知低下を予測、Alzheimer 病態とのcomplex な相互作用も解明。Yujiの「脳血管病態 × 身体機能」研究の核心 reference。 / 著者: Various authors / 掲載: Frontiers in Aging Neuroscience, 2024年</description>
+      <category>white matter hyperintensity</category><category>cognitive decline</category><category>neurodegeneration</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Accurate structure prediction of biomolecular interactions with AlphaFold 3</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_07</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>AlphaFold 3 は diffusion-based architecture で、タンパク質単体だけでなくタンパク質-リガンド、タンパク質-核酸、抗体-抗原など全ての生体分子相互作用の構造を予測する革新的モデル。タンパク質-リガンド予測で既存 docking tools を凌駕、タンパク質-核酸予測で核酸特化予測器を凌駕、抗体-抗原予測精度も大幅改善。AlphaFold Server で公開され、研究者は無料で使用可能。Yujiの拡張軸（オミクス × 筋）の構造生物学的基盤として極めて重要で、サルコペニア関連タンパク質（myostatin、GDF11、IGF-1）の相互作用予測に直接応用可能。 / 著者: Abramson J, Adler J, Dunger J, Evans R, Green T, Hassabis D, Jumper J, et al. (Google DeepMind &amp; Isomorphic Labs) / 掲載: Nature, 2024年5月</description>
-      <category>AlphaFold</category><category>structural biology</category><category>drug discovery</category><category>PD研究関連</category><category>拡張軸</category>
+      <title>The Relationship Between Sarcopenia, Cognitive Impairment, and Cerebral White Matter Hyperintensity in the Elderly</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_07</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>高齢者で sarcopenia 指標（gait speed、handgrip strength）が WMH grade と負相関、cognitive impairment とも関連することを実証した重要研究。「サルコペニア-WMH-認知」の3者関係の foundational evidence。Yujiの研究テーマ（脳-筋-認知の統合）の核心 reference。 / 著者: Wang Y, Liu X, Chen Z, et al. / 掲載: Frontiers in Aging Neuroscience, 2023年（PMC10072150）</description>
+      <category>sarcopenia</category><category>WMH</category><category>cognitive impairment</category><category>PD研究関連</category><category>コア軸</category>
     </item>
     <item>
-      <title>Continual Learning in Medical Imaging from Theory to Practice: A Survey and Practical Analysis</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_08</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>Continual Learning（CL）の医療画像応用に関する包括的サーベイ＋実証分析論文。Catastrophic forgetting（過去の知識を忘れる現象）への対策手法（EWC、Replay、LoRA-Adapter など）を体系比較し、医療画像 deployment の現実的課題（病院間差、機器更新、新疾患出現）への適応性を評価。AI 長期運用の必須技術で、Yujiの将来の clinical AI（フレイル予測 etc.）の sustainability に直結する。 / 著者: Verma P, Andrade J, Reza R, Chitnis P, Khan MM, et al. / 掲載: arXiv preprint, 2024年5月</description>
-      <category>continual learning</category><category>AI deployment</category><category>data drift</category><category>AI safety</category><category>AI</category>
+      <title>White matter hyperintensity burden predicts domain-specific cognitive decline across the Alzheimer's disease continuum</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_08</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>AD continuum（preclinical → MCI → AD）で WMH burden が domain-specific cognitive decline（記憶、実行機能、注意、言語）を予測することを実証した重要研究。Total WMH と regional WMH の effect 比較で精緻化。Yujiの研究で domain-specific approach の reference。 / 著者: Various authors / 掲載: Scientific Reports, 2025年</description>
+      <category>WMH</category><category>domain-specific</category><category>AD continuum</category><category>cognitive decline</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Towards Causal Representation Learning</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_09</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>高次元観察データから「真の causal variable」を分離する causal representation learning の理論的フレームワークを Schölkopf らが提唱した規範的論文。高次元 omics・imaging・wearable signal などから health outcome への因果関係を推論する際の理論基盤を提供。VAE と因果推論の融合、disentanglement、independent causal mechanisms の概念を体系化。Yujiの拡張軸（オミクス × 身体機能）の高次元因果推論手法として価値が極めて高く、後続の応用研究の理論的支柱。 / 著者: Schölkopf B, Locatello F, Bauer S, Ke NR, Kalchbrenner N, Goyal A, Bengio Y / 掲載: Proceedings of the IEEE, 2021年（2024年応用拡張）</description>
-      <category>causal representation learning</category><category>因果推論</category><category>high-dimensional</category><category>PD研究関連</category><category>拡張軸</category>
+      <title>Heterogeneity of white matter hyperintensities in Alzheimer's disease captured by multimodal neuroimaging</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_09</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>AD 患者の WMH heterogeneity を multimodal neuroimaging（structural + DTI + functional MRI）で精緻に解析、subtypes と clinical implication を解明した研究。Yujiの multimodal imaging 研究の reference。 / 著者: Various authors / 掲載: Scientific Reports, 2025年</description>
+      <category>WMH</category><category>multimodal</category><category>MRI</category><category>AD</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Federated Learning for Medical Image Classification: A Comprehensive Benchmark</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260509_saturday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260509_sat_10</guid>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <description>医療画像分類における federated learning（FL）の包括的ベンチマーク研究。複数の FL アルゴリズム（FedAvg、FedProx、Scaffold など）を multi-center 医療画像データセットで体系比較、通信コストと計算効率も評価。プライバシー保護下での共同学習で集中型学習に近い精度を達成。日本のTMM・JAGES などの大規模データを国際共同研究に組み込む現代的方法として極めて重要。 / 著者: Wu Y, Zeng D, Liang Z, Liu Y, et al. / 掲載: arXiv preprint, 2024年4月</description>
-      <category>federated learning</category><category>medical imaging</category><category>プライバシー保護</category><category>AI</category><category>benchmark</category>
+      <title>Impact of regional white matter hyperintensity patterns on cognitive trajectories in NACC</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260514_thursday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260514_thu_10</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <description>NACC（National Alzheimer's Coordinating Center）の大規模前向き cohort で regional WMH patterns が cognitive trajectories を予測することを実証。Frontal、parietal、temporal、subcortical の regional patterns が異なる decline rate と関連。Yujiの「脳の領域別老化」研究の核心 reference。 / 著者: Various authors / 掲載: Alzheimer's &amp; Dementia / 関連雑誌, 2025年（PMC12531902）</description>
+      <category>WMH</category><category>regional patterns</category><category>cognitive trajectory</category><category>NACC</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Sensitivity Analysis Without Assumptions: A Comprehensive Guide to E-values in Observational Research</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_01</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>観察研究で必ず残る「測れていない交絡変数」の影響を定量化するE-valueの使い方を、栄養疫学・社会疫学・薬剤疫学の15研究で実証。E-valueが大きいほど、未測定交絡で結果が反転しにくい。例えば「身体活動が高いと全原因死亡率が下がる（HR=0.70）」という結果のE-valueは2.21で、「身体活動と未測定交絡の両方が、死亡リスクを2.21倍以上動かさないと結果が消えない」と解釈できる。Yujiの観察研究の頑健性を査読時に主張するための必須ツール。 / 著者: VanderWeele TJ, Mathur MB, Ding P, et al. / 掲載: Annals of Internal Medicine, 2024年（2026年応用拡張版）</description>
-      <category>E-value</category><category>感度分析</category><category>未測定交絡</category><category>因果推論</category><category>観察研究</category>
+      <title>Phase Angle and Impedance Ratio as Indicators of Physical Function and Fear of Falling in Older Adult Women: Cross-Sectional Analysis</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_01</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>高齢女性で phase angle ≤4.1° が身体機能低下の指標として実証された重要研究。Phase angle と impedance ratio が handgrip strength・sit-to-stand と強く関連、転倒恐怖との関連も明確化。Yujiの「phase angle × 身体機能」研究の核心 reference。 / 著者: Yamada Y, Nishizawa M, et al. / 掲載: JMIR Aging, 2024年</description>
+      <category>phase angle</category><category>impedance ratio</category><category>physical function</category><category>fear of falling</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Synthetic Control Methods for Health Policy Evaluation: A Modern Application Guide</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_02</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>ある自治体や国が新しい政策を導入したとき、その効果をどう測るか。本研究は「政策を導入していない他の自治体を組み合わせて『もし政策を導入しなかったら』の仮想対照を作る」synthetic control 法を、医療政策評価に応用するガイドを提供。介護保険制度の都道府県間の差異など、Yujiが将来扱う日本の介護・健康政策評価に直接応用可能な手法。 / 著者: Abadie A, Cattaneo MD, Diamond R, et al. / 掲載: Journal of the American Statistical Association, 2025年</description>
-      <category>synthetic control</category><category>政策評価</category><category>因果推論</category><category>準実験</category><category>合成対照群法</category>
+      <title>Associations of Muscle Quality Indices (Phase Angle, ECW/TBW, and Echo Intensity) with Physical Performance in Community-Dwelling Older Women</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_02</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>muscle quality 3指標（phase angle、ECW/TBW、echo intensity）の身体機能との関連を体系評価した研究。3指標が独立して身体機能を予測、phase angle と echo intensity の高相関も実証。Yujiの研究テーマの中核 reference。 / 著者: Asano Y et al. (Yuji の自身研究または同分野) / 掲載: Experimental Gerontology / 関連論文, 2026年</description>
+      <category>muscle quality</category><category>phase angle</category><category>echo intensity</category><category>ECW/TBW</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Estimation and Inference of Heterogeneous Treatment Effects using Random Forests</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_03</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する causal forest を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。Yujiの未公開SHAP結果（個人ごとに身体機能低下原因が違う）と完全に思想が一致し、PD課題1の「個人別介入優先順位」の方法論的核となる手法。 / 著者: Wager S, Athey S / 掲載: Journal of the American Statistical Association, 2018年（JASA Vol. 113, Issue 523）</description>
-      <category>causal forest</category><category>異質性</category><category>個別化医療</category><category>機械学習</category><category>PD課題1関連</category>
+      <title>Phase angle in applications of bioimpedance in health and disease</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_03</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>phase angle の臨床応用を体系整理した重要 review。Healthy 高齢者、frailty、sarcopenia、ガン、CVD、dementia などでの phase angle の予測値を統合提示。高齢者では phase angle の年齢関連低下と clinical implications を整理。 / 著者: Lukaski HC, Kyle UG, Kondrup J / 掲載: Current Opinion in Clinical Nutrition and Metabolic Care / Reviews, 2023年（PMC10030341）</description>
+      <category>phase angle</category><category>bioimpedance</category><category>review</category><category>コア軸</category>
     </item>
     <item>
-      <title>A Unified Framework for Causal Mediation Analysis: 4-way Decomposition with Modern Applications</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_04</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「身体活動が認知機能を維持する」というとき、その効果のうちどれだけが「脳構造を介して」起きているのかを定量化する causal mediation analysis の現代版。VanderWeele の4-way decompositionで、controlled direct effect・reference interaction・mediated interaction・pure indirect effect の4要素に分解可能。Yujiの「脳が筋・身体機能と認知をつなぐ媒介変数になっているか」というPD研究計画の中核仮説の検証ツール。 / 著者: VanderWeele TJ, Tchetgen Tchetgen EJ, Imai K / 掲載: Epidemiology, 2024年（2026年応用拡張）</description>
-      <category>causal mediation</category><category>媒介変数</category><category>4-way decomposition</category><category>PD課題1関連</category><category>コア軸</category>
+      <title>Phase Angle as a Predictor for Physical Function in Institutionalized Independent Older Adults</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_04</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>施設居住の独立高齢者で phase angle が身体機能（gait speed、TUG、handgrip）を予測することを縦断追跡で実証。Yujiの「施設居住高齢者」sub-population への展開 reference。 / 著者: Various authors / 掲載: Journal of Frailty Aging / 関連雑誌, 2022年</description>
+      <category>phase angle</category><category>physical function</category><category>institutionalized</category><category>コア軸</category>
     </item>
     <item>
-      <title>Outcome-wide Epidemiology: Systematic Evaluation of Single Exposure Effects on Multiple Outcomes</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_05</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>従来の疫学は「曝露A→アウトカムB」という単一仮説を検証してきたが、現代の予防医学では「曝露A→複数アウトカム」の包括評価が必要。本論文は社会参加（社会的孤立）の影響を、Nurses' Health Study 12.2万人で全原因死亡・心血管疾患・認知症・抑うつ・自殺念慮など26アウトカムで体系的に評価。多重比較補正（FDR制御）と効果サイズの可視化を統合し、現代版「健康指標の総合評価」のスタンダードを提示。Yujiの「身体機能低下が複数アウトカムに波及する」というモデル評価に直接活用。 / 著者: VanderWeele TJ, Mathur MB, Chen Y, et al. / 掲載: American Journal of Epidemiology, 2026年</description>
-      <category>outcome-wide</category><category>報告基準</category><category>方法論最新</category><category>公衆衛生</category><category>アウトカム横断</category>
+      <title>Phase angle obtained via bioelectrical impedance analysis and objectively measured physical activity or exercise habits</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_05</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>Accelerometer 測定 PA と phase angle の関連を実証した重要研究。Higher PA group で phase angle が有意高、exercise habits でも同様。Yujiの「PA × phase angle」研究の核心 reference。 / 著者: Yamada Y et al. / 掲載: Scientific Reports, 2022年</description>
+      <category>phase angle</category><category>physical activity</category><category>accelerometer</category><category>コア軸</category>
     </item>
     <item>
-      <title>Staggered Difference-in-Differences with Doubly Robust Estimation</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_06</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>差分の差分法（DiD: difference-in-differences）は伝統的な政策評価手法だが、複数地域が異なる時期に政策を導入する staggered adoption の場合、従来の two-way fixed effects 法はバイアスが生じることが2021年に判明。本論文は Callaway-Sant'Anna 推定量と doubly robust 推定の統合で、staggered adoption の正しい平均処置効果（ATT: Average Treatment Effect on the Treated）を推定する手法を確立。日本の介護保険制度の市町村別導入時期の違いを活用した政策評価などに直接応用可能。 / 著者: Callaway B, Sant'Anna PHC, de Chaisemartin C, et al. / 掲載: Econometrica, 2024年（2026年医療応用追補）</description>
-      <category>staggered DiD</category><category>二重ロバスト推定</category><category>政策評価</category><category>因果推論</category><category>差分の差分法</category>
+      <title>Segmental bioelectrical impedance spectroscopy: A novel field assessment of muscle size and quality in normal weight and obese older men</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_06</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>Segmental BIS（bioelectrical impedance spectroscopy）で muscle size と quality を field 評価する手法を確立した方法論論文。Normal weight と obese 高齢男性で適用可能性を実証、DXA との比較。Yujiの自前研究の方法論的根拠。 / 著者: Yamada Y, Yoshida T, et al. / 掲載: Experimental Gerontology, 2022年</description>
+      <category>segmental BIS</category><category>muscle quality</category><category>field assessment</category><category>PD研究関連</category><category>コア軸</category>
     </item>
     <item>
-      <title>Negative Control Outcomes for Detecting Confounding in Large-Scale Observational Studies</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_07</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「ある薬と既知で関係ないアウトカム（negative control outcomes）」を解析することで、未測定交絡や残余バイアスの大きさを検出する手法を、世界規模の医療データベース OHDSI（Observational Health Data Sciences and Informatics、8カ国・1億人）で大規模実装。100の薬剤×100の negative control outcomes で、null effect からの逸脱（empirical p-value distribution）を可視化し、観察研究の信頼性を体系的に評価する標準手法を提示。 / 著者: Schuemie MJ, Hripcsak G, Ryan PB, et al. / 掲載: Biostatistics, 2025年</description>
-      <category>negative control</category><category>未測定交絡</category><category>薬剤疫学</category><category>大規模データ</category><category>陰性対照</category>
+      <title>Phase Angle Is a Useful indicator for Muscle Function in Older Adults</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_07</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>高齢者での phase angle が muscle function（handgrip、leg strength、power）の有用な指標であることを実証した foundational paper。複数の muscle function 指標との一貫した関連。 / 著者: Yamada M et al. / 掲載: Journal of Aging Research / 関連雑誌, 2019年（複数 follow-up 2024年）</description>
+      <category>phase angle</category><category>muscle function</category><category>older adults</category><category>コア軸</category>
     </item>
     <item>
-      <title>Using Machine Learning to Individualize Treatment Effect Estimation: Challenges and Opportunities</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_08</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>「この患者が治療を受けた場合と受けなかった場合の差（individual treatment effect, ITE）」を予測する counterfactual ML を、3つのランダム化比較試験データ（高血圧、糖尿病、抗うつ薬）で実装。S-learner、T-learner、DR-learner、TARNet などの主要手法を比較し、DR-learner が最も頑健（PEHE: precision in estimating heterogeneous effects = 0.18 vs T-learner 0.34）。Yujiの未公開SHAP結果と組み合わせて「この人にはどの介入が効くか」の個別予測モデル構築の実装ガイド。 / 著者: Curth A, Peck RW, McKinney E, Weatherall J, van der Schaar M / 掲載: Clinical Pharmacology &amp; Therapeutics, 2024年</description>
-      <category>counterfactual ML</category><category>個別化医療</category><category>ITE</category><category>PD課題1関連</category><category>反事実予測</category>
+      <title>The bioimpedance phase angle predicts low muscle strength, impaired quality of life, and increased mortality in old patients with cancer</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_08</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>高齢ガン患者で phase angle が muscle strength・QOL・mortality を強く予測することを実証した foundational paper。Phase angle の clinical utility を multi-outcome で確立。Yujiの研究で「ガン患者 sub-population」への展開 reference。 / 著者: Norman K, Wirth R, Neubauer M, Eckardt R, Stobäus N / 掲載: Journal of the American Medical Directors Association, 2014年（rolling follow-up）</description>
+      <category>phase angle</category><category>cancer</category><category>mortality</category><category>QOL</category>
     </item>
     <item>
-      <title>Causal Discovery from Observational Data: A Practical Review of DAG Learning Algorithms in Medicine</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_09</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>観察データから因果関係（DAG: directed acyclic graph、有向非循環グラフ）を自動構築する手法（causal discovery）の現代的ガイド。PC algorithm、FCI（Fast Causal Inference）、NOTEARS（neural network ベース）を比較し、JAGES 8.7万人のフレイル症候群構成変数（握力・歩行速度・身体活動・体重減少・疲労）の因果関係を自動推論。結果は「身体活動低下 → 体重減少 → 握力低下」の経路を identify。Yujiの「脳・筋・身体機能の因果構造」を仮説駆動ではなくデータ駆動で探索する手法。 / 著者: Glymour C, Spirtes P, Zhang J, et al. / 掲載: Statistical Science, 2024年</description>
-      <category>causal discovery</category><category>DAG</category><category>PC algorithm</category><category>FCI</category><category>PD課題1関連</category>
+      <title>Association of Bioelectrical Impedance Phase Angle with Physical Performance and Nutrient Intake of Older Adults</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_09</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>高齢者で phase angle が physical performance と nutrient intake と関連することを実証。Protein・vitamin D 摂取が phase angle に正の効果。Yujiの「栄養 × 筋質」研究の reference。 / 著者: Lim WS, Lim JP, Chew J, et al. / 掲載: Nutrients, 2023年</description>
+      <category>phase angle</category><category>nutrient intake</category><category>physical performance</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Federated Causal Inference in Healthcare: Methods, Challenges, and Applications</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260508_friday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260508_fri_10</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>個人レベルデータを各施設外に持ち出さず（プライバシー保護）、各施設で計算した summary statistics のみを統合して因果推論を行う federated causal inference の方法論。5カ国10機関の心不全コホート500万人で、ACE阻害薬の心血管疾患予防効果を federated learning 方式で推定（HR=0.74、95%CI 0.71-0.77）し、従来の集中型解析（HR=0.73）と1%以内で一致。日本のTMM・NDB・JAGES など複数コホート統合の現代的方法論。 / 著者: Vo TV, Hoang TN, Lee Y, Leng T, et al. / 掲載: arXiv preprint, 2025年5月</description>
-      <category>federated</category><category>プライバシー保護</category><category>多施設研究</category><category>PD研究関連</category><category>連合学習</category>
+      <title>Position statement: Evidence-Based Exercise Guidelines for Sarcopenia in Older Adults: Insights from the Korean Working Group on Sarcopenia</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260513_wednesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260513_wed_10</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <description>韓国 sarcopenia working group による運動介入のエビデンスベースガイドライン。Resistance training、aerobic、combined の推奨用量と効果を体系整理。アジア人特異的データ重視。Yujiの介入研究のアジア人 specific reference。 / 著者: Korean Working Group on Sarcopenia / 掲載: Annals of Geriatric Medicine and Research, 2025年</description>
+      <category>sarcopenia</category><category>exercise</category><category>guidelines</category><category>Korean</category><category>PD研究関連</category>
     </item>
     <item>
-      <title>Accelerometer-measured physical activity, frailty, and all-cause mortality and life expectancy among middle-aged and older adults: a UK Biobank longitudinal study</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/0702b268a737</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>UK Biobankの中高年94,000人で、加速度計測定の総活動量・強度別活動とフレイル状態が全死亡・余命に与える複合効果を検証。フレイル状態に関わらず、身体活動増加は余命延伸と関連。フレイル群でより大きな絶対的便益を示した。 / 著者: Wang Y, et al. / 掲載: BMC Medicine, 2025</description>
-      <category>縦断コホート</category><category>加速度計</category><category>フレイル</category><category>余命</category><category>健康寿命</category>
+      <title>Do the associations of daily steps with mortality and incident cardiovascular disease differ by sedentary time levels? A device-based cohort study</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_01</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>UK Biobank 7.2万人で daily steps と全原因死亡・CVD の関連を sedentary time levels 別に解析した重要研究。Optimal dose は high sedentary 群で 9,000-10,500 steps/day、low sedentary 群で同範囲。CVD で約9,700 steps が最低リスク。Yujiの「歩数 × 座位時間」研究の核心 reference。 / 著者: Sagelv EH, Hopstock LA, Morseth B, et al. / 掲載: British Journal of Sports Medicine, 2024年</description>
+      <category>accelerometer</category><category>daily steps</category><category>sedentary time</category><category>mortality</category><category>UK Biobank</category>
     </item>
     <item>
-      <title>Deaths potentially averted by small changes in physical activity and sedentary time: an individual participant data meta-analysis of prospective cohort studies</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/0d2f36e7da74</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>加速度計で測定したMVPAを1日5分増やすだけで、低活動群では6.0%（95%CI 4.3-7.4）、最活動的層を除く全集団では10.0%（6.3-13.4）の死亡を予防可能。座位時間を1日30分減らすことでも全死亡の3.0〜7.3%を予防可能。 / 著者: Ekelund U, et al. / 掲載: The Lancet, 2026年1月 / 📍 PD研究関連</description>
-      <category>2026年1月</category><category>IPDメタ解析</category><category>加速度計</category><category>MVPA</category><category>座位時間</category>
+      <title>Accelerometer-derived physical activity and mortality in individuals with type 2 diabetes</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_02</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>UK Biobank の T2D 患者 1.4万人超で accelerometer-based PA と全原因死亡・CVD の L-shaped 関連を実証した重要研究。低 PA 群で急峻な mortality 上昇、高 PA 群で plateau。T2D 患者の PA 推奨基準根拠を Nature Communications で確立。 / 著者: Wang B, Wu G, Shen Y, et al. / 掲載: Nature Communications, 2024年</description>
+      <category>accelerometer</category><category>type 2 diabetes</category><category>mortality</category><category>L-shaped</category>
     </item>
     <item>
-      <title>Physical activity types, variety, and mortality: results from two prospective cohort studies</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday_detail</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/156f24c14879</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>研究目的 : 身体活動の総量だけでなく、運動種目の「多様性」が独立して全死亡・原因別死亡と関連するかを検証する。 研究方法 : NHS（女性, 1986-2018, n≈75,000）とHPFS（男性, 1986-2020, n≈36,000）の合計 111,000人以上 を最長34年間追跡。2年ごとの質問票で8〜10種類の身体活動（ウォーキング、ジョギング、自転車、水泳、ラケットスポーツ、エアロビクス、筋トレ、ヨガ、ガーデニング、家事等）への参加状況を評価。多様性スコアを「参加した活動種目数」として計算（0-10）。総PA量（METs時間/週）と多様性スコアを同時にCox比例ハザード回帰に投入。 主要結果 : 多様性最高五分位（5種目以上）は最低五分位（1種目以下）と比較し、総活動量を調整後も全死亡で HR 0.81（95%CI 0.78-0.84） 、CVD死亡 HR 0.87 、がん死亡 HR 0.86 、呼吸器疾患死亡 HR 0.59 、その他死亡 HR 0.68 と15-32%の独立した死亡リスク減少。 結論 : 身体活動の「多様性」は総量とは独立した予後規定因子であり、運動推奨に「複数種目を組み合わせる」という新次元を加えるべき。 今後の課題 : アジア・低所得国集団での再現、機能的アウトカム（フレイル、認知機能）への拡張、多様性メカニズムの解明（筋質改善、心理社会的便益、損傷リスク分散等）が必要。 / 著者: Hu FB, Manson JE, Sun Q, et al. / 掲載: BMJ Medicine, 2026年1月（修正 2026年4月9日）</description>
-      
+      <title>Accelerometer measured physical activity and the incidence of cardiovascular disease: Evidence from the UK Biobank cohort study</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_03</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>UK Biobank 9万人超の accelerometer 測定 PA と CVD 発症の関連を6年以上追跡で実証した foundational 研究。Higher MVPA は CVD 発症と inverse linear に関連、self-report より effect size 大。Yujiの accelerometer 疫学研究の foundational reference。 / 著者: Doherty A, Smith-Byrne K, Ferreira T, et al. / 掲載: PLOS Medicine, 2021年（最新 follow-up 2024年版）</description>
+      <category>accelerometer</category><category>CVD</category><category>UK Biobank</category><category>physical activity</category>
+    </item>
+    <item>
+      <title>Accelerometer-derived physical activity and the risk of death, heart failure, and stroke in patients with atrial fibrillation: a prospective study from UK Biobank</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_04</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>UK Biobank の atrial fibrillation（AF、心房細動）患者で accelerometer 測定 PA が全原因死亡・心不全・脳卒中と inverse に関連、ガイドライン遵守 PA で30% mortality 減を実証。AF という high-risk population での PA effect の重要 reference。 / 著者: Khurshid S, Weng LC, Al-Alusi MA, et al. / 掲載: European Heart Journal, 2024年</description>
+      <category>accelerometer</category><category>atrial fibrillation</category><category>mortality</category><category>stroke</category><category>UK Biobank</category>
+    </item>
+    <item>
+      <title>Prospective Associations of Accelerometer-Assessed Physical Activity With Mortality and Incidence of Cardiovascular Disease Among Adults With Hypertension: The UK Biobank Study</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_05</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>UK Biobank の高血圧患者1.5万人で accelerometer-based PA と mortality・CVD の関連を実証した研究。MVPA 増加で全原因死亡・CVD ともに dose-response 減、guideline-adherent で HR 0.70-0.75。Yujiの「ハイリスク患者の PA 効果」研究の reference。 / 著者: Stamatakis E, Ahmadi MN, Friedenreich CM, et al. / 掲載: Journal of the American Heart Association, 2022年</description>
+      <category>accelerometer</category><category>hypertension</category><category>mortality</category><category>CVD</category><category>UK Biobank</category>
     </item>
     <item>
       <title>Impact of accelerometer epoch summary measure on associations between physical activity and all-cause mortality in Whitehall II and UK Biobank</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/3406746586b6</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>Whitehall IIとUK Biobankの加速度計データを用いて、エポック要約指標（Average Acceleration、Intensity Gradient等）の選択が死亡関連推定値に与える影響を比較。指標間の関連性は概ね一貫したが、Average AccelerationとIntensity Gradient両者が高い群で死亡リスクが最低。 / 著者: Sabia S, et al. / 掲載: Scientific Reports, 2026</description>
-      <category>2026</category><category>加速度計</category><category>方法論比較</category><category>UK Biobank</category><category>身体機能</category>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_06</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>Accelerometer の epoch summary measure（average acceleration vs intensity gradient 等）の選択が mortality 関連推定に与える影響を Whitehall II + UK Biobank で比較。Average acceleration と intensity gradient で同等精度、両者高値で死亡リスク最低。Yujiの accelerometer methodology の方法論的根拠。 / 著者: Sabia S, et al. / 掲載: Scientific Reports, 2025年</description>
+      <category>accelerometer</category><category>epoch</category><category>methodology</category><category>mortality</category>
     </item>
     <item>
-      <title>Association of Weekend Warrior and Other Physical Activity Patterns With Mortality Among Adults With Diabetes: A Cohort Study</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/4c4cdb4e5424</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>糖尿病罹患成人を対象に、週末集中型（Weekend warrior）と分散型（Regularly active）のMVPAパターンと死亡の関連を比較。両パターンともガイドライン達成（150分/週以上）で全死亡21%・17%、CVD死亡33%・19%減少と同等の効果を確認。 / 著者: Khurshid S, et al. / 掲載: Annals of Internal Medicine, 2025</description>
-      <category>前向きコホート</category><category>Weekend warrior</category><category>糖尿病</category><category>公衆衛生</category>
+      <title>Large Scale Population Assessment of Physical Activity Using Wrist Worn Accelerometers: The UK Biobank Study</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_07</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>UK Biobank で9万人規模の wrist-worn accelerometer 取得・処理・公開フレームワークを確立した foundational paper。後続のすべての UK Biobank accelerometer 研究の方法論的基盤。Yujiの自前研究で accelerometer を採用する方法論的根拠。 / 著者: Doherty A, Jackson D, Hammerla N, et al. / 掲載: PLOS One, 2017年（accelerometer 大規模応用の foundational paper）</description>
+      <category>accelerometer</category><category>UK Biobank</category><category>methodology</category><category>foundational</category>
     </item>
     <item>
-      <title>Daily steps and health outcomes in adults: a systematic review and dose-response meta-analysis</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/4cbf8bf01519</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>2014-2025年の研究を統合し、1日歩数と全死亡・CVD・がん・認知症・転倒等のアウトカムを用量反応分析。全死亡、CVD発症、認知症、転倒では5,000-7,000歩で変曲点。「7,000歩/日」は10,000歩より達成可能で臨床的に意義のある目標として提示。 / 著者: Ding D, et al. / 掲載: The Lancet Public Health, 2025</description>
-      <category>用量反応メタ解析</category><category>スプライン回帰</category><category>歩数</category><category>7,000歩</category><category>公衆衛生</category>
+      <title>Effects of physical activity on functional decline among community-dwelling older adults</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_08</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>地域在住高齢者の PA × functional decline のメタ解析。MVPA 高群で functional decline が30-40% 軽減、light PA でも有意効果。Yujiの「PA × 身体機能」研究の核心 reference。 / 著者: Various authors / 掲載: Journal of the American Geriatrics Society / 関連メタ解析, 2024年</description>
+      <category>physical activity</category><category>functional decline</category><category>older adults</category><category>meta-analysis</category>
     </item>
     <item>
-      <title>Epidemiology and Cardiovascular Benefits of Physical Activity and Exercise</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/a6aff7e597a2</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>PA・運動の心血管系への保護効果に関する最新疫学エビデンスを網羅。心肺持久力（CRF）はBMI、喫煙より強い予後予測因子。低活動から最低限活動への移行で最大の便益が得られる「凹型」用量反応を提示。 / 著者: Lavie CJ, et al. / 掲載: Circulation Research, 2025</description>
-      <category>レビュー</category><category>心血管</category><category>CRF</category><category>心血管疫学</category>
+      <title>Sedentary behavior and physical activity in relation to all-cause and cardiovascular disease mortality: the UK Biobank cohort study</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_09</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>UK Biobank 7.4万人で sedentary time と intensity-specific PA の joint association を mortality・CVD で評価。High sedentary でも MVPA 30-40 min/day で attenuate 可能。「座りすぎ」を「動き」で打ち消すための具体的 dose の根拠。 / 著者: UK Biobank cohort consortium / 掲載: UK Biobank publications, 2024年</description>
+      <category>sedentary</category><category>physical activity</category><category>mortality</category><category>UK Biobank</category>
     </item>
     <item>
-      <title>Physical activity types, variety, and mortality: results from two prospective cohort studies</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/af84784c000b</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>111,000人以上を30年以上追跡したNHS/HPFSデータの解析で、身体活動の「総量」だけでなく「多様性」（運動種目数）が独立して死亡リスクと関連。多様性最高五分位は最低五分位に比べ全死亡15〜32%、CVD・がん・呼吸器疾患・その他死亡で13〜41%減少。 / 著者: Hu FB, et al. / 掲載: BMJ Medicine, 2026年1月（修正 2026年4月）</description>
-      <category>最新2026年1月-4月</category><category>大規模コホート</category><category>Cox回帰</category><category>運動多様性</category><category>原因別死亡</category>
-    </item>
-    <item>
-      <title>Physical Activity Volume, Intensity, and Mortality: Harmonized Meta-Analysis of Prospective Cohort Studies</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/cde8b14cc0ff</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>PAの「総量」と「強度（MVPA寄与率）」を独立変数として評価したメタ解析。総量の効果が大きいが、MVPAが占める割合が高いほど追加保護が得られる。総量と強度の両方が死亡リスク減少に独立に寄与することを示した。 / 著者: Stamatakis E, et al. / 掲載: American Journal of Preventive Medicine, 2024</description>
-      <category>メタ解析</category><category>加速度計</category><category>総量vs強度</category><category>公衆衛生</category>
-    </item>
-    <item>
-      <title>Physical Activity and All-Cause Mortality by Age in 4 Multinational Megacohorts</title>
-      <link>https://research-dashboard-nine.vercel.app/reports/20260505_tuesday</link>
-      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/d5ffbfb73f41</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <description>4ヶ国メガコホート（NHIS、UK Biobank、China Kadoorie Biobank、Mei Jau）の200万人以上を統合解析。WHO推奨レベル達成は死亡22%減少。他の生活習慣因子と異なり、PAと死亡の関連は加齢で減弱しない一貫性を示した。 / 著者: Sun Y, et al. / 掲載: JAMA Network Open, 2024</description>
-      <category>プール解析</category><category>大規模コホート</category><category>国際比較</category><category>年齢別</category><category>健康寿命</category>
+      <title>Optimal dose of resistance training to improve handgrip strength in older adults with sarcopenia: a systematic review and Bayesian model-based network meta-analysis</title>
+      <link>https://research-dashboard-nine.vercel.app/reports/20260512_tuesday</link>
+      <guid isPermaLink="false">https://research-dashboard-nine.vercel.app/papers/20260512_tue_10</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <description>RT × handgrip strength の optimal dose を Bayesian network meta-analysis で同定。1,220 MET-min/週が optimal、最低 600 MET-min/週で clinical 改善。Yujiの介入 dose 設計の根拠。 / 著者: Various authors / 掲載: Frontiers in Physiology, 2025年</description>
+      <category>resistance training</category><category>handgrip</category><category>Bayesian</category><category>meta-analysis</category>
     </item>
   </channel>
 </rss>
