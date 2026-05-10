@@ -356,11 +356,9 @@ def _validate_quality_or_exit():
     if result.returncode != 0:
         print(result.stdout)
         print(result.stderr, file=_sys.stderr)
-        print("
-❌ 質要件未達。SKILL.md rev8 の最低字数・日本語ポリシーに従って修正してください。", file=_sys.stderr)
+        print("\n❌ 質要件未達。SKILL.md rev8 の最低字数・日本語ポリシーに従って修正してください。", file=_sys.stderr)
         _sys.exit(1)
-    print("✅ 質要件 pass
-")
+    print("✅ 質要件 pass\n")
 
 
 def main():
