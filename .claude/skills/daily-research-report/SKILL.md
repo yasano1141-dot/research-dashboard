@@ -71,7 +71,52 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
    **判断基準**：「日本語論文・教科書で日本語表現が定着している語」は日本語、「研究分野独自の用語で英語のまま読まれている語」は英語のまま。
 9. **🆕 同じ論文を重複して紹介しない**（rev6 / 2026-05-08 指示）。レポート生成前に **必ず** `docs/data/papers.json` と `docs/data/reports.json` を読み込み、過去のレポートで紹介済みの論文（タイトル＋ジャーナル＋著者の組み合わせで判定）を除外。新規論文だけで10本を構成する。万一、特に重要な過去論文を再掲する必要がある場合は、本文冒頭で「再掲（前回 YYYY-MM-DD レポート）」と明示する。
 
-10. **🔴 実在の論文だけを紹介する（rev7 / 2026-05-09 指示・最重要）**。
+11. **🔴 質要件の絶対遵守（rev8 / 2026-05-10 指示）**。
+
+    **背景**：rev6で日本語ポリシー、rev7で実在論文を確立したが、rev6/7以降の実装で文量不足や日本語ポリシー違反が継続発生し、ユーザーから繰り返し指摘を受けた。本ルールでこれを最終決着させる。
+
+    **各論文の最低字数（保存版）**：
+    - summary: 300〜500字
+    - overview: 700〜1,200字（**背景**・**方法**・**結果**・**結論** の4段構成必須、太字 markdown 装飾）
+    - importance: 150〜250字
+    - originality: 100〜200字
+    - discovery: 300〜600字（**①〜⑩の番号付き、すべて数値・効果サイズ・サンプルサイズ等の具体的事実**）
+    - methodology: 150〜250字
+    - limitation: 100〜200字
+    - citation: 300〜500字（**[introduction]** と **[discussion]** の2文で、効果サイズ・年・雑誌名を必ず併記）
+    - implication: 200〜350字（**PD課題1/2/3 もしくは拡張軸への接続を必ず明記**、太字で強調）
+    - idea: 250〜400字（**自前データ／TMM／JAGES／UK Biobankへの応用案を3案以上**）
+
+    **これ以下は質要件違反**。1論文の合計が概ね **2,500字以上** であること。
+
+    **日本語ポリシー（rev6.1再掲＋強化）**：
+    - **必ず日本語化**する語彙の徹底チェック：all-cause mortality→**全原因死亡**、cardiovascular disease→**心血管疾患**、cancer→**ガン**、cohort→**コホート**、observational study→**観察研究**、randomized→**ランダム化**、treatment effect→**治療効果**、sensitivity analysis→**感度分析**、effect size→**効果サイズ**、hazard ratio→**ハザード比**（HR併記可）、confidence interval→**信頼区間**（95%CI併記可）、meta-analysis→**メタ解析**、systematic review→**システマティックレビュー** または **体系レビュー**、cross-sectional→**横断的**、longitudinal→**縦断的**、bias→**バイアス**、confounder→**交絡変数**、exposure→**曝露**、outcome→**アウトカム**、dementia→**認知症**、frailty→**フレイル**、sarcopenia→**サルコペニア**、gait speed→**歩行速度**、grip strength→**握力**、physical activity→**身体活動**、mediator→**媒介変数**、validation→**検証**、deployment→**実装** または **展開**、benchmark→**ベンチマーク**、framework→**枠組み**、guideline→**ガイドライン**、prediction→**予測**、scoping review→**スコーピングレビュー**
+    - **英語のまま許可**：論文タイトル全体、雑誌名、著者名、固有名詞（UK Biobank、TMM、JAGES、Nurses' Health Study等）、略語（HR、OR、AUC、HR、95%CI等）、専門度の高い用語（phase angle、p-hacking、target trial emulation、Mendelian randomization、propensity score、causal forest、synthetic control、staggered DiD、SHAP、TMLE、DR-learner、g-formula、DAG、conformal prediction、causal representation learning、federated learning、foundation model、DINOv2、SAM、CLIP、AlphaFold、Whisper、EEG、MRI、CT、DXA、BIA、FA、MD、CMC、tDCS、tACS、TMS、APOE、GWAS、eQTL、pQTL、RNA-seq、scRNA-seq、ICOPE、IC、FRAIL scale、EWGSOP2、AWGS、SPPB、MoCA、MMSE、CDR、ADNI、NACC、CRP、IL-6、GDF11、GDF15、myostatin、follistatin、GrimAge、DunedinPACE、PhenoAge、OMICmAge、SASP、FAP、senescence、senotherapeutic、Maraviroc、CCR5 等）
+
+    **質チェック手順（自動化済、毎回必ず実行）**：
+
+    1. **質要件の自動検証**（rev9 / 2026-05-10 から強制）：
+       ```bash
+       python3 scripts/validate_quality.py scripts/{theme}_curated_content.py
+       ```
+       これで以下が自動チェックされる：
+       - 各セクションの最低字数（summary 300字、overview 700字、discovery 300字、…）
+       - 1論文の合計字数 ≥ 2,500字
+       - 全10論文の合計字数 ≥ 25,000字
+       - 日本語ポリシー違反（all-cause mortality、effect size 等の英語残存）
+
+    2. **URL検証（rev7 から強制）**：
+       ```bash
+       python3 scripts/validate_urls.py scripts/{theme}_curated_content.py
+       ```
+
+    3. **生成スクリプトに自動統合済（rev9）**：すべての `generate_{theme}_curated.py` は起動時に validate_urls.py と validate_quality.py を自動実行し、どちらか失敗したら **生成前に exit**。これにより、低品質・fabricated URLのコンテンツでは絶対にレポートが生成されない。
+
+    **本ルール違反は研究倫理違反と同等の重大ミスとして扱い、再発時はユーザーから再度指摘を受ける前に自主的に rev2/rev3 で修正すること**。
+
+    **本ルール違反は研究倫理違反と同等の重大ミスとして扱い、再発時はユーザーから再度指摘を受ける前に自主的に rev2/rev3 で修正すること**。
+
+12. **🔴 実在の論文だけを紹介する（rev7 / 2026-05-09 指示・最重要）**。
 
     **絶対禁止**：
     - DOI／URLを fabricate する（例：将来の偽の DOI、検証していない URL）

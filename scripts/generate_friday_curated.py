@@ -342,6 +342,27 @@ def _validate_urls_or_exit():
     print("✅ All URLs verified\n")
 
 
+
+
+def _validate_quality_or_exit():
+    """SKILL.md rev9: 質要件の自動検証。最低字数・日本語ポリシー違反があれば exit。"""
+    import subprocess as _sp, sys as _sys
+    content_file = REPO / "scripts" / f"{THEME_KEY}_curated_content.py"
+    print(f"📋 質要件検証 ({content_file.name})...")
+    result = _sp.run(
+        ["python3", str(REPO / "scripts" / "validate_quality.py"), str(content_file)],
+        capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        print(result.stdout)
+        print(result.stderr, file=_sys.stderr)
+        print("
+❌ 質要件未達。SKILL.md rev8 の最低字数・日本語ポリシーに従って修正してください。", file=_sys.stderr)
+        _sys.exit(1)
+    print("✅ 質要件 pass
+")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.now().strftime("%Y%m%d"))
@@ -351,6 +372,7 @@ def main():
 
     if not args.skip_url_check:
         _validate_urls_or_exit()
+        _validate_quality_or_exit()
 
     papers = json.loads(PAPERS_PATH.read_text(encoding="utf-8"))
     reports = json.loads(REPORTS_JSON_PATH.read_text(encoding="utf-8"))
