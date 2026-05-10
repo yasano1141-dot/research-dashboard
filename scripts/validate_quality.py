@@ -93,6 +93,36 @@ JAPANESE_REQUIRED = [
     (r"\bscoping review\b", "スコーピングレビュー"),
 ]
 
+# rev10 (2026-05-10): summary/importance には PD課題・Yuji 接続を入れてはならない。
+# 該当するフレーズの正規表現リスト。検出時は SKILL.md rev10 違反として警告。
+# implication/idea で Yuji/PD 接続を書くのは OK（むしろ必須）。
+PD_FORBIDDEN_IN_SUMMARY = [
+    r"Yuji の[^。]{0,40}研究",
+    r"Yuji 自身",
+    r"Yuji の博士",
+    r"Yuji の自前",
+    r"Yuji の核心",
+    r"Yuji の論文",
+    r"Yuji の PD",
+    r"Yuji コホート",
+    r"PD 申請書",
+    r"PD課題[123１２３]",
+    r"PD 課題[123１２３]",
+    r"PD 拡張軸",
+    r"PD研究計画",
+    r"学振 ?PD",
+    r"博士論文での",
+    r"博士論文・PD",
+    r"500名コホート",
+    r"900名コホート",
+    r"国立長寿の?",
+    r"TMM[・×]JAGES",
+    r"TMM コホート",
+    r"自前研究",
+    r"自前データ",
+    r"自前 cohort",
+]
+
 
 def load_content(path: Path) -> dict:
     spec = importlib.util.spec_from_file_location("content_module", path)
@@ -134,6 +164,20 @@ def check_paper(pid: str, paper: dict) -> tuple[list[str], int]:
     if jp_violations:
         violations.append(f"  📝 日本語化推奨：")
         violations.extend(jp_violations)
+
+    # rev10: summary/importance には Yuji/PD 接続を入れない
+    pd_violations = []
+    for field in ("summary", "importance"):
+        text = str(paper.get(field, ""))
+        for pattern in PD_FORBIDDEN_IN_SUMMARY:
+            matches = re.findall(pattern, text)
+            if matches:
+                pd_violations.append(
+                    f"    - {field}: 「{matches[0]}」({len(matches)}回) — PD/Yuji 接続は implication/idea に分離"
+                )
+    if pd_violations:
+        violations.append(f"  🚫 SKILL.md rev10: summary/importance への PD/Yuji 接続禁止：")
+        violations.extend(pd_violations)
 
     return violations, section_total
 
