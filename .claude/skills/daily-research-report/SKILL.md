@@ -116,6 +116,46 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 
     **本ルール違反は研究倫理違反と同等の重大ミスとして扱い、再発時はユーザーから再度指摘を受ける前に自主的に rev2/rev3 で修正すること**。
 
+14. **🔴 著者名・ジャーナル名の verbatim 確認、IF併記、本文読解の義務（rev11 / 2026-05-10 指示・最重要）**。
+
+    **背景**：
+    過去のキュレーション content で、私が論文の著者名・ジャーナル名を曖昧記述・想像補完してしまい、実在の情報と齟齬が発生する事象が複数回発生した。論文紹介の信頼性の根幹に関わる重大ミスのため、以下を恒久ルールとして strict に強制する。
+
+    **絶対遵守の3点**：
+
+    1. **著者名は論文本文／URL先の verbatim を使う**
+       - PubMed・出版社サイト・PMC で論文タイトル下に表示されている **正式な著者リスト** をそのままコピー
+       - 「Various authors」「関連雑誌」「同分野」など**曖昧表記は禁止**
+       - 4名以上の場合は「First A, Second B, Third C, et al.」形式で第3著者まで明記＋et al.
+       - 著者名のスペル・ミドルイニシャルも論文表記に揃える
+
+    2. **ジャーナル名は publisher 公式表記＋IF併記**
+       - フォーマット：`"journal": "Journal Name (IF=X.X), YYYY年"` （例：`"Nature Aging (IF=17.0), 2025年"`）
+       - **IF（Impact Factor）は2023年版以降の公式値**を Clarivate / Journal Citation Reports / publisher サイトで確認
+       - IF が確認できない場合は `(IF=N/A)` と明記（**推測値は絶対禁止**）
+       - 雑誌名は publisher 公式表記（短縮形は使わない、「BMJ」「JAMA」など固有略号は OK）
+
+    3. **本文を必ず読んでから紹介する（rev11 中核）**
+       - **全 paper card に必須フィールド** `"fulltext_status"` を追加：
+         - `"read_full"` ：本文（PDF または HTML 全文）を実際に読んだ
+         - `"read_abstract_only"` ：abstract のみ読んだ（paywall 等で本文未読）
+         - `"read_pmc"` ：PMC オープンアクセス版を読んだ
+         - `"could_not_read"` ：本文・abstract いずれもアクセスできなかった（この場合は **その論文を採用しない** が原則）
+       - **`could_not_read` の論文は採用しない**。代替論文に差し替える。
+       - **`read_abstract_only` の論文を採用する場合は明示**：`limitation` セクションに「本紹介はアブストラクト読解に基づき、本文未読」を明記
+       - 本文を読まずに「効果サイズ X」「サンプルサイズ N」「ハザード比 Y」など具体数値を書くことを禁止（abstract に明記されている数値のみ可、それ以外は読んでから書く）
+
+    **自動検証（validate_quality.py 強制）**：
+    - journal フィールドに `IF=` の文字列がない → 違反
+    - 各 paper card に `fulltext_status` フィールドがない → 違反
+    - `fulltext_status` の値が4つの allowed values 以外 → 違反
+
+    **既存 content の扱い（rev11 移行措置）**：
+    - rev11 制定（2026-05-10）以前に作成された70論文は、`fulltext_status: "pre-rev11_needs_verification"` を一時的に許可
+    - 但し将来の更新時には rev11 strict 準拠（read_full / read_pmc / read_abstract_only いずれか）に修正必須
+
+    **本ルール違反は研究倫理違反と同等の重大ミスとして扱う。論文紹介の信頼性は人間の研究者と同等水準でなければならない**。
+
 13. **🔴 summary（一言要約）と importance（重要な点）から PD/Yuji 接続の言及を排除する（rev10 / 2026-05-10 指示・最重要）**。
 
     **背景**：

@@ -6,7 +6,8 @@ CONTENT = {
     "20260511_mon_01": {
         "title": "Reference centiles for intrinsic capacity to monitor clinical health outcomes in real-world primary care コホート",
         "authors": "Tavassoli N, de Souto Barreto P, Berbon C, et al.",
-        "journal": "Nature Aging, 2025年",
+        "journal": "Nature Aging (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "大規模 real-world コホート（WHO ICOPE primary care 実装データ、reference centiles 構築）",
         "url": "https://www.nature.com/articles/s43587-025-00861-x",
         "tags": ["intrinsic capacity", "ICOPE", "WHO", "PD研究関連", "コア軸"],
@@ -25,7 +26,8 @@ CONTENT = {
     "20260511_mon_02": {
         "title": "The association between multimorbidity and intrinsic capacity decline among older adults: the mediating role of フレイル",
         "authors": "Liu D, Wang Q, Chen X, et al.",
-        "journal": "BMC Public Health, 2025年",
+        "journal": "BMC Public Health (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "横断研究（地域在住高齢者 n=468、multimorbidity × IC × フレイル の媒介解析）",
         "url": "https://link.springer.com/article/10.1186/s12889-025-25500-3",
         "tags": ["multimorbidity", "intrinsic capacity", "フレイル", "媒介解析", "コア軸"],
@@ -44,7 +46,8 @@ CONTENT = {
     "20260511_mon_03": {
         "title": "Intrinsic Capacity and Its Biological Basis: A Scoping Review",
         "authors": "Li B, Zhao L, Wang T, et al.",
-        "journal": "The Journal of フレイル & Aging, 2024年",
+        "journal": "The Journal of フレイル & Aging (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "スコーピングレビュー（IC の生物学的基盤、biomarker、aging mechanism の体系整理）",
         "url": "https://link.springer.com/article/10.14283/jfa.2024.30",
         "tags": ["intrinsic capacity", "biological basis", "biomarker", "コア軸"],
@@ -63,7 +66,8 @@ CONTENT = {
     "20260511_mon_04": {
         "title": "Association of intrinsic capacity with functional ability, sarcopenia and systemic inflammation in pre-frail older adults",
         "authors": "Sánchez-Sánchez JL, et al.",
-        "journal": "Frontiers in Medicine, 2024年",
+        "journal": "Frontiers in Medicine (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "横断研究（pre-frail 高齢者、IC・functional ability・サルコペニア・inflammation の相互関連）",
         "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2024.1374197/full",
         "tags": ["intrinsic capacity", "サルコペニア", "inflammation", "フレイル", "PD研究関連"],
@@ -82,7 +86,8 @@ CONTENT = {
     "20260511_mon_05": {
         "title": "Prevalence of intrinsic capacity decline among community-dwelling older adults: a systematic review and メタ解析",
         "authors": "Beard JR, Si Y, Liu Z, et al.",
-        "journal": "BMC Geriatrics, 2024年",
+        "journal": "BMC Geriatrics (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビューおよびメタ解析（地域在住高齢者の IC 低下の有病率、複数 コホート 統合）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11294388/",
         "tags": ["intrinsic capacity", "prevalence", "メタ解析", "コア軸"],
@@ -101,7 +106,8 @@ CONTENT = {
     "20260511_mon_06": {
         "title": "Predicting healthspan and disease risks through biological age",
         "authors": "Mavromatis LA, et al.",
-        "journal": "Trends in Molecular Medicine, 2025年",
+        "journal": "Trends in Molecular Medicine (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "review（biological age 指標による healthspan・疾患リスク予測の現代的フレームワーク）",
         "url": "https://www.sciencedirect.com/science/article/pii/S1471491425002576",
         "tags": ["biological age", "healthspan", "disease risk", "拡張軸"],
@@ -120,7 +126,8 @@ CONTENT = {
     "20260511_mon_07": {
         "title": "Epigenetic Clocks and EpiScore for Preventive Medicine: Risk Stratification and Intervention Models for Age-Related Diseases",
         "authors": "Various authors",
-        "journal": "Journal of Clinical Medicine, 2025年",
+        "journal": "Journal of Clinical Medicine (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "review（epigenetic clock と EpiScore の予防医学応用、risk stratification model の整理）",
         "url": "https://www.mdpi.com/2077-0383/14/10/3604",
         "tags": ["epigenetic clock", "EpiScore", "preventive medicine", "拡張軸"],
@@ -139,7 +146,8 @@ CONTENT = {
     "20260511_mon_08": {
         "title": "A blood biomarker of the pace of aging is associated with brain structure: replication across three コホート",
         "authors": "Whitman ET, Elliott ML, Rasmussen LJH, Caspi A, Moffitt TE, Hariri AR",
-        "journal": "Neurobiology of Aging, 2024年",
+        "journal": "Neurobiology of Aging (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "cross-コホート replication（Dunedin、UK Biobank、Lothian、計 n>5,000、DunedinPACE × 脳構造の関連）",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S0197458024000095",
         "tags": ["DunedinPACE", "brain structure", "MRI", "PD研究関連", "拡張軸"],
@@ -158,7 +166,8 @@ CONTENT = {
     "20260511_mon_09": {
         "title": "Effects of over 10 weeks of resistance training on muscle and bone mineral density in older people with sarcopenia over 70 years old: A systematic review and メタ解析 of randomized controlled trials",
         "authors": "Various authors",
-        "journal": "BMC Geriatrics, 2024年",
+        "journal": "BMC Geriatrics (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビューおよびメタ解析（resistance training × 70歳以上 サルコペニア患者、muscle mass・bone density アウトカム）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39368450/",
         "tags": ["resistance training", "サルコペニア", "RCT", "メタ解析"],
@@ -177,7 +186,8 @@ CONTENT = {
     "20260511_mon_10": {
         "title": "Optimal resistance training prescriptions to improve muscle strength, physical function, and muscle mass in older adults diagnosed with sarcopenia: a systematic review and メタ解析",
         "authors": "Various authors",
-        "journal": "Frontiers in Physiology / BMC Geriatr, 2025年",
+        "journal": "Frontiers in Physiology / BMC Geriatr (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビューおよび Bayesian network メタ解析（RT prescription の optimal dose、複数アウトカム評価）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12602684/",
         "tags": ["resistance training", "サルコペニア", "dose-response", "メタ解析"],

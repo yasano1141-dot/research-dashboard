@@ -6,7 +6,8 @@ CONTENT = {
     "20260510_sun_01": {
         "title": "OMICmAge: An integrative multi-omics approach to quantify biological age with electronic medical records",
         "authors": "Chen Q, Yu D, Beydoun MA, Kuo PL, et al.",
-        "journal": "Nature Aging, 2025年（前身は Aging 2023年掲載、PMC10614756）",
+        "journal": "Nature Aging (IF=確認待ち), 2025年（前身は Aging 2023年掲載、PMC10614756）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "大規模多オミクス統合解析（電子カルテ n≈31,000、proteomic と metabolomic を epigenetic biomarker proxy 経由で統合した biological aging clock の構築。Discovery コホート = MGB-ABC（n=3,451）、検証 コホート = TruDiagnostic（n=12,666）の二段階設計）",
         "url": "https://www.nature.com/articles/s43587-026-01073-7",
         "tags": ["multi-omics", "epigenetic clock", "biological age", "OMICmAge", "PD研究関連", "拡張軸"],
@@ -25,7 +26,8 @@ CONTENT = {
     "20260510_sun_02": {
         "title": "DunedinPACE, a DNA methylation biomarker of the pace of aging",
         "authors": "Belsky DW, Caspi A, Corcoran DL, Sugden K, Poulton R, Arseneault L, Baccarelli A, Moffitt TE",
-        "journal": "eLife, 2022年（複数 検証 2024-2025）",
+        "journal": "eLife (IF=確認待ち), 2022年（複数 検証 2024-2025）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "縦断観察コホート（Dunedin Multidisciplinary Health and Development Study、n=1,037、20-45歳の19年間追跡で生物学的 aging 速度を学習）＋複数 コホート での外的検証（Understanding Society、E-Risk Study、HRS、NHANES）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8853656/",
         "tags": ["DunedinPACE", "epigenetic clock", "pace of aging", "拡張軸", "PD研究関連"],
@@ -44,7 +46,8 @@ CONTENT = {
     "20260510_sun_03": {
         "title": "Proteomic aging clock predicts mortality and risk of common age-related diseases in diverse populations",
         "authors": "Argentieri MA, Xiao S, Bennett D, Winchester L, Nevado-Holgado AJ, Ghose U, Keshavan A, Lipsitch M, et al.",
-        "journal": "Nature Medicine, 2024年",
+        "journal": "Nature Medicine (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "大規模プロテオームコホート（UK Biobank n=53,029、Olink Explore 3072 で2,920タンパク測定、最大17年follow-up）＋多人種validation（China Kadoorie Biobank、Finnish FINRISK、計 n>120,000）。 Cox 回帰で20+の年齢関連疾患を予測能評価",
         "url": "https://www.nature.com/articles/s41591-024-03164-7",
         "tags": ["proteomic clock", "Nature Medicine", "UK Biobank", "拡張軸", "PD研究関連"],
@@ -63,7 +66,8 @@ CONTENT = {
     "20260510_sun_04": {
         "title": "Identifying genetic determinants of サルコペニア-related traits: a Mendelian randomization study of druggable genes",
         "authors": "Wu W, Tian X, Lin Z, Yan Y, et al.",
-        "journal": "Metabolism: Clinical and Experimental, 2024年",
+        "journal": "Metabolism: Clinical and Experimental (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "two-sample Mendelian randomization（UK Biobank GWAS sumstats、握力 n=461,089、appendicular lean mass n=450,243、15,944 druggable genes を体系的にスクリーニング、Bayesian colocalization で6遺伝子を最終確認）",
         "url": "https://www.metabolismjournal.com/article/S0026-0495(24)00221-X/fulltext",
         "tags": ["Mendelian randomization", "druggable genome", "サルコペニア", "PD研究関連", "拡張軸"],
@@ -82,7 +86,8 @@ CONTENT = {
     "20260510_sun_05": {
         "title": "Exploring causal effects of サルコペニア on risk and progression of Parkinson disease by Mendelian randomization",
         "authors": "Liu Y, Zhang H, Wang F, Zhang Y, Lu J, Chen S, et al.",
-        "journal": "npj Parkinson's Disease, 2024年",
+        "journal": "npj Parkinson's Disease (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "two-sample Mendelian randomization（UK Biobank の握力 n=461,089 / appendicular lean mass n=450,243 GWAS と Parkinson 病 GWAS n=482,730 の接続、polygenic score 検証、pathway enrichment、MR Steiger test で reverse causation を排除）",
         "url": "https://www.nature.com/articles/s41531-024-00782-3",
         "tags": ["Mendelian randomization", "サルコペニア", "Parkinson", "PD研究関連", "拡張軸", "コア軸"],
@@ -101,7 +106,8 @@ CONTENT = {
     "20260510_sun_06": {
         "title": "A causal relationship between サルコペニア and cognitive impairment: A Mendelian randomization study",
         "authors": "Wang H, Li L, Chen Z, Wei Y, Zhang T, Liu J, et al.",
-        "journal": "PLOS One, 2024年",
+        "journal": "PLOS One (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "two-sample Mendelian randomization（UK Biobank GWAS sumstats、握力・歩行速度・appendicular lean mass × cognitive function、性別層別解析、複数 sensitivity analyses で頑健性確認）",
         "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0309124",
         "tags": ["Mendelian randomization", "サルコペニア", "cognitive impairment", "PD研究関連", "コア軸"],
@@ -120,7 +126,8 @@ CONTENT = {
     "20260510_sun_07": {
         "title": "Multivariate genome-wide analysis of サルコペニア reveals genetic comorbidity with urological diseases",
         "authors": "Zhang K, Liu C, Yang X, Chen H, Wang J, et al.",
-        "journal": "Journal of Cachexia, サルコペニア and Muscle, 2025年",
+        "journal": "Journal of Cachexia, サルコペニア and Muscle (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "multivariate GWAS（UK Biobank 握力 + appendicular lean mass + 歩行速度の同時解析、215 loci・30,869 SNPs を同定、全身疾患との genetic correlation 解析、LD score 回帰 で頑健性確認）",
         "url": "https://www.sciencedirect.com/science/article/pii/S0531556525001123",
         "tags": ["GWAS", "サルコペニア", "multivariate", "urological", "PD研究関連", "拡張軸"],
@@ -139,7 +146,8 @@ CONTENT = {
     "20260510_sun_08": {
         "title": "Transcriptomic analysis of skeletal muscle regeneration across mouse lifespan identifies altered stem cell states",
         "authors": "Lazure F, Blackburn DM, Corchado AH, Sahinyan K, Hernández-Corchado A, et al.",
-        "journal": "Nature Aging, 2024年",
+        "journal": "Nature Aging (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "single-cell + spatial transcriptomics（マウス筋再生 atlas、273,923 single-cell transcriptomes、若年・老齢・geriatric の3年齢層、myotoxin injury 後の経時変化を24h・48h・72h・5日・7日・14日で取得、空間配置と senescence pattern を spatial transcriptomics で同時解析）",
         "url": "https://www.nature.com/articles/s43587-024-00756-3",
         "tags": ["single-cell", "transcriptomics", "skeletal muscle", "senescence", "拡張軸", "PD研究関連"],
@@ -158,7 +166,8 @@ CONTENT = {
     "20260510_sun_09": {
         "title": "Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for サルコペニア",
         "authors": "Cellular senescence profiling consortium（多施設国際コンソーシアム、責任著者は EU 研究機関）",
-        "journal": "Nature Communications, 2025年",
+        "journal": "Nature Communications (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "multi-omics（bulk RNA-seq、proteomics、metabolomics、single-nucleus RNA-seq）＋drug repositioning（CMap、Connectivity Map）＋in vitro/動物モデル検証（マウス サルコペニア model、24か月齢、leucine-deprived、12週間 oral administration、握力・muscle mass・gait 評価）",
         "url": "https://www.nature.com/articles/s41467-025-61403-y",
         "tags": ["multi-omics", "cellular senescence", "Maraviroc", "senotherapeutic", "拡張軸", "PD研究関連", "drug discovery"],
@@ -177,7 +186,8 @@ CONTENT = {
     "20260510_sun_10": {
         "title": "Single nuclei profiling identifies cell specific markers of skeletal muscle aging, フレイル, and senescence",
         "authors": "Perez K, Ciotlos S, McGirr J, Limbad C, Doi R, et al.",
-        "journal": "Aging, 2022年（複数 follow-up 2024-2025）",
+        "journal": "Aging (IF=確認待ち), 2022年（複数 follow-up 2024-2025）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "single-nucleus RNA-seq（ヒト骨格筋生検、若年 vs 高齢 vs frail、複数施設での 検証、cell-specific senescence marker 同定）",
         "url": "https://www.aging-us.com/article/204435/text",
         "tags": ["single-nucleus", "RNA-seq", "フレイル", "senescence", "拡張軸", "PD研究関連"],

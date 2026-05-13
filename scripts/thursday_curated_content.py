@@ -8,7 +8,8 @@ CONTENT = {
     "20260514_thu_01": {
         "title": "Deep-learning based multi-modal models for brain age, cognition and amyloid pathology 予測",
         "authors": "Couvy-Duchesne B, Faouzi J, Martin B, et al.",
-        "journal": "Nature Aging / 関連雑誌, 2025年",
+        "journal": "Nature Aging / 関連雑誌 (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "深層学習多モダリティモデル（MRI + 臨床データ、ADNIで構築、cognitive normal の MAE 3.302歳・認知症 識別 AUC ≈0.95）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40450379/",
         "tags": ["brain age", "deep learning", "amyloid", "cognition", "PD研究関連", "コア軸"],
@@ -27,7 +28,8 @@ CONTENT = {
     "20260514_thu_02": {
         "title": "A novel deep learning-based brain age 予測 framework for routine clinical MRI scans",
         "authors": "Various authors",
-        "journal": "npj Aging, 2025年",
+        "journal": "npj Aging (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋routine clinical MRI での brain age 予測（複数施設のリアルワールド MRI scans を活用、研究用ではなく臨床使用 MRI で評価）",
         "url": "https://www.nature.com/articles/s41514-025-00260-x",
         "tags": ["brain age", "clinical MRI", "deep learning", "PD研究関連"],
@@ -46,7 +48,8 @@ CONTENT = {
     "20260514_thu_03": {
         "title": "Anatomically interpretable deep learning of brain age captures domain-specific cognitive impairment",
         "authors": "Lee J, Burkett BJ, Min HK, et al.",
-        "journal": "Proceedings of the National Academy of Sciences (PNAS), 2023年",
+        "journal": "Proceedings of the National Academy of Sciences (PNAS) (IF=確認待ち), 2023年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "解釈可能 deep learning（脳領域別の brain age 推定、domain-specific cognitive impairment との関連）",
         "url": "https://www.pnas.org/doi/10.1073/pnas.2214634120",
         "tags": ["brain age", "interpretable", "anatomical", "PD研究関連", "コア軸"],
@@ -65,7 +68,8 @@ CONTENT = {
     "20260514_thu_04": {
         "title": "Deep learning to predict future cognitive decline: a multimodal approach using brain MRI and clinical data",
         "authors": "Various authors",
-        "journal": "Frontiers in Neuroimaging, 2026年",
+        "journal": "Frontiers in Neuroimaging (IF=確認待ち), 2026年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向き予測研究（脳MRI + 臨床データの multimodal deep learning、MCI 患者の cognitive decline 進行予測）",
         "url": "https://www.frontiersin.org/journals/neuroimaging/articles/10.3389/fnimg.2026.1726037/full",
         "tags": ["multimodal", "deep learning", "cognitive decline", "MCI", "PD研究関連"],
@@ -84,7 +88,8 @@ CONTENT = {
     "20260514_thu_05": {
         "title": "Deep learning-based brain age 予測 in normal aging and 認知症",
         "authors": "Lee J, Burkett BJ, Min HK, et al.",
-        "journal": "Nature Aging, 2023年",
+        "journal": "Nature Aging (IF=確認待ち), 2023年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "深層学習 brain age（正常加齢 vs 認知症 の brain age gap、複数 コホート 統合）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/37118071/",
         "tags": ["brain age", "deep learning", "認知症", "PD研究関連", "コア軸"],
@@ -103,7 +108,8 @@ CONTENT = {
     "20260514_thu_06": {
         "title": "Association of white matter hyperintensities with cognitive decline and neurodegeneration",
         "authors": "Various authors",
-        "journal": "Frontiers in Aging Neuroscience, 2024年",
+        "journal": "Frontiers in Aging Neuroscience (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "review＋メタ解析（white matter hyperintensities × 認知機能低下 × 神経変性、複数 コホート 統合）",
         "url": "https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2024.1412735/full",
         "tags": ["white matter hyperintensity", "cognitive decline", "neurodegeneration", "PD研究関連"],
@@ -122,7 +128,8 @@ CONTENT = {
     "20260514_thu_07": {
         "title": "The Relationship Between サルコペニア, Cognitive Impairment, and Cerebral White Matter Hyperintensity in the Elderly",
         "authors": "Wang Y, Liu X, Chen Z, et al.",
-        "journal": "Frontiers in Aging Neuroscience, 2023年（PMC10072150）",
+        "journal": "Frontiers in Aging Neuroscience (IF=確認待ち), 2023年（PMC10072150）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "横断研究（高齢者、サルコペニア × WMH × cognitive impairment の3者関連）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10072150/",
         "tags": ["サルコペニア", "WMH", "cognitive impairment", "PD研究関連", "コア軸"],
@@ -141,7 +148,8 @@ CONTENT = {
     "20260514_thu_08": {
         "title": "White matter hyperintensity burden predicts domain-specific cognitive decline across the Alzheimer's disease continuum",
         "authors": "Various authors",
-        "journal": "Scientific Reports, 2025年",
+        "journal": "Scientific Reports (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向きコホート（AD continuum、WMH burden × domain-specific cognitive decline、複数年追跡）",
         "url": "https://www.nature.com/articles/s41598-025-25694-x",
         "tags": ["WMH", "domain-specific", "AD continuum", "cognitive decline", "PD研究関連"],
@@ -160,7 +168,8 @@ CONTENT = {
     "20260514_thu_09": {
         "title": "Heterogeneity of white matter hyperintensities in Alzheimer's disease captured by multimodal neuroimaging",
         "authors": "Various authors",
-        "journal": "Scientific Reports, 2025年",
+        "journal": "Scientific Reports (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "multimodal neuroimaging（structural MRI + DTI + functional MRI、AD 患者の WMH heterogeneity 解析）",
         "url": "https://www.nature.com/articles/s41598-025-23371-7",
         "tags": ["WMH", "multimodal", "MRI", "AD", "PD研究関連"],
@@ -179,7 +188,8 @@ CONTENT = {
     "20260514_thu_10": {
         "title": "Impact of regional white matter hyperintensity patterns on cognitive trajectories in NACC",
         "authors": "Various authors",
-        "journal": "Alzheimer's & 認知症 / 関連雑誌, 2025年（PMC12531902）",
+        "journal": "Alzheimer's & 認知症 / 関連雑誌 (IF=確認待ち), 2025年（PMC12531902）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向き コホート（NACC、regional WMH patterns × cognitive trajectories、長期追跡）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12531902/",
         "tags": ["WMH", "regional patterns", "cognitive trajectory", "NACC", "PD研究関連"],

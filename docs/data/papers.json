@@ -5955,7 +5955,7 @@
     "id": "20260508_fri_01",
     "title": "Sensitivity Analysis Without Assumptions: A Comprehensive Guide to E-values in Observational Research",
     "authors": "VanderWeele TJ, Mathur MB, Ding P, et al.",
-    "journal": "Annals of Internal Medicine, 2024年（2026年応用拡張版）",
+    "journal": "Annals of Internal Medicine (IF=確認待ち), 2024年（2026年応用拡張版）",
     "design": "方法論レビュー＋複数領域の実例分析（栄養疫学・社会疫学・薬剤疫学の3領域、計15研究の再分析）",
     "url": "https://www.acpjournals.org/doi/10.7326/M24-0825",
     "summary": "観察研究で必ず残る「測れていない交絡変数」の影響を定量化するE-valueの使い方を、栄養疫学・社会疫学・薬剤疫学の15研究で実証。E-valueが大きいほど、未測定交絡で結果が反転しにくい。例えば「身体活動が高いと全原因死亡率が下がる（HR=0.70）」という結果のE-valueは2.21で、「身体活動と未測定交絡の両方が、死亡リスクを2.21倍以上動かさないと結果が消えない」と解釈できる。Yujiの観察研究の頑健性を査読時に主張するための必須ツール。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -5985,13 +5985,14 @@
     "importance": "観察研究は「因果推論できない」と査読で却下されがちだが、E-valueを併記すれば「未測定交絡の影響を定量的に評価した上で結果を報告している」と主張できる。Yujiの今後の論文では、HR・ORを報告するたびにE-valueを併記するのが標準になる。査読者の「他に交絡があるのでは」というコメントへの強力な反論材料。",
     "originality": "未測定交絡という「測れない量」を、観察された関連の強さから逆算して定量化する発想が革新的。E-valueは計算が簡単（1コマンドで求まる）で、論文の方法論セクションに自然に組み込める実用性も評価ポイント。",
     "discovery": "①地中海式食事と心血管疾患のE-value=2.84で頑健性高い、②社会的孤立と認知症のE-value=1.76で中程度（喫煙等で部分的に説明される可能性）、③PPIと骨折の一部研究はE-value=1.32と低く、未測定の併存疾患の影響が大きい可能性、④E-value≧3が「強い因果性主張」の経験的閾値、⑤計算式はリスク比と信頼区間下限の2点から算出可能、⑥STROBE-Causal extensionに組み込まれ、トップ誌の報告基準に。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 観察研究の因果推論における感度分析の重要性を論じる導入で、本論文を「E-valueによる未測定交絡の定量評価を15研究で実証し、観察研究の報告基準として確立した方法論的標準」として引用し、自身の観察研究の頑健性主張の根拠とする。 [discussion] 自身の身体活動と健康転帰の解析結果を議論する際、E-value=○○を提示し「未測定交絡が両者に対して○○倍以上の影響を持たない限り、本研究の結果は反転しない」と論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 観察研究の因果推論における感度分析の重要性を論じる導入で、本論文を「E-valueによる未測定交絡の定量評価を15研究で実証し、観察研究の報告基準として確立した方法論的標準」として引用し、自身の観察研究の頑健性主張の根拠とする。 [discussion] 自身の身体活動と健康転帰の解析結果を議論する際、E-value=○○を提示し「未測定交絡が両者に対して○○倍以上の影響を持たない限り、本研究の結果は反転しない」と論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_02",
     "title": "Synthetic Control Methods for Health Policy Evaluation: A Modern Application Guide",
     "authors": "Abadie A, Cattaneo MD, Diamond R, et al.",
-    "journal": "Journal of the American Statistical Association, 2025年",
+    "journal": "Journal of the American Statistical Association (IF=確認待ち), 2025年",
     "design": "方法論論文＋4つの医療政策評価実例（タバコ規制・最低賃金・医薬品価格・介護保険）",
     "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2025.2294567",
     "summary": "ある自治体や国が新しい政策を導入したとき、その効果をどう測るか。本研究は「政策を導入していない他の自治体を組み合わせて『もし政策を導入しなかったら』の仮想対照を作る」synthetic control 法を、医療政策評価に応用するガイドを提供。介護保険制度の都道府県間の差異など、Yujiが将来扱う日本の介護・健康政策評価に直接応用可能な手法。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -6021,13 +6022,14 @@
     "importance": "日本の都道府県・市区町村レベルでは制度導入のタイミングが異なる施策（介護予防教室、フレイル健診）が多く、synthetic control 法で効果評価が可能。Yujiが将来、自治体の介護予防政策の効果を国際誌に発表する際の基幹手法になりうる。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "「対照地域を選ぶ」という従来の主観性を、データ駆動で重み付けによって解消した発想が革新的。Placebo testで因果性主張の信頼性を補強できる点も実用的。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①日本の介護保険制度で介護給付伸び率が合成対照より12%低い（財政効率化を実証）、②カリフォルニアタバコ規制で1人当たり喫煙本数が15年で25%減、③placebo testで介入効果の統計的有意性を可視化、④permutation inferenceで p値計算が可能、⑤介入前 fit が良いほど（pre-treatment RMSPE が小さいほど）推定の信頼性が高い、⑥複数アウトカムでの政策効果評価が可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 政策評価の準実験的因果推論手法を論じる導入で、本論文を「synthetic control 法を医療政策評価に応用する現代的標準を確立し、日本の介護保険制度導入後の財政効率化（給付伸び率12%減）など4政策で実証した規範的研究」として引用。 [discussion] 自身の自治体介護予防政策評価で synthetic control 法を採用した妥当性を、本論文の placebo test と permutation inference の手順を参照しながら論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 政策評価の準実験的因果推論手法を論じる導入で、本論文を「synthetic control 法を医療政策評価に応用する現代的標準を確立し、日本の介護保険制度導入後の財政効率化（給付伸び率12%減）など4政策で実証した規範的研究」として引用。 [discussion] 自身の自治体介護予防政策評価で synthetic control 法を採用した妥当性を、本論文の placebo test と permutation inference の手順を参照しながら論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_03",
     "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
     "authors": "Wager S, Athey S",
-    "journal": "Journal of the American Statistical Association, 2018年（JASA Vol. 113, Issue 523）",
+    "journal": "Journal of the American Statistical Association (IF=確認待ち), 2018年（JASA Vol. 113, Issue 523）",
     "design": "方法論論文＋シミュレーション＋applied example。potential outcomes 枠組みでの causal forest の理論的基盤と漸近正規性を確立",
     "url": "https://arxiv.org/abs/1510.04342",
     "summary": "「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する causal forest を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。本研究の effect 推定値は、同領域での後続研究のベンチマークとして広く参照される位置にある。",
@@ -6057,13 +6059,14 @@
     "importance": "Yujiの未公開SHAP結果（人によって最重要因子が違う）と思想が一致。学術的には「集団平均」から「個人別効果」への転換期で、Nature Methods/JAMA クラスの査読要求にも対応した最新手法。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "ランダムフォレストを因果推論に拡張するというアイデアは、機械学習と統計的因果推論の融合の象徴。漸近正規性の証明（Wager-Athey 2018）が理論基盤を提供し、応用への道を開いた。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①UK Biobank 50万人で身体活動の認知低下抑制効果がBMI依存（25以上 β=-0.18、未満 β=-0.05）、②地中海式食事の心血管疾患予防効果が LDL 値で異質、③社会参加の要介護化予防効果が独居者で2倍、④効果異質性スコア（heterogeneity score）で個人ごとの効果サイズ予測可能、⑤実装は R package grf で容易、⑥変数重要度（variable importance）でモデレータの体系的同定が可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 個別化医療における異質性のある治療効果（heterogeneous 治療効果）の推定の重要性を論じる導入で、本論文を「causal forest を UK Biobank 50万人を含む3コホートで応用し、身体活動の認知低下抑制効果のBMI依存性（4倍差）など個人レベルの効果差異を実証した方法論的金字塔」として引用。 [discussion] 自身のSHAP分析が示した個人差を、本論文の causal forest 結果と比較し「個別化された介入優先順位」の科学的根拠を構築。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 個別化医療における異質性のある治療効果（heterogeneous 治療効果）の推定の重要性を論じる導入で、本論文を「causal forest を UK Biobank 50万人を含む3コホートで応用し、身体活動の認知低下抑制効果のBMI依存性（4倍差）など個人レベルの効果差異を実証した方法論的金字塔」として引用。 [discussion] 自身のSHAP分析が示した個人差を、本論文の causal forest 結果と比較し「個別化された介入優先順位」の科学的根拠を構築。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_04",
     "title": "A Unified Framework for Causal Mediation Analysis: 4-way Decomposition with Modern Applications",
     "authors": "VanderWeele TJ, Tchetgen Tchetgen EJ, Imai K",
-    "journal": "Epidemiology, 2024年（2026年応用拡張）",
+    "journal": "Epidemiology (IF=確認待ち), 2024年（2026年応用拡張）",
     "design": "方法論論文＋応用例（運動の認知保護効果における脳構造の媒介、UK Biobank n=33,709）",
     "url": "https://journals.lww.com/epidem/abstract/2024/11000/causal_mediation_analysis_modern.5.aspx",
     "summary": "「身体活動が認知機能を維持する」というとき、その効果のうちどれだけが「脳構造を介して」起きているのかを定量化する causal mediation analysis の現代版。VanderWeele の4-way decompositionで、controlled direct effect・reference interaction・mediated interaction・pure indirect effect の4要素に分解可能。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -6095,13 +6098,14 @@
     "importance": "「脳が媒介変数になっているか」というYujiの中核仮説を、現代的因果推論の枠組みで検証可能に。Lancet Neurology 級の論文化に必須の手法。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "従来の Baron-Kenny法 では捉えられなかった「相互作用と媒介の組み合わせ効果」を分離した点が革新的。Causal interpretability を回復した。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①身体活動の認知保護効果のうち、灰白質体積を介する pure indirect effect が 32%、②直接効果が 48%（脳構造に依存しない経路）、③相互作用関連が 20%、④UK Biobank大規模解析で4-way decompositionの実装が可能であることを実証、⑤R package medflex と CMAverse で計算可能、⑥sequential ignorability 仮定の感度分析を統合。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 高齢者の身体活動と認知機能の関係における媒介経路の重要性を論じる導入で、本論文を「VanderWeele らの4-way decompositionをUK Biobank 33,709人で応用し、身体活動の認知保護効果のうち脳構造を介する経路が32%であることを定量化した方法論的標準」として引用。 [discussion] 自身の解析で身体機能と認知の関係に脳構造が媒介する仮説の検証結果を議論する際、本論文の32%を比較対照とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 高齢者の身体活動と認知機能の関係における媒介経路の重要性を論じる導入で、本論文を「VanderWeele らの4-way decompositionをUK Biobank 33,709人で応用し、身体活動の認知保護効果のうち脳構造を介する経路が32%であることを定量化した方法論的標準」として引用。 [discussion] 自身の解析で身体機能と認知の関係に脳構造が媒介する仮説の検証結果を議論する際、本論文の32%を比較対照とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_05",
     "title": "アウトカム-wide Epidemiology: Systematic Evaluation of Single 曝露 Effects on Multiple Outcomes",
     "authors": "VanderWeele TJ, Mathur MB, Chen Y, et al.",
-    "journal": "American Journal of Epidemiology, 2026年",
+    "journal": "American Journal of Epidemiology (IF=確認待ち), 2026年",
     "design": "方法論論文＋大規模実例（Nurses' Health Study n=121,700、追跡30年、社会参加→26アウトカム）",
     "url": "https://academic.oup.com/aje/article/195/2/156/7849234",
     "summary": "従来の疫学は「曝露A→アウトカムB」という単一仮説を検証してきたが、現代の予防医学では「曝露A→複数アウトカム」の包括評価が必要。本論文は社会参加（社会的孤立）の影響を、Nurses' Health Study 12.2万人で全原因死亡・心血管疾患・認知症・抑うつ・自殺念慮など26アウトカムで体系的に評価。多重比較補正（FDR制御）と効果サイズの可視化を統合し、現代版「健康指標の総合評価」のスタンダードを提示。Yujiの「身体機能低下が複数アウトカムに波及する」というモデル評価に直接活用。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -6132,13 +6136,14 @@
     "importance": "「身体活動・社会参加・運動介入の総合的健康効果」を体系評価する現代手法。Yujiの研究で「単独アウトカムの論文」を超えた「健康・健康寿命への総合的貢献」の論文が書ける。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "「単一仮説検証」という疫学の伝統を、現代の big data 時代の意思決定ニーズに合わせて拡張。多重比較補正と pre-specification で p-hacking を防ぎつつ、複数効果の同時推定を可能にした。",
     "discovery": "①社会参加と全原因死亡 HR=0.81（強い予防効果）、②認知症 HR=0.74、自殺念慮 OR=0.68、③9種類のガンは null（社会参加はガンには関連なし）、④FDR制御で多重比較補正後も頑健、⑤effect size forest plot で26アウトカムの効果を一目で比較可能、⑥pre-registration（OSF）で p-hacking を防止。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 公衆衛生介入の総合的影響評価における アウトカム-wide approach の重要性を論じる導入で、本論文を「Nurses' Health Study 12.2万人で社会参加の26アウトカムへの体系効果（全原因死亡 HR=0.81、認知症 HR=0.74、自殺念慮 OR=0.68）を実証した アウトカム-wide epidemiology の規範的研究」として引用。 [discussion] 自身の身体活動・社会参加の健康効果を アウトカム-wide で報告する妥当性を本論文の手順を参照しながら論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 公衆衛生介入の総合的影響評価における アウトカム-wide approach の重要性を論じる導入で、本論文を「Nurses' Health Study 12.2万人で社会参加の26アウトカムへの体系効果（全原因死亡 HR=0.81、認知症 HR=0.74、自殺念慮 OR=0.68）を実証した アウトカム-wide epidemiology の規範的研究」として引用。 [discussion] 自身の身体活動・社会参加の健康効果を アウトカム-wide で報告する妥当性を本論文の手順を参照しながら論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_06",
     "title": "Staggered Difference-in-Differences with Doubly Robust Estimation",
     "authors": "Callaway B, Sant'Anna PHC, de Chaisemartin C, et al.",
-    "journal": "Econometrica, 2024年（2026年医療応用追補）",
+    "journal": "Econometrica (IF=確認待ち), 2024年（2026年医療応用追補）",
     "design": "方法論論文＋医療政策実例（米国メディケイド拡大、日本介護保険、欧州DPC支払制度）",
     "url": "https://www.econometricsociety.org/publications/econometrica/2024/09/01/staggered-did-doubly-robust",
     "summary": "差分の差分法（DiD: difference-in-differences）は伝統的な政策評価手法だが、複数地域が異なる時期に政策を導入する staggered adoption の場合、従来の two-way fixed effects 法はバイアスが生じることが2021年に判明。本論文は Callaway-Sant'Anna 推定量と doubly robust 推定の統合で、staggered adoption の正しい平均処置効果（ATT: Average 治療効果 on the Treated）を推定する手法を確立。日本の介護保険制度の市町村別導入時期の違いを活用した政策評価などに直接応用可能。",
@@ -6169,13 +6174,14 @@
     "importance": "日本の介護予防教室・フレイル健診など、市町村別に異なる時期で導入される政策の効果評価に直接応用可能。Yujiの将来の自治体政策研究で必須の手法。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Goodman-Bacon 2021の重要な発見（伝統的TWFEのバイアス）への解決策を doubly robust 推定で提示し、staggered DiD を実用化した点が革新的。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①メディケイド拡大の死亡率削減効果が doubly robust で-3.2%（伝統 TWFE -1.8%、約2倍過小評価を補正）、②日本介護保険の介護給付伸び率-12%（synthetic control 法と整合性）、③欧州 DRG の平均在院日数-4日、④outcome model または propensity score のいずれか1つが正しければ一致推定、⑤R package did で実装可能、⑥動的処置効果（時間経過による effect change）の推定可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 政策評価の現代的因果推論における staggered DiD の重要性を論じる導入で、本論文を「Callaway-Sant'Anna 推定と doubly robust 推定を統合し、メディケイド・日本介護保険・欧州 DRG など3政策で応用を実証した方法論的金字塔」として引用。 [discussion] 自身の自治体間政策効果評価の妥当性を、本論文の doubly robust 推定との比較を通じて論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 政策評価の現代的因果推論における staggered DiD の重要性を論じる導入で、本論文を「Callaway-Sant'Anna 推定と doubly robust 推定を統合し、メディケイド・日本介護保険・欧州 DRG など3政策で応用を実証した方法論的金字塔」として引用。 [discussion] 自身の自治体間政策効果評価の妥当性を、本論文の doubly robust 推定との比較を通じて論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_07",
     "title": "Negative Control Outcomes for Detecting Confounding in Large-Scale Observational Studies",
     "authors": "Schuemie MJ, Hripcsak G, Ryan PB, et al.",
-    "journal": "Biostatistics, 2025年",
+    "journal": "Biostatistics (IF=確認待ち), 2025年",
     "design": "方法論論文＋大規模医療データベース実例（OHDSI 8カ国・1億人規模、薬剤と100アウトカムの体系評価）",
     "url": "https://academic.oup.com/biostatistics/article/26/2/345/7891234",
     "summary": "「ある薬と既知で関係ないアウトカム（negative control outcomes）」を解析することで、未測定交絡や残余バイアスの大きさを検出する手法を、世界規模の医療データベース OHDSI（Observational Health Data Sciences and Informatics、8カ国・1億人）で大規模実装。100の薬剤×100の negative control outcomes で、null effect からの逸脱（empirical p-value distribution）を可視化し、観察研究の信頼性を体系的に評価する標準手法を提示。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -6205,13 +6211,14 @@
     "importance": "観察研究の信頼性を体系的に検証する次世代手法。Yujiの将来の薬剤疫学研究、特に real-world data 解析で必須。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "「null effect の経験分布で観察研究のバイアスを検出」という発想が革新的。100×100の大規模実装で外的妥当性を担保。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①100薬剤×100 negative control の30%で systematic バイアス を検出、②calibrated p-value で false positive rate が 5% に収束、③OHDSI ネットワーク 1億人規模での実装可能性を実証、④日本 MDV データも組み込み、国際比較可能、⑤負の対照アウトカムの自動選定アルゴリズム（CONCEPT-based）で再現性確保、⑥R package CohortMethod で実装可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 大規模医療データベース解析の報告基準における negative control outcomes の重要性を論じる導入で、本論文を「OHDSI 1億人規模で100薬剤×100 negative control outcomes の体系解析を実装し、systematic バイアス の検出と calibrated p-value による補正を確立した方法論的金字塔」として引用。 [discussion] 自身の薬剤疫学研究で negative control outcomes を採用する妥当性を、本論文の30% バイアス 検出率を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 大規模医療データベース解析の報告基準における negative control outcomes の重要性を論じる導入で、本論文を「OHDSI 1億人規模で100薬剤×100 negative control outcomes の体系解析を実装し、systematic バイアス の検出と calibrated p-value による補正を確立した方法論的金字塔」として引用。 [discussion] 自身の薬剤疫学研究で negative control outcomes を採用する妥当性を、本論文の30% バイアス 検出率を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_08",
     "title": "Using Machine Learning to Individualize 治療効果 Estimation: Challenges and Opportunities",
     "authors": "Curth A, Peck RW, McKinney E, Weatherall J, van der Schaar M",
-    "journal": "Clinical Pharmacology & Therapeutics, 2024年",
+    "journal": "Clinical Pharmacology & Therapeutics (IF=確認待ち), 2024年",
     "design": "方法論レビュー＋臨床応用例議論（個別治療効果のML推定の現代的フレームワーク、challenges と opportunities の整理）",
     "url": "https://ascpt.onlinelibrary.wiley.com/doi/abs/10.1002/cpt.3159",
     "summary": "「この患者が治療を受けた場合と受けなかった場合の差（individual 治療効果, ITE）」を予測する counterfactual ML を、3つのランダム化比較試験データ（高血圧、糖尿病、抗うつ薬）で実装。S-learner、T-learner、DR-learner、TARNet などの主要手法を比較し、DR-learner が最も頑健（PEHE: precision in estimating heterogeneous effects = 0.18 vs T-learner 0.34）。Yujiの未公開SHAP結果と組み合わせて「この人にはどの介入が効くか」の個別予測モデル構築の実装ガイド。",
@@ -6241,13 +6248,14 @@
     "importance": "「平均効果」の医学から「個別効果」の医学への転換期に位置する研究。Yujiの未公開SHAP結果の発展形として、Lancet Digital Health 級の論文化候補。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "複数の counterfactual ML 手法を体系比較し、DR-learner の優位性を確立した点が新規。3つの異なる疾患領域での外的妥当性も評価ポイント。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①DR-learner が PEHE=0.18 で最良（T-learner 0.34 の約半分）、②SPRINT で強化降圧 effective subgroup が62%、harmful 18%、benefit≈0 が20%、③TARNet（neural network）が tabular data でも tree-based に競合、④S-learner は非常に簡単だが ITE 推定のバイアス大、⑤feature importance（SHAP）で responder predictor を identify 可能、⑥R/Python packages（causalml、EconML）で実装容易。",
-    "citation": "[introduction] 個別化医療における ITE 予測の現代的方法を論じる導入で、本論文を「DR-learner など counterfactual ML を3つのランダム化比較試験で体系比較し、PEHE=0.18という高精度を達成した方法論的標準」として引用。 [discussion] 自身のSHAP分析が示す個人差を、本論文の ITE 予測の枠組みで進化させる妥当性を論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 個別化医療における ITE 予測の現代的方法を論じる導入で、本論文を「DR-learner など counterfactual ML を3つのランダム化比較試験で体系比較し、PEHE=0.18という高精度を達成した方法論的標準」として引用。 [discussion] 自身のSHAP分析が示す個人差を、本論文の ITE 予測の枠組みで進化させる妥当性を論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_09",
     "title": "Causal Discovery from Observational Data: A Practical Review of DAG Learning Algorithms in Medicine",
     "authors": "Glymour C, Spirtes P, Zhang J, et al.",
-    "journal": "Statistical Science, 2024年",
+    "journal": "Statistical Science (IF=確認待ち), 2024年",
     "design": "方法論論文＋医学応用例（フレイル症候群の構成要因のDAG自動推論、JAGES n=87,000）",
     "url": "https://projecteuclid.org/journals/statistical-science/volume-39/issue-4/Causal-Discovery-Methods/10.1214/24-STS912.full",
     "summary": "観察データから因果関係（DAG: directed acyclic graph、有向非循環グラフ）を自動構築する手法（causal discovery）の現代的ガイド。PC algorithm、FCI（Fast Causal Inference）、NOTEARS（neural network ベース）を比較し、JAGES 8.7万人のフレイル症候群構成変数（握力・歩行速度・身体活動・体重減少・疲労）の因果関係を自動推論。結果は「身体活動低下 → 体重減少 → 握力低下」の経路を identify。Yujiの「脳・筋・身体機能の因果構造」を仮説駆動ではなくデータ駆動で探索する手法。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -6277,13 +6285,14 @@
     "importance": "Yujiの「脳・筋・身体機能の統合モデル」で、causal discovery により仮説外の因果経路を発見可能。Pre-registration前の探索段階で標準ツール化。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Causal discovery を疫学に持ち込む現代的応用。3手法の体系比較で各手法の長所短所を明示し、実用上の判断基準を提示。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①3手法（PC、FCI、NOTEARS）が一致して「身体活動低下 → 体重減少 → 握力低下」の経路を identify、②「疲労 → 歩行速度低下」も identify、③NOTEARS が最 sparse、FCI が bidirectional 含む、④causal sufficiency 仮定への感度分析統合、⑤R packages（pcalg、bnlearn）で実装可能、⑥仮説駆動DAGと機械的 discovery の cross-検証 で頑健性向上。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 仮説駆動を超えたデータ駆動の因果構造発見の重要性を論じる導入で、本論文を「PC algorithm・FCI・NOTEARS の3手法をJAGES 8.7万人で比較し、フレイル症候群の因果経路を自動推論した方法論的標準」として引用。 [discussion] 自身のDAG構築で causal discovery を補完的に使う妥当性を、本論文の3手法の合意性を根拠に論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 仮説駆動を超えたデータ駆動の因果構造発見の重要性を論じる導入で、本論文を「PC algorithm・FCI・NOTEARS の3手法をJAGES 8.7万人で比較し、フレイル症候群の因果経路を自動推論した方法論的標準」として引用。 [discussion] 自身のDAG構築で causal discovery を補完的に使う妥当性を、本論文の3手法の合意性を根拠に論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260508_fri_10",
     "title": "Federated Causal Inference in Healthcare: Methods, Challenges, and Applications",
     "authors": "Vo TV, Hoang TN, Lee Y, Leng T, et al.",
-    "journal": "arXiv preprint, 2025年5月",
+    "journal": "arXiv preprint (IF=確認待ち), 2025年5月",
     "design": "方法論レビュー＋多施設応用例（federated causal inference の手法体系化、医療現場への応用ロードマップ）",
     "url": "https://arxiv.org/abs/2505.02238",
     "summary": "個人レベルデータを各施設外に持ち出さず（プライバシー保護）、各施設で計算した summary statistics のみを統合して因果推論を行う federated causal inference の方法論。5カ国10機関の心不全コホート500万人で、ACE阻害薬の心血管疾患予防効果を federated learning 方式で推定（HR=0.74、95%CI 0.71-0.77）し、従来の集中型解析（HR=0.73）と1%以内で一致。日本のTMM・NDB・JAGES など複数コホート統合の現代的方法論。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -6314,13 +6323,14 @@
     "importance": "Yujiの将来の大規模国際共同研究の必須技術。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "プライバシー保護と因果推論の両立を、federated learning の枠組みで初めて systematic に実装。Differential privacy との統合も革新的。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①federated HR=0.74 vs 集中型 HR=0.73 と1%以内で一致（federated の妥当性実証）、②5カ国10機関 500万人スケールでの実装可能性、③effect heterogeneity I²=22% を可視化（地域差分析）、④Differential privacy 統合でプライバシー保護の数学的保証、⑤R/Python packages（federatedCausal、CausalFL）で実装可能、⑥summary statistics のみ共有でデータ転送量1/1000以下。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 多施設・国際共同研究におけるプライバシー保護型統合解析の現代的方法論を論じる導入で、本論文を「federated causal inference を5カ国10機関 500万人の心不全コホートで実装し、集中型解析と1%以内の一致性を達成した方法論的金字塔」として引用。 [discussion] 自身のTMM・JAGES・NDB 統合構想で federated causal inference を採用する妥当性を、本論文の effect heterogeneity 評価を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 多施設・国際共同研究におけるプライバシー保護型統合解析の現代的方法論を論じる導入で、本論文を「federated causal inference を5カ国10機関 500万人の心不全コホートで実装し、集中型解析と1%以内の一致性を達成した方法論的金字塔」として引用。 [discussion] 自身のTMM・JAGES・NDB 統合構想で federated causal inference を採用する妥当性を、本論文の effect heterogeneity 評価を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_01",
     "title": "Towards General Purpose Vision Foundation Models for Medical Image Analysis: An Experimental Study of DINOv2 on Radiology Benchmarks",
     "authors": "Baharoon M, Nezhad AS, Sun M, Lu D, Liu T, et al.",
-    "journal": "arXiv preprint, 2024年（最新版 v3）",
+    "journal": "arXiv preprint (IF=確認待ち), 2024年（最新版 v3）",
     "design": "ベンチマーク研究＋複数医療画像タスクでの DINOv2（Meta AI）vs SAM、CLIP、医療特化CNN比較。Radiology ベンチマーク で classification と segmentation を評価",
     "url": "https://arxiv.org/abs/2312.02366",
     "summary": "Meta AI の DINOv2（自己教師あり学習で事前学習された汎用視覚 foundation model）を医療画像解析に応用した実験的研究。Radiology ベンチマーク の複数タスクで、DINOv2 は fine-tuning なしの out-of-the-box でも高精度を達成し、SAM（Segment Anything Model）を疾患分類で凌駕。MAE などの他の自己教師あり学習手法も上回る性能を実証。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -6351,13 +6361,14 @@
     "importance": "事前学習モデル（DINOv2 ViT-L/14、Hugging Face で公開）を fine-tuning するだけで応用可能で、Yujiの研究室レベルでも即実装可能。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "DINOv2（自然画像で事前学習）を医療画像にトランスファーする実験的検証。SAM、MAE、CLIP との体系比較で各 foundation model の特性を整理した点が方法論的価値。Out-of-the-box 性能評価で encoder fine-tuning なしの実用性を実証。",
     "discovery": "①DINOv2 が SAM を疾患分類で凌駕（平均 AUC 差 +0.07）、②MAE は segmentation でのみ強み、DINOv2 はタスク横断で安定、③Out-of-the-box で実用精度（fine-tuning なしでも competitive）、④視覚特徴の階層的表現が医療領域に良く汎化、⑤分類と segmentation の両方で foundation model 化が成立、⑥Hugging Face で重み公開、研究室レベルで即実装可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 医療画像AIにおける汎用 foundation model の現代的可能性を論じる導入で、本論文を「DINOv2 を Radiology ベンチマーク で評価し、SAM を疾患分類で凌駕する out-of-the-box 性能を実証した先駆的研究（arXiv 2024）」として引用、自身の foundation model 採用の妥当性を主張。 [discussion] 自身の脳MRI・腹部CT解析の精度を、本論文の Out-of-the-box 性能を比較対照として論じ、日本人コホートでの再現性を考察。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 医療画像AIにおける汎用 foundation model の現代的可能性を論じる導入で、本論文を「DINOv2 を Radiology ベンチマーク で評価し、SAM を疾患分類で凌駕する out-of-the-box 性能を実証した先駆的研究（arXiv 2024）」として引用、自身の foundation model 採用の妥当性を主張。 [discussion] 自身の脳MRI・腹部CT解析の精度を、本論文の Out-of-the-box 性能を比較対照として論じ、日本人コホートでの再現性を考察。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_02",
     "title": "EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals",
     "authors": "Wang G, Liu W, He Y, Xu C, Hu L, Zhou Y, et al.",
-    "journal": "NeurIPS 2024（Conference on Neural Information Processing Systems）",
+    "journal": "NeurIPS 2024（Conference on Neural Information Processing Systems） (IF=確認待ち)",
     "design": "方法論論文＋大規模 EEG データ事前学習（複数オープン EEG データセット計1,000万エポック）＋下流タスク評価（運動、感情、睡眠ステージ分類）",
     "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/4540d267eeec4e5dbd9dae9448f0b739-Paper-Conference.pdf",
     "summary": "EEG（脳波）の自己教師あり事前学習Transformer モデル EEGPT を提案。contrastive loss と reconstruction loss を組み合わせ、spatio-temporal representation alignment で高 SNR な EEG 表現を獲得。複数の下流タスク（運動課題分類、感情認識、睡眠ステージ）で従来の CNN・手作り特徴量を凌駕。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -6388,13 +6399,14 @@
     "importance": "**少サンプル課題の救世主**として方法論的価値が極めて高い。NeurIPS 2024 という top conference で発表された手法で、査読時の方法論的妥当性も担保される。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "EEG 専用の Transformer foundation model を初めて大規模に実装。Spatio-temporal representation alignment という新しい事前学習タスク設計が革新的。1,000万エポックという大規模事前学習データの公開も研究コミュニティへの大きな貢献。",
     "discovery": "①EEGPT が下流タスク全般で CNN・手作り特徴量を凌駕、②Few-shot（n=50）で実用精度、③spatio-temporal alignment が SNR 改善に critical、④Sleep stage 分類で従来 SOTA 越え、⑤事前学習モデル GitHub 公開、⑥複数 EEG タスクへの汎化性確認。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] EEG解析における自己教師あり学習の現代的役割を論じる導入で、本論文を「EEGPT で1,000万エポックの大規模事前学習を実装し、複数下流タスクで既存手法を凌駕した方法論的標準（NeurIPS 2024）」として引用、自身のEEG解析の根拠とする。 [discussion] 自身の128ch EEG解析で EEGPT を採用する妥当性を、本論文の Few-shot 性能を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] EEG解析における自己教師あり学習の現代的役割を論じる導入で、本論文を「EEGPT で1,000万エポックの大規模事前学習を実装し、複数下流タスクで既存手法を凌駕した方法論的標準（NeurIPS 2024）」として引用、自身のEEG解析の根拠とする。 [discussion] 自身の128ch EEG解析で EEGPT を採用する妥当性を、本論文の Few-shot 性能を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_03",
     "title": "Privacy enhancing and generalizable deep learning with synthetic data for mediastinal neoplasm diagnosis",
     "authors": "Han Z, Zhang Y, Yang Q, Chen Z, et al.",
-    "journal": "npj Digital Medicine, 2024年",
+    "journal": "npj Digital Medicine (IF=確認待ち), 2024年",
     "design": "方法論＋多施設実証（中国・米国の縦隔CT n=12,000、合成データ生成と原データ vs 合成データ学習比較、membership inference attack によるプライバシー検証）",
     "url": "https://www.nature.com/articles/s41746-024-01290-7",
     "summary": "Diffusion model（DiffGuard）で生成した合成医療画像を、原画像の代替として深層学習モデル学習に利用するプライバシー保護型アプローチを縦隔腫瘍CT 1.2万症例で実証。合成データのみで学習しても原データ学習に匹敵する診断精度を達成し、原画像の施設外共有を不要に。Membership inference attack に対する resistance も向上、プライバシー safety を定量的に確保。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -6425,13 +6437,14 @@
     "importance": "npj Digital Medicine という top journal で実証された手法で、Yujiの将来の国際共同研究の中核技術になる可能性。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Membership inference attack による定量的プライバシー評価を組み込んだ点が方法論的に新規。合成データのみ学習で原データ学習と同等精度を達成した実証的価値。Cross-institution 汎化性の改善も予想外の好結果。",
     "discovery": "①合成データのみ学習で原データ学習と同等精度（AUC差 <0.02）、②Membership inference attack 耐性向上（攻撃成功率 45% → 8%）、③Cross-institution 汎化性改善、④縦隔腫瘍3タスクで一貫した結果、⑤コード公開で再現可能、⑥研究室レベルで実装可能（Stable Diffusion ベース）。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 医療画像研究におけるプライバシー保護と研究進展の両立を論じる導入で、本論文を「DiffGuard による合成データ学習で原データ学習と同等精度を達成し、Membership inference attack 耐性を 45% → 8% に改善した規範的研究（npj Digital Medicine 2024）」として引用。 [discussion] 自身のデータ共有戦略で合成画像を採用する妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 医療画像研究におけるプライバシー保護と研究進展の両立を論じる導入で、本論文を「DiffGuard による合成データ学習で原データ学習と同等精度を達成し、Membership inference attack 耐性を 45% → 8% に改善した規範的研究（npj Digital Medicine 2024）」として引用。 [discussion] 自身のデータ共有戦略で合成画像を採用する妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_04",
     "title": "Conformal Triage for Medical Imaging AI Deployment",
     "authors": "Olchanyi M, Schaar Mvd, Wang Y, Beam AL, Doshi-Velez F, et al.",
-    "journal": "medRxiv preprint, 2024年（Nature 系投稿中）",
+    "journal": "medRxiv preprint (IF=確認待ち), 2024年（Nature 系投稿中）",
     "design": "方法論＋胸部X線AI deployment 実証（n=1,000症例、conformal triage 閾値最適化、low-risk/high-risk/uncertain 三層分類）",
     "url": "https://www.medrxiv.org/content/10.1101/2024.02.09.24302543v1",
     "summary": "AI予測に「妥当な信頼区間」をつける conformal triage アルゴリズムを胸部X線AI deployment で実証。患者を low-risk・high-risk・uncertain の3群に分類、low-risk と high-risk には強い統計的保証（high PPV、high NPV）、uncertain は人間レビューに送る。誤陽性を 233（45%）→ 8（5%）に大幅削減、abstain（人間レビュー送り）は14%にとどまる。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -6462,13 +6475,14 @@
     "importance": "AI モデルの「全体精度 AUC=0.85」報告だけではなく「この症例の予測は不確実」という症例レベルの透明性を提供することで、臨床現場での安全な意思決定を可能にする。FDA、PMDA の AI ガイドラインも conformal 予測 を推奨し始めており、規制当局承認を見据えた AI 開発の事実上の標準になりつつある。",
     "originality": "Triage（患者の振り分け）という臨床思考を conformal 予測 に統合した点が新規。3群分類で診断意思決定をシンプル化し、臨床現場での実装を現実的にした。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①誤陽性 233 → 8（45% → 5%）大幅削減、②abstain 率 14% にとどまる（実用的負担）、③Low-risk・high-risk 群に統計的保証、④Out-of-distribution でも保証維持、⑤Distribution-free で実装容易、⑥R/Python packages（mapie、conformal-予測）で実装可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 臨床AI deployment の安全性確保の現代的方法論を論じる導入で、本論文を「conformal triage を胸部X線AI で実装し、誤陽性を 45% → 5% に大幅削減した規範的研究（medRxiv 2024、Nature 系投稿中）」として引用。 [discussion] 自身のAIモデルの不確実性評価を本論文の triage アルゴリズムを採用する妥当性として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 臨床AI deployment の安全性確保の現代的方法論を論じる導入で、本論文を「conformal triage を胸部X線AI で実装し、誤陽性を 45% → 5% に大幅削減した規範的研究（medRxiv 2024、Nature 系投稿中）」として引用。 [discussion] 自身のAIモデルの不確実性評価を本論文の triage アルゴリズムを採用する妥当性として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_05",
     "title": "A deep-learning retinal aging biomarker for cognitive decline and incident 認知症 (RetiPhenoAge)",
     "authors": "Sim R, Chiang JN, Tham YC, et al.",
-    "journal": "Alzheimer's & 認知症, 2025年",
+    "journal": "Alzheimer's & 認知症 (IF=確認待ち), 2025年",
     "design": "観察コホート（UK Biobank n=44,978、retinal images + cognitive assessment、12年認知症発症追跡）",
     "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.14601",
     "summary": "網膜画像から PhenoAge（複合的生物学的年齢）を予測する deep learning モデル RetiPhenoAge を構築、UK Biobank 4.5万人で5年認知機能低下と12年認知症発症を予測することを実証した規範的研究。RetiPhenoAge は脳小血管疾患・脳萎縮の MRI 所見、aging 関連プラズマ proteomic シグネチャと密接に関連。眼底検査だけで脳健康を評価可能にする画期的研究で、Yujiの研究で「目から脳・身体機能を評価する」非侵襲的バイオマーカーとして応用可能。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -6500,13 +6514,14 @@
     "importance": "Yujiの研究で「網膜画像 → 脳・身体機能予測」が新しい次元として加わる。眼科検診データから脳健康を評価する道筋を開く、公衆衛生的にも重要な方向性。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "網膜由来の PhenoAge という「臓器間予測」のフレームを確立。脳MRI、proteomic という複数のmodalityとの関連を同時に検証した点も新規。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①RetiPhenoAge が5年認知機能低下を予測、②12年認知症発症をハザード比で予測、③脳小血管疾患・脳萎縮の MRI 所見と密接に関連、④Aging 関連プラズマ proteomic シグネチャと相関、⑤UK Biobank 45,000人の大規模 検証、⑥眼底撮影だけで脳健康評価が可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 非侵襲的な脳健康バイオマーカーとしての網膜画像の現代的可能性を論じる導入で、本論文を「UK Biobank 4.5万人で RetiPhenoAge が5年認知機能低下と12年認知症発症を予測することを実証した規範的研究（Alzheimer's & 認知症 2025）」として引用。 [discussion] 自身の脳・身体機能統合評価で網膜画像を加える妥当性を本論文を比較対照として論じ、日本人での再現性研究の必要性を提案。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 非侵襲的な脳健康バイオマーカーとしての網膜画像の現代的可能性を論じる導入で、本論文を「UK Biobank 4.5万人で RetiPhenoAge が5年認知機能低下と12年認知症発症を予測することを実証した規範的研究（Alzheimer's & 認知症 2025）」として引用。 [discussion] 自身の脳・身体機能統合評価で網膜画像を加える妥当性を本論文を比較対照として論じ、日本人での再現性研究の必要性を提案。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_06",
     "title": "Prediction of Alzheimer's disease progression within 6 years using speech: A novel approach leveraging language models",
     "authors": "Amini S, Hao B, Zhang L, Song M, et al.",
-    "journal": "Alzheimer's & 認知症, 2024年",
+    "journal": "Alzheimer's & 認知症 (IF=確認待ち), 2024年",
     "design": "前向き観察コホート（Framingham Heart Study n=166、自由会話 transcripts + 認知機能評価、6年Alzheimer's進行追跡）",
     "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.13886",
     "summary": "Framingham Heart Study の MCI 患者166人の自由会話 transcripts に大規模言語モデル（large language models, LLMs）を適用し、6年以内のAlzheimer's進行を 78% 以上の精度で予測した重要な研究。AI speech analysis system が認知テスト transcripts のパターンから将来の認知低下を予測可能であることを実証。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -6536,13 +6551,14 @@
     "importance": "Yujiの研究で認知機能評価が「検査来訪 30分」から「会話 5分」に革命化される可能性。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "大規模言語モデル（LLMs）の臨床応用としての先駆的研究。Framingham Heart Study という long-term コホート の transcripts を活用した点も新規。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①AI speech analysis system が 78%以上の精度で6年Alzheimer's進行を予測、②標準臨床モデルを上回る精度、③言語的特徴（semantic coherence、syntactic complexity、word retrieval failure）が主要予測因子、④non-invasive・低コストな評価手段として実装可能性証明、⑤Framingham Heart Study cohortで外的妥当性、⑥LLMs ベースで研究室レベルでの応用可能。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 認知機能スクリーニングにおける speech AI の現代的可能性を論じる導入で、本論文を「Framingham Heart Study で AI speech analysis が6年Alzheimer's進行を 78% 以上の精度で予測することを実証した規範的研究（Alzheimer's & 認知症 2024）」として引用。 [discussion] 自身の認知機能評価方法を本論文の speech-based screening と比較し、評価効率と精度のtradeoff を論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 認知機能スクリーニングにおける speech AI の現代的可能性を論じる導入で、本論文を「Framingham Heart Study で AI speech analysis が6年Alzheimer's進行を 78% 以上の精度で予測することを実証した規範的研究（Alzheimer's & 認知症 2024）」として引用。 [discussion] 自身の認知機能評価方法を本論文の speech-based screening と比較し、評価効率と精度のtradeoff を論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_07",
     "title": "Accurate structure 予測 of biomolecular interactions with AlphaFold 3",
     "authors": "Abramson J, Adler J, Dunger J, Evans R, Green T, Hassabis D, Jumper J, et al. (Google DeepMind & Isomorphic Labs)",
-    "journal": "Nature, 2024年5月",
+    "journal": "Nature (IF=確認待ち), 2024年5月",
     "design": "方法論論文＋包括的ベンチマーク（タンパク質-タンパク質、タンパク質-リガンド、タンパク質-核酸、抗体-抗原相互作用の予測精度評価）",
     "url": "https://www.nature.com/articles/s41586-024-07487-w",
     "summary": "AlphaFold 3 は diffusion-based architecture で、タンパク質単体だけでなくタンパク質-リガンド、タンパク質-核酸、抗体-抗原など全ての生体分子相互作用の構造を予測する革新的モデル。タンパク質-リガンド予測で既存 docking tools を凌駕、タンパク質-核酸予測で核酸特化予測器を凌駕、抗体-抗原予測精度も大幅改善。AlphaFold Server で公開され、研究者は無料で使用可能。Yujiの拡張軸（オミクス × 筋）の構造生物学的基盤として極めて重要で、サルコペニア関連タンパク質（myostatin、GDF11、IGF-1）の相互作用予測に直接応用可能。",
@@ -6574,13 +6590,14 @@
     "importance": "サルコペニアの薬物治療は長年難しかったが、AlphaFold 3 の構造予測で新規 drug target が開拓される可能性。Yujiの拡張軸（オミクス × 筋）の構造生物学版として重要、特に山田研究室との共同研究と接続する potential が高い。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "Diffusion-based architecture の採用で全生体分子相互作用を統一的に扱う設計が革新的。AlphaFold Server による無料アクセス公開で、研究コミュニティへの impact が極めて大きい。",
     "discovery": "①タンパク質-他分子相互作用で既存手法比 50% 以上の精度改善、②一部相互作用カテゴリで精度倍増、③タンパク質-リガンド予測で SOTA docking tools 凌駕、④タンパク質-核酸予測で核酸特化予測器凌駕、⑤抗体-抗原予測精度大幅改善、⑥AlphaFold Server で無料公開、⑦Isomorphic Labs が製薬企業と連携し新薬開発進行中。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 構造生物学的アプローチによる drug discovery の現代的可能性を論じる導入で、本論文を「AlphaFold 3 が diffusion-based architecture で全生体分子相互作用の構造を統一的に予測し、既存手法比 50% 以上の精度改善を達成した規範的研究（Nature 2024）」として引用。 [discussion] 自身のサルコペニア研究で構造生物学的視点を加える妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 構造生物学的アプローチによる drug discovery の現代的可能性を論じる導入で、本論文を「AlphaFold 3 が diffusion-based architecture で全生体分子相互作用の構造を統一的に予測し、既存手法比 50% 以上の精度改善を達成した規範的研究（Nature 2024）」として引用。 [discussion] 自身のサルコペニア研究で構造生物学的視点を加える妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_08",
     "title": "Continual Learning in Medical Imaging from Theory to Practice: A Survey and Practical Analysis",
     "authors": "Verma P, Andrade J, Reza R, Chitnis P, Khan MM, et al.",
-    "journal": "arXiv preprint, 2024年5月",
+    "journal": "arXiv preprint (IF=確認待ち), 2024年5月",
     "design": "システマティックサーベイ＋実証分析（複数の continual learning 手法を医療画像分類タスクで体系比較、catastrophic forgetting 評価）",
     "url": "https://arxiv.org/html/2405.13482v1",
     "summary": "Continual Learning（CL）の医療画像応用に関する包括的サーベイ＋実証分析論文。Catastrophic forgetting（過去の知識を忘れる現象）への対策手法（EWC、Replay、LoRA-Adapter など）を体系比較し、医療画像 deployment の現実的課題（病院間差、機器更新、新疾患出現）への適応性を評価。AI 長期運用の必須技術で、Yujiの将来の clinical AI（フレイル予測 etc.）の sustainability に直結する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -6610,13 +6627,14 @@
     "importance": "AI モデルを deploy した後の長期運用に必須。Yujiの将来の clinical AI（フレイル予測 etc.）の sustainability に直結。10年スパンで運用するなら本手法なしでは精度低下が深刻で、deployment fail に至る。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "医療画像領域の CL を体系整理した包括的サーベイとして方法論的価値が高い。実証分析で各手法の長短を比較した点も実用的。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Catastrophic forgetting 防止には replay と architectural 手法が有効、②LoRA-Adapter 系が現代の主流、③MLOps integration、規制対応が deployment の critical bottleneck、④Mayo Clinic 等で実 deployment 例が増加、⑤手法カテゴリ別の体系比較で実用上の選択指針を提示、⑥オープンソース実装が進展。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] Clinical AI の長期運用における data drift と continual learning の重要性を論じる導入で、本論文を「医療画像 continual learning を体系整理し、LoRA-Adapter 系の優位性を実証分析した規範的サーベイ（arXiv 2024）」として引用。 [discussion] 自身の AI モデルの長期運用戦略を本論文の手法選択を採用する妥当性として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] Clinical AI の長期運用における data drift と continual learning の重要性を論じる導入で、本論文を「医療画像 continual learning を体系整理し、LoRA-Adapter 系の優位性を実証分析した規範的サーベイ（arXiv 2024）」として引用。 [discussion] 自身の AI モデルの長期運用戦略を本論文の手法選択を採用する妥当性として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_09",
     "title": "Towards Causal Representation Learning",
     "authors": "Schölkopf B, Locatello F, Bauer S, Ke NR, Kalchbrenner N, Goyal A, Bengio Y",
-    "journal": "Proceedings of the IEEE, 2021年（2024年応用拡張）",
+    "journal": "Proceedings of the IEEE (IF=確認待ち), 2021年（2024年応用拡張）",
     "design": "方法論レビュー＋複数応用領域の議論（医療、自然言語、ロボティクス、感覚運動）",
     "url": "https://arxiv.org/abs/2102.11107",
     "summary": "高次元観察データから「真の causal variable」を分離する causal representation learning の理論的フレームワークを Schölkopf らが提唱した規範的論文。高次元 omics・imaging・wearable signal などから health アウトカム への因果関係を推論する際の理論基盤を提供。VAE と因果推論の融合、disentanglement、independent causal mechanisms の概念を体系化。Yujiの拡張軸（オミクス × 身体機能）の高次元因果推論手法として価値が極めて高く、後続の応用研究の理論的支柱。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -6646,13 +6664,14 @@
     "importance": "Yujiの拡張軸でオミクス × 筋・脳・身体機能を扱う際、伝統的 PCA や 回帰 では捉えられない causal factor を identify 可能。Schölkopf らの規範的論文として、後続のすべての causal representation learning 研究の理論的基盤。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "Variational Autoencoder と因果推論の融合という発想を体系化。Disentanglement、IC mechanism、modular causal models の概念を統合的に整理した点が革新的。",
     "discovery": "①causal representation learning が generalization で従来法を上回るポテンシャル、②Out-of-distribution 性能の改善、③因果的解釈性の向上、④Disentanglement と causal identifiability の理論的整理、⑤医療・自然言語・ロボティクスへの応用展望、⑥後続研究のための理論的フレームワーク確立。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 高次元 omics・imaging・wearable データからの因果推論の現代的手法を論じる導入で、本論文を「Schölkopf らが causal representation learning の理論的フレームワークを体系化した規範的論文（Proceedings of IEEE 2021）」として引用。 [discussion] 自身の高次元データ解析で causal representation learning を採用する妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 高次元 omics・imaging・wearable データからの因果推論の現代的手法を論じる導入で、本論文を「Schölkopf らが causal representation learning の理論的フレームワークを体系化した規範的論文（Proceedings of IEEE 2021）」として引用。 [discussion] 自身の高次元データ解析で causal representation learning を採用する妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260509_sat_10",
     "title": "Federated Learning for Medical Image Classification: A Comprehensive Benchmark",
     "authors": "Wu Y, Zeng D, Liang Z, Liu Y, et al.",
-    "journal": "arXiv preprint, 2024年4月",
+    "journal": "arXiv preprint (IF=確認待ち), 2024年4月",
     "design": "包括的ベンチマーク（複数 federated learning algorithms × 医療画像分類データセット、システム性能評価）",
     "url": "https://arxiv.org/html/2504.05238v1",
     "summary": "医療画像分類における federated learning（FL）の包括的ベンチマーク研究。複数の FL アルゴリズム（FedAvg、FedProx、Scaffold など）を multi-center 医療画像データセットで体系比較、通信コストと計算効率も評価。プライバシー保護下での共同学習で集中型学習に近い精度を達成。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -6684,13 +6703,14 @@
     "importance": "Yujiの将来の論文で日本人 specific データの国際的活用が法的・運用的に可能になる、transformative な技術。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "医療画像分類における FL の体系的ベンチマーク研究として方法論的価値が高い。複数アルゴリズムの head-to-head 比較で実用上の選択指針を提供。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①FL アルゴリズム間の性能差を体系整理、②Scaffold が異質性の高いデータで安定、③集中型学習に近い精度（差数%以内）を多くのタスクで達成、④Communication cost が集中型より大幅小、⑤Isolated 学習からは大幅改善、⑥複数医療画像分類タスクで外的妥当性。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 多施設・国際共同医療AI研究の現代的方法論を論じる導入で、本論文を「医療画像分類における federated learning の包括的ベンチマーク（arXiv 2024）」として引用。 [discussion] 自身のTMM・JAGES 統合構想で federated learning を採用する妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 多施設・国際共同医療AI研究の現代的方法論を論じる導入で、本論文を「医療画像分類における federated learning の包括的ベンチマーク（arXiv 2024）」として引用。 [discussion] 自身のTMM・JAGES 統合構想で federated learning を採用する妥当性を本論文を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_01",
     "title": "OMICmAge: An integrative multi-omics approach to quantify biological age with electronic medical records",
     "authors": "Chen Q, Yu D, Beydoun MA, Kuo PL, et al.",
-    "journal": "Nature Aging, 2025年（前身は Aging 2023年掲載、PMC10614756）",
+    "journal": "Nature Aging (IF=確認待ち), 2025年（前身は Aging 2023年掲載、PMC10614756）",
     "design": "大規模多オミクス統合解析（電子カルテ n≈31,000、proteomic と metabolomic を epigenetic biomarker proxy 経由で統合した biological aging clock の構築。Discovery コホート = MGB-ABC（n=3,451）、検証 コホート = TruDiagnostic（n=12,666）の二段階設計）",
     "url": "https://www.nature.com/articles/s43587-026-01073-7",
     "summary": "電子カルテ（EMR、Electronic Medical Records）から得られる約3.1万人分の臨床指標を基盤に、proteomic（タンパク質）と metabolomic（メタボライト）を epigenetic biomarker proxy 経由で統合する新しい biological aging clock OMICmAge を構築した規範的研究。Discovery コホート（MGB-ABC、n=3,451）と 検証 コホート（TruDiagnostic、n=12,666）の二段階で慢性疾患・全原因死亡との強い関連を実証し、既存の GrimAge を含む単一オミクス clock を凌駕する予測精度を達成した。EMR clinical proxy という発想で proteomic・metabolomic を直接測定しなくても OMICmAge を計算できる scalable な設計が画期的。",
@@ -6720,13 +6740,14 @@
     "importance": "Yujiの拡張軸（TMM × オミクス × 身体機能）に直接接続する規範的研究。EMR proxy で実装可能なため、TMM や JAGES のデータでも OMICmAge を Japanese-specific に再構築できる現実的な可能性が開ける。Nature Aging に掲載という top-tier 評価で、方法論的妥当性も国際的に担保。",
     "originality": "Multi-omics（proteomic + metabolomic + epigenetic）を EMR proxy 経由で統合した発想が革新的。Scalable な実装で大規模コホートでの応用を可能にし、aging research を「research grade」から「clinical grade」へ橋渡しした点で学術的・臨床的双方の意義が大きい。",
     "discovery": "①Discovery（MGB-ABC n=3,451）と 検証（TruDiagnostic n=12,666）の両方で慢性疾患・全原因死亡を強く予測、②既存 biomarker（GrimAge、PhenoAge を含む）と同等以上の精度、③EMR clinical proxy で proteomic・metabolomic 直接測定不要の scalable 設計、④CVD・糖尿病・ガン・認知症の multi-disease prognostic indicator として機能、⑤多領域にわたる予測能で universal aging biomarker としての位置付け、⑥電子カルテ31,000人での大規模実装可能性を実証、⑦商用 DNAm panel（TruDiagnostic）で外的妥当性確認、⑧米国・欧州 コホート の cross-検証 で人種・地域汎化性も部分的に確認、⑨年齢関連疾患の risk stratification の精緻化、⑩aging intervention trial の biomarker アウトカム として実用化フェーズ。",
-    "citation": "[introduction] 多オミクス統合の biological aging clock を論じる導入で、本論文を「proteomic + metabolomic を epigenetic proxy 経由で統合し、Discovery（MGB-ABC n=3,451）と 検証（TruDiagnostic n=12,666）の二段階で既存単一オミクス clock を凌駕する予測精度を実証した OMICmAge を確立した規範的研究（Nature Aging 2025）」として引用し、自身の TMM × オミクス研究の方法論的根拠とする。 [discussion] 自身の Japanese-specific aging clock 構築の妥当性を本論文の cross-検証 結果（米国・欧州での外的妥当性）と比較し、東アジア人特有の DNA methylation calibration の必要性を論じる。"
+    "citation": "[introduction] 多オミクス統合の biological aging clock を論じる導入で、本論文を「proteomic + metabolomic を epigenetic proxy 経由で統合し、Discovery（MGB-ABC n=3,451）と 検証（TruDiagnostic n=12,666）の二段階で既存単一オミクス clock を凌駕する予測精度を実証した OMICmAge を確立した規範的研究（Nature Aging 2025）」として引用し、自身の TMM × オミクス研究の方法論的根拠とする。 [discussion] 自身の Japanese-specific aging clock 構築の妥当性を本論文の cross-検証 結果（米国・欧州での外的妥当性）と比較し、東アジア人特有の DNA methylation calibration の必要性を論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_02",
     "title": "DunedinPACE, a DNA methylation biomarker of the pace of aging",
     "authors": "Belsky DW, Caspi A, Corcoran DL, Sugden K, Poulton R, Arseneault L, Baccarelli A, Moffitt TE",
-    "journal": "eLife, 2022年（複数 検証 2024-2025）",
+    "journal": "eLife (IF=確認待ち), 2022年（複数 検証 2024-2025）",
     "design": "縦断観察コホート（Dunedin Multidisciplinary Health and Development Study、n=1,037、20-45歳の19年間追跡で生物学的 aging 速度を学習）＋複数 コホート での外的検証（Understanding Society、E-Risk Study、HRS、NHANES）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8853656/",
     "summary": "DunedinPACE は1人あたりの aging 速度（年あたり何年分老化しているか）を DNA methylation から推定する第3世代 epigenetic clock の規範的論文。Dunedin Study（NZ、n=1,037）の20-45歳の19年間追跡データで、肺機能・腎機能・心血管・代謝・脳・身体機能・歯・聴覚・視覚など19の生理学的指標から aging pace を学習した点が画期的。GrimAge とは異なり「介入応答性」が高く、身体活動・栄養・睡眠などの介入後 4-8週間で deceleration を検出可能。複数の独立 コホート（HRS、ELSA、TMM、SHARE等）で全原因死亡・認知症・CVD への予測能が確認されており、aging research の事実上の標準。",
@@ -6755,13 +6776,14 @@
     "importance": "**「介入が老化速度を遅らせるか」を直接定量化可能**で、Lancet Healthy Longevity・Nature Aging などのトップ誌での investment value が極めて高い。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "「pace of aging（老化速度）」という concept で static biological age とは異なる動的指標を確立した点が方法論的に革新的。19の生理学的指標から学習することで multi-system aging の包括的捕捉を可能にした。介入研究での適用可能性を実証し、aging biomarker の臨床応用の paradigm shift を起こした。",
     "discovery": "①Dunedin 19年追跡で19指標から aging speed を学習、②physical activity 介入で6か月以内 β=-0.03〜-0.05 の deceleration、③GrimAge より介入応答性で明確に優位（GrimAge は1年でも detect 困難）、④CVD・認知症・mortality を強く予測、⑤複数 コホート（Dunedin、Understanding Society、E-Risk、HRS、NHANES、TMM 等）で外的妥当性、⑥1.0 = 年1歳老化のシンプル解釈軸、⑦双子 コホート で遺伝寄与率約60%、environmental 40%、⑧介入の modifiable 要素が大きいことを実証、⑨低コスト DNAm panel で測定可能（Illumina EPIC array で約100ドル/サンプル）、⑩Aging Cell・Nature Aging のトップ誌で標準採用。",
-    "citation": "[introduction] 介入応答性のある biological aging biomarker としての DunedinPACE の重要性を論じる導入で、本論文を「Dunedin Study 19年追跡で19指標から aging pace を学習し、身体活動 介入で6か月以内に β=-0.03〜-0.05 の deceleration を検出した規範的研究（eLife 2022）」として引用し、自身の介入研究の biomarker 選択の根拠とする。 [discussion] 自身の介入研究結果における DunedinPACE 変化を本論文の 効果サイズ（身体活動 介入で β=-0.03〜-0.05）と比較し、Japanese コホート での介入応答性の再現性を論じる。"
+    "citation": "[introduction] 介入応答性のある biological aging biomarker としての DunedinPACE の重要性を論じる導入で、本論文を「Dunedin Study 19年追跡で19指標から aging pace を学習し、身体活動 介入で6か月以内に β=-0.03〜-0.05 の deceleration を検出した規範的研究（eLife 2022）」として引用し、自身の介入研究の biomarker 選択の根拠とする。 [discussion] 自身の介入研究結果における DunedinPACE 変化を本論文の 効果サイズ（身体活動 介入で β=-0.03〜-0.05）と比較し、Japanese コホート での介入応答性の再現性を論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_03",
     "title": "Proteomic aging clock predicts mortality and risk of common age-related diseases in diverse populations",
     "authors": "Argentieri MA, Xiao S, Bennett D, Winchester L, Nevado-Holgado AJ, Ghose U, Keshavan A, Lipsitch M, et al.",
-    "journal": "Nature Medicine, 2024年",
+    "journal": "Nature Medicine (IF=確認待ち), 2024年",
     "design": "大規模プロテオームコホート（UK Biobank n=53,029、Olink Explore 3072 で2,920タンパク測定、最大17年follow-up）＋多人種validation（China Kadoorie Biobank、Finnish FINRISK、計 n>120,000）。 Cox 回帰で20+の年齢関連疾患を予測能評価",
     "url": "https://www.nature.com/articles/s41591-024-03164-7",
     "summary": "UK Biobank 5.3万人の血漿2,920タンパクから proteomic aging clock を構築し、最大17年追跡で全原因死亡と20+の年齢関連疾患（CVD、ガン、認知症、Parkinson、糖尿病、フレイル等）を強く予測した規範的研究。多人種コホート（中国 Kadoorie、フィンランド FINRISK）でも汎化性が確認され、合計12万人超での外的妥当性を達成。GDF15、PTGDS、NTproBNP など老化関連タンパクが上位寄与因子で、これらは脳・心血管・筋への老化シグナルを統合的に反映する。proteomic age acceleration +1SD で全原因死亡 HR=1.34（1.31-1.38）、認知症 HR=1.23、Parkinson HR=1.21 と 効果サイズ が大きく、APOE genotype と同等以上の予測能を proteomic から取得した点が画期的。Yujiの拡張軸の中核となる proteomic biomarker 基盤で、TMM proteome データへの直接展開可能性が高い。",
@@ -6790,13 +6812,14 @@
     "importance": "Yujiの拡張軸（TMM プロテオーム + 身体機能）と完全に一致する核心 reference。Nature Medicine 級の top-tier 論文で実証された手法を Japanese-specific に拡張する道筋が明確で、Lancet Healthy Longevity への直接ルートとなる。",
     "originality": "UK Biobank 5.3万人 × 2,920タンパク × 17年追跡という前例のない大規模 proteomic 研究で、aging research の paradigm を一段階押し上げた。多人種validation で人種特異性も検証した点が方法論的厳密性を担保し、universal applicability の主張を堅固にしている。",
     "discovery": "①proteomic age +1SD で全原因死亡 HR=1.34（95%CI 1.31-1.38、効果サイズ 大）、②認知症 HR=1.23、Parkinson HR=1.21、CVD HR=1.27、③GDF15、PTGDS、NTproBNP が上位寄与因子（脳・心血管・筋シグナルの統合）、④多人種で robust（中国 1.31、フィンランド 1.36 vs UK 1.34）、⑤UK Biobank 5.3万人 × 17年追跡という前例のない規模、⑥20+ の年齢関連疾患を一論文で統合評価、⑦APOE genotype と同等以上の予測能を proteomic から取得、⑧サルコペニア関連 myokine（GDF11、follistatin、IGF-1）も Olink panel に含有、⑨Olink panel が商用化され他コホートでも展開可能、⑩薬物治療標的探索の基盤として translational potential。",
-    "citation": "[introduction] 次世代 aging biomarker としての proteomic clock を論じる導入で、本論文を「UK Biobank 5.3万人 × 17年追跡で proteomic age が全原因死亡 HR=1.34、認知症 HR=1.23、Parkinson HR=1.21 を予測することを実証し、多人種で外的妥当性を達成した規範的研究（Nature Medicine 2024）」として引用し、自身の TMM proteome 解析の方法論的根拠とする。 [discussion] 自身の Japanese-specific proteomic clock 構築結果を本論文の 効果サイズ（全原因死亡 HR=1.34）と比較し、東アジア人での再現性と特異性を論じる。"
+    "citation": "[introduction] 次世代 aging biomarker としての proteomic clock を論じる導入で、本論文を「UK Biobank 5.3万人 × 17年追跡で proteomic age が全原因死亡 HR=1.34、認知症 HR=1.23、Parkinson HR=1.21 を予測することを実証し、多人種で外的妥当性を達成した規範的研究（Nature Medicine 2024）」として引用し、自身の TMM proteome 解析の方法論的根拠とする。 [discussion] 自身の Japanese-specific proteomic clock 構築結果を本論文の 効果サイズ（全原因死亡 HR=1.34）と比較し、東アジア人での再現性と特異性を論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_04",
     "title": "Identifying genetic determinants of サルコペニア-related traits: a Mendelian randomization study of druggable genes",
     "authors": "Wu W, Tian X, Lin Z, Yan Y, et al.",
-    "journal": "Metabolism: Clinical and Experimental, 2024年",
+    "journal": "Metabolism: Clinical and Experimental (IF=確認待ち), 2024年",
     "design": "two-sample Mendelian randomization（UK Biobank GWAS sumstats、握力 n=461,089、appendicular lean mass n=450,243、15,944 druggable genes を体系的にスクリーニング、Bayesian colocalization で6遺伝子を最終確認）",
     "url": "https://www.metabolismjournal.com/article/S0026-0495(24)00221-X/fulltext",
     "summary": "UK Biobank の サルコペニア 関連形質（握力、appendicular lean mass）GWAS sumstats（n=461,089）と druggable genome 15,944遺伝子の two-sample MR を実施し、BORCS7・PM20D1・NUCKS1・UQCC1 を サルコペニア 形質に対する causal druggable target として同定した規範的研究。さらに Bayesian colocalization で HP・HLA-DRA・MAP3K3・MFGE8・COL15A1・AURKA の6遺伝子を最終確認。Yujiの拡張軸（GWAS × 筋・身体機能）の方法論的標準で、将来の薬物標的探索の基礎。サルコペニア 治療薬開発が長年困難（myostatin inhibitor の臨床試験頓挫）だった分野に、druggable genome MR という新しい突破口を提示した点で translational impact が大きい。山田研究室との共同研究で前臨床評価へつながる可能性も高い。",
@@ -6826,13 +6849,14 @@
     "importance": "Yujiの拡張軸（GWAS × 筋）の方法論的中核となる規範的研究。BORCS7・PM20D1・NUCKS1・UQCC1 という具体的 target 提示で、translational research の道筋を開く。山田研究室との共同研究で前臨床評価につながる可能性も高い。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "Druggable genome 全体（15,944遺伝子）を体系的にMR スクリーニングした初の大規模研究で、network medicine と pharmacogenomics の融合という現代的アプローチを サルコペニア 領域に持ち込んだ点が画期的。サルコペニア 治療薬開発の translational pipeline を構築した方法論として後続研究の基盤となる。",
     "discovery": "①BORCS7・PM20D1・NUCKS1・UQCC1 が サルコペニア に causal、②UK Biobank n=461,089 の大規模MR、③Pathway enrichment で energy metabolism・autophagy・cell cycle regulation が上位、④複数 sensitivity analyses（MR-Egger、weighted median、MR-PRESSO）で robust、⑤druggable genome 15,944遺伝子の体系的スクリーニング、⑥Bayesian colocalization で HP・HLA-DRA・MAP3K3・MFGE8・COL15A1・AURKA の6遺伝子最終確認、⑦BORCS7・PM20D1 は myokine pathway 上流で myostatin 経路と独立、⑧translational pipeline の構築可能性、⑨MFGE8 は FAP（fibro-adipogenic progenitor）関連で細胞老化と接続、⑩薬物治療開発の新たな paradigm を提示。",
-    "citation": "[introduction] サルコペニア治療薬開発における druggable genome MR の現代的役割を論じる導入で、本論文を「UK Biobank 46万人で druggable genome 15,944遺伝子のMRから BORCS7・PM20D1 等を causal target として同定し、Bayesian colocalization で HP・HLA-DRA など6遺伝子を最終確認した規範的研究（Metabolism 2024）」として引用し、自身の Japanese MR 研究の方法論的根拠とする。 [discussion] 自身の BBJ MR 結果と本論文の UK Biobank 結果を比較し、東アジア人特異的な druggable target の存在を論じ、translational research への接続を提案。"
+    "citation": "[introduction] サルコペニア治療薬開発における druggable genome MR の現代的役割を論じる導入で、本論文を「UK Biobank 46万人で druggable genome 15,944遺伝子のMRから BORCS7・PM20D1 等を causal target として同定し、Bayesian colocalization で HP・HLA-DRA など6遺伝子を最終確認した規範的研究（Metabolism 2024）」として引用し、自身の Japanese MR 研究の方法論的根拠とする。 [discussion] 自身の BBJ MR 結果と本論文の UK Biobank 結果を比較し、東アジア人特異的な druggable target の存在を論じ、translational research への接続を提案。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_05",
     "title": "Exploring causal effects of サルコペニア on risk and progression of Parkinson disease by Mendelian randomization",
     "authors": "Liu Y, Zhang H, Wang F, Zhang Y, Lu J, Chen S, et al.",
-    "journal": "npj Parkinson's Disease, 2024年",
+    "journal": "npj Parkinson's Disease (IF=確認待ち), 2024年",
     "design": "two-sample Mendelian randomization（UK Biobank の握力 n=461,089 / appendicular lean mass n=450,243 GWAS と Parkinson 病 GWAS n=482,730 の接続、polygenic score 検証、pathway enrichment、MR Steiger test で reverse causation を排除）",
     "url": "https://www.nature.com/articles/s41531-024-00782-3",
     "summary": "サルコペニア関連形質（握力、appendicular lean mass）が Parkinson 病発症・進行に causal に影響するかを two-sample MR で検証した重要な研究。低握力（per SD decrease）が Parkinson 発症に causal な OR=1.10-1.15、polygenic score 検証 で再確認、pathway enrichment で機序的妥当性も解明。MR Steiger test で reverse causation（PD → サルコペニア）も否定。Yujiの研究テーマ（脳と筋の統合）と直接重なる重要論文で、論文 introduction の central citation 候補。",
@@ -6863,13 +6887,14 @@
     "importance": "論文の introduction で central citation となる規範的研究。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "サルコペニア → Parkinson の causal direction を初めて MR で実証した点が革新的。Pathway enrichment で neuromuscular junction・mitochondrial・autophagy という共通機序を解明した点も新規で、translational implication が大きい。",
     "discovery": "①低握力 +1SD で Parkinson OR=1.10-1.15、②appendicular lean mass の効果は弱い（筋量より筋機能が重要、Yuji 博士論文と一致）、③Pathway enrichment で neuromuscular junction・mitochondrial function・autophagy が上位、④Reverse causation を MR Steiger test で否定、⑤UK Biobank n=46万の大規模MR、⑥多遺伝子スコア approach で再検証、⑦neuromuscular system が共通病態基盤として確立、⑧mitochondrial dysfunction が両病態の交差点、⑨autophagy 機能低下が共有 mechanism、⑩臨床的には早期サルコペニア介入が Parkinson 予防に効く可能性を示唆。",
-    "citation": "[introduction] サルコペニアと Parkinson の因果関係を論じる導入で、本論文を「UK Biobank 46万人 MR で低握力が Parkinson 発症に causal（OR=1.10-1.15）であることを実証し、neuromuscular junction・mitochondrial dysfunction・autophagy が共通病態として pathway enrichment で同定された規範的研究（npj Parkinson's Disease 2024）」として引用、Yuji の研究テーマの causal foundation。 [discussion] 自身の握力・身体機能と PD risk の解析結果を本論文の OR=1.10-1.15 と比較し、Japanese-specific な 効果サイズ と pathway enrichment の差異を論じる。"
+    "citation": "[introduction] サルコペニアと Parkinson の因果関係を論じる導入で、本論文を「UK Biobank 46万人 MR で低握力が Parkinson 発症に causal（OR=1.10-1.15）であることを実証し、neuromuscular junction・mitochondrial dysfunction・autophagy が共通病態として pathway enrichment で同定された規範的研究（npj Parkinson's Disease 2024）」として引用、Yuji の研究テーマの causal foundation。 [discussion] 自身の握力・身体機能と PD risk の解析結果を本論文の OR=1.10-1.15 と比較し、Japanese-specific な 効果サイズ と pathway enrichment の差異を論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_06",
     "title": "A causal relationship between サルコペニア and cognitive impairment: A Mendelian randomization study",
     "authors": "Wang H, Li L, Chen Z, Wei Y, Zhang T, Liu J, et al.",
-    "journal": "PLOS One, 2024年",
+    "journal": "PLOS One (IF=確認待ち), 2024年",
     "design": "two-sample Mendelian randomization（UK Biobank GWAS sumstats、握力・歩行速度・appendicular lean mass × cognitive function、性別層別解析、複数 sensitivity analyses で頑健性確認）",
     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0309124",
     "summary": "appendicular lean mass、歩行速度、握力 と cognitive function の causal 関係を two-sample MR で性別層別に検証した規範的研究。男女両方で appendicular lean mass・歩行速度 と cognitive function の causal 関係を確認、握力の効果は性差あり。MR-Egger・weighted median・MR-PRESSO 等の sensitivity analyses でも robust。Pathway enrichment で neurogenesis・neurotransmitter signaling・synaptic plasticity が上位で、サルコペニアと認知機能の共通生物学的基盤を解明。Yujiの研究計画の中核仮説（筋機能 → 認知機能の causal direction）の foundation reference。",
@@ -6899,13 +6924,14 @@
     "importance": "論文 introduction で central citation 候補。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "性別層別 MR で性差を体系的に検証した点が新規。複数の サルコペニア 形質を一斉に評価することで、筋量・筋機能・歩行能力の causal 効果を同時比較した点が方法論的に厳密。Pathway enrichment で synaptic plasticity を含む包括的な生物学的機序を解明した点も貢献。",
     "discovery": "①appendicular lean mass と歩行速度の cognitive function への causal 効果（男女両方）、②握力の効果は性差あり（女性で強い）、③MR-Egger・weighted median で robust（pleiotropy への対応）、④Pathway enrichment で neurogenesis・neurotransmitter signaling・synaptic plasticity が上位、⑤UK Biobank 大規模MR、⑥reverse causation を Steiger test で否定、⑦男女層別解析で sex-specific intervention strategy の根拠、⑧Alzheimer 病態との pathway overlap が exercise と cognitive intervention の交差点を示唆、⑨筋量より筋機能（歩行速度）が認知に効くという所見は Yuji の博士論文と一致、⑩臨床的には早期サルコペニア介入が認知症予防に効く可能性を示唆。",
-    "citation": "[introduction] サルコペニアと認知機能の因果関係を論じる導入で、本論文を「UK Biobank MR で appendicular lean mass と歩行速度の cognitive function への causal 効果を性別層別で実証し、neurogenesis・neurotransmitter signaling・synaptic plasticity を pathway として同定した規範的研究（PLOS One 2024）」として引用、Yuji の central hypothesis の causal foundation。 [discussion] 自身の握力・歩行速度と認知機能の解析結果を本論文の causal 効果サイズ（β 中程度から大）と比較し、Japanese-specific な性差と pathway 寄与を論じる。"
+    "citation": "[introduction] サルコペニアと認知機能の因果関係を論じる導入で、本論文を「UK Biobank MR で appendicular lean mass と歩行速度の cognitive function への causal 効果を性別層別で実証し、neurogenesis・neurotransmitter signaling・synaptic plasticity を pathway として同定した規範的研究（PLOS One 2024）」として引用、Yuji の central hypothesis の causal foundation。 [discussion] 自身の握力・歩行速度と認知機能の解析結果を本論文の causal 効果サイズ（β 中程度から大）と比較し、Japanese-specific な性差と pathway 寄与を論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_07",
     "title": "Multivariate genome-wide analysis of サルコペニア reveals genetic comorbidity with urological diseases",
     "authors": "Zhang K, Liu C, Yang X, Chen H, Wang J, et al.",
-    "journal": "Journal of Cachexia, サルコペニア and Muscle, 2025年",
+    "journal": "Journal of Cachexia, サルコペニア and Muscle (IF=確認待ち), 2025年",
     "design": "multivariate GWAS（UK Biobank 握力 + appendicular lean mass + 歩行速度の同時解析、215 loci・30,869 SNPs を同定、全身疾患との genetic correlation 解析、LD score 回帰 で頑健性確認）",
     "url": "https://www.sciencedirect.com/science/article/pii/S0531556525001123",
     "summary": "UK Biobank の サルコペニア 関連形質（握力・appendicular lean mass・歩行速度）の multivariate GWAS で215 loci・30,869 SNPs を同定し、urological 疾患（前立腺肥大、頻尿、腎機能低下）との予想以上に強い genetic correlation を解明した規範的研究。70%以上の loci が複数形質に共有され、polygenic architecture の系統的な可視化を達成。Yujiの「サルコペニアの全身性（マルチシステム）への波及」研究の遺伝的根拠となる。 Multivariate GWAS という方法論的進歩で、従来の単変量 GWAS では見逃されていた pleiotropy が体系的に同定された点が画期的。",
@@ -6936,13 +6962,14 @@
     "importance": "研究の独自性と概念拡張の正当性を国際的に主張する強力な軸。Lancet Healthy Longevity 級の Japanese-specific replication 研究の根拠としても活用可能。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "Multivariate GWAS で サルコペニア × urological という予想外の pleiotropy を発見した点が革新的。サルコペニア 研究領域の概念拡張（筋 → 全身マルチシステム）を提示し、後続研究の paradigm を変える potential を持つ。",
     "discovery": "①215 loci・30,869 SNPs を同定、②70%以上の loci が複数形質に共有、③urological 疾患（前立腺肥大、頻尿、腎機能）との strong genetic correlation（rg=0.30-0.45）、④psychiatric disease（抑うつ、不安）とも moderate correlation、⑤LD score 回帰 で頑健、⑥polygenic architecture の可視化、⑦pleiotropy の系統的解析、⑧FinnGen 外的 検証 で再現性、⑨multivariate GWAS という方法論的進歩、⑩研究領域の概念拡張（マルチシステム視点）。",
-    "citation": "[introduction] サルコペニアの polygenic architecture と pleiotropy を論じる導入で、本論文を「multivariate GWAS で UK Biobank 46万人から 215 loci を同定し、urological 疾患との strong pleiotropy（rg=0.30-0.45）を発見した規範的研究（J Cachexia サルコペニア Muscle 2025）」として引用、Yuji の研究の概念拡張の正当性根拠とする。 [discussion] 自身の Japanese コホート での multivariate GWAS 結果を本論文の 215 loci と比較し、東アジア人特異的な pleiotropy（high myopia、骨密度等）を論じる。"
+    "citation": "[introduction] サルコペニアの polygenic architecture と pleiotropy を論じる導入で、本論文を「multivariate GWAS で UK Biobank 46万人から 215 loci を同定し、urological 疾患との strong pleiotropy（rg=0.30-0.45）を発見した規範的研究（J Cachexia サルコペニア Muscle 2025）」として引用、Yuji の研究の概念拡張の正当性根拠とする。 [discussion] 自身の Japanese コホート での multivariate GWAS 結果を本論文の 215 loci と比較し、東アジア人特異的な pleiotropy（high myopia、骨密度等）を論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_08",
     "title": "Transcriptomic analysis of skeletal muscle regeneration across mouse lifespan identifies altered stem cell states",
     "authors": "Lazure F, Blackburn DM, Corchado AH, Sahinyan K, Hernández-Corchado A, et al.",
-    "journal": "Nature Aging, 2024年",
+    "journal": "Nature Aging (IF=確認待ち), 2024年",
     "design": "single-cell + spatial transcriptomics（マウス筋再生 atlas、273,923 single-cell transcriptomes、若年・老齢・geriatric の3年齢層、myotoxin injury 後の経時変化を24h・48h・72h・5日・7日・14日で取得、空間配置と senescence pattern を spatial transcriptomics で同時解析）",
     "url": "https://www.nature.com/articles/s43587-024-00756-3",
     "summary": "マウス筋再生の single-cell（27.4万 transcriptomes）+ spatial transcriptomics atlas を若年・老齢・geriatric の3年齢層で構築し、senescent-like muscle stem cell states を同定した規範的研究。加齢で筋幹細胞の senescent shift が起こり、これが筋再生能低下の中核メカニズムであることを cellular resolution で可視化。Age-specific immune cell dynamics（特にマクロファージ）、spatial transcriptomics による injury 周辺の細胞配置と senescence pattern の解析も実施。Yujiの拡張軸（オミクス × 筋）の最先端ロードマップで、translational research の道筋を示す重要 reference。",
@@ -6972,13 +6999,14 @@
     "importance": "Nature Aging 級の論文として方法論的妥当性も担保。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "27.4万 transcriptomes × 3年齢層 × 経時 × spatial の統合 atlas は世界最大規模で、cellular resolution の加齢研究の paradigm を一段階押し上げた。Senescent-like stem cell states を時空間的に可視化した点も新規で、senotherapeutic 標的の rational design への道を開いた。",
     "discovery": "①273,923 single-cell transcriptomes の atlas、②加齢で senescent-like muscle stem cell states 顕著増加、③age-specific immune cell dynamics（特にマクロファージ M1/M2 比の変化、老齢で M1 遷延）、④spatial transcriptomics で空間配置と senescence pattern、⑤senescent FAP の injury site 周辺集積と SASP 分泌、⑥SASP cytokine が neighboring myofiber の mitochondrial respiration を15-20%抑制、⑦myotoxin injury 後の経時動態を3年齢層で比較、⑧老齢期 vs geriatric 期の差異も同定（geriatric で再生能ほぼ消失）、⑨trajectory inference で stem cell fate decision の age-specific shift、⑩translational implication として senolytic 標的の rational design。",
-    "citation": "[introduction] 加齢サルコペニアの分子機序を論じる導入で、本論文を「single-cell + spatial transcriptomics で muscle stem cell の senescent shift と SASP を介した neighboring myofiber の mitochondrial respiration 15-20%抑制を可視化した規範的 atlas（Nature Aging 2024）」として引用、Yuji の拡張軸（オミクス × 筋）の central reference。 [discussion] 自身の TMM コホート での血中 SASP cytokine（GDF15、IL-6、CXCL10）測定結果を本論文の cellular signature と比較し、ヒト血中 proxy が cellular senescence をどこまで反映するかを論じる。"
+    "citation": "[introduction] 加齢サルコペニアの分子機序を論じる導入で、本論文を「single-cell + spatial transcriptomics で muscle stem cell の senescent shift と SASP を介した neighboring myofiber の mitochondrial respiration 15-20%抑制を可視化した規範的 atlas（Nature Aging 2024）」として引用、Yuji の拡張軸（オミクス × 筋）の central reference。 [discussion] 自身の TMM コホート での血中 SASP cytokine（GDF15、IL-6、CXCL10）測定結果を本論文の cellular signature と比較し、ヒト血中 proxy が cellular senescence をどこまで反映するかを論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_09",
     "title": "Multiomics and cellular senescence profiling of aging human skeletal muscle uncovers Maraviroc as a senotherapeutic approach for サルコペニア",
     "authors": "Cellular senescence profiling consortium（多施設国際コンソーシアム、責任著者は EU 研究機関）",
-    "journal": "Nature Communications, 2025年",
+    "journal": "Nature Communications (IF=確認待ち), 2025年",
     "design": "multi-omics（bulk RNA-seq、proteomics、metabolomics、single-nucleus RNA-seq）＋drug repositioning（CMap、Connectivity Map）＋in vitro/動物モデル検証（マウス サルコペニア model、24か月齢、leucine-deprived、12週間 oral administration、握力・muscle mass・gait 評価）",
     "url": "https://www.nature.com/articles/s41467-025-61403-y",
     "summary": "ヒト骨格筋 multi-omics × single-nucleus RNA-seq × drug repositioning（CMap）で、CCR5 antagonist Maraviroc（既存抗HIV薬）が サルコペニア の senotherapeutic 候補として浮上した画期的研究。Maraviroc がマウス サルコペニア model で 握力・muscle mass・gait を改善することを実証。既存薬の repositioning という即実用化可能なアプローチで、translational pipeline の短縮を実現。Yujiの拡張軸（オミクス × 筋）の中核 reference で、translational research への直接路線を示す。Senolytic（dasatinib + quercetin）と比較して Maraviroc は副作用が少なく、長期投与の clinical applicability が高い。",
@@ -7009,13 +7037,14 @@
     "importance": "Aging research を basic science から clinical implementation へ橋渡しする paradigm shift を起こした論文。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Multi-omics + drug repositioning でヒト骨格筋から senotherapeutic を発見した最初の大規模研究。CCR5 経路という新しい標的同定も革新的で、myostatin pathway 一辺倒だった サルコペニア 治療開発に新軸を提示。",
     "discovery": "①ヒト筋生検 n=82 で multi-omics 統合（bulk RNA-seq + proteomics + metabolomics + snRNA-seq）、②senescent FAP の adipocyte-like shift と SASP 分泌、③Maraviroc が CCR5 阻害で SASP を減弱、④マウスで 握力 +25%、muscle mass +18%、歩行速度 +22% 改善、⑤Senolytic（dasatinib+quercetin）より副作用少（dasatinib は myelotoxicity 懸念）、⑥既存薬 repositioning で臨床試験への近道（FDA 既承認、安全性データ蓄積済み）、⑦senolytic との combination therapy で 握力 +35%（相加的）、⑧CCL5・IL-6・CXCL10 の血中・組織内測定で機序確認、⑨FAP-myofiber の paracrine signaling の重要性を実証、⑩aging research の paradigm shift（既存薬 repositioning）。",
-    "citation": "[introduction] サルコペニア治療開発における senotherapeutic と drug repositioning を論じる導入で、本論文を「multi-omics + CMap で Maraviroc を senotherapeutic 候補として同定し、マウスで 握力 +25%、muscle mass +18%、歩行速度 +22% 改善を実証した規範的研究（Nature Communications 2025）」として引用、translational research の central reference。 [discussion] 自身の TMM での血中 SASP cytokine（CCL5、IL-6、CXCL10）測定結果を本論文の Maraviroc 介入前後の cytokine 変化と比較し、人間で CCR5 阻害が同等の効果をもたらすか論じる。"
+    "citation": "[introduction] サルコペニア治療開発における senotherapeutic と drug repositioning を論じる導入で、本論文を「multi-omics + CMap で Maraviroc を senotherapeutic 候補として同定し、マウスで 握力 +25%、muscle mass +18%、歩行速度 +22% 改善を実証した規範的研究（Nature Communications 2025）」として引用、translational research の central reference。 [discussion] 自身の TMM での血中 SASP cytokine（CCL5、IL-6、CXCL10）測定結果を本論文の Maraviroc 介入前後の cytokine 変化と比較し、人間で CCR5 阻害が同等の効果をもたらすか論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260510_sun_10",
     "title": "Single nuclei profiling identifies cell specific markers of skeletal muscle aging, フレイル, and senescence",
     "authors": "Perez K, Ciotlos S, McGirr J, Limbad C, Doi R, et al.",
-    "journal": "Aging, 2022年（複数 follow-up 2024-2025）",
+    "journal": "Aging (IF=確認待ち), 2022年（複数 follow-up 2024-2025）",
     "design": "single-nucleus RNA-seq（ヒト骨格筋生検、若年 vs 高齢 vs frail、複数施設での 検証、cell-specific senescence marker 同定）",
     "url": "https://www.aging-us.com/article/204435/text",
     "summary": "ヒト骨格筋の single-nucleus RNA-seq で若年・高齢・frail 群を比較し、cell-specific な aging・フレイル・senescence marker を同定した foundational paper。Type II 筋線維の subpopulation で senescence marker（p16INK4a、p21）が顕著に上昇、frail 群でさらに enrichment、フレイル severity と相関。FAP・satellite cell・endothelial cell も cell-specific な aging signature を持つ。Yujiの拡張軸（オミクス × 筋）の foundational reference で、フレイル の分子病態を細胞レベルで解明。",
@@ -7046,13 +7075,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "ヒト骨格筋の snRNA-seq で フレイル 特異的シグネチャを同定した先駆的研究。FAP・satellite cell・endothelial cell の cell-specific aging を体系評価した点も新規で、加齢サルコペニアの cellular ecosystem 概念を確立した foundational work。",
     "discovery": "①Type II 筋線維 subpopulation で p16INK4a、p21 顕著上昇、②frail 群でさらに enrichment（cell density 約2倍）、③FAP の adipogenesis pathway 活性化、④satellite cell の myogenic differentiation 障害、⑤endothelial cell の angiogenesis 低下、⑥frailty severity と senescence marker 相関 r=0.55、⑦cell-specific resolution で病態理解、⑧既存 bulk RNA-seq では見逃される shift、⑨複数施設 検証 で外的妥当性、⑩血中 SASP cytokine（GDF15、IL-6 等）の対応 cellular source を同定、translational implication 大。",
-    "citation": "[introduction] フレイル の分子基盤としての cell-specific senescence を論じる導入で、本論文を「snRNA-seq で Type II 筋線維 subpopulation の senescence enrichment と FAP・satellite cell の cell-specific aging signature を同定した foundational paper（Aging 2022）」として引用、Yuji の拡張軸の foundational reference。 [discussion] 自身の TMM 血中 SASP cytokine 測定結果を本論文の cell-specific source（Type II fiber、FAP）と関連付け、cellular origin の解明を論じる。"
+    "citation": "[introduction] フレイル の分子基盤としての cell-specific senescence を論じる導入で、本論文を「snRNA-seq で Type II 筋線維 subpopulation の senescence enrichment と FAP・satellite cell の cell-specific aging signature を同定した foundational paper（Aging 2022）」として引用、Yuji の拡張軸の foundational reference。 [discussion] 自身の TMM 血中 SASP cytokine 測定結果を本論文の cell-specific source（Type II fiber、FAP）と関連付け、cellular origin の解明を論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_01",
     "title": "Reference centiles for intrinsic capacity to monitor clinical health outcomes in real-world primary care コホート",
     "authors": "Tavassoli N, de Souto Barreto P, Berbon C, et al.",
-    "journal": "Nature Aging, 2025年",
+    "journal": "Nature Aging (IF=確認待ち), 2025年",
     "design": "大規模 real-world コホート（WHO ICOPE primary care 実装データ、reference centiles 構築）",
     "url": "https://www.nature.com/articles/s43587-025-00861-x",
     "summary": "WHO ICOPE program の primary care 実装データから、intrinsic capacity（IC）の reference centiles を構築し、clinical health outcomes をモニターするための clinical-friendly IC scores を提示した規範的研究。多国籍 real-world コホートデータを基盤に、年齢・性別別の centile 値を提示し、low IC（<5 percentile）が高 mortality・要介護化リスクと強く関連することを実証した。Clinical-friendly な scoring algorithm により primary care 現場での実装可能性も担保しており、IC を新たな研究アウトカム軸として導入する際の方法論的中核として機能する。",
@@ -7082,13 +7112,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Real-world primary care データから reference centiles を構築した初の大規模研究で、Clinical implementation の標準化に貢献する独自性が高い。多国籍コホートでの外的妥当性確保も既存研究にない貢献となる位置にある。",
     "discovery": "①5領域別 IC centiles 構築（cognition・mobility・psychological・vitality・sensory）、②low IC（<5 percentile）と高全原因死亡・要介護化リスクの強い関連、ハザード比 約2倍、③clinical-friendly scoring algorithm の実装可能性、④primary care 現場での実装可能性を証明、⑤多国籍 real-world コホートでの外的妥当性、⑥WHO ICOPE program との直接接続、⑦年齢・性別別の詳細な reference 値提示、⑧紙ベース・短時間評価でも妥当性確保、⑨入院リスクとも有意な関連、⑩国際比較の標準化基盤を提供する。",
-    "citation": "[introduction] 健康寿命研究における intrinsic capacity の現代的役割を論じる導入で、本論文を「WHO ICOPE データから IC reference centiles を構築した規範的研究（Nature Aging 2025）」として引用する。WHO ICOPE program との接続で、研究の国際性を担保する根拠として位置付ける。[discussion] 自前データで構築する日本人 IC reference 値と本論文の国際 centile を比較し、Japanese-specific calibration の必要性と国際比較における日本コホートの位置付けを議論する文脈で参照する。"
+    "citation": "[introduction] 健康寿命研究における intrinsic capacity の現代的役割を論じる導入で、本論文を「WHO ICOPE データから IC reference centiles を構築した規範的研究（Nature Aging 2025）」として引用する。WHO ICOPE program との接続で、研究の国際性を担保する根拠として位置付ける。[discussion] 自前データで構築する日本人 IC reference 値と本論文の国際 centile を比較し、Japanese-specific calibration の必要性と国際比較における日本コホートの位置付けを議論する文脈で参照する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_02",
     "title": "The association between multimorbidity and intrinsic capacity decline among older adults: the mediating role of フレイル",
     "authors": "Liu D, Wang Q, Chen X, et al.",
-    "journal": "BMC Public Health, 2025年",
+    "journal": "BMC Public Health (IF=確認待ち), 2025年",
     "design": "横断研究（地域在住高齢者 n=468、multimorbidity × IC × フレイル の媒介解析）",
     "url": "https://link.springer.com/article/10.1186/s12889-025-25500-3",
     "summary": "地域在住高齢者468人で multimorbidity（多疾患併存）が IC 低下に与える影響を、フレイルが部分的に媒介することを実証した重要研究。フレイルが multimorbidity → IC 低下の経路の27.5%を媒介し、direct effect も72.5%残存することを示した。媒介解析の方法論的厳密性と臨床的意義の双方を兼ね備え、multimorbidity 研究の現代的フレームワークを提供する位置にある。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -7119,13 +7150,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Multimorbidity・フレイル・IC の3者関係を媒介解析で解明した点が新規。3層モデルの定量化で介入ターゲットの優先順位付けに直接寄与する独自性が高い研究で、地域在住高齢者での real-world evidence を提供。",
     "discovery": "①フレイルが multimorbidity → IC の27.5%を媒介、②Direct effect も72.5%残存、③フレイルを介さない pathway の存在を実証、④地域在住高齢者での real-world evidence、⑤FRAIL scale でのフレイル評価の妥当性、⑥IC 5領域別の effect 評価で一貫性、⑦年齢・性別・教育歴補正後も頑健、⑧bootstrap 法で媒介効果の信頼区間提示、⑨multimorbidity の介入ターゲット優先順位付けに寄与、⑩3層モデルの定量化を初めて実現した位置付け。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。",
-    "citation": "[introduction] multimorbidity と IC の関係におけるフレイルの媒介役割を論じる導入で、本論文を「フレイルが multimorbidity → IC 低下の27.5%を媒介する規範的研究（BMC Public Health 2025）」として引用する。3層モデルの実証的根拠として、PD 申請書での媒介解析設計の根拠論文となる位置にある。[discussion] 自前データの媒介解析結果と本論文の27.5%/72.5%の分割を比較し、Japanese-specific 効果の評価と縦断デザインによる因果方向検証の必要性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。"
+    "citation": "[introduction] multimorbidity と IC の関係におけるフレイルの媒介役割を論じる導入で、本論文を「フレイルが multimorbidity → IC 低下の27.5%を媒介する規範的研究（BMC Public Health 2025）」として引用する。3層モデルの実証的根拠として、PD 申請書での媒介解析設計の根拠論文となる位置にある。[discussion] 自前データの媒介解析結果と本論文の27.5%/72.5%の分割を比較し、Japanese-specific 効果の評価と縦断デザインによる因果方向検証の必要性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_03",
     "title": "Intrinsic Capacity and Its Biological Basis: A Scoping Review",
     "authors": "Li B, Zhao L, Wang T, et al.",
-    "journal": "The Journal of フレイル & Aging, 2024年",
+    "journal": "The Journal of フレイル & Aging (IF=確認待ち), 2024年",
     "design": "スコーピングレビュー（IC の生物学的基盤、biomarker、aging mechanism の体系整理）",
     "url": "https://link.springer.com/article/10.14283/jfa.2024.30",
     "summary": "IC の生物学的基盤を体系整理した スコーピングレビュー。Inflammation、oxidative stress、mitochondrial dysfunction、cellular senescence、telomere などの aging hallmark が IC 低下に寄与することを既存文献から統合整理した重要なレビュー論文。IC 5領域（cognition、mobility、psychological、vitality、sensory）と aging hallmark のマッピングを初めて体系化した点で、IC × biomarker 研究の paradigm を確立する貢献を持つ。",
@@ -7154,13 +7186,14 @@
     "importance": "IC を biological aging の指標と接続する研究設計の方法論的根拠として直接寄与する位置にある。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "IC × aging hallmark の体系マッピングが新規で、5領域別の生物学的 mechanism 整理が独自の貢献。Multi-system aging との重なりを明確化した点も既存レビューにない貢献として位置付けられる。",
     "discovery": "①IC 5領域別の biological mechanism マッピング、②aging hallmark との対応関係の体系化、③mobility-サルコペニア/inflammation 軸の確立、④cognition-neuroinflammation/synaptic 軸の確立、⑤vitality-mitochondrial 軸の確立、⑥multi-system aging との重なりを実証、⑦sensory-vascular 軸の整理、⑧psychological-HPA axis の整理、⑨biomarker × IC × intervention 3層モデルへの道筋、⑩IC 研究の paradigm を確立する位置付け。",
-    "citation": "[introduction] IC の生物学的基盤を論じる導入で、本論文を「IC × aging hallmark の体系マッピングを行った規範的 スコーピングレビュー（J フレイル Aging 2024）」として引用する。IC × biomarker 研究の foundational reference として、PD 拡張軸の理論基盤の中核に位置付ける。[discussion] 自前データの IC × phase angle × inflammation marker の関連を本論文のマッピングと突合し、mobility 軸での inflammation 媒介の検証可能性を議論する文脈で参照する。"
+    "citation": "[introduction] IC の生物学的基盤を論じる導入で、本論文を「IC × aging hallmark の体系マッピングを行った規範的 スコーピングレビュー（J フレイル Aging 2024）」として引用する。IC × biomarker 研究の foundational reference として、PD 拡張軸の理論基盤の中核に位置付ける。[discussion] 自前データの IC × phase angle × inflammation marker の関連を本論文のマッピングと突合し、mobility 軸での inflammation 媒介の検証可能性を議論する文脈で参照する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_04",
     "title": "Association of intrinsic capacity with functional ability, sarcopenia and systemic inflammation in pre-frail older adults",
     "authors": "Sánchez-Sánchez JL, et al.",
-    "journal": "Frontiers in Medicine, 2024年",
+    "journal": "Frontiers in Medicine (IF=確認待ち), 2024年",
     "design": "横断研究（pre-frail 高齢者、IC・functional ability・サルコペニア・inflammation の相互関連）",
     "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2024.1374197/full",
     "summary": "pre-frail 高齢者で IC と functional ability、サルコペニア、systemic inflammation の関連を解明した重要研究。低 IC はサルコペニア有病率の上昇と inflammation marker（CRP、IL-6）上昇と関連し、pathway analysis で inflammation → サルコペニア → IC の媒介関係を示唆した。Pre-frail という早期介入機会の段階での3者関係を実証した点で、予防医学的意義も大きい。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7192,13 +7225,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Pre-frail 段階での3者統合解析が新規で、pathway analysis による媒介関係の実証が独自の貢献。EWGSOP2 基準でのサルコペニア評価の標準化も既存研究にない貢献として位置付けられる。",
     "discovery": "①低 IC 群でサルコペニア有病率約2倍、②CRP・IL-6 が低 IC 群で上昇、③functional ability（歩行速度、TUG、握力）も低 IC 群で低下、④pathway analysis で inflammation → サルコペニア → IC の媒介関係、⑤pre-frail 段階での介入機会示唆、⑥EWGSOP2 基準による標準化、⑦inflammation が初期 driver の役割、⑧サルコペニアが中間 mediator、⑨IC が最終アウトカムとしての3層構造、⑩予防医学的意義の確立。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。",
-    "citation": "[introduction] IC・サルコペニア・inflammation の3者関連を論じる導入で、本論文を「pre-frail 高齢者で3者の媒介関係を実証した規範的研究（Front Med 2024）」として引用する。Yuji の3層モデルの実証的根拠として、PD 課題3 の対象集団選定の根拠論文となる位置にある。[discussion] 自前データの IC × phase angle × CRP の関連を本論文の媒介関係と突合し、Japanese-specific の3層構造の検証必要性と pre-frail 段階での介入適性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。"
+    "citation": "[introduction] IC・サルコペニア・inflammation の3者関連を論じる導入で、本論文を「pre-frail 高齢者で3者の媒介関係を実証した規範的研究（Front Med 2024）」として引用する。Yuji の3層モデルの実証的根拠として、PD 課題3 の対象集団選定の根拠論文となる位置にある。[discussion] 自前データの IC × phase angle × CRP の関連を本論文の媒介関係と突合し、Japanese-specific の3層構造の検証必要性と pre-frail 段階での介入適性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_05",
     "title": "Prevalence of intrinsic capacity decline among community-dwelling older adults: a systematic review and メタ解析",
     "authors": "Beard JR, Si Y, Liu Z, et al.",
-    "journal": "BMC Geriatrics, 2024年",
+    "journal": "BMC Geriatrics (IF=確認待ち), 2024年",
     "design": "システマティックレビューおよびメタ解析（地域在住高齢者の IC 低下の有病率、複数 コホート 統合）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11294388/",
     "summary": "地域在住高齢者の IC 低下の有病率を体系評価したメタ解析。世界平均で IC 低下の有病率は40-60%、地域・年齢別の差異も大きく、アジア50%、欧州45%、北米40%という地域差が定量化された。75歳以上では60-70%という高い有病率も提示された。日本人 specific の IC 低下有病率を構築する際の国際比較基盤として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -7228,13 +7262,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "国際メタ解析で IC 有病率を統合した初の大規模研究で、地域・年齢別の prevalence map 提供が独自の貢献。WHO ICOPE 基準と従来基準の比較も既存研究にない貢献として位置付けられる。",
     "discovery": "①世界平均 IC 低下40-60%、②75歳以上で60-70%、③地域差として アジア50%、欧州45%、北米40%、④WHO ICOPE 基準と従来基準で差異、⑤systematic review の包括性、⑥地域・年齢別の prevalence map を提供、⑦I² で heterogeneity 評価、⑧operationalization の影響を実証、⑨国際標準化の必要性確立、⑩国際比較可能な見取り図を提供する位置付け。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。",
-    "citation": "[introduction] IC 低下の現代的有病率を論じる導入で、本論文を「世界平均40-60%の IC 低下を統合したメタ解析（BMC Geriatrics 2024）」として引用する。日本人 specific の IC 低下有病率を国際比較に位置付ける根拠として、PD 申請書で参照する位置にある。[discussion] 自前データの IC 低下有病率と本論文の世界平均（アジア50%）を比較し、日本コホートの特異性と国際比較における位置付けを議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。"
+    "citation": "[introduction] IC 低下の現代的有病率を論じる導入で、本論文を「世界平均40-60%の IC 低下を統合したメタ解析（BMC Geriatrics 2024）」として引用する。日本人 specific の IC 低下有病率を国際比較に位置付ける根拠として、PD 申請書で参照する位置にある。[discussion] 自前データの IC 低下有病率と本論文の世界平均（アジア50%）を比較し、日本コホートの特異性と国際比較における位置付けを議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_06",
     "title": "Predicting healthspan and disease risks through biological age",
     "authors": "Mavromatis LA, et al.",
-    "journal": "Trends in Molecular Medicine, 2025年",
+    "journal": "Trends in Molecular Medicine (IF=確認待ち), 2025年",
     "design": "review（biological age 指標による healthspan・疾患リスク予測の現代的フレームワーク）",
     "url": "https://www.sciencedirect.com/science/article/pii/S1471491425002576",
     "summary": "biological age（epigenetic、proteomic、metabolomic、imaging-based）による healthspan・疾患リスク予測の現代的レビュー論文。複数 modality の biological age clock を比較し、それぞれの臨床応用シナリオを整理した。第1世代 clock（Horvath）は static age、第2世代（GrimAge、PhenoAge）は全原因死亡予測、第3世代（DunedinPACE、OMICmAge）は intervention 応答性という整理を提示。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7263,13 +7298,14 @@
     "importance": "Epigenetic・proteomic・metabolomic・imaging の使い分けの根拠論文として直接寄与する。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "複数 modality の biological age clock を統合 review した点が独自で、第1〜3世代の clock 整理が貢献。Imaging-based age と分子レベル clock の比較も既存レビューにない貢献として位置付けられる。",
     "discovery": "①第1〜3世代 clock の特性整理、②epigenetic・proteomic・metabolomic・imaging の比較、③第1世代 Horvath は static age、④第2世代 GrimAge・PhenoAge は全原因死亡予測強、⑤第3世代 DunedinPACE・OMICmAge は intervention 応答性、⑥Imaging-based age（脳・retinal）の organ-specific evaluation、⑦proteomic clock の CVD・認知症 予測、⑧metabolomic clock の栄養・代謝介入評価、⑨複数 modality 統合の potential、⑩臨床応用シナリオ整理の指針提示。",
-    "citation": "[introduction] biological age による healthspan 予測の現代的フレームワークを論じる導入で、本論文を「複数 modality の biological age clock を整理した規範的レビュー（Trends Mol Med 2025）」として引用する。Yuji の拡張軸の理論基盤として、PD 申請書での biological aging 関連引用の中核に位置付ける。[discussion] 自前研究での phase angle を imaging-based age proxy として位置付ける議論で本論文の整理を踏まえ、複数 modality 統合の方向性を論じる文脈で参照する。"
+    "citation": "[introduction] biological age による healthspan 予測の現代的フレームワークを論じる導入で、本論文を「複数 modality の biological age clock を整理した規範的レビュー（Trends Mol Med 2025）」として引用する。Yuji の拡張軸の理論基盤として、PD 申請書での biological aging 関連引用の中核に位置付ける。[discussion] 自前研究での phase angle を imaging-based age proxy として位置付ける議論で本論文の整理を踏まえ、複数 modality 統合の方向性を論じる文脈で参照する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_07",
     "title": "Epigenetic Clocks and EpiScore for Preventive Medicine: Risk Stratification and Intervention Models for Age-Related Diseases",
     "authors": "Various authors",
-    "journal": "Journal of Clinical Medicine, 2025年",
+    "journal": "Journal of Clinical Medicine (IF=確認待ち), 2025年",
     "design": "review（epigenetic clock と EpiScore の予防医学応用、risk stratification model の整理）",
     "url": "https://www.mdpi.com/2077-0383/14/10/3604",
     "summary": "epigenetic clock（GrimAge、DunedinPACE、PhenoAge）と EpiScore（疾患特異的 epigenetic risk score）を予防医学に応用するための risk stratification model を体系整理したレビュー論文。GrimAge は high-risk identification、DunedinPACE は intervention monitoring、PhenoAge は population screening という臨床応用シナリオ別の使い分けを提示した。EpiScore の CVD・ガン・認知症 specific risk evaluation も整理しており、疾患予測と介入評価の双方の根拠論文となる位置にある。",
@@ -7298,13 +7334,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Epigenetic clock × preventive medicine の体系統合レビューが独自で、シナリオ別使い分け指針の提示が貢献。EpiScore の疾患特異的応用の整理も既存レビューにない貢献として位置付けられる。",
     "discovery": "①GrimAge は high-risk identification、全原因死亡 ハザード比 約2.0、②DunedinPACE は intervention monitoring、③PhenoAge は population screening、④EpiScore で CVD・ガン・認知症の疾患特異的 evaluation、⑤心血管疾患で従来 risk score を上回る予測能、⑥risk stratification model の整理、⑦臨床実装 roadmap 提示、⑧シナリオ別使い分け指針、⑨予防医学の next standard としての位置付け、⑩予測と介入の双方の根拠論文として機能。",
-    "citation": "[introduction] epigenetic clock の予防医学応用を論じる導入で、本論文を「epigenetic clock と EpiScore の risk stratification model を整理した規範的レビュー（JCM 2025）」として引用する。PD 拡張軸の理論基盤として、シナリオ別使い分け指針の根拠論文として位置付ける。[discussion] 自前データでの epigenetic clock 解析計画と本論文のシナリオ別使い分けを突合し、500名コホートでの実装可能性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。"
+    "citation": "[introduction] epigenetic clock の予防医学応用を論じる導入で、本論文を「epigenetic clock と EpiScore の risk stratification model を整理した規範的レビュー（JCM 2025）」として引用する。PD 拡張軸の理論基盤として、シナリオ別使い分け指針の根拠論文として位置付ける。[discussion] 自前データでの epigenetic clock 解析計画と本論文のシナリオ別使い分けを突合し、500名コホートでの実装可能性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_08",
     "title": "A blood biomarker of the pace of aging is associated with brain structure: replication across three コホート",
     "authors": "Whitman ET, Elliott ML, Rasmussen LJH, Caspi A, Moffitt TE, Hariri AR",
-    "journal": "Neurobiology of Aging, 2024年",
+    "journal": "Neurobiology of Aging (IF=確認待ち), 2024年",
     "design": "cross-コホート replication（Dunedin、UK Biobank、Lothian、計 n>5,000、DunedinPACE × 脳構造の関連）",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0197458024000095",
     "summary": "DunedinPACE が脳構造（gray matter volume、white matter integrity）と関連することを3コホート（Dunedin、UK Biobank、Lothian）で replication した重要な研究。Pace of aging が脳老化の血中 biomarker として確立された点で foundational paper として機能する。効果サイズ は中程度（β=-0.15〜-0.20）で、3コホート全てで一貫した結果を示した。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -7334,13 +7371,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "3コホート replication で外的妥当性最高水準の達成が独自で、血中 biomarker と脳構造の関連の確立が貢献。Cross-コホート 設計での結果の一貫性検証も既存研究にない貢献として位置付けられる。",
     "discovery": "①DunedinPACE と GM volume の負相関、②WM FA 低下の検出、③cortical thinning の確認、④3コホート（Dunedin、UK Biobank、Lothian）で replication 成功、⑤effect size β=-0.15〜-0.20 の一貫性、⑥血中 biomarker で脳構造を proxy できる証拠、⑦年齢・性別・体格・教育歴補正後も頑健、⑧cohort 間の異質性が小さい、⑨n>5,000 の大規模解析、⑩pace of aging の臨床応用への道筋確立。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。",
-    "citation": "[introduction] 血中 pace of aging biomarker と脳構造の関連を論じる導入で、本論文を「DunedinPACE と脳構造の関連を3コホート replication した規範的研究（Neurobiol Aging 2024）」として引用する。Yuji の脳-筋統合研究の根拠として、PD 課題2 で中心的に参照する位置にある。[discussion] 自前データでの DunedinPACE 解析計画と本論文の 効果サイズ を突合し、Japanese-specific 値の検証可能性と脳 MRI 併用の方法論的根拠を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。"
+    "citation": "[introduction] 血中 pace of aging biomarker と脳構造の関連を論じる導入で、本論文を「DunedinPACE と脳構造の関連を3コホート replication した規範的研究（Neurobiol Aging 2024）」として引用する。Yuji の脳-筋統合研究の根拠として、PD 課題2 で中心的に参照する位置にある。[discussion] 自前データでの DunedinPACE 解析計画と本論文の 効果サイズ を突合し、Japanese-specific 値の検証可能性と脳 MRI 併用の方法論的根拠を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_09",
     "title": "Effects of over 10 weeks of resistance training on muscle and bone mineral density in older people with sarcopenia over 70 years old: A systematic review and メタ解析 of randomized controlled trials",
     "authors": "Various authors",
-    "journal": "BMC Geriatrics, 2024年",
+    "journal": "BMC Geriatrics (IF=確認待ち), 2024年",
     "design": "システマティックレビューおよびメタ解析（resistance training × 70歳以上 サルコペニア患者、muscle mass・bone density アウトカム）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/39368450/",
     "summary": "70歳以上 サルコペニア患者の resistance training（RT、レジスタンス運動）効果を10週以上の介入で評価したメタ解析。Muscle mass +1.5%、bone mineral density +1.2%、握力 +2.8 kg の有意改善を実証した重要な研究。Frequency 2-3回/週、intensity 70-80% 1RM の dose-response 優位性も確認された。70+ サルコペニア限定での確証的エビデンスを提供する点で foundational paper として機能する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7371,13 +7409,14 @@
     "importance": "日本人 サルコペニア患者への外挿の根拠としても直接寄与する。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "70+ サルコペニア限定の系統メタ解析が独自で、年齢層を絞ることで集団内異質性を制御した方法論的設計が貢献。Frequency・intensity の dose-response 評価も既存メタ解析にない貢献として位置付けられる。",
     "discovery": "①Muscle mass +1.5% の有意改善、②bone mineral density +1.2%、③grip strength +2.8 kg、④2-3回/週・70-80% 1RM が optimal、⑤10週以上で有意効果、⑥70+ 限定で交絡軽減、⑦低 frequency・低 intensity では効果減弱、⑧meta-analysis での外的妥当性、⑨dose-response 関係の明確化、⑩臨床推奨の確立。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。",
-    "citation": "[introduction] 高齢者 サルコペニアの RT 介入効果を論じる導入で、本論文を「70+ サルコペニアの RT メタ解析（BMC Geriatr 2024）」として引用する。Yuji の課題3 介入のサンプルサイズ計算根拠として、PD 申請書で中心的に参照する位置にある。[discussion] 自前介入研究の効果サイズ推定と本論文の 握力 +2.8 kg を突合し、Japanese-specific 値の検証可能性と RCT 設計の妥当性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。"
+    "citation": "[introduction] 高齢者 サルコペニアの RT 介入効果を論じる導入で、本論文を「70+ サルコペニアの RT メタ解析（BMC Geriatr 2024）」として引用する。Yuji の課題3 介入のサンプルサイズ計算根拠として、PD 申請書で中心的に参照する位置にある。[discussion] 自前介入研究の効果サイズ推定と本論文の 握力 +2.8 kg を突合し、Japanese-specific 値の検証可能性と RCT 設計の妥当性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260511_mon_10",
     "title": "Optimal resistance training prescriptions to improve muscle strength, physical function, and muscle mass in older adults diagnosed with sarcopenia: a systematic review and メタ解析",
     "authors": "Various authors",
-    "journal": "Frontiers in Physiology / BMC Geriatr, 2025年",
+    "journal": "Frontiers in Physiology / BMC Geriatr (IF=確認待ち), 2025年",
     "design": "システマティックレビューおよび Bayesian network メタ解析（RT prescription の optimal dose、複数アウトカム評価）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12602684/",
     "summary": "サルコペニア患者の RT optimal dose を Bayesian network メタ解析 で同定した重要研究。Handgrip strength 改善には1,220 MET-min/週、歩行速度改善には最低600 MET-min/週、physical function 改善には800 MET-min/週が必要と定量化した。Bayesian network メタ解析 の方法論的厳密性で intervention の rank ordering を可能にした点で foundational paper として機能する。アウトカム別 dose 提示で介入設計の精緻化に直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7408,13 +7447,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Bayesian network メタ解析 で dose-response を定量した点が独自で、アウトカム別 dose 提示が貢献。Intervention の rank ordering を確率的に評価する方法論も既存メタ解析にない貢献として位置付けられる。",
     "discovery": "①handgrip 改善 1,220 MET-min/週、②歩行速度改善 600 MET-min/週、③physical function 改善 800 MET-min/週、④Bayesian で intervention の rank ordering、⑤アウトカム別 dose 提示、⑥standardization の roadmap、⑦複数 RT prescription の優劣を確率的評価、⑧clinical practice への直結性、⑨pre-specify 可能な dose の根拠、⑩RT prescription の精緻化を実現する位置付け。⑪これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなる。",
-    "citation": "[introduction] RT optimal dose を論じる導入で、本論文を「Bayesian network メタ解析 で dose-response を定量化した規範的研究（Front Physiol 2025）」として引用する。Yuji の課題3 介入の dose 設計の根拠として、PD 申請書で中心的に参照する位置にある。[discussion] 自前介入研究の dose 設計と本論文の MET-min/週を突合し、Japanese-specific 値の検証可能性と pre-specify 可能な dose の妥当性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。"
+    "citation": "[introduction] RT optimal dose を論じる導入で、本論文を「Bayesian network メタ解析 で dose-response を定量化した規範的研究（Front Physiol 2025）」として引用する。Yuji の課題3 介入の dose 設計の根拠として、PD 申請書で中心的に参照する位置にある。[discussion] 自前介入研究の dose 設計と本論文の MET-min/週を突合し、Japanese-specific 値の検証可能性と pre-specify 可能な dose の妥当性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_01",
     "title": "Do the associations of daily steps with mortality and incident 心血管疾患 differ by sedentary time levels? A device-based コホート study",
     "authors": "Sagelv EH, Hopstock LA, Morseth B, et al.",
-    "journal": "British Journal of Sports Medicine, 2024年",
+    "journal": "British Journal of Sports Medicine (IF=確認待ち), 2024年",
     "design": "前向きコホート（UK Biobank n=72,174、平均6.9年追跡、accelerometer-based daily steps × sedentary time × mortality/CVD）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/38442950/",
     "summary": "UK Biobank 7.2万人で daily steps と全原因死亡・CVD の関連を sedentary time levels 別に解析した重要研究。Optimal dose は high sedentary 群で 9,000-10,500 steps/day、low sedentary 群で同範囲。CVD で約9,700 steps が最低リスク。Yujiの「歩数 × 座位時間」研究の核心 reference。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7444,13 +7484,14 @@
     "importance": "Daily steps の optimal dose（約 10,000）の科学的根拠。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Sedentary time stratified analysis で interaction を体系評価した点が新規。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Optimal dose 9,000-10,500 steps/day（高 sedentary 群）、②CVD 9,700 steps が最低リスク、③sedentary time × steps の interaction は限定的、④mortality 1,633件で頑健、⑤UK Biobank 7.2万人の大規模、⑥accelerometer-based で measurement バイアス 軽減。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] Daily steps の optimal dose を論じる導入で、本論文を「UK Biobank 7.2万人で 9,000-10,500 steps/day を optimal dose として実証した規範的研究（BJSM 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] Daily steps の optimal dose を論じる導入で、本論文を「UK Biobank 7.2万人で 9,000-10,500 steps/day を optimal dose として実証した規範的研究（BJSM 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_02",
     "title": "Accelerometer-derived 身体活動 and mortality in individuals with type 2 diabetes",
     "authors": "Wang B, Wu G, Shen Y, et al.",
-    "journal": "Nature Communications, 2024年",
+    "journal": "Nature Communications (IF=確認待ち), 2024年",
     "design": "前向きコホート（UK Biobank T2D n>14,000、accelerometer × mortality・CVD、L-shaped dose-response）",
     "url": "https://www.nature.com/articles/s41467-024-49542-0",
     "summary": "UK Biobank の T2D 患者 1.4万人超で accelerometer-based PA と全原因死亡・CVD の L-shaped 関連を実証した重要研究。低 PA 群で急峻な mortality 上昇、高 PA 群で plateau。T2D 患者の PA 推奨基準根拠を Nature Communications で確立。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7479,13 +7520,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "T2D × accelerometer × mortality の最大規模 コホート 研究。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①L-shaped 関連（全原因死亡）、②linear inverse（CVD mortality）、③threshold 60 min/day MVPA、④低PA群で急峻なリスク、⑤UK Biobank 1.4万 T2D の大規模、⑥accelerometer 客観評価。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] T2D 患者の PA 効果を論じる導入で、本論文を「UK Biobank T2D 1.4万人で L-shaped dose-response を実証した規範的研究（Nat Commun 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] T2D 患者の PA 効果を論じる導入で、本論文を「UK Biobank T2D 1.4万人で L-shaped dose-response を実証した規範的研究（Nat Commun 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_03",
     "title": "Accelerometer measured 身体活動 and the incidence of 心血管疾患: Evidence from the UK Biobank コホート study",
     "authors": "Doherty A, Smith-Byrne K, Ferreira T, et al.",
-    "journal": "PLOS Medicine, 2021年（最新 follow-up 2024年版）",
+    "journal": "PLOS Medicine (IF=確認待ち), 2021年（最新 follow-up 2024年版）",
     "design": "前向きコホート（UK Biobank n=90,000+、accelerometer × CVD、6+ year follow-up）",
     "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003487",
     "summary": "UK Biobank 9万人超の accelerometer 測定 PA と CVD 発症の関連を6年以上追跡で実証した foundational 研究。Higher MVPA は CVD 発症と inverse linear に関連、self-report より 効果サイズ 大。Yujiの accelerometer 疫学研究の foundational reference。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7515,13 +7557,14 @@
     "importance": "Accelerometer 疫学の foundational paper。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "UK Biobank 9万人 accelerometer の最初の大規模 CVD 研究。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①MVPA quintile で CVD HR 1.0→0.64、②accelerometer が self-report より 効果サイズ 大、③6年以上追跡で頑健、④UK Biobank 9万人の大規模、⑤dose-response inverse linear、⑥accelerometer 標準化の根拠。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] PA × CVD の accelerometer 評価を論じる導入で、本論文を「UK Biobank 9万人で MVPA が CVD と inverse linear に関連することを実証した foundational research（PLOS Medicine 2021）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] PA × CVD の accelerometer 評価を論じる導入で、本論文を「UK Biobank 9万人で MVPA が CVD と inverse linear に関連することを実証した foundational research（PLOS Medicine 2021）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_04",
     "title": "Accelerometer-derived 身体活動 and the risk of death, heart failure, and stroke in patients with atrial fibrillation: a prospective study from UK Biobank",
     "authors": "Khurshid S, Weng LC, Al-Alusi MA, et al.",
-    "journal": "European Heart Journal, 2024年",
+    "journal": "European Heart Journal (IF=確認待ち), 2024年",
     "design": "前向きコホート（UK Biobank AF 患者 n>3,000、accelerometer × 死亡・心不全・脳卒中、ガイドライン-adherent activity の効果評価）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/38418213/",
     "summary": "UK Biobank の atrial fibrillation（AF、心房細動）患者で accelerometer 測定 PA が全原因死亡・心不全・脳卒中と inverse に関連、ガイドライン遵守 PA で30% mortality 減を実証。AF という high-risk population での PA effect の重要 reference。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7551,13 +7594,14 @@
     "importance": "AF・CVD risk 患者の PA effect の重要 reference。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "AF 限定 accelerometer コホート の最大規模研究。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Guideline-adherent で全原因死亡 30% 減、②HF 27% 減、③stroke 25% 減、④≥108 min/週で linear inverse、⑤AF という high-risk population で確証、⑥UK Biobank での大規模 evidence。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] AF 患者の PA 効果を論じる導入で、本論文を「UK Biobank AF cohortで ガイドライン-adherent PA が30%全原因死亡減を実証した規範的研究（Eur Heart J 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] AF 患者の PA 効果を論じる導入で、本論文を「UK Biobank AF cohortで ガイドライン-adherent PA が30%全原因死亡減を実証した規範的研究（Eur Heart J 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_05",
     "title": "Prospective Associations of Accelerometer-Assessed Physical Activity With Mortality and Incidence of Cardiovascular Disease Among Adults With Hypertension: The UK Biobank Study",
     "authors": "Stamatakis E, Ahmadi MN, Friedenreich CM, et al.",
-    "journal": "Journal of the American Heart Association, 2022年",
+    "journal": "Journal of the American Heart Association (IF=確認待ち), 2022年",
     "design": "前向きコホート（UK Biobank 高血圧患者 n>15,000、accelerometer × mortality・CVD）",
     "url": "https://www.ahajournals.org/doi/10.1161/JAHA.121.023290",
     "summary": "UK Biobank の高血圧患者1.5万人で accelerometer-based PA と mortality・CVD の関連を実証した研究。MVPA 増加で全原因死亡・CVD ともに dose-response 減、ガイドライン-adherent で HR 0.70-0.75。Yujiの「ハイリスク患者の PA 効果」研究の reference。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -7587,13 +7631,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "高血圧限定 accelerometer コホート 研究。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①MVPA dose-response、②guideline-adherent HR 0.70-0.75、③UK Biobank 1.5万、④5年追跡、⑤Cox 回帰の頑健性、⑥accelerometer 客観評価。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] 高血圧患者の PA 効果を論じる導入で、本論文を「UK Biobank 高血圧 1.5万人で ガイドライン-adherent PA が30% mortality 減を実証した規範的研究（JAHA 2022）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] 高血圧患者の PA 効果を論じる導入で、本論文を「UK Biobank 高血圧 1.5万人で ガイドライン-adherent PA が30% mortality 減を実証した規範的研究（JAHA 2022）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_06",
     "title": "Impact of accelerometer epoch summary measure on associations between 身体活動 and 全原因死亡 in Whitehall II and UK Biobank",
     "authors": "Sabia S, et al.",
-    "journal": "Scientific Reports, 2025年",
+    "journal": "Scientific Reports (IF=確認待ち), 2025年",
     "design": "比較研究（Whitehall II + UK Biobank、accelerometer epoch summary measure の選択 × mortality 関連評価）",
     "url": "https://www.nature.com/articles/s41598-025-30237-5",
     "summary": "Accelerometer の epoch summary measure（average acceleration vs intensity gradient 等）の選択が mortality 関連推定に与える影響を Whitehall II + UK Biobank で比較。Average acceleration と intensity gradient で同等精度、両者高値で死亡リスク最低。Yujiの accelerometer methodology の方法論的根拠。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。",
@@ -7622,13 +7667,14 @@
     "importance": "Accelerometer methodology の方法論的標準化 reference。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "複数 epoch summary measure の体系比較。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①average acceleration と intensity gradient の同等精度、②両者高値で mortality 最低、③methodology 標準化方向性、④Whitehall II + UK Biobank の cross-コホート、⑤Cox 回帰での頑健性、⑥複数 measure の比較フレームワーク。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] Accelerometer methodology の standardization を論じる導入で、本論文を「複数 epoch summary measure の比較で average acceleration と intensity gradient の同等性を示した方法論的標準（Sci Rep 2025）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] Accelerometer methodology の standardization を論じる導入で、本論文を「複数 epoch summary measure の比較で average acceleration と intensity gradient の同等性を示した方法論的標準（Sci Rep 2025）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_07",
     "title": "Large Scale Population Assessment of Physical Activity Using Wrist Worn Accelerometers: The UK Biobank Study",
     "authors": "Doherty A, Jackson D, Hammerla N, et al.",
-    "journal": "PLOS One, 2017年（accelerometer 大規模応用の foundational paper）",
+    "journal": "PLOS One (IF=確認待ち), 2017年（accelerometer 大規模応用の foundational paper）",
     "design": "方法論論文＋大規模 deployment（UK Biobank 9万人 wrist accelerometer の取得・処理・公開フレームワーク）",
     "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0169649",
     "summary": "UK Biobank で9万人規模の wrist-worn accelerometer 取得・処理・公開フレームワークを確立した foundational paper。後続のすべての UK Biobank accelerometer 研究の方法論的基盤。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7657,13 +7703,14 @@
     "importance": "Accelerometer 疫学研究の foundational paper。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "9万人規模の accelerometer pipeline 標準化。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①7日間 wrist accelerometer protocol、②processing pipeline 公開、③UK Biobank 9万人で deployment、④後続研究の方法論基盤、⑤data 公開で再現性確保、⑥PA × 健康の大規模 evidence の foundation。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] Accelerometer 疫学研究の foundational methodology を論じる導入で、本論文を「UK Biobank 9万人 accelerometer pipeline を確立した foundational paper（PLOS One 2017）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] Accelerometer 疫学研究の foundational methodology を論じる導入で、本論文を「UK Biobank 9万人 accelerometer pipeline を確立した foundational paper（PLOS One 2017）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_08",
     "title": "Effects of 身体活動 on functional decline among community-dwelling older adults",
     "authors": "Various authors",
-    "journal": "Journal of the American Geriatrics Society / 関連メタ解析, 2024年",
+    "journal": "Journal of the American Geriatrics Society / 関連メタ解析 (IF=確認待ち), 2024年",
     "design": "システマティックレビュー and メタ解析（地域在住高齢者の PA × functional decline、複数 コホート 統合）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10958308/",
     "summary": "地域在住高齢者の PA × functional decline のメタ解析。MVPA 高群で functional decline が30-40% 軽減、light PA でも有意効果。Yujiの「PA × 身体機能」研究の核心 reference。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7694,13 +7741,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "地域在住高齢者限定のメタ解析。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①MVPA 高群で functional decline 30-40% 軽減、②light PA でも 10-15% 効果、③sedentary 高は逆効果、④メタ解析の包括性、⑤地域在住限定で外挿性高、⑥複数 アウトカム（mobility・ADL・歩行速度）で頑健。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] 高齢者のPA × 身体機能を論じる導入で、本論文を「地域在住高齢者で MVPA が functional decline を30-40% 軽減することを統合したメタ解析」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] 高齢者のPA × 身体機能を論じる導入で、本論文を「地域在住高齢者で MVPA が functional decline を30-40% 軽減することを統合したメタ解析」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_09",
     "title": "Sedentary behavior and 身体活動 in relation to all-cause and 心血管疾患 mortality: the UK Biobank コホート study",
     "authors": "UK Biobank コホート consortium",
-    "journal": "UK Biobank publications, 2024年",
+    "journal": "UK Biobank publications (IF=確認待ち), 2024年",
     "design": "device-measured コホート（UK Biobank、sedentary time × intensity-specific PA × mortality・CVD）",
     "url": "https://www.ukbiobank.ac.uk/publications/device-measured-sedentary-time-and-intensity-specific-physical-activity-in-relation-to-all-cause-and-cardiovascular-disease-mortality-the-uk-biobank-cohort-study/",
     "summary": "UK Biobank 7.4万人で sedentary time と intensity-specific PA の joint association を mortality・CVD で評価。High sedentary でも MVPA 30-40 min/day で attenuate 可能。「座りすぎ」を「動き」で打ち消すための具体的 dose の根拠。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7730,13 +7778,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Joint association の体系評価。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Sedentary 高でも MVPA 30-40 min で attenuate、②light PA も部分的効果、③Joint association の dose-response、④UK Biobank 7.4万人、⑤device-measured で正確性、⑥intensity-specific の evaluation。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] Sedentary × PA の interaction を論じる導入で、本論文を「UK Biobank 7.4万人で MVPA 30-40 min が sedentary 効果を打ち消すことを示した規範的研究」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] Sedentary × PA の interaction を論じる導入で、本論文を「UK Biobank 7.4万人で MVPA 30-40 min が sedentary 効果を打ち消すことを示した規範的研究」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260512_tue_10",
     "title": "Optimal dose of resistance training to improve 握力 strength in older adults with サルコペニア: a システマティックレビュー and Bayesian model-based network メタ解析",
     "authors": "Various authors",
-    "journal": "Frontiers in Physiology, 2025年",
+    "journal": "Frontiers in Physiology (IF=確認待ち), 2025年",
     "design": "システマティックレビュー + Bayesian network メタ解析（RT × 握力 strength × dose-response）",
     "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1564988/full",
     "summary": "RT × 握力 strength の optimal dose を Bayesian network メタ解析 で同定。1,220 MET-min/週が optimal、最低 600 MET-min/週で clinical 改善。Yujiの介入 dose 設計の根拠。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。Accelerometer-based の客観評価による effect 推定の妥当性を担保する根拠論文として直接寄与する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7767,13 +7816,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Bayesian network メタ解析 の方法論的厳密性。Accelerometer-based の客観評価による既存 self-report 中心研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①1,220 MET-min/週 optimal、②600 MET-min/週 minimal effective、③Bayesian network で dose ranking、④handgrip 特化の dose-response、⑤systematic review の包括性、⑥clinical practice ガイドライン基盤。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書の課題1（多元統合機械学習）での身体活動変数の組込み根拠ともなり、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照軸として機能する位置付け。",
-    "citation": "[introduction] RT × 握力 の optimal dose を論じる導入で、本論文を「Bayesian network メタ解析 で 1,220 MET-min/週を optimal として同定した規範的研究（Front Physiol 2025）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。"
+    "citation": "[introduction] RT × 握力 の optimal dose を論じる導入で、本論文を「Bayesian network メタ解析 で 1,220 MET-min/週を optimal として同定した規範的研究（Front Physiol 2025）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。Accelerometer-based の客観評価結果として、Yuji の自前研究での身体活動評価プロトコルの根拠とする。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_01",
     "title": "Phase Angle and Impedance Ratio as Indicators of Physical Function and Fear of Falling in Older Adult Women: Cross-Sectional Analysis",
     "authors": "Yamada Y, Nishizawa M, et al.",
-    "journal": "JMIR Aging, 2024年",
+    "journal": "JMIR Aging (IF=確認待ち), 2024年",
     "design": "横断研究（地域在住高齢女性、phase angle × impedance ratio × 身体機能・転倒恐怖）",
     "url": "https://aging.jmir.org/2024/1/e53975/",
     "summary": "高齢女性において phase angle ≤4.1° が身体機能低下の臨床閾値となることを実証した重要研究。Phase angle と impedance ratio（IR）の双方が、握力および sit-to-stand と強く関連し、転倒恐怖（fear of falling）との関連も明確化された。地域在住高齢女性500名規模での横断解析で、両指標とも身体機能低下群と維持群を有意に弁別できた。本研究は muscle quality 評価の臨床実装に直接寄与する位置にある。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -7804,13 +7854,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "高齢女性での 4.1° cut-off 実証と、phase angle・IR の統合評価が独自の貢献。Lower body strength の寄与を定量化した点も既存研究にない貢献で、AUC 0.78 という具体的な弁別性能を提示した点で臨床実装の根拠として機能する。日本人 specific 値の提示も独自性が高い。",
     "discovery": "①phase angle ≤4.1° で身体機能低下を弁別、AUC 0.78、②握力と sit-to-stand に β=0.34、0.41 の強い関連（p<0.001）、③lower body strength の寄与が upper body より大、④転倒恐怖（fear of falling）との独立関連オッズ比 2.1（95%CI 1.5-3.0）、⑤地域在住女性500名規模での外的妥当性、⑥年齢・身長・体重補正後も頑健、⑦impedance ratio も並行的に身体機能と相関、⑧握力では性差を考慮した cut-off 必要性、⑨日本人女性 specific 値として 4.1° 確立、⑩clinical screening での使用根拠を提示。",
-    "citation": "[introduction] phase angle と身体機能を論じる導入で、本論文を「phase angle ≤4.1° を身体機能低下の cut-off として実証した規範的研究（JMIR Aging 2024）」として引用。日本人高齢女性の specific 値として、Yuji 自身の博士論文・PD 申請書で参照値として使用する位置。[discussion] 自前データの cut-off と本論文 4.1° の比較で外的妥当性を議論し、Yuji コホートでの replication として位置付ける。Lower body strength の寄与の解釈についても本論文を踏まえて議論し、日本人女性 specific 値の妥当性を多角的に評価する文脈で参照する。"
+    "citation": "[introduction] phase angle と身体機能を論じる導入で、本論文を「phase angle ≤4.1° を身体機能低下の cut-off として実証した規範的研究（JMIR Aging 2024）」として引用。日本人高齢女性の specific 値として、Yuji 自身の博士論文・PD 申請書で参照値として使用する位置。[discussion] 自前データの cut-off と本論文 4.1° の比較で外的妥当性を議論し、Yuji コホートでの replication として位置付ける。Lower body strength の寄与の解釈についても本論文を踏まえて議論し、日本人女性 specific 値の妥当性を多角的に評価する文脈で参照する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_02",
     "title": "Associations of Muscle Quality Indices (Phase Angle, ECW/TBW, and Echo Intensity) with Physical Performance in Community-Dwelling Older Women",
     "authors": "Asano Y et al. (Yuji の自身研究または同分野)",
-    "journal": "Experimental Gerontology / 関連論文, 2026年",
+    "journal": "Experimental Gerontology / 関連論文 (IF=確認待ち), 2026年",
     "design": "横断研究（地域在住高齢女性、phase angle・ECW/TBW・echo intensity × 身体機能）",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S089990072600050X",
     "summary": "muscle quality 3指標（phase angle、ECW/TBW、echo intensity）の身体機能との関連を体系評価した研究。3指標が独立して身体機能を予測することを示し、phase angle と echo intensity の高相関（r=-0.765）も実証した。Higher echo intensity は lower phase angle を意味し、いずれも muscle quality の異なる dimension を捕捉していることを定量化。地域在住高齢女性での横断解析で、3指標の独立寄与と相互関連を統合的に解析した。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7841,13 +7892,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "3 muscle quality 指標の同一参加者・同一プロトコルでの統合解析と、相関構造の定量化が独自。階層回帰で独立寄与を分離した点も既存研究にない貢献で、3指標の dimension 性を実証した方法論的厳密性が高い。日本人女性 specific の値も提示している。",
     "discovery": "①3指標が独立して身体機能を予測、ΔR²=0.08-0.12、②phase angle と echo intensity r=-0.765 の強い負相関、③phase angle と ECW/TBW r=-0.60、④ECW/TBW と echo intensity r=0.55、⑤higher echo intensity = lower phase angle の関係、⑥3指標が muscle quality の異なる dimension を捕捉、⑦階層回帰で統合効果を定量化、⑧地域在住女性での外的妥当性、⑨年齢・身長・体重補正後も頑健、⑩SHAP など機械学習による non-linear 統合の方向性を提示する。",
-    "citation": "[introduction] muscle quality 指標の統合評価を論じる導入で、本論文を「3指標（phase angle、ECW/TBW、echo intensity）の身体機能との関連を統合解析した規範的研究」として引用。Yuji の核心研究テーマと完全に重なる先行研究として、PD 申請書・博士論文で繰り返し参照する位置にある。[discussion] 自前データでの再現性と、3指標の non-linear 統合（SHAP・causal forests）への展開可能性を本論文の構造解析を踏まえて議論する。階層回帰の ΔR²=0.08-0.12 を SHAP の主効果寄与で再現できるかも論点として提起する。"
+    "citation": "[introduction] muscle quality 指標の統合評価を論じる導入で、本論文を「3指標（phase angle、ECW/TBW、echo intensity）の身体機能との関連を統合解析した規範的研究」として引用。Yuji の核心研究テーマと完全に重なる先行研究として、PD 申請書・博士論文で繰り返し参照する位置にある。[discussion] 自前データでの再現性と、3指標の non-linear 統合（SHAP・causal forests）への展開可能性を本論文の構造解析を踏まえて議論する。階層回帰の ΔR²=0.08-0.12 を SHAP の主効果寄与で再現できるかも論点として提起する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_03",
     "title": "Phase angle in applications of bioimpedance in health and disease",
     "authors": "Lukaski HC, Kyle UG, Kondrup J",
-    "journal": "Current Opinion in Clinical Nutrition and Metabolic Care / Reviews, 2023年（PMC10030341）",
+    "journal": "Current Opinion in Clinical Nutrition and Metabolic Care / Reviews (IF=確認待ち), 2023年（PMC10030341）",
     "design": "システマティックレビュー（phase angle の臨床応用、健康と疾患での意味付け）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10030341/",
     "summary": "phase angle の臨床応用を体系整理した重要レビュー論文。健康な高齢者、フレイル、サルコペニア、ガン、心血管疾患、認知症などでの phase angle の予測値を統合提示し、各疾患・状態における cut-off と効果サイズの違いを明確化した。高齢者では phase angle の年齢関連低下と clinical implications を整理し、universal screening biomarker としての位置付けを確立した。アジア人特異性も議論されており、日本人高齢者への適用に直接関連する。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7876,13 +7928,14 @@
     "importance": "アジア人特異性の議論を含むため、日本人 specific 研究の方向性付けにも直結する。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Phase angle × 多疾患の統合レビューと、disease-specific cut-off の整理が独自。アジア人特異性の議論も既存レビューにない貢献で、universal biomarker としての位置付けを多領域横断で確立した点に独自性がある。",
     "discovery": "①高齢者で phase angle が年齢10歳ごとに約0.3°低下、②フレイル・サルコペニア・全原因死亡の screening tool として確立、③ガン患者で phase angle 低値の1年死亡 ハザード比 約2.0、④心血管疾患・認知症でも prognostic value を確認、⑤disease-specific cut-off は4.0-5.5°の範囲、⑥アジア人では欧米人より低値傾向、⑦疾患・年齢・性別での層別必要性、⑧universal screening biomarker としての位置付け、⑨年齢補正の重要性、⑩clinical practice での標準化指針を提示する。",
-    "citation": "[introduction] phase angle の臨床応用を論じる導入で、本論文を「phase angle × 多疾患の規範的システマティックレビュー（CONICM 2023）」として引用する。多領域での位置付けの根拠として、Yuji 自身の博士論文・PD 申請書で繰り返し参照する位置にある。[discussion] 自前データの cut-off と本レビューの統合提示を踏まえ、disease-specific な使い分けと日本人 specific 値の必要性を議論する文脈で参照する。アジア人特異性も本論文を踏まえ、日本人 コホート 解析の意義付けに用いる。年齢関連低下0.3°/10歳の参照値としても活用する。"
+    "citation": "[introduction] phase angle の臨床応用を論じる導入で、本論文を「phase angle × 多疾患の規範的システマティックレビュー（CONICM 2023）」として引用する。多領域での位置付けの根拠として、Yuji 自身の博士論文・PD 申請書で繰り返し参照する位置にある。[discussion] 自前データの cut-off と本レビューの統合提示を踏まえ、disease-specific な使い分けと日本人 specific 値の必要性を議論する文脈で参照する。アジア人特異性も本論文を踏まえ、日本人 コホート 解析の意義付けに用いる。年齢関連低下0.3°/10歳の参照値としても活用する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_04",
     "title": "Phase Angle as a Predictor for Physical Function in Institutionalized Independent Older Adults",
     "authors": "Various authors",
-    "journal": "Journal of Frailty Aging / 関連雑誌, 2022年",
+    "journal": "Journal of Frailty Aging / 関連雑誌 (IF=確認待ち), 2022年",
     "design": "観察研究（施設居住の独立高齢者、phase angle × 身体機能 × 縦断追跡）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/36361495/",
     "summary": "施設居住の独立高齢者で phase angle が身体機能（歩行速度、TUG、握力）を予測することを縦断追跡で実証した重要研究。Phase angle 研究の多くが地域在住高齢者を対象としているため、施設居住という異なる介入環境での外的妥当性を確立した点で foundational paper として機能する。1-2年の追跡期間で、ベースライン低 phase angle 群が身体機能 decline を明確に示すことが確認された。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -7911,13 +7964,14 @@
     "importance": "地域在住中心の phase angle 文献と相補的に、施設居住での外的妥当性を確立した点で重要度が高い。日本でも介護施設・サービス付き高齢者住宅での phase angle 評価の臨床実装の根拠として直結する位置にある。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "施設居住限定の縦断 phase angle 研究で、独立高齢者という条件を明確化した点が独自。1-2年追跡で身体機能 decline を実証した点も貢献で、地域在住中心の文献と相補する役割を担う独自性が高い研究。",
     "discovery": "①施設居住の独立高齢者で phase angle が身体機能を予測することを縦断的に実証、②歩行速度・TUG・握力いずれも有意な低下を予測、③1-2年追跡での予測能の頑健性を確認、④Phase angle 4.5°以下群で1年後の歩行速度低下リスク約2倍、⑤独立高齢者限定で交絡を軽減した解析結果を提示、⑥施設居住 sub-population での外的妥当性を確立、⑦地域在住中心の文献と相補的に機能する位置付け、⑧栄養状態（MNA）を交絡として明示的に補正、⑨年齢・性別・併存疾患補正後も関連が頑健、⑩clinical practice ガイドラインの基盤として機能する位置付けを確立した点が貢献。",
-    "citation": "[introduction] 施設居住高齢者の phase angle 研究を論じる導入で、本論文を「施設居住独立高齢者で phase angle が身体機能変化を予測することを実証した研究」として引用する。地域在住中心の文献と相補する位置付けで、PD 申請書の sub-population 展開の根拠として参照する位置にある。[discussion] 自前データの地域在住結果と本論文の施設居住結果を比較し、外的妥当性と sub-population 効果を議論する文脈で参照する。日本人施設居住者への外挿可能性も論点として提起し、Phase angle 4.5°以下リスク約2倍の参照値としても活用する。"
+    "citation": "[introduction] 施設居住高齢者の phase angle 研究を論じる導入で、本論文を「施設居住独立高齢者で phase angle が身体機能変化を予測することを実証した研究」として引用する。地域在住中心の文献と相補する位置付けで、PD 申請書の sub-population 展開の根拠として参照する位置にある。[discussion] 自前データの地域在住結果と本論文の施設居住結果を比較し、外的妥当性と sub-population 効果を議論する文脈で参照する。日本人施設居住者への外挿可能性も論点として提起し、Phase angle 4.5°以下リスク約2倍の参照値としても活用する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_05",
     "title": "Phase angle obtained via bioelectrical impedance analysis and objectively measured physical activity or exercise habits",
     "authors": "Yamada Y et al.",
-    "journal": "Scientific Reports, 2022年",
+    "journal": "Scientific Reports (IF=確認待ち), 2022年",
     "design": "横断研究（accelerometer × phase angle × exercise habits）",
     "url": "https://www.nature.com/articles/s41598-022-21095-6",
     "summary": "Accelerometer で客観測定した身体活動と phase angle の関連を実証した重要研究。Higher 身体活動 group で phase angle が有意に高く、exercise habits（運動習慣）でも同様の関連を確認した。Self-report 中心だった先行研究の限界を accelerometer による客観評価で克服した点で foundational paper として位置付けられる。Phase angle が modifiable な muscle quality 指標であることを実証し、介入研究の前提を確立した。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7946,13 +8000,14 @@
     "importance": "当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Accelerometer × phase angle の客観的関連実証が独自で、self-report 中心だった先行研究の限界を克服する貢献。用量反応的増加を実証した点も貢献で、介入応答性の根拠を提供する独自性が高い研究。",
     "discovery": "①Accelerometer-MVPA 四分位群で phase angle が用量反応的増加、Q1 4.5° → Q4 5.2°、②p for trend < 0.001 で統計的有意、③exercise habits（自己報告運動習慣）でも同様の傾向、④Sedentary time と負の関連を確認、⑤Step count と正の関連を確認、⑥Recall バイアス排除後も関連が頑健、⑦phase angle が身体活動介入に応答性を示す、⑧modifiable な muscle quality 指標として確立、⑨年齢・性別・体格補正後も頑健、⑩clinical practice での介入根拠を提供する。",
-    "citation": "[introduction] 身体活動 × phase angle を論じる導入で、本論文を「accelerometer × phase angle の用量反応関連を実証した規範的研究（Sci Rep 2022）」として引用する。Self-report 中心の文献と相補する客観評価の根拠として、PD 申請書の課題3 で中心的に参照する位置にある。[discussion] 自前データの自己報告身体活動と本論文の客観評価結果を比較し、介入研究での因果実証の必要性を議論する文脈で参照する。日本人での dose-response 検証の意義付けにも本論文を用いる。Q1→Q4 の 0.7°差を介入効果目標に転用する根拠としても活用する。"
+    "citation": "[introduction] 身体活動 × phase angle を論じる導入で、本論文を「accelerometer × phase angle の用量反応関連を実証した規範的研究（Sci Rep 2022）」として引用する。Self-report 中心の文献と相補する客観評価の根拠として、PD 申請書の課題3 で中心的に参照する位置にある。[discussion] 自前データの自己報告身体活動と本論文の客観評価結果を比較し、介入研究での因果実証の必要性を議論する文脈で参照する。日本人での dose-response 検証の意義付けにも本論文を用いる。Q1→Q4 の 0.7°差を介入効果目標に転用する根拠としても活用する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_06",
     "title": "Segmental bioelectrical impedance spectroscopy: A novel field assessment of muscle size and quality in normal weight and obese older men",
     "authors": "Yamada Y, Yoshida T, et al.",
-    "journal": "Experimental Gerontology, 2022年",
+    "journal": "Experimental Gerontology (IF=確認待ち), 2022年",
     "design": "方法論論文（segmental BIS、muscle size と quality の field assessment、normal weight vs obese 高齢男性）",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0531556522000535",
     "summary": "Segmental BIS（bioelectrical impedance spectroscopy）で muscle size と quality を field 評価する手法を確立した重要な方法論論文。研究室レベルで使われていた segmental BIS を field deployment 可能な標準化プロトコルに発展させた点で foundational paper として機能する。Normal weight と obese 高齢男性で適用可能性を実証し、DXA との高相関を確認した。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -7982,13 +8037,14 @@
     "importance": "Field 評価の標準化により、TMM など大規模 コホート への deployment の根拠としても機能する。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Field 評価可能な segmental BIS の標準化と、obesity gradient での妥当性検証が独自。DXA との比較で系統誤差を定量化した点も貢献で、四肢別評価という細やかなプロトコル提示も独自性が高い研究。",
     "discovery": "①Segmental BIS で muscle size を DXA と高相関で評価、四肢別 r=0.85-0.92、②quality（phase angle）も同時に取得可能な統合プロトコル、③field deployment の実装可能性を証明、④normal weight と obese の両方で外的妥当性、⑤BMI gradient による精度低下は限定的、⑥Bland-Altman で系統誤差が小さい、⑦高齢男性での実装可能性を実証、⑧四肢別の独立評価が可能で部位特異的解析に活用、⑨標準化された field method として確立、⑩clinical practice での実装根拠を提示する。",
-    "citation": "[introduction] Segmental BIS の field assessment を論じる導入で、本論文を「muscle size と quality の field 評価を確立した方法論的標準（Exp Gerontol 2022）」として引用する。Yuji の自前研究の segmental BIS プロトコルの根拠論文として、博士論文・PD 申請書で繰り返し参照する位置にある。[discussion] 自前データの segmental BIS 結果と本論文の DXA 比較結果を踏まえ、方法論的妥当性を議論する文脈で参照する。女性 コホート・若年層への外挿可能性も論点として提起し、四肢別評価の独自性も併せて議論する。"
+    "citation": "[introduction] Segmental BIS の field assessment を論じる導入で、本論文を「muscle size と quality の field 評価を確立した方法論的標準（Exp Gerontol 2022）」として引用する。Yuji の自前研究の segmental BIS プロトコルの根拠論文として、博士論文・PD 申請書で繰り返し参照する位置にある。[discussion] 自前データの segmental BIS 結果と本論文の DXA 比較結果を踏まえ、方法論的妥当性を議論する文脈で参照する。女性 コホート・若年層への外挿可能性も論点として提起し、四肢別評価の独自性も併せて議論する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_07",
     "title": "Phase Angle Is a Useful indicator for Muscle Function in Older Adults",
     "authors": "Yamada M et al.",
-    "journal": "Journal of Aging Research / 関連雑誌, 2019年（複数 follow-up 2024年）",
+    "journal": "Journal of Aging Research / 関連雑誌 (IF=確認待ち), 2019年（複数 follow-up 2024年）",
     "design": "観察研究（高齢者、phase angle × muscle function indicators）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/30820513/",
     "summary": "高齢者での phase angle が muscle function（握力、leg strength、power）の有用な指標であることを実証した foundational paper。複数の muscle function 指標との一貫した関連を統合的に評価し、phase angle の muscle function 指標としての位置付けを確立した。Multiple muscle function indicators との同時評価で、特定指標への依存を回避した方法論的厳密性も特徴で、phase angle の汎用性を実証する根拠となる。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -8017,13 +8073,14 @@
     "importance": "日本人 コホート での研究で、外挿性も比較的高く、TMM 解析の参照値として機能する。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Multiple muscle function indicators との同時評価が独自で、特定指標への依存を回避した方法論的厳密性が貢献。3 muscle function dimension を統合的に評価する設計が独自性の中心で、phase angle の汎用性を実証する論文として位置付けられる。",
     "discovery": "①Phase angle と握力の正相関、r=0.45-0.55 の中等度〜強い関連、②leg strength・leg power とも有意な関連、r=0.40-0.50、③複数 muscle function 指標で関連の一貫性を確認、④foundational evidence として位置付けが確立、⑤高齢者特化での妥当性を確保、⑥年齢・性別・体格補正後も関連が頑健、⑦特定指標への依存を回避する設計、⑧Comprehensive な muscle function 指標としての位置付け、⑨多変量回帰での独立寄与を確認、⑩clinical practice での応用根拠を提供する位置付け。",
-    "citation": "[introduction] Phase angle の muscle function 指標を論じる導入で、本論文を「phase angle が複数 muscle function と関連することを実証した foundational paper」として引用する。Yuji の phase angle 研究の基盤として博士論文・PD 申請書で参照する位置にある。[discussion] 自前データの muscle function 結果と本論文の効果サイズ（r=0.45-0.55）を比較し、外的妥当性と日本人 specific 値の検証を議論する文脈で参照。Comprehensive indicator としての位置付けの妥当性も論点として提起する。"
+    "citation": "[introduction] Phase angle の muscle function 指標を論じる導入で、本論文を「phase angle が複数 muscle function と関連することを実証した foundational paper」として引用する。Yuji の phase angle 研究の基盤として博士論文・PD 申請書で参照する位置にある。[discussion] 自前データの muscle function 結果と本論文の効果サイズ（r=0.45-0.55）を比較し、外的妥当性と日本人 specific 値の検証を議論する文脈で参照。Comprehensive indicator としての位置付けの妥当性も論点として提起する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_08",
     "title": "The bioimpedance phase angle predicts low muscle strength, impaired quality of life, and increased mortality in old patients with cancer",
     "authors": "Norman K, Wirth R, Neubauer M, Eckardt R, Stobäus N",
-    "journal": "Journal of the American Medical Directors Association, 2014年（rolling follow-up）",
+    "journal": "Journal of the American Medical Directors Association (IF=確認待ち), 2014年（rolling follow-up）",
     "design": "観察研究（高齢ガン患者、phase angle × muscle strength・QOL・全原因死亡）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/25499428/",
     "summary": "高齢ガン患者で phase angle が muscle strength・QOL・全原因死亡を強く予測することを実証した foundational paper。Phase angle の clinical utility を multi-アウトカム（筋力低下・QOL 低下・死亡）で同時に確立した点で、ガン患者での phase angle 応用の中心的引用となる。Cachexia の clinical screening tool としての位置付けも確立し、universal prognostic indicator としての phase angle の地位を強化した。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -8054,13 +8111,14 @@
     "importance": "日本のガン患者 コホート（TMM ガン sub-コホート 等）での replication の方向性付けにも直接寄与する研究。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "ガン × phase angle × multi-アウトカムの同時評価が独自で、cachexia screening tool としての位置付け確立も貢献。Muscle strength・QOL・mortality を同時に扱うことで、phase angle の universal prognostic indicator としての地位を強化した独自性が高い研究。",
     "discovery": "①低 phase angle 群で muscle strength 低下、β=-0.38（p<0.001）、②QOL 低下、β=-0.32（p<0.001）、③全原因死亡上昇、ハザード比 1.8-2.5（95%CI 1.3-3.6）、④cachexia の clinical screening tool として確立、⑤universal prognostic indicator としての地位を強化、⑥multi-アウトカムの同時評価で統合的予測能を実証、⑦Phase angle 4.0°以下で死亡リスクが顕著上昇、⑧年齢・性別・ガン種・病期補正後も関連が頑健、⑨EORTC QLQ-C30 での妥当な QOL 評価、⑩clinical practice での screening tool としての地位を確立。",
-    "citation": "[introduction] 疾患患者の phase angle 予測値を論じる導入で、本論文を「ガン患者で phase angle が multi-アウトカムを予測する foundational paper」として引用する。Multi-disease application の根拠として、PD 申請書で multi-アウトカム評価の中心的引用となる位置。[discussion] 自前データの一般高齢者結果と本論文のガン患者結果を比較し、disease-specific な効果サイズの違いと universal prognostic indicator としての位置付けを議論する。日本のガン患者 コホート での replication 計画の意義付けにも本論文を用いる。"
+    "citation": "[introduction] 疾患患者の phase angle 予測値を論じる導入で、本論文を「ガン患者で phase angle が multi-アウトカムを予測する foundational paper」として引用する。Multi-disease application の根拠として、PD 申請書で multi-アウトカム評価の中心的引用となる位置。[discussion] 自前データの一般高齢者結果と本論文のガン患者結果を比較し、disease-specific な効果サイズの違いと universal prognostic indicator としての位置付けを議論する。日本のガン患者 コホート での replication 計画の意義付けにも本論文を用いる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_09",
     "title": "Association of Bioelectrical Impedance Phase Angle with Physical Performance and Nutrient Intake of Older Adults",
     "authors": "Lim WS, Lim JP, Chew J, et al.",
-    "journal": "Nutrients, 2023年",
+    "journal": "Nutrients (IF=確認待ち), 2023年",
     "design": "観察研究（高齢者、phase angle × physical performance × nutrient intake）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/36986185/",
     "summary": "高齢者で phase angle が physical performance と nutrient intake と関連することを実証した重要研究。Protein・vitamin D 摂取が phase angle に正の効果を持ち、phase angle が栄養状態と機能の統合指標として機能することを示した。栄養介入の potential を示唆し、運動介入と並行する栄養介入研究の方向性を提示する。日本人外挿に寄与するアジア人 コホート 中心の知見も特徴。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -8089,13 +8147,14 @@
     "importance": "アジア人 コホート 中心で日本人への外挿性も比較的高く、TMM の食事調査データ統合解析の参照値として機能する位置にある。栄養介入研究の方向性付けにも直結する重要な reference として機能する。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
     "originality": "Nutrient intake × phase angle の体系評価が独自で、protein・vitamin D・magnesium の同時評価が貢献。アジア人 コホート 中心の知見も日本人外挿に寄与する独自性が高い研究で、栄養介入の potential を提示した点も貢献。",
     "discovery": "①Protein 摂取が phase angle に正の関連、β=0.18（p<0.01）、②vitamin D 摂取も同様、β=0.15（p<0.05）、③magnesium 摂取とも有意な関連、④physical performance との関連、⑤栄養介入の potential を示唆、⑥phase angle が integrated indicator として機能、⑦Protein 1.0 g/kg/day 以上群で特に強い関連、⑧年齢・性別・体格・身体活動補正後も頑健、⑨アジア人 コホート 中心での外的妥当性、⑩clinical practice での dietary advice 根拠を提供する。",
-    "citation": "[introduction] 栄養 × phase angle を論じる導入で、本論文を「protein・vitamin D 摂取と phase angle の関連を実証した規範的研究」として引用する。アジア人 sub-コホート中心の知見として、PD 申請書の拡張軸（栄養介入）の根拠論文として位置付ける位置にある。[discussion] 自前データの栄養摂取結果と本論文の β=0.18-0.15 を比較し、日本人 specific 値の検証と栄養介入の potential を議論する文脈で参照する。Protein 1.0 g/kg/day cut-off の妥当性も論点として提起し、24時間思い出し法等との並行評価の必要性も論じる。"
+    "citation": "[introduction] 栄養 × phase angle を論じる導入で、本論文を「protein・vitamin D 摂取と phase angle の関連を実証した規範的研究」として引用する。アジア人 sub-コホート中心の知見として、PD 申請書の拡張軸（栄養介入）の根拠論文として位置付ける位置にある。[discussion] 自前データの栄養摂取結果と本論文の β=0.18-0.15 を比較し、日本人 specific 値の検証と栄養介入の potential を議論する文脈で参照する。Protein 1.0 g/kg/day cut-off の妥当性も論点として提起し、24時間思い出し法等との並行評価の必要性も論じる。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260513_wed_10",
     "title": "Position statement: Evidence-Based Exercise Guidelines for Sarcopenia in Older Adults: Insights from the Korean Working Group on Sarcopenia",
     "authors": "Korean Working Group on Sarcopenia",
-    "journal": "Annals of Geriatric Medicine and Research, 2025年",
+    "journal": "Annals of Geriatric Medicine and Research (IF=確認待ち), 2025年",
     "design": "ガイドライン論文（サルコペニアの運動介入推奨、エビデンス評価、Korean working group statement）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12489597/",
     "summary": "韓国サルコペニア working group による運動介入のエビデンスベースガイドライン論文。Resistance training、aerobic、combined の推奨用量と効果を体系整理し、アジア人特異的データを重視した推奨を提示した重要なポジションペーパーである。欧米中心のサルコペニアガイドラインと相補的に機能し、アジア人の体格・遺伝的背景を踏まえた推奨を確立した。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -8126,13 +8185,14 @@
     "importance": "日本人 specific 推奨ガイドラインの構築の起点としても直接寄与する重要な reference となる。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Korean working group の系統推奨と、アジア人 RCT を重視評価した点が独自。GRADE システムでエビデンスの質を評価した方法論的厳密性も貢献し、欧米中心の文献と相補する位置付けの独自性が高いガイドライン論文。",
     "discovery": "①RT 2-3回/週・70-80% 1RM 推奨、strong recommendation、②aerobic 150 min/週、strong recommendation、③combined が optimal、conditional recommendation、④効果サイズ最大は combined、⑤アジア人特異的エビデンス重視、⑥Korean working group 統一推奨、⑦欧米ガイドラインと相補、⑧GRADE システムでエビデンス質評価、⑨resistance training の strain 強度推奨に微差、⑩clinical practice ガイドラインとして実装可能。",
-    "citation": "[introduction] アジア人サルコペニア運動ガイドラインを論じる導入で、本論文を「Korean working group による系統推奨（Ann Geriatr Med Res 2025）」として引用する。アジア人 specific 根拠として、PD 申請書の課題3 で介入 dose 設定の中心的引用となる位置にある。[discussion] 自前データの介入結果と本ガイドラインの推奨を比較し、日本人 specific 推奨の必要性と日韓比較研究の方向性を議論する文脈で参照する。日本人 specific サルコペニアガイドライン構築の意義付けにも本論文を用いる。日韓間の運動様式・栄養文化の差異も考慮要として議論する。"
+    "citation": "[introduction] アジア人サルコペニア運動ガイドラインを論じる導入で、本論文を「Korean working group による系統推奨（Ann Geriatr Med Res 2025）」として引用する。アジア人 specific 根拠として、PD 申請書の課題3 で介入 dose 設定の中心的引用となる位置にある。[discussion] 自前データの介入結果と本ガイドラインの推奨を比較し、日本人 specific 推奨の必要性と日韓比較研究の方向性を議論する文脈で参照する。日本人 specific サルコペニアガイドライン構築の意義付けにも本論文を用いる。日韓間の運動様式・栄養文化の差異も考慮要として議論する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_01",
     "title": "Deep-learning based multi-modal models for brain age, cognition and amyloid pathology 予測",
     "authors": "Couvy-Duchesne B, Faouzi J, Martin B, et al.",
-    "journal": "Nature Aging / 関連雑誌, 2025年",
+    "journal": "Nature Aging / 関連雑誌 (IF=確認待ち), 2025年",
     "design": "深層学習多モダリティモデル（MRI + 臨床データ、ADNIで構築、cognitive normal の MAE 3.302歳・認知症 識別 AUC ≈0.95）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/40450379/",
     "summary": "MRI + 臨床データを統合した深層学習で brain age・認知機能・アミロイド病理を同時予測する規範的研究。3D CNN で脳画像を、別 NN で人口統計データを解析、transfer learning で複数 アウトカム 予測モデルを派生構築した。Cognitive normal 集団での brain age 予測 MAE 3.302歳、CDR 回帰の RMSE 0.334、認知症患者識別 AUC ≈0.95 という高精度を達成。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -8163,13 +8223,14 @@
     "importance": "脳MRI から brain age・認知機能・アミロイド病理を同時推定し、これらを SHAP の説明変数として組み込むことで「脳予備能の多層的指標」を構築できる。Foundation model の transfer learning で少サンプル（500名）でも高精度を達成可能。Lancet Neurology 級の論文化への直接ルート。",
     "originality": "Multi-modal multi-task の統合 framework で、従来単一 アウトカム に絞られていた brain age 研究を multi-アウトカム に拡張した点が革新的。Transfer learning で cognition と amyloid 予測モデルを派生構築する architecture も新規。",
     "discovery": "①Brain age 予測 MAE 3.302歳（cognitive normal）、②CDR 回帰 RMSE 0.334、③dementia 識別 AUC ≈0.95、④brain age gap が MCI で拡大（10.9年以内に54%が 認知症 診断）、⑤amyloid plaque MRI 単独予測 AUC 0.85、⑥brain age が CDR・FAQ・executive function と相関、⑦multi-task transfer learning が single-task より精度向上、⑧ADNI で外的妥当性、⑨non-invasive な MRI のみで amyloid proxy 可能、⑩臨床診断ツールとしての potential。",
-    "citation": "[introduction] Brain age 予測の現代的方法論を論じる導入で、本論文を「multi-modal deep learning で brain age MAE 3.302歳・認知症 識別 AUC ≈0.95 を達成した規範的研究」として引用、自身の脳MRI 解析の方法論的妥当性の根拠とする。 [discussion] 自身の SHAP 分析で brain age を説明変数として組み込む妥当性を、本論文の transfer learning architecture を採用する根拠として論じ、日本人コホートでの再現性研究の必要性を提案。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] Brain age 予測の現代的方法論を論じる導入で、本論文を「multi-modal deep learning で brain age MAE 3.302歳・認知症 識別 AUC ≈0.95 を達成した規範的研究」として引用、自身の脳MRI 解析の方法論的妥当性の根拠とする。 [discussion] 自身の SHAP 分析で brain age を説明変数として組み込む妥当性を、本論文の transfer learning architecture を採用する根拠として論じ、日本人コホートでの再現性研究の必要性を提案。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_02",
     "title": "A novel deep learning-based brain age 予測 framework for routine clinical MRI scans",
     "authors": "Various authors",
-    "journal": "npj Aging, 2025年",
+    "journal": "npj Aging (IF=確認待ち), 2025年",
     "design": "方法論論文＋routine clinical MRI での brain age 予測（複数施設のリアルワールド MRI scans を活用、研究用ではなく臨床使用 MRI で評価）",
     "url": "https://www.nature.com/articles/s41514-025-00260-x",
     "summary": "従来の brain age 研究は研究用に標準化された MRI（ADNI、UK Biobank 等）を使うことが多かったが、臨床現場の routine MRI（標準化されていない、施設・機器による差大）でも頑健に brain age を予測する framework を確立した重要研究。複数施設のリアルワールド MRI で外的妥当性確認、clinical translation への直接ルート。Yujiの研究で「routine clinical MRI」を活用する方法論の根拠で、TMMコホートの臨床 MRI データ（標準化されていない既存スキャン）を再利用するための基盤。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -8198,13 +8259,14 @@
     "importance": "研究用 MRI を別途取得する必要なく、既存データから brain age を抽出可能。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "Routine clinical MRI での brain age 予測の頑健性を初めて大規模に実証。Pre-processing 簡素化で deployment ハードル低下。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Routine MRI で研究用 MRI と同等精度、②施設横断で頑健性確認、③minimally preprocessed T1w で実装可能、④cognitive decline の早期 indicator として機能、⑤臨床応用への direct route、⑥複数施設の外的妥当性、⑦pre-processing の dramatic 簡素化、⑧clinical decision support の potential、⑨研究 cost 削減（既存 MRI の再利用）、⑩deployment 可能性の実証。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 臨床 routine MRI への brain age 予測の応用を論じる導入で、本論文を「routine clinical MRI で頑健な brain age 予測を実現した規範的研究（npj Aging 2025）」として引用。 [discussion] 自身の TMM 既存 MRI 活用の方法論的根拠として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 臨床 routine MRI への brain age 予測の応用を論じる導入で、本論文を「routine clinical MRI で頑健な brain age 予測を実現した規範的研究（npj Aging 2025）」として引用。 [discussion] 自身の TMM 既存 MRI 活用の方法論的根拠として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_03",
     "title": "Anatomically interpretable deep learning of brain age captures domain-specific cognitive impairment",
     "authors": "Lee J, Burkett BJ, Min HK, et al.",
-    "journal": "Proceedings of the National Academy of Sciences (PNAS), 2023年",
+    "journal": "Proceedings of the National Academy of Sciences (PNAS) (IF=確認待ち), 2023年",
     "design": "解釈可能 deep learning（脳領域別の brain age 推定、domain-specific cognitive impairment との関連）",
     "url": "https://www.pnas.org/doi/10.1073/pnas.2214634120",
     "summary": "脳領域別の anatomically interpretable な brain age を推定する深層学習を構築し、domain-specific cognitive impairment（記憶、実行機能、注意など別々の認知機能領域）との対応を捉えた重要研究。従来の global brain age では見逃される領域別の老化パターンを可視化、認知機能の domain-specific decline との対応を実証。Yujiの研究で「脳の領域別老化と認知機能の対応」を捉える foundational reference。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
@@ -8234,13 +8296,14 @@
     "importance": "Yujiの研究で「脳の領域別老化」を介入標的として精緻化する根拠。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "Regional brain age という解剖学的解釈可能性を確保した先駆的研究。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①海馬 brain age と memory decline の強い対応、②前頭葉と executive function の対応、③側頭葉と language の対応、④global brain age では捉えきれない領域差、⑤解剖学的解釈可能性の確保、⑥複数 コホート で外的妥当性、⑦domain-specific な早期 detection 可能性、⑧介入標的の精緻化、⑨臨床診断への直接適用、⑩MCI から 認知症 への進行予測精度向上。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] 領域別 brain age と domain-specific cognitive impairment を論じる導入で、本論文を「解剖学的解釈可能な regional brain age を確立した規範的研究（PNAS 2023）」として引用。 [discussion] 自身の研究で領域別 brain age を採用する妥当性を本論文の海馬-memory 対応を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] 領域別 brain age と domain-specific cognitive impairment を論じる導入で、本論文を「解剖学的解釈可能な regional brain age を確立した規範的研究（PNAS 2023）」として引用。 [discussion] 自身の研究で領域別 brain age を採用する妥当性を本論文の海馬-memory 対応を比較対照として論じる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_04",
     "title": "Deep learning to predict future cognitive decline: a multimodal approach using brain MRI and clinical data",
     "authors": "Various authors",
-    "journal": "Frontiers in Neuroimaging, 2026年",
+    "journal": "Frontiers in Neuroimaging (IF=確認待ち), 2026年",
     "design": "前向き予測研究（脳MRI + 臨床データの multimodal deep learning、MCI 患者の cognitive decline 進行予測）",
     "url": "https://www.frontiersin.org/journals/neuroimaging/articles/10.3389/fnimg.2026.1726037/full",
     "summary": "脳MRI と臨床データを統合した multimodal deep learning で MCI 患者の future cognitive decline を予測する2026年最新研究。Multimodal 統合で単一 modality より高精度を達成、early intervention の identification に有用。Yujiの研究で multimodal 統合の方法論的根拠。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -8270,13 +8333,14 @@
     "importance": "Yujiの研究で multimodal 統合の方法論的根拠。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "MCI 限定での future cognitive decline 予測の multimodal 統合研究。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Multimodal AUC 0.86 vs MRI 単独 0.78、②early identification の感度向上、③CDR-SB 3年変化を予測、④MCI コホート での外的妥当性、⑤clinical translation への直接ルート、⑥preclinical stage 検出可能性、⑦multimodal 統合の dose-response、⑧blood biomarker の重要性、⑨APOE × MRI の interaction、⑩deployment 可能性。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] MCI の future cognitive decline 予測を論じる導入で、本論文を「multimodal deep learning で MCI 進行を AUC 0.86 で予測した規範的研究（Front Neuroimaging 2026）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] MCI の future cognitive decline 予測を論じる導入で、本論文を「multimodal deep learning で MCI 進行を AUC 0.86 で予測した規範的研究（Front Neuroimaging 2026）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_05",
     "title": "Deep learning-based brain age 予測 in normal aging and 認知症",
     "authors": "Lee J, Burkett BJ, Min HK, et al.",
-    "journal": "Nature Aging, 2023年",
+    "journal": "Nature Aging (IF=確認待ち), 2023年",
     "design": "深層学習 brain age（正常加齢 vs 認知症 の brain age gap、複数 コホート 統合）",
     "url": "https://pubmed.ncbi.nlm.nih.gov/37118071/",
     "summary": "正常加齢と 認知症 の brain age gap を深層学習で精密に推定した foundational paper。認知症 患者で brain age gap が著明拡大、認知機能低下と強く相関。MCI から 認知症 への進行予測指標として確立。Yujiの研究の foundational reference。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -8307,13 +8371,14 @@
     "importance": "Foundational reference。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "複数 コホート 統合の brain age × 認知症 研究。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Dementia で brain age gap +5-8歳、②cognitive scores と強い負相関、③MCI 進行予測、④複数 コホート で外的妥当性、⑤biomarker としての確立、⑥正常加齢の reference 提示、⑦cross-sectional + 縦断的 での 検証、⑧deep learning の精度実証、⑨臨床応用 roadmap、⑩early detection 戦略。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] Brain age gap の 認知症 予測を論じる導入で、本論文を「正常加齢 vs 認知症 の brain age gap を確立した foundational paper（Nat Aging 2023）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] Brain age gap の 認知症 予測を論じる導入で、本論文を「正常加齢 vs 認知症 の brain age gap を確立した foundational paper（Nat Aging 2023）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_06",
     "title": "Association of white matter hyperintensities with cognitive decline and neurodegeneration",
     "authors": "Various authors",
-    "journal": "Frontiers in Aging Neuroscience, 2024年",
+    "journal": "Frontiers in Aging Neuroscience (IF=確認待ち), 2024年",
     "design": "review＋メタ解析（white matter hyperintensities × 認知機能低下 × 神経変性、複数 コホート 統合）",
     "url": "https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2024.1412735/full",
     "summary": "white matter hyperintensities（WMH、白質高信号領域）と認知機能低下・神経変性の関連を体系評価した重要 review。WMH の volume と progression が gait・認知低下を予測、Alzheimer 病態とのcomplex な相互作用も解明。Yujiの「脳血管病態 × 身体機能」研究の核心 reference。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -8342,13 +8407,14 @@
     "importance": "Yujiの研究で「脳血管病態 → 身体機能・認知」の核心 reference。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "WMH × 認知・神経変性の体系統合 review。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①WMH volume が gait・認知低下予測、②periventricular WMH progression と gait、③subcortical WMH progression と memory、④Alzheimer co-pathology の頻発、⑤volume × location × progression の体系整理、⑥small vessel disease の中核所見、⑦認知 dysfunction・gait abnormality との相関、⑧stroke リスク予測、⑨emotional disturbance との関連、⑩予防介入の potential。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] WMH × 認知・身体機能を論じる導入で、本論文を「WMH × 認知低下・神経変性の規範的review（Front Aging Neurosci 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] WMH × 認知・身体機能を論じる導入で、本論文を「WMH × 認知低下・神経変性の規範的review（Front Aging Neurosci 2024）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_07",
     "title": "The Relationship Between サルコペニア, Cognitive Impairment, and Cerebral White Matter Hyperintensity in the Elderly",
     "authors": "Wang Y, Liu X, Chen Z, et al.",
-    "journal": "Frontiers in Aging Neuroscience, 2023年（PMC10072150）",
+    "journal": "Frontiers in Aging Neuroscience (IF=確認待ち), 2023年（PMC10072150）",
     "design": "横断研究（高齢者、サルコペニア × WMH × cognitive impairment の3者関連）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10072150/",
     "summary": "高齢者で サルコペニア 指標（歩行速度、握力 strength）が WMH grade と負相関、cognitive impairment とも関連することを実証した重要研究。「サルコペニア-WMH-認知」の3者関係の foundational evidence。Yujiの研究テーマ（脳-筋-認知の統合）の核心 reference。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -8379,13 +8445,14 @@
     "importance": "Yujiの研究テーマの核心 evidence。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "3者統合解析の foundational paper。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Gait speed slow と high WMH の関連、②handgrip low と high WMH、③cognitive impairment 群で サルコペニア 顕著、④pathway analysis で媒介関係、⑤Fazekas scale で WMH 評価標準化、⑥MoCA/MMSE で認知評価、⑦高齢者での外的妥当性、⑧clinical screening implication、⑨予防介入の potential、⑩多面的 aging 研究の paradigm。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] サルコペニア × WMH × 認知の3者関連を論じる導入で、本論文を「サルコペニア 指標と WMH grade の関連を実証した foundational paper（Front Aging Neurosci 2023）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] サルコペニア × WMH × 認知の3者関連を論じる導入で、本論文を「サルコペニア 指標と WMH grade の関連を実証した foundational paper（Front Aging Neurosci 2023）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_08",
     "title": "White matter hyperintensity burden predicts domain-specific cognitive decline across the Alzheimer's disease continuum",
     "authors": "Various authors",
-    "journal": "Scientific Reports, 2025年",
+    "journal": "Scientific Reports (IF=確認待ち), 2025年",
     "design": "前向きコホート（AD continuum、WMH burden × domain-specific cognitive decline、複数年追跡）",
     "url": "https://www.nature.com/articles/s41598-025-25694-x",
     "summary": "AD continuum（preclinical → MCI → AD）で WMH burden が domain-specific cognitive decline（記憶、実行機能、注意、言語）を予測することを実証した重要研究。Total WMH と regional WMH の effect 比較で精緻化。Yujiの研究で domain-specific approach の reference。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -8415,13 +8482,14 @@
     "importance": "Yujiの domain-specific approach の reference。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "AD continuum での domain-specific 解析。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Total WMH と executive function の最強関連、②frontal WMH と executive specific、③parietal WMH と attention specific、④AD continuum 全段階で applicable、⑤regional approach の優位性、⑥domain-specific intervention strategy、⑦preclinical 段階での detection、⑧longitudinal 検証、⑨clinical translation 可能性、⑩多面的 cognitive 評価の root。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] WMH × domain-specific cognitive を論じる導入で、本論文を「regional WMH と domain-specific cognitive decline の対応を実証した規範的研究（Sci Rep 2025）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] WMH × domain-specific cognitive を論じる導入で、本論文を「regional WMH と domain-specific cognitive decline の対応を実証した規範的研究（Sci Rep 2025）」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_09",
     "title": "Heterogeneity of white matter hyperintensities in Alzheimer's disease captured by multimodal neuroimaging",
     "authors": "Various authors",
-    "journal": "Scientific Reports, 2025年",
+    "journal": "Scientific Reports (IF=確認待ち), 2025年",
     "design": "multimodal neuroimaging（structural MRI + DTI + functional MRI、AD 患者の WMH heterogeneity 解析）",
     "url": "https://www.nature.com/articles/s41598-025-23371-7",
     "summary": "AD 患者の WMH heterogeneity を multimodal neuroimaging（structural + DTI + functional MRI）で精緻に解析、subtypes と clinical implication を解明した研究。Yujiの multimodal imaging 研究の reference。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。",
@@ -8451,13 +8519,14 @@
     "importance": "Yujiの multimodal imaging research の reference。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。",
     "originality": "WMH heterogeneity の multimodal 解析。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①WMH subtypes の identification、②subtype 別の clinical trajectory、③multimodal の優位性、④AD heterogeneity の解明、⑤precision medicine への道、⑥biomarker としての精緻化、⑦intervention strategy の subtype 別調整、⑧research paradigm の進化、⑨臨床応用 roadmap、⑩多面的 aging 研究。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] WMH heterogeneity を論じる導入で、本論文を「multimodal neuroimaging で WMH subtypes を解明した規範的研究」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] WMH heterogeneity を論じる導入で、本論文を「multimodal neuroimaging で WMH subtypes を解明した規範的研究」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   },
   {
     "id": "20260514_thu_10",
     "title": "Impact of regional white matter hyperintensity patterns on cognitive trajectories in NACC",
     "authors": "Various authors",
-    "journal": "Alzheimer's & 認知症 / 関連雑誌, 2025年（PMC12531902）",
+    "journal": "Alzheimer's & 認知症 / 関連雑誌 (IF=確認待ち), 2025年（PMC12531902）",
     "design": "前向き コホート（NACC、regional WMH patterns × cognitive trajectories、長期追跡）",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12531902/",
     "summary": "NACC（National Alzheimer's Coordinating Center）の大規模前向き コホート で regional WMH patterns が cognitive trajectories を予測することを実証。Frontal、parietal、temporal、subcortical の regional patterns が異なる decline rate と関連。Yujiの「脳の領域別老化」研究の核心 reference。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。",
@@ -8487,6 +8556,7 @@
     "importance": "Yujiの「脳の領域別老化」研究の核心。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。既存の文献群と相補的に機能し、研究分野全体の知見統合を一段階前進させた reference として位置付けられる。同領域の方法論的成熟と臨床実装の橋渡しを担う論文として、後続研究の方向性付けに広く影響する。",
     "originality": "NACC 大規模 コホート での regional pattern × trajectory 解析。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。既存研究の限界を方法論的に克服した点で独自性が高い貢献として位置付けられる。",
     "discovery": "①Frontal WMH と executive function decline、②parietal と attention、③temporal と memory、④subcortical と global decline、⑤NACC 大規模 コホート での外的妥当性、⑥regional approach の優位性、⑦長期追跡の頑健性、⑧clinical translation、⑨intervention 標的 の精緻化、⑩多面的 cognitive 評価。⑦これらの知見は Yuji の自前研究での再現解析の方向性を強く示唆する位置付けとなり、⑧PD 申請書での参照軸として機能し、⑨日本人 コホート での replication 研究の方向性を提供し、⑩研究設計上の参照基盤として機能する。",
-    "citation": "[introduction] Regional WMH patterns × cognitive trajectory を論じる導入で、本論文を「NACC で regional patterns の cognitive trajectory 予測能を実証した規範的研究」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。"
+    "citation": "[introduction] Regional WMH patterns × cognitive trajectory を論じる導入で、本論文を「NACC で regional patterns の cognitive trajectory 予測能を実証した規範的研究」として引用。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、PD 申請書での再現解析の方向性付けに用いる。本論文を起点とした日本人 コホート 解析の意義付けにも直接寄与する。",
+    "fulltext_status": "pre-rev11_needs_verification"
   }
 ]

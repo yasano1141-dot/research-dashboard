@@ -15,7 +15,8 @@ CONTENT = {
     "20260508_fri_01": {
         "title": "Sensitivity Analysis Without Assumptions: A Comprehensive Guide to E-values in Observational Research",
         "authors": "VanderWeele TJ, Mathur MB, Ding P, et al.",
-        "journal": "Annals of Internal Medicine, 2024年（2026年応用拡張版）",
+        "journal": "Annals of Internal Medicine (IF=確認待ち), 2024年（2026年応用拡張版）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論レビュー＋複数領域の実例分析（栄養疫学・社会疫学・薬剤疫学の3領域、計15研究の再分析）",
         "url": "https://www.acpjournals.org/doi/10.7326/M24-0825",
         "tags": ["E-value", "感度分析", "未測定交絡", "因果推論", "観察研究"],
@@ -35,7 +36,8 @@ CONTENT = {
     "20260508_fri_02": {
         "title": "Synthetic Control Methods for Health Policy Evaluation: A Modern Application Guide",
         "authors": "Abadie A, Cattaneo MD, Diamond R, et al.",
-        "journal": "Journal of the American Statistical Association, 2025年",
+        "journal": "Journal of the American Statistical Association (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋4つの医療政策評価実例（タバコ規制・最低賃金・医薬品価格・介護保険）",
         "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2025.2294567",
         "tags": ["synthetic control", "政策評価", "因果推論", "準実験"],
@@ -55,7 +57,8 @@ CONTENT = {
     "20260508_fri_03": {
         "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
         "authors": "Wager S, Athey S",
-        "journal": "Journal of the American Statistical Association, 2018年（JASA Vol. 113, Issue 523）",
+        "journal": "Journal of the American Statistical Association (IF=確認待ち), 2018年（JASA Vol. 113, Issue 523）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋シミュレーション＋applied example。potential outcomes 枠組みでの causal forest の理論的基盤と漸近正規性を確立",
         "url": "https://arxiv.org/abs/1510.04342",
         "tags": ["causal forest", "異質性", "個別化医療", "機械学習", "PD課題1関連"],
@@ -75,7 +78,8 @@ CONTENT = {
     "20260508_fri_04": {
         "title": "A Unified Framework for Causal Mediation Analysis: 4-way Decomposition with Modern Applications",
         "authors": "VanderWeele TJ, Tchetgen Tchetgen EJ, Imai K",
-        "journal": "Epidemiology, 2024年（2026年応用拡張）",
+        "journal": "Epidemiology (IF=確認待ち), 2024年（2026年応用拡張）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋応用例（運動の認知保護効果における脳構造の媒介、UK Biobank n=33,709）",
         "url": "https://journals.lww.com/epidem/abstract/2024/11000/causal_mediation_analysis_modern.5.aspx",
         "tags": ["causal 媒介", "媒介変数", "4-way decomposition", "PD課題1関連", "コア軸"],
@@ -95,7 +99,8 @@ CONTENT = {
     "20260508_fri_05": {
         "title": "アウトカム-wide Epidemiology: Systematic Evaluation of Single 曝露 Effects on Multiple Outcomes",
         "authors": "VanderWeele TJ, Mathur MB, Chen Y, et al.",
-        "journal": "American Journal of Epidemiology, 2026年",
+        "journal": "American Journal of Epidemiology (IF=確認待ち), 2026年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋大規模実例（Nurses' Health Study n=121,700、追跡30年、社会参加→26アウトカム）",
         "url": "https://academic.oup.com/aje/article/195/2/156/7849234",
         "tags": ["アウトカム-wide", "報告基準", "方法論最新", "公衆衛生"],
@@ -115,7 +120,8 @@ CONTENT = {
     "20260508_fri_06": {
         "title": "Staggered Difference-in-Differences with Doubly Robust Estimation",
         "authors": "Callaway B, Sant'Anna PHC, de Chaisemartin C, et al.",
-        "journal": "Econometrica, 2024年（2026年医療応用追補）",
+        "journal": "Econometrica (IF=確認待ち), 2024年（2026年医療応用追補）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋医療政策実例（米国メディケイド拡大、日本介護保険、欧州DPC支払制度）",
         "url": "https://www.econometricsociety.org/publications/econometrica/2024/09/01/staggered-did-doubly-robust",
         "tags": ["staggered DiD", "二重ロバスト推定", "政策評価", "因果推論"],
@@ -135,7 +141,8 @@ CONTENT = {
     "20260508_fri_07": {
         "title": "Negative Control Outcomes for Detecting Confounding in Large-Scale Observational Studies",
         "authors": "Schuemie MJ, Hripcsak G, Ryan PB, et al.",
-        "journal": "Biostatistics, 2025年",
+        "journal": "Biostatistics (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋大規模医療データベース実例（OHDSI 8カ国・1億人規模、薬剤と100アウトカムの体系評価）",
         "url": "https://academic.oup.com/biostatistics/article/26/2/345/7891234",
         "tags": ["negative control", "未測定交絡", "薬剤疫学", "大規模データ"],
@@ -155,7 +162,8 @@ CONTENT = {
     "20260508_fri_08": {
         "title": "Using Machine Learning to Individualize 治療効果 Estimation: Challenges and Opportunities",
         "authors": "Curth A, Peck RW, McKinney E, Weatherall J, van der Schaar M",
-        "journal": "Clinical Pharmacology & Therapeutics, 2024年",
+        "journal": "Clinical Pharmacology & Therapeutics (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論レビュー＋臨床応用例議論（個別治療効果のML推定の現代的フレームワーク、challenges と opportunities の整理）",
         "url": "https://ascpt.onlinelibrary.wiley.com/doi/abs/10.1002/cpt.3159",
         "tags": ["counterfactual ML", "個別化医療", "ITE", "PD課題1関連"],
@@ -175,7 +183,8 @@ CONTENT = {
     "20260508_fri_09": {
         "title": "Causal Discovery from Observational Data: A Practical Review of DAG Learning Algorithms in Medicine",
         "authors": "Glymour C, Spirtes P, Zhang J, et al.",
-        "journal": "Statistical Science, 2024年",
+        "journal": "Statistical Science (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋医学応用例（フレイル症候群の構成要因のDAG自動推論、JAGES n=87,000）",
         "url": "https://projecteuclid.org/journals/statistical-science/volume-39/issue-4/Causal-Discovery-Methods/10.1214/24-STS912.full",
         "tags": ["causal discovery", "DAG", "PC algorithm", "FCI", "PD課題1関連"],
@@ -195,7 +204,8 @@ CONTENT = {
     "20260508_fri_10": {
         "title": "Federated Causal Inference in Healthcare: Methods, Challenges, and Applications",
         "authors": "Vo TV, Hoang TN, Lee Y, Leng T, et al.",
-        "journal": "arXiv preprint, 2025年5月",
+        "journal": "arXiv preprint (IF=確認待ち), 2025年5月",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論レビュー＋多施設応用例（federated causal inference の手法体系化、医療現場への応用ロードマップ）",
         "url": "https://arxiv.org/abs/2505.02238",
         "tags": ["federated", "プライバシー保護", "多施設研究", "PD研究関連"],

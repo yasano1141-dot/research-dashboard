@@ -17,7 +17,8 @@ CONTENT = {
     "20260509_sat_01": {
         "title": "Towards General Purpose Vision Foundation Models for Medical Image Analysis: An Experimental Study of DINOv2 on Radiology Benchmarks",
         "authors": "Baharoon M, Nezhad AS, Sun M, Lu D, Liu T, et al.",
-        "journal": "arXiv preprint, 2024年（最新版 v3）",
+        "journal": "arXiv preprint (IF=確認待ち), 2024年（最新版 v3）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "ベンチマーク研究＋複数医療画像タスクでの DINOv2（Meta AI）vs SAM、CLIP、医療特化CNN比較。Radiology ベンチマーク で classification と segmentation を評価",
         "url": "https://arxiv.org/abs/2312.02366",
         "tags": ["foundation model", "medical imaging", "DINOv2", "SAM", "PD研究関連"],
@@ -37,7 +38,8 @@ CONTENT = {
     "20260509_sat_02": {
         "title": "EEGPT: Pretrained Transformer for Universal and Reliable Representation of EEG Signals",
         "authors": "Wang G, Liu W, He Y, Xu C, Hu L, Zhou Y, et al.",
-        "journal": "NeurIPS 2024（Conference on Neural Information Processing Systems）",
+        "journal": "NeurIPS 2024（Conference on Neural Information Processing Systems） (IF=確認待ち)",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋大規模 EEG データ事前学習（複数オープン EEG データセット計1,000万エポック）＋下流タスク評価（運動、感情、睡眠ステージ分類）",
         "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/4540d267eeec4e5dbd9dae9448f0b739-Paper-Conference.pdf",
         "tags": ["self-supervised learning", "EEG", "Transformer", "PD研究関連", "PD課題2関連"],
@@ -57,7 +59,8 @@ CONTENT = {
     "20260509_sat_03": {
         "title": "Privacy enhancing and generalizable deep learning with synthetic data for mediastinal neoplasm diagnosis",
         "authors": "Han Z, Zhang Y, Yang Q, Chen Z, et al.",
-        "journal": "npj Digital Medicine, 2024年",
+        "journal": "npj Digital Medicine (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論＋多施設実証（中国・米国の縦隔CT n=12,000、合成データ生成と原データ vs 合成データ学習比較、membership inference attack によるプライバシー検証）",
         "url": "https://www.nature.com/articles/s41746-024-01290-7",
         "tags": ["diffusion model", "synthetic data", "プライバシー保護", "AI", "medical imaging"],
@@ -77,7 +80,8 @@ CONTENT = {
     "20260509_sat_04": {
         "title": "Conformal Triage for Medical Imaging AI Deployment",
         "authors": "Olchanyi M, Schaar Mvd, Wang Y, Beam AL, Doshi-Velez F, et al.",
-        "journal": "medRxiv preprint, 2024年（Nature 系投稿中）",
+        "journal": "medRxiv preprint (IF=確認待ち), 2024年（Nature 系投稿中）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論＋胸部X線AI deployment 実証（n=1,000症例、conformal triage 閾値最適化、low-risk/high-risk/uncertain 三層分類）",
         "url": "https://www.medrxiv.org/content/10.1101/2024.02.09.24302543v1",
         "tags": ["conformal 予測", "AI safety", "deployment", "uncertainty quantification"],
@@ -97,7 +101,8 @@ CONTENT = {
     "20260509_sat_05": {
         "title": "A deep-learning retinal aging biomarker for cognitive decline and incident 認知症 (RetiPhenoAge)",
         "authors": "Sim R, Chiang JN, Tham YC, et al.",
-        "journal": "Alzheimer's & 認知症, 2025年",
+        "journal": "Alzheimer's & 認知症 (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "観察コホート（UK Biobank n=44,978、retinal images + cognitive assessment、12年認知症発症追跡）",
         "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.14601",
         "tags": ["deep learning", "retinal image", "biological age", "PD研究関連", "拡張軸"],
@@ -117,7 +122,8 @@ CONTENT = {
     "20260509_sat_06": {
         "title": "Prediction of Alzheimer's disease progression within 6 years using speech: A novel approach leveraging language models",
         "authors": "Amini S, Hao B, Zhang L, Song M, et al.",
-        "journal": "Alzheimer's & 認知症, 2024年",
+        "journal": "Alzheimer's & 認知症 (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向き観察コホート（Framingham Heart Study n=166、自由会話 transcripts + 認知機能評価、6年Alzheimer's進行追跡）",
         "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.13886",
         "tags": ["speech AI", "cognitive screening", "language model", "PD研究関連"],
@@ -137,7 +143,8 @@ CONTENT = {
     "20260509_sat_07": {
         "title": "Accurate structure 予測 of biomolecular interactions with AlphaFold 3",
         "authors": "Abramson J, Adler J, Dunger J, Evans R, Green T, Hassabis D, Jumper J, et al. (Google DeepMind & Isomorphic Labs)",
-        "journal": "Nature, 2024年5月",
+        "journal": "Nature (IF=確認待ち), 2024年5月",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋包括的ベンチマーク（タンパク質-タンパク質、タンパク質-リガンド、タンパク質-核酸、抗体-抗原相互作用の予測精度評価）",
         "url": "https://www.nature.com/articles/s41586-024-07487-w",
         "tags": ["AlphaFold", "structural biology", "drug discovery", "PD研究関連", "拡張軸"],
@@ -157,7 +164,8 @@ CONTENT = {
     "20260509_sat_08": {
         "title": "Continual Learning in Medical Imaging from Theory to Practice: A Survey and Practical Analysis",
         "authors": "Verma P, Andrade J, Reza R, Chitnis P, Khan MM, et al.",
-        "journal": "arXiv preprint, 2024年5月",
+        "journal": "arXiv preprint (IF=確認待ち), 2024年5月",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックサーベイ＋実証分析（複数の continual learning 手法を医療画像分類タスクで体系比較、catastrophic forgetting 評価）",
         "url": "https://arxiv.org/html/2405.13482v1",
         "tags": ["continual learning", "AI deployment", "data drift", "AI safety"],
@@ -177,7 +185,8 @@ CONTENT = {
     "20260509_sat_09": {
         "title": "Towards Causal Representation Learning",
         "authors": "Schölkopf B, Locatello F, Bauer S, Ke NR, Kalchbrenner N, Goyal A, Bengio Y",
-        "journal": "Proceedings of the IEEE, 2021年（2024年応用拡張）",
+        "journal": "Proceedings of the IEEE (IF=確認待ち), 2021年（2024年応用拡張）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論レビュー＋複数応用領域の議論（医療、自然言語、ロボティクス、感覚運動）",
         "url": "https://arxiv.org/abs/2102.11107",
         "tags": ["causal representation learning", "因果推論", "high-dimensional", "PD研究関連", "拡張軸"],
@@ -197,7 +206,8 @@ CONTENT = {
     "20260509_sat_10": {
         "title": "Federated Learning for Medical Image Classification: A Comprehensive Benchmark",
         "authors": "Wu Y, Zeng D, Liang Z, Liu Y, et al.",
-        "journal": "arXiv preprint, 2024年4月",
+        "journal": "arXiv preprint (IF=確認待ち), 2024年4月",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "包括的ベンチマーク（複数 federated learning algorithms × 医療画像分類データセット、システム性能評価）",
         "url": "https://arxiv.org/html/2504.05238v1",
         "tags": ["federated learning", "medical imaging", "プライバシー保護", "AI", "ベンチマーク"],

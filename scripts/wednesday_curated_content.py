@@ -6,7 +6,8 @@ CONTENT = {
     "20260513_wed_01": {
         "title": "Phase Angle and Impedance Ratio as Indicators of Physical Function and Fear of Falling in Older Adult Women: Cross-Sectional Analysis",
         "authors": "Yamada Y, Nishizawa M, et al.",
-        "journal": "JMIR Aging, 2024年",
+        "journal": "JMIR Aging (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "横断研究（地域在住高齢女性、phase angle × impedance ratio × 身体機能・転倒恐怖）",
         "url": "https://aging.jmir.org/2024/1/e53975/",
         "tags": ["phase angle", "impedance ratio", "physical function", "fear of falling", "PD研究関連", "コア軸"],
@@ -25,7 +26,8 @@ CONTENT = {
     "20260513_wed_02": {
         "title": "Associations of Muscle Quality Indices (Phase Angle, ECW/TBW, and Echo Intensity) with Physical Performance in Community-Dwelling Older Women",
         "authors": "Asano Y et al. (Yuji の自身研究または同分野)",
-        "journal": "Experimental Gerontology / 関連論文, 2026年",
+        "journal": "Experimental Gerontology / 関連論文 (IF=確認待ち), 2026年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "横断研究（地域在住高齢女性、phase angle・ECW/TBW・echo intensity × 身体機能）",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S089990072600050X",
         "tags": ["muscle quality", "phase angle", "echo intensity", "ECW/TBW", "PD研究関連", "コア軸"],
@@ -45,7 +47,8 @@ CONTENT = {
     "20260513_wed_03": {
         "title": "Phase angle in applications of bioimpedance in health and disease",
         "authors": "Lukaski HC, Kyle UG, Kondrup J",
-        "journal": "Current Opinion in Clinical Nutrition and Metabolic Care / Reviews, 2023年（PMC10030341）",
+        "journal": "Current Opinion in Clinical Nutrition and Metabolic Care / Reviews (IF=確認待ち), 2023年（PMC10030341）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビュー（phase angle の臨床応用、健康と疾患での意味付け）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10030341/",
         "tags": ["phase angle", "bioimpedance", "review", "コア軸"],
@@ -64,7 +67,8 @@ CONTENT = {
     "20260513_wed_04": {
         "title": "Phase Angle as a Predictor for Physical Function in Institutionalized Independent Older Adults",
         "authors": "Various authors",
-        "journal": "Journal of Frailty Aging / 関連雑誌, 2022年",
+        "journal": "Journal of Frailty Aging / 関連雑誌 (IF=確認待ち), 2022年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "観察研究（施設居住の独立高齢者、phase angle × 身体機能 × 縦断追跡）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/36361495/",
         "tags": ["phase angle", "physical function", "institutionalized", "コア軸"],
@@ -83,7 +87,8 @@ CONTENT = {
     "20260513_wed_05": {
         "title": "Phase angle obtained via bioelectrical impedance analysis and objectively measured physical activity or exercise habits",
         "authors": "Yamada Y et al.",
-        "journal": "Scientific Reports, 2022年",
+        "journal": "Scientific Reports (IF=確認待ち), 2022年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "横断研究（accelerometer × phase angle × exercise habits）",
         "url": "https://www.nature.com/articles/s41598-022-21095-6",
         "tags": ["phase angle", "physical activity", "accelerometer", "コア軸"],
@@ -102,7 +107,8 @@ CONTENT = {
     "20260513_wed_06": {
         "title": "Segmental bioelectrical impedance spectroscopy: A novel field assessment of muscle size and quality in normal weight and obese older men",
         "authors": "Yamada Y, Yoshida T, et al.",
-        "journal": "Experimental Gerontology, 2022年",
+        "journal": "Experimental Gerontology (IF=確認待ち), 2022年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文（segmental BIS、muscle size と quality の field assessment、normal weight vs obese 高齢男性）",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S0531556522000535",
         "tags": ["segmental BIS", "muscle quality", "field assessment", "PD研究関連", "コア軸"],
@@ -121,7 +127,8 @@ CONTENT = {
     "20260513_wed_07": {
         "title": "Phase Angle Is a Useful indicator for Muscle Function in Older Adults",
         "authors": "Yamada M et al.",
-        "journal": "Journal of Aging Research / 関連雑誌, 2019年（複数 follow-up 2024年）",
+        "journal": "Journal of Aging Research / 関連雑誌 (IF=確認待ち), 2019年（複数 follow-up 2024年）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "観察研究（高齢者、phase angle × muscle function indicators）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/30820513/",
         "tags": ["phase angle", "muscle function", "older adults", "コア軸"],
@@ -140,7 +147,8 @@ CONTENT = {
     "20260513_wed_08": {
         "title": "The bioimpedance phase angle predicts low muscle strength, impaired quality of life, and increased mortality in old patients with cancer",
         "authors": "Norman K, Wirth R, Neubauer M, Eckardt R, Stobäus N",
-        "journal": "Journal of the American Medical Directors Association, 2014年（rolling follow-up）",
+        "journal": "Journal of the American Medical Directors Association (IF=確認待ち), 2014年（rolling follow-up）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "観察研究（高齢ガン患者、phase angle × muscle strength・QOL・全原因死亡）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/25499428/",
         "tags": ["phase angle", "ガン", "全原因死亡", "QOL"],
@@ -159,7 +167,8 @@ CONTENT = {
     "20260513_wed_09": {
         "title": "Association of Bioelectrical Impedance Phase Angle with Physical Performance and Nutrient Intake of Older Adults",
         "authors": "Lim WS, Lim JP, Chew J, et al.",
-        "journal": "Nutrients, 2023年",
+        "journal": "Nutrients (IF=確認待ち), 2023年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "観察研究（高齢者、phase angle × physical performance × nutrient intake）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/36986185/",
         "tags": ["phase angle", "nutrient intake", "physical performance", "PD研究関連"],
@@ -178,7 +187,8 @@ CONTENT = {
     "20260513_wed_10": {
         "title": "Position statement: Evidence-Based Exercise Guidelines for Sarcopenia in Older Adults: Insights from the Korean Working Group on Sarcopenia",
         "authors": "Korean Working Group on Sarcopenia",
-        "journal": "Annals of Geriatric Medicine and Research, 2025年",
+        "journal": "Annals of Geriatric Medicine and Research (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "ガイドライン論文（サルコペニアの運動介入推奨、エビデンス評価、Korean working group statement）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12489597/",
         "tags": ["サルコペニア", "exercise", "guidelines", "Korean", "PD研究関連"],

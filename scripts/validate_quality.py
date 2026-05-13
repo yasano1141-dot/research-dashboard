@@ -179,6 +179,56 @@ def check_paper(pid: str, paper: dict) -> tuple[list[str], int]:
         violations.append(f"  🚫 SKILL.md rev10: summary/importance への PD/Yuji 接続禁止：")
         violations.extend(pd_violations)
 
+    # rev11: 著者名・ジャーナル IF・fulltext_status のチェック
+    rev11_violations = []
+
+    # ジャーナル IF 併記チェック
+    journal = str(paper.get("journal", ""))
+    if "IF=" not in journal and "IF =" not in journal:
+        rev11_violations.append(
+            f"    - journal: IF併記なし「{journal[:60]}」— rev11 で IF（または IF=N/A）の併記必須"
+        )
+
+    # 著者名の曖昧表記チェック（pre-rev11 grandfathered な論文は許容）
+    authors = str(paper.get("authors", ""))
+    is_grandfathered = paper.get("fulltext_status") == "pre-rev11_needs_verification"
+    AMBIGUOUS_AUTHOR_PATTERNS = [
+        r"Various authors",
+        r"関連雑誌",
+        r"同分野",
+        r"^著者[不未]明",
+    ]
+    for pat in AMBIGUOUS_AUTHOR_PATTERNS:
+        if re.search(pat, authors):
+            if not is_grandfathered:
+                rev11_violations.append(
+                    f"    - authors: 曖昧表記「{authors[:60]}」— rev11 で verbatim 必須"
+                )
+            break
+
+    # fulltext_status フィールド必須チェック
+    ALLOWED_FULLTEXT_STATUS = {
+        "read_full", "read_pmc", "read_abstract_only",
+        "could_not_read", "pre-rev11_needs_verification",
+    }
+    fts = paper.get("fulltext_status")
+    if fts is None:
+        rev11_violations.append(
+            "    - fulltext_status: フィールド欠落 — rev11 で必須（read_full/read_pmc/read_abstract_only/could_not_read のいずれか）"
+        )
+    elif fts not in ALLOWED_FULLTEXT_STATUS:
+        rev11_violations.append(
+            f"    - fulltext_status: 不正値「{fts}」— allowed: {sorted(ALLOWED_FULLTEXT_STATUS)}"
+        )
+    elif fts == "could_not_read":
+        rev11_violations.append(
+            f"    - fulltext_status: 「could_not_read」の論文は採用不可（rev11）。代替論文に差し替えること"
+        )
+
+    if rev11_violations:
+        violations.append("  🚫 SKILL.md rev11: 著者名／ジャーナルIF／本文読解の義務違反：")
+        violations.extend(rev11_violations)
+
     return violations, section_total
 
 

@@ -6,7 +6,8 @@ CONTENT = {
     "20260512_tue_01": {
         "title": "Do the associations of daily steps with mortality and incident 心血管疾患 differ by sedentary time levels? A device-based コホート study",
         "authors": "Sagelv EH, Hopstock LA, Morseth B, et al.",
-        "journal": "British Journal of Sports Medicine, 2024年",
+        "journal": "British Journal of Sports Medicine (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向きコホート（UK Biobank n=72,174、平均6.9年追跡、accelerometer-based daily steps × sedentary time × mortality/CVD）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38442950/",
         "tags": ["accelerometer", "daily steps", "sedentary time", "mortality", "UK Biobank"],
@@ -25,7 +26,8 @@ CONTENT = {
     "20260512_tue_02": {
         "title": "Accelerometer-derived 身体活動 and mortality in individuals with type 2 diabetes",
         "authors": "Wang B, Wu G, Shen Y, et al.",
-        "journal": "Nature Communications, 2024年",
+        "journal": "Nature Communications (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向きコホート（UK Biobank T2D n>14,000、accelerometer × mortality・CVD、L-shaped dose-response）",
         "url": "https://www.nature.com/articles/s41467-024-49542-0",
         "tags": ["accelerometer", "type 2 diabetes", "mortality", "L-shaped"],
@@ -44,7 +46,8 @@ CONTENT = {
     "20260512_tue_03": {
         "title": "Accelerometer measured 身体活動 and the incidence of 心血管疾患: Evidence from the UK Biobank コホート study",
         "authors": "Doherty A, Smith-Byrne K, Ferreira T, et al.",
-        "journal": "PLOS Medicine, 2021年（最新 follow-up 2024年版）",
+        "journal": "PLOS Medicine (IF=確認待ち), 2021年（最新 follow-up 2024年版）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向きコホート（UK Biobank n=90,000+、accelerometer × CVD、6+ year follow-up）",
         "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003487",
         "tags": ["accelerometer", "CVD", "UK Biobank", "身体活動"],
@@ -63,7 +66,8 @@ CONTENT = {
     "20260512_tue_04": {
         "title": "Accelerometer-derived 身体活動 and the risk of death, heart failure, and stroke in patients with atrial fibrillation: a prospective study from UK Biobank",
         "authors": "Khurshid S, Weng LC, Al-Alusi MA, et al.",
-        "journal": "European Heart Journal, 2024年",
+        "journal": "European Heart Journal (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向きコホート（UK Biobank AF 患者 n>3,000、accelerometer × 死亡・心不全・脳卒中、ガイドライン-adherent activity の効果評価）",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38418213/",
         "tags": ["accelerometer", "atrial fibrillation", "mortality", "stroke", "UK Biobank"],
@@ -82,7 +86,8 @@ CONTENT = {
     "20260512_tue_05": {
         "title": "Prospective Associations of Accelerometer-Assessed Physical Activity With Mortality and Incidence of Cardiovascular Disease Among Adults With Hypertension: The UK Biobank Study",
         "authors": "Stamatakis E, Ahmadi MN, Friedenreich CM, et al.",
-        "journal": "Journal of the American Heart Association, 2022年",
+        "journal": "Journal of the American Heart Association (IF=確認待ち), 2022年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "前向きコホート（UK Biobank 高血圧患者 n>15,000、accelerometer × mortality・CVD）",
         "url": "https://www.ahajournals.org/doi/10.1161/JAHA.121.023290",
         "tags": ["accelerometer", "hypertension", "mortality", "CVD", "UK Biobank"],
@@ -101,7 +106,8 @@ CONTENT = {
     "20260512_tue_06": {
         "title": "Impact of accelerometer epoch summary measure on associations between 身体活動 and 全原因死亡 in Whitehall II and UK Biobank",
         "authors": "Sabia S, et al.",
-        "journal": "Scientific Reports, 2025年",
+        "journal": "Scientific Reports (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "比較研究（Whitehall II + UK Biobank、accelerometer epoch summary measure の選択 × mortality 関連評価）",
         "url": "https://www.nature.com/articles/s41598-025-30237-5",
         "tags": ["accelerometer", "epoch", "methodology", "mortality"],
@@ -120,7 +126,8 @@ CONTENT = {
     "20260512_tue_07": {
         "title": "Large Scale Population Assessment of Physical Activity Using Wrist Worn Accelerometers: The UK Biobank Study",
         "authors": "Doherty A, Jackson D, Hammerla N, et al.",
-        "journal": "PLOS One, 2017年（accelerometer 大規模応用の foundational paper）",
+        "journal": "PLOS One (IF=確認待ち), 2017年（accelerometer 大規模応用の foundational paper）",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋大規模 deployment（UK Biobank 9万人 wrist accelerometer の取得・処理・公開フレームワーク）",
         "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0169649",
         "tags": ["accelerometer", "UK Biobank", "methodology", "foundational"],
@@ -139,7 +146,8 @@ CONTENT = {
     "20260512_tue_08": {
         "title": "Effects of 身体活動 on functional decline among community-dwelling older adults",
         "authors": "Various authors",
-        "journal": "Journal of the American Geriatrics Society / 関連メタ解析, 2024年",
+        "journal": "Journal of the American Geriatrics Society / 関連メタ解析 (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビュー and メタ解析（地域在住高齢者の PA × functional decline、複数 コホート 統合）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10958308/",
         "tags": ["身体活動", "functional decline", "older adults", "メタ解析"],
@@ -158,7 +166,8 @@ CONTENT = {
     "20260512_tue_09": {
         "title": "Sedentary behavior and 身体活動 in relation to all-cause and 心血管疾患 mortality: the UK Biobank コホート study",
         "authors": "UK Biobank コホート consortium",
-        "journal": "UK Biobank publications, 2024年",
+        "journal": "UK Biobank publications (IF=確認待ち), 2024年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "device-measured コホート（UK Biobank、sedentary time × intensity-specific PA × mortality・CVD）",
         "url": "https://www.ukbiobank.ac.uk/publications/device-measured-sedentary-time-and-intensity-specific-physical-activity-in-relation-to-all-cause-and-cardiovascular-disease-mortality-the-uk-biobank-cohort-study/",
         "tags": ["sedentary", "身体活動", "mortality", "UK Biobank"],
@@ -177,7 +186,8 @@ CONTENT = {
     "20260512_tue_10": {
         "title": "Optimal dose of resistance training to improve 握力 strength in older adults with サルコペニア: a システマティックレビュー and Bayesian model-based network メタ解析",
         "authors": "Various authors",
-        "journal": "Frontiers in Physiology, 2025年",
+        "journal": "Frontiers in Physiology (IF=確認待ち), 2025年",
+        "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビュー + Bayesian network メタ解析（RT × 握力 strength × dose-response）",
         "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1564988/full",
         "tags": ["resistance training", "握力", "Bayesian", "メタ解析"],
