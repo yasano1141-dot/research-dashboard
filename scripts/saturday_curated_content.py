@@ -185,11 +185,11 @@ CONTENT = {
     "20260509_sat_09": {
         "title": "Towards Causal Representation Learning",
         "authors": "Schölkopf B, Locatello F, Bauer S, Ke NR, Kalchbrenner N, Goyal A, Bengio Y",
-        "journal": "Proceedings of the IEEE (IF=確認待ち), 2021年（2024年応用拡張）",
+        "journal": "Proceedings of the IEEE (IF=確認待ち), 2021年（rev12 foundational 例外、2024年応用拡張）",
         "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論レビュー＋複数応用領域の議論（医療、自然言語、ロボティクス、感覚運動）",
         "url": "https://arxiv.org/abs/2102.11107",
-        "tags": ["causal representation learning", "因果推論", "high-dimensional", "PD研究関連", "拡張軸"],
+        "tags": ["causal representation learning", "因果推論", "high-dimensional", "PD研究関連", "拡張軸", "foundational"],
         "summary": "高次元観察データから「真の causal variable」を分離する causal representation learning の理論的フレームワークを Schölkopf らが提唱した規範的論文。高次元 omics・imaging・wearable signal などから health アウトカム への因果関係を推論する際の理論基盤を提供。VAE と因果推論の融合、disentanglement、independent causal mechanisms の概念を体系化。Yujiの拡張軸（オミクス × 身体機能）の高次元因果推論手法として価値が極めて高く、後続の応用研究の理論的支柱。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。",
         "overview": "**背景**：高次元データ（万単位の遺伝子発現、ピクセル単位の画像、時系列wearable signal）から health アウトカム への因果関係を推論する際、伝統的方法は次元削減 → 因果推論の2段階だったが、潜在変数の causal interpretability が損なわれる。**方法**：Schölkopf らが提唱した causal representation learning は、観察データから「causal factor」を VAE-style に学習しつつ、因果構造を制約として組み込む手法。論文では disentanglement（因果変数を独立な因子に分離）、independent causal mechanisms（IC mechanism、各因果変数が独立な機序を持つ）、modular causal models（モジュール式因果モデル）の概念を体系化。応用領域として医療、自然言語、ロボティクス、感覚運動を議論。**結果**：causal representation learning は generalization、out-of-distribution 性能、因果的解釈性で従来法を上回るポテンシャルを持つ。応用例として、医療画像から疾患の causal factor を分離する研究、wearable signal から行動 causal factor を抽出する研究などを展望。Causal identifiability の理論的厳密性も議論。**結論**：機械学習と因果推論の融合の現代的フレームワーク。本論文の方法論と知見は、Yuji の自前研究や TMM・JAGES 等の日本人 コホート での再現解析の方向性を強く示唆する位置にあり、研究設計上の参照軸として直接寄与する。同時に、PD 申請書の各課題への接続点も明確で、研究計画の根拠論文として機能する。",
         "importance": "Yujiの拡張軸でオミクス × 筋・脳・身体機能を扱う際、伝統的 PCA や 回帰 では捉えられない causal factor を identify 可能。Schölkopf らの規範的論文として、後続のすべての causal representation learning 研究の理論的基盤。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",

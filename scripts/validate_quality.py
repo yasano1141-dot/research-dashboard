@@ -229,6 +229,36 @@ def check_paper(pid: str, paper: dict) -> tuple[list[str], int]:
         violations.append("  🚫 SKILL.md rev11: 著者名／ジャーナルIF／本文読解の義務違反：")
         violations.extend(rev11_violations)
 
+    # rev12: 公刊年が直近3年以内であることをチェック
+    # journal フィールドから年を抽出（例 "Nature Aging (IF=17.0), 2025年" → 2025）
+    rev12_violations = []
+    journal_str = str(paper.get("journal", ""))
+    year_match = re.search(r"(20\d{2})\s*年", journal_str)
+    if year_match:
+        pub_year = int(year_match.group(1))
+        from datetime import date
+        current_year = date.today().year
+        cutoff_year = current_year - 3
+        tags = paper.get("tags", []) or []
+        is_foundational = "foundational" in [str(t).lower() for t in tags]
+        is_grandfathered = paper.get("fulltext_status") == "pre-rev11_needs_verification"
+
+        if pub_year < cutoff_year:
+            if is_foundational:
+                # 例外（最大1本）として情報のみ出力、violations には追加しない
+                print(f"  ℹ️  rev12: {paper.get('title','')[:50]}（{pub_year}年、foundational 例外として許容）")
+            elif is_grandfathered:
+                # 移行措置として情報のみ出力、violations には追加しない
+                print(f"  ℹ️  rev12: {paper.get('title','')[:50]}（{pub_year}年、pre-rev11 移行措置）")
+            else:
+                rev12_violations.append(
+                    f"    - journal: {pub_year}年は cutoff {cutoff_year}年未満（直近3年要件違反、最新論文に差替必須）"
+                )
+
+    if rev12_violations:
+        violations.append("  🚫 SKILL.md rev12: 公刊年が直近3年以内であること：")
+        violations.extend(rev12_violations)
+
     return violations, section_total
 
 

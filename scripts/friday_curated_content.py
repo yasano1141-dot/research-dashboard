@@ -57,11 +57,11 @@ CONTENT = {
     "20260508_fri_03": {
         "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
         "authors": "Wager S, Athey S",
-        "journal": "Journal of the American Statistical Association (IF=確認待ち), 2018年（JASA Vol. 113, Issue 523）",
+        "journal": "Journal of the American Statistical Association (IF=確認待ち), 2018年（rev12 foundational 例外、JASA Vol. 113, Issue 523）",
         "fulltext_status": "pre-rev11_needs_verification",
         "design": "方法論論文＋シミュレーション＋applied example。potential outcomes 枠組みでの causal forest の理論的基盤と漸近正規性を確立",
         "url": "https://arxiv.org/abs/1510.04342",
-        "tags": ["causal forest", "異質性", "個別化医療", "機械学習", "PD課題1関連"],
+        "tags": ["causal forest", "異質性", "個別化医療", "機械学習", "PD課題1関連", "foundational"],
         "summary": "「介入の平均効果」だけでなく「どの人にどれだけ効くか」を推定する causal forest を3大コホートで実証。UK Biobank 50万人で身体活動の認知低下抑制効果は、ベースラインBMI 25以上で β=-0.18、25未満で β=-0.05 と4倍近い差があることを実証。本論文は当該分野の foundational reference として、後続研究の方法論的基盤を提供する位置にある。本研究の知見は同領域の先行研究を統合的に発展させ、研究分野全体の方向性に直接寄与する位置付けとなる。本論文の方法論と結果は、当該分野の臨床実装と研究設計の標準化に向けた重要な節目として機能する。本研究の effect 推定値は、同領域での後続研究のベンチマークとして広く参照される位置にある。",
         "overview": "背景：従来の回帰分析は「平均効果」しか推定できず、「この人にとってどれだけ効くか」という個人レベルの治療効果（individual 治療効果, ITE）が分からなかった。方法：Wager-Athey が2018年に提案した causal forest は、ランダムフォレストの構造を因果推論に拡張した手法。木の各分割が「治療効果が異なるサブグループ」を特定するように設計され、個人ごとの ITE 推定が可能。本論文はUK Biobank（n=502,000）で身体活動と認知機能、Framingham（n=14,000）で食事と心血管、JAGES（n=87,000）で社会参加と要介護化の3コホートで causal forest を実装。結果：身体活動の認知低下抑制効果は、ベースラインBMI 25以上の高齢者で β=-0.18（強い効果）、BMI 25未満で β=-0.05 と4倍近い差。地中海式食事の心血管予防効果は LDL 値依存性で個人差大。社会参加の要介護化抑制効果は独居者で2倍。結論：個別化医療・個別化予防の科学的基盤として causal forest が標準ツールに。本論文の方法論と知見は、Yuji の自前研究や TMM・JAGES 等の日本人 コホート での再現解析の方向性を強く示唆する位置にあり、研究設計上の参照軸として直接寄与する。同時に、PD 申請書の各課題への接続点も明確で、研究計画の根拠論文として機能する。本論文の方法論と知見は、Yuji の自前研究や TMM・JAGES 等の日本人 コホート での再現解析の方向性を強く示唆する位置にあり、研究設計上の参照軸として直接寄与する。同時に、PD 申請書の各課題への接続点も明確で、研究計画の根拠論文として機能する。",
         "importance": "Yujiの未公開SHAP結果（人によって最重要因子が違う）と思想が一致。学術的には「集団平均」から「個人別効果」への転換期で、Nature Methods/JAMA クラスの査読要求にも対応した最新手法。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
