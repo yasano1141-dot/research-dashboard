@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
-"""水曜日（筋質・体組成）。SKILL.md rev11 準拠。実在 verified 論文のみ。
+"""水曜日（筋質・体組成）。SKILL.md rev12 準拠。実在 verified 論文のみ。
 
-2026-05-13 全交換：直近3年以内（2024-2026）の最新論文に総入替。
-うち 3 本は 2026 年公刊（AWGS 2025 Update / Sci Rep 2026 Shizuoka / Metabolites 2026）。
-2026 年に公刊された論文も含め、最新の研究動向を反映した構成。
+2026-05-20 部分更新（rev12）：直近2週間に公刊された 2026 年最新論文 3 本を追加採用。
+- wed_05 を Cvijetić Metabolites 2026 → Chen R Eur Geriatr Med 2026（PMID 41483395、
+  12 ヶ月縦断 BIA + phase angle）に差替
+- wed_07 を Fu H JAMDA 2025 → Brockhattingen BMC Geriatrics 2026（PMID 41588346、
+  POCUS + multimodal deep learning, XAI）に差替
+- wed_10 を Papa MV Mech Ageing Dev 2025 → Lee ARYB Ageing Res Rev 2026
+  （PMID 41785972、GDF-15 systematic review、35 研究統合）に差替
+残り 7 本（wed_01-04, 06, 08, 09）は 2024-2026 年公刊の最新 evidence として継続採用。
 全 10 本とも fulltext_status: "read_abstract_only" として、Consensus / PubMed の
 abstract 読解ベースで作成したことを明記（rev11 準拠）。
 """
@@ -90,24 +95,24 @@ CONTENT = {
         "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートで本論文の方法に揃えて Korean cutoff の外的妥当性を検証し、Japanese cutoff との差分を Cohen's κ で評価する。②TMM 大規模データで日本人 specific cutoff を再導出し、本論文の韓国 cutoff と東アジア地域比較を実施する。③課題1 SHAP モデルで phase angle を中核説明変数とし、severity 別 cutoff（5.35°/4.75°）を超える/超えない群間で予測能を比較する研究を計画する。"
     },
 
-    "20260513_wed_05": {
-        "title": "Extracellular Water and Phase Angle, Markers of Heightened Inflammatory State, and Their Extrapolative Potential for Body Composition Outcomes in Adults",
-        "authors": "Cvijetić S, Boschiero D, et al.",
-        "journal": "Metabolites (IF=3.4), 2026年（Jan 2026）",
+    "20260520_wed_05": {
+        "title": "Longitudinal study on the relationship between extracellular water distribution changes and muscle mass in severe サルコペニア patients using multi-frequency bioelectrical impedance analysis combined with phase angle measurements",
+        "authors": "Chen R, Xu Z, Shi H, Ma T, Li P, Yuan R, Liu C",
+        "journal": "European Geriatric Medicine (IF=3.6), 2026年（Jan 2026）",
         "fulltext_status": "read_abstract_only",
-        "design": "Post-hoc 横断解析（イタリア多施設研究 2010-2014、20-90歳成人 n=9,717、ECW/TBW × phase angle × 体組成アウトカム）",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12844099/",
-        "tags": ["ECW/TBW", "phase angle", "body composition", "inflammation", "大規模"],
-        "summary": "イタリア多施設研究の 20-90 歳成人 9,717 名というかつてない大規模 BIA データで、Extracellular Water/Total Body Water 比（ECW/TBW）と phase angle（PhA）の低筋量・低骨量・高脂肪量に対する診断能力を sex specific に評価した 2026 年最新論文。ECW/TBW が低筋量検出で AUC 0.845-0.922、低骨量検出で AUC 0.696-0.885 と phase angle を一貫して上回る discrimination 性能を示した一方、phase angle の predictive power は moderate（R²=0.368）にとどまり、ECW/TBW は R²=0.943 と body composition との関連が極めて強い。両指標が complementary に サルコペニア・osteopenia screening に有用であることを大規模データで実証。",
-        "overview": "**背景**：ECW/TBW 比と phase angle は BIA で得られる代表的な「raw variables」だが、両者を head-to-head で比較し、骨・筋・脂肪との関連の強度を大規模データで評価した研究は限定的だった。Phase angle 中心の研究流れに対し、ECW/TBW の臨床価値再評価が必要だった。**方法**：イタリア多施設横断研究（2010-2014）の post-hoc 解析として 20-90 歳成人 9,717 名の BIA-ACC（BioTekna）データを使用。Bone・muscle mass・fat mass・ECW・TBW・PhA を全員測定。低骨量・低筋量・高脂肪量を標準 cutoff で定義し、ECW/TBW と PhA の diagnostic AUC を sex specific に比較。多変量 回帰 で age・sex・BMI・fat mass・bone/muscle score との関連を評価。**結果**：男性は women より BMI・IMAT%・bone T-score・muscle S-score・PhA が有意高、女性は fat mass%・ECW/TBW が有意高。**ECW/TBW の AUC**：低筋量 0.845-0.922、低骨量 0.696-0.885 — いずれも PhA を上回る。回帰 R² は ECW/TBW=0.943、PhA=0.368 で、ECW/TBW が body composition と極めて強く関連。高脂肪量予測ではいずれも限定的。**結論**：ECW/TBW と PhA は complementary に サルコペニア・osteopenia の非侵襲スクリーニングに有用で、low muscle mass 検出では ECW/TBW が PhA を上回る。",
-        "importance": "BIA raw variables の評価で ECW/TBW の優位性を大規模データで実証した重要論文で、phase angle 中心の研究流れを ECW/TBW へ拡張する転換点となる。サンプルサイズ 9,717 名は BIA 研究としては最大級で、効果サイズ の信頼性が高い。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
-        "originality": "ECW/TBW と PhA を head-to-head で diagnostic AUC 比較し、ECW/TBW の優位性を大規模データで実証した点が独自。Sex specific 解析と低骨量・低筋量・高脂肪量という3アウトカムの並列評価も方法論的に巧み。",
-        "discovery": "①ECW/TBW の低筋量 AUC 0.845-0.922、②ECW/TBW の低骨量 AUC 0.696-0.885、③両指標とも高脂肪量予測は limited、④ECW/TBW R²=0.943 で body composition と極めて強い関連、⑤PhA R²=0.368 で moderate な関連、⑥Sex specific 差（男性：BMI・IMAT・PhA 高／女性：fat%・ECW/TBW 高）、⑦n=9,717 の大規模イタリア成人データ、⑧age・sex・BMI 補正後も頑健、⑨ECW/TBW が low muscle mass 検出で PhA を上回る discrimination、⑩complementary に サルコペニア・osteopenia screening に有用。",
-        "methodology": "Post-hoc 横断設計だが大規模イタリア多施設データ（n=9,717、20-90歳）で外的妥当性が高い。BIA-ACC（BioTekna）の標準化測定プロトコル、低骨量・低筋量・高脂肪量の標準 cutoff 定義で結果の頑健性を担保。多変量 回帰 で交絡管理を実施。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
-        "limitation": "横断デザインで因果方向は不明、Italian population 中心でアジア人外挿は別途検証要、BIA-ACC（BioTekna）という単一機種による測定で他機種への汎用性は未検証。Post-hoc 解析のため pre-specified hypothesis の検証ではない点も限界。",
-        "citation": "[introduction] BIA raw variables の比較を論じる導入で、本論文を「n=9,717 イタリア成人で ECW/TBW の サルコペニア screening 優位性を実証した Metabolites 2026 研究」として引用する。Phase angle 中心の研究流れを ECW/TBW へ拡張する根拠論文として位置付ける。[discussion] 既存日本人コホートで PhA 中心だった解析を ECW/TBW を併用する設計に拡張する根拠として参照し、効果サイズ の比較を議論する文脈で用いる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
-        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：phase angle に加え ECW/TBW を SHAP モデルの主要説明変数として組込む根拠。本論文の AUC 0.845-0.922 を SHAP value で再現する設計。**PD課題2（縦断追跡）**：ECW/TBW の縦断変化を新たな muscle health biomarker として追跡する根拠。**Multi-modal BIA 解析**：raw variables 全体（PhA + ECW/TBW + IR）の統合的活用へ拡張する方法論的基盤。",
-        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートで本論文の方法に揃えて ECW/TBW × low muscle mass の AUC を再現し、日本人 specific cutoff を導出する。②TMM 大規模データで ECW/TBW × 全原因死亡・要介護化の縦断解析を実施し、本論文の横断 effect を縦断デザインで強化する研究を計画する。③課題1 SHAP モデルで phase angle と ECW/TBW の独立 SHAP value を比較し、本論文の AUC 差（ECW/TBW > PhA）を機械学習で再現する研究を実施する。"
+        "design": "前向き縦断研究（中国 Rudong People's Hospital、severe サルコペニア n=128、72M/56F、平均74.3歳、12ヶ月追跡、multi-frequency BIA 5-500 kHz + phase angle 50 kHz、月次測定）",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41483395/",
+        "tags": ["phase angle", "ECW/TBW", "multi-frequency BIA", "サルコペニア", "縦断", "early marker"],
+        "summary": "Severe サルコペニア 患者 128 名（平均年齢 74.3 ± 6.8歳、男 72・女 56）を 12 ヶ月縦断追跡し、multi-frequency 5-500 kHz BIA と phase angle 50 kHz 測定の組合せが筋量低下の早期マーカーとして機能することを実証した最新縦断研究（Eur Geriatr Med 2026年1月、PMID 41483395）。完遂率 87.5%（n=112）で、筋量低下は 3-6 ヶ月の期間で最も急速に進行。Phase angle 低下も並行して進行し、特に 3 ヶ月で ≥ 0.3° の PhA 低下が加速筋量損失の効果的予測指標として確立。Bioimpedance パラメータの変化は検出可能な筋量低下の約 3 週前から出現し、ECW/TBW 比は経時的に上昇し筋量減少と強相関。Limb 領域が体幹より早期かつ顕著に劣化を示した。BIA raw variables の縦断変化が筋量変化に先行する「early window」を実証し、サルコペニア早期介入の臨床機会を提示した。",
+        "overview": "**背景**：phase angle（PhA）と ECW/TBW 比は サルコペニア の横断的指標として確立されているが、両者の縦断的変化が筋量低下に先行する early marker として機能するかは未解明だった。Severe サルコペニア 患者の真の経時動態を multi-frequency BIA で追跡し、介入の窓を定量化することが急務だった。**方法**：中国 Rudong People's Hospital の severe サルコペニア 患者 128 名（72M/56F、平均年齢 74.3 ± 6.8 歳）を 12 ヶ月前向き縦断追跡。Multi-frequency BIA（5-500 kHz）と PhA（50 kHz）を月次測定。Body composition、physical function、inflammation markers を定期評価。完遂者 n=112（87.5%）。Phase angle 低下と筋量低下の時間関係を分析し、ECW/TBW 上昇と筋量減少の相関を評価。**結果**：筋量低下は 12 ヶ月で有意進行、特に 3-6 ヶ月期間で最急。Phase angle も一貫して低下し、3 ヶ月で PhA ≥ 0.3° の低下が加速筋量損失の効果的予測指標。Bioimpedance パラメータ変化は検出可能な筋量低下の約 3 週前から出現。ECW/TBW 比は経時上昇し筋量減少と強相関。Limb 領域が体幹より顕著に劣化。**結論**：Multi-frequency BIA + PhA の縦断測定は サルコペニア 早期検出の非侵襲・高感度手法で、電気的パラメータと水分分布の変化が測定可能な筋量低下に先行する「early intervention window」を提示する。",
+        "importance": "Phase angle と ECW/TBW の縦断変化が筋量低下に先行する「早期介入ウィンドウ」を実証した重要論文で、サルコペニア 領域の monitoring パラダイムを「点」から「時系列動態」へ転換する位置にある。3 ヶ月で PhA ≥ 0.3° 低下という臨床応用可能な閾値を提示した点で、サルコペニア の routine monitoring 標準を更新する基盤を構築。",
+        "originality": "Multi-frequency BIA（5-500 kHz）+ PhA 50 kHz の縦断測定で、bioimpedance 変化が筋量低下に約 3 週先行することを定量実証した点が独自。3 ヶ月で PhA ≥ 0.3° という臨床適用可能な閾値の提示も貢献。",
+        "discovery": "①severe サルコペニア n=128 を 12 ヶ月追跡で完遂率 87.5%、②筋量低下が 3-6 ヶ月期間で最急、③phase angle 低下も並行進行、④3 ヶ月で PhA ≥ 0.3° 低下が加速筋量損失の予測指標、⑤bioimpedance 変化が筋量低下の約 3 週前から出現、⑥ECW/TBW 経時上昇と筋量減少の強相関、⑦limb 領域が体幹より顕著に劣化、⑧multi-frequency BIA（5-500 kHz）の縦断適用、⑨phase angle 50 kHz の標準化測定、⑩non-invasive で sensitive な early detection 手法として臨床価値を提示。",
+        "methodology": "前向き縦断設計で multi-frequency BIA（5-500 kHz）+ phase angle 50 kHz の標準化プロトコルを月次反復測定する設計が方法論的に巧み。完遂率 87.5% で結果の頑健性を担保。Body composition・physical function・inflammation markers の並列測定で多次元評価が可能。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
+        "limitation": "中国単一施設・severe サルコペニア 患者という特定集団で community-dwelling 集団への外挿は別途検証要、サンプルサイズ n=128（完遂 n=112）は中規模で sub-group 解析の検出力やや限定。Multi-frequency BIA の機種・周波数設定の標準化への依存性も限界として残る。",
+        "citation": "[introduction] phase angle と ECW/TBW の縦断的価値を論じる導入で、本論文を「multi-frequency BIA + PhA の縦断測定が筋量低下に約 3 週先行することを実証した最新研究（Eur Geriatr Med 2026、Chen R 他）」として引用する。サルコペニア の dynamic monitoring biomarker としての位置付けを根拠付ける論文として参照。[discussion] 既存日本人コホートの phase angle 横断結果と本論文の縦断結果を比較し、3 ヶ月で PhA ≥ 0.3° 低下という早期警告閾値の Asian specific 再現可能性を議論する文脈で用いる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
+        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：phase angle と ECW/TBW を baseline 値と 3 ヶ月変化量の両方の特徴量として SHAP モデルに組込む根拠論文。**PD課題2（縦断追跡）**：本論文の月次 BIA 測定プロトコルを参照して縦断 monitoring 設計の base とする。**PD課題3（運動介入 RCT）**：3 ヶ月で PhA ≥ 0.3° 低下を介入効果評価の閾値指標として採用する根拠。",
+        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人縦断コホートで本論文の Δ phase angle ≥ 0.3°/3 ヶ月閾値を再現解析し、加速筋量損失の予測能を日本人で検証する。②TMM 高齢サブコホートで multi-frequency BIA を導入し、本論文の「bioimpedance 変化が筋量低下に 3 週先行」を Japanese epidemiologic data で検証する。③課題3 RCT で介入前後の PhA + ECW/TBW を月次測定し、本論文の早期検出 paradigm を介入 monitoring に応用する研究を計画する。"
     },
 
     "20260513_wed_06": {
@@ -130,24 +135,24 @@ CONTENT = {
         "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートの echo intensity データで本論文の 効果サイズ を Asian specific に再現し、超音波 cutoff 値の Japanese reference を構築する。②課題1 SHAP モデルで echo intensity・muscle thickness と他指標（phase angle・ECW/TBW）の独立 SHAP value を比較し、超音波の追加情報量を定量化する。③TMM の超音波サブコホートで縦断追跡し、本論文の横断 evidence を縦断デザインで強化する研究を計画する。"
     },
 
-    "20260513_wed_07": {
-        "title": "Enhanced サルコペニア Detection in Nursing Home Residents Using Ultrasound Radiomics and Machine Learning",
-        "authors": "Fu H, et al.",
-        "journal": "Journal of the American Medical Directors Association (IF=7.6), 2025年",
+    "20260520_wed_07": {
+        "title": "The サルコペニア artificial intelligence diagnostic decision support system (SAID DSS): a multimodal deep learning model（POCUS + clinical data fusion）",
+        "authors": "Brockhattingen KK, Karlsson EH, Bielefeldt TBR, Naemi A, Andersen-Ranberg K, Moradbeiki P, Ebrahimi A, Wiil UK",
+        "journal": "BMC Geriatrics (IF=3.4), 2026年（Jan 2026）",
         "fulltext_status": "read_abstract_only",
-        "design": "Diagnostic accuracy study（中国 15 介護施設、長期療養 n=628、超音波 radiomics + 機械学習による AWGS 2019 サルコペニア検出）",
-        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1525861025003470",
-        "tags": ["ultrasound", "radiomics", "machine learning", "サルコペニア", "PD研究関連"],
-        "summary": "中国 15 介護施設の長期療養者 628 名で、超音波 radiomics + 機械学習が従来の超音波パラメータ（muscle thickness + echo intensity）よりサルコペニア診断精度を有意に向上させることを実証した最新研究（JAMDA 2025）。Rectus femoris・vastus intermedius・quadriceps femoris の3筋群について、conventional model（AUC 0.70-0.75）、radiomics model（AUC 0.76-0.78）、integrated model（AUC 0.81-0.85）を head-to-head で比較し、radiomics + 機械学習による AUC 向上を実証。Logistic 回帰 が一貫して優れた性能を示し、AWGS 2019 基準でのサルコペニア有病率 61.9% の長期療養者集団での臨床実装可能性を提示する。",
-        "overview": "**背景**：超音波 muscle quality 評価は portable で介護施設での screening に適するが、conventional parameters（MT・EI）の AUC は 0.70-0.75 で改善余地が大きかった。Radiomics（画像高次特徴量抽出）と機械学習の組合せが診断精度向上に寄与するかは介護施設長期療養者で未検証だった。**方法**：中国 15 介護施設の 628 名（サルコペニア有病率 61.9%、AWGS 2019 基準）の rectus femoris・vastus intermedius・quadriceps femoris の超音波画像を取得。Conventional parameters（muscle thickness、echo intensity）と radiomic features を抽出。Training（70%）と 検証（30%）に分割。3 種のモデル（conventional / radiomics / integrated）× 5 機械学習アルゴリズム（logistic 回帰 含む）を構築し、AUC・calibration・decision curve analysis で性能評価。**結果**：Logistic 回帰 が全モデルで最高性能。Conventional model AUC 0.70-0.75、radiomics model AUC 0.76-0.78、integrated model（MT + EI + radiomics + 年齢・性別・BMI）AUC 0.81-0.85（rectus femoris 0.85、vastus intermedius 0.81、quadriceps femoris 0.83）。Integrated model が good calibration と net benefit を示し、臨床実装可能性を提示。**結論**：超音波 radiomics + 機械学習はサルコペニア検出精度を顕著に向上させ、長期療養施設での screening 標準として実装可能。",
-        "importance": "超音波サルコペニア診断の精度を機械学習で顕著に向上させる方法論的革新で、長期療養施設での screening 標準を更新する位置にある。Radiomics + machine learning の組合せは画像 AI の muscle quality 応用の起点となる重要論文で、JAMDA という領域中核誌での発表で影響力が大きい。",
-        "originality": "超音波 radiomics と機械学習を統合し、conventional parameters を超える AUC を介護施設で実証した点が独自。3 筋群の並列評価と 5 アルゴリズム比較で方法論的厳密性も高い。",
-        "discovery": "①Conventional model AUC 0.70-0.75、②Radiomics model AUC 0.76-0.78、③Integrated model AUC 0.81-0.85、④Rectus femoris で最高 AUC 0.85（95%CI 0.79-0.91）、⑤Logistic 回帰 が全モデルで最高性能、⑥AWGS 2019 基準でのサルコペニア有病率 61.9%、⑦中国 15 介護施設の長期療養者で外的妥当性、⑧3 筋群（ReF・VI・QF）の並列評価、⑨Calibration と decision curve analysis で臨床価値検証、⑩Multi-modal integration（MT + EI + radiomics + 臨床データ）が独立寄与を維持。",
-        "methodology": "Diagnostic accuracy study の標準設計で AWGS 2019 基準準拠、training/検証 分割と 5 アルゴリズム比較で robust な性能評価。Radiomics 特徴量抽出の標準化プロトコル、calibration と decision curve analysis の併用で臨床価値検証も実施。",
-        "limitation": "中国 15 介護施設の長期療養者という特定集団で地域住民への外挿は別途検証要、AWGS 2019 基準準拠で AWGS 2025 への移行時に再評価が必要。Radiomics 特徴量の解釈可能性が限定的で、機械学習モデルの black-box 性も実装上の課題として残る。",
-        "citation": "[introduction] 超音波サルコペニア診断の機械学習応用を論じる導入で、本論文を「介護施設長期療養者で radiomics + 機械学習が conventional ultrasound parameters を上回る AUC を実証した規範的研究（JAMDA 2025）」として引用する。AI muscle quality 研究の起点として位置付ける。[discussion] 既存日本人コホートの超音波結果を本論文の機械学習モデルで再解析する設計の根拠として参照し、AUC 向上の Asian specific 再現可能性を議論する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
-        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：本論文の integrated model（MT + EI + radiomics + 臨床データ）を SHAP モデルの設計テンプレートとして採用し、AUC 0.81-0.85 を再現する。**PD課題3（運動介入 RCT）**：介護施設集団でのサルコペニアスクリーニングの根拠論文として、対象集団選定に活用する。**AI muscle quality**：拡張軸として ultrasound radiomics を将来導入する技術的根拠。",
-        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートで本論文の radiomics + ML パイプラインを再現し、AUC 0.81-0.85 を日本人で検証する。②TMM の超音波サブコホートで radiomics ベースサルコペニアスクリーニングを実装し、AWGS 2025 基準で大規模 検証 を実施する。③課題1 SHAP モデルに radiomics 特徴量を追加し、conventional parameters と radiomics の独立 SHAP value を比較する研究を計画する。"
+        "design": "Multimodal deep learning diagnostic study（デンマーク Odense University Hospital、71-91歳 n=24、POCUS rectus femoris 画像 + SPPB + 臨床データ、feature-level fusion Xception + MLP、Grad-CAM XAI）",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41588346/",
+        "tags": ["ultrasound", "deep learning", "POCUS", "XAI", "サルコペニア", "PD研究関連"],
+        "summary": "サルコペニア AI Diagnostic Decision Support System（SAID DSS）として、point-of-care ultrasound（POCUS）の rectus femoris 画像と臨床データ（年齢・性別・身長・体重・BMI・SPPB）を feature-level fusion する multimodal deep learning モデルが、サルコペニア 診断で accuracy 85%・F1=0.85・AUC 0.84 を達成したことを実証した最新研究（BMC Geriatrics 2026年1月、PMID 41588346）。81歳平均の高齢者 24 名（女性 63%）から 1060 縦断的・2414 transverse 超音波 event を収集し、Xception architecture で image feature 抽出 + Multilayer Perceptron で classification する fusion 構造が最高性能を発揮。Grad-CAM + feature-attribution の Explainable AI を統合し、診断決定の透明性も担保した。POCUS ベース サルコペニア 診断の clinical workflow 実装を初めて scalable な形で提示した規範的論文。",
+        "overview": "**背景**：サルコペニア の早期検出は治療成績改善の鍵だが、既存診断手法は accuracy・accessibility・efficiency のバランスが取れず広範な臨床実装に至っていない。POCUS は portable で介護施設・在宅でも使用可能だが、画像解釈の標準化と AI による定量化の組合せが未確立だった。Multimodal deep learning による「画像 + 臨床データ」の統合が POCUS サルコペニア 診断の精度を一段引き上げる可能性を持っていた。**方法**：デンマーク Odense University Hospital の geriatric 患者 24 名（平均 81 ± 5.2 歳、71-91 歳、女性 63%、BMI 26 kg/m²、SPPB サルコペニア群 5・対照群 9）の dominant thigh の rectus femoris を POCUS で 縦断的・transverse 撮影。臨床データ（age・gender・height・weight・BMI・SPPB）を併用。1060 縦断的 + 2414 transverse 画像 event。Multiple ML/DL アルゴリズム × multimodal architectures を比較。Feature-level fusion で Xception（画像特徴抽出）+ MLP（classifier）が最高性能。Grad-CAM（画像）+ feature attribution（臨床変数）の Explainable AI を統合し SAID DSS として実装。**結果**：Feature-level fusion + Xception + MLP の組合せが最高性能。Accuracy 85%・F1-score 0.85・AUC 0.84 を達成し、既存モデルを上回る。Grad-CAM で画像内の attention area を可視化、feature attribution で臨床変数の寄与度を提示。SAID DSS は POCUS サルコペニア 診断の臨床実装可能なツールとして scalable に設計された。**結論**：POCUS + 臨床データの multimodal deep learning + XAI 統合は サルコペニア 早期検出の精度・透明性・実装性を同時に達成する初の clinically oriented モデルで、SAID DSS は実臨床ワークフローへの直接応用が可能。",
+        "importance": "POCUS ベース サルコペニア 診断に multimodal deep learning + XAI を統合した初の clinically oriented モデルで、AI 診断の透明性問題（black-box 性）と臨床実装性を同時に解決する位置にある。SARCUS（サルコペニア Through Ultrasound）working group メンバーが主導する本論文は、EUGMS の standardization 動向と連動する規範的位置付け。",
+        "originality": "POCUS rectus femoris 画像と臨床データ（SPPB 含む）を feature-level fusion し、Xception + MLP の組合せで AUC 0.84 を達成した点が独自。Grad-CAM + feature-attribution の XAI 統合で診断決定の透明性を初めて確保した方法論的貢献も大きい。",
+        "discovery": "①Feature-level fusion + Xception + MLP の組合せが最高性能、②Accuracy 85%・F1=0.85・AUC 0.84 を達成、③既存サルコペニア AI モデルを上回る精度、④POCUS 1060 縦断的 + 2414 transverse 画像 event の robust dataset、⑤Grad-CAM で画像 attention 可視化、⑥Feature attribution で臨床変数寄与度を提示、⑦SPPB（EWGSOP2 + AWGS 共通推奨）を physical performance 入力に採用、⑧Rectus femoris を target muscle として選定、⑨SAID DSS として clinical workflow 実装可能、⑩SARCUS working group との連動で standardization 基盤を提供。",
+        "methodology": "Multimodal deep learning の標準設計に POCUS 画像と臨床データの feature-level fusion を組合せ、Xception architecture（ImageNet pretrained CNN）+ MLP classifier で性能評価する設計が方法論的に巧み。Grad-CAM + feature attribution の XAI 統合で診断透明性も担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
+        "limitation": "サンプルサイズ n=24 は小規模で外的妥当性と generalizability の検証が今後の課題、画像 event 数（1060 + 2414）で robust dataset を構成したが個体レベルの サンプルサイズ 制約は残る。デンマーク単一施設集団で他人種・他地域への外挿は別途検証要。",
+        "citation": "[introduction] POCUS + AI による サルコペニア 診断の最新動向を論じる導入で、本論文を「multimodal deep learning + XAI で POCUS サルコペニア 診断の AUC 0.84 を達成した規範的研究（BMC Geriatrics 2026、Brockhattingen 他）」として引用する。AI 透明性と臨床実装性を両立した先駆例として位置付ける。[discussion] 既存日本人コホートの超音波結果を本論文の SAID DSS 枠組みで再解析する設計の根拠として参照し、Asian specific generalization の方向性を議論する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
+        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：本論文の feature-level fusion（POCUS 画像 + 臨床データ）構造を SHAP モデルの multimodal 設計テンプレートとして採用し、AUC 0.84 を再現する。**PD課題3（運動介入 RCT）**：介入前後の POCUS 画像を SAID DSS で評価し、AUC ベースで介入効果を定量化する根拠論文。**AI 透明性**：Grad-CAM + SHAP の併用で診断決定の臨床的解釈性を確保する方法論的基盤。",
+        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートの POCUS 画像で本論文の Xception + MLP fusion を再現し、AUC 0.84 を Asian specific data で検証する。②TMM の超音波サブコホートで SAID DSS パイプラインを大規模展開し、AWGS 2025 基準で外的妥当性を確保する。③課題1 SHAP モデルに POCUS 画像特徴量（Xception 抽出）+ 臨床変数を統合し、本論文の feature-level fusion を SHAP value 分解で評価する研究を計画する。"
     },
 
     "20260513_wed_08": {
@@ -190,24 +195,24 @@ CONTENT = {
         "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM の CT サブセットで mean muscle attenuation × %IMAT の縦断解析を実施し、本論文の prognostic 関連を日本人疫学コホートで再現する。②既存 echo intensity データを本論文の CT 筋減衰と相補的に解釈し、両者の dimensional 性を画像ベース muscle quality 統合モデルで定量化する。③課題1 SHAP モデルで myosteatosis 軸（CT 筋減衰または echo intensity）を独立説明変数として組込み、筋量・筋力・myosteatosis の三軸統合効果を SHAP value で可視化する研究を計画する。"
     },
 
-    "20260513_wed_10": {
-        "title": "The Stress-Responsive Cytokine GDF-15 and サルコペニア: A Systematic Review and Meta-Analysis on Aging Muscle Decline",
-        "authors": "Papa MV, Ceolin C, Boschele F, Pagliuca R, Sergi G, De Rui M",
-        "journal": "Mechanisms of Ageing and Development (IF=5.1), 2025年（Sep 2025）",
+    "20260520_wed_10": {
+        "title": "Growth differentiation factor-15 as a clinical biomarker of フレイル, サルコペニア and functional decline: A systematic literature review",
+        "authors": "Lee ARYB, Vidhya SN, Hong A, Tan WA, Yau CE, Low CE, Merchant RA",
+        "journal": "Ageing Research Reviews (IF=12.5), 2026年（Mar 2026）",
         "fulltext_status": "read_abstract_only",
-        "design": "システマティックレビューおよびメタ解析（GDF-15 × サルコペニア・筋量、7 研究 n=2,344 統合）",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41016489/",
-        "tags": ["GDF-15", "myokine", "サルコペニア", "muscle mass", "メタ解析", "拡張軸"],
-        "summary": "GDF-15（Growth Differentiation Factor-15）と サルコペニア・筋量の関連を 7 研究 n=2,344 で統合解析した最新メタ解析（Mech Ageing Dev 2025年9月）。Sarcopenic 個体で circulating GDF-15 が有意上昇（r=0.482）、GDF-15 と筋量の負相関（r=-0.221）を実証。Mitokine としての GDF-15 が age 関連 stress response の中核 biomarker として、サルコペニア研究の biomarker 軸を分子レベルに拡張する規範的メタ解析。Myokine ネットワーク研究の中で GDF-15 が clinical サルコペニア biomarker として最も成熟した位置にあることを示した。",
-        "overview": "**背景**：GDF-15 は加齢・代謝ストレス・mitochondrial dysfunction で上昇する mitokine／myokine で、circulating レベルが疾患・全原因死亡と関連することは複数研究で報告されていた。但しサルコペニア specific の関連の体系評価は限定的で、GDF-15 のサルコペニア biomarker としての成熟度を統合評価する必要があった。**方法**：PubMed・Embase・Cochrane Library で PRISMA・MOOSE 準拠の systematic search を実施。Sarcopenic vs non-sarcopenic 個体間の GDF-15 比較（メタ解析 1）と GDF-15 と筋量の相関（メタ解析 2）の 2 つの統合解析を実施。7 研究 n=2,344 が組入れ基準を満たした（6/7 研究で 60 歳以上、1 研究で平均 42 歳の若年層含む）。**結果**：メタ解析 1（4 研究 n=1,393）：sarcopenic 個体で circulating GDF-15 有意上昇（r=0.482）。メタ解析 2（4 研究 n=1,400）：GDF-15 と筋量の有意負相関（r=-0.221）。Sarcopenic phenotype と elevated GDF-15 の small-to-moderate な関連を実証。**結論**：GDF-15 は myokine／mitokine 軸のサルコペニア biomarker として最も成熟した位置にあり、aging muscle decline の分子的指標として今後の clinical translation が期待される。但し縦断研究の不足と heterogeneity から慎重な解釈が必要。",
-        "importance": "GDF-15 をサルコペニア研究の分子 biomarker として体系評価した規範的メタ解析で、myokine 軸を clinical translation 段階へ進展させる位置にある。Mech Ageing Dev という aging biology の主要誌での発表で、生物学的軸と臨床軸の橋渡しを担う重要論文。",
-        "originality": "GDF-15 × サルコペニアの2系統メタ解析（群間比較 + 相関）を統合実施した点が独自で、myokine 軸の中で GDF-15 を clinical maturity の頂点に位置付ける evidence を提供。",
-        "discovery": "①Sarcopenic 個体で circulating GDF-15 有意上昇 r=0.482、②GDF-15 と筋量の有意負相関 r=-0.221、③7 研究 n=2,344 の統合、④6/7 研究で 60 歳以上、⑤Small-to-moderate な関連性を確立、⑥Mitokine／myokine 軸の clinical translation 候補として位置付け、⑦Age 関連 stress response の中核 biomarker、⑧Mitochondrial dysfunction・代謝ストレスとの関連、⑨PRISMA・MOOSE 準拠の系統的解析、⑩縦断研究の不足から慎重解釈の必要性を示唆。",
-        "methodology": "PRISMA・MOOSE 準拠の システマティックレビュー と メタ解析 の組合せで、2 系統の解析（群間比較 + 相関）を並列実施。原著研究の異質性を考慮した random-effects pooling で結果の頑健性を担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
-        "limitation": "組入れ研究 7 件は中規模 evidence base で、heterogeneity が高めの結果。縦断研究の不足から causal 推論は限定的で、GDF-15 と サルコペニア の因果方向は今後の課題。サルコペニア 定義の研究間差異（EWGSOP1/2 vs AWGS 2014/2019）も統合解析の限界として残る。",
-        "citation": "[introduction] Myokine 軸のサルコペニア biomarker を論じる導入で、本論文を「GDF-15 とサルコペニア・筋量の負相関を 7 研究統合で実証したメタ解析（Mech Ageing Dev 2025）」として引用する。分子 biomarker による muscle quality 評価の拡張根拠として位置付ける。[discussion] 既存日本人コホートの血漿サンプルバンクで GDF-15 測定を計画する場合の 効果サイズ 参照として本論文を用い、Asian specific の関連性検証の方向性を議論する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
-        "implication": "**PD拡張軸（myokine プロファイル）**：GDF-15 を血漿 myokine プロファイルの中核として測定し、phase angle・echo intensity との相関構造を multi-modal SHAP モデルに統合する根拠論文。**PD課題1（多元統合）**：将来的に GDF-15 を SHAP モデルの説明変数として組込み、本論文の r=-0.221 を機械学習で再現する設計。**運動介入の分子基盤**：課題3 RCT で介入前後の血漿 GDF-15 変化を測定し、myokine 動態と機能改善の関連を機序解明する根拠。",
-        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存サンプルバンクの保存血漿で GDF-15 を測定し、AWGS 2025 サルコペニアとの関連を本論文の r=0.482 と head-to-head で日本人検証する。②TMM の血漿 proteomics サブセットで GDF-15 × サルコペニア・全原因死亡の縦断解析を実施し、本論文の横断 evidence を縦断デザインで強化する。③課題3 RCT で介入前後の血漿 GDF-15 と筋量・筋力変化の関連を測定し、本論文の myokine 軸を介入実験で再現する研究を計画する。"
+        "design": "システマティックレビュー（PRISMA 準拠、CENTRAL・Embase・MEDLINE・PubMed 2026年2月まで、1027 records から 35 研究組入れ、GDF-15 × フレイル・サルコペニア・身体機能）",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41785972/",
+        "tags": ["GDF-15", "myokine", "サルコペニア", "フレイル", "システマティックレビュー", "拡張軸"],
+        "summary": "GDF-15（Growth Differentiation Factor-15）と フレイル・サルコペニア・身体機能の関連を 35 研究で統合した最新の体系レビュー（Ageing Res Rev 2026年3月、PMID 41785972、Singapore Lee ARYB 他）。1027 records から 35 研究を組入れ、community-dwelling adults・hospitalized patients・心血管/代謝/消化器/呼吸器疾患患者を横断する evidence map を構築。Elevated GDF-15 が poorer physical performance と greater フレイル severity と一貫して関連、縦断研究では future functional decline への predictive value を示唆する一方、サルコペニア との関連は inconsistent。Sex specific 変動と methodological heterogeneity（assay 技術・診断基準）が variability の主因。介入研究では 身体活動（運動）単独での GDF-15 modulation は限定的。GDF-15 を precision geriatric care に統合する evidence base を確立しつつ、サルコペニア specific 評価には further 縦断的／介入的 研究の必要性を提示した規範的レビュー。",
+        "overview": "**背景**：GDF-15 は TGF-β superfamily の stress-responsive cytokine で、mitochondrial dysfunction・cellular senescence・systemic inflammation を biological/phenotypic aging に橋渡しする promising biomarker として注目されてきた。但し フレイル・サルコペニア・functional decline それぞれに対する evidence の体系評価と clinical utility の判定が未確立だった。**方法**：PRISMA 指針 準拠で CENTRAL・Embase・MEDLINE・PubMed を 2026 年 2 月まで検索。Adult human participants で serum GDF-15 測定と フレイル/サルコペニア評価がある研究を組入れ。Population type（community-dwelling・hospitalized・disease group）・study design・アウトカム domain で thematic grouping。Narrative synthesis で heterogeneity を探索。**結果**：1027 records から 35 研究を組入れ。組入れ研究は community-dwelling adults・hospitalized patients・心血管/代謝/消化器/呼吸器疾患患者を網羅。Elevated GDF-15 が poorer physical performance と greater フレイル severity と一貫して関連。縦断研究では future functional decline への predictive value を示唆する一方、サルコペニア specific の関連は less consistent。Sex specific 変動と methodological heterogeneity（assay 技術・診断基準）が variability の主因。介入研究では 身体活動（運動）単独での GDF-15 modulation は limited。**結論**：GDF-15 を precision geriatric care への統合は支持されるが、サルコペニア specific 評価には further 縦断的／介入的 研究と既存スクリーニングツールへの incremental value 評価が必要。",
+        "importance": "GDF-15 を フレイル・サルコペニア・functional decline の clinical biomarker として体系評価した最新規範的レビューで、myokine 軸を precision geriatric care へ統合する方向性を確立する位置にある。Ageing Research Reviews という aging research の最高峰誌での発表で、領域への影響力が極めて大きい。サルコペニア specific の inconsistency を明示した点で、今後の研究方向性の提示も貢献。",
+        "originality": "GDF-15 × フレイル・サルコペニア・functional decline の3軸を網羅した体系レビューが独自で、population type・study design・アウトカム domain での thematic grouping により evidence map を立体的に構築。介入研究での GDF-15 modulation 評価も方法論的に重要。",
+        "discovery": "①1027 records から 35 研究組入れの大規模 evidence base、②Elevated GDF-15 が poorer physical performance と一貫して関連、③Elevated GDF-15 が greater フレイル severity と関連、④縦断研究で future functional decline への predictive value を示唆、⑤サルコペニア specific の関連は less consistent、⑥Sex specific 変動が variability の主因、⑦Methodological heterogeneity（assay・診断基準）も variability に寄与、⑧介入研究で 身体活動（運動）単独の GDF-15 modulation は limited、⑨Community-dwelling・hospitalized・disease group を網羅、⑩Precision geriatric care への統合方向性を確立。",
+        "methodology": "PRISMA 指針 準拠の体系レビューで CENTRAL・Embase・MEDLINE・PubMed を 2026 年 2 月まで網羅検索する設計。Population type・study design・アウトカム domain での thematic grouping と narrative synthesis で heterogeneity を構造的に探索。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
+        "limitation": "Narrative synthesis のため定量メタ統合の 効果サイズ は提示されず、サルコペニア specific evidence の inconsistency の原因分析は限定的。Assay 技術の研究間差異が評価の標準化を妨げる現状も限界として残る。介入研究の evidence base が薄く、身体活動（運動）以外（栄養・薬物）の modulation 評価も今後の課題。",
+        "citation": "[introduction] Myokine 軸の フレイル・サルコペニア biomarker を論じる導入で、本論文を「GDF-15 と physical performance・フレイル severity の一貫関連を 35 研究統合で実証した体系レビュー（Ageing Res Rev 2026、Lee ARYB 他）」として引用する。Precision geriatric care への GDF-15 統合根拠として位置付ける。[discussion] 既存日本人コホートの血漿サンプルバンクで GDF-15 測定を計画する場合の参照として本論文を用い、サルコペニア specific の inconsistency をどう克服するかの研究設計を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
+        "implication": "**PD拡張軸（myokine プロファイル）**：GDF-15 を血漿 myokine プロファイルの中核として測定し、phase angle・echo intensity との相関構造を multi-modal SHAP モデルに統合する根拠論文。**PD課題1（多元統合）**：本論文の inconsistency 指摘を踏まえ、サルコペニア specific 関連を assay 標準化と AWGS 2025 厳格定義で再評価する設計の根拠。**運動介入の分子基盤**：課題3 RCT で介入前後の血漿 GDF-15 変化と機能改善の関連を測定し、本論文の「身体活動（運動）単独 modulation limited」結論を multimodal intervention で乗り越える研究設計の根拠。",
+        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存サンプルバンクの保存血漿で GDF-15 を assay 標準化下で測定し、AWGS 2025 サルコペニア・フレイル との関連を本論文の inconsistency を再評価する形で日本人検証する。②TMM の血漿 proteomics サブセットで GDF-15 × フレイル・全原因死亡の縦断解析を実施し、本論文の predictive value を Japanese epidemiologic data で強化する。③課題3 RCT で multimodal intervention（resistance training + nutrition）前後の血漿 GDF-15 と筋量・筋力・SPPB 変化の関連を測定し、本論文の 身体活動（運動）単独 limited という結論を multimodal で乗り越える研究を計画する。"
     },
 
 }

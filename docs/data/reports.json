@@ -801,5 +801,101 @@
       "20260514_thu_10"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260515_friday",
+    "date": "2026-05-15",
+    "weekday": "friday",
+    "theme_jp": "疫学方法論",
+    "theme_en": "epidemiology-methods",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260515_friday.html",
+    "paper_ids": [
+      "20260515_fri_01",
+      "20260515_fri_04",
+      "20260515_fri_08"
+    ],
+    "paper_count": 3
+  },
+  {
+    "id": "20260522_friday",
+    "date": "2026-05-22",
+    "weekday": "friday",
+    "theme_jp": "疫学方法論",
+    "theme_en": "epidemiology-methods",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260522_friday.html",
+    "paper_ids": [
+      "20260515_fri_01",
+      "20260515_fri_04",
+      "20260515_fri_08"
+    ],
+    "paper_count": 3
+  },
+  {
+    "id": "20260521_thursday",
+    "date": "2026-05-21",
+    "weekday": "thursday",
+    "theme_jp": "脳・認知",
+    "theme_en": "brain-cognition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260521_thursday.html",
+    "paper_ids": [
+      "20260514_thu_01",
+      "20260514_thu_02",
+      "20260514_thu_03",
+      "20260521_thu_04",
+      "20260514_thu_05",
+      "20260521_thu_06",
+      "20260514_thu_07",
+      "20260514_thu_08",
+      "20260521_thu_09",
+      "20260514_thu_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260517_sunday",
+    "date": "2026-05-17",
+    "weekday": "sunday",
+    "theme_jp": "遺伝子・オミクス",
+    "theme_en": "genetics-omics",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260517_sunday.html",
+    "paper_ids": [
+      "20260510_sun_01",
+      "20260510_sun_02",
+      "20260510_sun_03",
+      "20260510_sun_04",
+      "20260510_sun_05",
+      "20260510_sun_06",
+      "20260517_sun_07",
+      "20260517_sun_08",
+      "20260510_sun_09",
+      "20260517_sun_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260519_tuesday",
+    "date": "2026-05-19",
+    "weekday": "tuesday",
+    "theme_jp": "身体活動・運動疫学",
+    "theme_en": "physical-activity-epidemiology",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260519_tuesday.html",
+    "paper_ids": [
+      "20260519_tue_01",
+      "20260519_tue_02",
+      "20260512_tue_03",
+      "20260512_tue_04",
+      "20260512_tue_05",
+      "20260512_tue_06",
+      "20260512_tue_07",
+      "20260512_tue_08",
+      "20260519_tue_09",
+      "20260512_tue_10"
+    ],
+    "paper_count": 10
   }
 ]
