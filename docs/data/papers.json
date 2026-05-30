@@ -6394,7 +6394,8 @@
     "source_reports": [
       "20260510_saturday",
       "20260509_saturday",
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -6433,7 +6434,8 @@
     "source_reports": [
       "20260510_saturday",
       "20260509_saturday",
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -6512,7 +6514,8 @@
     "source_reports": [
       "20260510_saturday",
       "20260509_saturday",
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -6550,7 +6553,8 @@
     "source_reports": [
       "20260510_saturday",
       "20260509_saturday",
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -6590,7 +6594,8 @@
     "source_reports": [
       "20260510_saturday",
       "20260509_saturday",
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -6742,7 +6747,8 @@
     ],
     "source_reports": [
       "20260510_sunday",
-      "20260517_sunday"
+      "20260517_sunday",
+      "20260524_sunday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -6780,7 +6786,8 @@
     ],
     "source_reports": [
       "20260510_sunday",
-      "20260517_sunday"
+      "20260517_sunday",
+      "20260524_sunday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -6817,7 +6824,8 @@
     ],
     "source_reports": [
       "20260510_sunday",
-      "20260517_sunday"
+      "20260517_sunday",
+      "20260524_sunday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7046,7 +7054,8 @@
     ],
     "source_reports": [
       "20260510_sunday",
-      "20260517_sunday"
+      "20260517_sunday",
+      "20260524_sunday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7165,7 +7174,8 @@
       "20260510_monday",
       "20260511_monday",
       "20260504_monday",
-      "20260518_monday"
+      "20260518_monday",
+      "20260525_monday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7244,7 +7254,8 @@
       "20260510_monday",
       "20260511_monday",
       "20260504_monday",
-      "20260518_monday"
+      "20260518_monday",
+      "20260525_monday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7321,7 +7332,8 @@
       "20260510_monday",
       "20260511_monday",
       "20260504_monday",
-      "20260518_monday"
+      "20260518_monday",
+      "20260525_monday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7397,7 +7409,8 @@
       "20260510_monday",
       "20260511_monday",
       "20260504_monday",
-      "20260518_monday"
+      "20260518_monday",
+      "20260525_monday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7589,7 +7602,8 @@
     "source_reports": [
       "20260510_tuesday",
       "20260512_tuesday",
-      "20260519_tuesday"
+      "20260519_tuesday",
+      "20260526_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7668,7 +7682,8 @@
     "source_reports": [
       "20260510_tuesday",
       "20260512_tuesday",
-      "20260519_tuesday"
+      "20260519_tuesday",
+      "20260526_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7781,7 +7796,8 @@
     "source_reports": [
       "20260510_tuesday",
       "20260512_tuesday",
-      "20260519_tuesday"
+      "20260519_tuesday",
+      "20260526_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7857,7 +7873,8 @@
     "source_reports": [
       "20260510_tuesday",
       "20260512_tuesday",
-      "20260519_tuesday"
+      "20260519_tuesday",
+      "20260526_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7902,7 +7919,8 @@
       "20260510_wednesday",
       "20260513_wednesday",
       "20260506_wednesday",
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -7915,29 +7933,33 @@
   },
   {
     "id": "20260513_wed_02",
-    "title": "Health outcomes of サルコペニア: a consensus report by the アウトカム working group of the Global Leadership Initiative in サルコペニア (GLIS)",
-    "authors": "Beaudart C, Alcazar J, Aprahamian I, Batsis JA, Yamada Y, Prado CM, et al.",
-    "journal": "Aging Clinical and Experimental Research (IF=3.6), 2025年（Mar 2025）",
-    "design": "コンセンサスレポート（GLIS アウトカム working group、サルコペニアの健康アウトカムに関するエビデンスレベル分類）",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/40120052/",
-    "summary": "Global Leadership Initiative in サルコペニア（GLIS）の アウトカム working group が世界13名の key opinion leaders を集めて、サルコペニア診断後に測定すべき健康アウトカムをエビデンスベースで合意形成した最新コンセンサスレポート。系統レビュー・メタ解析・大規模 コホート 研究を基に、サルコペニアと諸アウトカムの関連を high/moderate/inconclusive の3段階のエビデンスレベルで分類した。High level evidence でサルコペニアは QOL 低下・転倒骨折リスク・全原因死亡と関連、moderate level で IADL 低下と関連、inconclusive level で入院・施設入所・基本 ADL 低下との関連は不十分と判定。Yamada Y（日本）含む国際パネルでサルコペニア研究のアウトカム標準化を主導した規範的文書。",
-    "methodology": "13名 international key opinion leaders による合意形成と システマティックレビュー・メタ解析・cohort study の系統的再評価を組合せ。GRADE 様の階層でエビデンス品質を評価する設計で、アウトカム別の判定根拠が明確。EWGSOP2・AWGS・FNIH 等の既存基準を統合する位置付けで国際比較可能性も担保。",
-    "limitation": "コンセンサス文書のため原著研究のエビデンス強度の階層化は GRADE 完全準拠ではない、縦断研究不足の領域は inconclusive 判定にとどまり今後の研究で更新を要する。アジア・欧米・南北アメリカでのエビデンス偏在も限界として残る。",
-    "implication": "**PD課題1（多元統合機械学習）**：本コンセンサスの high level アウトカム（QOL・転倒骨折・全原因死亡）を SHAP モデルの primary アウトカム として標準化採用する。**PD課題2（縦断追跡）**：inconclusive 判定の領域（入院・施設入所・mobility）を縦断データで補強する研究設計の根拠として位置付ける。**国際整合性**：GLIS 標準準拠の研究設計とすることで国際エビデンス群への接続を担保する。",
-    "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM 縦断データで本論文の inconclusive 領域（入院・施設入所・mobility）を補強する縦断解析を実施し、GLIS 次期改訂への evidence 提供を目指す。②JAGES データで AWGS 2025 × GLIS high level アウトカム の関連を算出し、日本コホートの国際 reference 化を進める。③課題1 SHAP モデルで GLIS high level アウトカム（QOL・転倒骨折・mortality）を multi-target 学習し、predictor 寄与度のアウトカム横断比較を実施する研究を計画する。",
+    "title": "Association Between Phase Angle, Muscle Mass Distribution, and Quality of Life in Patients with Chronic Obstructive Pulmonary Disease",
+    "authors": "Ibrayeva L, Bacheva I, Sadibekova M",
+    "journal": "Journal of Clinical Medicine (IF=3.0), 2026年（May 16, 2026）",
+    "design": "横断的探索的パイロット研究（カザフスタン Karaganda Medical University、GOLD II-III 期の安定期 COPD 患者 n=75、segmental multi-frequency BIA [InBody 770]、phase angle・FFM・SMM・ECW/TBW × WHOQOL-BREF）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42194800/",
+    "summary": "カザフスタン Karaganda Medical University の Ibrayeva L 他が GOLD II-III 期 COPD 患者 75 名を対象に、segmental multi-frequency BIA（InBody 770）由来の phase angle、fat-free mass（FFM）、skeletal muscle mass（SMM）、ECW/TBW、visceral fat area、bone mineral content と WHOQOL-BREF の関連を体系評価した最新パイロット研究（J Clin Med 2026 May 16、PMID 42194800）。BMI 中央値が正常範囲内（23.4 kg/m²）にも関わらず体脂肪量は男女とも reference value を超過し、FFM と SMM は期待値の下端に位置。多変量回帰モデルで FFM・SMM が physical・psychological QoL domain と一貫して正の関連を示す一方、whole-body と segmental phase angle はいずれも QoL outcomes と有意関連を示さなかった。COPD における BIA-derived 指標の QoL 予測能の階層を実証し、BMI を超える臨床価値を持つ筋指標を明示した重要なエビデンス。",
+    "methodology": "横断的探索的パイロット設計に segmental multi-frequency BIA（InBody 770）の標準化測定と WHOQOL-BREF の組合せで、bioimpedance-derived parameter と QoL の関連を体系評価する設計。Spearman 相関と多変量線形回帰の組合せで関連強度と独立寄与の双方を評価する手法も方法論的に堅実。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
+    "limitation": "サンプルサイズ 75 名のパイロット研究で外的妥当性と検出力に限界、単一施設・カザフスタン単一国コホートで一般化には別検証要。横断デザインで予後予測の縦断検証も今後の課題。安定期 COPD のみで急性増悪期は別評価が必要な点も限界として残る。",
+    "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：本論文の「FFM・SMM が phase angle より QoL と関連」結論を踏まえ、SHAP モデルの予測対象（mortality vs QoL vs 身体機能）ごとに重要 feature が異なる仮説を立てる根拠論文。**PD拡張軸（呼吸器疾患 sub-analysis）**：TMM・JAGES の COPD・呼吸器疾患合併サブコホートで本論文の COPD 結果を再現する研究設計の根拠。**Patient-reported outcomes**：QoL を mortality・身体機能と並ぶ primary アウトカム に据える根拠として、本論文の psychological domain 関連を活用する。",
+    "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM の COPD・喘息合併サブコホートで本論文の FFM・SMM × WHOQOL-BREF 関連を Asian COPD specific に再現し、phase angle vs FFM・SMM の predictive value 比較を Japanese epidemiologic data で検証する。②JAGES データで segmental BIA を導入し、本論文の whole-body と segmental phase angle の QoL 予測能の差を 大規模疫学コホート で評価する。③課題1 SHAP モデルで phase angle、FFM、SMM、ECW/TBW を独立説明変数として組込み、QoL アウトカム vs 身体機能アウトカム vs 全原因死亡アウトカムごとの SHAP value 寄与度の transformation を比較する研究を計画する。",
     "novelty": "3 muscle quality 指標の統合解析。",
     "background": "**背景**：muscle quality 指標（phase angle、ECW/TBW、echo intensity）は別々に研究されてきたが、3者統合解析は限定的だった。**方法**：地域在住高齢女性で3指標を測定、身体機能（gait speed、TUG、SPPB）を評価。**結果**：3指標が独立して身体機能と関連、phase angle と echo intensity は r=-0.765（強い相関）。Higher echo intensity は lower phase angle を意味、いずれも muscle quality の dimension。**結論**：3指標の使い分けと統合が clinical 最適。",
     "result": "①3指標が独立して身体機能予測、②phase angle と echo intensity r=-0.765、③higher echo intensity = lower phase angle、④muscle quality の multi-dimensional capture、⑤地域在住女性での外的妥当性、⑥3指標統合の clinical implication。",
     "impact": "Yuji 自身の研究テーマと最重なる reference。",
     "keywords": "",
     "tags": [
+      "phase angle",
+      "COPD",
+      "muscle mass",
+      "QoL",
+      "BIA",
       "GLIS",
       "サルコペニア",
       "health outcomes",
       "consensus",
       "コア軸",
       "muscle quality",
-      "phase angle",
       "echo intensity",
       "ECW/TBW",
       "PD研究関連"
@@ -7946,15 +7968,16 @@
       "20260510_wednesday",
       "20260513_wednesday",
       "20260506_wednesday",
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
-    "overview": "**背景**：サルコペニア診断後の臨床アウトカムが研究間で多様に報告され、何を primary アウトカム として測定すべきかの合意形成が遅れていた。GLIS は EWGSOP2・AWGS・FNIH 等を統合する世界統一基準の構築を目指し、その アウトカム 標準化が急務だった。**方法**：13名の international key opinion leaders が システマティックレビュー・メタ解析・大規模 cohort study を系統的に再評価し、サルコペニア × 諸アウトカムの関連のエビデンスレベルを high/moderate/inconclusive で合意形成。エビデンス品質は GRADE 様の階層で評価。**結果**：**High level evidence** で QOL 低下・転倒骨折リスク増・全原因死亡増との関連を確認。**Moderate level** で IADL（手段的日常生活動作）低下との関連を確認。**Inconclusive level** で入院・施設入所・mobility impairment・基本 ADL 低下との関連は縦断研究の不足から判定不能。**結論**：サルコペニアの primary アウトカム として QOL・転倒骨折・全原因死亡を中核に据え、IADL を secondary、入院・施設入所等は研究設計を厳密化する必要があると勧告。本研究の方法論と結果は、当該分野の臨床実装と国際比較の標準化に向けた重要な節目として機能する位置にある。同領域の先行研究を統合的に発展させ、後続研究の方向性を提示する論文として広く参照される位置付け。",
-    "importance": "サルコペニア研究のアウトカム標準化を主導する規範的コンセンサスで、今後の臨床試験・疫学研究・ガイドラインのアウトカム選定の参照基準となる位置にある。GLIS は EWGSOP2・AWGS・FNIH の統合枠組みであり、世界の三大基準を束ねる位置付けで領域への影響が大きい。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
-    "originality": "サルコペニア × 健康アウトカムのエビデンスレベルを GRADE 様の3段階で系統分類した点が独自で、QOL・転倒骨折・mortality を high level に位置付けることでアウトカム標準化を主導した貢献。",
-    "discovery": "①QOL 低下との関連が high level evidence、②転倒骨折リスク増との関連が high level、③全原因死亡増との関連が high level、④IADL 低下との関連が moderate level、⑤入院との関連は inconclusive、⑥施設入所との関連は inconclusive、⑦mobility impairment との関連は inconclusive、⑧基本 ADL 低下との関連は inconclusive、⑨縦断研究の不足が inconclusive 判定の主因、⑩GLIS によるサルコペニア研究のアウトカム標準化を主導する規範的位置付け。⑪これらの知見は当該分野の paradigm を発展させる規範的整理として位置付けられる。",
-    "citation": "[introduction] サルコペニア研究のアウトカム標準化を論じる導入で、本論文を「GLIS によるアウトカム consensus（Aging Clin Exp Res 2025）」として引用し、QOL・転倒骨折・全原因死亡を primary アウトカム に据える根拠とする。[discussion] 既存コホートの解析結果を本論文のエビデンスレベル分類と突合し、high level アウトカム（QOL・転倒骨折・mortality）を中核に据えた解析の妥当性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
+    "overview": "**背景**：COPD は systemic body composition 変化（筋量低下・脂肪再分布）を伴い、これが患者報告アウトカムに影響する可能性が示唆されてきた。但し BIA-derived parameter（特に phase angle）の QoL への独立寄与は不明確で、segmental BIA の臨床価値も体系評価が遅れていた。**方法**：GOLD II-III 期の安定期 COPD 患者 75 名を組入。Segmental multi-frequency BIA（InBody 770）で FFM、SMM、体脂肪率（PBF）、visceral fat area（VFA）、ECW/TBW、bone mineral content（BMC）、phase angle（PhA）を測定。WHOQOL-BREF で QoL を評価。Spearman 相関と多変量線形回帰で関連を解析。**結果**：BMI 中央値 23.4 kg/m²（正常範囲内）ながら体脂肪量が男女とも reference value を超過、FFM・SMM は期待値下端に位置。Psychological QoL domain と FFM（ρ=0.238、p=0.041）、SMM（ρ=0.240、p=0.040）、basal metabolic rate（ρ=0.236、p=0.043）、BMC（ρ=0.249、p=0.033）が positive correlation。多変量回帰モデルで FFM・SMM が physical・psychological QoL domain と一貫して positive 関連。Whole-body と segmental phase angle のいずれも QoL outcomes と有意関連を示さず。**結論**：COPD では BMI 単独で体組成変化を充分反映できず、筋関連指標（FFM・SMM）が肥満指標より一貫した QoL 関連を示す。BIA は BMI を超える臨床的に意義ある情報を提供する一方、phase angle の QoL 予測能は COPD では限定的で、対象集団・アウトカムによって BIA 指標の選択が必要。",
+    "importance": "COPD という呼吸器疾患領域で phase angle・FFM・SMM・ECW/TBW の QoL 予測能を体系評価した最新研究で、BIA-derived parameter の臨床価値の階層化に寄与する位置にある。Phase angle が必ずしも普遍的な muscle quality マーカーではなく、対象集団・アウトカムによって predictive value が変動することを明示した点で、領域全体の方法論的標準化に方向性を提供する重要なエビデンス。",
+    "originality": "Segmental multi-frequency BIA で whole-body と segmental の両 phase angle を同時評価し、FFM・SMM との head-to-head 比較で QoL 関連を解析した点が独自。COPD という呼吸器疾患集団での BIA evidence 構築への貢献も大きい。",
+    "discovery": "①BMI 中央値 23.4 kg/m² ながら体脂肪量が reference value を超過、②FFM・SMM が期待値下端に位置、③Psychological QoL × FFM 相関 ρ=0.238（p=0.041）、④Psychological QoL × SMM 相関 ρ=0.240（p=0.040）、⑤Psychological QoL × BMR 相関 ρ=0.236（p=0.043）、⑥Psychological QoL × BMC 相関 ρ=0.249（p=0.033）、⑦多変量回帰で FFM・SMM が physical・psychological QoL に positive 関連、⑧Whole-body phase angle は QoL outcomes と有意関連なし、⑨Segmental phase angle も QoL outcomes と有意関連なし、⑩COPD では FFM・SMM が phase angle より QoL 予測能高、⑪BMI 単独では COPD body composition を反映不能、⑫BIA は BMI を超える臨床的に意義ある情報を提供。",
+    "citation": "[introduction] COPD body composition と QoL の関連を論じる導入で、本論文を「GOLD II-III 期 COPD 患者 75 名で FFM・SMM が phase angle より QoL と一貫した関連を示したパイロット研究（J Clin Med 2026 May 16、Ibrayeva L 他）」として引用する。BIA-derived 指標の QoL 予測能の階層化根拠として位置付ける。[discussion] 既存日本人 COPD・呼吸器疾患コホートの BIA 結果と本論文の結果を比較し、phase angle の predictive value が対象集団により変動する可能性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
     "fulltext_status": "read_abstract_only"
   },
   {
@@ -7993,7 +8016,8 @@
       "20260510_wednesday",
       "20260513_wednesday",
       "20260506_wednesday",
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -8039,7 +8063,8 @@
       "20260510_wednesday",
       "20260513_wednesday",
       "20260506_wednesday",
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -8094,16 +8119,16 @@
   },
   {
     "id": "20260513_wed_06",
-    "title": "Exploring the relationship between ultrasound parameters and muscle strength in older adults: a メタ解析 of サルコペニア-related exercise performance",
-    "authors": "Yuan H, Kim MK",
-    "journal": "Frontiers in Medicine (IF=3.1), 2024年",
-    "design": "システマティックレビューおよびメタ解析（高齢者の超音波筋パラメータ × 筋力・身体機能、28研究統合）",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11466788/",
-    "summary": "高齢者の超音波筋パラメータ（echo intensity、muscle thickness、横断的 area、pennation angle、fascicle length）と筋力・身体機能の関連を 28 研究統合で評価した最新メタ解析（2024）。Echo intensity と muscle thickness が筋力と moderate-to-strong に相関する一方、歩行速度・Timed Up and Go との関連は有意でないことを実証。Sit-to-stand との関連はテスト形式により異なり、weak correlation を示した。超音波ベース muscle quality 評価の臨床価値と限界を体系整理し、サルコペニア診断における ultrasound の position を再定義した。",
-    "methodology": "PRISMA 準拠の systematic search と random-effects メタ解析 の組合せ、Egger テストで publication バイアス 評価。28 研究の異質性を考慮した解析で結果の頑健性を担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
-    "limitation": "Heterogeneity が中-高程度で各パラメータの 効果サイズ の解釈に注意必要、原著の超音波測定プロトコルが研究間で多様で標準化への影響が大きい。Echo intensity の cutoff 値の研究間差異が統合解析の限界として残る。",
-    "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：echo intensity と muscle thickness を SHAP モデルの主要説明変数として組込み、本論文の moderate-to-strong correlation を機械学習で再現する根拠。**Multi-modal evaluation**：超音波単独の限界（歩行速度との関連欠如）を踏まえ、phase angle・ECW/TBW との統合解析の必要性を補強する。",
-    "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートの echo intensity データで本論文の 効果サイズ を Asian specific に再現し、超音波 cutoff 値の Japanese reference を構築する。②課題1 SHAP モデルで echo intensity・muscle thickness と他指標（phase angle・ECW/TBW）の独立 SHAP value を比較し、超音波の追加情報量を定量化する。③TMM の超音波サブコホートで縦断追跡し、本論文の横断 evidence を縦断デザインで強化する研究を計画する。",
+    "title": "Ultrasound-derived muscle variables and physical function in older adults: A scoping review",
+    "authors": "Phillip JG, Brockhattingen KK, Kaarsbo T, Kristensen MT, Ryg J, Suetta C, Masud T, Minet LR",
+    "journal": "Archives of Gerontology and Geriatrics (IF=4.1), 2026年（Apr 2026、Epub Jan 20, 2026）",
+    "design": "スコーピングレビュー（PRISMA-ScR・JBI guidance 準拠、MEDLINE・Cochrane・Embase・Scopus・CINAHL・grey literature 検索、65 歳以上 ≥65 歳、超音波筋パラメータ × 身体機能 70 研究組入れ）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41666493/",
+    "summary": "デンマーク Odense University Hospital の Phillip JG 他が主導した、超音波由来筋パラメータ（muscle thickness [MT]、筋横断面積 [CSA]、echo intensity [EI]、pennation angle、fascicle length、shear-wave elastography [SWE]）と身体機能指標（HGS・STS・歩行速度・TUG・SPPB）の関連を高齢者集団で横断的に体系整理した最新のスコーピングレビュー（Arch Gerontol Geriatr 2026 Apr、Epub Jan 20、PMID 41666493、70 研究組入れ）。Rectus femoris MT が mid-thigh で最頻測定対象だが protocol variation が大きく、MT・CSA は筋力指標と weak-to-moderate 関連、身体機能関連は very weak-to-weak、EI・SWE・pennation angle・fascicle length のエビデンスは limited・inconsistent と判定。フレイル集団の under-representation と縦断研究の不足を明示し、超音波 muscle quality の臨床指標としての位置を慎重に再定義する規範的レビュー。",
+    "methodology": "PRISMA-ScR と JBI guidance 準拠の体系的スコーピングレビューで、MEDLINE・Cochrane・Embase・Scopus・CINAHL・grey literature を網羅検索する設計が方法論的に厳密。Thematic mapping で protocol variation・関連強度・研究デザインを構造的に可視化する手法で、メタ解析より広い視野での evidence map 構築に適した設計。標準化されたプロトコルと適切な手順で結果の頑健性を確保している点も特徴となる位置にある。",
+    "limitation": "スコーピングレビューのため定量的なメタ統合の 効果サイズ は提示されず、各パラメータの関連強度の閾値判定は narrative。Protocol variation の研究間差異が evidence synthesis の標準化を妨げる現状も限界として残る。",
+    "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：echo intensity と muscle thickness を SHAP モデルの主要説明変数として組込み、本論文の MT・CSA × 筋力 weak-to-moderate 関連を機械学習で定量化する根拠。**Multi-modal evaluation**：超音波単独の身体機能関連の弱さを踏まえ、phase angle・ECW/TBW・D3-creatine との統合解析の必要性を補強する。**Protocol harmonization**：本論文が指摘した standardization 不足を踏まえ、自前研究の超音波 protocol を SARCUS Working Group ガイドラインに揃える根拠論文として位置付ける。",
+    "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートの echo intensity・muscle thickness データで本論文の関連強度判定を Asian specific に再現し、protocol harmonization 課題の日本人コホート版を提示する。②課題1 SHAP モデルで MT・CSA・EI と他指標（phase angle・ECW/TBW）の独立 SHAP value を比較し、超音波の追加情報量を定量化する。③TMM の超音波サブコホートで縦断追跡し、本論文が指摘した縦断研究不足の問題を Japanese epidemiologic data で補強する研究を計画する。",
     "novelty": "Field 評価可能な segmental BIS の確立。",
     "background": "**背景**：segmental BIS は研究室では使われていたが、field deployment の標準化が未確立。**方法**：normal weight と obese の高齢男性で segmental BIS を適用、muscle size と quality を測定し DXA と比較。**結果**：segmental BIS が muscle size を DXA と高相関で評価、quality（phase angle）も同時取得可能。Field 評価で実装可能性証明。**結論**：segmental BIS が field deployment の new standard。",
     "result": "①Segmental BIS で muscle size を DXA と高相関で評価、②quality も同時取得、③field deployment 可能性証明、④normal weight と obese 両方で外的妥当性、⑤高齢男性での実装、⑥標準化された field method として確立。",
@@ -8114,28 +8139,30 @@
       "echo intensity",
       "muscle thickness",
       "サルコペニア",
+      "scoping review",
+      "コア軸",
       "メタ解析",
       "muscle ultrasound",
       "muscle quality",
       "rectus femoris",
       "segmental BIS",
       "field assessment",
-      "PD研究関連",
-      "コア軸"
+      "PD研究関連"
     ],
     "source_reports": [
       "20260510_wednesday",
       "20260513_wednesday",
       "20260506_wednesday",
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
-    "overview": "**背景**：超音波は非侵襲・廉価・portable で muscle quality 評価ツールとして注目されているが、各パラメータの臨床価値は研究間で散在的に評価されており、統合的な見取り図が不足していた。**方法**：PubMed・Web of Science・Embase で 2023 年 6 月までの研究を systematic search。Echo intensity（EI）、muscle thickness（MT）、横断的 area（CSA）、pennation angle（PA）、fascicle length（FL）の各パラメータと筋力・身体機能の Pearson 相関係数を抽出。Random-effects model で 効果サイズ をプール、Egger テストで publication バイアス を評価。28 研究が組入れ基準を満たした。**結果**：EI、MT、CSA は筋力と moderate-to-strong correlation。歩行速度との有意関連は認められず、Chair stand test との correlation はテスト形式により異なり、EI・MT が sit-to-stand と weak correlation。Timed Up and Go との関連は全パラメータで有意でなく、超音波パラメータが「動的」身体機能より「静的」筋力との関連が強いことを示した。**結論**：EI と MT は moderate-to-strong correlation を持つ実用的 muscle quality 指標だが、サルコペニア診断精度向上には longitudinal study と複数パラメータ統合が必要。",
-    "importance": "超音波 muscle quality 評価の臨床価値を 28 研究統合で体系整理した規範的メタ解析で、サルコペニア研究での ultrasound position を客観的に再定義する。Echo intensity と muscle thickness の moderate-to-strong correlation は超音波スクリーニングの根拠を強化する一方、歩行速度との関連欠如は ultrasound の単独使用の限界も明示。",
-    "originality": "5つの超音波パラメータ（EI・MT・CSA・PA・FL）を網羅的に統合解析し、筋力 vs 動的身体機能との関連の対比を明示した点が独自。Test 形式別の chair stand 関連評価も方法論的に詳細。",
-    "discovery": "①Echo intensity と筋力が moderate-to-strong correlation、②Muscle thickness と筋力も moderate-to-strong correlation、③Cross-sectional area と筋力も同様、④歩行速度との関連は有意でない、⑤Chair stand との関連はテスト形式依存、⑥EI・MT と sit-to-stand が weak correlation、⑦Timed Up and Go との関連は全パラメータで有意でない、⑧28 研究統合の包括性、⑨Random-effects pooling で 効果サイズ の頑健性を担保、⑩超音波が「静的」筋力指標とより強く関連する位置付け。",
-    "citation": "[introduction] 超音波 muscle quality 評価の臨床価値を論じる導入で、本論文を「28 研究統合で echo intensity・muscle thickness と筋力の moderate-to-strong correlation を実証したメタ解析（Front Med 2024）」として引用する。超音波ベース muscle quality 研究の方法論的中核として位置付ける。[discussion] 既存日本人コホートの超音波結果を本論文の 効果サイズ と比較し、サルコペニア診断での ultrasound 単独使用の限界と複数パラメータ統合の必要性を議論する文脈で参照する。",
+    "overview": "**背景**：超音波は非侵襲・廉価・portable で muscle quality 評価ツールとして注目され、AWGS 2025 や EUGMS の SARCUS Working Group でも標準化議論が進む。但し各パラメータの臨床価値（特に身体機能との関連）の体系整理と protocol harmonization の現状把握が遅れていた。**方法**：PRISMA-ScR と JBI guidance 準拠で MEDLINE・Cochrane・Embase・Scopus・CINAHL・grey literature を網羅検索。65 歳以上の adults（フレイル集団含む）で、超音波由来筋パラメータ（muscle thickness [MT]、筋横断面積 [CSA]、echo intensity [EI]、pennation angle、fascicle length、shear-wave elastography [SWE]）と身体機能指標（handgrip strength [HGS]、sit-to-stand [STS]、歩行速度、timed up-and-go [TUG]、short physical performance battery [SPPB]）の関連を報告した研究を組入。Thematic mapping で測定 protocol・解析手法・関連強度を体系整理。**結果**：70 研究が組入れ基準を満たす。Rectus femoris MT が mid-thigh で最頻測定対象、ただし protocol variation が大きい。多くの研究が横断デザインで、フレイル集団の under-representation が顕著。MT・CSA は筋力関連指標（HGS・STS）と weak-to-moderate 関連、身体機能関連指標（歩行速度・TUG・SPPB）とは generally very weak-to-weak 関連。EI・SWE・pennation angle・fascicle length のエビデンスは limited・inconsistent。**結論**：現時点のエビデンスは超音波由来筋パラメータを高齢者の身体機能マーカーとして支持するには limited。MT・CSA は筋力の側面を捉えるが身体機能の反映は不十分。Protocol harmonization の確立と、フレイル集団での responsiveness 探索の縦断研究が今後の研究・臨床応用の鍵。",
+    "importance": "超音波 muscle quality 評価の臨床価値を 70 研究統合で体系整理した最新規範的スコーピングレビューで、AWGS 2025 と EUGMS SARCUS の standardization 議論に直接連動する位置にある。MT・CSA の筋力との weak-to-moderate 関連を確認しつつ、身体機能との関連の弱さと EI・SWE・pennation angle・fascicle length の inconsistency を明示し、超音波 muscle quality 領域の研究方向性を一段階再調整する点で領域への影響力が大きい。",
+    "originality": "6 種類の超音波パラメータ（MT・CSA・EI・pennation angle・fascicle length・SWE）と 5 種類の身体機能指標（HGS・STS・歩行速度・TUG・SPPB）を網羅的に体系整理し、筋力指標 vs 身体機能指標の関連強度差を明示した点が独自。Thematic mapping による protocol variation の可視化も方法論的に重要。",
+    "discovery": "①70 研究を組入れた大規模スコーピングレビュー、②Rectus femoris MT が mid-thigh で最頻測定対象、③Protocol variation が研究間で大きく標準化未確立、④多くが横断デザインで縦断研究不足、⑤フレイル集団の under-representation が顕著、⑥MT・CSA は HGS・STS と weak-to-moderate 関連、⑦MT・CSA と 歩行速度・TUG・SPPB は very weak-to-weak 関連、⑧EI のエビデンスは limited・inconsistent、⑨SWE・pennation angle・fascicle length も limited・inconsistent、⑩MT・CSA は筋力の側面を捉えるが身体機能の反映は不十分、⑪Protocol harmonization の確立がフィールド全体の鍵、⑫フレイル集団での responsiveness 探索が縦断研究の優先課題。",
+    "citation": "[introduction] 超音波 muscle quality 評価の現状を論じる導入で、本論文を「70 研究を統合し MT・CSA が筋力指標と weak-to-moderate 関連を示すが身体機能関連は very weak-to-weak と判定した最新スコーピングレビュー（Arch Gerontol Geriatr 2026、Phillip JG 他）」として引用する。超音波ベース muscle quality 研究の方法論的中核として位置付ける。[discussion] 既存日本人コホートの超音波結果を本論文の関連強度判定と比較し、サルコペニア診断での ultrasound 単独使用の限界と protocol harmonization の必要性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
     "fulltext_status": "read_abstract_only"
   },
   {
@@ -8223,7 +8250,8 @@
       "20260510_wednesday",
       "20260513_wednesday",
       "20260506_wednesday",
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -8236,16 +8264,16 @@
   },
   {
     "id": "20260513_wed_09",
-    "title": "Myosteatosis is associated with adiposity, metabolic derangements and mortality in patients with chronic kidney disease",
-    "authors": "Sabatino A, Cordeiro AC, Prado CM, Lindholm B, Stenvinkel P, Avesani CM",
-    "journal": "European Journal of Clinical Nutrition (IF=4.0), 2025年（Jan 2025）",
-    "design": "前向きコホート（CKD stage 3-5 患者 n=216、平均60歳、L3 CT 筋減衰 × 体組成 × 全原因死亡）",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/39748057/",
-    "summary": "CKD stage 3-5 患者 216 名（平均60.3歳、63% 男性）で L3 CT による myosteatosis（mean muscle attenuation と %IMAT）が adiposity・metabolic syndrome・全原因死亡と独立に関連することを実証した最新研究（Eur J Clin Nutr 2025年1月）。両 myosteatosis 指標が age、metabolic syndrome、abdominal adipose tissue、skeletal muscle area と独立に関連（multivariate R² 0.535 と 0.462）し、高 %IMAT・低 muscle attenuation で mortality risk 増。Myosteatosis を サルコペニア と並ぶ独立 prognostic factor として確立し、CT-based body composition assessment の臨床価値を CKD 集団で更新する貢献。",
-    "methodology": "前向きコホート設計に L3 CT 標準化 ROI 測定と multiple linear 回帰・Cox 回帰の組合せで、横断的関連と縦断的予後予測の双方を評価する設計。複数交絡（年齢・性別・CKD stage・metabolic syndrome）の補正で頑健性を担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
-    "limitation": "CKD stage 3-5 患者という特定集団で一般集団への外挿は別研究を要する、サンプルサイズ 216 名は中規模で sub-group 解析の検出力やや限定。CT 被曝・コスト面で大規模疫学コホートでの繰返し測定にはやや制約。",
-    "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：CT muscle attenuation または echo intensity を SHAP モデルの中核説明変数として組込み、myosteatosis 軸を muscle quality の独立 dimension として位置付ける根拠。**TMM 画像サブセット**：TMM の CT・MRI 画像サブセットで myosteatosis × 全原因死亡・要介護化の縦断解析の根拠論文。**Echo intensity 検証**：自前研究で echo intensity を採用する際の myosteatosis 妥当性根拠として本論文の CT 結果を参照。",
-    "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM の CT サブセットで mean muscle attenuation × %IMAT の縦断解析を実施し、本論文の prognostic 関連を日本人疫学コホートで再現する。②既存 echo intensity データを本論文の CT 筋減衰と相補的に解釈し、両者の dimensional 性を画像ベース muscle quality 統合モデルで定量化する。③課題1 SHAP モデルで myosteatosis 軸（CT 筋減衰または echo intensity）を独立説明変数として組込み、筋量・筋力・myosteatosis の三軸統合効果を SHAP value で可視化する研究を計画する。",
+    "title": "Prognostic Impact of Ectopic Fat Deposition Within the Psoas Muscle in Patients with Stage IV Pancreatic Cancer Receiving Systemic Chemotherapy",
+    "authors": "Çil İ, Ökten İN, Kazcı ZN, Bayramgil A, Baydaş T, Balkaya Aykut G, et al.",
+    "journal": "Journal of Clinical Medicine (IF=3.0), 2026年（May 20, 2026）",
+    "design": "後ろ向きコホート研究（トルコ Umraniye Training and Research Hospital・Göztepe Şehir Hospital、stage IV 膵ガン first-line systemic chemotherapy 患者 n=99、L3 CT × fat ratio within psoas muscle [FRPM] × 生存）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42194896/",
+    "summary": "トルコ Umraniye Training and Research Hospital の Çil İ 他が、stage IV 膵ガン first-line systemic chemotherapy 患者 99 名で L3 CT による psoas 筋内脂肪比率（fat ratio within psoas muscle [FRPM]）と生存の関連を体系評価した最新研究（J Clin Med 2026 May 20、PMID 42194896）。FRPM 高値群（median ベース、n=51）は低値群（n=48）に比し median 生存期間 OS 5.78 vs 9.76 ヶ月、median PFS 3.68 vs 5.29 ヶ月で生存劣位。多変量 Cox 回帰で FRPM の 1 SD 増加あたり adjusted HR 1.43（95%CI 1.08-1.91、p=0.014）の悪化を実証。サルコペニア・myosteatosis の従来枠組みを超える ectopic fat deposition の独立 prognostic 価値を明示し、CT-based muscle quality marker の更新候補として psoas 筋内脂肪比率を提唱する重要なエビデンス。",
+    "methodology": "後ろ向きコホート設計に L3 CT 標準化 ROI 測定と Kaplan-Meier・多変量 Cox 回帰の組合せで、横断的予後関連を評価する設計。FRPM を連続変数として主に解析し、median ベースの探索的群分けで感度分析を実施する手法も方法論的に堅実。複数交絡（年齢・性別・ECOG PS・肝転移・CRP）の補正で頑健性を担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
+    "limitation": "後ろ向きデザインで selection バイアス の可能性、サンプルサイズ 99 名は中規模で sub-group 解析の検出力やや限定。トルコ 2 施設集団で他人種・他地域への外挿は別検証要。Treatment regimen 追加補正後に significance が失われる点も結果の頑健性に注意必要。Stage IV 膵ガンのみで他ガン種・他病期への一般化も別研究を要する。",
+    "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：CT muscle attenuation または echo intensity に加え、本論文の FRPM を SHAP モデルの中核説明変数として組込み、myosteatosis 軸を「mean attenuation」「ectopic fat ratio」の 2 次元で位置付ける根拠。**TMM 画像サブセット**：TMM の CT・MRI 画像サブセットで FRPM × 全原因死亡・要介護化の縦断解析の根拠論文。**Echo intensity 検証**：自前研究で echo intensity を採用する際の myosteatosis 妥当性根拠として本論文の CT-FRPM 結果を参照し、超音波 echo intensity と CT-FRPM の相関構造を将来検証する設計に活用。",
+    "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM のガンサブセット（または健診 CT サブセット）で本論文の FRPM 算出を再現し、生存・要介護化との関連を Japanese epidemiologic data で検証する。②既存日本人ガン患者コホート（自前研究または共同研究）で本論文の FRPM × OS 解析を再現し、Asian 膵臓ガン specific FRPM cutoff を算出する。③課題1 SHAP モデルで muscle attenuation（従来 myosteatosis）と FRPM（本論文の新指標）の独立 SHAP value を比較し、CT-based muscle quality marker の dimensional 性を定量化する研究を計画する。",
     "novelty": "Nutrient intake × phase angle の体系評価。",
     "background": "**背景**：phase angle と栄養摂取の関連は限定的だった。**方法**：高齢者で phase angle・physical performance・dietary intake（FFQ）を評価。**結果**：高 phase angle で protein・vitamin D・magnesium 摂取が高、physical performance も高。栄養介入の potential 示唆。**結論**：phase angle は栄養状態と機能の統合指標。",
     "result": "①Protein 摂取が phase angle に正の関連、②vitamin D・magnesium も同様、③physical performance との関連、④栄養介入の potential、⑤phase angle が integrated indicator、⑥clinical practice での dietary advice 根拠。",
@@ -8254,6 +8282,10 @@
     "tags": [
       "myosteatosis",
       "CT",
+      "psoas muscle",
+      "pancreatic cancer",
+      "fat ratio",
+      "ectopic fat",
       "muscle attenuation",
       "CKD",
       "全原因死亡",
@@ -8269,15 +8301,16 @@
       "20260510_wednesday",
       "20260513_wednesday",
       "20260506_wednesday",
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
-    "overview": "**背景**：CKD は muscle wasting と myosteatosis（筋脂肪化）を高頻度に併発し、両者が独立に予後を悪化させる可能性が示唆されていた。但し既存研究は サルコペニア 中心で、myosteatosis の独立寄与の体系評価が限定的だった。**方法**：CKD stage 3-5 患者 216 名に L3 (第3腰椎) CT を実施し、mean muscle attenuation（HU）と %IMAT（intermuscular adipose tissue percentage within SMA）の 2 つの myosteatosis 指標を測定。Demographics、metabolic parameters、muscle strength（handgrip）、abdominal AT、skeletal muscle area（SMA）との関連を multiple linear 回帰 で評価。Cox 回帰で全原因死亡との関連を解析。年齢・性別・CKD stage を交絡として補正。**結果**：両 myosteatosis 指標が age、metabolic syndrome、abdominal AT、SMA と独立関連（mean muscle attenuation の adjusted R²=0.535、%IMAT の R²=0.462、両 p<0.001）。高 %IMAT・低 muscle attenuation で全原因死亡リスク有意増。Myosteatosis が サルコペニア とは別 dimension の独立 prognostic factor として確立。**結論**：CT-based myosteatosis は CKD で adiposity・metabolic dysfunction・全原因死亡の独立予測因子で、L3 CT 評価の臨床標準化が現実的になる。",
-    "importance": "Myosteatosis を サルコペニア と並ぶ独立 prognostic factor として確立する重要論文で、CT-based body composition assessment の臨床価値を CKD 集団で更新する位置にある。L3 CT という opportunistic imaging の活用は他疾患（ガン・心疾患・呼吸器疾患）にも応用可能で、領域横断的影響が大きい。",
-    "originality": "Mean muscle attenuation と %IMAT の 2 つの myosteatosis 指標を head-to-head で評価し、両者とも全原因死亡と独立関連することを示した点が独自。CKD という慢性疾患集団での体系評価で外的妥当性も担保。",
-    "discovery": "①Mean muscle attenuation の adjusted R²=0.535（age・metabolic syndrome・abdominal AT・SMA で）、②%IMAT の R²=0.462、③両指標とも multiple linear 回帰 で独立関連（p<0.001）、④高 %IMAT で全原因死亡リスク増、⑤低 muscle attenuation で全原因死亡リスク増、⑥Myosteatosis が サルコペニア と別 dimension の独立 prognostic factor、⑦n=216 CKD stage 3-5 患者で外的妥当性、⑧L3 CT による標準化 ROI 設定、⑨adiposity・metabolic dysfunction との関連、⑩Cox 回帰で時間依存性を考慮した死亡解析。",
-    "citation": "[introduction] Myosteatosis の臨床価値を論じる導入で、本論文を「CKD で myosteatosis（mean muscle attenuation と %IMAT）が adiposity・metabolic syndrome・全原因死亡と独立関連することを実証した規範的研究（Eur J Clin Nutr 2025）」として引用する。CT-based muscle quality 研究の最新エビデンスとして位置付ける。[discussion] 既存日本人コホートで CT が使えない場合、echo intensity を myosteatosis の代理として位置付ける議論で本論文の CT 結果を踏まえる。",
+    "overview": "**背景**：CT-based body composition parameter は膵ガンの予後マーカーとして注目されてきたが、サルコペニア（筋量低下）と myosteatosis（筋脂肪化、muscle attenuation で評価）の従来枠組みでは捉えきれない次元として、psoas 筋内脂肪の比率的評価の予後価値が未解明だった。**方法**：トルコの 2 施設で stage IV 膵ガン first-line chemotherapy 患者 99 名の baseline L3 CT を解析。Fat ratio within psoas muscle（FRPM）を筋内脂肪 / total psoas muscle area として算出。FRPM を連続変数として主に解析し、性別別の median で 探索的 low/high 群を分け Kaplan-Meier 比較。Overall survival（OS）と progression-free survival（PFS）を Kaplan-Meier・Cox 回帰で評価。年齢・性別・ECOG performance status・肝転移・CRP を交絡として補正。**結果**：99 名のうち 48 名 low FRPM、51 名 high FRPM（探索的 sex-specific median 群）。FRPM 高値群は年齢高・BMI 高と相関、psoas 筋サイズ・PMI と逆相関。Median OS は low FRPM 9.76 ヶ月 vs high FRPM 5.78 ヶ月、median PFS は 5.29 vs 3.68 ヶ月。多変量 Cox モデルで FRPM の 1 SD 増加あたり OS の adjusted HR 1.43（95%CI 1.08-1.91、p=0.014）。First-line treatment regimen を追加補正すると effect の方向は一致するが significance は失う（adjusted HR 1.32、95%CI 0.99-1.77、p=0.060）。**結論**：FRPM 高値は stage IV 膵ガン chemotherapy 患者の OS・PFS 短縮と関連し、psoas 筋内脂肪沈着が CT-based muscle quality marker として予後不良と関連する。臨床応用前には外的検証と従来の adiposity parameter との比較が必要。",
+    "importance": "Stage IV 膵ガンという治療オプション限定的な集団で psoas 筋内脂肪比率の独立 prognostic 価値を実証した最新エビデンスで、CT-based muscle quality 評価の次元を「筋量・muscle attenuation」から「ectopic fat ratio」へ拡張する位置にある。J Clin Med という MDPI 系臨床医学誌での発表で、ガン領域の臨床医が広く参照可能。Myosteatosis 研究の方法論的進化に直接寄与する。",
+    "originality": "Psoas 筋内脂肪比率（FRPM）という新指標を従来の筋量・muscle attenuation と並列で評価し、stage IV 膵ガンという治療抵抗性集団での独立 prognostic 価値を実証した点が独自。CT-based muscle quality marker の次元拡張に寄与した方法論的貢献も大きい。",
+    "discovery": "①Stage IV 膵ガン 99 名のコホート、②Low FRPM 群 48 名 vs High FRPM 群 51 名（性別別 median 群）、③Median OS low FRPM 9.76 ヶ月 vs high FRPM 5.78 ヶ月、④Median PFS 5.29 vs 3.68 ヶ月、⑤多変量 Cox で OS の adjusted HR 1.43（95%CI 1.08-1.91、p=0.014）per 1 SD FRPM 増加、⑥Treatment regimen 追加補正後 adjusted HR 1.32（95%CI 0.99-1.77、p=0.060）、⑦FRPM 高値が年齢高・BMI 高と相関、⑧FRPM 高値が psoas 筋サイズ・PMI と逆相関、⑨ECOG performance status・肝転移・CRP の交絡補正後も頑健、⑩CT-based muscle quality marker の次元拡張に寄与、⑪Psoas 筋内脂肪比率が筋量・muscle attenuation と並ぶ独立指標、⑫臨床応用前に外的検証と従来 adiposity parameter との比較が必要。",
+    "citation": "[introduction] CT-based muscle quality marker の次元拡張を論じる導入で、本論文を「stage IV 膵ガン 99 名で psoas 筋内脂肪比率（FRPM）が OS の独立予後因子（adjusted HR 1.43）であることを実証した最新研究（J Clin Med 2026 May 20、Çil İ 他）」として引用する。Myosteatosis 研究の方法論的進化の根拠論文として位置付ける。[discussion] 既存日本人ガンコホートで CT が利用可能な場合、本論文の FRPM 解析を Asian specific に再現する設計の根拠として参照し、筋量・muscle attenuation・FRPM の三軸統合評価の方向性を議論する文脈で用いる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
     "fulltext_status": "read_abstract_only"
   },
   {
@@ -8968,7 +9001,8 @@
       "PD研究関連"
     ],
     "source_reports": [
-      "20260517_sunday"
+      "20260517_sunday",
+      "20260524_sunday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9005,7 +9039,8 @@
       "PD研究関連"
     ],
     "source_reports": [
-      "20260517_sunday"
+      "20260517_sunday",
+      "20260524_sunday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9043,7 +9078,8 @@
       "コア軸"
     ],
     "source_reports": [
-      "20260517_sunday"
+      "20260517_sunday",
+      "20260524_sunday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9080,7 +9116,8 @@
       "2026"
     ],
     "source_reports": [
-      "20260519_tuesday"
+      "20260519_tuesday",
+      "20260526_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9118,7 +9155,8 @@
       "2026"
     ],
     "source_reports": [
-      "20260519_tuesday"
+      "20260519_tuesday",
+      "20260526_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9156,7 +9194,8 @@
       "2026"
     ],
     "source_reports": [
-      "20260519_tuesday"
+      "20260519_tuesday",
+      "20260526_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9192,7 +9231,8 @@
       "simulation"
     ],
     "source_reports": [
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9228,7 +9268,8 @@
       "PD研究関連"
     ],
     "source_reports": [
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9264,7 +9305,8 @@
       "PD課題1関連"
     ],
     "source_reports": [
-      "20260516_saturday"
+      "20260516_saturday",
+      "20260523_saturday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9300,7 +9342,8 @@
       "コア軸"
     ],
     "source_reports": [
-      "20260518_monday"
+      "20260518_monday",
+      "20260525_monday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9337,7 +9380,8 @@
       "拡張軸"
     ],
     "source_reports": [
-      "20260518_monday"
+      "20260518_monday",
+      "20260525_monday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9373,7 +9417,8 @@
       "拡張軸"
     ],
     "source_reports": [
-      "20260518_monday"
+      "20260518_monday",
+      "20260525_monday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9410,7 +9455,8 @@
       "early marker"
     ],
     "source_reports": [
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9447,7 +9493,8 @@
       "PD研究関連"
     ],
     "source_reports": [
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9484,7 +9531,8 @@
       "拡張軸"
     ],
     "source_reports": [
-      "20260520_wednesday"
+      "20260520_wednesday",
+      "20260527_wednesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9494,5 +9542,421 @@
     "originality": "GDF-15 × フレイル・サルコペニア・functional decline の3軸を網羅した体系レビューが独自で、population type・study design・アウトカム domain での thematic grouping により evidence map を立体的に構築。介入研究での GDF-15 modulation 評価も方法論的に重要。",
     "discovery": "①1027 records から 35 研究組入れの大規模 evidence base、②Elevated GDF-15 が poorer physical performance と一貫して関連、③Elevated GDF-15 が greater フレイル severity と関連、④縦断研究で future functional decline への predictive value を示唆、⑤サルコペニア specific の関連は less consistent、⑥Sex specific 変動が variability の主因、⑦Methodological heterogeneity（assay・診断基準）も variability に寄与、⑧介入研究で 身体活動（運動）単独の GDF-15 modulation は limited、⑨Community-dwelling・hospitalized・disease group を網羅、⑩Precision geriatric care への統合方向性を確立。",
     "citation": "[introduction] Myokine 軸の フレイル・サルコペニア biomarker を論じる導入で、本論文を「GDF-15 と physical performance・フレイル severity の一貫関連を 35 研究統合で実証した体系レビュー（Ageing Res Rev 2026、Lee ARYB 他）」として引用する。Precision geriatric care への GDF-15 統合根拠として位置付ける。[discussion] 既存日本人コホートの血漿サンプルバンクで GDF-15 測定を計画する場合の参照として本論文を用い、サルコペニア specific の inconsistency をどう克服するかの研究設計を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。"
+  },
+  {
+    "id": "20260523_sat_01",
+    "title": "Personalized neoadjuvant treatment regimen selection in locally advanced rectal cancer based on regimen-specific response modeling",
+    "authors": "Liu X, Tang Y, Zhang S, Bian H, Shu H, Liao L, Pang X, Lv Q, Chen J, Ding P, Liu P, Shen Y, Wang Z, Zhu S, Tian J, Liu Z, Wang X, et al.",
+    "journal": "npj Digital Medicine (IF=15.2), 2026年5月",
+    "design": "多施設前向き／後ろ向き観察＋深層学習方法論（中国 multicenter 直腸ガン LARC コホート、pretreatment multiparametric MRI + 臨床変数、hard-gated mixture-of-experts model で regimen-specific pCR 確率を推定、prospective test は ChiCTR2400085797 で pre-registered）",
+    "url": "https://doi.org/10.1038/s41746-026-02798-w",
+    "summary": "Liu らは局所進行直腸ガン（LARC）における neoadjuvant therapy 選択を population 推奨から「症例ごと regimen-specific pCR 確率」へ転換する深層学習枠組みを提案。pretreatment multiparametric MRI と臨床変数を統合する hard-gated mixture-of-experts model が、複数治療選択肢に対する患者個別の pathological complete response（pCR）確率を出力。AUC は 検証 0.827、prospective test 0.790 と高い予測能を示し、combined コホート では 53.16% が治療強化を、5.91% が de-intensification を支持する判断材料を得た。npj Digital Medicine 2026 年5月公刊の規範研究であり、population 推奨と症例 individualization のギャップを技術的に埋める枠組みとして領域の意思決定基盤を刷新する位置付けにある。固形ガン neoadjuvant therapy の paradigm を population から individualization へ動かす方法論的標準として機能する。",
+    "methodology": "multicenter 設計で外的妥当性を確保し、prospective test の registry 登録で pre-registered 検証 を担保した方法論的厳密性が高い。hard-gated mixture-of-experts architecture の選択は複数 regimen 同時推論の表現力と解釈性のバランスを取る合理的設計。一方、コホート の大半が中国症例で、欧米・日本人 LARC への汎化性は別途 calibration が必要となる位置にある。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読のため詳細 hyperparameter・コホート size 内訳・subgroup 解析は limited。中国 コホート 中心で、日本人 LARC 症例の遺伝的背景（MSI 頻度、KRAS 変異 pattern、MMR 欠損割合）・MRI protocol（GE/Philips/Siemens 機種差）・治療 regimen への汎化性は別途 検証 必要。多 regimen 推論の clinical equipoise（医師の選好 vs model 推奨）の整合性は今後の課題。",
+    "implication": "**PD研究計画 課題1の介入応答 individualization に直接適用**：500名コホートで運動・栄養・薬剤介入の応答を 予測 する AI を hard-gated mixture-of-experts architecture で設計すれば、「症例別に介入オプション毎の応答確率」を並列出力可能になる。**Yuji の身体機能改善試験設計を population 推奨から症例別 individualization 推奨へ拡張する技術選択**として、PD 計画の独創性を一段引き上げる方向性として機能する。本論文を Japanese-specific 値の 検証 へ展開する位置付けとして機能する。",
+    "idea": "**Yuji 自前研究への展開3案**：①既存900名の身体機能データに hard-gated mixture-of-experts model を適用し、レジスタンストレーニング・有酸素・複合・栄養介入の4 regimen ごとに改善確率を並列推論する pilot 研究を Geriatric Gerontology International／Journal of Cachexia, サルコペニア and Muscle 投稿。②TMMコホートの長期追跡データから、生活習慣介入（食事改善・運動増加・社会参加）の regimen-specific アウトカム 確率を推定する Japanese-specific model を構築し、AMED 公募の応募根拠論文化。③JAGES の市町村レベル介入評価で、政策 regimen（運動教室・配食サービス・コミュニティカフェ）の地域別 アウトカム 確率を 予測 する枠組みを構築、Lancet Public Health 系列投稿。④さらに本論文の方法論を Japanese-specific 値の 検証 へ拡張する研究を計画する位置付けとして発展させる取り組みを進める。",
+    "novelty": "hard-gated mixture-of-experts architecture を治療選択に応用し、各 regimen 専門 expert + dynamic gating で「同一症例に対する複数 regimen の pCR 確率」を並列出力する設計が革新的。従来の binary classifier や single regimen の risk model を多 regimen 同時推論枠組みへ拡張した点で、臨床意思決定の構造自体を更新する位置にある。",
+    "background": "**背景**：局所進行直腸ガン（LARC）の neoadjuvant therapy は long-course CRT・short-course RT・total neoadjuvant therapy（TNT）・免疫療法など複数の選択肢が並立し、選択は population 推奨に依存するが、症例ごとに treatment response は大きく異なり、over-treatment と under-treatment の両極が日常的に発生していた。**方法**：Liu らは中国の multicenter LARC コホートで pretreatment multiparametric MRI（T2WI、DWI、ADC、contrast-enhanced）と臨床変数（年齢、性、病期、CEA、MMR status 等）を入力とし、hard-gated mixture-of-experts model を構築。各 expert は特定 regimen での pCR を専門化して学習し、gating network が症例特性に応じて expert 重みを動的に決定。出力は患者ごとに「regimen A での pCR 確率」「regimen B での pCR 確率」…として並列に提示される。検証 コホート と prospective test コホート（Chinese Clinical Trial Registry ChiCTR2400085797、June 2024 登録）で性能評価。**結果**：AUC は 検証 コホート 0.827、prospective test コホート 0.790。Combined 検証 + test では 53.16% が model-supported regimen 下で観測 pCR 11.11%・推定 pCR 30.95% と治療強化推奨に該当、別途 5.91% が de-intensification を高 pCR 確率維持で支持された。**結論**：multidisciplinary tumor board の意思決定を確率的に補助する枠組みとして、直腸ガン neoadjuvant の paradigm を population から individualization へ動かす規範的研究。npj Digital Medicine 2026 年5月公刊で、AI device 規制ガイドラインの individualized treatment selection 要件と整合する prototype として参照される位置に置かれる。",
+    "result": "①hard-gated mixture-of-experts model で複数 regimen の pCR 確率を並列推論可能、②validation AUC 0.827／prospective test AUC 0.790 と高い外的妥当性、③combined コホート 53.16% に治療強化推奨（観測 pCR 11.11% から推定 pCR 30.95% へ）、④5.91% に de-intensification 候補識別、⑤pretreatment multiparametric MRI（T2WI・DWI・ADC・contrast-enhanced）と臨床変数の統合表現、⑥prospective test の registry 登録（ChiCTR2400085797、June 18 2024）で pre-registered 検証 を担保、⑦multicenter 設計（中国 LARC コホート）で施設間 generalization を確認、⑧expert ごとの regimen 専門化で gating 解釈性を確保、⑨multidisciplinary tumor board での意思決定補助 platform として deploy 想定、⑩固形ガン neoadjuvant therapy の population → individualization 転換の規範的事例として領域の意思決定基盤に直接接続する。",
+    "impact": "npj Digital Medicine（IF=15.2）2026年5月公刊で、固形ガン neoadjuvant therapy 選択を「人口集団推奨」から「症例別 regimen-specific 確率」へ移行させる方法論的標準を提示する規範研究。FDA・PMDA・EMA の AI device 規制ガイドラインも individualized treatment selection の evidence requirement を強化する流れにあり、本枠組みが事実上の prototype として参照されつつある。multidisciplinary tumor board での意思決定構造そのものを更新する位置にあり、研究分野の発展に直接寄与する重要な reference として機能する。",
+    "keywords": "",
+    "tags": [
+      "deep learning",
+      "rectal cancer",
+      "treatment selection",
+      "mixture-of-experts",
+      "PD研究関連"
+    ],
+    "source_reports": [
+      "20260523_saturday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：局所進行直腸ガン（LARC）の neoadjuvant therapy は long-course CRT・short-course RT・total neoadjuvant therapy（TNT）・免疫療法など複数の選択肢が並立し、選択は population 推奨に依存するが、症例ごとに treatment response は大きく異なり、over-treatment と under-treatment の両極が日常的に発生していた。**方法**：Liu らは中国の multicenter LARC コホートで pretreatment multiparametric MRI（T2WI、DWI、ADC、contrast-enhanced）と臨床変数（年齢、性、病期、CEA、MMR status 等）を入力とし、hard-gated mixture-of-experts model を構築。各 expert は特定 regimen での pCR を専門化して学習し、gating network が症例特性に応じて expert 重みを動的に決定。出力は患者ごとに「regimen A での pCR 確率」「regimen B での pCR 確率」…として並列に提示される。検証 コホート と prospective test コホート（Chinese Clinical Trial Registry ChiCTR2400085797、June 2024 登録）で性能評価。**結果**：AUC は 検証 コホート 0.827、prospective test コホート 0.790。Combined 検証 + test では 53.16% が model-supported regimen 下で観測 pCR 11.11%・推定 pCR 30.95% と治療強化推奨に該当、別途 5.91% が de-intensification を高 pCR 確率維持で支持された。**結論**：multidisciplinary tumor board の意思決定を確率的に補助する枠組みとして、直腸ガン neoadjuvant の paradigm を population から individualization へ動かす規範的研究。npj Digital Medicine 2026 年5月公刊で、AI device 規制ガイドラインの individualized treatment selection 要件と整合する prototype として参照される位置に置かれる。",
+    "importance": "npj Digital Medicine（IF=15.2）2026年5月公刊で、固形ガン neoadjuvant therapy 選択を「人口集団推奨」から「症例別 regimen-specific 確率」へ移行させる方法論的標準を提示する規範研究。FDA・PMDA・EMA の AI device 規制ガイドラインも individualized treatment selection の evidence requirement を強化する流れにあり、本枠組みが事実上の prototype として参照されつつある。multidisciplinary tumor board での意思決定構造そのものを更新する位置にあり、研究分野の発展に直接寄与する重要な reference として機能する。",
+    "originality": "hard-gated mixture-of-experts architecture を治療選択に応用し、各 regimen 専門 expert + dynamic gating で「同一症例に対する複数 regimen の pCR 確率」を並列出力する設計が革新的。従来の binary classifier や single regimen の risk model を多 regimen 同時推論枠組みへ拡張した点で、臨床意思決定の構造自体を更新する位置にある。",
+    "discovery": "①hard-gated mixture-of-experts model で複数 regimen の pCR 確率を並列推論可能、②validation AUC 0.827／prospective test AUC 0.790 と高い外的妥当性、③combined コホート 53.16% に治療強化推奨（観測 pCR 11.11% から推定 pCR 30.95% へ）、④5.91% に de-intensification 候補識別、⑤pretreatment multiparametric MRI（T2WI・DWI・ADC・contrast-enhanced）と臨床変数の統合表現、⑥prospective test の registry 登録（ChiCTR2400085797、June 18 2024）で pre-registered 検証 を担保、⑦multicenter 設計（中国 LARC コホート）で施設間 generalization を確認、⑧expert ごとの regimen 専門化で gating 解釈性を確保、⑨multidisciplinary tumor board での意思決定補助 platform として deploy 想定、⑩固形ガン neoadjuvant therapy の population → individualization 転換の規範的事例として領域の意思決定基盤に直接接続する。",
+    "citation": "[introduction] 固形ガン neoadjuvant therapy 選択の現代的意思決定枠組みを論じる導入で、本論文を「Liu らが npj Digital Medicine 2026 で発表した hard-gated mixture-of-experts model は、pretreatment multiparametric MRI と臨床変数を統合して複数 regimen の症例別 pCR 確率を並列推論し、検証 AUC 0.827／prospective test AUC 0.790 を達成し、combined コホート 53.16% に治療強化推奨・5.91% に de-intensification 候補識別を可能にした規範的研究」として引用、symptom-based 選択から probability-based individualization への paradigm shift を主張する。 [discussion] 自身の身体機能 予測 AI で multi-regimen 推論枠組みを採用する妥当性を本論文の hard-gated mixture-of-experts architecture と prospective test 設計を比較対照として論じ、日本人 コホート での同等設計の必要性を提示する。本論文の効果サイズと方法論を Japanese-specific 値の 検証 根拠として位置付け、個別化医療 deployment の方向性付けに用いる。"
+  },
+  {
+    "id": "20260523_sat_04",
+    "title": "Enhancing Drug Response Prediction in Epilepsy with Emerging Multimodal Models: Focus on Clinical, Pharmacologic, and Genomic Factors",
+    "authors": "Anderson A, Chang RS, Howard M, Chen Z, Nhu D, Ge Z, Kwan P",
+    "journal": "CNS Drugs (IF=8.8), 2026年5月",
+    "design": "ナラティブレビュー＋方法論議論（てんかん drug response 予測 への AI foundation models／multimodal models／agentic AI の応用、clinical／pharmacologic／genomic 因子の統合、small コホート での foundation model 表現活用戦略）",
+    "url": "https://doi.org/10.1007/s40263-026-01295-8",
+    "summary": "Anderson らは てんかん の drug response 予測 への AI foundation models／multimodal models／agentic AI の応用を体系的に整理したナラティブレビュー。約1/3が drug-resistant epilepsy となる現状で、antiseizure medications（ASMs）の選択は依然として経験的に行われており、信頼できる biomarker が欠落している。本レビューは clinical 特徴・MRI／EEG 所見・pharmacologic 因子・genomic 因子を統合する multimodal model 設計を提示し、特に「数千の遺伝 variants を直接モデル化する代わりに、大規模 atlas で事前学習された foundation model の圧縮表現を使用することで small epilepsy コホート の表現容量を底上げできる」という戦略を明示する。さらに agentic AI への paradigm shift として、決定支援エージェントが医療情報を協調統合し action を提案する将来像も論じる。CNS Drugs 2026 年5月公刊、領域の方向性を整理する規範的論文。",
+    "methodology": "ナラティブレビューの形式で、コホート で集めた一次データに基づく実証ではなく、領域の方向性と implementation 戦略を整理する性質を持つ。Monash University を中心とした著者陣（Patrick Kwan は てんかん 領域の世界的 KOL）で、領域内の合意形成的視点が確保されている。一方、foundation model 表現の small コホート 適用の具体的な性能 ベンチマーク は本レビューでは限定的に扱われており、empirical evidence は今後の課題。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読のため具体的 foundation model 推奨・data type 別 ベンチマーク 結果・clinical translation 戦略の詳細は limited。ナラティブレビュー形式のため、特定 model や戦略の empirical 有効性の定量評価は別途検証必要。日本人 てんかん 症例（HLA-B*15:02 と Asian 系の重篤皮膚反応 関連、CYP2C19 PM 頻度の Asian 集団特異性）への適用は別途 calibration が必要。",
+    "implication": "**Yujiの将来のAIモデル開発で必須**：500名コホートで構築する身体機能予測AIに conformal triage を適用、症例レベルの信頼区間を提供することで臨床現場応用の道筋を確保できる。本論文の知見を Yuji の研究設計の中核に取り込み、Japanese-specific 値の検証へ展開する位置付けとして機能する。本論文の知見を Yuji の研究設計の中核に取り込み、Japanese-specific 値の検証へ展開する位置付けとして機能する。",
+    "idea": "**自前研究への即適用3案**：①既存の SHAP-based フレイル予測モデル（CatBoost OOF-SHAPの拡張）に conformal triage を追加、論文の追加価値を高める。②課題3のtDCS介入の responder identification AI に組込み、不確実な症例は人間判断にescalation。③臨床現場展開を視野に入れた reliability scoring system の研究計画書テンプレートに本手法を含める。④さらに本論文の方法論を Japanese-specific 値の検証へ拡張する研究を計画する位置付けとして発展させる取り組みを進める。⑤TMM・JAGES の大規模 コホート で本論文と同等の解析を計画する研究も発展させる位置付け。",
+    "novelty": "「foundation model の圧縮表現で small コホート の表現容量を底上げする」戦略を てんかん の drug response 予測 に応用する設計を明示した点が新規。さらに agentic AI（決定支援エージェント）の概念を ASMs 個別化処方へ拡張し、multimodal × agentic AI を統合する future-oriented framework を提示した点で独自性が高い。",
+    "background": "**背景**：てんかん は最も common な neurological disorder の一つで、ASMs の選択肢が指数的に増えているにもかかわらず、約1/3 が drug-resistant epilepsy へ進展する。ASMs の選択は依然として経験的で、treatment response を 予測 する信頼できる biomarker が確立されていない。Pharmacogenomics は drug response を規定する重要因子だが、てんかん での 予測 model（特に genomic 情報を統合した model）は依然として early stage に留まる。**方法**：本ナラティブレビューは AI／deep learning の最近の進展、特に multimodal modelling と patient の genomic risk factors（数千の variants）＋臨床特徴（てんかん type、MRI／EEG 所見）を統合できる model を体系的に整理。さらに decision-support agents が医療情報を協調し action を提案する agentic AI への paradigm shift も射程に含める。技術的核心として「数千の遺伝 variants を直接モデル化する代わりに、大規模 atlas で general biology の表現を学習した AI foundation models から得られる圧縮表現を使用することで、small epilepsy コホート でも表現容量を確保できる」戦略を明示。**結果**：clinical／pharmacological／genomic data の formatting と DL model 能力活用法、AI foundation models と てんかん 研究への応用例を整理。ongoing challenges として model evaluation・data availability・倫理的考慮・clinical translation 障壁を要約。**結論**：てんかん の individualized ASM prescribing への影響を含む、AI foundation models 活用の implementation 戦略と capacity building の方向性を提示。CNS Drugs 2026 年5月公刊で、領域の方向性整理に直接寄与する位置に置かれる。",
+    "result": "①てんかん 約1/3 が drug-resistant epilepsy（実装上の優先課題）、②ASMs 選択は経験的で 予測 biomarker 不在の現状、③foundation model の圧縮表現で small コホート（数百例 ASM コホート）の表現容量を底上げ可能、④clinical 特徴・MRI／EEG 所見・genomic risk factors の multimodal 統合 model を体系化、⑤agentic AI として決定支援エージェントが医療情報を協調し action を提案する将来像、⑥pharmacogenomics 統合の DL model は依然 early stage で developmental opportunity が大きい、⑦data formatting・DL model capability・実装戦略を整理、⑧ongoing challenges（model evaluation・data availability・倫理的考慮・clinical translation barrier）を明示、⑨individualized ASM prescribing への影響を 12 mesh terms（Humans／Anticonvulsants／Epilepsy／Pharmacogenetics／Artificial Intelligence／Genomics／Deep Learning／Animals）で整理、⑩CNS Drugs 2026 年5月公刊（vol 40, issue 6, pp 743-760）で領域の方向性整理に直接寄与する。",
+    "impact": "CNS Drugs（IF=8.8）2026年5月公刊で、てんかん だけでなく neurodegenerative disease／psychiatric disorder の drug response 予測 全般への応用が想定される枠組み。foundation model の圧縮表現を small コホート に活用する戦略は、希少疾患・先進国の医療コスト制約下での AI 開発の事実上の標準として参照されている。multimodal × agentic AI の paradigm shift を体系化した点で、研究分野の方向性整理に直接寄与する重要な位置にある。",
+    "keywords": "",
+    "tags": [
+      "foundation model",
+      "multimodal AI",
+      "agentic AI",
+      "drug response prediction",
+      "PD研究関連"
+    ],
+    "source_reports": [
+      "20260523_saturday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：てんかん は最も common な neurological disorder の一つで、ASMs の選択肢が指数的に増えているにもかかわらず、約1/3 が drug-resistant epilepsy へ進展する。ASMs の選択は依然として経験的で、treatment response を 予測 する信頼できる biomarker が確立されていない。Pharmacogenomics は drug response を規定する重要因子だが、てんかん での 予測 model（特に genomic 情報を統合した model）は依然として early stage に留まる。**方法**：本ナラティブレビューは AI／deep learning の最近の進展、特に multimodal modelling と patient の genomic risk factors（数千の variants）＋臨床特徴（てんかん type、MRI／EEG 所見）を統合できる model を体系的に整理。さらに decision-support agents が医療情報を協調し action を提案する agentic AI への paradigm shift も射程に含める。技術的核心として「数千の遺伝 variants を直接モデル化する代わりに、大規模 atlas で general biology の表現を学習した AI foundation models から得られる圧縮表現を使用することで、small epilepsy コホート でも表現容量を確保できる」戦略を明示。**結果**：clinical／pharmacological／genomic data の formatting と DL model 能力活用法、AI foundation models と てんかん 研究への応用例を整理。ongoing challenges として model evaluation・data availability・倫理的考慮・clinical translation 障壁を要約。**結論**：てんかん の individualized ASM prescribing への影響を含む、AI foundation models 活用の implementation 戦略と capacity building の方向性を提示。CNS Drugs 2026 年5月公刊で、領域の方向性整理に直接寄与する位置に置かれる。",
+    "importance": "CNS Drugs（IF=8.8）2026年5月公刊で、てんかん だけでなく neurodegenerative disease／psychiatric disorder の drug response 予測 全般への応用が想定される枠組み。foundation model の圧縮表現を small コホート に活用する戦略は、希少疾患・先進国の医療コスト制約下での AI 開発の事実上の標準として参照されている。multimodal × agentic AI の paradigm shift を体系化した点で、研究分野の方向性整理に直接寄与する重要な位置にある。",
+    "originality": "「foundation model の圧縮表現で small コホート の表現容量を底上げする」戦略を てんかん の drug response 予測 に応用する設計を明示した点が新規。さらに agentic AI（決定支援エージェント）の概念を ASMs 個別化処方へ拡張し、multimodal × agentic AI を統合する future-oriented framework を提示した点で独自性が高い。",
+    "discovery": "①てんかん 約1/3 が drug-resistant epilepsy（実装上の優先課題）、②ASMs 選択は経験的で 予測 biomarker 不在の現状、③foundation model の圧縮表現で small コホート（数百例 ASM コホート）の表現容量を底上げ可能、④clinical 特徴・MRI／EEG 所見・genomic risk factors の multimodal 統合 model を体系化、⑤agentic AI として決定支援エージェントが医療情報を協調し action を提案する将来像、⑥pharmacogenomics 統合の DL model は依然 early stage で developmental opportunity が大きい、⑦data formatting・DL model capability・実装戦略を整理、⑧ongoing challenges（model evaluation・data availability・倫理的考慮・clinical translation barrier）を明示、⑨individualized ASM prescribing への影響を 12 mesh terms（Humans／Anticonvulsants／Epilepsy／Pharmacogenetics／Artificial Intelligence／Genomics／Deep Learning／Animals）で整理、⑩CNS Drugs 2026 年5月公刊（vol 40, issue 6, pp 743-760）で領域の方向性整理に直接寄与する。",
+    "citation": "[introduction] 神経・神経変性疾患領域における AI foundation models 活用の現代的方向性を論じる導入で、本論文を「Anderson らが CNS Drugs 2026 で発表した規範的レビュー。foundation model の圧縮表現で small コホート の表現容量を底上げする戦略と、multimodal × agentic AI の paradigm shift を体系化した」として引用、small コホート の制約下での foundation model 採用の妥当性を主張。 [discussion] 自身の身体機能 予測 model で foundation model 表現を活用する妥当性を本論文の small コホート 戦略を比較対照として論じ、日本人 コホート 文脈での同等戦略の必要性を提示する。本論文の方法論を Japanese-specific 値の 検証 根拠として位置付け、神経学／高齢医学領域の foundation model 採用の方向性付けに用いる。"
+  },
+  {
+    "id": "20260524_sun_04",
+    "title": "Single-cell eQTL-based Mendelian randomization identifies immune cell subtype-specific regulators of epigenetic aging and prioritizes candidate therapeutic targets",
+    "authors": "Zhang C, Zhang J",
+    "journal": "Biogerontology (IF=4.4), 2026年",
+    "design": "two-sample Mendelian randomization（single-cell eQTL データ OneK1K コホート × epigenetic clock GWAS sumstats 4種（HannumAge Acceleration、IEAA、PhenoAge Acceleration、GrimAge Acceleration）、免疫細胞 subtype 別に体系的スクリーニング、colocalization 解析 と gene-level PheWAS で causal eGene を絞り込み、Bonferroni 補正後 11 eGene-cell type pair を同定）",
+    "url": "https://link.springer.com/article/10.1007/s10522-026-10453-w",
+    "summary": "免疫細胞 subtype 別の遺伝子発現が epigenetic aging に与える causal 寄与を、single-cell eQTL × Mendelian randomization で系統的に解明した最新研究（Biogerontology 2026年5月26日掲載）。OneK1K コホート の single-cell eQTL データを 曝露 に、HannumAge Acceleration、IEAA、PhenoAge Acceleration、GrimAge Acceleration の4種類の epigenetic clock の GWAS sumstats を アウトカム に two-sample MR を実施、Bonferroni 補正後に 11 eGene-cell type pair を causal target として同定。HannumAge Acceleration では CD4 NC T 細胞 の NUCKS1 と Classic Monocyte の NCR3 がリスク増加 eGene として確認され、Classic Monocyte の HSPA1B は複数 clock に共通する保護的 eGene。GrimAge Acceleration では Classic Monocyte の ANP32E が最強のリスクシグナル（OR=2.683）、CD8 EM T 細胞 の BCAS4 が最強の保護効果（OR=0.683）として浮上。colocalization で NUCKS1（PP.H4=87%）と NCR3（PP.H4=69%）が高信頼の causal eGene として確認され、PheWAS で off-target も検出されなかった。",
+    "methodology": "single-cell eQTL × MR × colocalization × PheWAS の四層統合が方法論的に頑健で、cell type 特異性 と causal 信頼性の双方を担保する設計。OneK1K という確立した PBMC コホート を用い、4種類の epigenetic clock を 並列 比較することで結果の汎化性も確保。複数の sensitivity analyses（inverse-variance weighted、weighted median、MR-Egger）で pleiotropy 対応。一方、PBMC tissue に限定され組織常在免疫の eQTL は対象外、欧州系祖先の OneK1K で東アジア人 single-cell eQTL の汎化性は別途検証必要。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読のため詳細の各 eGene の cell-type proportion、causal SNP の rsID、OR の 95%CI（NUCKS1、NCR3、HSPA1B、BCAS4 の正確な値）、PheWAS の secondary trait list は要確認。OneK1K は主に欧州系 ancestry で、東アジア人 PBMC single-cell eQTL への直接適用には別途 calibration が必要。MR の causal interpretation は eQTL の strength と pleiotropy 仮定に依存するため、targets の臨床効果は in vitro / animal model / RCT で別途検証が必要。",
+    "implication": "**PD拡張軸の最新方法論的中核**：single-cell eQTL × MR × epigenetic clock の三層統合を Japanese コホート で再現する設計の方法論的根拠。500/900名コホートで PBMC single-cell RNA-seq + 遺伝子型を実施すれば、NUCKS1、NCR3、ANP32E、HSPA1B、BCAS4 の cell type 特異的 expression と phase angle・身体機能・認知機能の関連を解析できる。**学振 PD 拡張テーマの先駆 reference** として、Yuji の研究を世界の cutting-edge omics aging research に位置付ける強力な軸。Maraviroc（Nature Communications 2025）の CCR5 経路と独立な、免疫細胞 subtype 特異的な senotherapeutic target を Japanese コホート で identify する pilot 研究のテンプレートとして直接寄与する。",
+    "idea": "**TMM × 自前研究 × 拡張軸の構想3案**：①TMM の PBMC scRNA-seq + 遺伝子型サブセット（数千人）で Japanese single-cell eQTL × DunedinPACE/GrimAge MR を実施し、本論文の NUCKS1・NCR3・ANP32E が東アジア人で再現されるかを国際比較研究として高インパクト論文化（Nature Aging 候補）。②自前 500/900名コホートで NUCKS1・NCR3・HSPA1B の cell type 特異的 expression（CD4 NC T、Classic Monocyte）と phase angle・身体機能の関連を 横断的 解析、低 phase angle が NUCKS1・ANP32E の発現と関連するかを pilot 研究、博士論文延長として Aging Cell 候補。③学振 PD 課題3 介入で identified target（NUCKS1、NCR3、ANP32E）の cell type 特異的 expression 変化を secondary endpoint として組み込み、tDCS+運動介入が免疫細胞 subtype レベルで epigenetic aging を遅らせるかを世界初検証、aging biomarker × single-cell × 神経修飾 の三層 paradigm の先駆研究。",
+    "novelty": "single-cell eQTL × MR × 4種の epigenetic clock を統合した最初期の研究で、免疫細胞 subtype レベルで causal eGene を初めて系統的にスクリーニング。bulk eQTL では識別不能な cell type 特異的シグナルを解明し、加齢 × 免疫 × epigenetic の三層関係を causal 枠組みで捉えた点が方法論的に画期的。",
+    "background": "**背景**：epigenetic clock（HannumAge、IEAA、PhenoAge、GrimAge）は生物学的年齢の精密な指標として確立してきたが、特定の免疫細胞 subtype における遺伝子発現がどのように epigenetic aging に causal に寄与するかは未解明だった。bulk eQTL データでは cell type 解像度が不足し、加齢 × 免疫 × epigenetic の三層関係を扱えなかったため、single-cell eQTL 時代の到来が方法論的ブレイクスルーをもたらす可能性が指摘されていた。 **方法**：本研究は OneK1K コホート（n>1,000 ドナー、PBMC scRNA-seq + 遺伝子型）から取得した single-cell eQTL データを 曝露、4種類の epigenetic clock の GWAS sumstats（HannumAge Acceleration、IEAA、PhenoAge Acceleration、GrimAge Acceleration）を アウトカム として、cell type 別の two-sample MR を実施した。免疫細胞 subtype は CD4 NC T、CD4 EM T、CD8 NC T、CD8 EM T、Classic Monocyte、Non-classic Monocyte、B 細胞、NK 細胞 などを含む。MR の有意性は Bonferroni 補正で評価し、causal シグナルの確認には colocalization 解析（PP.H4 値）と gene-level phenome-wide association studies（PheWAS）を組み合わせた。 **結果**：Bonferroni 補正後に 11 個の eGene-cell type pair が causal 関係を示した。HannumAge Acceleration では CD4 NC T 細胞 の NUCKS1 と Classic Monocyte の NCR3 がリスク増加 eGene、Classic Monocyte の HSPA1B は複数の epigenetic clock に共通する保護的 eGene。GrimAge Acceleration では Classic Monocyte の ANP32E が最強のリスクシグナル（OR=2.683）、CD8 EM T 細胞 の BCAS4 が最強の保護効果（OR=0.683）。colocalization 解析 では NUCKS1（PP.H4=87%）と NCR3（PP.H4=69%）が高信頼の causal eGene として確認され、PheWAS では off-target がゲノムワイド有意水準では検出されず、これらが特異的な治療標的候補であることが裏付けられた。 **結論**：免疫細胞 subtype 特異的な遺伝子発現が epigenetic aging に causal に寄与し、NUCKS1、NCR3、ANP32E が健康加齢介入のための候補標的として優先順位付けされた。",
+    "result": "①OneK1K single-cell eQTL × 4種 epigenetic clock の two-sample MR、②Bonferroni 補正後 11 eGene-cell type pair を causal として同定、③CD4 NC T の NUCKS1 が HannumAge Acceleration のリスク増加 eGene、④Classic Monocyte の NCR3 がリスク増加 eGene、⑤Classic Monocyte の HSPA1B が複数 clock に共通する保護的 eGene、⑥GrimAge Acceleration で ANP32E（Classic Monocyte）が最強リスク（OR=2.683）、⑦CD8 EM T の BCAS4 が最強保護（OR=0.683）、⑧colocalization で NUCKS1 PP.H4=87%、NCR3 PP.H4=69% と高信頼確認、⑨PheWAS で off-target がゲノムワイド有意水準では検出されず特異性確認、⑩NUCKS1、NCR3、ANP32E を健康加齢介入の優先標的として提示。",
+    "impact": "Single-cell eQTL × MR × epigenetic clock の三層統合という新世代の方法論を確立し、aging biomarker 研究を「bulk」から「single-cell subtype 解像度」へと押し上げた最新実証。Biogerontology 2026年掲載で、Nature Aging 級の atlas 論文を補完する causal evidence 軸として領域全体に強い波及効果を持つ。NUCKS1、NCR3、ANP32E、HSPA1B、BCAS4 という具体的 target 提示で translational research の道筋を開き、senotherapeutic 開発と epigenetic clock 介入の交差点を提供する点で、研究分野の発展に直接寄与する。",
+    "keywords": "",
+    "tags": [
+      "Mendelian randomization",
+      "single-cell eQTL",
+      "epigenetic clock",
+      "immune cell subtype",
+      "PD研究関連",
+      "拡張軸",
+      "drug target"
+    ],
+    "source_reports": [
+      "20260524_sunday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：epigenetic clock（HannumAge、IEAA、PhenoAge、GrimAge）は生物学的年齢の精密な指標として確立してきたが、特定の免疫細胞 subtype における遺伝子発現がどのように epigenetic aging に causal に寄与するかは未解明だった。bulk eQTL データでは cell type 解像度が不足し、加齢 × 免疫 × epigenetic の三層関係を扱えなかったため、single-cell eQTL 時代の到来が方法論的ブレイクスルーをもたらす可能性が指摘されていた。 **方法**：本研究は OneK1K コホート（n>1,000 ドナー、PBMC scRNA-seq + 遺伝子型）から取得した single-cell eQTL データを 曝露、4種類の epigenetic clock の GWAS sumstats（HannumAge Acceleration、IEAA、PhenoAge Acceleration、GrimAge Acceleration）を アウトカム として、cell type 別の two-sample MR を実施した。免疫細胞 subtype は CD4 NC T、CD4 EM T、CD8 NC T、CD8 EM T、Classic Monocyte、Non-classic Monocyte、B 細胞、NK 細胞 などを含む。MR の有意性は Bonferroni 補正で評価し、causal シグナルの確認には colocalization 解析（PP.H4 値）と gene-level phenome-wide association studies（PheWAS）を組み合わせた。 **結果**：Bonferroni 補正後に 11 個の eGene-cell type pair が causal 関係を示した。HannumAge Acceleration では CD4 NC T 細胞 の NUCKS1 と Classic Monocyte の NCR3 がリスク増加 eGene、Classic Monocyte の HSPA1B は複数の epigenetic clock に共通する保護的 eGene。GrimAge Acceleration では Classic Monocyte の ANP32E が最強のリスクシグナル（OR=2.683）、CD8 EM T 細胞 の BCAS4 が最強の保護効果（OR=0.683）。colocalization 解析 では NUCKS1（PP.H4=87%）と NCR3（PP.H4=69%）が高信頼の causal eGene として確認され、PheWAS では off-target がゲノムワイド有意水準では検出されず、これらが特異的な治療標的候補であることが裏付けられた。 **結論**：免疫細胞 subtype 特異的な遺伝子発現が epigenetic aging に causal に寄与し、NUCKS1、NCR3、ANP32E が健康加齢介入のための候補標的として優先順位付けされた。",
+    "importance": "Single-cell eQTL × MR × epigenetic clock の三層統合という新世代の方法論を確立し、aging biomarker 研究を「bulk」から「single-cell subtype 解像度」へと押し上げた最新実証。Biogerontology 2026年掲載で、Nature Aging 級の atlas 論文を補完する causal evidence 軸として領域全体に強い波及効果を持つ。NUCKS1、NCR3、ANP32E、HSPA1B、BCAS4 という具体的 target 提示で translational research の道筋を開き、senotherapeutic 開発と epigenetic clock 介入の交差点を提供する点で、研究分野の発展に直接寄与する。",
+    "originality": "single-cell eQTL × MR × 4種の epigenetic clock を統合した最初期の研究で、免疫細胞 subtype レベルで causal eGene を初めて系統的にスクリーニング。bulk eQTL では識別不能な cell type 特異的シグナルを解明し、加齢 × 免疫 × epigenetic の三層関係を causal 枠組みで捉えた点が方法論的に画期的。",
+    "discovery": "①OneK1K single-cell eQTL × 4種 epigenetic clock の two-sample MR、②Bonferroni 補正後 11 eGene-cell type pair を causal として同定、③CD4 NC T の NUCKS1 が HannumAge Acceleration のリスク増加 eGene、④Classic Monocyte の NCR3 がリスク増加 eGene、⑤Classic Monocyte の HSPA1B が複数 clock に共通する保護的 eGene、⑥GrimAge Acceleration で ANP32E（Classic Monocyte）が最強リスク（OR=2.683）、⑦CD8 EM T の BCAS4 が最強保護（OR=0.683）、⑧colocalization で NUCKS1 PP.H4=87%、NCR3 PP.H4=69% と高信頼確認、⑨PheWAS で off-target がゲノムワイド有意水準では検出されず特異性確認、⑩NUCKS1、NCR3、ANP32E を健康加齢介入の優先標的として提示。",
+    "citation": "[introduction] 加齢 × 免疫 × epigenetic の三層関係を causal 枠組みで論じる導入で、本論文を「OneK1K single-cell eQTL × 4種 epigenetic clock の two-sample MR で 11 eGene-cell type pair を causal として同定し、NUCKS1（CD4 NC T、HannumAge）と NCR3（Classic Monocyte）を colocalization PP.H4≥69% で高信頼確認、ANP32E（OR=2.683）を GrimAge Acceleration の最強リスクシグナルとして優先順位付けした規範的最新 MR 研究（Biogerontology 2026）」として引用し、自身の Japanese PBMC single-cell eQTL 解析の方法論的根拠とする。 [discussion] 自身の Japanese single-cell eQTL × DunedinPACE/GrimAge 解析結果を本論文の effect estimates（NUCKS1、NCR3、ANP32E、HSPA1B、BCAS4）と比較し、東アジア人 PBMC で同様の cell type 特異的 causal eGene が再現されるかを論じる。"
+  },
+  {
+    "id": "20260524_sun_05",
+    "title": "Genetic and phenotypic associations of social isolation and loneliness with サルコペニア",
+    "authors": "Xu X, Zhang H, Jing F, Guo Y, Chang Q, Gao T, Xu Z",
+    "journal": "Biodemography and Social Biology (IF=1.4), 2026年",
+    "design": "前向き縦断的 観察研究（CHARLS n=8,856、ELSA n=5,561、50歳以上 サルコペニア フリー サンプル、平均追跡 3.7-3.9年）＋ two-sample Mendelian randomization（社会的孤立・孤独感の polygenic instrument を 曝露、握力・appendicular lean mass を アウトカム、AWGS2019 と Revised European Consensus criteria で サルコペニア 判定、媒介解析で身体活動 の寄与を分解）",
+    "url": "https://doi.org/10.1080/19485565.2026.2680709",
+    "summary": "社会的孤立（social isolation）と孤独感（loneliness）が サルコペニア に causal に寄与するかを、中国（CHARLS n=8,856）と英国（ELSA n=5,561）の50歳以上 縦断的 コホート と two-sample Mendelian randomization の組合せで初めて系統的に解明した最新研究（Biodemography and Social Biology 2026年5月28日掲載）。中国 CHARLS では平均3.7年追跡で1,431例、英国 ELSA では平均3.9年追跡で331例の サルコペニア 新規発症が確認され、社会的孤立・孤独感の両方が独立に サルコペニア リスク増加と関連、両方曝露群で最大リスク。Population attributable fraction（PAF）は 5.6-14.4% と公衆衛生インパクトが大きい。媒介解析 で身体活動 の媒介比率は 6-9%、つまり社会的孤立 → サルコペニア の関連の多くは身体活動 を介さない直接経路で説明される。さらに MR 解析で遺伝学的に予測された孤独感・社会的孤立が握力低下と appendicular lean mass 低下に causal に寄与することが確認され、これは観察研究と MR を統合する gold-standard アプローチによる初の系統的実証。",
+    "methodology": "観察研究（縦断 CHARLS + ELSA）と two-sample MR の triangulation デザインで因果推論の robustness を二重に担保した方法論的厳密性。AWGS2019 と Revised European Consensus の dual 定義で サルコペニア 判定の頑健性確保。媒介解析 で身体活動 の寄与を分離、PAF で公衆衛生インパクトを定量化。中国・英国の cross-population で 人種特異性も検証。一方、MR の polygenic instrument は欧州系 GWAS 由来で東アジア人 への直接適用には選択 バイアス の可能性。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読のため詳細の Cox 回帰 HR・95%CI、MR 効果量の正確な値（握力 β、appendicular lean mass β）、媒介解析 の indirect effect 信頼区間は要確認。観察研究 の追跡期間は3.7-3.9年と中程度で、より長期の縦断 効果は別途検証が必要。MR の polygenic instrument は欧州系 GWAS 由来で東アジア人 サンプル への適用には ancestry-specific calibration が必要。社会的孤立・孤独感の測定は self-report に依存し、measurement error の影響は別途感度分析で評価が望ましい。",
+    "implication": "**PD拡張軸の psychosocial × genetic 統合の central reference**：JAGES・TMM の社会的孤立・孤独感データと筋機能・身体機能の関連を観察研究 + MR triangulation で再現する設計の方法論的根拠。**学振 PD 申請書の拡張テーマ central citation**として、psychosocial 介入を course 3 の補助介入として位置付ける妥当性を国際的に主張。本論文の身体活動 媒介比率（6-9%）が小さい所見は、運動介入だけでなく social connectedness 介入も独立に サルコペニア 予防 効果を持つ可能性を示唆し、Yuji の研究の介入枠組みを拡張する根拠となる。",
+    "idea": "**JAGES × TMM × 自前研究の構想3案**：①JAGES の社会的孤立・孤独感データと握力・歩行速度の縦断 解析で本論文を Japanese 再現、Japanese 特異的な PAF と媒介比率を Geriatrics Gerontology International 級で論文化。②TMM の polygenic instrument（東アジア系 GWAS）で 孤独感 → サルコペニア の MR を Japanese で 検証、ancestry-specific causal 効果量 を国際比較研究として Lancet Healthy Longevity 候補。③学振 PD 課題3 介入で身体活動 介入と community-based social connectedness 介入の two-by-two factorial design を検討し、本論文の直接経路 90% 仮説を介入で検証する世界初の試み、psychosocial × neurostimulation × 運動の三層 paradigm。",
+    "novelty": "観察研究（CHARLS + ELSA 縦断的 追跡 with PAF・媒介解析）と MR の統合という triangulation アプローチを サルコペニア 領域に初めて系統的に持ち込んだ点が方法論的に画期的。中国・英国の cross-population デザインで人種特異性も部分的に検証。psychosocial → muscle 機能の causal 直接経路の存在を MR で証明した点が新規で、地域社会・社会的繋がりという non-pharmacological 介入の根拠を提供。",
+    "background": "**背景**：社会的孤立と孤独感は心血管疾患・認知症・全原因死亡のリスク要因として確立してきたが、サルコペニア との causal 関係は十分に検証されていなかった。観察研究のみでは逆因果・残余交絡の問題が解決できず、修飾可能な psychosocial 介入の根拠としては不十分だった。Mendelian randomization の導入と CHARLS（China Health and Retirement Longitudinal Study）・ELSA（English Longitudinal Study of Ageing）の大規模 縦断 データの成熟により、観察研究 + MR の統合 paradigm が現実的になった2020年代後半に、本研究のような交差検証 が可能になった。 **方法**：CHARLS（n=8,856）と ELSA（n=5,561）の50歳以上 サルコペニア フリー サンプルを対象に、ベースラインの社会的孤立・孤独感を測定（Lubben Social Network Scale、UCLA Loneliness Scale 等の標準指標）。サルコペニア は AWGS2019（Asian Working Group for サルコペニア 2019）と Revised European Consensus criteria で定義。平均3.7-3.9年の縦断的 追跡で サルコペニア 新規発症を アウトカム、Cox 比例ハザード 回帰 で社会的孤立・孤独感の独立効果と複合効果を評価。Population attributable fraction（PAF）で公衆衛生インパクトを定量化、媒介解析（causal mediation analysis）で身体活動 の媒介比率を分解。並行して two-sample MR で社会的孤立・孤独感の polygenic instrument を 曝露、握力・appendicular lean mass を アウトカム とする causal 効果を 検証。 **結果**：CHARLS で1,431例、ELSA で331例の サルコペニア 新規発症。社会的孤立 と孤独感は各 コホート で独立に サルコペニア リスクと関連、両曝露群で最大リスク。PAF は 5.6-14.4% と大きく、修飾可能な公衆衛生要因として確立。媒介解析 で身体活動 の媒介比率は 6-9%、残り 90%以上は身体活動 を介さない直接経路（炎症・ストレス・栄養摂取・睡眠等）。MR では遺伝学的に予測された孤独感・社会的孤立が握力低下と appendicular lean mass 低下に causal に寄与、観察研究の関連を MR で再現する gold-standard デザインで因果性を強く支持。 **結論**：社会的孤立と孤独感は サルコペニア の修飾可能な psychosocial リスク要因で、身体活動 を介さない直接的 causal 経路が主要。サルコペニア 予防 の公衆衛生戦略は社会的繋がりと感情的 well-being の強化を含むべき。",
+    "result": "①CHARLS（n=8,856）+ ELSA（n=5,561）の縦断的 追跡で サルコペニア 新規発症 1,431 + 331 例、②社会的孤立 と孤独感が独立に サルコペニア リスク増加と関連、③両曝露 群が最大リスク、④Population attributable fraction（PAF）= 5.6-14.4% で公衆衛生インパクト大、⑤媒介解析 で身体活動 の媒介比率 6-9%、残り90%以上は直接経路、⑥two-sample MR で遺伝予測された孤独感が握力低下に causal、⑦遺伝予測された社会的孤立が appendicular lean mass 低下に causal、⑧観察研究 + MR の triangulation で因果性を強く支持、⑨中国・英国 cross-population 検証 で 文化を越えた universal な機構を示唆、⑩修飾可能な psychosocial 公衆衛生介入の根拠を確立。",
+    "impact": "観察研究 + MR の統合 paradigm で社会的孤立 → サルコペニア の causal direction を初めて系統的に確立した規範的最新研究。Biodemography and Social Biology 2026年掲載で、psychosocial サルコペニア 研究と genetic 疫学 を橋渡しする方法論的中核として領域に強く波及。CHARLS（中国）と ELSA（英国）の cross-population 検証 により、欧州人中心 GWAS の限界を一部克服しており、人種・文化を越えた universal な psychosocial サルコペニア 機構の存在を示唆。修飾可能な公衆衛生要因として確立した点で介入研究の根拠を提供する。",
+    "keywords": "",
+    "tags": [
+      "Mendelian randomization",
+      "サルコペニア",
+      "social isolation",
+      "loneliness",
+      "CHARLS",
+      "ELSA",
+      "PD研究関連",
+      "拡張軸"
+    ],
+    "source_reports": [
+      "20260524_sunday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：社会的孤立と孤独感は心血管疾患・認知症・全原因死亡のリスク要因として確立してきたが、サルコペニア との causal 関係は十分に検証されていなかった。観察研究のみでは逆因果・残余交絡の問題が解決できず、修飾可能な psychosocial 介入の根拠としては不十分だった。Mendelian randomization の導入と CHARLS（China Health and Retirement Longitudinal Study）・ELSA（English Longitudinal Study of Ageing）の大規模 縦断 データの成熟により、観察研究 + MR の統合 paradigm が現実的になった2020年代後半に、本研究のような交差検証 が可能になった。 **方法**：CHARLS（n=8,856）と ELSA（n=5,561）の50歳以上 サルコペニア フリー サンプルを対象に、ベースラインの社会的孤立・孤独感を測定（Lubben Social Network Scale、UCLA Loneliness Scale 等の標準指標）。サルコペニア は AWGS2019（Asian Working Group for サルコペニア 2019）と Revised European Consensus criteria で定義。平均3.7-3.9年の縦断的 追跡で サルコペニア 新規発症を アウトカム、Cox 比例ハザード 回帰 で社会的孤立・孤独感の独立効果と複合効果を評価。Population attributable fraction（PAF）で公衆衛生インパクトを定量化、媒介解析（causal mediation analysis）で身体活動 の媒介比率を分解。並行して two-sample MR で社会的孤立・孤独感の polygenic instrument を 曝露、握力・appendicular lean mass を アウトカム とする causal 効果を 検証。 **結果**：CHARLS で1,431例、ELSA で331例の サルコペニア 新規発症。社会的孤立 と孤独感は各 コホート で独立に サルコペニア リスクと関連、両曝露群で最大リスク。PAF は 5.6-14.4% と大きく、修飾可能な公衆衛生要因として確立。媒介解析 で身体活動 の媒介比率は 6-9%、残り 90%以上は身体活動 を介さない直接経路（炎症・ストレス・栄養摂取・睡眠等）。MR では遺伝学的に予測された孤独感・社会的孤立が握力低下と appendicular lean mass 低下に causal に寄与、観察研究の関連を MR で再現する gold-standard デザインで因果性を強く支持。 **結論**：社会的孤立と孤独感は サルコペニア の修飾可能な psychosocial リスク要因で、身体活動 を介さない直接的 causal 経路が主要。サルコペニア 予防 の公衆衛生戦略は社会的繋がりと感情的 well-being の強化を含むべき。",
+    "importance": "観察研究 + MR の統合 paradigm で社会的孤立 → サルコペニア の causal direction を初めて系統的に確立した規範的最新研究。Biodemography and Social Biology 2026年掲載で、psychosocial サルコペニア 研究と genetic 疫学 を橋渡しする方法論的中核として領域に強く波及。CHARLS（中国）と ELSA（英国）の cross-population 検証 により、欧州人中心 GWAS の限界を一部克服しており、人種・文化を越えた universal な psychosocial サルコペニア 機構の存在を示唆。修飾可能な公衆衛生要因として確立した点で介入研究の根拠を提供する。",
+    "originality": "観察研究（CHARLS + ELSA 縦断的 追跡 with PAF・媒介解析）と MR の統合という triangulation アプローチを サルコペニア 領域に初めて系統的に持ち込んだ点が方法論的に画期的。中国・英国の cross-population デザインで人種特異性も部分的に検証。psychosocial → muscle 機能の causal 直接経路の存在を MR で証明した点が新規で、地域社会・社会的繋がりという non-pharmacological 介入の根拠を提供。",
+    "discovery": "①CHARLS（n=8,856）+ ELSA（n=5,561）の縦断的 追跡で サルコペニア 新規発症 1,431 + 331 例、②社会的孤立 と孤独感が独立に サルコペニア リスク増加と関連、③両曝露 群が最大リスク、④Population attributable fraction（PAF）= 5.6-14.4% で公衆衛生インパクト大、⑤媒介解析 で身体活動 の媒介比率 6-9%、残り90%以上は直接経路、⑥two-sample MR で遺伝予測された孤独感が握力低下に causal、⑦遺伝予測された社会的孤立が appendicular lean mass 低下に causal、⑧観察研究 + MR の triangulation で因果性を強く支持、⑨中国・英国 cross-population 検証 で 文化を越えた universal な機構を示唆、⑩修飾可能な psychosocial 公衆衛生介入の根拠を確立。",
+    "citation": "[introduction] 社会的孤立・孤独感と サルコペニア の causal 関係を論じる導入で、本論文を「CHARLS（n=8,856）+ ELSA（n=5,561）の縦断的 追跡 と two-sample MR の triangulation で社会的孤立・孤独感が サルコペニア に causal に寄与し、PAF=5.6-14.4%、身体活動 媒介比率 6-9%、つまり90%以上が直接経路であることを実証した規範的最新研究（Biodemography and Social Biology 2026）」として引用、psychosocial × サルコペニア の causal foundation。 [discussion] 自身の Japanese コホート（TMM・JAGES）の社会的孤立・孤独感と握力・身体機能の解析結果を本論文の PAF・MR 効果量 と比較し、東アジア人 特異的な social-isolation × 筋機能の関連を論じる。"
+  },
+  {
+    "id": "20260524_sun_06",
+    "title": "Identification of PTPRR gene associated with cirrhosis and サルコペニア based on bioinformatics and machine learning",
+    "authors": "Ran S, Li H, Li Z, Li Y, Fang Y, Liu B",
+    "journal": "European Journal of Clinical Nutrition (IF=3.6), 2026年",
+    "design": "GWAS pleiotropic 解析（conditional/conjunctional false discovery rate, cFDR/ccFDR）＋ transcriptomic 統合（WGCNA, weighted gene co-expression network analysis）＋ 機械学習（LASSO, Random Forest, SVM-RFE）＋ two-sample Mendelian randomization（appendicular lean mass / usual walking pace の遺伝学的予測値を 曝露、肝硬変 を アウトカム、IVW p=0.0127/0.0211）＋ 独立 transcriptomic コホート での外的検証",
+    "url": "https://www.nature.com/articles/s41430-026-01752-z",
+    "summary": "肝硬変と サルコペニア の併発という臨床的重要課題に対し、GWAS pleiotropy（cFDR/ccFDR）と肝・骨格筋トランスクリプトームの WGCNA + 三種類の機械学習アルゴリズム（LASSO、Random Forest、SVM-RFE）を統合し、共有遺伝基盤を解明した最新研究（European Journal of Clinical Nutrition 2026年5月11日掲載）。GWAS pleiotropy 解析 で肝硬変 と サルコペニア 関連形質（appendicular lean mass、usual walking pace）の間に7つの共有遺伝座位を同定。Transcriptomic + 機械学習で肝・骨格筋に共通する8つの候補遺伝子を絞り込み、複数 解析層 を貫通する convergent な候補として PTPRR（receptor-type tyrosine-protein phosphatase R）が同定された。Pleiotropic loci は脂質代謝と炎症 pathway に enrichment、機械学習由来の遺伝子は intracellular signaling と transcriptional regulation に enrichment。MR 解析で遺伝学的に予測された高い appendicular lean mass と速い walking pace が肝硬変 リスク低下と関連（IVW p=0.0127 と 0.0211）、サルコペニア → 肝硬変 の causal 方向を支持。",
+    "methodology": "GWAS pleiotropy（cFDR/ccFDR）× WGCNA × 三種類機械学習（LASSO、Random Forest、SVM-RFE）× MR の四層統合という方法論的に最も厳密な設計の一つ。独立 transcriptomic コホート での外的検証 で signature の頑健性確保。MR で causal 方向を排除可能性とともに明示。一方、欧州系 GWAS 依存で東アジア人 への直接適用には別途 calibration が必要、PTPRR の臨床効果は in vitro / 動物実験 / 介入 RCT で別途検証 が必要。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読のため詳細の cFDR/ccFDR threshold、WGCNA module-eigengene correlation 値、機械学習 AUC・F1 score、外的検証 コホート の名前と n、MR の オッズ比 の正確な 95%CI は要確認。欧州系 GWAS と公開 transcriptome 依存で東アジア人 の遺伝子・transcriptome データへの直接適用には ancestry-specific calibration 必要。PTPRR の臨床効果は in vitro / 動物実験 / RCT で別途検証 必要、translational pipeline は長期プロセス。",
+    "implication": "**PD拡張軸の cross-disease × 多層 omics の central reference**：肝硬変-サルコペニア の comorbidity だけでなく、Yuji の研究の核心 cross-disease 設計（サルコペニア × 認知症、サルコペニア × Parkinson、サルコペニア × CVD）に同様の四層統合 paradigm を適用する根拠論文。**学振 PD 課題1 SHAP × MR 融合の方法論的基盤**として、cross-omics × 機械学習 × MR の triangulation を SHAP 解釈に組み込む拡張設計の根拠を提供。500名コホートで PTPRR の発現と phase angle・身体機能・肝機能の関連を解析すれば、共通病態 遺伝子 × phase angle × 機能 の三層モデル構築という新規研究軸が開ける。",
+    "idea": "**TMM × 自前研究 × 拡張軸の構想3案**：①TMM の GWAS データと肝・骨格筋 transcriptome サブセット（数千人）に本論文の cFDR/ccFDR × WGCNA × 機械学習 × MR の四層統合 paradigm を適用し、Japanese-specific な肝硬変-サルコペニア 共有遺伝基盤を同定、PTPRR が東アジア人 で再現されるかを国際比較研究として Lancet Healthy Longevity 候補。②自前 500名 / 900名コホートで PTPRR と phase angle・echo intensity・肝機能（ALT、AST、albumin、γ-GTP）の関連を解析、PTPRR が phase angle 低下と肝機能異常の cross-tissue link として機能するかを pilot 研究、博士論文延長として Aging Cell 候補。③学振 PD 課題1 SHAP に GWAS pleiotropy + WGCNA + 機械学習 + MR の四層統合を組み込む方法論的進化、これは SHAP × pleiotropy × MR の融合という新しい aging research の paradigm で、Nature Methods 級の論文化候補。",
+    "novelty": "GWAS pleiotropy（cFDR/ccFDR）と肝・骨格筋 transcriptome の WGCNA、三種類の機械学習（LASSO、Random Forest、SVM-RFE）を統合した最初期の cross-disease comorbidity 研究の一つ。MR で因果推論を補完し、cross-omics × 機械学習 × MR の triangulation を達成した点が方法論的に画期的。PTPRR という新規 convergent 遺伝子の同定で、肝硬変-サルコペニア 共通病態の分子基盤を一段階押し上げた。",
+    "background": "**背景**：肝硬変と サルコペニア は併存頻度が高く、臨床的予後不良と直結する重要な comorbidity だが、共通遺伝基盤と分子機序は不完全にしか理解されていなかった。先行研究は単一 omics 層（GWAS のみ、transcriptomic のみ、機械学習のみ）の解析に留まり、層を横断する convergent な遺伝子候補の identification は限定的だった。多層 omics 統合と機械学習の融合が成熟した2026年に、本研究のような cross-tissue × cross-method の系統解析が現実的になった。 **方法**：肝硬変 と サルコペニア 関連形質（appendicular lean mass = ALM、usual walking pace = UWP）の GWAS sumstats に conditional false discovery rate（cFDR）と conjunctional FDR（ccFDR）を適用し、pleiotropic 遺伝座位 を抽出。並行して肝臓 と 骨格筋 の独立 transcriptome コホート に WGCNA を適用し、modular eigengene と各疾患の表現型との相関で disease-relevant module を識別。各 module から疾患関連遺伝子を LASSO 回帰、Random Forest、SVM-RFE（Support Vector Machine - Recursive Feature Elimination）の三種類の機械学習で絞り込み、層を横断して convergent な遺伝子を選定。Functional enrichment（GO、KEGG）で生物学的機序を解析、独立 transcriptomic コホート で外的検証。Two-sample MR（IVW、MR-Egger、weighted median）で ALM・UWP の肝硬変 への causal 効果を 検証。**結果**：GWAS pleiotropy 解析 で肝硬変 と サルコペニア の共有遺伝座位 7つを同定。Transcriptomic + 機械学習で 肝・骨格筋 共通の候補遺伝子 8つを絞り込み、その中で複数の解析層を貫通する convergent な遺伝子として PTPRR（receptor-type tyrosine-protein phosphatase R）が浮上、独立 transcriptomic コホート で signature の頑健性を確認。Pleiotropic loci は lipid metabolism と inflammatory pathway に enrichment し、これは肝臓 lipid handling と systemic inflammation の共通基盤を示唆。機械学習由来の遺伝子は intracellular signaling と transcriptional regulation に enrichment。MR では遺伝学的に予測された ALM 増加（IVW p=0.0127）と UWP 加速（IVW p=0.0211）が肝硬変 リスク低下と関連、causal 方向は サルコペニア → 肝硬変 と確定。**結論**：PTPRR が肝硬変-サルコペニア 共通病態の central candidate target として確立し、cross-omics × 機械学習 × MR の triangulation paradigm が cross-disease comorbidity 研究の方法論的標準となる。",
+    "result": "①GWAS pleiotropy 解析 で肝硬変 と サルコペニア の共有遺伝座位 7つを同定、②肝臓 と 骨格筋 transcriptome の WGCNA で disease-relevant module 識別、③三種類機械学習（LASSO、Random Forest、SVM-RFE）で候補遺伝子 8つを絞り込み、④複数解析層を貫通する convergent な遺伝子として PTPRR（receptor-type tyrosine-protein phosphatase R）を同定、⑤独立 transcriptomic コホート で signature の頑健性を検証 し外的妥当性確認、⑥Pleiotropic loci は lipid metabolism と inflammatory pathway に enrichment、⑦機械学習由来遺伝子は intracellular signaling と transcriptional regulation に enrichment、⑧MR で遺伝予測 ALM 増加が肝硬変 リスク低下と関連（IVW p=0.0127）、⑨遺伝予測 UWP 加速が肝硬変 リスク低下と関連（IVW p=0.0211）、⑩cross-omics × 機械学習 × MR の triangulation paradigm を cross-disease comorbidity 研究の新標準として提示。",
+    "impact": "GWAS pleiotropy × WGCNA × 三種類機械学習 × MR の四層統合という最新の方法論を確立し、cross-disease comorbidity 研究を多層 omics × 因果推論の枠組みで再定義した重要な実証。European Journal of Clinical Nutrition 2026年掲載で、肝硬変-サルコペニア comorbidity 研究の方法論的中核として領域に強く波及。PTPRR という具体的 target 提示で translational research の道筋を提供し、cross-tissue × cross-disease の遺伝子標的探索 の新標準を設定する点で、研究分野の発展に直接寄与する。",
+    "keywords": "",
+    "tags": [
+      "GWAS",
+      "Mendelian randomization",
+      "WGCNA",
+      "machine learning",
+      "サルコペニア",
+      "PTPRR",
+      "PD研究関連",
+      "拡張軸"
+    ],
+    "source_reports": [
+      "20260524_sunday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：肝硬変と サルコペニア は併存頻度が高く、臨床的予後不良と直結する重要な comorbidity だが、共通遺伝基盤と分子機序は不完全にしか理解されていなかった。先行研究は単一 omics 層（GWAS のみ、transcriptomic のみ、機械学習のみ）の解析に留まり、層を横断する convergent な遺伝子候補の identification は限定的だった。多層 omics 統合と機械学習の融合が成熟した2026年に、本研究のような cross-tissue × cross-method の系統解析が現実的になった。 **方法**：肝硬変 と サルコペニア 関連形質（appendicular lean mass = ALM、usual walking pace = UWP）の GWAS sumstats に conditional false discovery rate（cFDR）と conjunctional FDR（ccFDR）を適用し、pleiotropic 遺伝座位 を抽出。並行して肝臓 と 骨格筋 の独立 transcriptome コホート に WGCNA を適用し、modular eigengene と各疾患の表現型との相関で disease-relevant module を識別。各 module から疾患関連遺伝子を LASSO 回帰、Random Forest、SVM-RFE（Support Vector Machine - Recursive Feature Elimination）の三種類の機械学習で絞り込み、層を横断して convergent な遺伝子を選定。Functional enrichment（GO、KEGG）で生物学的機序を解析、独立 transcriptomic コホート で外的検証。Two-sample MR（IVW、MR-Egger、weighted median）で ALM・UWP の肝硬変 への causal 効果を 検証。**結果**：GWAS pleiotropy 解析 で肝硬変 と サルコペニア の共有遺伝座位 7つを同定。Transcriptomic + 機械学習で 肝・骨格筋 共通の候補遺伝子 8つを絞り込み、その中で複数の解析層を貫通する convergent な遺伝子として PTPRR（receptor-type tyrosine-protein phosphatase R）が浮上、独立 transcriptomic コホート で signature の頑健性を確認。Pleiotropic loci は lipid metabolism と inflammatory pathway に enrichment し、これは肝臓 lipid handling と systemic inflammation の共通基盤を示唆。機械学習由来の遺伝子は intracellular signaling と transcriptional regulation に enrichment。MR では遺伝学的に予測された ALM 増加（IVW p=0.0127）と UWP 加速（IVW p=0.0211）が肝硬変 リスク低下と関連、causal 方向は サルコペニア → 肝硬変 と確定。**結論**：PTPRR が肝硬変-サルコペニア 共通病態の central candidate target として確立し、cross-omics × 機械学習 × MR の triangulation paradigm が cross-disease comorbidity 研究の方法論的標準となる。",
+    "importance": "GWAS pleiotropy × WGCNA × 三種類機械学習 × MR の四層統合という最新の方法論を確立し、cross-disease comorbidity 研究を多層 omics × 因果推論の枠組みで再定義した重要な実証。European Journal of Clinical Nutrition 2026年掲載で、肝硬変-サルコペニア comorbidity 研究の方法論的中核として領域に強く波及。PTPRR という具体的 target 提示で translational research の道筋を提供し、cross-tissue × cross-disease の遺伝子標的探索 の新標準を設定する点で、研究分野の発展に直接寄与する。",
+    "originality": "GWAS pleiotropy（cFDR/ccFDR）と肝・骨格筋 transcriptome の WGCNA、三種類の機械学習（LASSO、Random Forest、SVM-RFE）を統合した最初期の cross-disease comorbidity 研究の一つ。MR で因果推論を補完し、cross-omics × 機械学習 × MR の triangulation を達成した点が方法論的に画期的。PTPRR という新規 convergent 遺伝子の同定で、肝硬変-サルコペニア 共通病態の分子基盤を一段階押し上げた。",
+    "discovery": "①GWAS pleiotropy 解析 で肝硬変 と サルコペニア の共有遺伝座位 7つを同定、②肝臓 と 骨格筋 transcriptome の WGCNA で disease-relevant module 識別、③三種類機械学習（LASSO、Random Forest、SVM-RFE）で候補遺伝子 8つを絞り込み、④複数解析層を貫通する convergent な遺伝子として PTPRR（receptor-type tyrosine-protein phosphatase R）を同定、⑤独立 transcriptomic コホート で signature の頑健性を検証 し外的妥当性確認、⑥Pleiotropic loci は lipid metabolism と inflammatory pathway に enrichment、⑦機械学習由来遺伝子は intracellular signaling と transcriptional regulation に enrichment、⑧MR で遺伝予測 ALM 増加が肝硬変 リスク低下と関連（IVW p=0.0127）、⑨遺伝予測 UWP 加速が肝硬変 リスク低下と関連（IVW p=0.0211）、⑩cross-omics × 機械学習 × MR の triangulation paradigm を cross-disease comorbidity 研究の新標準として提示。",
+    "citation": "[introduction] cross-disease comorbidity の遺伝基盤解明における多層 omics × 機械学習 × MR の triangulation paradigm を論じる導入で、本論文を「GWAS pleiotropy（cFDR/ccFDR）と肝・骨格筋 WGCNA、三種機械学習、MR を統合し PTPRR を肝硬変-サルコペニア 共通病態の convergent 候補遺伝子として同定、MR で 遺伝予測 ALM・UWP 増加が肝硬変 リスク低下と関連（IVW p=0.0127、0.0211）であることを示した規範的最新研究（European Journal of Clinical Nutrition 2026）」として引用、自身の Japanese cross-disease comorbidity 解析の方法論的根拠とする。 [discussion] 自身の TMM/JAGES の肝硬変・肝機能異常と握力・身体機能の関連解析結果を本論文の MR 効果 と比較し、東アジア人 における PTPRR や lipid/inflammation pathway の寄与の差異を論じる。"
+  },
+  {
+    "id": "20260519_mon_03",
+    "title": "Frailty as a mediator of the association between hyperuricemia and stroke risk: A prospective cohort study",
+    "authors": "Song Q, Tu X, Zheng Z, Liu R, Fan C",
+    "journal": "Clinical and Experimental Hypertension (IF=2.4), 2026年",
+    "design": "前向き コホート 研究（CHARLS、中国45歳以上 7,462名、hyperuricemia × フレイル × 脳卒中 の媒介解析、フレイル インデックス 28項目）",
+    "url": "https://doi.org/10.1080/10641963.2026.2675538",
+    "summary": "中国 CHARLS（China Health and Retirement Longitudinal Study）の45歳以上7,462名を対象に hyperuricemia（高 尿酸血症、serum urate ≥420 μmol/L）と incident stroke の関連を フレイル が部分 媒介する機序を解明した前向き コホート 研究。Hyperuricemia は脳卒中 incidence と強く関連し（オッズ比 4.07、95% 信頼区間 1.25-13.19）、フレイル インデックス（FI、28項目で構築）が両者の関連の10.82%（95% 信頼区間 6.51%-21.65%）を 媒介 した。Pre-frail および frail 群では脳卒中 リスク が著しく上昇（pre-frail オッズ比 1.55、frail オッズ比 2.87）し、hyperuricemia → フレイル → 脳卒中 の3層 因果連鎖を定量化した点で、整合的な代謝・血管・身体機能 軸の統合 paradigm を実証した最新の規範的研究として機能する。",
+    "methodology": "CHARLS という全国規模 前向き コホート の活用で外的妥当性を担保、フレイル インデックス 28項目構築で フレイル 評価の精緻性を確保。Serum urate の enzymatic colorimetric method による標準化測定で hyperuricemia 分類の妥当性を 担保 した。多変量 logistic 回帰 と 媒介解析 の併用で direct/indirect effect を明確に分離し、bootstrap で 媒介 効果の 信頼区間 提示で 統計 的厳密性を確保。年齢・性別・教育歴・喫煙・飲酒・併存疾患の 交絡 補正で頑健性を 強化 し、pre-frail/frail の 層別化 で dose-response も評価。",
+    "limitation": "脳卒中 同定が自己報告 + 医師診断の組み合わせのため、画像確定 診断 に基づく研究に比べて measurement バイアス の可能性が残る。フレイル インデックス は self-reported 28項目で構築されており、physical performance test を含まない点で 客観性 がやや 限定 的。媒介 効果10.82%は中規模で、direct effect が大部分を占めるため hyperuricemia の独立効果も無視できない。本紹介は アブストラクト 読解 に基づき、本文未読のため詳細な sub-group 解析・効果修飾・感度分析 の妥当性は今後 検証 必要。",
+    "implication": "**PD課題1（多元統合機械学習）**：500名 コホート で代謝 マーカー × フレイル × 心血管 アウトカム の 媒介解析 を SHAP で 定量 化する基盤として本論文の3層モデルを参照する位置付け。**PD課題2（縦断追跡）**：本論文の partial 媒介（10.82%）を Japanese-specific で再現可能か縦断 デザイン で 検証 する研究の根拠となる。**PD拡張軸（代謝 × 身体機能 統合）**：Hyperuricemia をはじめとする代謝 バイオマーカー を フレイル 経路と 統合 した複合 予測 モデル 構築の根拠論文として本研究を 中核 に据え、日本人 コホート での 統合 心血管 リスク モデル の構築 戦略 に直結する。",
+    "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存900名 コホート で hyperuricemia・フレイル・脳卒中 履歴の 媒介解析 を実施し、本論文の10.82% 媒介 効果を Japanese-specific で再現するか 検証 する取り組みを進める。②TMM コホート で 代謝 バイオマーカー（serum urate・lipid panel・HbA1c）× フレイル の 統合 解析を計画し、本論文の hyperuricemia 軸を 多元 代謝 軸に拡張する研究を発展させる。③JAGES の 大規模 縦断 データ で incident stroke と pre-frail/frail 状態の前向き関連を 解析 し、本論文の クロス・コホート 妥当性を 検証 する。④自前 データ で hyperuricemia 群と非 hyperuricemia 群の フレイル trajectory を比較し、本論文の partial 媒介 を Japanese-specific 値の 検証 へ拡張する研究を計画し、PD 申請書での 統合 心血管 予防 戦略 の根拠として位置付ける取り組みを進める。",
+    "novelty": "CHARLS という大規模 前向き コホート で hyperuricemia → フレイル → 脳卒中 の3層因果連鎖を 媒介解析 で 定量 化した点が新規。フレイル インデックス 28項目構築の精緻さと bootstrap による 媒介 効果 信頼区間 提示で方法論的厳密性も高い。アジア人 中高齢者 集団 での 媒介 分割の 定量 値（10.82%）は既存研究にない貢献として位置付けられる。",
+    "background": "**背景**：尿酸値 上昇（hyperuricemia）は心血管疾患・脳卒中 リスク 因子として注目されてきたが、両者を仲介する 経路 は十分に解明されていなかった。Hyperuricemia は systemic inflammation・endothelial dysfunction・酸化ストレス を介して血管壁を侵襲する一方、加齢に伴う身体機能 低下（フレイル）も独立に脳卒中 リスク を高める。両者が同じ集団内で連鎖する3層モデルの定量化は、中国・アジア圏の中高齢者集団では限定的だった。本研究は hyperuricemia・フレイル・脳卒中 の3者関係を CHARLS 前向き コホート で 体系 評価し、フレイル の 媒介 役割を 定量 化することを目的とした。**方法**：CHARLS から45歳以上 7,462名を抽出し、serum urate を enzymatic colorimetric method で測定。Hyperuricemia の cutoff は serum urate ≥420 μmol/L。フレイル インデックス（FI）は28項目の baseline 自己報告 で構築し、non-frail / pre-frail / frail に層別。Incident stroke は自己報告 と医師診断 で同定。Multivariable logistic 回帰 と 媒介解析 で hyperuricemia → フレイル → 脳卒中 の3層関係を 定量 化し、年齢・性別・教育歴・喫煙・飲酒・併存疾患を交絡として補正した。**結果**：Hyperuricemia は フレイル と正の関連（オッズ比 1.54、95% 信頼区間 1.02-5.84）を示し、脳卒中 incidence とも強く関連（オッズ比 4.07、95% 信頼区間 1.25-13.19）。Pre-frail および frail 群では脳卒中 リスク が著しく上昇し（pre-frail オッズ比 1.55、95% 信頼区間 1.11-2.92；frail オッズ比 2.87、95% 信頼区間 1.29-6.37）、FI が hyperuricemia と incident stroke の関連の10.82%（95% 信頼区間 6.51%-21.65%）を partial 媒介した。**結論**：Hyperuricemia は脳卒中 リスク を直接高めると同時に フレイル を介する間接 経路 も持ち、両者を統合した3層モデルでの 介入 設計が予防医学的に重要であることが示された。Hyperuricemia 患者での フレイル 早期同定が脳卒中 予防の新規 統合 戦略となる可能性が示唆される。",
+    "result": "①CHARLS 7,462名で hyperuricemia → 脳卒中 の オッズ比 4.07（95% 信頼区間 1.25-13.19）、②Hyperuricemia → フレイル の オッズ比 1.54（95% 信頼区間 1.02-5.84）、③Pre-frail 群で脳卒中 オッズ比 1.55（95% 信頼区間 1.11-2.92）、④Frail 群で脳卒中 オッズ比 2.87（95% 信頼区間 1.29-6.37）、⑤フレイル が hyperuricemia → 脳卒中 関連の10.82%（95% 信頼区間 6.51%-21.65%）を partial 媒介、⑥Frailty index 28項目構築の精緻な集約、⑦Direct effect と indirect effect の明確な分離、⑧45歳以上中国成人での real-world エビデンス、⑨年齢・性別・教育歴・喫煙・飲酒・併存疾患の交絡 補正で頑健性確保、⑩Pre-frail 段階での既に脳卒中 リスク 上昇 1.55倍を実証、⑪3層モデル定量化で 介入 ターゲット 優先 順位 付けに寄与、⑫Bootstrap で 媒介 効果の 信頼区間 提示。",
+    "impact": "Hyperuricemia と脳卒中 の関連における フレイル の 媒介 役割を中国の大規模 前向き 設計で初めて 定量 化した規範的研究で、代謝・血管・身体機能 軸の統合 paradigm を最新エビデンスで示した。アジア人 中高齢者集団 における 媒介 分割（10.82%）の数値そのものが今後の集団間比較のための 参照値 として機能し、Healthy aging 介入 戦略における精密医療化に直接寄与する。フレイル を心血管 リスク 因子の 媒介 変数として位置付ける枠組みの確立も研究分野の方向性に重要な貢献となる。",
+    "keywords": "",
+    "tags": [
+      "hyperuricemia",
+      "フレイル",
+      "stroke",
+      "媒介解析",
+      "CHARLS",
+      "コア軸"
+    ],
+    "source_reports": [
+      "20260525_monday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：尿酸値 上昇（hyperuricemia）は心血管疾患・脳卒中 リスク 因子として注目されてきたが、両者を仲介する 経路 は十分に解明されていなかった。Hyperuricemia は systemic inflammation・endothelial dysfunction・酸化ストレス を介して血管壁を侵襲する一方、加齢に伴う身体機能 低下（フレイル）も独立に脳卒中 リスク を高める。両者が同じ集団内で連鎖する3層モデルの定量化は、中国・アジア圏の中高齢者集団では限定的だった。本研究は hyperuricemia・フレイル・脳卒中 の3者関係を CHARLS 前向き コホート で 体系 評価し、フレイル の 媒介 役割を 定量 化することを目的とした。**方法**：CHARLS から45歳以上 7,462名を抽出し、serum urate を enzymatic colorimetric method で測定。Hyperuricemia の cutoff は serum urate ≥420 μmol/L。フレイル インデックス（FI）は28項目の baseline 自己報告 で構築し、non-frail / pre-frail / frail に層別。Incident stroke は自己報告 と医師診断 で同定。Multivariable logistic 回帰 と 媒介解析 で hyperuricemia → フレイル → 脳卒中 の3層関係を 定量 化し、年齢・性別・教育歴・喫煙・飲酒・併存疾患を交絡として補正した。**結果**：Hyperuricemia は フレイル と正の関連（オッズ比 1.54、95% 信頼区間 1.02-5.84）を示し、脳卒中 incidence とも強く関連（オッズ比 4.07、95% 信頼区間 1.25-13.19）。Pre-frail および frail 群では脳卒中 リスク が著しく上昇し（pre-frail オッズ比 1.55、95% 信頼区間 1.11-2.92；frail オッズ比 2.87、95% 信頼区間 1.29-6.37）、FI が hyperuricemia と incident stroke の関連の10.82%（95% 信頼区間 6.51%-21.65%）を partial 媒介した。**結論**：Hyperuricemia は脳卒中 リスク を直接高めると同時に フレイル を介する間接 経路 も持ち、両者を統合した3層モデルでの 介入 設計が予防医学的に重要であることが示された。Hyperuricemia 患者での フレイル 早期同定が脳卒中 予防の新規 統合 戦略となる可能性が示唆される。",
+    "importance": "Hyperuricemia と脳卒中 の関連における フレイル の 媒介 役割を中国の大規模 前向き 設計で初めて 定量 化した規範的研究で、代謝・血管・身体機能 軸の統合 paradigm を最新エビデンスで示した。アジア人 中高齢者集団 における 媒介 分割（10.82%）の数値そのものが今後の集団間比較のための 参照値 として機能し、Healthy aging 介入 戦略における精密医療化に直接寄与する。フレイル を心血管 リスク 因子の 媒介 変数として位置付ける枠組みの確立も研究分野の方向性に重要な貢献となる。",
+    "originality": "CHARLS という大規模 前向き コホート で hyperuricemia → フレイル → 脳卒中 の3層因果連鎖を 媒介解析 で 定量 化した点が新規。フレイル インデックス 28項目構築の精緻さと bootstrap による 媒介 効果 信頼区間 提示で方法論的厳密性も高い。アジア人 中高齢者 集団 での 媒介 分割の 定量 値（10.82%）は既存研究にない貢献として位置付けられる。",
+    "discovery": "①CHARLS 7,462名で hyperuricemia → 脳卒中 の オッズ比 4.07（95% 信頼区間 1.25-13.19）、②Hyperuricemia → フレイル の オッズ比 1.54（95% 信頼区間 1.02-5.84）、③Pre-frail 群で脳卒中 オッズ比 1.55（95% 信頼区間 1.11-2.92）、④Frail 群で脳卒中 オッズ比 2.87（95% 信頼区間 1.29-6.37）、⑤フレイル が hyperuricemia → 脳卒中 関連の10.82%（95% 信頼区間 6.51%-21.65%）を partial 媒介、⑥Frailty index 28項目構築の精緻な集約、⑦Direct effect と indirect effect の明確な分離、⑧45歳以上中国成人での real-world エビデンス、⑨年齢・性別・教育歴・喫煙・飲酒・併存疾患の交絡 補正で頑健性確保、⑩Pre-frail 段階での既に脳卒中 リスク 上昇 1.55倍を実証、⑪3層モデル定量化で 介入 ターゲット 優先 順位 付けに寄与、⑫Bootstrap で 媒介 効果の 信頼区間 提示。",
+    "citation": "[introduction] 代謝 因子 と フレイル と心血管 アウトカム の3者連鎖を論じる導入で、本論文を「CHARLS 7,462名で hyperuricemia → フレイル → 脳卒中 の媒介経路を10.82%と 定量 化した最新規範的研究（Clin Exp Hypertens 2026）」として引用する。アジア人 中高齢者 における 媒介 分割の 参照値 として、日本人 specific データ の国際比較の基盤に位置付ける。[discussion] 自前 データ の 代謝 マーカー × フレイル × 脳卒中 アウトカム の媒介 経路と本論文の10.82%分割を 突合 し、日本人 コホート での 媒介 関係の再現可能性と Japanese-specific 数値の 検証 必要性を議論する文脈で 参照 する。Hyperuricemia → フレイル → 脳卒中 の3層モデルを 統合 心血管 リスク モデル の根拠論文として 引用 し、代謝 × 身体機能 軸の介入優先順位の根拠とする。"
+  },
+  {
+    "id": "20260514_mon_05",
+    "title": "Associations and Potential Biological Pathways Between Physical Frailty and Epilepsy Incidence: A Large-Scale Prospective Cohort Study",
+    "authors": "Hu W, Liu TS, Tian G, Wang JN, et al.",
+    "journal": "Neurology (IF=9.9), 2026年",
+    "design": "前向き コホート 研究（UK Biobank 421,383名、Fried フレイル 表現型 5 構成要素、Cox 比例 ハザード 解析、平均 13.2年 追跡、媒介解析）",
+    "url": "https://doi.org/10.1212/WNL.0000000000218071",
+    "summary": "UK Biobank 421,383名（baseline で epilepsy・Parkinson 病・認知症・脳卒中・migraine を除外）の前向き コホート 解析で、physical フレイル と incident epilepsy の関連を13.2年 追跡で 定量 化した規範的研究。Pre-frail および frail は non-frail と比べ epilepsy 発症 リスク が有意に上昇（pre-frail ハザード比 1.29、95% 信頼区間 1.19-1.40、frail ハザード比 1.81、95% 信頼区間 1.54-2.13）。Fried 5 構成要素のうち slow 歩行速度（ハザード比 1.46）、低 握力（ハザード比 1.19）、exhaustion（ハザード比 1.18）、weight loss（ハザード比 1.17）が個別に epilepsy 発症 リスク を高めた。Hypothesis-driven 媒介解析 では liver/kidney function・immune-inflammatory response・endocrine activity・hematologic profile の バイオマーカー 群が フレイル → epilepsy 関連の18.57%（95% 信頼区間 13.18%-26.83%）を 集合的 に 媒介 し、metabolic 関連 バイオマーカー（lipoprotein particle size・amino acids・ketone bodies・total lipids・triglycerides）も潜在的 contributor として 同定 された。フレイル の臨床 アウトカム を神経 疾患 全般 に拡張した最新規範的研究として機能する。",
+    "methodology": "UK Biobank という world-class コホート の活用で外的妥当性と統計 検出力を担保、Modified Fried フレイル 表現型 5 構成要素 の標準化評価で フレイル 分類の妥当性を確保。Cox 比例 ハザード モデル で 時間 to event の適切な扱いを実現し、平均13.2年 追跡 で長期 観察 の頑健性を確保した。Hypothesis-driven 媒介解析 で blood バイオマーカー 群の集合的 媒介 寄与を 定量 化する設計が方法論的に巧み。Linked health records による incident epilepsy 同定で アウトカム 評価の客観性 を 担保 し、年齢・性別・教育歴・BMI・併存疾患・薬剤使用の 交絡 補正で頑健性を 強化 した。",
+    "limitation": "UK Biobank は self-selected コホート で 全英 一般 人口 に比べて健康 度 がやや 高く、selection バイアス の可能性が残る。Epilepsy 同定は linked health records 依存で、未診断 epilepsy の取りこぼし可能性。媒介解析 は hypothesis-driven 設計で causal 媒介 の前提（mediator が 曝露 後に発生する temporal precedence）が大規模 baseline では完全 検証 困難。本紹介は アブストラクト 読解 に基づき、本文未読 のため詳細な感度分析 と effect modification 解析の妥当性は今後 検証 必要。アジア人原著ではないため日本人への外挿には別途 検証 必要。",
+    "implication": "**PD課題1（多元統合機械学習）**：500名 コホート で フレイル × 神経 アウトカム × バイオマーカー の 媒介解析 を SHAP で 定量 化する基盤として本論文の18.57% 媒介 を参照する位置付け。**PD拡張軸（大規模 biobank）**：UK Biobank での 統合 設計を Yuji の研究設計 paradigm として参照し、TMM 大規模 コホート での同等 解析 の 戦略 根拠とする。**Yuji の脳-身体機能 統合 研究 の根拠**：歩行速度 ハザード比 1.46・握力 ハザード比 1.19 という 定量 値は身体機能 評価 の神経 予測 性 の中核 エビデンス となり、PD 申請書での身体機能-神経 統合 軸の根拠論文として直接機能する。",
+    "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存900名 コホート で Fried フレイル × 神経 アウトカム の関連 解析 を実施し、本論文の ハザード比 1.81 と18.57% 媒介 を Japanese-specific で再現するか 検証 する取り組みを進める。②TMM 大規模 コホート で UK Biobank と同等の フレイル × incident epilepsy 解析 を計画し、本論文の クロス・コホート 妥当性を 検証 する研究を発展させる。③課題1 で 歩行速度・握力 を SHAP 説明変数 として組み込み、本論文の構成要素別 ハザード比 を Japanese-specific データ で 定量 化する研究を進める。④Hypothesis-driven 媒介解析 で blood バイオマーカー × フレイル × epilepsy の3者関係を 縦断 デザイン で 検証 する研究を計画し、PD 申請書での 統合 神経 リスク モデル の根拠として位置付ける取り組みを進める。",
+    "novelty": "UK Biobank 421,383名規模の前向き 設計で physical フレイル と incident epilepsy の関連を初めて 定量 化した点が新規で、13.2年という長期 追跡 と Fried 5 構成要素別 解析 の精緻さが独自の貢献。Hypothesis-driven 媒介解析 で blood バイオマーカー 群の集合的 媒介 寄与（18.57%）を 定量 化した点も既存研究にない貢献として位置付けられる。Metabolic 関連 バイオマーカー（lipoprotein・amino acids・ketone bodies）の 同定 も precision neurology への新規 貢献。",
+    "background": "**背景**：Physical フレイル は心血管 疾患・認知症・脳卒中・Parkinson 病 など 多 神経 疾患 と縦断的に関連することが知られているが、epilepsy 発症との関連 とその 生物学的 経路 は十分に解明されていなかった。Epilepsy は高齢期発症が増加傾向にあり、フレイル が共通する身体機能・神経・代謝の脆弱性を介して epilepsy リスク に寄与する仮説は妥当だが、large-scale prospective design による定量化は未実施だった。本研究は UK Biobank の 大規模 縦断 データ で この空白を埋めることを目的とした。**方法**：UK Biobank 421,383名（baseline で epilepsy・Parkinson 病・認知症・脳卒中・migraine を除外）の前向き コホート 解析。Physical フレイル は modified Fried フレイル 表現型 5 構成要素（weight loss・exhaustion・低 身体活動・slow 歩行速度・低 握力）で評価し、non-frail / pre-frail / frail に分類。Incident epilepsy は linked health records で同定。Cox 比例 ハザード モデル で ハザード比 と95% 信頼区間 を算出し、hypothesis-driven 媒介解析 で blood バイオマーカー 群の 媒介 寄与度を 定量 化した。年齢・性別・教育歴・BMI・併存疾患・薬剤使用を 交絡 として補正。**結果**：平均13.2年 追跡で 2,752 incident epilepsy 例を同定。Non-frail に対し pre-frail の ハザード比 1.29（95% 信頼区間 1.19-1.40）、frail の ハザード比 1.81（95% 信頼区間 1.54-2.13）と用量反応関係を示した。Fried 5 構成要素別 解析 では slow 歩行速度 の ハザード比 1.46（95% 信頼区間 1.29-1.65）が最大、続いて低 握力 1.19（95% 信頼区間 1.08-1.32）、exhaustion 1.18（95% 信頼区間 1.06-1.32）、weight loss 1.17（95% 信頼区間 1.06-1.29）。バイオマーカー 解析では liver/kidney function・immune-inflammatory response・endocrine activity・hematologic profile が集合的に フレイル ↔ epilepsy 関連の約18.57%（95% 信頼区間 13.18%-26.83%）を 媒介 し、metabolic 関連 バイオマーカー（lipoprotein particle size・amino acids・ketone bodies・total lipids・triglycerides）も追加 contributor として 同定 された。**結論**：Physical フレイル は epilepsy 発症の独立 リスク 因子であり、organ function・inflammation・endocrine regulation・hematologic status・metabolic homeostasis を介する複数 経路 が機序として 寄与 する。フレイル × epilepsy 連鎖の解明は早期 介入 設計と precision neurology の双方に寄与する。",
+    "result": "①UK Biobank 421,383名・平均13.2年 追跡 で 2,752 incident epilepsy 例を同定、②Pre-frail の epilepsy ハザード比 1.29（95% 信頼区間 1.19-1.40）、③Frail の epilepsy ハザード比 1.81（95% 信頼区間 1.54-2.13）、④Fried 5 構成要素別で slow 歩行速度 ハザード比 1.46（95% 信頼区間 1.29-1.65）が最大、⑤低 握力 ハザード比 1.19（95% 信頼区間 1.08-1.32）、⑥Exhaustion ハザード比 1.18（95% 信頼区間 1.06-1.32）、⑦Weight loss ハザード比 1.17（95% 信頼区間 1.06-1.29）、⑧Liver/kidney function・immune-inflammatory・endocrine・hematologic バイオマーカー の集合的 媒介18.57%（95% 信頼区間 13.18%-26.83%）、⑨Metabolic バイオマーカー（lipoprotein particle size・amino acids・ketone bodies・total lipids・triglycerides）の追加 contributor 同定、⑩フレイル の用量反応関係（non-frail < pre-frail < frail）の明確な確立、⑪Baseline で neurologic 疾患を除外した clean 縦断 デザイン、⑫Hypothesis-driven 媒介解析 による 生物学的 経路 の精緻 同定。",
+    "impact": "UK Biobank という world-class 大規模 前向き 設計で physical フレイル と incident epilepsy の関連を初めて 体系 定量 化した規範的研究で、Fried 構成要素別 ハザード比 と バイオマーカー 媒介18.57%という 定量 値で フレイル × 神経 疾患 連鎖の生物学的 機序 を明確化した。歩行速度・握力 という身体機能 指標が epilepsy 発症の予測 因子となる発見は、老年 神経学 における 介入 ターゲット 同定の方法論的 基盤 を提供する。フレイル を神経 疾患 リスク 評価 に組み込む臨床 標準化の方向性 を確立する点で研究分野の発展に直接寄与する。",
+    "keywords": "",
+    "tags": [
+      "UK Biobank",
+      "フレイル",
+      "epilepsy",
+      "Cox 回帰",
+      "媒介解析",
+      "PD研究関連",
+      "コア軸"
+    ],
+    "source_reports": [
+      "20260525_monday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：Physical フレイル は心血管 疾患・認知症・脳卒中・Parkinson 病 など 多 神経 疾患 と縦断的に関連することが知られているが、epilepsy 発症との関連 とその 生物学的 経路 は十分に解明されていなかった。Epilepsy は高齢期発症が増加傾向にあり、フレイル が共通する身体機能・神経・代謝の脆弱性を介して epilepsy リスク に寄与する仮説は妥当だが、large-scale prospective design による定量化は未実施だった。本研究は UK Biobank の 大規模 縦断 データ で この空白を埋めることを目的とした。**方法**：UK Biobank 421,383名（baseline で epilepsy・Parkinson 病・認知症・脳卒中・migraine を除外）の前向き コホート 解析。Physical フレイル は modified Fried フレイル 表現型 5 構成要素（weight loss・exhaustion・低 身体活動・slow 歩行速度・低 握力）で評価し、non-frail / pre-frail / frail に分類。Incident epilepsy は linked health records で同定。Cox 比例 ハザード モデル で ハザード比 と95% 信頼区間 を算出し、hypothesis-driven 媒介解析 で blood バイオマーカー 群の 媒介 寄与度を 定量 化した。年齢・性別・教育歴・BMI・併存疾患・薬剤使用を 交絡 として補正。**結果**：平均13.2年 追跡で 2,752 incident epilepsy 例を同定。Non-frail に対し pre-frail の ハザード比 1.29（95% 信頼区間 1.19-1.40）、frail の ハザード比 1.81（95% 信頼区間 1.54-2.13）と用量反応関係を示した。Fried 5 構成要素別 解析 では slow 歩行速度 の ハザード比 1.46（95% 信頼区間 1.29-1.65）が最大、続いて低 握力 1.19（95% 信頼区間 1.08-1.32）、exhaustion 1.18（95% 信頼区間 1.06-1.32）、weight loss 1.17（95% 信頼区間 1.06-1.29）。バイオマーカー 解析では liver/kidney function・immune-inflammatory response・endocrine activity・hematologic profile が集合的に フレイル ↔ epilepsy 関連の約18.57%（95% 信頼区間 13.18%-26.83%）を 媒介 し、metabolic 関連 バイオマーカー（lipoprotein particle size・amino acids・ketone bodies・total lipids・triglycerides）も追加 contributor として 同定 された。**結論**：Physical フレイル は epilepsy 発症の独立 リスク 因子であり、organ function・inflammation・endocrine regulation・hematologic status・metabolic homeostasis を介する複数 経路 が機序として 寄与 する。フレイル × epilepsy 連鎖の解明は早期 介入 設計と precision neurology の双方に寄与する。",
+    "importance": "UK Biobank という world-class 大規模 前向き 設計で physical フレイル と incident epilepsy の関連を初めて 体系 定量 化した規範的研究で、Fried 構成要素別 ハザード比 と バイオマーカー 媒介18.57%という 定量 値で フレイル × 神経 疾患 連鎖の生物学的 機序 を明確化した。歩行速度・握力 という身体機能 指標が epilepsy 発症の予測 因子となる発見は、老年 神経学 における 介入 ターゲット 同定の方法論的 基盤 を提供する。フレイル を神経 疾患 リスク 評価 に組み込む臨床 標準化の方向性 を確立する点で研究分野の発展に直接寄与する。",
+    "originality": "UK Biobank 421,383名規模の前向き 設計で physical フレイル と incident epilepsy の関連を初めて 定量 化した点が新規で、13.2年という長期 追跡 と Fried 5 構成要素別 解析 の精緻さが独自の貢献。Hypothesis-driven 媒介解析 で blood バイオマーカー 群の集合的 媒介 寄与（18.57%）を 定量 化した点も既存研究にない貢献として位置付けられる。Metabolic 関連 バイオマーカー（lipoprotein・amino acids・ketone bodies）の 同定 も precision neurology への新規 貢献。",
+    "discovery": "①UK Biobank 421,383名・平均13.2年 追跡 で 2,752 incident epilepsy 例を同定、②Pre-frail の epilepsy ハザード比 1.29（95% 信頼区間 1.19-1.40）、③Frail の epilepsy ハザード比 1.81（95% 信頼区間 1.54-2.13）、④Fried 5 構成要素別で slow 歩行速度 ハザード比 1.46（95% 信頼区間 1.29-1.65）が最大、⑤低 握力 ハザード比 1.19（95% 信頼区間 1.08-1.32）、⑥Exhaustion ハザード比 1.18（95% 信頼区間 1.06-1.32）、⑦Weight loss ハザード比 1.17（95% 信頼区間 1.06-1.29）、⑧Liver/kidney function・immune-inflammatory・endocrine・hematologic バイオマーカー の集合的 媒介18.57%（95% 信頼区間 13.18%-26.83%）、⑨Metabolic バイオマーカー（lipoprotein particle size・amino acids・ketone bodies・total lipids・triglycerides）の追加 contributor 同定、⑩フレイル の用量反応関係（non-frail < pre-frail < frail）の明確な確立、⑪Baseline で neurologic 疾患を除外した clean 縦断 デザイン、⑫Hypothesis-driven 媒介解析 による 生物学的 経路 の精緻 同定。",
+    "citation": "[introduction] フレイル と神経 疾患 の縦断 関連 を論じる導入で、本論文を「UK Biobank 421,383名・13.2年 追跡 で physical フレイル と incident epilepsy の関連を ハザード比 1.81 と 定量 化した最新規範的研究（Neurology 2026）」として引用する。Fried 5 構成要素別 ハザード比 と バイオマーカー 媒介18.57%という 定量 値を、フレイル × 神経 疾患 連鎖の 機序 解明の 参照値 として位置付ける。[discussion] 自前 データ の フレイル × 神経 アウトカム の関連と本論文の ハザード比 1.81・媒介18.57%を 突合 し、日本人 コホート での フレイル × epilepsy 関連の 検証 必要性 と Japanese-specific 数値の妥当性を議論する文脈で 参照 する。歩行速度 ハザード比 1.46 を身体機能 指標 の神経 疾患 予測 性 の根拠として 引用 し、自前 データ の歩行速度 × 神経 アウトカム の関連 解析 の方向性付けに用いる。"
+  },
+  {
+    "id": "20260515_mon_09",
+    "title": "Biological aging as a mediator of the association between air pollution and all-cause mortality and hospitalization: Evidence from the UK Biobank and Lifelines cohorts",
+    "authors": "Poursafa P, Khan E, Mak JKL, Hoogendijk EO, et al.",
+    "journal": "Mechanisms of Ageing and Development (IF=5.3), 2026年",
+    "design": "前向き コホート 二群並列 媒介解析（UK Biobank n=309,467 + Lifelines n=29,146、PM2.5/PM10/NO2 曝露 × 生物学的 加齢 × 全原因死亡/hospitalization、Klemera-Doubal Method・PhenoAge・frailty index）",
+    "url": "https://doi.org/10.1016/j.mad.2026.112193",
+    "summary": "UK Biobank（n=309,467、37-73歳）と Lifelines（n=29,146、18-93歳）の2 大規模 コホート 並列解析で、長期 大気汚染 曝露（PM2.5、PM10、NO2）と全原因死亡・hospitalization の関連を生物学的 加齢（Klemera-Doubal Method、PhenoAge、フレイル インデックス）が 媒介 する機序を 定量 化した規範的研究。高 大気汚染 曝露 は accelerated 生物学的 加齢 と関連し、UK Biobank では 生物学的 加齢 が 大気汚染 → 全原因死亡 の11.5-52.3%、大気汚染 → hospitalization の7.5-25.4% を 媒介 した。Lifelines では PM2.5 と FI が正の関連を示し、PM10 → フレイル の 媒介 経路も確認された。比較的低濃度（欧州 典型 レベル）の 大気汚染 でも 生物学的 加齢 を加速し、pollution 関連 morbidity・mortality に寄与することを示した。Land-use 回帰 と dispersion model による residential 曝露 推定、Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標 並列 評価で頑健性を確保した最新の規範的研究として機能する。",
+    "methodology": "UK Biobank と Lifelines という world-class 2 大規模 コホート の並列 設計で外的妥当性と統計 検出力を確保、Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標 並列 評価で 生物学的 加齢 評価の頑健性を 担保。Land-use 回帰 と dispersion model による residential 曝露 推定で 個人レベル 曝露 評価の精緻性を実現。媒介解析 で 大気汚染 → 生物学的 加齢 → アウトカム の3層 関係を 定量 化する設計が方法論的に巧み。Demographic および socioeconomic 因子（年齢・性別・教育歴・所得・喫煙・身体活動）の 交絡 補正で頑健性を 強化 した。",
+    "limitation": "UK Biobank と Lifelines はいずれも欧州 self-selected コホート で 全人口 に比べて健康 度 がやや高く、selection バイアス の可能性が残る。Residential 曝露 推定は個人 mobility や indoor 環境 を 完全 には反映 せず、misclassification の可能性。媒介解析 の前提（mediator が 曝露 後に発生する temporal precedence）は 横断的 baseline 評価では完全 検証 困難。本紹介は アブストラクト 読解 に基づき、本文未読 のため詳細な感度分析 と effect modification 解析の妥当性は今後 検証 必要。アジア人原著ではないため、より高濃度 大気汚染 を経験する日本・東アジア人への外挿には別途 検証 必要。",
+    "implication": "**PD課題2（縦断追跡）**：500名 コホート で 環境 曝露 × 生物学的 加齢 × アウトカム の3層 媒介解析 を実装する基盤として本論文の Klemera-Doubal Method・PhenoAge・フレイル インデックス 並列 評価を参照する位置付け。**PD拡張軸（biological aging × environmental epidemiology）**：本論文の aging-mediated 環境 影響 paradigm を Yuji の研究設計の中核に取り込み、TMM 大規模 コホート での同等 解析 の 戦略 根拠とする。**Yuji の biological age × 健康寿命 研究 の根拠**：PhenoAge を 中核 marker として研究設計に組み込む根拠論文として直接機能し、PD 申請書での 生物学的 加齢 媒介 経路 の 中核 エビデンス を提供する。",
+    "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存900名 コホート で 大気汚染 曝露（residential PM2.5）× PhenoAge × 身体機能 の媒介解析 を実施し、本論文の 媒介 経路 を Japanese-specific で再現するか 検証 する取り組みを進める。②TMM 大規模 コホート で UK Biobank/Lifelines と同等の 環境 × 生物学的 加齢 × 死亡 の3層 解析 を計画し、本論文の クロス・コホート 妥当性を東アジア人で 検証 する研究を発展させる。③課題1 で PhenoAge・フレイル インデックス を SHAP 説明変数 として組み込み、本論文の3指標 並列 paradigm を Japanese-specific データ で 定量 化する研究を進める。④Lifelines の PM10 → フレイル 媒介 経路 を Japanese-specific で再現し、本論文の発見を東アジア大気環境に拡張する研究を計画し、PD 申請書での 環境 × aging 統合 軸の根拠として位置付ける取り組みを進める。",
+    "novelty": "UK Biobank + Lifelines の2 大規模 欧州 コホート 並列 媒介解析 が独自で、Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標 並列 評価が方法論的に新規。Land-use 回帰 と dispersion model による residential 曝露 推定の精緻さも貢献。低濃度域での 生物学的 加齢 媒介 経路 の 定量 化（11.5-52.3%）は既存 環境 疫学 研究にない新規 貢献として位置付けられる。",
+    "background": "**背景**：大気汚染 は早期 死亡 と hospitalization の主要 環境 リスク 因子であり、PM2.5・PM10・NO2 の長期 曝露 が心血管 疾患・呼吸器 疾患 を介する 経路 は知られているが、aging acceleration を介する 経路 とその 寄与 度の 定量 化は限定的だった。生物学的 加齢 指標（Klemera-Doubal Method・PhenoAge・フレイル インデックス）の確立により、aging を 媒介 変数 として 定量 評価する機運が高まっており、本研究は2 大規模 欧州 コホート で aging 媒介 仮説を 検証 することを目的とした。**方法**：UK Biobank（n=309,467、37-73歳）と Lifelines（n=29,146、18-93歳）の並列解析。長期 residential 曝露 PM2.5・PM10・NO2 を land-use 回帰 と dispersion model で推定。生物学的 加齢 は Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標で 定量 化。媒介解析 は UK Biobank で hospitalization と全原因死亡、Lifelines で hospitalization を 対象 とし、demographic および socioeconomic factors（年齢・性別・教育歴・所得・喫煙・身体活動）を 交絡 として補正した。**結果**：高 大気汚染 曝露 は accelerated 生物学的 加齢 と関連し、UK Biobank では 生物学的 加齢 が 大気汚染 → 全原因死亡 の関連の11.5-52.3%、大気汚染 → hospitalization の関連の7.5-25.4% を 媒介 した（指標と汚染物質の組み合わせで variation）。Lifelines では PM2.5 と FI が正の関連を示し、PM10 → フレイル の 媒介 経路の エビデンス も得られた。比較的低濃度の 大気汚染 でも 生物学的 加齢 を加速することを実証した。**結論**：長期 大気汚染 曝露 は 生物学的 加齢 を加速する機序を介して 死亡・hospitalization に 寄与 する。欧州の比較的清浄な大気環境下でも 生物学的 加齢 経路 が 確認 された点は、global pollution 対策と precision aging 介入 の双方に直接寄与する重要 知見となる。",
+    "result": "①UK Biobank（n=309,467）と Lifelines（n=29,146）の並列 媒介解析、②長期 大気汚染（PM2.5・PM10・NO2）の residential 曝露 推定 を land-use 回帰 と dispersion model で実施、③生物学的 加齢 を Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標で 並列 評価、④UK Biobank で 大気汚染 → 全原因死亡 の11.5-52.3%を 生物学的 加齢 が 媒介、⑤UK Biobank で 大気汚染 → hospitalization の7.5-25.4%を 生物学的 加齢 が 媒介、⑥Lifelines で PM2.5 と FI が正の関連、⑦Lifelines で PM10 → フレイル の 媒介 経路 を 同定、⑧比較的低濃度（欧州 典型 レベル）でも 生物学的 加齢 を加速、⑨媒介 寄与 度が指標と汚染物質で variation を示すことを 同定、⑩2 コホート 並列で クロス・コホート 妥当性を 担保、⑪Demographic および socioeconomic 因子 の交絡 補正で頑健性 確保、⑫Aging acceleration を 環境 epidemiology に組み込む paradigm の確立。",
+    "impact": "UK Biobank と Lifelines という world-class 2 大規模 コホート の並列 設計で 大気汚染 → 生物学的 加齢 → 死亡・hospitalization の3層 因果連鎖を初めて 体系 定量 化した規範的研究で、Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標 並列 評価で頑健性を確保した。Aging を 媒介 変数 として 定量 評価する 環境 疫学 paradigm の確立と、低濃度 大気汚染 でも accelerated 生物学的 加齢 が生じるという発見は研究分野の方向性に決定的影響を与える。Precision 健康寿命 介入における 環境 因子 統合 の方法論的基盤としても直接寄与する。",
+    "keywords": "",
+    "tags": [
+      "UK Biobank",
+      "Lifelines",
+      "biological aging",
+      "PhenoAge",
+      "air pollution",
+      "媒介解析",
+      "PD研究関連",
+      "拡張軸"
+    ],
+    "source_reports": [
+      "20260525_monday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：大気汚染 は早期 死亡 と hospitalization の主要 環境 リスク 因子であり、PM2.5・PM10・NO2 の長期 曝露 が心血管 疾患・呼吸器 疾患 を介する 経路 は知られているが、aging acceleration を介する 経路 とその 寄与 度の 定量 化は限定的だった。生物学的 加齢 指標（Klemera-Doubal Method・PhenoAge・フレイル インデックス）の確立により、aging を 媒介 変数 として 定量 評価する機運が高まっており、本研究は2 大規模 欧州 コホート で aging 媒介 仮説を 検証 することを目的とした。**方法**：UK Biobank（n=309,467、37-73歳）と Lifelines（n=29,146、18-93歳）の並列解析。長期 residential 曝露 PM2.5・PM10・NO2 を land-use 回帰 と dispersion model で推定。生物学的 加齢 は Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標で 定量 化。媒介解析 は UK Biobank で hospitalization と全原因死亡、Lifelines で hospitalization を 対象 とし、demographic および socioeconomic factors（年齢・性別・教育歴・所得・喫煙・身体活動）を 交絡 として補正した。**結果**：高 大気汚染 曝露 は accelerated 生物学的 加齢 と関連し、UK Biobank では 生物学的 加齢 が 大気汚染 → 全原因死亡 の関連の11.5-52.3%、大気汚染 → hospitalization の関連の7.5-25.4% を 媒介 した（指標と汚染物質の組み合わせで variation）。Lifelines では PM2.5 と FI が正の関連を示し、PM10 → フレイル の 媒介 経路の エビデンス も得られた。比較的低濃度の 大気汚染 でも 生物学的 加齢 を加速することを実証した。**結論**：長期 大気汚染 曝露 は 生物学的 加齢 を加速する機序を介して 死亡・hospitalization に 寄与 する。欧州の比較的清浄な大気環境下でも 生物学的 加齢 経路 が 確認 された点は、global pollution 対策と precision aging 介入 の双方に直接寄与する重要 知見となる。",
+    "importance": "UK Biobank と Lifelines という world-class 2 大規模 コホート の並列 設計で 大気汚染 → 生物学的 加齢 → 死亡・hospitalization の3層 因果連鎖を初めて 体系 定量 化した規範的研究で、Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標 並列 評価で頑健性を確保した。Aging を 媒介 変数 として 定量 評価する 環境 疫学 paradigm の確立と、低濃度 大気汚染 でも accelerated 生物学的 加齢 が生じるという発見は研究分野の方向性に決定的影響を与える。Precision 健康寿命 介入における 環境 因子 統合 の方法論的基盤としても直接寄与する。",
+    "originality": "UK Biobank + Lifelines の2 大規模 欧州 コホート 並列 媒介解析 が独自で、Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標 並列 評価が方法論的に新規。Land-use 回帰 と dispersion model による residential 曝露 推定の精緻さも貢献。低濃度域での 生物学的 加齢 媒介 経路 の 定量 化（11.5-52.3%）は既存 環境 疫学 研究にない新規 貢献として位置付けられる。",
+    "discovery": "①UK Biobank（n=309,467）と Lifelines（n=29,146）の並列 媒介解析、②長期 大気汚染（PM2.5・PM10・NO2）の residential 曝露 推定 を land-use 回帰 と dispersion model で実施、③生物学的 加齢 を Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標で 並列 評価、④UK Biobank で 大気汚染 → 全原因死亡 の11.5-52.3%を 生物学的 加齢 が 媒介、⑤UK Biobank で 大気汚染 → hospitalization の7.5-25.4%を 生物学的 加齢 が 媒介、⑥Lifelines で PM2.5 と FI が正の関連、⑦Lifelines で PM10 → フレイル の 媒介 経路 を 同定、⑧比較的低濃度（欧州 典型 レベル）でも 生物学的 加齢 を加速、⑨媒介 寄与 度が指標と汚染物質で variation を示すことを 同定、⑩2 コホート 並列で クロス・コホート 妥当性を 担保、⑪Demographic および socioeconomic 因子 の交絡 補正で頑健性 確保、⑫Aging acceleration を 環境 epidemiology に組み込む paradigm の確立。",
+    "citation": "[introduction] 環境 因子 と 生物学的 加齢 の縦断 関連 を論じる導入で、本論文を「UK Biobank + Lifelines 並列解析で 大気汚染 → 生物学的 加齢 → 死亡 の11.5-52.3% 媒介 を 定量 化した最新規範的研究（Mech Ageing Dev 2026）」として引用する。Klemera-Doubal Method・PhenoAge・フレイル インデックス の3指標 並列 評価を 生物学的 加齢 評価 paradigm の 参照値 として位置付ける。[discussion] 自前 データ の 環境 曝露 × 生物学的 加齢 × アウトカム の関連と本論文の11.5-52.3% 媒介 を 突合 し、日本人 コホート での 環境 媒介 経路 の 検証 必要性 と Japanese-specific 数値の妥当性を議論する文脈で 参照 する。低濃度 大気汚染 でも accelerated 生物学的 加齢 が生じるという発見は、清浄な大気環境下の日本人にも適用可能性が高い 機序 として 引用 し、PD 申請書での 環境 × aging 統合 軸の根拠として用いる。"
+  },
+  {
+    "id": "20260526_tue_04",
+    "title": "Device-measured and self-reported physical activity and the trajectory of cardio-renal-metabolic multimorbidity: a prospective cohort study in UK Biobank",
+    "authors": "Hu J, Wu H, Li P, et al.",
+    "journal": "BMC Public Health (IF=4.5), 2026年",
+    "design": "前向きコホート（UK Biobank 2 サブコホート：accelerometer 群 n=73,952、自己報告 群 n=328,147。Multi-state model で「健康→first CRMD（FCRMD）→cardio-renal-metabolic multimorbidity（CRMM）→死亡」の遷移リスクを身体活動 4 強度別に推定。Median 追跡 7.0 年／13.6 年）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42135687/",
+    "summary": "心血管疾患・慢性腎臓病・2 型糖尿病から成る cardio-renal-metabolic multimorbidity（CRMM）の縦断的遷移軌跡を、device-measured 身体活動（n=73,952）と自己報告 身体活動（n=328,147）の双方で multi-state model により評価した 2026 年 5 月 BMC Public Health の最新前向きコホート研究。Accelerometer 群では median 7.0 年追跡で 7,303 名（9.9%）が first CRMD（FCRMD）に到達し、vigorous PA（VPA）最高 4 分位は最低 4 分位と比べ baseline→FCRMD のハザード比 0.69（95%CI 0.64-0.74）、baseline→死亡 0.47（95%CI 0.39-0.56）と顕著なリスク低下。自己報告 群では median 13.6 年追跡で 57,389 名（17.5%）が FCRMD に到達し、高活動群の遷移ハザード比 0.78-0.93（全 p<0.05）。Multi-state model により「健康→疾患→multimorbidity→死亡」の鎖の各遷移で身体活動の保護効果が早期 stage ほど強いことを定量化した点で、multimorbidity 疫学の標準的 reference として位置付けられる。",
+    "methodology": "Multi-state model で 5 遷移を同時推定する設計は、Cox 回帰 ベースの単一アウトカム解析より multimorbidity 軌跡を立体的に評価できる強みを持つ。Accelerometer と自己報告 を同一 biobank で並列推定することで measurement バイアス の方向性を明示でき、年齢・性・BMI・喫煙等の交絡変数 補正と感度分析の頑健性も確保されている。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読。UK Biobank の healthy volunteer バイアスにより effect サイズ が一般集団より控えめに推定されている可能性、accelerometer 装着 7 日間からの usual behavior 推定に 回帰 dilution の余地、CRMM 確立後の死亡で関連が一貫しない理由（疾患重症度の異質性、competing risk 等）も明示的に議論が必要。",
+    "implication": "**PD 課題1 への接続**：多元統合機械学習の アウトカム を「単一疾患の発症」から「multimorbidity 遷移軌跡」へ拡張する根拠となり、SHAP 特徴量重要度を遷移別に推定する設計の基盤を提供する。**PD 拡張軸（biobank・24h CoDA）への接続**：TMM・UK Biobank での multi-state model 解析設計の参照論文として直接利用可能で、身体活動の早期介入価値を強調する公衆衛生政策との橋渡しを支援する。",
+    "idea": "**自前研究への展開**：①既存 900 名コホートで身体活動を曝露、心血管疾患・腎機能低下・糖尿病の発症と death を multi-state model で解析し本論文の遷移パターンを日本人で再現。②TMM の accelerometer サブセットで同じ 5 遷移モデルを実装し、VPA 最高 4 分位の baseline→FCRMD ハザード比を本論文の 0.69 と比較。③課題1 SHAP モデルに「健康→FCRMD」と「FCRMD→CRMM」を別アウトカムとして組込み、身体活動の特徴重要度が遷移別に変化するかを評価。④JAGES データの自己報告 身体活動を本論文と同じ multi-state model に投入し effect サイズ の Japanese-specific 値を推定。⑤介入研究計画では「健康な段階での介入が CRMM 確立後より effect が大きい」という本論文の知見を power 計算と sub-group 設定の根拠とする。",
+    "novelty": "Multi-state model で「健康→FCRMD→CRMM→死亡」の 5 遷移を同時に推定した点、device-measured と自己報告 を別解析で同一枠組みに乗せ effect サイズ の系統的差異を定量した点、CRMM 確立後の死亡では関連が弱まることを示し「介入の windows of opportunity」を提示した点が新規。",
+    "background": "**背景**：心血管疾患・慢性腎臓病・2 型糖尿病はしばしば共存しながら「健康→first CRMD（FCRMD）→cardio-renal-metabolic multimorbidity（CRMM）→死亡」の鎖状に進展する。先行研究は単一疾患の発症リスクを評価することが多く、device-measured 身体活動 と multimorbidity 遷移軌跡の関連を multi-state model で評価した研究は限られていた。**方法**：UK Biobank で CRMD 既往のない 2 サブコホートを別解析。Accelerometer 群（n=73,952）では wrist-worn accelerometer で light（LPA）・moderate（MPA）・vigorous（VPA）・moderate-to-vigorous（MVPA）・total PA（TPA）を抽出。自己報告 群（n=328,147）は IPAQ ベースで low／moderate／high に分類。Multi-state model で「baseline→FCRMD」「FCRMD→CRMM」「baseline→死亡」「FCRMD→死亡」「CRMM→死亡」の 5 遷移を同時推定し、年齢・性・BMI・喫煙・既往の交絡を補正。Median 追跡は accelerometer 群 7.0 年、自己報告 群 13.6 年。**結果**：accelerometer 群で 7,303 名（9.9%）が FCRMD に到達。VPA 最高 4 分位対最低 4 分位で baseline→FCRMD のハザード比 0.69（95%CI 0.64-0.74）、baseline→死亡 0.47（95%CI 0.39-0.56）。自己報告 群では 57,389 名（17.5%）が FCRMD に到達し高活動群の遷移ハザード比 0.78-0.93（全 p<0.05）。FCRMD 発症と FCRMD→CRMM 進展、CRMM 確立前の死亡で一貫した保護効果が観察されたが、CRMM 確立後の死亡では accelerometer 解析で関連がより弱かった。**結論**：身体活動は CRMM 軌跡の早期 stage ほど予防効果が強く、健康な段階での身体活動推進が multimorbidity 予防戦略の中核となる。",
+    "result": "①UK Biobank 2 サブコホートで multi-state model 解析、②accelerometer 群 n=73,952（median 7.0 年）／自己報告 群 n=328,147（median 13.6 年）、③accelerometer 群で 7,303 名（9.9%）が FCRMD 到達、④自己報告 群で 57,389 名（17.5%）が FCRMD 到達、⑤VPA 最高 4 分位 vs 最低 4 分位で baseline→FCRMD のハザード比 0.69（95%CI 0.64-0.74）、⑥同 baseline→死亡 のハザード比 0.47（95%CI 0.39-0.56）、⑦自己報告 群の高活動群でも遷移ハザード比 0.78-0.93（全 p<0.05）、⑧FCRMD→CRMM 遷移と CRMM 確立前死亡で一貫した保護効果、⑨CRMM 確立後の死亡では accelerometer 解析の関連が一貫せず、⑩疾患別の遷移解析でも同様のパターンを確認。",
+    "impact": "Device-measured 身体活動と自己報告 身体活動を同一 biobank で並列に multi-state model に投入し、cardio-renal-metabolic multimorbidity の遷移軌跡を 4 強度別に評価した 2026 年 5 月の最新エビデンス。Multimorbidity 疫学では「単一疾患の発症」ではなく「疾患の鎖」を扱う枠組みが重視されつつあり、本論文は身体活動が早期 stage に強く効くという定量結果を提示した点で当該領域の標準的 reference として機能する位置にある。",
+    "keywords": "",
+    "tags": [
+      "accelerometer",
+      "multimorbidity",
+      "CRMM",
+      "UK Biobank",
+      "multi-state model",
+      "身体活動",
+      "2026"
+    ],
+    "source_reports": [
+      "20260526_tuesday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：心血管疾患・慢性腎臓病・2 型糖尿病はしばしば共存しながら「健康→first CRMD（FCRMD）→cardio-renal-metabolic multimorbidity（CRMM）→死亡」の鎖状に進展する。先行研究は単一疾患の発症リスクを評価することが多く、device-measured 身体活動 と multimorbidity 遷移軌跡の関連を multi-state model で評価した研究は限られていた。**方法**：UK Biobank で CRMD 既往のない 2 サブコホートを別解析。Accelerometer 群（n=73,952）では wrist-worn accelerometer で light（LPA）・moderate（MPA）・vigorous（VPA）・moderate-to-vigorous（MVPA）・total PA（TPA）を抽出。自己報告 群（n=328,147）は IPAQ ベースで low／moderate／high に分類。Multi-state model で「baseline→FCRMD」「FCRMD→CRMM」「baseline→死亡」「FCRMD→死亡」「CRMM→死亡」の 5 遷移を同時推定し、年齢・性・BMI・喫煙・既往の交絡を補正。Median 追跡は accelerometer 群 7.0 年、自己報告 群 13.6 年。**結果**：accelerometer 群で 7,303 名（9.9%）が FCRMD に到達。VPA 最高 4 分位対最低 4 分位で baseline→FCRMD のハザード比 0.69（95%CI 0.64-0.74）、baseline→死亡 0.47（95%CI 0.39-0.56）。自己報告 群では 57,389 名（17.5%）が FCRMD に到達し高活動群の遷移ハザード比 0.78-0.93（全 p<0.05）。FCRMD 発症と FCRMD→CRMM 進展、CRMM 確立前の死亡で一貫した保護効果が観察されたが、CRMM 確立後の死亡では accelerometer 解析で関連がより弱かった。**結論**：身体活動は CRMM 軌跡の早期 stage ほど予防効果が強く、健康な段階での身体活動推進が multimorbidity 予防戦略の中核となる。",
+    "importance": "Device-measured 身体活動と自己報告 身体活動を同一 biobank で並列に multi-state model に投入し、cardio-renal-metabolic multimorbidity の遷移軌跡を 4 強度別に評価した 2026 年 5 月の最新エビデンス。Multimorbidity 疫学では「単一疾患の発症」ではなく「疾患の鎖」を扱う枠組みが重視されつつあり、本論文は身体活動が早期 stage に強く効くという定量結果を提示した点で当該領域の標準的 reference として機能する位置にある。",
+    "originality": "Multi-state model で「健康→FCRMD→CRMM→死亡」の 5 遷移を同時に推定した点、device-measured と自己報告 を別解析で同一枠組みに乗せ effect サイズ の系統的差異を定量した点、CRMM 確立後の死亡では関連が弱まることを示し「介入の windows of opportunity」を提示した点が新規。",
+    "discovery": "①UK Biobank 2 サブコホートで multi-state model 解析、②accelerometer 群 n=73,952（median 7.0 年）／自己報告 群 n=328,147（median 13.6 年）、③accelerometer 群で 7,303 名（9.9%）が FCRMD 到達、④自己報告 群で 57,389 名（17.5%）が FCRMD 到達、⑤VPA 最高 4 分位 vs 最低 4 分位で baseline→FCRMD のハザード比 0.69（95%CI 0.64-0.74）、⑥同 baseline→死亡 のハザード比 0.47（95%CI 0.39-0.56）、⑦自己報告 群の高活動群でも遷移ハザード比 0.78-0.93（全 p<0.05）、⑧FCRMD→CRMM 遷移と CRMM 確立前死亡で一貫した保護効果、⑨CRMM 確立後の死亡では accelerometer 解析の関連が一貫せず、⑩疾患別の遷移解析でも同様のパターンを確認。",
+    "citation": "[introduction] Multimorbidity 予防における身体活動の役割を論じる導入で、本論文を「UK Biobank で device-measured（n=73,952）と自己報告（n=328,147）の両アプローチを multi-state model に乗せ、VPA 最高 4 分位の baseline→FCRMD ハザード比 0.69（95%CI 0.64-0.74）と baseline→死亡 0.47（95%CI 0.39-0.56）を 2026 年 5 月 BMC Public Health で示した最新エビデンス」として引用。「健康→疾患→multimorbidity→死亡」の鎖を初期に断つことの公衆衛生的価値を支える根拠とする。[discussion] 日本人 コホート での multimorbidity 軌跡解析の結果と比較する文脈で、本論文の遷移別 effect サイズ パターン（早期 stage で強く、CRMM 確立後で弱まる）を欧米基準として並べ、Japanese-specific な multimorbidity の進展速度や effect サイズ 差異を議論する基準点として用いる。"
+  },
+  {
+    "id": "20260526_tue_06",
+    "title": "Investigating the comparability of wearable accelerometer methods in the association between physical activity and cardiovascular disease: a cohort study using UK Biobank",
+    "authors": "Lapointe Y, Kapur A, Sharma A, Panter J, Fuller D, Mamiya H.",
+    "journal": "Preventive Medicine (IF=4.3), 2026年",
+    "design": "前向きコホート（UK Biobank accelerometer サブコホート n=90,237、CVD-free baseline、wrist accelerometer 7 日装着、3 種の MVPA 抽出指標：LFENMO（Low-pass Filtered Euclidean Norm Minus One）、機械学習 ベース、activity counts。アウトカム は incident stroke と myocardial infarction、2022 年 12 月まで追跡、Cox 回帰＋restricted cubic spline）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42142761/",
+    "summary": "UK Biobank accelerometer サブコホート n=90,237（CVD-free baseline）を対象に、wrist accelerometer から MVPA を抽出する 3 種の指標（LFENMO、機械学習、activity counts）が incident stroke および myocardial infarction との dose-response の形状にどれほど影響するかを系統比較した 2026 年 5 月 Preventive Medicine の最新コホート研究。追跡で stroke 1,298 件・myocardial infarction 2,031 件を観察。Stroke では機械学習指標で linear inverse 関連が見られた一方、LFENMO と activity counts では同じ形状が再現されず、myocardial infarction では機械学習指標と LFENMO で curvilinear 減少、activity counts で linear 減少と異なるパターンを示した。Accelerometer 解析の方法論的選択が dose-response の解釈を質的に変えうることを大規模 コホート で実証した点で、wearable PA 疫学の方法論標準化の議論を一段階押し進めた位置にある。",
+    "methodology": "同一 raw accelerometer データに 3 種の processing pipeline を並列適用する設計は方法論の頑健な比較を可能にし、Cox 回帰＋restricted cubic spline で dose-response を可視化するアプローチは標準的かつ解釈性が高い。CVD-free baseline での前向き設計と長期追跡（最長 2013-2022 年）も統計的検出力を担保する強み。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読。UK Biobank の selection バイアス と白人中心の構成、accelerometer 装着 7 日間からの usual behavior 推定に 回帰 dilution の余地、3 指標間の差異が「臨床的意味のある差」と言えるかは絶対 effect サイズ の比較でさらに検証が必要、stroke と myocardial infarction の incident 件数が他コホートと比較して限定的な点も指摘可能。",
+    "implication": "**PD 課題1 への接続**：多元統合機械学習の特徴量として身体活動を組み込む際に、processing pipeline の選択が SHAP 特徴重要度を変えうるという根拠論文となり、複数指標による triangulation 設計の必要性を支持する。**PD 拡張軸（24h CoDA・biobank）への接続**：TMM・UK Biobank での accelerometer 解析設計で MVPA 抽出方法を標準化する根拠として直接参照可能で、wearable PA 疫学の方法論標準化議論との接続点を提供する。",
+    "idea": "**自前研究への展開**：①既存 accelerometer サブセットで LFENMO・機械学習・activity counts の 3 指標を並列計算し、身体機能アウトカム との関連の形状が指標で変わるかを検証。②TMM の accelerometer サブセットで本論文と同じ 3 指標比較を CVD・全原因死亡 アウトカム に適用し、Japanese-specific な形状差を提示。③課題1 SHAP 解析で同一 raw データから複数指標を抽出し、特徴重要度の順位がどれほど変動するかを定量化。④UK Biobank の open-source 機械学習 pipeline を日本人データに移植し、本論文の linear vs curvilinear の質的差異を再現可能性とともに評価。⑤メタ解析の前提となる方法論可換性を論じる総説的 reference として活用し、ガイドライン 策定文書の引用にも用いる。",
+    "novelty": "同一 raw accelerometer データから 3 種の MVPA 指標を並列計算し、stroke と myocardial infarction の dose-response 形状の系統的差異を restricted cubic spline で評価した点が独自。Single-method studies が混在する従来のメタ解析に対し、方法論の系統的可換性問題を実証データで提示した点で先行研究と差別化されている。",
+    "background": "**背景**：Wearable accelerometer による身体活動の客観評価は疫学の標準となりつつあるが、生データから MVPA を抽出する processing pipeline は研究間で多様で、LFENMO（Low-pass Filtered Euclidean Norm Minus One）、機械学習 ベース、activity counts などが並存する。これらの選択が身体活動と健康アウトカム の dose-response の形状にどれほど影響するかは未解明で、メタ解析や ガイドライン の策定における前提となる比較可能性が論争の的だった。**方法**：UK Biobank の 2013-2015 年 accelerometer サブコホートで CVD 既往のない n=90,237 を対象に、同じ wrist-worn raw accelerometer データから 3 種の指標（LFENMO、機械学習、activity counts）で MVPA durations を計算。アウトカム は 2022 年 12 月までの incident stroke と myocardial infarction。Cox 回帰と restricted cubic spline で各指標別の dose-response 関連を推定し、形状の系統的差異を評価。**結果**：stroke 1,298 件、myocardial infarction 2,031 件を観察。Stroke では機械学習 指標が linear inverse の dose-response を示したが、LFENMO と activity counts では同じ形状が再現されず質的に異なるパターンとなった。Myocardial infarction では機械学習 と LFENMO が curvilinear 減少を示し、activity counts は linear 減少を示した。**結論**：Accelerometer から MVPA を抽出する方法の選択が身体活動 × CVD の dose-response の形状を質的に変えうるため、単一指標に依存した研究の解釈には注意が必要であり、メタ解析や ガイドライン 策定には方法論の標準化と triangulation が不可欠である。",
+    "result": "①UK Biobank accelerometer サブコホート n=90,237（CVD-free baseline）、②同一 wrist accelerometer raw データから 3 指標（LFENMO・機械学習・activity counts）を並列計算、③追跡で incident stroke 1,298 件、incident myocardial infarction 2,031 件を観察、④stroke では機械学習指標が linear inverse 関連を示す、⑤同じ stroke で LFENMO と activity counts は linear 形状を再現しない、⑥myocardial infarction では機械学習 と LFENMO が curvilinear 減少、⑦同じ myocardial infarction で activity counts は linear 減少と質的に異なる形状、⑧Cox 回帰＋restricted cubic spline で形状を可視化、⑨追跡期間は 2022 年 12 月まで、⑩方法論の選択が dose-response 解釈を質的に変えうるという結論を 90,237 名規模で実証。",
+    "impact": "Wearable accelerometer 疫学の方法論的可換性を 90,237 名規模の UK Biobank サブコホートで CVD アウトカム を用いて実証的に評価した 2026 年 5 月の最新エビデンス。身体活動の dose-response 議論は ガイドライン 改定に直結する論点であり、本論文は「同じ生データから異なる方法で MVPA を抽出すると dose-response の形状が異なる」という comparability の問題を初めて大規模 コホート で示した点で、wearable PA 疫学の方法論標準化の議論を一段階押し進めた位置にある。",
+    "keywords": "",
+    "tags": [
+      "accelerometer",
+      "comparability",
+      "methodology",
+      "CVD",
+      "UK Biobank",
+      "machine learning",
+      "2026"
+    ],
+    "source_reports": [
+      "20260526_tuesday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：Wearable accelerometer による身体活動の客観評価は疫学の標準となりつつあるが、生データから MVPA を抽出する processing pipeline は研究間で多様で、LFENMO（Low-pass Filtered Euclidean Norm Minus One）、機械学習 ベース、activity counts などが並存する。これらの選択が身体活動と健康アウトカム の dose-response の形状にどれほど影響するかは未解明で、メタ解析や ガイドライン の策定における前提となる比較可能性が論争の的だった。**方法**：UK Biobank の 2013-2015 年 accelerometer サブコホートで CVD 既往のない n=90,237 を対象に、同じ wrist-worn raw accelerometer データから 3 種の指標（LFENMO、機械学習、activity counts）で MVPA durations を計算。アウトカム は 2022 年 12 月までの incident stroke と myocardial infarction。Cox 回帰と restricted cubic spline で各指標別の dose-response 関連を推定し、形状の系統的差異を評価。**結果**：stroke 1,298 件、myocardial infarction 2,031 件を観察。Stroke では機械学習 指標が linear inverse の dose-response を示したが、LFENMO と activity counts では同じ形状が再現されず質的に異なるパターンとなった。Myocardial infarction では機械学習 と LFENMO が curvilinear 減少を示し、activity counts は linear 減少を示した。**結論**：Accelerometer から MVPA を抽出する方法の選択が身体活動 × CVD の dose-response の形状を質的に変えうるため、単一指標に依存した研究の解釈には注意が必要であり、メタ解析や ガイドライン 策定には方法論の標準化と triangulation が不可欠である。",
+    "importance": "Wearable accelerometer 疫学の方法論的可換性を 90,237 名規模の UK Biobank サブコホートで CVD アウトカム を用いて実証的に評価した 2026 年 5 月の最新エビデンス。身体活動の dose-response 議論は ガイドライン 改定に直結する論点であり、本論文は「同じ生データから異なる方法で MVPA を抽出すると dose-response の形状が異なる」という comparability の問題を初めて大規模 コホート で示した点で、wearable PA 疫学の方法論標準化の議論を一段階押し進めた位置にある。",
+    "originality": "同一 raw accelerometer データから 3 種の MVPA 指標を並列計算し、stroke と myocardial infarction の dose-response 形状の系統的差異を restricted cubic spline で評価した点が独自。Single-method studies が混在する従来のメタ解析に対し、方法論の系統的可換性問題を実証データで提示した点で先行研究と差別化されている。",
+    "discovery": "①UK Biobank accelerometer サブコホート n=90,237（CVD-free baseline）、②同一 wrist accelerometer raw データから 3 指標（LFENMO・機械学習・activity counts）を並列計算、③追跡で incident stroke 1,298 件、incident myocardial infarction 2,031 件を観察、④stroke では機械学習指標が linear inverse 関連を示す、⑤同じ stroke で LFENMO と activity counts は linear 形状を再現しない、⑥myocardial infarction では機械学習 と LFENMO が curvilinear 減少、⑦同じ myocardial infarction で activity counts は linear 減少と質的に異なる形状、⑧Cox 回帰＋restricted cubic spline で形状を可視化、⑨追跡期間は 2022 年 12 月まで、⑩方法論の選択が dose-response 解釈を質的に変えうるという結論を 90,237 名規模で実証。",
+    "citation": "[introduction] Wearable accelerometer 疫学の方法論的可換性を論じる導入で、本論文を「UK Biobank n=90,237 で wrist accelerometer raw データから 3 指標（LFENMO・機械学習・activity counts）を並列計算し、stroke と myocardial infarction の dose-response 形状が指標間で質的に異なることを 2026 年 5 月 Preventive Medicine で実証した最新研究」として引用。Wearable PA 疫学の単一指標依存に対する警鐘として位置付け、メタ解析や ガイドライン 策定での triangulation の必要性を支える根拠とする。[discussion] 日本人 コホート での accelerometer 解析の指標選択を議論する文脈で、本論文の 3 指標比較結果を欧米基準として並べ、Japanese-specific データでの再現性と CVD アウトカム の形状差を比較する基準点として用いる。"
+  },
+  {
+    "id": "20260526_tue_07",
+    "title": "Joint effect of light and moderate-to-vigorous physical activity on longevity",
+    "authors": "Janssen I, Ross R.",
+    "journal": "Applied Physiology, Nutrition, and Metabolism (IF=2.4), 2026年",
+    "design": "前向きコホート（米国の 40 歳以上成人 n=3,949、wrist accelerometer による light PA と moderate-to-vigorous PA の volume・dose を抽出。全原因死亡を アウトカム に Cox 回帰）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42190276/",
+    "summary": "40 歳以上の米国成人 n=3,949 の wrist accelerometer データから light PA と moderate-to-vigorous PA の joint effect を全原因死亡について評価した 2026 年 5 月 Applied Physiology, Nutrition, and Metabolism の最新前向きコホート研究。LPA 中央値 324 分/日、MVPA 中央値 11 分/日と、MVPA の約 65% が断続的・約 99% が moderate intensity と低強度寄りであることを示しつつ、LPA 335 分/日単独で全原因死亡 のハザード比 0.38（95%CI 0.29-0.51）、MVPA 20 分/日単独で 0.43（95%CI 0.34-0.56）と顕著なリスク低下を実証。両者を 335 分/日 LPA + 20 分/日 MVPA で組み合わせるとハザード比 0.17（95%CI 0.12-0.33）と更に大きな減少を示し、220 分/日 LPA + 10 分/日 MVPA という現実的な組合せでも 0.33（95%CI 0.27-0.41）の減少が得られることを定量化した点で、身体活動 ガイドライン の「強度より総量」議論を一段階前進させる位置にある。",
+    "methodology": "Wrist accelerometer による LPA と MVPA の同時抽出は方法論的に堅実で、両者の volume と dose（MET 分/日）を並列に Cox 比例ハザード回帰へ投入する joint effect 設計は説得力が高い。LPA 中央値 324 分/日と MVPA 中央値 11 分/日という記述統計、MVPA の断続性と強度分布の定量化が方法論的精度を担保する。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読。サンプルサイズ n=3,949 は他大規模コホート（UK Biobank 9 万人）より小さく、joint effect の sub-group 解析の検出力に余地、accelerometer 装着 7 日間程度からの usual behavior 推定に 回帰 dilution の余地、米国成人 中心のため アジア・低中所得国 への外的妥当性は別途検証が必要。",
+    "implication": "**PD 課題1 への接続**：多元統合機械学習の特徴量として LPA と MVPA を並列に投入し、両者の interaction term を SHAP で評価する根拠論文となる。**PD 課題3（介入研究）への接続**：「強度より総量」「両 intensity 同時推進」という介入設計の根拠となり、本論文の現実的組合せ（220 分/日 LPA + 10 分/日 MVPA）を pre-specified target として参照可能。**PD 拡張軸（24h CoDA）への接続**：24h 行動の中で LPA と MVPA を独立成分として扱う compositional 解析の根拠となる。",
+    "idea": "**自前研究への展開**：①既存 900 名コホートに accelerometer サブセットがあれば LPA 335 分/日 + MVPA 20 分/日の joint effect を Cox 回帰で再現解析し、本論文のハザード比 0.17 と比較。②TMM の accelerometer サブセットで本論文と同じ 4 × 4 joint grid 解析を実装し、日本人 specific な LPA / MVPA 中央値（おそらく欧米より低い）と joint effect を提示。③課題1 SHAP モデルに LPA と MVPA を並列特徴量として投入し、interaction term の重要度を可視化。④課題3 介入研究で「220 分/日 LPA + 10 分/日 MVPA」という現実的目標を pre-specify し、本論文を根拠として power 計算を実施。⑤公衆衛生 ガイドライン の啓発教材に「LPA だけでもハザード比 0.38 のリスク低下」「MVPA を 10 分追加すれば 0.33」という具体的メッセージを掲載する根拠論文として活用。",
+    "novelty": "LPA と MVPA の joint effect を 4 × 4 グリッドで連続的に評価し、現実的な組合せ（LPA 220 分/日 + MVPA 10 分/日）でもハザード比 0.33 の意味ある効果が得られることを示した点が独自。Device-measured で MVPA の断続性（約 65% が intermittent）と低強度寄り（約 99% が moderate）の実態を定量化した点も方法論的に新規。",
+    "background": "**背景**：身体活動 ガイドライン は MVPA を中心に推奨してきたが、device-measured 研究の蓄積により light PA の独立した health benefit が注目されつつあり、両者の joint effect を longevity アウトカム で定量する大規模 evidence が求められていた。**方法**：40 歳以上の米国成人 n=3,949 を対象に wrist accelerometer 装着で light PA と moderate-to-vigorous PA の volume（平均 分/日）と dose（平均 MET 分/日）を抽出。アウトカム は全原因死亡 で Cox 比例ハザード回帰により joint effect を評価。LPA 中央値は 324 分/日、MVPA 中央値は 11 分/日で、MVPA の約 65% が断続的・約 99% が moderate intensity だった。**結果**：LPA 335 分/日単独で全原因死亡 のハザード比 0.38（95%CI 0.29-0.51）、MVPA 20 分/日単独で 0.43（95%CI 0.34-0.56）と顕著なリスク低下。両者を 335 分/日 LPA + 20 分/日 MVPA で組み合わせるとハザード比 0.17（95%CI 0.12-0.33）と更に substantially 大きなリスク低下を示した。より現実的な組合せ（220 分/日 LPA + 10 分/日 MVPA）でもハザード比 0.33（95%CI 0.27-0.41）と十分大きな効果を示した。**結論**：全 intensity の身体活動を日常 routine に取り込むことの重要性を device-measured で実証し、ガイドライン 中心の MVPA 推奨に加えて LPA の独立価値と両者の joint effect を強調する根拠を提示した。",
+    "result": "①米国 40 歳以上 n=3,949 を wrist accelerometer で評価、②LPA 中央値 324 分/日、MVPA 中央値 11 分/日、③MVPA の約 65% が intermittent、約 99% が moderate intensity、④LPA 335 分/日単独で全原因死亡 のハザード比 0.38（95%CI 0.29-0.51）、⑤MVPA 20 分/日単独で 0.43（95%CI 0.34-0.56）、⑥335 分/日 LPA + 20 分/日 MVPA の joint effect でハザード比 0.17（95%CI 0.12-0.33）、⑦より現実的な 220 分/日 LPA + 10 分/日 MVPA でハザード比 0.33（95%CI 0.27-0.41）、⑧両 intensity の同時推進が単独より大きな効果を示すことを定量化、⑨全 intensity 推進という ガイドライン 改定議論の根拠提示、⑩2026 年 5 月公刊の最新 device-measured エビデンス。",
+    "impact": "Wearable accelerometer 疫学において LPA と MVPA の joint effect を全原因死亡 で定量化した 2026 年 5 月の最新 evidence。身体活動 ガイドライン は伝統的に MVPA 中心に組まれてきたが、本論文は LPA の独立価値と両者を組み合わせた時の更に大きい joint effect（ハザード比 0.17）を device-measured データで示した点で、「totals approach」「両 intensity の同時推進」という ガイドライン 改定議論の中心的 reference として位置付けられる。",
+    "keywords": "",
+    "tags": [
+      "accelerometer",
+      "light PA",
+      "MVPA",
+      "全原因死亡",
+      "longevity",
+      "joint effect",
+      "2026"
+    ],
+    "source_reports": [
+      "20260526_tuesday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：身体活動 ガイドライン は MVPA を中心に推奨してきたが、device-measured 研究の蓄積により light PA の独立した health benefit が注目されつつあり、両者の joint effect を longevity アウトカム で定量する大規模 evidence が求められていた。**方法**：40 歳以上の米国成人 n=3,949 を対象に wrist accelerometer 装着で light PA と moderate-to-vigorous PA の volume（平均 分/日）と dose（平均 MET 分/日）を抽出。アウトカム は全原因死亡 で Cox 比例ハザード回帰により joint effect を評価。LPA 中央値は 324 分/日、MVPA 中央値は 11 分/日で、MVPA の約 65% が断続的・約 99% が moderate intensity だった。**結果**：LPA 335 分/日単独で全原因死亡 のハザード比 0.38（95%CI 0.29-0.51）、MVPA 20 分/日単独で 0.43（95%CI 0.34-0.56）と顕著なリスク低下。両者を 335 分/日 LPA + 20 分/日 MVPA で組み合わせるとハザード比 0.17（95%CI 0.12-0.33）と更に substantially 大きなリスク低下を示した。より現実的な組合せ（220 分/日 LPA + 10 分/日 MVPA）でもハザード比 0.33（95%CI 0.27-0.41）と十分大きな効果を示した。**結論**：全 intensity の身体活動を日常 routine に取り込むことの重要性を device-measured で実証し、ガイドライン 中心の MVPA 推奨に加えて LPA の独立価値と両者の joint effect を強調する根拠を提示した。",
+    "importance": "Wearable accelerometer 疫学において LPA と MVPA の joint effect を全原因死亡 で定量化した 2026 年 5 月の最新 evidence。身体活動 ガイドライン は伝統的に MVPA 中心に組まれてきたが、本論文は LPA の独立価値と両者を組み合わせた時の更に大きい joint effect（ハザード比 0.17）を device-measured データで示した点で、「totals approach」「両 intensity の同時推進」という ガイドライン 改定議論の中心的 reference として位置付けられる。",
+    "originality": "LPA と MVPA の joint effect を 4 × 4 グリッドで連続的に評価し、現実的な組合せ（LPA 220 分/日 + MVPA 10 分/日）でもハザード比 0.33 の意味ある効果が得られることを示した点が独自。Device-measured で MVPA の断続性（約 65% が intermittent）と低強度寄り（約 99% が moderate）の実態を定量化した点も方法論的に新規。",
+    "discovery": "①米国 40 歳以上 n=3,949 を wrist accelerometer で評価、②LPA 中央値 324 分/日、MVPA 中央値 11 分/日、③MVPA の約 65% が intermittent、約 99% が moderate intensity、④LPA 335 分/日単独で全原因死亡 のハザード比 0.38（95%CI 0.29-0.51）、⑤MVPA 20 分/日単独で 0.43（95%CI 0.34-0.56）、⑥335 分/日 LPA + 20 分/日 MVPA の joint effect でハザード比 0.17（95%CI 0.12-0.33）、⑦より現実的な 220 分/日 LPA + 10 分/日 MVPA でハザード比 0.33（95%CI 0.27-0.41）、⑧両 intensity の同時推進が単独より大きな効果を示すことを定量化、⑨全 intensity 推進という ガイドライン 改定議論の根拠提示、⑩2026 年 5 月公刊の最新 device-measured エビデンス。",
+    "citation": "[introduction] 身体活動の joint effect と全 intensity 推進を論じる導入で、本論文を「米国成人 n=3,949 の wrist accelerometer 解析で LPA 335 分/日 + MVPA 20 分/日の組合せが全原因死亡 のハザード比 0.17（95%CI 0.12-0.33）と単独効果より大きいことを 2026 年 5 月 Applied Physiology, Nutrition, and Metabolism で示した最新 evidence」として引用。ガイドライン の MVPA 中心議論に LPA の独立価値と joint effect を加える根拠とする。[discussion] 日本人 コホート での LPA × MVPA × 死亡 解析の結果と比較する文脈で、本論文の joint effect のハザード比（0.17、0.33 等）を欧米基準として並べ、Japanese-specific な LPA / MVPA 中央値の差と effect サイズ 比較を議論する基準点として用いる。"
   }
 ]

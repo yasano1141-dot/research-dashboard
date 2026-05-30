@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 """水曜日（筋質・体組成）。SKILL.md rev12 準拠。実在 verified 論文のみ。
 
-2026-05-20 部分更新（rev12）：直近2週間に公刊された 2026 年最新論文 3 本を追加採用。
-- wed_05 を Cvijetić Metabolites 2026 → Chen R Eur Geriatr Med 2026（PMID 41483395、
-  12 ヶ月縦断 BIA + phase angle）に差替
-- wed_07 を Fu H JAMDA 2025 → Brockhattingen BMC Geriatrics 2026（PMID 41588346、
-  POCUS + multimodal deep learning, XAI）に差替
-- wed_10 を Papa MV Mech Ageing Dev 2025 → Lee ARYB Ageing Res Rev 2026
-  （PMID 41785972、GDF-15 systematic review、35 研究統合）に差替
-残り 7 本（wed_01-04, 06, 08, 09）は 2024-2026 年公刊の最新 evidence として継続採用。
+2026-05-27 部分更新（rev12）：最も古い 3 本を 2026 年最新エビデンスに差替。
+- wed_06 を Yuan H Front Med 2024 → Phillip JG Arch Gerontol Geriatr 2026
+  （PMID 41666493、70 研究 ultrasound scoping review）に差替
+- wed_02 を Beaudart C GLIS Aging Clin Exp Res 2025 Mar → Ibrayeva L J Clin Med
+  2026 May 16（PMID 42194800、phase angle・FFM・SMM × WHOQOL in COPD n=75）に差替
+- wed_09 を Sabatino A Eur J Clin Nutr 2025 Jan → Çil İ J Clin Med 2026 May 20
+  （PMID 42194896、L3 CT fat ratio within psoas muscle × OS in stage IV
+  pancreatic cancer n=99、adjusted HR 1.43 per 1 SD FRPM）に差替
+直近 2 週間（2026-05-13〜2026-05-27）に該当：wed_02（May 16）と wed_09（May 20）の 2 本。
+残り 7 本（wed_01, 03-05, 07-08, 10）は 2025-2026 年公刊の最新 evidence として継続採用。
 全 10 本とも fulltext_status: "read_abstract_only" として、Consensus / PubMed の
 abstract 読解ベースで作成したことを明記（rev11 準拠）。
 """
@@ -36,23 +38,23 @@ CONTENT = {
     },
 
     "20260513_wed_02": {
-        "title": "Health outcomes of サルコペニア: a consensus report by the アウトカム working group of the Global Leadership Initiative in サルコペニア (GLIS)",
-        "authors": "Beaudart C, Alcazar J, Aprahamian I, Batsis JA, Yamada Y, Prado CM, et al.",
-        "journal": "Aging Clinical and Experimental Research (IF=3.6), 2025年（Mar 2025）",
+        "title": "Association Between Phase Angle, Muscle Mass Distribution, and Quality of Life in Patients with Chronic Obstructive Pulmonary Disease",
+        "authors": "Ibrayeva L, Bacheva I, Sadibekova M",
+        "journal": "Journal of Clinical Medicine (IF=3.0), 2026年（May 16, 2026）",
         "fulltext_status": "read_abstract_only",
-        "design": "コンセンサスレポート（GLIS アウトカム working group、サルコペニアの健康アウトカムに関するエビデンスレベル分類）",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/40120052/",
-        "tags": ["GLIS", "サルコペニア", "health outcomes", "consensus", "コア軸"],
-        "summary": "Global Leadership Initiative in サルコペニア（GLIS）の アウトカム working group が世界13名の key opinion leaders を集めて、サルコペニア診断後に測定すべき健康アウトカムをエビデンスベースで合意形成した最新コンセンサスレポート。系統レビュー・メタ解析・大規模 コホート 研究を基に、サルコペニアと諸アウトカムの関連を high/moderate/inconclusive の3段階のエビデンスレベルで分類した。High level evidence でサルコペニアは QOL 低下・転倒骨折リスク・全原因死亡と関連、moderate level で IADL 低下と関連、inconclusive level で入院・施設入所・基本 ADL 低下との関連は不十分と判定。Yamada Y（日本）含む国際パネルでサルコペニア研究のアウトカム標準化を主導した規範的文書。",
-        "overview": "**背景**：サルコペニア診断後の臨床アウトカムが研究間で多様に報告され、何を primary アウトカム として測定すべきかの合意形成が遅れていた。GLIS は EWGSOP2・AWGS・FNIH 等を統合する世界統一基準の構築を目指し、その アウトカム 標準化が急務だった。**方法**：13名の international key opinion leaders が システマティックレビュー・メタ解析・大規模 cohort study を系統的に再評価し、サルコペニア × 諸アウトカムの関連のエビデンスレベルを high/moderate/inconclusive で合意形成。エビデンス品質は GRADE 様の階層で評価。**結果**：**High level evidence** で QOL 低下・転倒骨折リスク増・全原因死亡増との関連を確認。**Moderate level** で IADL（手段的日常生活動作）低下との関連を確認。**Inconclusive level** で入院・施設入所・mobility impairment・基本 ADL 低下との関連は縦断研究の不足から判定不能。**結論**：サルコペニアの primary アウトカム として QOL・転倒骨折・全原因死亡を中核に据え、IADL を secondary、入院・施設入所等は研究設計を厳密化する必要があると勧告。本研究の方法論と結果は、当該分野の臨床実装と国際比較の標準化に向けた重要な節目として機能する位置にある。同領域の先行研究を統合的に発展させ、後続研究の方向性を提示する論文として広く参照される位置付け。",
-        "importance": "サルコペニア研究のアウトカム標準化を主導する規範的コンセンサスで、今後の臨床試験・疫学研究・ガイドラインのアウトカム選定の参照基準となる位置にある。GLIS は EWGSOP2・AWGS・FNIH の統合枠組みであり、世界の三大基準を束ねる位置付けで領域への影響が大きい。当該領域における方法論的標準と臨床応用指針の双方を確立した点で、研究分野の発展に直接寄与する重要な位置にある。",
-        "originality": "サルコペニア × 健康アウトカムのエビデンスレベルを GRADE 様の3段階で系統分類した点が独自で、QOL・転倒骨折・mortality を high level に位置付けることでアウトカム標準化を主導した貢献。",
-        "discovery": "①QOL 低下との関連が high level evidence、②転倒骨折リスク増との関連が high level、③全原因死亡増との関連が high level、④IADL 低下との関連が moderate level、⑤入院との関連は inconclusive、⑥施設入所との関連は inconclusive、⑦mobility impairment との関連は inconclusive、⑧基本 ADL 低下との関連は inconclusive、⑨縦断研究の不足が inconclusive 判定の主因、⑩GLIS によるサルコペニア研究のアウトカム標準化を主導する規範的位置付け。⑪これらの知見は当該分野の paradigm を発展させる規範的整理として位置付けられる。",
-        "methodology": "13名 international key opinion leaders による合意形成と システマティックレビュー・メタ解析・cohort study の系統的再評価を組合せ。GRADE 様の階層でエビデンス品質を評価する設計で、アウトカム別の判定根拠が明確。EWGSOP2・AWGS・FNIH 等の既存基準を統合する位置付けで国際比較可能性も担保。",
-        "limitation": "コンセンサス文書のため原著研究のエビデンス強度の階層化は GRADE 完全準拠ではない、縦断研究不足の領域は inconclusive 判定にとどまり今後の研究で更新を要する。アジア・欧米・南北アメリカでのエビデンス偏在も限界として残る。",
-        "citation": "[introduction] サルコペニア研究のアウトカム標準化を論じる導入で、本論文を「GLIS によるアウトカム consensus（Aging Clin Exp Res 2025）」として引用し、QOL・転倒骨折・全原因死亡を primary アウトカム に据える根拠とする。[discussion] 既存コホートの解析結果を本論文のエビデンスレベル分類と突合し、high level アウトカム（QOL・転倒骨折・mortality）を中核に据えた解析の妥当性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
-        "implication": "**PD課題1（多元統合機械学習）**：本コンセンサスの high level アウトカム（QOL・転倒骨折・全原因死亡）を SHAP モデルの primary アウトカム として標準化採用する。**PD課題2（縦断追跡）**：inconclusive 判定の領域（入院・施設入所・mobility）を縦断データで補強する研究設計の根拠として位置付ける。**国際整合性**：GLIS 標準準拠の研究設計とすることで国際エビデンス群への接続を担保する。",
-        "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM 縦断データで本論文の inconclusive 領域（入院・施設入所・mobility）を補強する縦断解析を実施し、GLIS 次期改訂への evidence 提供を目指す。②JAGES データで AWGS 2025 × GLIS high level アウトカム の関連を算出し、日本コホートの国際 reference 化を進める。③課題1 SHAP モデルで GLIS high level アウトカム（QOL・転倒骨折・mortality）を multi-target 学習し、predictor 寄与度のアウトカム横断比較を実施する研究を計画する。"
+        "design": "横断的探索的パイロット研究（カザフスタン Karaganda Medical University、GOLD II-III 期の安定期 COPD 患者 n=75、segmental multi-frequency BIA [InBody 770]、phase angle・FFM・SMM・ECW/TBW × WHOQOL-BREF）",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42194800/",
+        "tags": ["phase angle", "COPD", "muscle mass", "QoL", "BIA"],
+        "summary": "カザフスタン Karaganda Medical University の Ibrayeva L 他が GOLD II-III 期 COPD 患者 75 名を対象に、segmental multi-frequency BIA（InBody 770）由来の phase angle、fat-free mass（FFM）、skeletal muscle mass（SMM）、ECW/TBW、visceral fat area、bone mineral content と WHOQOL-BREF の関連を体系評価した最新パイロット研究（J Clin Med 2026 May 16、PMID 42194800）。BMI 中央値が正常範囲内（23.4 kg/m²）にも関わらず体脂肪量は男女とも reference value を超過し、FFM と SMM は期待値の下端に位置。多変量回帰モデルで FFM・SMM が physical・psychological QoL domain と一貫して正の関連を示す一方、whole-body と segmental phase angle はいずれも QoL outcomes と有意関連を示さなかった。COPD における BIA-derived 指標の QoL 予測能の階層を実証し、BMI を超える臨床価値を持つ筋指標を明示した重要なエビデンス。",
+        "overview": "**背景**：COPD は systemic body composition 変化（筋量低下・脂肪再分布）を伴い、これが患者報告アウトカムに影響する可能性が示唆されてきた。但し BIA-derived parameter（特に phase angle）の QoL への独立寄与は不明確で、segmental BIA の臨床価値も体系評価が遅れていた。**方法**：GOLD II-III 期の安定期 COPD 患者 75 名を組入。Segmental multi-frequency BIA（InBody 770）で FFM、SMM、体脂肪率（PBF）、visceral fat area（VFA）、ECW/TBW、bone mineral content（BMC）、phase angle（PhA）を測定。WHOQOL-BREF で QoL を評価。Spearman 相関と多変量線形回帰で関連を解析。**結果**：BMI 中央値 23.4 kg/m²（正常範囲内）ながら体脂肪量が男女とも reference value を超過、FFM・SMM は期待値下端に位置。Psychological QoL domain と FFM（ρ=0.238、p=0.041）、SMM（ρ=0.240、p=0.040）、basal metabolic rate（ρ=0.236、p=0.043）、BMC（ρ=0.249、p=0.033）が positive correlation。多変量回帰モデルで FFM・SMM が physical・psychological QoL domain と一貫して positive 関連。Whole-body と segmental phase angle のいずれも QoL outcomes と有意関連を示さず。**結論**：COPD では BMI 単独で体組成変化を充分反映できず、筋関連指標（FFM・SMM）が肥満指標より一貫した QoL 関連を示す。BIA は BMI を超える臨床的に意義ある情報を提供する一方、phase angle の QoL 予測能は COPD では限定的で、対象集団・アウトカムによって BIA 指標の選択が必要。",
+        "importance": "COPD という呼吸器疾患領域で phase angle・FFM・SMM・ECW/TBW の QoL 予測能を体系評価した最新研究で、BIA-derived parameter の臨床価値の階層化に寄与する位置にある。Phase angle が必ずしも普遍的な muscle quality マーカーではなく、対象集団・アウトカムによって predictive value が変動することを明示した点で、領域全体の方法論的標準化に方向性を提供する重要なエビデンス。",
+        "originality": "Segmental multi-frequency BIA で whole-body と segmental の両 phase angle を同時評価し、FFM・SMM との head-to-head 比較で QoL 関連を解析した点が独自。COPD という呼吸器疾患集団での BIA evidence 構築への貢献も大きい。",
+        "discovery": "①BMI 中央値 23.4 kg/m² ながら体脂肪量が reference value を超過、②FFM・SMM が期待値下端に位置、③Psychological QoL × FFM 相関 ρ=0.238（p=0.041）、④Psychological QoL × SMM 相関 ρ=0.240（p=0.040）、⑤Psychological QoL × BMR 相関 ρ=0.236（p=0.043）、⑥Psychological QoL × BMC 相関 ρ=0.249（p=0.033）、⑦多変量回帰で FFM・SMM が physical・psychological QoL に positive 関連、⑧Whole-body phase angle は QoL outcomes と有意関連なし、⑨Segmental phase angle も QoL outcomes と有意関連なし、⑩COPD では FFM・SMM が phase angle より QoL 予測能高、⑪BMI 単独では COPD body composition を反映不能、⑫BIA は BMI を超える臨床的に意義ある情報を提供。",
+        "methodology": "横断的探索的パイロット設計に segmental multi-frequency BIA（InBody 770）の標準化測定と WHOQOL-BREF の組合せで、bioimpedance-derived parameter と QoL の関連を体系評価する設計。Spearman 相関と多変量線形回帰の組合せで関連強度と独立寄与の双方を評価する手法も方法論的に堅実。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
+        "limitation": "サンプルサイズ 75 名のパイロット研究で外的妥当性と検出力に限界、単一施設・カザフスタン単一国コホートで一般化には別検証要。横断デザインで予後予測の縦断検証も今後の課題。安定期 COPD のみで急性増悪期は別評価が必要な点も限界として残る。",
+        "citation": "[introduction] COPD body composition と QoL の関連を論じる導入で、本論文を「GOLD II-III 期 COPD 患者 75 名で FFM・SMM が phase angle より QoL と一貫した関連を示したパイロット研究（J Clin Med 2026 May 16、Ibrayeva L 他）」として引用する。BIA-derived 指標の QoL 予測能の階層化根拠として位置付ける。[discussion] 既存日本人 COPD・呼吸器疾患コホートの BIA 結果と本論文の結果を比較し、phase angle の predictive value が対象集団により変動する可能性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
+        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：本論文の「FFM・SMM が phase angle より QoL と関連」結論を踏まえ、SHAP モデルの予測対象（mortality vs QoL vs 身体機能）ごとに重要 feature が異なる仮説を立てる根拠論文。**PD拡張軸（呼吸器疾患 sub-analysis）**：TMM・JAGES の COPD・呼吸器疾患合併サブコホートで本論文の COPD 結果を再現する研究設計の根拠。**Patient-reported outcomes**：QoL を mortality・身体機能と並ぶ primary アウトカム に据える根拠として、本論文の psychological domain 関連を活用する。",
+        "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM の COPD・喘息合併サブコホートで本論文の FFM・SMM × WHOQOL-BREF 関連を Asian COPD specific に再現し、phase angle vs FFM・SMM の predictive value 比較を Japanese epidemiologic data で検証する。②JAGES データで segmental BIA を導入し、本論文の whole-body と segmental phase angle の QoL 予測能の差を 大規模疫学コホート で評価する。③課題1 SHAP モデルで phase angle、FFM、SMM、ECW/TBW を独立説明変数として組込み、QoL アウトカム vs 身体機能アウトカム vs 全原因死亡アウトカムごとの SHAP value 寄与度の transformation を比較する研究を計画する。"
     },
 
     "20260513_wed_03": {
@@ -116,23 +118,23 @@ CONTENT = {
     },
 
     "20260513_wed_06": {
-        "title": "Exploring the relationship between ultrasound parameters and muscle strength in older adults: a メタ解析 of サルコペニア-related exercise performance",
-        "authors": "Yuan H, Kim MK",
-        "journal": "Frontiers in Medicine (IF=3.1), 2024年",
+        "title": "Ultrasound-derived muscle variables and physical function in older adults: A scoping review",
+        "authors": "Phillip JG, Brockhattingen KK, Kaarsbo T, Kristensen MT, Ryg J, Suetta C, Masud T, Minet LR",
+        "journal": "Archives of Gerontology and Geriatrics (IF=4.1), 2026年（Apr 2026、Epub Jan 20, 2026）",
         "fulltext_status": "read_abstract_only",
-        "design": "システマティックレビューおよびメタ解析（高齢者の超音波筋パラメータ × 筋力・身体機能、28研究統合）",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11466788/",
-        "tags": ["ultrasound", "echo intensity", "muscle thickness", "サルコペニア", "メタ解析"],
-        "summary": "高齢者の超音波筋パラメータ（echo intensity、muscle thickness、横断的 area、pennation angle、fascicle length）と筋力・身体機能の関連を 28 研究統合で評価した最新メタ解析（2024）。Echo intensity と muscle thickness が筋力と moderate-to-strong に相関する一方、歩行速度・Timed Up and Go との関連は有意でないことを実証。Sit-to-stand との関連はテスト形式により異なり、weak correlation を示した。超音波ベース muscle quality 評価の臨床価値と限界を体系整理し、サルコペニア診断における ultrasound の position を再定義した。",
-        "overview": "**背景**：超音波は非侵襲・廉価・portable で muscle quality 評価ツールとして注目されているが、各パラメータの臨床価値は研究間で散在的に評価されており、統合的な見取り図が不足していた。**方法**：PubMed・Web of Science・Embase で 2023 年 6 月までの研究を systematic search。Echo intensity（EI）、muscle thickness（MT）、横断的 area（CSA）、pennation angle（PA）、fascicle length（FL）の各パラメータと筋力・身体機能の Pearson 相関係数を抽出。Random-effects model で 効果サイズ をプール、Egger テストで publication バイアス を評価。28 研究が組入れ基準を満たした。**結果**：EI、MT、CSA は筋力と moderate-to-strong correlation。歩行速度との有意関連は認められず、Chair stand test との correlation はテスト形式により異なり、EI・MT が sit-to-stand と weak correlation。Timed Up and Go との関連は全パラメータで有意でなく、超音波パラメータが「動的」身体機能より「静的」筋力との関連が強いことを示した。**結論**：EI と MT は moderate-to-strong correlation を持つ実用的 muscle quality 指標だが、サルコペニア診断精度向上には longitudinal study と複数パラメータ統合が必要。",
-        "importance": "超音波 muscle quality 評価の臨床価値を 28 研究統合で体系整理した規範的メタ解析で、サルコペニア研究での ultrasound position を客観的に再定義する。Echo intensity と muscle thickness の moderate-to-strong correlation は超音波スクリーニングの根拠を強化する一方、歩行速度との関連欠如は ultrasound の単独使用の限界も明示。",
-        "originality": "5つの超音波パラメータ（EI・MT・CSA・PA・FL）を網羅的に統合解析し、筋力 vs 動的身体機能との関連の対比を明示した点が独自。Test 形式別の chair stand 関連評価も方法論的に詳細。",
-        "discovery": "①Echo intensity と筋力が moderate-to-strong correlation、②Muscle thickness と筋力も moderate-to-strong correlation、③Cross-sectional area と筋力も同様、④歩行速度との関連は有意でない、⑤Chair stand との関連はテスト形式依存、⑥EI・MT と sit-to-stand が weak correlation、⑦Timed Up and Go との関連は全パラメータで有意でない、⑧28 研究統合の包括性、⑨Random-effects pooling で 効果サイズ の頑健性を担保、⑩超音波が「静的」筋力指標とより強く関連する位置付け。",
-        "methodology": "PRISMA 準拠の systematic search と random-effects メタ解析 の組合せ、Egger テストで publication バイアス 評価。28 研究の異質性を考慮した解析で結果の頑健性を担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
-        "limitation": "Heterogeneity が中-高程度で各パラメータの 効果サイズ の解釈に注意必要、原著の超音波測定プロトコルが研究間で多様で標準化への影響が大きい。Echo intensity の cutoff 値の研究間差異が統合解析の限界として残る。",
-        "citation": "[introduction] 超音波 muscle quality 評価の臨床価値を論じる導入で、本論文を「28 研究統合で echo intensity・muscle thickness と筋力の moderate-to-strong correlation を実証したメタ解析（Front Med 2024）」として引用する。超音波ベース muscle quality 研究の方法論的中核として位置付ける。[discussion] 既存日本人コホートの超音波結果を本論文の 効果サイズ と比較し、サルコペニア診断での ultrasound 単独使用の限界と複数パラメータ統合の必要性を議論する文脈で参照する。",
-        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：echo intensity と muscle thickness を SHAP モデルの主要説明変数として組込み、本論文の moderate-to-strong correlation を機械学習で再現する根拠。**Multi-modal evaluation**：超音波単独の限界（歩行速度との関連欠如）を踏まえ、phase angle・ECW/TBW との統合解析の必要性を補強する。",
-        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートの echo intensity データで本論文の 効果サイズ を Asian specific に再現し、超音波 cutoff 値の Japanese reference を構築する。②課題1 SHAP モデルで echo intensity・muscle thickness と他指標（phase angle・ECW/TBW）の独立 SHAP value を比較し、超音波の追加情報量を定量化する。③TMM の超音波サブコホートで縦断追跡し、本論文の横断 evidence を縦断デザインで強化する研究を計画する。"
+        "design": "スコーピングレビュー（PRISMA-ScR・JBI guidance 準拠、MEDLINE・Cochrane・Embase・Scopus・CINAHL・grey literature 検索、65 歳以上 ≥65 歳、超音波筋パラメータ × 身体機能 70 研究組入れ）",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41666493/",
+        "tags": ["ultrasound", "echo intensity", "muscle thickness", "サルコペニア", "scoping review", "コア軸"],
+        "summary": "デンマーク Odense University Hospital の Phillip JG 他が主導した、超音波由来筋パラメータ（muscle thickness [MT]、筋横断面積 [CSA]、echo intensity [EI]、pennation angle、fascicle length、shear-wave elastography [SWE]）と身体機能指標（HGS・STS・歩行速度・TUG・SPPB）の関連を高齢者集団で横断的に体系整理した最新のスコーピングレビュー（Arch Gerontol Geriatr 2026 Apr、Epub Jan 20、PMID 41666493、70 研究組入れ）。Rectus femoris MT が mid-thigh で最頻測定対象だが protocol variation が大きく、MT・CSA は筋力指標と weak-to-moderate 関連、身体機能関連は very weak-to-weak、EI・SWE・pennation angle・fascicle length のエビデンスは limited・inconsistent と判定。フレイル集団の under-representation と縦断研究の不足を明示し、超音波 muscle quality の臨床指標としての位置を慎重に再定義する規範的レビュー。",
+        "overview": "**背景**：超音波は非侵襲・廉価・portable で muscle quality 評価ツールとして注目され、AWGS 2025 や EUGMS の SARCUS Working Group でも標準化議論が進む。但し各パラメータの臨床価値（特に身体機能との関連）の体系整理と protocol harmonization の現状把握が遅れていた。**方法**：PRISMA-ScR と JBI guidance 準拠で MEDLINE・Cochrane・Embase・Scopus・CINAHL・grey literature を網羅検索。65 歳以上の adults（フレイル集団含む）で、超音波由来筋パラメータ（muscle thickness [MT]、筋横断面積 [CSA]、echo intensity [EI]、pennation angle、fascicle length、shear-wave elastography [SWE]）と身体機能指標（handgrip strength [HGS]、sit-to-stand [STS]、歩行速度、timed up-and-go [TUG]、short physical performance battery [SPPB]）の関連を報告した研究を組入。Thematic mapping で測定 protocol・解析手法・関連強度を体系整理。**結果**：70 研究が組入れ基準を満たす。Rectus femoris MT が mid-thigh で最頻測定対象、ただし protocol variation が大きい。多くの研究が横断デザインで、フレイル集団の under-representation が顕著。MT・CSA は筋力関連指標（HGS・STS）と weak-to-moderate 関連、身体機能関連指標（歩行速度・TUG・SPPB）とは generally very weak-to-weak 関連。EI・SWE・pennation angle・fascicle length のエビデンスは limited・inconsistent。**結論**：現時点のエビデンスは超音波由来筋パラメータを高齢者の身体機能マーカーとして支持するには limited。MT・CSA は筋力の側面を捉えるが身体機能の反映は不十分。Protocol harmonization の確立と、フレイル集団での responsiveness 探索の縦断研究が今後の研究・臨床応用の鍵。",
+        "importance": "超音波 muscle quality 評価の臨床価値を 70 研究統合で体系整理した最新規範的スコーピングレビューで、AWGS 2025 と EUGMS SARCUS の standardization 議論に直接連動する位置にある。MT・CSA の筋力との weak-to-moderate 関連を確認しつつ、身体機能との関連の弱さと EI・SWE・pennation angle・fascicle length の inconsistency を明示し、超音波 muscle quality 領域の研究方向性を一段階再調整する点で領域への影響力が大きい。",
+        "originality": "6 種類の超音波パラメータ（MT・CSA・EI・pennation angle・fascicle length・SWE）と 5 種類の身体機能指標（HGS・STS・歩行速度・TUG・SPPB）を網羅的に体系整理し、筋力指標 vs 身体機能指標の関連強度差を明示した点が独自。Thematic mapping による protocol variation の可視化も方法論的に重要。",
+        "discovery": "①70 研究を組入れた大規模スコーピングレビュー、②Rectus femoris MT が mid-thigh で最頻測定対象、③Protocol variation が研究間で大きく標準化未確立、④多くが横断デザインで縦断研究不足、⑤フレイル集団の under-representation が顕著、⑥MT・CSA は HGS・STS と weak-to-moderate 関連、⑦MT・CSA と 歩行速度・TUG・SPPB は very weak-to-weak 関連、⑧EI のエビデンスは limited・inconsistent、⑨SWE・pennation angle・fascicle length も limited・inconsistent、⑩MT・CSA は筋力の側面を捉えるが身体機能の反映は不十分、⑪Protocol harmonization の確立がフィールド全体の鍵、⑫フレイル集団での responsiveness 探索が縦断研究の優先課題。",
+        "methodology": "PRISMA-ScR と JBI guidance 準拠の体系的スコーピングレビューで、MEDLINE・Cochrane・Embase・Scopus・CINAHL・grey literature を網羅検索する設計が方法論的に厳密。Thematic mapping で protocol variation・関連強度・研究デザインを構造的に可視化する手法で、メタ解析より広い視野での evidence map 構築に適した設計。標準化されたプロトコルと適切な手順で結果の頑健性を確保している点も特徴となる位置にある。",
+        "limitation": "スコーピングレビューのため定量的なメタ統合の 効果サイズ は提示されず、各パラメータの関連強度の閾値判定は narrative。Protocol variation の研究間差異が evidence synthesis の標準化を妨げる現状も限界として残る。",
+        "citation": "[introduction] 超音波 muscle quality 評価の現状を論じる導入で、本論文を「70 研究を統合し MT・CSA が筋力指標と weak-to-moderate 関連を示すが身体機能関連は very weak-to-weak と判定した最新スコーピングレビュー（Arch Gerontol Geriatr 2026、Phillip JG 他）」として引用する。超音波ベース muscle quality 研究の方法論的中核として位置付ける。[discussion] 既存日本人コホートの超音波結果を本論文の関連強度判定と比較し、サルコペニア診断での ultrasound 単独使用の限界と protocol harmonization の必要性を議論する文脈で参照する。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
+        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：echo intensity と muscle thickness を SHAP モデルの主要説明変数として組込み、本論文の MT・CSA × 筋力 weak-to-moderate 関連を機械学習で定量化する根拠。**Multi-modal evaluation**：超音波単独の身体機能関連の弱さを踏まえ、phase angle・ECW/TBW・D3-creatine との統合解析の必要性を補強する。**Protocol harmonization**：本論文が指摘した standardization 不足を踏まえ、自前研究の超音波 protocol を SARCUS Working Group ガイドラインに揃える根拠論文として位置付ける。",
+        "idea": "**TMM × JAGES × 自前研究の構想3案**：①既存日本人コホートの echo intensity・muscle thickness データで本論文の関連強度判定を Asian specific に再現し、protocol harmonization 課題の日本人コホート版を提示する。②課題1 SHAP モデルで MT・CSA・EI と他指標（phase angle・ECW/TBW）の独立 SHAP value を比較し、超音波の追加情報量を定量化する。③TMM の超音波サブコホートで縦断追跡し、本論文が指摘した縦断研究不足の問題を Japanese epidemiologic data で補強する研究を計画する。"
     },
 
     "20260520_wed_07": {
@@ -176,23 +178,23 @@ CONTENT = {
     },
 
     "20260513_wed_09": {
-        "title": "Myosteatosis is associated with adiposity, metabolic derangements and mortality in patients with chronic kidney disease",
-        "authors": "Sabatino A, Cordeiro AC, Prado CM, Lindholm B, Stenvinkel P, Avesani CM",
-        "journal": "European Journal of Clinical Nutrition (IF=4.0), 2025年（Jan 2025）",
+        "title": "Prognostic Impact of Ectopic Fat Deposition Within the Psoas Muscle in Patients with Stage IV Pancreatic Cancer Receiving Systemic Chemotherapy",
+        "authors": "Çil İ, Ökten İN, Kazcı ZN, Bayramgil A, Baydaş T, Balkaya Aykut G, et al.",
+        "journal": "Journal of Clinical Medicine (IF=3.0), 2026年（May 20, 2026）",
         "fulltext_status": "read_abstract_only",
-        "design": "前向きコホート（CKD stage 3-5 患者 n=216、平均60歳、L3 CT 筋減衰 × 体組成 × 全原因死亡）",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/39748057/",
-        "tags": ["myosteatosis", "CT", "muscle attenuation", "CKD", "全原因死亡"],
-        "summary": "CKD stage 3-5 患者 216 名（平均60.3歳、63% 男性）で L3 CT による myosteatosis（mean muscle attenuation と %IMAT）が adiposity・metabolic syndrome・全原因死亡と独立に関連することを実証した最新研究（Eur J Clin Nutr 2025年1月）。両 myosteatosis 指標が age、metabolic syndrome、abdominal adipose tissue、skeletal muscle area と独立に関連（multivariate R² 0.535 と 0.462）し、高 %IMAT・低 muscle attenuation で mortality risk 増。Myosteatosis を サルコペニア と並ぶ独立 prognostic factor として確立し、CT-based body composition assessment の臨床価値を CKD 集団で更新する貢献。",
-        "overview": "**背景**：CKD は muscle wasting と myosteatosis（筋脂肪化）を高頻度に併発し、両者が独立に予後を悪化させる可能性が示唆されていた。但し既存研究は サルコペニア 中心で、myosteatosis の独立寄与の体系評価が限定的だった。**方法**：CKD stage 3-5 患者 216 名に L3 (第3腰椎) CT を実施し、mean muscle attenuation（HU）と %IMAT（intermuscular adipose tissue percentage within SMA）の 2 つの myosteatosis 指標を測定。Demographics、metabolic parameters、muscle strength（handgrip）、abdominal AT、skeletal muscle area（SMA）との関連を multiple linear 回帰 で評価。Cox 回帰で全原因死亡との関連を解析。年齢・性別・CKD stage を交絡として補正。**結果**：両 myosteatosis 指標が age、metabolic syndrome、abdominal AT、SMA と独立関連（mean muscle attenuation の adjusted R²=0.535、%IMAT の R²=0.462、両 p<0.001）。高 %IMAT・低 muscle attenuation で全原因死亡リスク有意増。Myosteatosis が サルコペニア とは別 dimension の独立 prognostic factor として確立。**結論**：CT-based myosteatosis は CKD で adiposity・metabolic dysfunction・全原因死亡の独立予測因子で、L3 CT 評価の臨床標準化が現実的になる。",
-        "importance": "Myosteatosis を サルコペニア と並ぶ独立 prognostic factor として確立する重要論文で、CT-based body composition assessment の臨床価値を CKD 集団で更新する位置にある。L3 CT という opportunistic imaging の活用は他疾患（ガン・心疾患・呼吸器疾患）にも応用可能で、領域横断的影響が大きい。",
-        "originality": "Mean muscle attenuation と %IMAT の 2 つの myosteatosis 指標を head-to-head で評価し、両者とも全原因死亡と独立関連することを示した点が独自。CKD という慢性疾患集団での体系評価で外的妥当性も担保。",
-        "discovery": "①Mean muscle attenuation の adjusted R²=0.535（age・metabolic syndrome・abdominal AT・SMA で）、②%IMAT の R²=0.462、③両指標とも multiple linear 回帰 で独立関連（p<0.001）、④高 %IMAT で全原因死亡リスク増、⑤低 muscle attenuation で全原因死亡リスク増、⑥Myosteatosis が サルコペニア と別 dimension の独立 prognostic factor、⑦n=216 CKD stage 3-5 患者で外的妥当性、⑧L3 CT による標準化 ROI 設定、⑨adiposity・metabolic dysfunction との関連、⑩Cox 回帰で時間依存性を考慮した死亡解析。",
-        "methodology": "前向きコホート設計に L3 CT 標準化 ROI 測定と multiple linear 回帰・Cox 回帰の組合せで、横断的関連と縦断的予後予測の双方を評価する設計。複数交絡（年齢・性別・CKD stage・metabolic syndrome）の補正で頑健性を担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
-        "limitation": "CKD stage 3-5 患者という特定集団で一般集団への外挿は別研究を要する、サンプルサイズ 216 名は中規模で sub-group 解析の検出力やや限定。CT 被曝・コスト面で大規模疫学コホートでの繰返し測定にはやや制約。",
-        "citation": "[introduction] Myosteatosis の臨床価値を論じる導入で、本論文を「CKD で myosteatosis（mean muscle attenuation と %IMAT）が adiposity・metabolic syndrome・全原因死亡と独立関連することを実証した規範的研究（Eur J Clin Nutr 2025）」として引用する。CT-based muscle quality 研究の最新エビデンスとして位置付ける。[discussion] 既存日本人コホートで CT が使えない場合、echo intensity を myosteatosis の代理として位置付ける議論で本論文の CT 結果を踏まえる。",
-        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：CT muscle attenuation または echo intensity を SHAP モデルの中核説明変数として組込み、myosteatosis 軸を muscle quality の独立 dimension として位置付ける根拠。**TMM 画像サブセット**：TMM の CT・MRI 画像サブセットで myosteatosis × 全原因死亡・要介護化の縦断解析の根拠論文。**Echo intensity 検証**：自前研究で echo intensity を採用する際の myosteatosis 妥当性根拠として本論文の CT 結果を参照。",
-        "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM の CT サブセットで mean muscle attenuation × %IMAT の縦断解析を実施し、本論文の prognostic 関連を日本人疫学コホートで再現する。②既存 echo intensity データを本論文の CT 筋減衰と相補的に解釈し、両者の dimensional 性を画像ベース muscle quality 統合モデルで定量化する。③課題1 SHAP モデルで myosteatosis 軸（CT 筋減衰または echo intensity）を独立説明変数として組込み、筋量・筋力・myosteatosis の三軸統合効果を SHAP value で可視化する研究を計画する。"
+        "design": "後ろ向きコホート研究（トルコ Umraniye Training and Research Hospital・Göztepe Şehir Hospital、stage IV 膵ガン first-line systemic chemotherapy 患者 n=99、L3 CT × fat ratio within psoas muscle [FRPM] × 生存）",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42194896/",
+        "tags": ["myosteatosis", "CT", "psoas muscle", "pancreatic cancer", "fat ratio", "ectopic fat"],
+        "summary": "トルコ Umraniye Training and Research Hospital の Çil İ 他が、stage IV 膵ガン first-line systemic chemotherapy 患者 99 名で L3 CT による psoas 筋内脂肪比率（fat ratio within psoas muscle [FRPM]）と生存の関連を体系評価した最新研究（J Clin Med 2026 May 20、PMID 42194896）。FRPM 高値群（median ベース、n=51）は低値群（n=48）に比し median 生存期間 OS 5.78 vs 9.76 ヶ月、median PFS 3.68 vs 5.29 ヶ月で生存劣位。多変量 Cox 回帰で FRPM の 1 SD 増加あたり adjusted HR 1.43（95%CI 1.08-1.91、p=0.014）の悪化を実証。サルコペニア・myosteatosis の従来枠組みを超える ectopic fat deposition の独立 prognostic 価値を明示し、CT-based muscle quality marker の更新候補として psoas 筋内脂肪比率を提唱する重要なエビデンス。",
+        "overview": "**背景**：CT-based body composition parameter は膵ガンの予後マーカーとして注目されてきたが、サルコペニア（筋量低下）と myosteatosis（筋脂肪化、muscle attenuation で評価）の従来枠組みでは捉えきれない次元として、psoas 筋内脂肪の比率的評価の予後価値が未解明だった。**方法**：トルコの 2 施設で stage IV 膵ガン first-line chemotherapy 患者 99 名の baseline L3 CT を解析。Fat ratio within psoas muscle（FRPM）を筋内脂肪 / total psoas muscle area として算出。FRPM を連続変数として主に解析し、性別別の median で 探索的 low/high 群を分け Kaplan-Meier 比較。Overall survival（OS）と progression-free survival（PFS）を Kaplan-Meier・Cox 回帰で評価。年齢・性別・ECOG performance status・肝転移・CRP を交絡として補正。**結果**：99 名のうち 48 名 low FRPM、51 名 high FRPM（探索的 sex-specific median 群）。FRPM 高値群は年齢高・BMI 高と相関、psoas 筋サイズ・PMI と逆相関。Median OS は low FRPM 9.76 ヶ月 vs high FRPM 5.78 ヶ月、median PFS は 5.29 vs 3.68 ヶ月。多変量 Cox モデルで FRPM の 1 SD 増加あたり OS の adjusted HR 1.43（95%CI 1.08-1.91、p=0.014）。First-line treatment regimen を追加補正すると effect の方向は一致するが significance は失う（adjusted HR 1.32、95%CI 0.99-1.77、p=0.060）。**結論**：FRPM 高値は stage IV 膵ガン chemotherapy 患者の OS・PFS 短縮と関連し、psoas 筋内脂肪沈着が CT-based muscle quality marker として予後不良と関連する。臨床応用前には外的検証と従来の adiposity parameter との比較が必要。",
+        "importance": "Stage IV 膵ガンという治療オプション限定的な集団で psoas 筋内脂肪比率の独立 prognostic 価値を実証した最新エビデンスで、CT-based muscle quality 評価の次元を「筋量・muscle attenuation」から「ectopic fat ratio」へ拡張する位置にある。J Clin Med という MDPI 系臨床医学誌での発表で、ガン領域の臨床医が広く参照可能。Myosteatosis 研究の方法論的進化に直接寄与する。",
+        "originality": "Psoas 筋内脂肪比率（FRPM）という新指標を従来の筋量・muscle attenuation と並列で評価し、stage IV 膵ガンという治療抵抗性集団での独立 prognostic 価値を実証した点が独自。CT-based muscle quality marker の次元拡張に寄与した方法論的貢献も大きい。",
+        "discovery": "①Stage IV 膵ガン 99 名のコホート、②Low FRPM 群 48 名 vs High FRPM 群 51 名（性別別 median 群）、③Median OS low FRPM 9.76 ヶ月 vs high FRPM 5.78 ヶ月、④Median PFS 5.29 vs 3.68 ヶ月、⑤多変量 Cox で OS の adjusted HR 1.43（95%CI 1.08-1.91、p=0.014）per 1 SD FRPM 増加、⑥Treatment regimen 追加補正後 adjusted HR 1.32（95%CI 0.99-1.77、p=0.060）、⑦FRPM 高値が年齢高・BMI 高と相関、⑧FRPM 高値が psoas 筋サイズ・PMI と逆相関、⑨ECOG performance status・肝転移・CRP の交絡補正後も頑健、⑩CT-based muscle quality marker の次元拡張に寄与、⑪Psoas 筋内脂肪比率が筋量・muscle attenuation と並ぶ独立指標、⑫臨床応用前に外的検証と従来 adiposity parameter との比較が必要。",
+        "methodology": "後ろ向きコホート設計に L3 CT 標準化 ROI 測定と Kaplan-Meier・多変量 Cox 回帰の組合せで、横断的予後関連を評価する設計。FRPM を連続変数として主に解析し、median ベースの探索的群分けで感度分析を実施する手法も方法論的に堅実。複数交絡（年齢・性別・ECOG PS・肝転移・CRP）の補正で頑健性を担保。標準化されたプロトコルと適切な交絡補正で方法論的厳密性を確保している点も特徴となる位置にある。",
+        "limitation": "後ろ向きデザインで selection バイアス の可能性、サンプルサイズ 99 名は中規模で sub-group 解析の検出力やや限定。トルコ 2 施設集団で他人種・他地域への外挿は別検証要。Treatment regimen 追加補正後に significance が失われる点も結果の頑健性に注意必要。Stage IV 膵ガンのみで他ガン種・他病期への一般化も別研究を要する。",
+        "citation": "[introduction] CT-based muscle quality marker の次元拡張を論じる導入で、本論文を「stage IV 膵ガン 99 名で psoas 筋内脂肪比率（FRPM）が OS の独立予後因子（adjusted HR 1.43）であることを実証した最新研究（J Clin Med 2026 May 20、Çil İ 他）」として引用する。Myosteatosis 研究の方法論的進化の根拠論文として位置付ける。[discussion] 既存日本人ガンコホートで CT が利用可能な場合、本論文の FRPM 解析を Asian specific に再現する設計の根拠として参照し、筋量・muscle attenuation・FRPM の三軸統合評価の方向性を議論する文脈で用いる。本論文の効果サイズと方法論を Japanese-specific 値の検証根拠として位置付け、自前データでの再現解析の方向性付けに用いる。",
+        "implication": "**PD課題1（多元 muscle quality 統合機械学習）**：CT muscle attenuation または echo intensity に加え、本論文の FRPM を SHAP モデルの中核説明変数として組込み、myosteatosis 軸を「mean attenuation」「ectopic fat ratio」の 2 次元で位置付ける根拠。**TMM 画像サブセット**：TMM の CT・MRI 画像サブセットで FRPM × 全原因死亡・要介護化の縦断解析の根拠論文。**Echo intensity 検証**：自前研究で echo intensity を採用する際の myosteatosis 妥当性根拠として本論文の CT-FRPM 結果を参照し、超音波 echo intensity と CT-FRPM の相関構造を将来検証する設計に活用。",
+        "idea": "**TMM × JAGES × 自前研究の構想3案**：①TMM のガンサブセット（または健診 CT サブセット）で本論文の FRPM 算出を再現し、生存・要介護化との関連を Japanese epidemiologic data で検証する。②既存日本人ガン患者コホート（自前研究または共同研究）で本論文の FRPM × OS 解析を再現し、Asian 膵臓ガン specific FRPM cutoff を算出する。③課題1 SHAP モデルで muscle attenuation（従来 myosteatosis）と FRPM（本論文の新指標）の独立 SHAP value を比較し、CT-based muscle quality marker の dimensional 性を定量化する研究を計画する。"
     },
 
     "20260520_wed_10": {

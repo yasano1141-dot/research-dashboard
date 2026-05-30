@@ -963,5 +963,115 @@
       "20260520_wed_10"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260523_saturday",
+    "date": "2026-05-23",
+    "weekday": "saturday",
+    "theme_jp": "AI・データ科学",
+    "theme_en": "ai-data-science",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260523_saturday.html",
+    "paper_ids": [
+      "20260523_sat_01",
+      "20260509_sat_02",
+      "20260509_sat_03",
+      "20260523_sat_04",
+      "20260509_sat_05",
+      "20260509_sat_06",
+      "20260509_sat_07",
+      "20260516_sat_08",
+      "20260516_sat_09",
+      "20260516_sat_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260524_sunday",
+    "date": "2026-05-24",
+    "weekday": "sunday",
+    "theme_jp": "遺伝子・オミクス",
+    "theme_en": "genetics-omics",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260524_sunday.html",
+    "paper_ids": [
+      "20260510_sun_01",
+      "20260510_sun_02",
+      "20260510_sun_03",
+      "20260524_sun_04",
+      "20260524_sun_05",
+      "20260524_sun_06",
+      "20260517_sun_07",
+      "20260517_sun_08",
+      "20260510_sun_09",
+      "20260517_sun_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260525_monday",
+    "date": "2026-05-25",
+    "weekday": "monday",
+    "theme_jp": "老年医学・健康寿命",
+    "theme_en": "geriatrics-healthspan",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260525_monday.html",
+    "paper_ids": [
+      "20260518_mon_01",
+      "20260511_mon_02",
+      "20260519_mon_03",
+      "20260511_mon_04",
+      "20260514_mon_05",
+      "20260511_mon_06",
+      "20260518_mon_07",
+      "20260511_mon_08",
+      "20260515_mon_09",
+      "20260518_mon_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260526_tuesday",
+    "date": "2026-05-26",
+    "weekday": "tuesday",
+    "theme_jp": "身体活動・運動疫学",
+    "theme_en": "physical-activity-epidemiology",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260526_tuesday.html",
+    "paper_ids": [
+      "20260519_tue_01",
+      "20260519_tue_02",
+      "20260512_tue_03",
+      "20260526_tue_04",
+      "20260512_tue_05",
+      "20260526_tue_06",
+      "20260526_tue_07",
+      "20260512_tue_08",
+      "20260519_tue_09",
+      "20260512_tue_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260527_wednesday",
+    "date": "2026-05-27",
+    "weekday": "wednesday",
+    "theme_jp": "筋質・体組成",
+    "theme_en": "muscle-body-composition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260527_wednesday.html",
+    "paper_ids": [
+      "20260513_wed_01",
+      "20260513_wed_02",
+      "20260513_wed_03",
+      "20260513_wed_04",
+      "20260520_wed_05",
+      "20260513_wed_06",
+      "20260520_wed_07",
+      "20260513_wed_08",
+      "20260513_wed_09",
+      "20260520_wed_10"
+    ],
+    "paper_count": 10
   }
 ]
