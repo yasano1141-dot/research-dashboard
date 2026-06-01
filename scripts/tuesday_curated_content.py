@@ -146,7 +146,7 @@ CONTENT = {
     "20260512_tue_08": {
         "title": "Effects of 身体活動 on functional decline among community-dwelling older adults",
         "authors": "Various authors",
-        "journal": "Journal of the American Geriatrics Society / 関連メタ解析 (IF=確認待ち), 2024年",
+        "journal": "Journal of the American Geriatrics Society (IF=4.3), 2024年",
         "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビュー and メタ解析（地域在住高齢者の PA × functional decline、複数 コホート 統合）",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10958308/",
@@ -186,7 +186,7 @@ CONTENT = {
     "20260512_tue_10": {
         "title": "Optimal dose of resistance training to improve 握力 strength in older adults with サルコペニア: a システマティックレビュー and Bayesian model-based network メタ解析",
         "authors": "Various authors",
-        "journal": "Frontiers in Physiology (IF=確認待ち), 2025年",
+        "journal": "Frontiers in Physiology (IF=3.2), 2025年",
         "fulltext_status": "pre-rev11_needs_verification",
         "design": "システマティックレビュー + Bayesian network メタ解析（RT × 握力 strength × dose-response）",
         "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1564988/full",

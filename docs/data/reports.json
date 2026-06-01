@@ -1073,5 +1073,108 @@
       "20260520_wed_10"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260528_thursday",
+    "date": "2026-05-28",
+    "weekday": "thursday",
+    "theme_jp": "脳・認知",
+    "theme_en": "brain-cognition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260528_thursday.html",
+    "paper_ids": [
+      "20260514_thu_01",
+      "20260514_thu_02",
+      "20260528_thu_03",
+      "20260521_thu_04",
+      "20260528_thu_05",
+      "20260521_thu_06",
+      "20260528_thu_07",
+      "20260514_thu_08",
+      "20260521_thu_09",
+      "20260514_thu_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260529_friday",
+    "date": "2026-05-29",
+    "weekday": "friday",
+    "theme_jp": "疫学方法論",
+    "theme_en": "epidemiology-methods",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260529_friday.html",
+    "paper_ids": [
+      "20260529_fri_03",
+      "20260529_fri_06",
+      "20260529_fri_09"
+    ],
+    "paper_count": 3
+  },
+  {
+    "id": "20260530_saturday",
+    "date": "2026-05-30",
+    "weekday": "saturday",
+    "theme_jp": "AI・データ科学",
+    "theme_en": "ai-data-science",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260530_saturday.html",
+    "paper_ids": [
+      "20260523_sat_01",
+      "20260517_sat_02",
+      "20260521_sat_03",
+      "20260523_sat_04",
+      "20260509_sat_05",
+      "20260518_sat_06",
+      "20260509_sat_07",
+      "20260516_sat_08",
+      "20260516_sat_09",
+      "20260516_sat_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260531_sunday",
+    "date": "2026-05-31",
+    "weekday": "sunday",
+    "theme_jp": "遺伝子・オミクス",
+    "theme_en": "genetics-omics",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260531_sunday.html",
+    "paper_ids": [
+      "20260520_sun_01",
+      "20260510_sun_02",
+      "20260520_sun_03",
+      "20260524_sun_04",
+      "20260526_sun_05",
+      "20260524_sun_06",
+      "20260517_sun_07",
+      "20260517_sun_08",
+      "20260519_sun_09",
+      "20260517_sun_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260601_monday",
+    "date": "2026-06-01",
+    "weekday": "monday",
+    "theme_jp": "老年医学・健康寿命",
+    "theme_en": "geriatrics-healthspan",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260601_monday.html",
+    "paper_ids": [
+      "20260518_mon_01",
+      "20260601_mon_02",
+      "20260519_mon_03",
+      "20260529_mon_04",
+      "20260514_mon_05",
+      "20260511_mon_06",
+      "20260518_mon_07",
+      "20260530_mon_08",
+      "20260515_mon_09",
+      "20260518_mon_10"
+    ],
+    "paper_count": 10
   }
 ]

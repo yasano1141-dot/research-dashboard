@@ -259,6 +259,72 @@ def check_paper(pid: str, paper: dict) -> tuple[list[str], int]:
         violations.append("  🚫 SKILL.md rev12: 公刊年が直近3年以内であること：")
         violations.extend(rev12_violations)
 
+    # rev13: ジャーナル IF・ジャーナル名・URL の strict 検証
+    rev13_violations = []
+    journal_field = str(paper.get("journal", ""))
+
+    # 1. IF placeholder 検出
+    PLACEHOLDER_IF_PATTERNS = [
+        r"IF\s*=\s*確認待ち",
+        r"IF\s*=\s*未確認",
+        r"IF\s*=\s*TBD",
+        r"IF\s*=\s*\?",
+        r"IF\s*=\s*tbd",
+    ]
+    for pat in PLACEHOLDER_IF_PATTERNS:
+        if re.search(pat, journal_field):
+            rev13_violations.append(
+                f"    - journal: IF プレースホルダー検出「{journal_field[:80]}」— 実値に修正必須"
+            )
+            break
+
+    # 2. 「関連雑誌」「関連メタ解析」「関連論文」「同分野」検出
+    VAGUE_JOURNAL_PATTERNS = [
+        r"関連雑誌",
+        r"関連メタ解析",
+        r"関連論文",
+        r"同分野",
+    ]
+    for pat in VAGUE_JOURNAL_PATTERNS:
+        if re.search(pat, journal_field):
+            rev13_violations.append(
+                f"    - journal: 曖昧表記「{journal_field[:80]}」— publisher 公式表記に修正必須"
+            )
+            break
+
+    # 3. ジャーナル名への日本語混入検出（IF=N/A や年表記の文脈外で）
+    # journal の先頭部分（IF= や , 年 の前）に日本語があるかチェック
+    journal_main = re.split(r"\s*\(IF=", journal_field, maxsplit=1)[0]
+    # 「Alzheimer's & 認知症」「ガン Research」など
+    JAPANESE_IN_JOURNAL = [
+        (r"認知症", "Dementia"),
+        (r"ガン(?!（)", "Cancer"),  # ガン（OR併記可）等の説明用は除外
+        (r"フレイル", "Frailty"),
+        (r"サルコペニア", "Sarcopenia"),
+    ]
+    for pat, en in JAPANESE_IN_JOURNAL:
+        if re.search(pat, journal_main):
+            rev13_violations.append(
+                f"    - journal: ジャーナル名に日本語混入「{journal_main[:60]}」→「{en}」に戻す必須"
+            )
+            break
+
+    # 4. IF=N/A は preprint/conference のみ許容
+    if re.search(r"IF\s*=\s*N/A", journal_field):
+        is_preprint_or_conf = any(
+            kw in journal_field.lower()
+            for kw in ["arxiv", "biorxiv", "medrxiv", "neurips", "icml", "cvpr",
+                       "iclr", "aaai", "kdd", "preprint", "proceedings"]
+        )
+        if not is_preprint_or_conf:
+            rev13_violations.append(
+                f"    - journal: IF=N/A は preprint/conference のみ許容「{journal_field[:80]}」— 実IFに修正必須"
+            )
+
+    if rev13_violations:
+        violations.append("  🚫 SKILL.md rev13: IF・ジャーナル名 strict 検証違反：")
+        violations.extend(rev13_violations)
+
     return violations, section_total
 
 
