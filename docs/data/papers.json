@@ -7687,7 +7687,8 @@
       "20260510_tuesday",
       "20260512_tuesday",
       "20260519_tuesday",
-      "20260526_tuesday"
+      "20260526_tuesday",
+      "20260602_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9131,7 +9132,8 @@
     ],
     "source_reports": [
       "20260519_tuesday",
-      "20260526_tuesday"
+      "20260526_tuesday",
+      "20260602_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9170,7 +9172,8 @@
     ],
     "source_reports": [
       "20260519_tuesday",
-      "20260526_tuesday"
+      "20260526_tuesday",
+      "20260602_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9209,7 +9212,8 @@
     ],
     "source_reports": [
       "20260519_tuesday",
-      "20260526_tuesday"
+      "20260526_tuesday",
+      "20260602_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9899,7 +9903,8 @@
       "2026"
     ],
     "source_reports": [
-      "20260526_tuesday"
+      "20260526_tuesday",
+      "20260602_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9937,7 +9942,8 @@
       "2026"
     ],
     "source_reports": [
-      "20260526_tuesday"
+      "20260526_tuesday",
+      "20260602_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -9975,7 +9981,8 @@
       "2026"
     ],
     "source_reports": [
-      "20260526_tuesday"
+      "20260526_tuesday",
+      "20260602_tuesday"
     ],
     "is_pd_related": false,
     "first_seen_date": "2026-05-08",
@@ -10579,5 +10586,123 @@
     "originality": "SHARE + ELSA の2 大規模 欧州 前向き コホート 統合 解析 が独自で、49,039名・9年 追跡・624 incident PD 例 という規模の Physical フレイル × 抑うつ × 認知 統合 評価 が方法論的に新規。PD 診断 前後 の軌跡 解析 で 3 ドメイン の time-course を 同時 評価 した点も既存研究にない貢献として位置付けられる。最 高リスク 軌跡 ハザード比 4.21 の 定量 化は precision neurology paradigm に新規 貢献。",
     "discovery": "①SHARE + ELSA 49,039名（≥50歳）の前向き コホート 統合 解析、②最長9年 追跡 で624 incident PD 例 を同定、③Physical フレイル の PD リスク ハザード比 2.31（95% 信頼区間 1.82-2.94）、④重度 抑うつ症状 の PD リスク ハザード比 1.95、⑤認知 障害 の PD リスク ハザード比 1.66、⑥3 ドメイン 共存で ハザード比 3.20（95% 信頼区間 2.42-4.24）、⑦最 高リスク 軌跡 で ハザード比 4.21（95% 信頼区間 2.36-7.51）、⑧PD 診断 前の prodromal phase で3 ドメイン が 漸進的 悪化、⑨PD 診断 後 は3 ドメイン が 加速 悪化、⑩Fried フレイル 表現型 5 構成要素 の標準化評価、⑪SHARE（28か国）+ ELSA（英国）の クロス・コホート 一貫性、⑫Prodromal PD スクリーニング 設計 への3軸 統合 評価 paradigm 確立。",
     "citation": "[introduction] Prodromal PD における3軸 マーカー の臨床 価値 を論じる導入で、本論文を「SHARE + ELSA 49,039名・9年 追跡 で Physical フレイル × 抑うつ × 認知 の3軸 統合 評価 が PD リスク を ハザード比 3.20-4.21 と 定量 化した最新規範的研究（npj Parkinson's Disease 2026）」として引用する。Fried フレイル 表現型 × 抑うつ × 認知 の3軸 統合 paradigm を prodromal PD 同定 の 参照値 として位置付ける。[discussion] 自前 データ の フレイル × 認知 × PD アウトカム の関連と本論文の ハザード比 3.20-4.21 を 突合 し、日本人 コホート での prodromal PD 3軸 統合 評価 の 検証 必要性 と Japanese-specific 数値の妥当性を議論する文脈で 参照 する。Physical フレイル ハザード比 2.31 を身体機能 マーカー の PD 予測 性 の中核 エビデンス として 引用 し、自前 データ の身体機能 × PD アウトカム の関連 解析 の方向性付けに用いる。"
+  },
+  {
+    "id": "20260602_tue_03",
+    "title": "A prospective study of physical activity and cardiometabolic diseases in association with cancer risk",
+    "authors": "Gebremariam A, Fontvieille E, Gan Q, Peruchet-Noray L, Coutaz-Repland R, Noh H, Bohmann P, Baurecht H, Leitzmann MF, Stein MJ, Friedenreich CM, Fervers B, Pérol O, Rostgaard-Hansen AL, Andersen JLM, Steindorf K, Fortner R, Schulze MB, Saieva C, Panico S, Franco M, Onland-Moret NC, Monninkhof E, Boer J, Farràs M, Sánchez MJ, Guevara M, Mokoroa-Carollo O, Tin Tin S, Heath AK, Aune D, Riboli E, Ferrari P, Freisling H.",
+    "journal": "Communications Medicine (IF=6.3), 2026年（5月25日公刊）",
+    "design": "個別参加者データメタ解析（IPD）。EPIC（European Prospective Investigation into Cancer and Nutrition）と UK Biobank を統合、35-70 歳の n=598,890、median 11 年追跡。自己報告 非職業性 身体活動 と 15 ガン の複合発症を Cox 回帰、時間変動 心血管疾患／2 型糖尿病 status との multiplicative interaction を評価",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42185476/",
+    "summary": "欧州 6 か国の EPIC コホート と UK Biobank を統合した個別参加者データ メタ解析。35-70 歳の n=598,890（median 11 年追跡で 37,182 件の 身体活動 関連 ガン 発症）で、非職業性 身体活動 1 SD 増の 身体活動 関連 ガン ハザード比 は 心血管疾患／2 型糖尿病 なし群で 0.96（95%CI 0.93-0.98）、心血管疾患／2 型糖尿病 あり群で 0.93（95%CI 0.91-0.96）と、両群で同等の保護効果を示した（p-interaction ≥ 0.17）。心血管疾患 や 2 型糖尿病 を既往する high-risk 集団でも 身体活動 の ガン 予防効果が一般集団と同等であることを 60 万人規模で初めて示した点で、二次予防 ガイドライン の根拠となる 2026 年 5 月 Communications Medicine の代表的論文として位置付けられる。",
+    "methodology": "EPIC と UK Biobank の IPD レベル 統合は study-level メタ解析 より effect 推定と 交絡 補正の精度が高い。Cardiometabolic disease を時間変動 共変量 として扱う設計、Cox 回帰 で multiplicative interaction を明示的に検定する設計、15 ガン の複合 アウトカム で 身体活動 関連 ガン を捕捉する設計はいずれも方法論的に堅実。n=598,890 という統計的検出力で interaction の non-significance を robust に示せる強み。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読。身体活動 は validated 自己報告 questionnaire で評価されており device-measured ではない点が recall バイアス と effect サイズ の希薄化の余地を残す。EPIC・UK Biobank は欧州中心で アジア・低中所得国 への外的妥当性は別途検証が必要。Cardiometabolic disease の重症度・治療強度の細分化は限定的で、interaction の non-significance を「臨床的に意味ある同等性」と言うには絶対 effect サイズ の比較がさらに必要。ガン subtype 別の effect 差も今後の解析課題。",
+    "implication": "**PD 課題1 への接続**：多元統合機械学習 の アウトカム を「単一疾患の発症」から「multi-disease トラジェクトリー（心血管疾患 → ガン → 死亡）」へ拡張する根拠となり、cardiometabolic 既往者で 身体活動 が ガン 予防に同等に効くという effect modification を SHAP モデルに組み込む設計の基盤を提供する。**PD 拡張軸（biobank・24h CoDA）への接続**：TMM や JAGES での 身体活動 × ガン × cardiometabolic disease 解析の設計参照論文として直接利用可能で、二次予防の文脈における 身体活動 推奨の epidemiological 根拠を提供する。",
+    "idea": "**自前研究への展開**：①既存 900 名コホート で 身体活動 を曝露、心血管疾患／2 型糖尿病 を時間変動 共変量、ガン 発症を アウトカム とする Cox 回帰 で本論文の p-interaction ≥ 0.17 を日本人で再現。②TMM の 身体活動 × ガン × cardiometabolic disease サブセットで本論文と同じ IPD レベル 解析を実装し、Japanese-specific な ハザード比 を提示。③JAGES データの自己報告 身体活動 を本論文の設計に揃え、cardiometabolic 既往の有無で ガン 予防 effect が同等かを検証。④課題1 SHAP モデルに 心血管疾患／2 型糖尿病 既往を effect modifier として組込み、身体活動 の SHAP value が cardiometabolic 既往別で異なるかを定量化。⑤公衆衛生 ガイドライン の啓発教材で「cardiometabolic disease があっても 身体活動 が ガン 予防に効く」というメッセージの根拠論文として活用。",
+    "novelty": "心血管疾患／2 型糖尿病 を時間変動 共変量 として扱い、その状態別に 身体活動 × ガン の effect サイズ の interaction を明示的に検定した点が独自。EPIC と UK Biobank の IPD レベル での統合 メタ解析 で n=598,890 を達成した点、15 ガン の複合 アウトカム で 身体活動 関連 ガン を定義した点も方法論的に新規。",
+    "background": "**背景**：身体活動 の ガン 予防効果は一般集団で広く確立されているが、心血管疾患 や 2 型糖尿病 という cardiometabolic disease 既往者での 身体活動 の ガン 予防 benefit は systematic に評価されておらず、これらの集団は ガン リスクが高い一方で 身体活動 推奨が CVD・糖尿病管理の文脈に偏っていた。**方法**：IARC-WHO 主導の IPD メタ解析 として、EPIC（6 欧州国）と UK Biobank の baseline で ガン 既往のない 35-70 歳 n=598,890 を対象。非職業性 身体活動 は validated 自己報告 questionnaire で評価し、アウトカム は 身体活動 関連 ガン（合計 15 ガン の複合）。multivariable adjusted Cox 回帰 で ハザード比 と 95%CI を推定し、時間変動の cardiometabolic disease（心血管疾患 and/or 2 型糖尿病）との multiplicative interaction を検定。**結果**：median 11 年追跡で 37,182 件の 身体活動 関連 ガン 発症。両 コホート 統合の メタ解析 で、非職業性 身体活動 1 SD 増の ハザード比 は cardiometabolic disease なし群で 0.96（95%CI 0.93-0.98）、cardiometabolic disease あり群で 0.93（95%CI 0.91-0.96）— 両群とも顕著な保護効果で、p-interaction は ≥ 0.17 と非有意。即ち cardiometabolic disease の有無で 身体活動 の ガン 予防効果は変わらない。**結論**：心血管疾患 や 2 型糖尿病 という high-risk 集団でも、より高い非職業性 身体活動 は ガン 予防に同等に benefit する。一次・二次予防の双方で 身体活動 推奨を強化する根拠を提示。",
+    "result": "①EPIC 6 欧州国＋UK Biobank の IPD メタ解析 で n=598,890、②median 11 年追跡で 身体活動 関連 ガン 37,182 件発症、③cardiometabolic disease なし群で 身体活動 1 SD 増の ハザード比 0.96（95%CI 0.93-0.98）、④cardiometabolic disease あり群で 0.93（95%CI 0.91-0.96）、⑤両群間の p-interaction ≥ 0.17 と非有意、⑥両群で 身体活動 が ガン リスクを下げる effect が同等、⑦15 ガン の複合 アウトカム を採用、⑧心血管疾患 and/or 2 型糖尿病 を時間変動 共変量 として扱う、⑨IARC-WHO 主導で publisher 公式 IPD レベル の統合、⑩2026 年 5 月 Communications Medicine 公刊の最新エビデンス。",
+    "impact": "心血管疾患 や 2 型糖尿病 を既往する high-risk 集団での 身体活動 × ガン リスクを 60 万人規模で初めて systematic に評価した 2026 年 5 月の最新 IPD メタ解析。IARC-WHO 主導で EPIC と UK Biobank を統合した方法論的厳密性、cardiometabolic disease を時間変動 共変量 として扱う設計、p-interaction で「両群で同等」を統計的に示した点が二次予防の臨床指針に直接寄与する。WHO の 身体活動 ガイドライン や ガン 予防エビデンスの次回改定時に直接参照される位置付け。",
+    "keywords": "",
+    "tags": [
+      "EPIC",
+      "UK Biobank",
+      "身体活動",
+      "ガン",
+      "心血管疾患",
+      "2 型糖尿病",
+      "IPD meta-analysis",
+      "2026"
+    ],
+    "source_reports": [
+      "20260602_tuesday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：身体活動 の ガン 予防効果は一般集団で広く確立されているが、心血管疾患 や 2 型糖尿病 という cardiometabolic disease 既往者での 身体活動 の ガン 予防 benefit は systematic に評価されておらず、これらの集団は ガン リスクが高い一方で 身体活動 推奨が CVD・糖尿病管理の文脈に偏っていた。**方法**：IARC-WHO 主導の IPD メタ解析 として、EPIC（6 欧州国）と UK Biobank の baseline で ガン 既往のない 35-70 歳 n=598,890 を対象。非職業性 身体活動 は validated 自己報告 questionnaire で評価し、アウトカム は 身体活動 関連 ガン（合計 15 ガン の複合）。multivariable adjusted Cox 回帰 で ハザード比 と 95%CI を推定し、時間変動の cardiometabolic disease（心血管疾患 and/or 2 型糖尿病）との multiplicative interaction を検定。**結果**：median 11 年追跡で 37,182 件の 身体活動 関連 ガン 発症。両 コホート 統合の メタ解析 で、非職業性 身体活動 1 SD 増の ハザード比 は cardiometabolic disease なし群で 0.96（95%CI 0.93-0.98）、cardiometabolic disease あり群で 0.93（95%CI 0.91-0.96）— 両群とも顕著な保護効果で、p-interaction は ≥ 0.17 と非有意。即ち cardiometabolic disease の有無で 身体活動 の ガン 予防効果は変わらない。**結論**：心血管疾患 や 2 型糖尿病 という high-risk 集団でも、より高い非職業性 身体活動 は ガン 予防に同等に benefit する。一次・二次予防の双方で 身体活動 推奨を強化する根拠を提示。",
+    "importance": "心血管疾患 や 2 型糖尿病 を既往する high-risk 集団での 身体活動 × ガン リスクを 60 万人規模で初めて systematic に評価した 2026 年 5 月の最新 IPD メタ解析。IARC-WHO 主導で EPIC と UK Biobank を統合した方法論的厳密性、cardiometabolic disease を時間変動 共変量 として扱う設計、p-interaction で「両群で同等」を統計的に示した点が二次予防の臨床指針に直接寄与する。WHO の 身体活動 ガイドライン や ガン 予防エビデンスの次回改定時に直接参照される位置付け。",
+    "originality": "心血管疾患／2 型糖尿病 を時間変動 共変量 として扱い、その状態別に 身体活動 × ガン の effect サイズ の interaction を明示的に検定した点が独自。EPIC と UK Biobank の IPD レベル での統合 メタ解析 で n=598,890 を達成した点、15 ガン の複合 アウトカム で 身体活動 関連 ガン を定義した点も方法論的に新規。",
+    "discovery": "①EPIC 6 欧州国＋UK Biobank の IPD メタ解析 で n=598,890、②median 11 年追跡で 身体活動 関連 ガン 37,182 件発症、③cardiometabolic disease なし群で 身体活動 1 SD 増の ハザード比 0.96（95%CI 0.93-0.98）、④cardiometabolic disease あり群で 0.93（95%CI 0.91-0.96）、⑤両群間の p-interaction ≥ 0.17 と非有意、⑥両群で 身体活動 が ガン リスクを下げる effect が同等、⑦15 ガン の複合 アウトカム を採用、⑧心血管疾患 and/or 2 型糖尿病 を時間変動 共変量 として扱う、⑨IARC-WHO 主導で publisher 公式 IPD レベル の統合、⑩2026 年 5 月 Communications Medicine 公刊の最新エビデンス。",
+    "citation": "[introduction] Cardiometabolic disease 既往者の ガン 予防戦略を論じる導入で、本論文を「EPIC＋UK Biobank の IPD メタ解析 n=598,890 で、心血管疾患／2 型糖尿病 の有無に関わらず 非職業性 身体活動 1 SD 増が 身体活動 関連 ガン ハザード比 0.93-0.96 と同等の保護効果を示した 2026 年 5 月 Communications Medicine の決定的研究」として引用。Cardiometabolic high-risk 集団でも 身体活動 推奨が ガン 予防に benefit するという臨床指針の根拠とする。[discussion] 日本人 コホート での 身体活動 × ガン × cardiometabolic disease 解析と比較する文脈で、本論文の ハザード比 0.93-0.96 と p-interaction ≥ 0.17 を欧米基準として並べ、Japanese-specific な ガン プロファイル（胃 ガン・肝 ガン 等）の effect サイズ 差を議論する基準点として用いる。"
+  },
+  {
+    "id": "20260602_tue_08",
+    "title": "Joint non-linear dose-response associations of device-measured physical activity and cardiorespiratory fitness with cardiovascular disease: a cohort and Mendelian randomisation study",
+    "authors": "Liang Z, Du S, Zhao S, Wang X, Yan Q, Xu B, Ng S, Ning Z.",
+    "journal": "British Journal of Sports Medicine (IF=16.2), 2026年（5月28日公刊）",
+    "design": "前向きコホート＋2-sample Mendelian randomisation（UK Biobank n=17,088、accelerometer-measured MVPA と推定 cardiorespiratory fitness（CRF, VO₂max）の joint 非線形 dose-response、Cox generalised additive model、median 7.85年追跡。GWAS summary statistics で因果性を triangulation）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42156172/",
+    "summary": "UK Biobank の n=17,088（CVD-free baseline、median 7.85 年追跡で 心血管疾患 1,233 件）を対象に、accelerometer-measured MVPA と推定 cardiorespiratory fitness（CRF, VO₂max）の joint 非線形 dose-response を Cox generalised additive model で評価し、Mendelian randomisation で因果性を triangulation した 2026 年 5 月 British Journal of Sports Medicine の最新コホート＋因果推論研究。MVPA × CRF の interaction は有意（p<0.001）。週 150 分の ガイドライン 達成は CVD リスクを 8-9% 低減する modest な効果に留まり、>30% のリスク低減には週 560-610 分という 3-4 倍の MVPA volume が必要。MVPA や 共変量 を補正後の residual fitness 効果も significant（ハザード比 0.98 per 1 mL/kg/min、95%CI 0.97-0.99）。MR では genetically proxied CRF が心不全リスクを低下（OR 0.79、95%CI 0.63-0.99）。fitness-stratified prescription matrix を提示し、現行 ガイドライン の限界と CRF の独立的重要性を 60 万人規模の UK Biobank で示した点で 身体活動 ガイドライン 改定の中核 reference として位置付けられる。",
+    "methodology": "Accelerometer-measured MVPA と推定 CRF を joint 非線形 dose-response で評価する Cox generalised additive model の設計は方法論的に堅実で、fitness × MVPA matrix の連続的可視化は ガイドライン 改定への直接的含意を持つ。MR との triangulation は観察研究の residual 交絡 と reverse causation の懸念を補完する設計として優れる。Hospital・death registries への linkage で アウトカム 捕捉率も担保。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読。UK Biobank n=17,088 は accelerometer サブコホート の subset で、selection バイアス（健康な参加者の過剰代表）と白人中心の構成で アジア・低中所得国 への外的妥当性は別途検証要。Accelerometer 装着 7 日間からの usual MVPA 推定に 回帰 dilution の余地。MR は身体活動 traits の GWAS power が CRF より弱く、身体活動 の MR エビデンスの非有意性は power 不足の可能性を含む。",
+    "implication": "**PD 課題1（多元統合機械学習）への接続**：accelerometer-measured MVPA と CRF を SHAP モデルの並列特徴量として投入し、両者の interaction term の SHAP value を可視化する根拠論文となる。**PD 課題3（運動介入 RCT）への接続**：「ガイドライン 週 150 分」を超えた high-dose 介入（例：週 300-600 分 MVPA）を pre-specify する設計の根拠となり、本論文の prescription matrix を介入用量設計に直接参照可能。**PD 拡張軸（GWAS／MR・biobank）への接続**：CRF の Mendelian randomisation 解析設計の参照論文として直接利用可能で、TMM・UK Biobank での fitness GWAS × CVD の triangulation 解析を推進する根拠を提供。",
+    "idea": "**自前研究への展開**：①既存 900 名コホート で MVPA × CRF（推定 VO₂max もしくは 握力／6MWD 等の代用）の joint dose-response を Cox additive model で評価し、本論文の interaction p<0.001 を日本人で再現。②TMM の accelerometer × fitness サブセットで本論文と同じ fitness-stratified prescription matrix を実装し、Japanese-specific な MVPA dose threshold を提示。③PD 課題1 の SHAP モデルに MVPA と CRF を並列特徴量として投入し、interaction term の SHAP value 順位を欧米と比較。④UK Biobank の MR pipeline を日本人 GWAS（東北メディカル・メガバンク機構）に移植し、CRF GWAS × CVD の triangulation を日本人で実装。⑤公衆衛生 ガイドライン の啓発教材で「週 150 分は最低限。週 300-600 分でようやく substantial な benefit が得られる」というメッセージの根拠論文として活用。",
+    "novelty": "MVPA と CRF を joint 非線形 dose-response で評価し、Cox generalised additive model で連続的な fitness × MVPA matrix を可視化した点、MR と観察研究を triangulation して CRF の因果的重要性を示した点が独自。週 150 分の modest な effect（8-9% リスク低減）と >30% リスク低減に必要な dose（週 560-610 分）を quantitative に示した点も方法論的に新規。",
+    "background": "**背景**：身体活動 と cardiorespiratory fitness（CRF）はいずれも CVD リスクの主要修飾因子だが、両者の joint 非線形 dose-response は self-report 研究中心で device-measured データでの定量は限定的だった。MR を併用した因果推論との triangulation も乏しく、ガイドライン の「週 150 分 MVPA」推奨が optimal protection を提供するかは未解明だった。**方法**：UK Biobank の accelerometer サブコホート n=17,088（CVD-free baseline、2013-2015 に 7 日間装着）で MVPA を抽出、CRF は推定 VO₂max として算出。アウトカム は hospital・death registries で同定した incident CVD（心房細動、心筋梗塞、心不全、脳卒中）。Cox generalised additive model で MVPA × CRF の joint 非線形関連を評価、fitness 4 階層で stratify。MVPA と 共変量 を補正後の residual fitness 効果も別途推定。2-sample MR で device-measured 身体活動 と CRF の GWAS summary statistics を用い、CVD アウトカム への因果性を triangulation。**結果**：median 7.85 年（IQR 7.39-8.27）追跡で CVD 1,233 件。MVPA × CRF interaction p<0.001。週 150 分 MVPA で 8-9% のリスク低減、>30% のリスク低減には週 560-610 分が必要。Residual fitness 効果も有意（ハザード比 0.98 per 1 mL/kg/min、95%CI 0.97-0.99、p<0.001）。MR では genetically proxied CRF が心不全リスクを低下（OR 0.79、95%CI 0.63-0.99）、身体活動 traits の MR エビデンスは弱く一貫性も限定的。**結論**：現行 ガイドライン は universal だが modest な safety margin に留まる。Optimal な cardiovascular 保護には substantially 高い 身体活動 volume が必要で、fitness-stratified prescription matrix が quantitative な behavioural targets を提供。CRF は 身体活動 と独立した CVD リスク低減 driver である。",
+    "result": "①UK Biobank n=17,088（CVD-free baseline、median 7.85 年追跡）で CVD 1,233 件発症、②MVPA × CRF の interaction p<0.001（非線形 joint dose-response）、③週 150 分 MVPA で CVD リスク 8-9% 低減（modest）、④>30% リスク低減には週 560-610 分の MVPA が必要、⑤MVPA・共変量 補正後の residual fitness 効果も有意（ハザード比 0.98 per 1 mL/kg/min、95%CI 0.97-0.99、p<0.001）、⑥genetically proxied CRF（MR）が心不全リスクを低下（OR 0.79、95%CI 0.63-0.99）、⑦身体活動 traits の MR エビデンスは弱く一貫性も限定的、⑧fitness-stratified prescription matrix を提示、⑨CRF は 身体活動 と独立した CVD リスク低減 driver、⑩2026 年 5 月 BJSM 公刊の最新エビデンス。",
+    "impact": "Accelerometer-measured MVPA と推定 CRF の joint 非線形 dose-response を UK Biobank n=17,088 で Cox additive model により評価し、Mendelian randomisation で CRF の因果的重要性を triangulation した 2026 年 5 月 British Journal of Sports Medicine（IF=16.2）の代表的研究。Fitness-stratified prescription matrix の提示は、身体活動 ガイドライン の「週 150 分 MVPA」推奨を超えた quantitative な targets を提示する点で、WHO・米国 ガイドライン の次回改定時の核心 reference として位置付けられる。",
+    "keywords": "",
+    "tags": [
+      "accelerometer",
+      "MVPA",
+      "cardiorespiratory fitness",
+      "心血管疾患",
+      "Mendelian randomisation",
+      "UK Biobank",
+      "BJSM",
+      "2026"
+    ],
+    "source_reports": [
+      "20260602_tuesday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：身体活動 と cardiorespiratory fitness（CRF）はいずれも CVD リスクの主要修飾因子だが、両者の joint 非線形 dose-response は self-report 研究中心で device-measured データでの定量は限定的だった。MR を併用した因果推論との triangulation も乏しく、ガイドライン の「週 150 分 MVPA」推奨が optimal protection を提供するかは未解明だった。**方法**：UK Biobank の accelerometer サブコホート n=17,088（CVD-free baseline、2013-2015 に 7 日間装着）で MVPA を抽出、CRF は推定 VO₂max として算出。アウトカム は hospital・death registries で同定した incident CVD（心房細動、心筋梗塞、心不全、脳卒中）。Cox generalised additive model で MVPA × CRF の joint 非線形関連を評価、fitness 4 階層で stratify。MVPA と 共変量 を補正後の residual fitness 効果も別途推定。2-sample MR で device-measured 身体活動 と CRF の GWAS summary statistics を用い、CVD アウトカム への因果性を triangulation。**結果**：median 7.85 年（IQR 7.39-8.27）追跡で CVD 1,233 件。MVPA × CRF interaction p<0.001。週 150 分 MVPA で 8-9% のリスク低減、>30% のリスク低減には週 560-610 分が必要。Residual fitness 効果も有意（ハザード比 0.98 per 1 mL/kg/min、95%CI 0.97-0.99、p<0.001）。MR では genetically proxied CRF が心不全リスクを低下（OR 0.79、95%CI 0.63-0.99）、身体活動 traits の MR エビデンスは弱く一貫性も限定的。**結論**：現行 ガイドライン は universal だが modest な safety margin に留まる。Optimal な cardiovascular 保護には substantially 高い 身体活動 volume が必要で、fitness-stratified prescription matrix が quantitative な behavioural targets を提供。CRF は 身体活動 と独立した CVD リスク低減 driver である。",
+    "importance": "Accelerometer-measured MVPA と推定 CRF の joint 非線形 dose-response を UK Biobank n=17,088 で Cox additive model により評価し、Mendelian randomisation で CRF の因果的重要性を triangulation した 2026 年 5 月 British Journal of Sports Medicine（IF=16.2）の代表的研究。Fitness-stratified prescription matrix の提示は、身体活動 ガイドライン の「週 150 分 MVPA」推奨を超えた quantitative な targets を提示する点で、WHO・米国 ガイドライン の次回改定時の核心 reference として位置付けられる。",
+    "originality": "MVPA と CRF を joint 非線形 dose-response で評価し、Cox generalised additive model で連続的な fitness × MVPA matrix を可視化した点、MR と観察研究を triangulation して CRF の因果的重要性を示した点が独自。週 150 分の modest な effect（8-9% リスク低減）と >30% リスク低減に必要な dose（週 560-610 分）を quantitative に示した点も方法論的に新規。",
+    "discovery": "①UK Biobank n=17,088（CVD-free baseline、median 7.85 年追跡）で CVD 1,233 件発症、②MVPA × CRF の interaction p<0.001（非線形 joint dose-response）、③週 150 分 MVPA で CVD リスク 8-9% 低減（modest）、④>30% リスク低減には週 560-610 分の MVPA が必要、⑤MVPA・共変量 補正後の residual fitness 効果も有意（ハザード比 0.98 per 1 mL/kg/min、95%CI 0.97-0.99、p<0.001）、⑥genetically proxied CRF（MR）が心不全リスクを低下（OR 0.79、95%CI 0.63-0.99）、⑦身体活動 traits の MR エビデンスは弱く一貫性も限定的、⑧fitness-stratified prescription matrix を提示、⑨CRF は 身体活動 と独立した CVD リスク低減 driver、⑩2026 年 5 月 BJSM 公刊の最新エビデンス。",
+    "citation": "[introduction] 身体活動 と cardiorespiratory fitness の joint dose-response を論じる導入で、本論文を「UK Biobank n=17,088 で accelerometer-measured MVPA × 推定 CRF の non-linear joint dose-response を Cox generalised additive model で評価し、週 150 分 ガイドライン が 8-9% のリスク低減に留まる一方 >30% リスク低減には週 560-610 分が必要、MR で genetically proxied CRF の心不全 OR 0.79（95%CI 0.63-0.99）を示した 2026 年 5 月 British Journal of Sports Medicine の決定的研究」として引用。Fitness-stratified prescription matrix の概念を 身体活動 ガイドライン 改定の根拠として位置付ける。[discussion] 日本人 コホート での MVPA × CRF × CVD 解析と比較する文脈で、本論文の週 560-610 分という high-dose 推奨と CRF の独立的役割を欧米基準として並べ、Japanese-specific な MVPA 中央値（おそらく欧米より低水準）と fitness 分布の差異を議論する基準点として用いる。"
+  },
+  {
+    "id": "20260602_tue_10",
+    "title": "Interaction of moderate-to-vigorous physical activity and brain amyloid accumulation on longitudinal cognitive change",
+    "authors": "Makino K, Kato T, Ito K, Katayama O, Yamaguchi R, Shimada H.",
+    "journal": "GeroScience (IF=5.4), 2026年（5月25日公刊）",
+    "design": "前向きコホート（地域在住高齢者 n=74、Aβ PET と MMSE を約23.6ヶ月間隔で繰り返し評価、MVPA は IPAQ-Short Form で WHO 閾値 ≥150 min/週で 2 階層化、walking time は中央値で dichotomize、linear mixed-effects model で time × Aβ status × physical activity の 3-way interaction を検定）",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42185590/",
+    "summary": "Makino らが、地域在住高齢者 n=74（mean 72.7 歳、女性 44.6%）の Aβ PET と MMSE を約 23.6 ヶ月間隔で繰り返し評価し、MVPA と Aβ 蓄積の interaction が 縦断的 認知変化に与える効果を linear mixed-effects model で評価した 2026 年 5 月 GeroScience の最新前向きコホート研究。Aβ 陽性者（24.3%、SUVR > 1.10）では MVPA 低群で顕著な認知低下、MVPA 高群（≥150 min/週）では認知低下がほとんど観察されない 3-way interaction（β = -3.30、95%CI -6.35 〜 -0.25、p=0.034）を実証。Walking 単独の interaction は非有意（β = 1.43、95%CI -1.48 〜 4.35、p=0.331）で、intensity-dependent な効果を示唆した。Aβ-related cognitive decline に対する 身体活動 の intensity-dependent な protective effect を高齢者で初めて定量化した点で、認知症 予防研究の中核 reference として位置付けられる。",
+    "methodology": "Baseline Aβ PET（SUVR > 1.10）と 縦断的 MMSE（mean 23.6 ヶ月間隔）の組合せは Aβ-cognition trajectory を直接モデリングする設計として説得力が高い。Linear mixed-effects model の 3-way interaction（time × Aβ × 身体活動）で intensity-dependent な効果を分離する設計、年齢・性・教育の補正、IPAQ-Short Form と WHO 閾値の標準的設計はいずれも方法論的に堅実。",
+    "limitation": "本紹介はアブストラクト読解に基づき、本文未読。n=74 は power の余地を残し、特に Aβ 陽性 × MVPA 高群 のサブセットは更に小さく effect サイズ の精度に限界。身体活動 は IPAQ-Short Form の自己報告 で device-measured ではない点が recall バイアス の余地。Walking interaction の非有意性は power 不足の可能性を含む。地域在住高齢者 限定で施設居住者への外的妥当性は別途検証要。",
+    "implication": "**PD 課題1（多元統合機械学習）への接続**：MVPA を独立した特徴量として SHAP モデルに投入し、Aβ status との interaction term の特徴重要度を可視化する根拠論文となる。**PD 課題2（脳・身体・運動）への接続**：Aβ-related cognitive decline に対する MVPA の intensity-dependent な protective effect は、脳-身体機能の interaction を扱う研究設計の核心 reference となり、tDCS／運動介入 × 認知 アウトカム の study design に直接参照可能。**PD 拡張軸（biobank・オミクス）への接続**：日本人 NCGG コホートでの evidence であるため、TMM や 国立長寿 コホート での replication 設計に直接参照可能で、Japanese-specific な 認知症 予防戦略の epidemiological 根拠を提供。",
+    "idea": "**自前研究への展開**：①既存 900 名コホート で MVPA と Aβ status（もし PET / 血液 biomarker 利用可能なら）の 3-way interaction を MMSE / MoCA で 縦断的 に評価し、本論文の β = -3.30 を日本人で再現。②TMM コホート の 身体活動 サブセットで本論文と同じ 3-way interaction 設計を accelerometer-measured MVPA に置換して実装し、device-measured での再現性を検証。③PD 課題1 SHAP モデルに MVPA × Aβ status の interaction term を組み込み、interaction の SHAP value を可視化。④国立長寿 NCGG（Makino らのグループ）との共同研究で n を拡大し、本論文の 3-way interaction の power を強化する replication study を計画。⑤公衆衛生 ガイドライン の啓発教材で「Aβ 陽性でも MVPA ≥150 min/週で 認知 低下が緩和される」というメッセージの日本人 evidence として活用。",
+    "novelty": "Aβ status を baseline PET（SUVR > 1.10）で定義し、MVPA と walking を別個の predictor として扱う 3-way interaction 設計が独自。Aβ × 身体活動 × 縦断的 認知の interaction を定量化した点、MVPA と walking の intensity-dependent な効果を分離した点、linear mixed-effects model で 縦断的 trajectory を直接モデリングした点が方法論的に新規。",
+    "background": "**背景**：Aβ-related cognitive decline は 認知症 予防の主要 target であるが、身体活動 が intensity 別に modify する役割は未解明だった。先行研究は 身体活動 を 総量 で扱う設計が中心で、MVPA と low-intensity walking の効果を分離した 縦断的 エビデンスは乏しかった。**方法**：地域在住高齢者 n=74 を対象に baseline で Aβ PET（global SUVR）を測定、SUVR > 1.10 を Aβ positivity と定義。MMSE を mean 23.6 ± 0.9 ヶ月間隔で繰り返し評価。身体活動 は IPAQ-Short Form で評価し、MVPA は WHO 閾値 ≥150 min/週で 2 階層化、walking time は中央値で dichotomize。Linear mixed-effects model で time × Aβ status × 身体活動 の 3-way interaction を検定、年齢・性・教育を共変量として補正。**結果**：mean 72.7 ± 5.5 歳、女性 44.6%、18 名（24.3%）が Aβ positive。Aβ positivity は MVPA 低群で顕著な MMSE 低下と関連したが、MVPA 高群ではほとんどまたは全く低下が観察されなかった（Time × Aβ × MVPA interaction β = -3.30、95%CI -6.35 〜 -0.25、p=0.034）。Walking activity の interaction は非有意（β = 1.43、95%CI -1.48 〜 4.35、p=0.331）。**結論**：高 MVPA は Aβ-related cognitive decline を緩和し、intensity-dependent な身体活動 の効果を示唆。Cerebral amyloid burden 文脈での MVPA の認知 benefit を支持する knowledge を提供。",
+    "result": "①日本人 地域在住高齢者 n=74（mean 72.7 歳、女性 44.6%）、②Aβ PET（SUVR > 1.10）で Aβ positivity 18 名（24.3%）、③MMSE を mean 23.6 ± 0.9 ヶ月間隔で繰り返し評価、④Time × Aβ × MVPA の 3-way interaction β = -3.30（95%CI -6.35 〜 -0.25、p=0.034）、⑤MVPA 低群では Aβ 陽性で顕著な MMSE 低下、⑥MVPA 高群では Aβ 陽性でも低下がほとんど観察されない、⑦Walking interaction は非有意（β = 1.43、95%CI -1.48 〜 4.35、p=0.331）、⑧IPAQ-Short Form と WHO ガイドライン 閾値（≥150 min/週）の標準的設計、⑨Linear mixed-effects model で 縦断的 trajectory をモデリング、⑩2026 年 5 月 GeroScience 公刊の最新エビデンス。",
+    "impact": "Aβ-related cognitive decline に対する MVPA の intensity-dependent な protective effect を高齢者で baseline Aβ PET と 縦断的 MMSE で定量化した 2026 年 5 月 GeroScience の最新エビデンス。Aβ × MVPA × 縦断的 認知の 3-way interaction を示した点で、認知症 予防における 身体活動 の intensity 重要性を示す中核 reference として位置付けられる。Aβ-cognition trajectory に対する 身体活動 の intensity 別 効果を分離した点は老年医学研究の方法論的成熟を一段階前進させる位置にある。",
+    "keywords": "",
+    "tags": [
+      "physical activity",
+      "MVPA",
+      "amyloid beta",
+      "認知症",
+      "longitudinal",
+      "Japanese",
+      "NCGG",
+      "GeroScience",
+      "2026"
+    ],
+    "source_reports": [
+      "20260602_tuesday"
+    ],
+    "is_pd_related": false,
+    "first_seen_date": "2026-05-08",
+    "fulltext_status": "read_abstract_only",
+    "overview": "**背景**：Aβ-related cognitive decline は 認知症 予防の主要 target であるが、身体活動 が intensity 別に modify する役割は未解明だった。先行研究は 身体活動 を 総量 で扱う設計が中心で、MVPA と low-intensity walking の効果を分離した 縦断的 エビデンスは乏しかった。**方法**：地域在住高齢者 n=74 を対象に baseline で Aβ PET（global SUVR）を測定、SUVR > 1.10 を Aβ positivity と定義。MMSE を mean 23.6 ± 0.9 ヶ月間隔で繰り返し評価。身体活動 は IPAQ-Short Form で評価し、MVPA は WHO 閾値 ≥150 min/週で 2 階層化、walking time は中央値で dichotomize。Linear mixed-effects model で time × Aβ status × 身体活動 の 3-way interaction を検定、年齢・性・教育を共変量として補正。**結果**：mean 72.7 ± 5.5 歳、女性 44.6%、18 名（24.3%）が Aβ positive。Aβ positivity は MVPA 低群で顕著な MMSE 低下と関連したが、MVPA 高群ではほとんどまたは全く低下が観察されなかった（Time × Aβ × MVPA interaction β = -3.30、95%CI -6.35 〜 -0.25、p=0.034）。Walking activity の interaction は非有意（β = 1.43、95%CI -1.48 〜 4.35、p=0.331）。**結論**：高 MVPA は Aβ-related cognitive decline を緩和し、intensity-dependent な身体活動 の効果を示唆。Cerebral amyloid burden 文脈での MVPA の認知 benefit を支持する knowledge を提供。",
+    "importance": "Aβ-related cognitive decline に対する MVPA の intensity-dependent な protective effect を高齢者で baseline Aβ PET と 縦断的 MMSE で定量化した 2026 年 5 月 GeroScience の最新エビデンス。Aβ × MVPA × 縦断的 認知の 3-way interaction を示した点で、認知症 予防における 身体活動 の intensity 重要性を示す中核 reference として位置付けられる。Aβ-cognition trajectory に対する 身体活動 の intensity 別 効果を分離した点は老年医学研究の方法論的成熟を一段階前進させる位置にある。",
+    "originality": "Aβ status を baseline PET（SUVR > 1.10）で定義し、MVPA と walking を別個の predictor として扱う 3-way interaction 設計が独自。Aβ × 身体活動 × 縦断的 認知の interaction を定量化した点、MVPA と walking の intensity-dependent な効果を分離した点、linear mixed-effects model で 縦断的 trajectory を直接モデリングした点が方法論的に新規。",
+    "discovery": "①日本人 地域在住高齢者 n=74（mean 72.7 歳、女性 44.6%）、②Aβ PET（SUVR > 1.10）で Aβ positivity 18 名（24.3%）、③MMSE を mean 23.6 ± 0.9 ヶ月間隔で繰り返し評価、④Time × Aβ × MVPA の 3-way interaction β = -3.30（95%CI -6.35 〜 -0.25、p=0.034）、⑤MVPA 低群では Aβ 陽性で顕著な MMSE 低下、⑥MVPA 高群では Aβ 陽性でも低下がほとんど観察されない、⑦Walking interaction は非有意（β = 1.43、95%CI -1.48 〜 4.35、p=0.331）、⑧IPAQ-Short Form と WHO ガイドライン 閾値（≥150 min/週）の標準的設計、⑨Linear mixed-effects model で 縦断的 trajectory をモデリング、⑩2026 年 5 月 GeroScience 公刊の最新エビデンス。",
+    "citation": "[introduction] Aβ-related cognitive decline と 身体活動 の関連を論じる導入で、本論文を「日本人 地域在住高齢者 n=74 で baseline Aβ PET と 縦断的 MMSE を組み合わせ、Time × Aβ × MVPA の 3-way interaction β = -3.30（95%CI -6.35 〜 -0.25、p=0.034）を 2026 年 5 月 GeroScience で示した最新エビデンス」として引用。MVPA の intensity-dependent な protective effect を 認知症 予防の中核 reference として位置付ける。[discussion] 欧米コホート（UK Biobank・ADNI 等）での Aβ × 身体活動 × cognition 解析と比較する文脈で、本論文の Japanese-specific な 3-way interaction effect サイズ を日本人 高齢者の知見として並べ、Japanese-specific な 身体活動 推奨と 認知症 予防戦略への翻訳を議論する基準点として用いる。"
   }
 ]

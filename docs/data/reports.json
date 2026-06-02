@@ -1176,5 +1176,27 @@
       "20260518_mon_10"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260602_tuesday",
+    "date": "2026-06-02",
+    "weekday": "tuesday",
+    "theme_jp": "身体活動・運動疫学",
+    "theme_en": "physical-activity-epidemiology",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260602_tuesday.html",
+    "paper_ids": [
+      "20260519_tue_01",
+      "20260519_tue_02",
+      "20260602_tue_03",
+      "20260526_tue_04",
+      "20260512_tue_05",
+      "20260526_tue_06",
+      "20260526_tue_07",
+      "20260602_tue_08",
+      "20260519_tue_09",
+      "20260602_tue_10"
+    ],
+    "paper_count": 10
   }
 ]
