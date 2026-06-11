@@ -1411,5 +1411,27 @@
       "20260612_pd_10"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260613_pd",
+    "date": "2026-06-13",
+    "weekday": "pd",
+    "theme_jp": "PD研究",
+    "theme_en": "pd-research",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260613_pd.html",
+    "paper_ids": [
+      "20260613_pd_02",
+      "20260613_pd_05",
+      "20260613_pd_01",
+      "20260613_pd_03",
+      "20260613_pd_04",
+      "20260613_pd_08",
+      "20260613_pd_09",
+      "20260613_pd_06",
+      "20260613_pd_07",
+      "20260613_pd_10"
+    ],
+    "paper_count": 10
   }
 ]
