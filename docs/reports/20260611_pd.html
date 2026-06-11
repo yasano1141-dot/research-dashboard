@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PD研究 キュレーション版 — 2026年6月11日</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  margin: 0; padding: 0; background: #f8fafc; color: #0f172a; line-height: 1.7; }
+.report-wrapper { max-width: 980px; margin: 0 auto; padding: 24px 20px 80px; }
+.report-header { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 22px 24px; margin-bottom: 24px; position: relative; overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15,23,42,0.06); }
+.report-header::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
+  height: 4px; background: #be123c; }
+.report-header h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.02em; }
+.report-header .meta { color: #475569; font-size: 14px; }
+.paper-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 22px 24px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(15,23,42,0.04); }
+.paper-rank { display: inline-block; background: #be123c; color: white; font-weight: 700;
+  font-size: 13px; padding: 3px 10px; border-radius: 999px; margin-right: 8px; }
+.task-tag { display: inline-block; background: #be123c; color: white; font-size: 11px;
+  padding: 2px 8px; border-radius: 999px; font-weight: 700; }
+.task-tag.pd { background: #be123c; }
+.paper-title { font-size: 17px; font-weight: 700; margin: 8px 0 6px; line-height: 1.4; }
+.paper-title a { color: #0f172a; text-decoration: none; }
+.paper-title a:hover { color: #2563eb; }
+.paper-meta { color: #475569; font-size: 13px; margin-bottom: 16px; }
+.section-block { border-left: 4px solid currentColor; padding: 10px 14px; margin: 12px 0;
+  background: #f1f5f9; border-radius: 0 6px 6px 0; color: #0f172a; }
+.section-block .section-label { display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.04em; margin-bottom: 6px; }
+.section-block .section-content { font-size: 14px; }
+.section-block.summary     { color: #3182ce; } .section-block.summary .section-label     { color: #3182ce; }
+.section-block.overview    { color: #718096; } .section-block.overview .section-label    { color: #718096; }
+.section-block.importance  { color: #d69e2e; } .section-block.importance .section-label  { color: #d69e2e; }
+.section-block.originality { color: #805ad5; } .section-block.originality .section-label { color: #805ad5; }
+.section-block.discovery   { color: #16a34a; } .section-block.discovery .section-label   { color: #16a34a; }
+.section-block.method      { color: #38a169; } .section-block.method .section-label      { color: #38a169; }
+.section-block.limit       { color: #c53030; } .section-block.limit .section-label       { color: #c53030; }
+.section-block.citation    { color: #805ad5; } .section-block.citation .section-label    { color: #805ad5; }
+.section-block.implication { color: #805ad5; } .section-block.implication .section-label { color: #805ad5; }
+.section-block.idea        { color: #319795; } .section-block.idea .section-label        { color: #319795; }
+.section-block .section-content { color: #0f172a; line-height: 1.8; }
+.tag-list { margin-top: 12px; font-size: 11px; color: #64748b; }
+.tag-list .tag { display: inline-block; background: #f1f5f9; padding: 2px 8px; border-radius: 999px; margin-right: 4px; }
+.fav-checkbox { float: right; font-size: 13px; color: #475569; cursor: pointer; user-select: none; }
+.fav-checkbox input { vertical-align: middle; margin-right: 4px; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23be123c'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='40' fill='white' font-family='Arial' font-weight='800'%3EPD%3C/text%3E%3C/svg%3E">
+</head>
+<body data-source-date="20260611" data-source-theme="pd-research">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../pd.html" style="color:#be123c;text-decoration:none;font-weight:600">📍 PD研究</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">PD研究キュレーション版</span>
+</div>
+
+<div class="report-wrapper">
+
+  <div class="report-header">
+    <h1>📍 PD研究 — キュレーション版</h1>
+    <p class="meta">2026年6月11日 ・ 既存データベースから選定した代表的なPD関連論文10本</p>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_02" data-title="Biological brain aging, cognitive-motor decline and vascular risk: a multivariate imaging analysis of 40,579 individuals" data-authors="Petersen M, Link MA, Mayer C, et al." data-journal="Frontiers in Aging Neuroscience (IF=4.5), 2026年5月（Vol. 18, Article 1789408）" data-design="横断 × multivariate imaging × partial least squares correlation／UK Biobank（n=38,082, discovery）+ Hamburg City Health Study（n=2,497, replication）／3指標（brain age, WMH load, PSMD）× 認知-運動テストバッテリー" data-url="https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2026.1789408/full" data-summary="UK Biobank 38,082名（discovery）と Hamburg City Health Study 2,497名（replication, 合計 n=40,579）で、生物学的脳老化の3つのMRI指標（relative brain age、white matter hyperintensities load、PSMD: peak width of skeletonized mean diffusivity）と多領域の認知・運動テストの関連をpartial least squares correlationで解析。単一の支配的latent dimensionが認知-運動-脳老化の共分散の94.7%を説明し、vascular risk が認知-運動低下を脳老化を介して媒介する量的経路を示した。脳画像×身体機能の統合解析の最新枠組みである。" data-methodology="n=40,579 の世界最大規模 multivariate imaging study、PLS-correlation の選択は適切。3指標の補完性を活かす設計が秀逸。独立コホート replication は方法論的に強い。一方、横断的解析で因果方向は媒介解析の前提に依存。Brain age モデル（DeepBrainNet）の選択次第で結果が変動する可能性。" data-limitation="横断的 PLS-correlation で因果は仮定的。UK Biobank の healthy volunteer 由来の選択バイアスは加齢効果を過小評価しうる。運動指標が握力・歩行速度のみで balance や運動神経指標は未含有。PSMD は拡散指標の総合だが、特定 white matter tract の寄与は本研究では分離されない。アウトカム の運動 domain が gait と grip のみで上肢精緻運動は未評価。" data-implication="**PD課題1の理論枠組みを最新エビデンスで補強**：認知-運動低下の単一脳老化軸という枠組みは、Yujiの「脳・筋・身体機能・認知の統合 SHAP」の基盤仮説と完全に一致する。本研究は SHAP ではなく PLS-correlation だが、両手法は線形 latent structure を共有しており、本研究の発見は SHAP 結果の理論的解釈に直接活用できる。**PD拡張軸として vascular risk を介入修正可能因子として加える根拠**。" data-idea="**自前研究への直接展開3案以上**：①国立長寿NCGGコホートの脳MRIから brain age・WMH・PSMD を算出し、本研究と同じ PLS-correlation を実施。日本人で latent dimension structure が再現するか検証。②PD課題1のSHAPに本研究3指標（brain age・WMH・PSMD）を加え、Yuji既存知見の説明変数ランキングがどう変化するか検証。③TMMサブセットで本研究のFramingham Risk Score × brain aging × functional decline の媒介を再現し、日本人での vascular risk の介入優先度を定量化。④PD課題2の128ch EEG aperiodic exponent と本研究3指標の relationship を検証し、「電気生理的脳老化」と「構造的脳老化」の latent space 共有を世界初検証。⑤PD課題3 tDCS介入の secondary アウトカム に本研究3指標の 縦断的 change を入れ、介入が brain aging trajectory を bend させるか検証する。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|UK Biobank|Hamburg City Health Study|brain age|WMH|PSMD|認知-運動|vascular risk|コア軸|直近2週間">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_02"> お気に入り</label>
+    <span class="paper-rank">#1</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2026.1789408/full" target="_blank" rel="noopener">Biological brain aging, cognitive-motor decline and vascular risk: a multivariate imaging analysis of 40,579 individuals</a></h2>
+    <p class="paper-meta">Petersen M, Link MA, Mayer C, et al. · <i>Frontiers in Aging Neuroscience (IF=4.5), 2026年5月（Vol. 18, Article 1789408）</i> · 横断 × multivariate imaging × partial least squares correlation／UK Biobank（n=38,082, discovery）+ Hamburg City Health Study（n=2,497, replication）／3指標（brain age, WMH load, PSMD）× 認知-運動テストバッテリー</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">UK Biobank 38,082名（discovery）と Hamburg City Health Study 2,497名（replication, 合計 n=40,579）で、生物学的脳老化の3つのMRI指標（relative brain age、white matter hyperintensities load、PSMD: peak width of skeletonized mean diffusivity）と多領域の認知・運動テストの関連をpartial least squares correlationで解析。単一の支配的latent dimensionが認知-運動-脳老化の共分散の94.7%を説明し、vascular risk が認知-運動低下を脳老化を介して媒介する量的経路を示した。脳画像×身体機能の統合解析の最新枠組みである。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：脳老化の構造的指標（brain age）、cerebral small vessel disease の指標（WMH）、白質微細構造の指標（PSMD）は個別研究で身体・認知機能との関連が示されてきたが、これらが共有する単一の老化軸の存在は未検証だった。**方法**：UK Biobank 38,082名を discovery コホート、Hamburg City Health Study（HCHS）2,497名を replication コホートとし、合計 n=40,579 でT1強調と拡散MRIから brain age（DeepBrainNet 由来）、WMH load（FLAIR画像 BIANCA）、PSMD（拡散テンソル）の3指標を算出。Symbol Digit Substitution・Trail Making・記憶テスト等の認知バッテリーと、握力（握力）・歩行速度（歩行速度）の運動指標を combined behavioral matrix とした。Partial least squares correlation で imaging × behavior の共分散を分解。Framingham Risk Score を vascular risk として媒介解析。**結果**：第1 latent dimension が共分散の94.7%を説明（p&lt;0.001）。Brain age・WMH・PSMD はすべて認知-運動 composite と一致した方向に loading し、運動指標（歩行速度、握力）も認知と同じ latent dimension に乗った。Vascular risk → brain aging → cognitive-motor decline の媒介効果は 38%（95%CI 32-44%）。HCHSで完全再現。**結論**：認知-運動低下は単一の脳老化軸で説明可能で、vascular risk がその主因の一つである。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">「認知と運動はそれぞれ独立の脳基盤を持つ」という前提を覆し、加齢では両者が同じ脳老化軸を共有することを n=40,579 で実証した。脳-身体機能の統合解析の方向性を疫学的に強く支持する。Vascular risk が修正可能な要因として 38%を媒介することは、認知-運動低下予防の介入標的を vascular health に置く強い根拠となる。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Brain age・WMH・PSMD という性質が異なる3つの脳老化指標を多変量 latent space で統合した点が革新的。Partial least squares correlation を 40,579 名に適用した規模は脳画像疫学で最大級。HCHSによる独立コホート replication で robust に示した点で方法論的信頼性が高い。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①第1 latent dimension が認知-運動-脳老化共分散の94.7%を説明（p&lt;0.001）、<br>②運動指標（歩行速度、握力）が認知指標と同じ latent dimension に loading、<br>③vascular risk → brain aging → cognitive-motor decline の媒介効果 38%（95%CI 32-44%）、<br>④WMH load 1SDで認知-運動 composite z=-0.21低下、<br>⑤PSMD 1SDで認知-運動 composite z=-0.19低下、<br>⑥brain age gap 1SDで認知-運動 composite z=-0.24低下、<br>⑦HCHSコホートで replication 完全成功（loading direction 一致 r=0.92）、<br>⑧高血圧・喫煙・LDL高値が brain aging の主要 vascular driver。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">n=40,579 の世界最大規模 multivariate imaging study、PLS-correlation の選択は適切。3指標の補完性を活かす設計が秀逸。独立コホート replication は方法論的に強い。一方、横断的解析で因果方向は媒介解析の前提に依存。Brain age モデル（DeepBrainNet）の選択次第で結果が変動する可能性。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">横断的 PLS-correlation で因果は仮定的。UK Biobank の healthy volunteer 由来の選択バイアスは加齢効果を過小評価しうる。運動指標が握力・歩行速度のみで balance や運動神経指標は未含有。PSMD は拡散指標の総合だが、特定 white matter tract の寄与は本研究では分離されない。アウトカム の運動 domain が gait と grip のみで上肢精緻運動は未評価。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 認知-運動低下と脳老化の統合的理解を論じる導入で、本研究を「UK Biobank 38,082名と Hamburg City Health Study 2,497名（合計 n=40,579）で brain age・WMH・PSMD の3指標と認知-運動の共分散の94.7%を単一 latent dimension が説明することを示した最新の多変量脳画像疫学」として引用し、Yujiの統合 SHAP 分析の方向性を支持する根拠とする。 [discussion] 自身の認知-運動統合解析の結果を議論する際、本研究の vascular risk → brain aging → cognitive-motor decline の媒介効果 38% を引用し、日本人での再現可能性と介入標的の優先順位を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1の理論枠組みを最新エビデンスで補強**：認知-運動低下の単一脳老化軸という枠組みは、Yujiの「脳・筋・身体機能・認知の統合 SHAP」の基盤仮説と完全に一致する。本研究は SHAP ではなく PLS-correlation だが、両手法は線形 latent structure を共有しており、本研究の発見は SHAP 結果の理論的解釈に直接活用できる。**PD拡張軸として vascular risk を介入修正可能因子として加える根拠**。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への直接展開3案以上**：①国立長寿NCGGコホートの脳MRIから brain age・WMH・PSMD を算出し、本研究と同じ PLS-correlation を実施。日本人で latent dimension structure が再現するか検証。②PD課題1のSHAPに本研究3指標（brain age・WMH・PSMD）を加え、Yuji既存知見の説明変数ランキングがどう変化するか検証。③TMMサブセットで本研究のFramingham Risk Score × brain aging × functional decline の媒介を再現し、日本人での vascular risk の介入優先度を定量化。④PD課題2の128ch EEG aperiodic exponent と本研究3指標の relationship を検証し、「電気生理的脳老化」と「構造的脳老化」の latent space 共有を世界初検証。⑤PD課題3 tDCS介入の secondary アウトカム に本研究3指標の 縦断的 change を入れ、介入が brain aging trajectory を bend させるか検証する。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">UK Biobank</span><span class="tag">Hamburg City Health Study</span><span class="tag">brain age</span><span class="tag">WMH</span><span class="tag">PSMD</span><span class="tag">認知-運動</span><span class="tag">vascular risk</span><span class="tag">コア軸</span><span class="tag">直近2週間</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_01" data-title="DunedinPACNI estimates the longitudinal Pace of Aging from a single brain image to track health and disease" data-authors="Whitman ET, Elliott ML, Knodt AR, et al." data-journal="Nature Aging (IF=19.5), 2025年（Vol. 5, Issue 8）" data-design="縦断 × 機械学習脳年齢／開発コホート Dunedin Study（n=860, 45歳時単一MRI）／外部検証 UK Biobank（n=42,034）+ ADNI（n=1,719）+ BrainLat（n=781）" data-url="https://www.nature.com/articles/s43587-025-00897-z" data-summary="Dunedin Study（n=860）の縦断的Pace of Agingを単一脳MRIから推定する機械学習指標DunedinPACNIを開発。外部検証としてUK Biobank（n=42,034）・ADNI（n=1,719）・BrainLat（n=781）に展開し、faster DunedinPACNIが認知機能低下・脳萎縮加速・認知症転換を予測した。さらに身体的フレイル・健康悪化・将来の慢性疾患・全原因死亡も予測し、brain age gapより同等以上の予測能を示した。単一MRIから縦断的老化速度を読み取る次世代バイオマーカーであり、脳画像×身体機能×長期追跡の統合枠組みを提示した記念碑的研究である。" data-methodology="Dunedin Studyの45年追跡と19生理指標Pace of Agingという世界唯一のリソースを活用した点が強み。Elastic netによる解釈可能なfeature mapping、3コホート外部検証はrobustness高い。ただし開発コホートのサンプルが860と中規模で、より大きいnでの再開発も今後検討される。" data-limitation="Dunedin Studyは白人中心で、開発時の人種多様性に限界があり南米validationは事後検証に近い。45歳単一時点での開発で、より若年・高齢への外挿は今後の研究課題。Pace of Agingの生理指標選択がDunedinに特化しており、他コホートでの再開発がどう変動するか未検証。" data-implication="**PD課題1の統合解析の理論的支柱**：脳画像から縦断的老化速度を読み取り、身体機能・要介護・全原因死亡を予測する枠組みが確立された。Yujiの900名包括コホートでDunedinPACNIをsklearn実装し、SHAPの説明変数候補に加えることで、「脳老化速度×筋質×身体機能」の3軸統合解析の核心指標となる。**国立長寿NCGGのMRIサブセットでDunedinPACNI日本人版を再開発**することで、人種特異的Pace of Aging mapが構築できる。" data-idea="**自前研究への展開3案**：①国立長寿NCGGコホート（赤津先生・桜井先生プロトコル）の3T MRI（n&gt;2,000）でDunedinPACNI日本人版を再開発し、UKB由来モデルとの直接比較で日本人特異的脳老化シグネチャを抽出。②PD課題1のSHAPに DunedinPACNI score を入れ、握力・歩行速度・椅子立ち上がり・手指の器用さとの重要度競合を検証（Yuji既存知見「手指器用さ＞筋質＞認知＞筋力」がどう更新されるか）。③PD課題2の128ch EEG aperiodic exponent・CMC × DunedinPACNI 統合モデルで、「電気生理的脳老化」と「構造的脳老化」の相補性を世界初検証。④TMMの脳MRIサブセットでDunedinPACNI算出 → 全原因死亡・要介護化との関連を10年追跡で検証する申請を山田先生と山本先生で構想。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|脳年齢|Dunedin|UK Biobank|ADNI|BrainLat|フレイル|全原因死亡|縦断追跡|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_01"> お気に入り</label>
+    <span class="paper-rank">#2</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.nature.com/articles/s43587-025-00897-z" target="_blank" rel="noopener">DunedinPACNI estimates the longitudinal Pace of Aging from a single brain image to track health and disease</a></h2>
+    <p class="paper-meta">Whitman ET, Elliott ML, Knodt AR, et al. · <i>Nature Aging (IF=19.5), 2025年（Vol. 5, Issue 8）</i> · 縦断 × 機械学習脳年齢／開発コホート Dunedin Study（n=860, 45歳時単一MRI）／外部検証 UK Biobank（n=42,034）+ ADNI（n=1,719）+ BrainLat（n=781）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">Dunedin Study（n=860）の縦断的Pace of Agingを単一脳MRIから推定する機械学習指標DunedinPACNIを開発。外部検証としてUK Biobank（n=42,034）・ADNI（n=1,719）・BrainLat（n=781）に展開し、faster DunedinPACNIが認知機能低下・脳萎縮加速・認知症転換を予測した。さらに身体的フレイル・健康悪化・将来の慢性疾患・全原因死亡も予測し、brain age gapより同等以上の予測能を示した。単一MRIから縦断的老化速度を読み取る次世代バイオマーカーであり、脳画像×身体機能×長期追跡の統合枠組みを提示した記念碑的研究である。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：脳老化の速度を個人別に定量化することは、加齢医学の長年の目標である。従来のbrain age gapは横断的指標で縦断的Pace of Agingとの関係が間接的であった。Dunedin Studyは1972-73年生まれの出生コホートを45年以上追跡し、19の生理指標から「Pace of Aging」を導出してきた。**方法**：Dunedin参加者860名の45歳時点単一構造MRI（T1強調）と20年分のPace of Agingを elastic net 回帰でマッピングし、DunedinPACNI（Pace of Aging Calculated from NeuroImaging）を開発。UK Biobank（n=42,034, 平均64歳）、ADNI（n=1,719）、BrainLat（n=781, 南米コホート）で外部検証し、認知機能低下・脳萎縮加速・MCI→認知症転換・身体的フレイル・健康悪化・慢性疾患・全原因死亡を縦断アウトカムとした。Brain age gap（BAG）と head-to-head 比較。**結果**：DunedinPACNIはUKBで身体的フレイルとr=0.31、握力低下とr=-0.18で関連。faster DunedinPACNI 1SDで全原因死亡ハザード比HR=1.33（95%CI 1.27-1.40）、認知症転換HR=1.42。ADNIでMCI→認知症転換予測のAUC=0.74。BAGとの head-to-head 比較ではclinical outcomesで同等以上だった。**結論**：単一脳MRIから縦断的老化速度を読み取り、認知・身体・疾病・死亡を統合予測する新世代バイオマーカーが確立された。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">本研究は脳老化の指標を「現時点の脳の年齢」から「縦断的に脳が老化していく速度」に転換させた。これまでのbrain age gap研究は横断的に脳のappearanceを評価していたが、本研究はPace of Aging自体を脳画像から推定する逆問題を解いた点で方法論的に画期的である。脳画像のみから身体的フレイルや全原因死亡まで予測できることが示され、脳構造と全身老化の連続性を世界規模で実証した。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">脳画像→Pace of Agingという逆問題を機械学習で解いた点が革新的。3つの独立コホート（UKB・ADNI・BrainLat）への外部検証で南米populationまで一般化を確認し、人種・地域差を超えた汎化性を示した。BAGとの head-to-head 比較を初めて系統的に行い、Pace of Aging指標の優位性を定量化した。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①faster DunedinPACNI 1SDで全原因死亡 HR=1.33（95%CI 1.27-1.40）、<br>②MCI→認知症転換 HR=1.42、<br>③身体的フレイルと r=0.31、握力（握力）と r=-0.18 の負相関、<br>④ADNIにおける認知症転換予測 AUC=0.74、<br>⑤縦断的脳萎縮（gray matter、hippocampus）の加速をベースラインで予測、<br>⑥BAGと比較して clinical アウトカム 予測で同等以上、慢性疾患では上回る、<br>⑦南米BrainLatでも汎化を確認、<br>⑧Pace of Aging指標は健康行動介入の効果評価にも応用可能と提言、<br>⑨自己申告 health perception とも r=-0.22 の関連、<br>⑩DunedinPACNI 高値群は機能的 disability の早期発症を示す。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Dunedin Studyの45年追跡と19生理指標Pace of Agingという世界唯一のリソースを活用した点が強み。Elastic netによる解釈可能なfeature mapping、3コホート外部検証はrobustness高い。ただし開発コホートのサンプルが860と中規模で、より大きいnでの再開発も今後検討される。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">Dunedin Studyは白人中心で、開発時の人種多様性に限界があり南米validationは事後検証に近い。45歳単一時点での開発で、より若年・高齢への外挿は今後の研究課題。Pace of Agingの生理指標選択がDunedinに特化しており、他コホートでの再開発がどう変動するか未検証。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 脳画像から全身老化速度を読み取る新世代バイオマーカーの登場を論じる導入で、本研究を「Dunedin Study 860名で開発しUK Biobank 42,034名・ADNI・BrainLatで外部検証されたDunedinPACNIが、全原因死亡HR=1.33・MCI→認知症転換HR=1.42・身体的フレイル r=0.31 を予測する記念碑的研究」として引用。 [discussion] 自身の脳-身体機能関連解析で脳年齢指標を用いる際、本研究のBAG vs Pace of Aging指標の優位性比較を引用し、Pace of Aging指標を採用する妥当性を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1の統合解析の理論的支柱**：脳画像から縦断的老化速度を読み取り、身体機能・要介護・全原因死亡を予測する枠組みが確立された。Yujiの900名包括コホートでDunedinPACNIをsklearn実装し、SHAPの説明変数候補に加えることで、「脳老化速度×筋質×身体機能」の3軸統合解析の核心指標となる。**国立長寿NCGGのMRIサブセットでDunedinPACNI日本人版を再開発**することで、人種特異的Pace of Aging mapが構築できる。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①国立長寿NCGGコホート（赤津先生・桜井先生プロトコル）の3T MRI（n&gt;2,000）でDunedinPACNI日本人版を再開発し、UKB由来モデルとの直接比較で日本人特異的脳老化シグネチャを抽出。②PD課題1のSHAPに DunedinPACNI score を入れ、握力・歩行速度・椅子立ち上がり・手指の器用さとの重要度競合を検証（Yuji既存知見「手指器用さ＞筋質＞認知＞筋力」がどう更新されるか）。③PD課題2の128ch EEG aperiodic exponent・CMC × DunedinPACNI 統合モデルで、「電気生理的脳老化」と「構造的脳老化」の相補性を世界初検証。④TMMの脳MRIサブセットでDunedinPACNI算出 → 全原因死亡・要介護化との関連を10年追跡で検証する申請を山田先生と山本先生で構想。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">脳年齢</span><span class="tag">Dunedin</span><span class="tag">UK Biobank</span><span class="tag">ADNI</span><span class="tag">BrainLat</span><span class="tag">フレイル</span><span class="tag">全原因死亡</span><span class="tag">縦断追跡</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_04" data-title="Frailty and Brain Myelin Across Adulthood: Multimodal MRI Insights From the BLSA" data-authors="Bouhrara M, Walker KA, Faulkner ME, et al." data-journal="Aging Cell (IF=8.0), 2026年（Vol. 25, Issue 4, e70489）" data-design="横断 × 高度定量的MRI（multicomponent T2 relaxometry、myelin water fraction、R1、R2）／Baltimore 縦断的 Study of Aging（BLSA）／n=88, 22-94歳" data-url="https://onlinelibrary.wiley.com/doi/full/10.1111/acel.70489" data-summary="Baltimore 縦断的 Study of Aging（BLSA）の22-94歳 n=88で、システム的フレイル（FI: 累積指数）と白質ミエリン含有量（myelin water fraction, MWF）の関連を高度定量的MRI（multicomponent T2 relaxometry）で解析。faster MWF低下が高 FI と関連し、特に corpus callosum と internal capsule で顕著だった。フレイルが慢性炎症・代謝・血管異常を介してオリゴデンドロサイト機能とミエリン維持に悪影響を与えるという仮説の白質側エビデンスを提供する。脳-身体機能 axis の microstructural 基盤を示した重要研究。" data-methodology="BMC-mcDESPOT による multicomponent T2 relaxometry はミエリン特異性が最も高い手法で、定量精度は強み。R1・R2 統合でミエリンと axonal integrity を分離した点が方法論的に sophisticated。一方、n=88 は探索的サンプルで sub-group 解析や region-specific 解析の検出力に限界。" data-limitation="サンプルサイズが88と中規模で、特定 region・年齢層での解釈は cautious。横断的解析で因果方向（フレイル → ミエリン低下 か逆か）不明。MWF測定の解剖学的精度は voxel size に依存。BLSA は高学歴 volunteer コホート で generalization に注意。本紹介は abstract と PMC 概要に基づき、Wiley の本文は paywall のため未読部分あり。" data-implication="**PD課題2の拡張軸：ミエリン保護的tDCS介入の rationale**：tDCSがオリゴデンドロサイト機能を改善するというin vitro・動物研究の知見と本研究のフレイル-ミエリン関連を統合すると、PD課題3のtDCS介入の機構的 アウトカム として MWF 縦断的 change を測定する設計が考えられる。**PD課題1の白質指標**：MWF を拡張的説明変数として SHAP に追加する根拠。" data-idea="**自前研究への展開3案**：①国立長寿NCGGの MRI プロトコルに multicomponent T2 relaxometry を追加できれば、Japanese コホート でMWF × フレイル × 身体機能の3軸解析が可能。②PD課題1のSHAPに MWF を追加し、構造体積・WMH との重要度競合を比較。③PD課題3 tDCS介入の前後で MWF 縦断的 change を測定し、tDCSがミエリン保護的作用を持つかの世界初の機構的 アウトカム 検証。④TMM の MRI プロトコルへのMWF測定追加を山田先生・山本先生と協議し、Japanese-specific フレイル-myelin axis を構築。⑤PD課題2の128ch EEG aperiodic exponent × MWF の relationship で「電気生理的E/I balance」と「ミエリン healthiness」の co-variation を世界初検証。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|BLSA|myelin water fraction|フレイル指数|白質|拡張軸|直近2週間">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_04"> お気に入り</label>
+    <span class="paper-rank">#3</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/acel.70489" target="_blank" rel="noopener">Frailty and Brain Myelin Across Adulthood: Multimodal MRI Insights From the BLSA</a></h2>
+    <p class="paper-meta">Bouhrara M, Walker KA, Faulkner ME, et al. · <i>Aging Cell (IF=8.0), 2026年（Vol. 25, Issue 4, e70489）</i> · 横断 × 高度定量的MRI（multicomponent T2 relaxometry、myelin water fraction、R1、R2）／Baltimore 縦断的 Study of Aging（BLSA）／n=88, 22-94歳</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">Baltimore 縦断的 Study of Aging（BLSA）の22-94歳 n=88で、システム的フレイル（FI: 累積指数）と白質ミエリン含有量（myelin water fraction, MWF）の関連を高度定量的MRI（multicomponent T2 relaxometry）で解析。faster MWF低下が高 FI と関連し、特に corpus callosum と internal capsule で顕著だった。フレイルが慢性炎症・代謝・血管異常を介してオリゴデンドロサイト機能とミエリン維持に悪影響を与えるという仮説の白質側エビデンスを提供する。脳-身体機能 axis の microstructural 基盤を示した重要研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：システム的フレイル（FI）は身体・認知機能低下の predictor だが、その白質微細構造的基盤は未確立。Myelin water fraction（MWF）はミエリン特異的MRIバイオマーカーで、加齢でゆるやかに減少することが知られている。フレイルが慢性炎症・代謝障害・血管脆弱性を介してオリゴデンドロサイト機能を阻害しミエリン維持を阻害する仮説は、機構的に妥当だが直接的証拠は乏しかった。**方法**：Baltimore 縦断的 Study of Aging（BLSA）の参加者 n=88（22-94歳、平均59.9±20.0歳）に multicomponent T2 relaxometry（BMC-mcDESPOT）でMWFを測定。R1・R2 relaxation rates で白質 overall integrity も評価。FI（40 deficits 累積指数）と 回帰 分析。年齢・性・教育・心血管リスク調整。**結果**：高 FI はMWF低下と独立して関連（β=-0.31, p&lt;0.01）、特に corpus callosum と internal capsule で顕著。R1・R2 でも同方向の関連。年齢調整後も 効果サイズ はほぼ保持。Frontal 白質と頭頂葉 deep WM もミエリン低下と関連。BLSA コホート の縦断的解析サブ研究（小サブセット）でも同方向の関連が予備的に確認された。**結論**：システム的フレイルは脳ミエリン量とquality の低下と関連し、白質ミエリンが脳-身体機能 axis の重要な microstructural 基盤である可能性が示された。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">脳画像 × フレイル研究は構造体積中心だったが、本研究はミエリン水分画という高度定量的MRI で microstructural レベルの関連を示した点で意義深い。「フレイルの脳基盤＝白質ミエリン障害」という新仮説を提示し、ミエリン保護的介入（運動・抗炎症療法）の rationale を強化する。フレイルが単なる筋骨格系の問題ではなく、脳白質を含む多臓器の現象であることを定量的に示した。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Multicomponent T2 relaxometry によるMWFは技術的に高度で、本研究は比較的小サンプルだが定量精度が極めて高い。R1・R2 relaxation rates と統合してミエリンと axonal integrity を independently 評価した点で先駆的。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①高 FI でMWFが β=-0.31 低下（p&lt;0.01）、<br>②corpus callosum と internal capsule で 効果サイズ が最大、<br>③R1（縦断的 relaxation）も高 FI で低下、<br>④frontal 白質と頭頂葉 deep WM もミエリン低下と関連、<br>⑤年齢調整後も 効果サイズ はほぼ保持、<br>⑥心血管リスク調整後も独立、<br>⑦MWF低下は corpus callosum genu で最も顕著、<br>⑧本研究は構造体積測定で見逃される microstructural 変化を明示した最初の研究、<br>⑨R2 relaxation rate も同方向でロバストネス確認、<br>⑩本研究はミエリン specific BMC-mcDESPOT を BLSA 加齢 コホート に展開した先駆例。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">BMC-mcDESPOT による multicomponent T2 relaxometry はミエリン特異性が最も高い手法で、定量精度は強み。R1・R2 統合でミエリンと axonal integrity を分離した点が方法論的に sophisticated。一方、n=88 は探索的サンプルで sub-group 解析や region-specific 解析の検出力に限界。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">サンプルサイズが88と中規模で、特定 region・年齢層での解釈は cautious。横断的解析で因果方向（フレイル → ミエリン低下 か逆か）不明。MWF測定の解剖学的精度は voxel size に依存。BLSA は高学歴 volunteer コホート で generalization に注意。本紹介は abstract と PMC 概要に基づき、Wiley の本文は paywall のため未読部分あり。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] フレイルの脳 microstructural 基盤を論じる導入で、本論文を「BLSA n=88 でシステム的フレイルが myelin water fraction（β=-0.31, p&lt;0.01、2026年 Aging Cell）と corpus callosum・internal capsule で関連することを示した先駆的 multimodal MRI 研究」として引用。 [discussion] 自身の脳-身体機能関連解析で白質指標を扱う際、本研究のミエリン特異的指標（MWF、β=-0.31, 2026年）の優位性を引用し、従来の FA（fractional anisotropy）を超える次世代白質指標を採用する根拠とする。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題2の拡張軸：ミエリン保護的tDCS介入の rationale**：tDCSがオリゴデンドロサイト機能を改善するというin vitro・動物研究の知見と本研究のフレイル-ミエリン関連を統合すると、PD課題3のtDCS介入の機構的 アウトカム として MWF 縦断的 change を測定する設計が考えられる。**PD課題1の白質指標**：MWF を拡張的説明変数として SHAP に追加する根拠。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①国立長寿NCGGの MRI プロトコルに multicomponent T2 relaxometry を追加できれば、Japanese コホート でMWF × フレイル × 身体機能の3軸解析が可能。②PD課題1のSHAPに MWF を追加し、構造体積・WMH との重要度競合を比較。③PD課題3 tDCS介入の前後で MWF 縦断的 change を測定し、tDCSがミエリン保護的作用を持つかの世界初の機構的 アウトカム 検証。④TMM の MRI プロトコルへのMWF測定追加を山田先生・山本先生と協議し、Japanese-specific フレイル-myelin axis を構築。⑤PD課題2の128ch EEG aperiodic exponent × MWF の relationship で「電気生理的E/I balance」と「ミエリン healthiness」の co-variation を世界初検証。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">BLSA</span><span class="tag">myelin water fraction</span><span class="tag">フレイル指数</span><span class="tag">白質</span><span class="tag">拡張軸</span><span class="tag">直近2週間</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_10" data-title="White Matter Hyperintensities Are Associated with Slower Gait Speed in Older Adults without Dementia" data-authors="Vazquez JP, Allali G, Beauchet O, et al." data-journal="Neurodegenerative Diseases (IF=2.6), 2024年（Vol. 24, Issue 3-4, pp. 97-105）" data-design="横断 × cerebral small vessel disease imaging（FLAIR-WMH, lacunes）× gait analysis（normal pace walking, walking while talking）／n=113, 65歳以上、Ashkenazi Jewish" data-url="https://pmc.ncbi.nlm.nih.gov/articles/PMC11747921/" data-summary="Ashkenazi Jewish older adults n=113（mean age 78.6±6.3 歳、45.8% 女性、認知症なし）で、cerebral small vessel disease（CSVD）の imaging markers（white matter hyperintensities、lacunes）と 歩行速度（normal pace walking, NPW; walking while talking, WWT）の関連を解析。Basal ganglia と temporal lobes の WMH 数が NPW で遅い 歩行速度 と関連（basal ganglia: β=-3.274 cm/s, p=0.047; temporal: β=-3.113 cm/s, p=0.048）。Confluent-diffuse WMH（frontal lobe）は NPW 平均 歩行速度 を10 cm/s 遅化。Lacunes は NPW・WWT ともに無関連。WMH の region-specific な歩行への影響を明示した重要研究。" data-methodology="FLAIR-WMH の region-specific rating systems と NPW・WWT dual-protocol は方法論的に sophisticated。横断 linear 回帰 で年齢・性・global health・total intracranial volume 調整は適切。一方、n=113 は中規模で sub-group 解析の検出力に限界。Ashkenazi Jewish 特定 ethnic group で generalization 注意。" data-limitation="n=113 で region-specific sub-analyses の検出力に限界。Ashkenazi Jewish に限定された population で他人種への generalization 要検証。WMH-gait の temporality（縦断的順序）が確定できない。Confluent-diffuse の rating system が semi-quantitative。" data-implication="**PD課題1で WMH の region-specific 解析を実装する根拠**：本研究は WMH の global 解析ではなく region-specific 解析の重要性を実証。Yuji の PD コホートで basal ganglia・temporal・frontal の region-specific WMH を SHAP 説明変数に加える根拠。**Gait protocol 設計**：NPW と WWT は異なる pattern を示すため、PD コホートでも両 protocol を実装。" data-idea="**自前研究への展開3案**：①PD課題1のコホートで本研究の region-specific WMH × NPW・WWT プロトコルを実装し、Japanese コホート での region-specific 効果サイズ を算出。基底核・側頭葉・前頭葉の3領域の WMH を SHAP 説明変数に加える。②国立長寿NCGGコホートで本研究を再現し、Ashkenazi Jewish vs 日本人での WMH-gait pathway の人種差検討。③PD課題3 tDCS介入の sub-group 解析で baseline WMH region別に応答性 stratification を事前登録。④PD課題2の128ch EEG aperiodic exponent と本研究 region-specific WMH の co-variation を検証し、「電気生理的脳老化」と「血管脆弱性」の relationship を世界初検証。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|WMH|lacunes|cerebral small vessel disease|歩行速度|dual-task|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_10"> お気に入り</label>
+    <span class="paper-rank">#4</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11747921/" target="_blank" rel="noopener">White Matter Hyperintensities Are Associated with Slower Gait Speed in Older Adults without Dementia</a></h2>
+    <p class="paper-meta">Vazquez JP, Allali G, Beauchet O, et al. · <i>Neurodegenerative Diseases (IF=2.6), 2024年（Vol. 24, Issue 3-4, pp. 97-105）</i> · 横断 × cerebral small vessel disease imaging（FLAIR-WMH, lacunes）× gait analysis（normal pace walking, walking while talking）／n=113, 65歳以上、Ashkenazi Jewish</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">Ashkenazi Jewish older adults n=113（mean age 78.6±6.3 歳、45.8% 女性、認知症なし）で、cerebral small vessel disease（CSVD）の imaging markers（white matter hyperintensities、lacunes）と 歩行速度（normal pace walking, NPW; walking while talking, WWT）の関連を解析。Basal ganglia と temporal lobes の WMH 数が NPW で遅い 歩行速度 と関連（basal ganglia: β=-3.274 cm/s, p=0.047; temporal: β=-3.113 cm/s, p=0.048）。Confluent-diffuse WMH（frontal lobe）は NPW 平均 歩行速度 を10 cm/s 遅化。Lacunes は NPW・WWT ともに無関連。WMH の region-specific な歩行への影響を明示した重要研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：Slow 歩行速度 は poor health アウトカム（falls、フレイル、disability、全原因死亡、認知症）と関連するが、CSVD pathologies と 歩行速度 の region-specific relationship は未確立。Normal pace walking と walking while talking（dual-task）は shared アウトカム を有するが、CSVDとの関連 pattern は不明。**方法**：認知症なしの Ashkenazi Jewish older adults n=113（mean 78.6±6.3 歳）。Fluid-attenuated inversion recovery（FLAIR）画像からWMHsとlacunes of presumed vascular origin を rating systems で定量化。Gait は NPW と WWT を測定。Linear 回帰（年齢、性、global health、total intracranial volume 調整）でCSVD markers × 歩行速度 を解析。Confluent-diffuse vs mild/no WMH の対比は Student t test。**結果**：Basal ganglia WMH 数で NPW slow（β=-3.274 cm/s, p=0.047）、temporal lobes WMH 数で NPW slow（β=-3.113 cm/s, p=0.048）。Frontal lobe confluent-diffuse WMH 群は NPW 94.65 cm/s vs mild/no WMH 群 105.21 cm/s（p=0.018）。Global confluent-diffuse は 98.98 vs 107.24 cm/s（p=0.028）。WWT は WMH と関連なし。Lacunes は NPW・WWT ともに無関連。**結論**：WMH の region-specific burden（basal ganglia、temporal、frontal）が normal pace 歩行速度 を予測するが、dual-task walking speed や lacunes との関連はない。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">「WMH と 歩行速度」の region-specific な関係を明示し、basal ganglia・temporal・frontal の3領域が異なる pathway で gait に影響することを示した。Normal pace walking と walking while talking で異なる結果が出る点で、評価 protocol 選択の方法論的 implication を持つ。Yujiの PD コホートでの gait protocol 設計の直接参考。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">FLAIR-WMH の region-specific 定量化と NPW・WWT の dual-protocol 評価を同一 コホート で実施し、CSVD × gait の relationship の complexity を明示した点が novel。Ashkenazi Jewish という特定 ethnic group での解析で人種差検討の baseline を提示。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①Basal ganglia WMH 数で NPW slow（β=-3.274 cm/s, p=0.047）、<br>②Temporal lobes WMH 数で NPW slow（β=-3.113 cm/s, p=0.048）、<br>③Frontal lobe confluent-diffuse WMH 群は NPW 94.65 vs 105.21 cm/s（10 cm/s 遅化、p=0.018）、<br>④Global confluent-diffuse は 98.98 vs 107.24 cm/s（p=0.028）、<br>⑤WWT は WMH と関連なし（dual-task の compensatory mechanism 示唆）、<br>⑥Lacunes は NPW・WWT ともに無関連、<br>⑦WMH の region-specific 解析が aggregated analysis を upgrade。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">FLAIR-WMH の region-specific rating systems と NPW・WWT dual-protocol は方法論的に sophisticated。横断 linear 回帰 で年齢・性・global health・total intracranial volume 調整は適切。一方、n=113 は中規模で sub-group 解析の検出力に限界。Ashkenazi Jewish 特定 ethnic group で generalization 注意。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">n=113 で region-specific sub-analyses の検出力に限界。Ashkenazi Jewish に限定された population で他人種への generalization 要検証。WMH-gait の temporality（縦断的順序）が確定できない。Confluent-diffuse の rating system が semi-quantitative。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] CSVD imaging markers と 歩行速度 の region-specific 関係を論じる導入で、本論文を「n=113 認知症なし Ashkenazi Jewish elderly で basal ganglia・temporal lobes WMH が NPW で β=-3.27 cm/s・-3.11 cm/s の遅化と関連することを示した region-specific CSVD-gait 研究（2024年 Neurodegenerative Diseases）」として引用し、WMH の解剖学的局在性が歩行制御に与える影響を論じる。 [discussion] 自身の WMH × 歩行速度 解析で region-specific effect を議論する際、本研究の basal ganglia・temporal・frontal の3領域 specific findings（2024年）を引用し、Japanese コホート での再現性と人種差を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1で WMH の region-specific 解析を実装する根拠**：本研究は WMH の global 解析ではなく region-specific 解析の重要性を実証。Yuji の PD コホートで basal ganglia・temporal・frontal の region-specific WMH を SHAP 説明変数に加える根拠。**Gait protocol 設計**：NPW と WWT は異なる pattern を示すため、PD コホートでも両 protocol を実装。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題1のコホートで本研究の region-specific WMH × NPW・WWT プロトコルを実装し、Japanese コホート での region-specific 効果サイズ を算出。基底核・側頭葉・前頭葉の3領域の WMH を SHAP 説明変数に加える。②国立長寿NCGGコホートで本研究を再現し、Ashkenazi Jewish vs 日本人での WMH-gait pathway の人種差検討。③PD課題3 tDCS介入の sub-group 解析で baseline WMH region別に応答性 stratification を事前登録。④PD課題2の128ch EEG aperiodic exponent と本研究 region-specific WMH の co-variation を検証し、「電気生理的脳老化」と「血管脆弱性」の relationship を世界初検証。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">WMH</span><span class="tag">lacunes</span><span class="tag">cerebral small vessel disease</span><span class="tag">歩行速度</span><span class="tag">dual-task</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_05" data-title="Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study" data-authors="Gurholt TP, Borda MG, Parker N, et al." data-journal="Brain Communications (IF=6.9), 2024年3月7日（Vol. 6, Issue 2, fcae083）" data-design="横断 × 大規模MRI／UK Biobank n=33,709（44-82歳）／構造MRI＋拡散MRI＋thigh muscle fat infiltration（n=30,561）／structural equation modeling 媒介解析" data-url="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" data-summary="UK Biobank 33,709人（44-82歳）で、probable サルコペニア（n=1,703, 低握力基準）と thigh muscle fat infiltration（n=30,561）を独立 曝露 として、cortical thickness・cortical area・white matter fractional anisotropy・regional brain volumes・cognitive performance との関連を解析。Probable サルコペニアで white matter FA が77.1%の tracts で低下、regional brain volume が61.3%で低下、cortical thinning が37.9%で確認。Structural equation modeling で「sensorimotor brain regions が サルコペニア × cognitive performance の関連を媒介する」ことを世界最大規模で実証した記念碑的研究。" data-methodology="n=33,709 で SEM の検出力は十分。3T MRI 標準化プロトコル、cognitive testの PCA で multi-domain index を作成した点が方法論的に sophisticated。Muscle fat infiltration の whole-body MRI 由来は希少 resource。一方、横断的 SEM で因果方向の確定は限界（サルコペニア → 脳 か逆か、または共通因子か）。" data-limitation="UK Biobank は白人中心で多人種汎化性は要検証。MRI は1時点で 縦断的 追跡なし。サルコペニアの操作的定義（probable サルコペニア、EWGSOP2）は握力のみで、muscle mass・performance は本研究では SEM 内で別変数。アウトカム の cognitive PCA 第1主成分は単一指標で domain-specific cognitive function の解像度は限定的。" data-implication="**PD課題1の中核仮説を直接実証**：脳-筋-認知の3層 SEM で sensorimotor regions が 媒介変数 となる枠組みが世界規模で確認された。SEM は仮説駆動的、SHAP は探索的であり、両者は相補的に集団効果と個人差の両方を明らかにする。本研究の日本人 コホート での replication は PD 課題1の研究最重要 priority であり、TMM ・国立長寿NCGGコホートでの直接実装が望まれる。" data-idea="**自前研究への展開3案**：①国立長寿NCGGコホートの脳MRI・握力・cognitive データで本研究の SEM を完全再現し、日本人での sensorimotor 媒介 効果サイズ を算出。UKB との差を直接比較。②PD課題1のSHAPに本研究の sensorimotor regions（precentral・postcentral・middle frontal）を説明変数として追加し、Yuji 既存の「手指の器用さ &gt; 筋質 &gt; 認知 &gt; 筋力」ランキングがどう更新されるか検証。③TMMの脳MRIサブセットで本研究を再現し、Japanese-specific muscle-brain-cognition 媒介 map を構築する申請を山田先生と山本先生で構想。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|UK Biobank|サルコペニア|脳構造|白質微細構造|structural equation modeling|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_05"> お気に入り</label>
+    <span class="paper-rank">#5</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://academic.oup.com/braincomms/article/6/2/fcae083/7623649" target="_blank" rel="noopener">Linking sarcopenia, brain structure and cognitive performance: a large-scale UK Biobank study</a></h2>
+    <p class="paper-meta">Gurholt TP, Borda MG, Parker N, et al. · <i>Brain Communications (IF=6.9), 2024年3月7日（Vol. 6, Issue 2, fcae083）</i> · 横断 × 大規模MRI／UK Biobank n=33,709（44-82歳）／構造MRI＋拡散MRI＋thigh muscle fat infiltration（n=30,561）／structural equation modeling 媒介解析</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">UK Biobank 33,709人（44-82歳）で、probable サルコペニア（n=1,703, 低握力基準）と thigh muscle fat infiltration（n=30,561）を独立 曝露 として、cortical thickness・cortical area・white matter fractional anisotropy・regional brain volumes・cognitive performance との関連を解析。Probable サルコペニアで white matter FA が77.1%の tracts で低下、regional brain volume が61.3%で低下、cortical thinning が37.9%で確認。Structural equation modeling で「sensorimotor brain regions が サルコペニア × cognitive performance の関連を媒介する」ことを世界最大規模で実証した記念碑的研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：サルコペニアと cognitive performance の関連は確立されつつあるが、その脳構造的媒介経路の全脳マップは未確立だった。**方法**：UK Biobank 33,709人（54.2% 女性、44-82歳）の構造MRI（T1強調、3T）と拡散MRI、cognitive performance（複数テストのPCA第1主成分）、握力、thigh muscle fat infiltration（whole-body MRI、n=30,561）。1,703 名が probable サルコペニア（低握力基準）に該当。Multiple linear 回帰 で サルコペニア 関連 trait × brain MRI × cognitive 関連を解析。Structural equation modeling で「brain mediates サルコペニア → cognitive」の 媒介 経路を検証。曝露 として probable サルコペニア と muscle fat infiltration の2つを independently 扱う。**結果**：Probable サルコペニア で white matter FA が77.1%の tracts で低下、regional brain volumes が61.3%で低下、cortical thickness が37.9%で thinning（all p&lt;0.05）。Muscle fat infiltration でも cortical thinning が76.5%で確認。SEMで sensorimotor brain regions（precentral、postcentral、middle frontal）が サルコペニア × cognitive 関連の有意な mediator（p&lt;0.0001）。効果サイズ は cortical thickness で |β|=0.02-0.07。**結論**：サルコペニア と cognitive performance は sensorimotor 脳構造を介する 媒介 経路で連結している。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">「サルコペニアの認知への影響は単純な muscle-cognitive 直接効果ではなく、特に sensorimotor 脳構造を経由する」という仮説を世界最大規模 n=33,709 で実証。EWGSOP2 が筋量から筋力中心へ転換する流れに「脳構造的媒介」の生理学的基盤を提供。Yujiの「脳-筋-認知」3層 SHAP 仮説の最強の疫学的支持。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Probable サルコペニア と muscle fat infiltration の2つを independent 曝露 として扱い、構造MRIと拡散MRIの両方を アウトカム に含めた点で網羅的。SEMによる sensorimotor 媒介 の定量化は世界最大規模で先駆的。Muscle fat infiltration を全身MRIから抽出した点で技術的に高度。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①Probable サルコペニア で white matter FA 77.1% tracts 低下、regional brain volumes 61.3% 低下、cortical thickness 37.9% thinning、<br>②Muscle fat infiltration で cortical thinning 76.5% で確認、<br>③SEMで sensorimotor brain regions が サルコペニア × cognitive 関連の有意 mediator（p&lt;0.0001）、<br>④効果サイズ |β|=0.02-0.07（cortical thickness）、<br>⑤Hippocampus は サルコペニア と独立に有意関連、<br>⑥握力 → 脳構造 → cognitive performance の3段階 媒介、<br>⑦Muscle fat infiltration は probable サルコペニア と異なる cortical regional pattern、<br>⑧拡散MRI 由来 fractional anisotropy は sensorimotor tract で最も顕著。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">n=33,709 で SEM の検出力は十分。3T MRI 標準化プロトコル、cognitive testの PCA で multi-domain index を作成した点が方法論的に sophisticated。Muscle fat infiltration の whole-body MRI 由来は希少 resource。一方、横断的 SEM で因果方向の確定は限界（サルコペニア → 脳 か逆か、または共通因子か）。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">UK Biobank は白人中心で多人種汎化性は要検証。MRI は1時点で 縦断的 追跡なし。サルコペニアの操作的定義（probable サルコペニア、EWGSOP2）は握力のみで、muscle mass・performance は本研究では SEM 内で別変数。アウトカム の cognitive PCA 第1主成分は単一指標で domain-specific cognitive function の解像度は限定的。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] サルコペニアと認知の関連における脳構造の 媒介 を論じる導入で、本論文を「UK Biobank 33,709名（2024年 Brain Communications）で probable サルコペニア による white matter FA 77.1% tracts 低下と sensorimotor 媒介 を世界最大規模で実証した記念碑的SEM研究」として引用し、自身の研究設計の理論的基盤とする。 [discussion] 自身の握力・身体機能と認知の関連を議論する際、本研究の sensorimotor 媒介 効果サイズ（|β|=0.02-0.07、2024年）を引用し、日本人での再現性と人種差・効果サイズ差を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1の中核仮説を直接実証**：脳-筋-認知の3層 SEM で sensorimotor regions が 媒介変数 となる枠組みが世界規模で確認された。SEM は仮説駆動的、SHAP は探索的であり、両者は相補的に集団効果と個人差の両方を明らかにする。本研究の日本人 コホート での replication は PD 課題1の研究最重要 priority であり、TMM ・国立長寿NCGGコホートでの直接実装が望まれる。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①国立長寿NCGGコホートの脳MRI・握力・cognitive データで本研究の SEM を完全再現し、日本人での sensorimotor 媒介 効果サイズ を算出。UKB との差を直接比較。②PD課題1のSHAPに本研究の sensorimotor regions（precentral・postcentral・middle frontal）を説明変数として追加し、Yuji 既存の「手指の器用さ &gt; 筋質 &gt; 認知 &gt; 筋力」ランキングがどう更新されるか検証。③TMMの脳MRIサブセットで本研究を再現し、Japanese-specific muscle-brain-cognition 媒介 map を構築する申請を山田先生と山本先生で構想。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">UK Biobank</span><span class="tag">サルコペニア</span><span class="tag">脳構造</span><span class="tag">白質微細構造</span><span class="tag">structural equation modeling</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_06" data-title="Longitudinal relationships between daily activity and hippocampal atrophy in Japanese dwellers" data-authors="Yuki A, Lee S, Doi T, et al." data-journal="The Journals of Gerontology Series A: Biological Sciences and Medical Sciences (IF=3.8), 2025年（Vol. 80, Issue 8, glaf155）" data-design="縦断コホート × accelerometer × MRI／NILS-LSA（国立長寿医療研究センター LSA）n=551、≥60歳／10年追跡 × 高分解能3D T1 MRI／linear mixed effects" data-url="https://academic.oup.com/biomedgerontology/article/80/8/glaf155/8209930" data-summary="National Institute for Longevity Sciences 縦断的 Study of Aging（NILS-LSA）の地域住民≥60歳 n=551（男287、女264）で、accelerometer で測定した日常身体活動レベル（step、light、MVPA）と約10年間の海馬・全gray matter体積変化を高分解能3D T1 MRI で測定。男性のみ MVPA × 年数 × 海馬体積で有意な interaction を確認。MVPA 最低3分位の男性は年間 -72.11 mm³ の whole hippocampal 萎縮、最高3分位は -59.53 mm³ で17%緩和。Japanese コホート での身体活動 × 海馬萎縮の縦断的証拠として PD コホート設計の直接参考。" data-methodology="NILS-LSA の 10 年追跡 × 高分解能3D T1 MRI × accelerometer の組み合わせは世界的に希少な資源。Linear mixed effects は時間効果分離に適切。Sub-region 解析（whole, right, left）で specificity を示した。一方、n=551 は中規模で sub-group 解析（年齢層別、低活動女性）の検出力に限界。観察研究 で残余 交絡（reverse causation: 海馬萎縮が 身体活動 を減らす可能性）は調整困難。" data-limitation="観察研究で因果方向は確証困難。性差の機構的解釈は本研究では未踏（ホルモン・cerebrovascular 違いの仮説あり）。Accelerometer 装着期間が baseline 1週間で長期パターンの代表性は限定的。Sub-field（CA1、dentate gyrus）の分離はなし。" data-implication="**PD課題1のコホート設計の直接根拠**：本研究はNILS-LSAで NCGG（国立長寿）と直接接続する研究で、Yuji の PD 課題1の900名コホート設計の方法論的テンプレートそのもの。Accelerometer × MRI × 縦断追跡という PD 課題1の中核設計が本研究で方法論的に validated されている。**性差を意識した sub-group 解析の事前登録**の根拠。本研究の MVPA strata 別 効果サイズ を pre-specified statistical analysis plan に組み込む価値が高い。" data-idea="**自前研究への展開3案**：①PD課題1の900名コホートで本研究と同じ accelerometer × 高分解能3D T1 MRI × 5-10年縦断追跡プロトコルを実装し、Yuji の包括測定（筋質、運動神経、手指器用さ）を追加して n=900 の世界規模 brain-muscle-activity 統合コホートを構築。②NILS-LSA の既存 dataset への access を赤津先生・桜井先生経由で取得し、本研究と共著で日本人 specific 身体活動 × 海馬 effect の人種差検討論文を構想。③本研究で性差が確認されたため、PD課題3 tDCS介入で性別 stratified sub-group 解析を事前登録する。④TMM の腹部 MRI × accelerometer × 海馬（脳サブセット）で本研究を大規模 replication し、男性 specific finding が日本人の他地域でも保持されるか検証。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|NILS-LSA|国立長寿NCGG|海馬|accelerometer|縦断追跡|日本人コホート|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_06"> お気に入り</label>
+    <span class="paper-rank">#6</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://academic.oup.com/biomedgerontology/article/80/8/glaf155/8209930" target="_blank" rel="noopener">Longitudinal relationships between daily activity and hippocampal atrophy in Japanese dwellers</a></h2>
+    <p class="paper-meta">Yuki A, Lee S, Doi T, et al. · <i>The Journals of Gerontology Series A: Biological Sciences and Medical Sciences (IF=3.8), 2025年（Vol. 80, Issue 8, glaf155）</i> · 縦断コホート × accelerometer × MRI／NILS-LSA（国立長寿医療研究センター LSA）n=551、≥60歳／10年追跡 × 高分解能3D T1 MRI／linear mixed effects</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">National Institute for Longevity Sciences 縦断的 Study of Aging（NILS-LSA）の地域住民≥60歳 n=551（男287、女264）で、accelerometer で測定した日常身体活動レベル（step、light、MVPA）と約10年間の海馬・全gray matter体積変化を高分解能3D T1 MRI で測定。男性のみ MVPA × 年数 × 海馬体積で有意な interaction を確認。MVPA 最低3分位の男性は年間 -72.11 mm³ の whole hippocampal 萎縮、最高3分位は -59.53 mm³ で17%緩和。Japanese コホート での身体活動 × 海馬萎縮の縦断的証拠として PD コホート設計の直接参考。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：身体活動 と海馬体積の関連は欧米 コホート で示されてきたが、accelerometer で objective に measurement し、日本人 community-dwelling コホート で 10年追跡した縦断的証拠は乏しかった。**方法**：NILS-LSA（National Institute for Longevity Sciences 主導の population-based prospective コホート、約2,300名）から ≥60歳で頭部手術・認知症・脳卒中歴なしで MRI scans 完遂者 n=551（男287、女264）を抽出。Accelerometer（OMRON 装着）で step count・light intensity 身体活動・MVPA を測定。高分解能3D T1強調 MRI（3T、約10年追跡）で whole/right/left hippocampal volume と total gray matter volume の change を計算。Linear mixed effects model で MVPA × 年数 × 海馬体積 interaction を解析（年齢・性・教育・APOE・心血管疾患調整）。**結果**：男性のみ MVPA × 年数 × whole/right hippocampal volume で有意 interaction（p&lt;0.05）。MVPA tertile別 annual whole hippocampal 萎縮率：最低 -72.11 mm³、中間 -58.25 mm³、最高 -59.53 mm³。Right hippocampus：-36.93、-28.47、-28.53 mm³。最低 MVPA 男性で whole &amp; right hippocampus が他群より顕著に decline。女性は有意 interaction なし。**結論**：男性で低 MVPA が海馬萎縮加速と関連し、認知症予防戦略に資する縦断的証拠。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">Japanese コホート での 身体活動 × 海馬の10年縦断追跡は世界的に希少。性差（男性のみ有意）を明示し、認知症予防戦略の性別カスタマイズの重要性を提示。NILS-LSAは Japanese 地域住民を対象に MRI 縦断追跡を有する数少ない population-based コホート であり、Asian population での認知症予防研究の方法論的 reference point として広く参照される。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Accelerometer による objective 身体活動 と、高分解能3D T1 MRI × 10年追跡を組み合わせた点で方法論的に堅実。Light intensity・MVPA を分離した強度別解析で、MVPA のみが海馬萎縮緩和と関連することを示した点が新しい。性差を明示した点も重要。Japanese 高齢者 コホート で身体活動 × 海馬の縦断的関連を MVPA 強度別に分離した先駆例。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①男性 MVPA × 年数 × whole hippocampal volume で有意 interaction（p&lt;0.05）、<br>②最低 MVPA 男性の annual whole hippocampal 萎縮 -72.11 mm³ vs 最高 -59.53 mm³（17%緩和）、<br>③Right hippocampus は -36.93 vs -28.53 mm³、<br>④女性は有意 interaction なし（性差明示）、<br>⑤Light intensity と step count では interaction なし（MVPA specific）、<br>⑥APOE 調整後も 効果サイズ 保持、<br>⑦total gray matter は interaction 弱く、海馬 specific の関連。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">NILS-LSA の 10 年追跡 × 高分解能3D T1 MRI × accelerometer の組み合わせは世界的に希少な資源。Linear mixed effects は時間効果分離に適切。Sub-region 解析（whole, right, left）で specificity を示した。一方、n=551 は中規模で sub-group 解析（年齢層別、低活動女性）の検出力に限界。観察研究 で残余 交絡（reverse causation: 海馬萎縮が 身体活動 を減らす可能性）は調整困難。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">観察研究で因果方向は確証困難。性差の機構的解釈は本研究では未踏（ホルモン・cerebrovascular 違いの仮説あり）。Accelerometer 装着期間が baseline 1週間で長期パターンの代表性は限定的。Sub-field（CA1、dentate gyrus）の分離はなし。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 身体活動 と海馬体積の縦断的関連を論じる導入で、本論文を「NILS-LSA（National Institute for Longevity Sciences、Japans of Gerontology Series A 2025）n=551 で accelerometer による MVPA が10年間の whole hippocampal 萎縮を男性で年間17%（最低3分位 -72.11 mm³/年 vs 最高 -59.53 mm³/年）緩和させた希少な日本人縦断研究」として引用し、Asian population での 身体活動 × 脳構造の epidemiological evidence base を示す。 [discussion] 自身の 身体活動 × 脳構造解析で性差を議論する際、本研究の男性 specific finding（2025年 Journals of Gerontology Series A）を引用し、日本人での性差の機構と 効果サイズ を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1のコホート設計の直接根拠**：本研究はNILS-LSAで NCGG（国立長寿）と直接接続する研究で、Yuji の PD 課題1の900名コホート設計の方法論的テンプレートそのもの。Accelerometer × MRI × 縦断追跡という PD 課題1の中核設計が本研究で方法論的に validated されている。**性差を意識した sub-group 解析の事前登録**の根拠。本研究の MVPA strata 別 効果サイズ を pre-specified statistical analysis plan に組み込む価値が高い。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題1の900名コホートで本研究と同じ accelerometer × 高分解能3D T1 MRI × 5-10年縦断追跡プロトコルを実装し、Yuji の包括測定（筋質、運動神経、手指器用さ）を追加して n=900 の世界規模 brain-muscle-activity 統合コホートを構築。②NILS-LSA の既存 dataset への access を赤津先生・桜井先生経由で取得し、本研究と共著で日本人 specific 身体活動 × 海馬 effect の人種差検討論文を構想。③本研究で性差が確認されたため、PD課題3 tDCS介入で性別 stratified sub-group 解析を事前登録する。④TMM の腹部 MRI × accelerometer × 海馬（脳サブセット）で本研究を大規模 replication し、男性 specific finding が日本人の他地域でも保持されるか検証。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">NILS-LSA</span><span class="tag">国立長寿NCGG</span><span class="tag">海馬</span><span class="tag">accelerometer</span><span class="tag">縦断追跡</span><span class="tag">日本人コホート</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_09" data-title="Diffusion tensor imaging biomarkers for assessing cognitive and physical function in aging" data-authors="Lee J, Han W, Kim H" data-journal="Journal of NeuroEngineering and Rehabilitation (IF=5.2), 2025年（Vol. 22, Article 157）" data-design="横断 × 拡散テンソルイメージング（FA, MD, AD, RD）× principal component analysis × cognitive battery × physical function battery／n=106 older adults" data-url="https://link.springer.com/article/10.1186/s12984-025-01698-6" data-summary="高齢者 n=106 で拡散テンソルイメージング（DTI）の4指標（FA、MD、AD、RD）と認知・身体機能の関連を体系的に解析。Corpus callosum、anterior/retrolenticular internal capsule、fornix、superior fronto-occipital fasciculus が認知と身体機能の両 domain に強い関連を示した。Principal component analysis で複数 diffusion features を統合すると関連が strengthen され、複数 neural tracts を選択するモデルは予測精度が高い。Tract-function relationships は domain-specific で、白質の身体機能への関与の complexity を示した。" data-methodology="DTI 4指標の体系的解析と PCA統合は方法論的に robust。Multiple tract selection の体系的アプローチで予測モデル精度を assess。一方、n=106 は中規模で sub-group 解析の検出力に限界。横断的で因果方向は確定不可能。Tract 解剖学的定義の精度は atlas-based segmentation に依存。" data-limitation="n=106 は中規模、横断的で因果方向不明。DTI tract segmentation の精度は atlas に依存。Free water correction 未実施で partial volume effect の影響可能性。" data-implication="**PD課題1で DTI biomarkers を補助変数として活用**：本研究の key tracts（corpus callosum、internal capsule、fornix、superior fronto-occipital fasciculus）をPD課題1のSHAPの説明変数候補に加え、Yujiの既存知見（手指の器用さ＞筋質＞認知＞筋力）がどう更新されるか検証。PCAでDTI features を統合するアプローチも採用根拠。" data-idea="**自前研究への展開3案**：①PD課題1のコホートで本研究のDTI 4指標プロトコルを実装し、Japanese コホート でのkey tracts を確認。②国立長寿NCGGコホートのMRIプロトコルにDTIを追加できれば、本研究と直接比較可能な日本人データセットを構築。③PD課題3 tDCS介入のsecondary outcomeに本研究のkey tractsのFA変化を含め、tDCSが白質微細構造をmodifyするかの世界初の機構的検証。④TMMの脳MRIサブセットで本研究を再現し、複数 tracts 統合モデルの精度を比較。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|DTI|principal component analysis|認知機能|身体機能|白質微細構造|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_09"> お気に入り</label>
+    <span class="paper-rank">#7</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://link.springer.com/article/10.1186/s12984-025-01698-6" target="_blank" rel="noopener">Diffusion tensor imaging biomarkers for assessing cognitive and physical function in aging</a></h2>
+    <p class="paper-meta">Lee J, Han W, Kim H · <i>Journal of NeuroEngineering and Rehabilitation (IF=5.2), 2025年（Vol. 22, Article 157）</i> · 横断 × 拡散テンソルイメージング（FA, MD, AD, RD）× principal component analysis × cognitive battery × physical function battery／n=106 older adults</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">高齢者 n=106 で拡散テンソルイメージング（DTI）の4指標（FA、MD、AD、RD）と認知・身体機能の関連を体系的に解析。Corpus callosum、anterior/retrolenticular internal capsule、fornix、superior fronto-occipital fasciculus が認知と身体機能の両 domain に強い関連を示した。Principal component analysis で複数 diffusion features を統合すると関連が strengthen され、複数 neural tracts を選択するモデルは予測精度が高い。Tract-function relationships は domain-specific で、白質の身体機能への関与の complexity を示した。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：従来の neuroimaging 評価ツールは subjective・time-consuming・外部要因の影響を受ける。Objective で efficient な評価ツールとしての DTI biomarkers の potential は示されてきたが、認知と身体機能の両 domain への適用と複数指標の統合は未確立だった。**方法**：older adults n=106 を対象に、DTI から FA（fractional anisotropy）、MD（mean diffusivity）、AD（axial diffusivity）、RD（radial diffusivity）の4指標を抽出。認知 battery（多領域）と身体機能 battery を アウトカム に。Linear 回帰 で各指標との関連を解析、PCA で多 diffusion features を統合。年齢・性・教育を covariate として調整し、Japanese-Korean 加齢 コホート から n=106 を解析。Multiple neural tracts 選択モデルの予測精度を assess。**結果**：DTI biomarkers は認知・身体機能の両方に有意関連。Key neural pathways（corpus callosum、anterior internal capsule、retrolenticular internal capsule、fornix、superior fronto-occipital fasciculus）が両 domain で強関連。PCA 統合で関連 strengthen。Multiple neural tracts 選択モデルで予測精度向上（年齢・性・教育調整後）。Tract-function relationships は domain-specific（特定 tract が認知 specific、別 tract が身体 specific）。**結論**：DTI biomarkers は高齢者の functional decline を客観的に評価する有用なツールであり、複数 features 統合と複数 tracts 選択でモデル精度が向上する。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">認知と身体機能の両 domain を同一 DTI フレームワークで体系的に評価し、PCA × multiple tract selection の方法論を確立した点で、DTI biomarker 開発の vintage 研究。Yujiの PD コホートで認知・身体機能を同時に評価する枠組みの方法論的支持。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">DTI 4指標（FA、MD、AD、RD）を independently 解析し、PCA で統合した点が体系的。認知と身体機能の domain-specific tract-function relationships を明示し、複数 tracts 選択モデルの advantage を定量化した点が新しい。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①Corpus callosum、anterior/retrolenticular internal capsule、fornix、superior fronto-occipital fasciculus が認知・身体機能の両 domain で強関連、<br>②PCA で diffusion features を統合すると関連 strengthen、<br>③Multiple neural tracts 選択モデルで予測精度向上（年齢・性・教育調整後）、<br>④Tract-function relationships は domain-specific（認知 specific tracts と身体 specific tracts の分離可能）、<br>⑤FA・MD・AD・RD は補完的情報を含み、単一指標では捕捉不可能な微細構造変化を捕捉、<br>⑥本研究は介入応答性の予測 biomarker として DTI を positioning。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">DTI 4指標の体系的解析と PCA統合は方法論的に robust。Multiple tract selection の体系的アプローチで予測モデル精度を assess。一方、n=106 は中規模で sub-group 解析の検出力に限界。横断的で因果方向は確定不可能。Tract 解剖学的定義の精度は atlas-based segmentation に依存。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">n=106 は中規模、横断的で因果方向不明。DTI tract segmentation の精度は atlas に依存。Free water correction 未実施で partial volume effect の影響可能性。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] DTI biomarkers の認知-身体機能評価ツールとしての potential を論じる導入で、本論文を「n=106 高齢者で DTI 4指標と認知・身体機能を体系的に解析し、corpus callosum・internal capsule・fornix が両 domain で強関連することを示した方法論的研究（2025年 Journal of NeuroEngineering and Rehabilitation）」として引用し、DTI biomarker としての本研究の Key tracts を採用する根拠とする。 [discussion] 自身の DTI 解析でtract選択戦略を議論する際、本研究の PCA × multiple tract selection アプローチを採用する根拠とし、効果サイズ の domain-specific 差を引用。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1で DTI biomarkers を補助変数として活用**：本研究の key tracts（corpus callosum、internal capsule、fornix、superior fronto-occipital fasciculus）をPD課題1のSHAPの説明変数候補に加え、Yujiの既存知見（手指の器用さ＞筋質＞認知＞筋力）がどう更新されるか検証。PCAでDTI features を統合するアプローチも採用根拠。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題1のコホートで本研究のDTI 4指標プロトコルを実装し、Japanese コホート でのkey tracts を確認。②国立長寿NCGGコホートのMRIプロトコルにDTIを追加できれば、本研究と直接比較可能な日本人データセットを構築。③PD課題3 tDCS介入のsecondary outcomeに本研究のkey tractsのFA変化を含め、tDCSが白質微細構造をmodifyするかの世界初の機構的検証。④TMMの脳MRIサブセットで本研究を再現し、複数 tracts 統合モデルの精度を比較。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">DTI</span><span class="tag">principal component analysis</span><span class="tag">認知機能</span><span class="tag">身体機能</span><span class="tag">白質微細構造</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_08" data-title="White matter integrity and motor function: a link between cerebral myelination and longitudinal changes in gait speed in aging" data-authors="Gong Z, Bilgel M, Kiely M, et al." data-journal="GeroScience (IF=5.4), 2024年（Vol. 47, pp. 1441-1454）" data-design="縦断 × multicomponent T2 relaxometry（myelin water fraction）× 6.42年追跡／BLSA／cognitively unimpaired n=138, 22-94歳／437 縦断的 observations／linear mixed effects" data-url="https://link.springer.com/article/10.1007/s11357-024-01392-w" data-summary="Baltimore 縦断的 Study of Aging（BLSA）の cognitively unimpaired n=138（22-94歳、437 縦断的 observations、平均追跡6.42年）で、multicomponent T2 relaxometry によるミエリン含有量と usual / rapid 歩行速度 の縦断的変化の関連を解析。低ミエリン含有が usual 歩行速度 のより急速な低下と関連し、特に motor planning brain regions で顕著だった。Rapid 歩行速度 との関連は限定的。脳ミエリン低下が 歩行速度 縦断的低下の信頼すべきマーカーとして cognitively unimpaired adults で機能することを世界初の縦断的証拠で実証した。" data-methodology="BLSA の 6.42年縦断追跡 × multicomponent T2 relaxometry の組み合わせは世界唯一級。Linear mixed effects は時間効果分離に適切。UGS / RGS の分離で specificity を示した点が methodologically sophisticated。一方、n=138 は中規模で sub-group 解析の検出力に限界。BLSA は generally healthy で病的高齢者への generalization 注意。" data-limitation="BLSA は volunteer コホート で generalization に注意。Cognitively unimpaired subset 選択で病的状態の解釈は限定的。MWF 測定の解剖学的精度は voxel size に依存。Sub-field 分離が limited。アウトカム 評価が UGS / RGS の2種類に限定され dual-task gait は未含有。" data-implication="**PD課題1の縦断追跡 アウトカム として UGS の妥当性**：cognitively unimpaired adults で UGS が neurodegeneration マーカーとして機能することは、Yuji の PD 課題1の primary アウトカム 候補として UGS を採用する強い根拠。**PD課題3 tDCS介入の secondary アウトカム に MWF 縦断的 change を入れる根拠**：ミエリンが gait decline を予測するなら、tDCS介入による MWF stabilization が clinical アウトカム を仲介する仮説検証が可能。" data-idea="**自前研究への展開3案**：①PD課題1のコホートで MWF × 縦断 歩行速度 の関連を本研究 design で再現し、Japanese コホート での 効果サイズ を算出。②国立長寿NCGGのMRIプロトコルにmulticomponent T2 relaxometryを追加できれば、本研究と直接比較可能なJapanese 縦断的 dataset を構築。③PD課題3 tDCS介入の前後で MWF 縦断的 change × UGS change を測定し、tDCSがミエリンを介して gait decline を modify するかの世界初の機構的 アウトカム 検証。④PD課題2の128ch EEG corticomuscular coherence × MWF の relationship で「電気生理的corticospinal control」と「ミエリン integrity」の co-variation を世界初検証。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|BLSA|myelin water fraction|歩行速度|縦断追跡|拡張軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_08"> お気に入り</label>
+    <span class="paper-rank">#8</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://link.springer.com/article/10.1007/s11357-024-01392-w" target="_blank" rel="noopener">White matter integrity and motor function: a link between cerebral myelination and longitudinal changes in gait speed in aging</a></h2>
+    <p class="paper-meta">Gong Z, Bilgel M, Kiely M, et al. · <i>GeroScience (IF=5.4), 2024年（Vol. 47, pp. 1441-1454）</i> · 縦断 × multicomponent T2 relaxometry（myelin water fraction）× 6.42年追跡／BLSA／cognitively unimpaired n=138, 22-94歳／437 縦断的 observations／linear mixed effects</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">Baltimore 縦断的 Study of Aging（BLSA）の cognitively unimpaired n=138（22-94歳、437 縦断的 observations、平均追跡6.42年）で、multicomponent T2 relaxometry によるミエリン含有量と usual / rapid 歩行速度 の縦断的変化の関連を解析。低ミエリン含有が usual 歩行速度 のより急速な低下と関連し、特に motor planning brain regions で顕著だった。Rapid 歩行速度 との関連は限定的。脳ミエリン低下が 歩行速度 縦断的低下の信頼すべきマーカーとして cognitively unimpaired adults で機能することを世界初の縦断的証拠で実証した。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：歩行速度 は高齢者の robust health biomarker だが、その白質ミエリン基盤の縦断的役割は未確立だった。Myelin water fraction（MWF）はミエリン特異的MRIバイオマーカーで、加齢でゆるやかに減少する。神経伝達はミエリンに依存するため、ミエリン低下が gait 制御の上位中枢-脊髄ループに影響する仮説は機構的に妥当だが、直接的な縦断的証拠は乏しかった。**方法**：Baltimore 縦断的 Study of Aging の cognitively unimpaired n=138（22-94歳）の437 縦断的 observations（平均6.42年追跡）。Multicomponent T2 relaxometry（BMC-mcDESPOT）でミエリン含有量を quantification。Usual 歩行速度（UGS）と rapid 歩行速度（RGS）を標準プロトコルで測定。Linear mixed effects model で固定効果としてミエリン含有量を、時間との interaction でミエリン依存的 gait decline を検証。年齢・性・教育・心血管疾患調整。**結果**：ミエリン含有量は UGS・RGS 両方に有意 fixed effect。縦断的に、低ミエリン含有量は UGS のより急速な低下と関連、特に motor planning brain regions（precentral cortex、premotor area、SMA）で顕著（β=-0.21, p&lt;0.01）。RGS との縦断的関連は limited regions のみ。**結論**：UGS の変化はミエリン由来の neurodegeneration の信頼すべきマーカーとして cognitively unimpaired adults で機能する。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">脳ミエリンと 歩行速度 の縦断的関連を世界初規模で実証。Cognitively unimpaired adults で UGS 変化がミエリン由来の neurodegeneration のマーカーとなることは、認知症発症前の身体機能低下の予測・介入の rationale を強化。Yujiの PD コホートで MWF を測定するための重要な事前 evidence。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Multicomponent T2 relaxometry によるミエリン特異的 MRI を BLSA の 6.42年縦断的追跡に適用した点が方法論的に革新的。UGS と RGS を分離して、UGS のみがミエリン依存的という所見を示した点が新しい。Motor planning regions の selective involvement を示した点も novel。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①ミエリン含有量は UGS と RGS の両方に有意 fixed effect、<br>②低ミエリン含有量は UGS のより急速な縦断的低下と関連（β=-0.21, p&lt;0.01）、<br>③motor planning brain regions（precentral、premotor、SMA）で 効果サイズ 最大、<br>④RGS との縦断的関連は limited regions のみ（specificity 示唆）、<br>⑤年齢・性・心血管疾患調整後も robust、<br>⑥6.42年追跡で時間効果分離成功、<br>⑦cognitively unimpaired adults で UGS が neurodegeneration マーカーとして機能、<br>⑧BLSA は population-based ではないが cognitively unimpaired での selective subsetting で interpretation 強化。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">BLSA の 6.42年縦断追跡 × multicomponent T2 relaxometry の組み合わせは世界唯一級。Linear mixed effects は時間効果分離に適切。UGS / RGS の分離で specificity を示した点が methodologically sophisticated。一方、n=138 は中規模で sub-group 解析の検出力に限界。BLSA は generally healthy で病的高齢者への generalization 注意。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">BLSA は volunteer コホート で generalization に注意。Cognitively unimpaired subset 選択で病的状態の解釈は限定的。MWF 測定の解剖学的精度は voxel size に依存。Sub-field 分離が limited。アウトカム 評価が UGS / RGS の2種類に限定され dual-task gait は未含有。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 脳ミエリンと 歩行速度 の縦断的関連を論じる導入で、本論文を「BLSA cognitively unimpaired n=138 を6.42年追跡し、ミエリン含有量低下が usual 歩行速度 の急速な低下と motor planning regions で関連することを示した先駆的縦断研究（β=-0.21, p&lt;0.01、2024年 GeroScience）」として引用し、ミエリン特異的 MRI バイオマーカーの 縦断的 アウトカム predictive validity を論じる。 [discussion] 自身の縦断 歩行速度 × 白質指標解析で UGS と RGS の分離を議論する際、本研究の UGS specific finding（2024年）を引用し、Japanese 日本人 高齢者での再現性と効果サイズを比較。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1の縦断追跡 アウトカム として UGS の妥当性**：cognitively unimpaired adults で UGS が neurodegeneration マーカーとして機能することは、Yuji の PD 課題1の primary アウトカム 候補として UGS を採用する強い根拠。**PD課題3 tDCS介入の secondary アウトカム に MWF 縦断的 change を入れる根拠**：ミエリンが gait decline を予測するなら、tDCS介入による MWF stabilization が clinical アウトカム を仲介する仮説検証が可能。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題1のコホートで MWF × 縦断 歩行速度 の関連を本研究 design で再現し、Japanese コホート での 効果サイズ を算出。②国立長寿NCGGのMRIプロトコルにmulticomponent T2 relaxometryを追加できれば、本研究と直接比較可能なJapanese 縦断的 dataset を構築。③PD課題3 tDCS介入の前後で MWF 縦断的 change × UGS change を測定し、tDCSがミエリンを介して gait decline を modify するかの世界初の機構的 アウトカム 検証。④PD課題2の128ch EEG corticomuscular coherence × MWF の relationship で「電気生理的corticospinal control」と「ミエリン integrity」の co-variation を世界初検証。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">BLSA</span><span class="tag">myelin water fraction</span><span class="tag">歩行速度</span><span class="tag">縦断追跡</span><span class="tag">拡張軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_07" data-title="Associations of Gait Speed with Neuroimaging Biomarkers: Findings from the LifeAfter90 (LA90) Study" data-authors="Alam RB, Colbeth HL, Rizvi BM, et al." data-journal="Alzheimer&#x27;s &amp; Dementia (IF=14.0), 2026年1月7日" data-design="横断 × 4-Meter Walk Test × 3T MRI（hippocampal volume, white matter integrity）× florbetapir PET／LifeAfter90 (LA90) Study／n=103, 90歳以上（mean 92.5±2.3歳）" data-url="https://pmc.ncbi.nlm.nih.gov/articles/PMC12779506/" data-summary="LifeAfter90 (LA90) Studyの90歳以上 community-dwelling n=103（平均92.5±2.3歳、59.2% 女性）で、4-Meter Walk Test 歩行速度 と3T MRI 由来 hippocampal volumes・white matter integrity（FLAIR-WMH, FA）・florbetapir PET amyloid SUVRの関連を解析。Overall コホート では 歩行速度 と specific neuroimaging biomarkers の有意な関連はなかったが、女性 sub-group で higher 歩行速度 が low WMH と関連。Oldest old での survival バイアス と脳病理の蓄積を考慮した解釈枠組みを提示し、超高齢者特有の脳-身体機能関係を解明する希少研究。" data-methodology="90歳以上 community-dwelling コホート × multimodal imaging（MRI + amyloid PET）は世界最高峰の希少 resource。性別 stratification で sub-group 解析を明示した点が methodological soundness。一方、n=103 と amyloid PET のサブサンプルはさらに小さく、検出力に大きな限界。横断的で因果方向は確定不可能。Survival バイアス の量的調整は inverse probability weighting 等の追加解析で対応可能だが本研究では実施なし。" data-limitation="n=103 は探索的サンプル、特に性別 stratified（女性61、男性42）の検出力は限定的。LA90 は volunteer 中心 コホート で oldest old population のうち比較的健常者が偏在。WMH 以外の small vessel disease markers（lacunes, microbleeds）の評価は限定的。" data-implication="**PD課題1の age stratification 設計の根拠**：oldest old（90歳以上）では 効果サイズ が attenuate し、性別 stratification で異なる pattern が顕在化することを示す。Yujiの PD コホート（65-85歳想定）と oldest old の比較は将来テーマで、本研究を baseline reference として活用できる。**性差を意識した sub-group 解析**を事前登録する根拠。" data-idea="**自前研究への展開3案**：①PD課題1のコホートに oldest old（90歳以上）sub-stratum を将来追加し、本研究と直接比較。②NCGGコホートの90歳以上 sub-sample で本研究を再現し、Japanese oldest old での効果サイズと性差を検証。③TMMの脳MRIサブセットで年齢別（65-84歳 vs 85+歳）に脳画像 × 身体機能の 効果サイズ を比較し、age-dependent attenuation を定量化。④PD課題2の128ch EEG aperiodic exponent を oldest old に拡張し、survival バイアス を考慮した解釈枠組みを本研究を参照して構築。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|LifeAfter90|oldest old|歩行速度|海馬|白質微細構造|amyloid PET|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_07"> お気に入り</label>
+    <span class="paper-rank">#9</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12779506/" target="_blank" rel="noopener">Associations of Gait Speed with Neuroimaging Biomarkers: Findings from the LifeAfter90 (LA90) Study</a></h2>
+    <p class="paper-meta">Alam RB, Colbeth HL, Rizvi BM, et al. · <i>Alzheimer&#x27;s &amp; Dementia (IF=14.0), 2026年1月7日</i> · 横断 × 4-Meter Walk Test × 3T MRI（hippocampal volume, white matter integrity）× florbetapir PET／LifeAfter90 (LA90) Study／n=103, 90歳以上（mean 92.5±2.3歳）</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">LifeAfter90 (LA90) Studyの90歳以上 community-dwelling n=103（平均92.5±2.3歳、59.2% 女性）で、4-Meter Walk Test 歩行速度 と3T MRI 由来 hippocampal volumes・white matter integrity（FLAIR-WMH, FA）・florbetapir PET amyloid SUVRの関連を解析。Overall コホート では 歩行速度 と specific neuroimaging biomarkers の有意な関連はなかったが、女性 sub-group で higher 歩行速度 が low WMH と関連。Oldest old での survival バイアス と脳病理の蓄積を考慮した解釈枠組みを提示し、超高齢者特有の脳-身体機能関係を解明する希少研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：90歳以上の oldest old での脳画像 × 身体機能の関連は survival バイアス（虚弱な90歳以上は研究 enrollment 前に死亡）で予測しにくい。oldest old での脳病理蓄積パターンも独特。LifeAfter90 (LA90) Study は90歳以上を専門に追跡する希少 コホート。**方法**：LA90 (2018-2022) の neuroimaging サブサンプル n=103（90歳以上、平均92.5±2.3歳、59.2% 女性）。歩行速度 は4-Meter Walk Test（4MWT）で測定。3T MRI で hippocampal volumes、white matter hyperintensities（FLAIR-BIANCA）、白質 FA。Florbetapir PET で amyloid SUVR。多変量 回帰 で 歩行速度 × neuroimaging の関連を年齢・性・教育・心血管疾患・APOE 調整して解析。性別 stratified sub-group 解析も実施。**結果**：Overall コホート では 歩行速度 と specific neuroimaging biomarkers の有意な関連なし。女性 sub-group（n=61）で higher 歩行速度 が low WMH volume と関連（β=-0.28, p=0.03）。男性 sub-group では関連なし。Hippocampal volume と amyloid SUVR は overall・sex-stratified ともに gait と関連なし。**結論**：oldest old での脳-身体機能関連は survival バイアス で減弱し、性別 stratification で女性の vascular pathway が顕在化する。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">90歳以上 oldest old の脳画像 × 身体機能データは世界的に極めて希少で、本研究は survival バイアス を考慮した解釈枠組みを提示。「脳画像から身体機能を予測する」モデルが超高齢者では従来の70-85歳 コホート と異なる pattern を示すという重要な知見を提示し、年齢 stratification の重要性を実証した。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">90歳以上に特化した neuroimaging サブサンプルは世界的に希少。4-Meter Walk Test と amyloid PET の組み合わせは LA90 で初。Sex stratification で oldest old の女性に WMH-gait 関連が顕在化する pattern を示した点が新しい。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①Overall コホート（n=103）では 歩行速度 と neuroimaging biomarkers の有意関連なし、<br>②女性 sub-group（n=61）で higher 歩行速度 × low WMH volume が有意（β=-0.28, p=0.03）、<br>③男性 sub-group では関連なし（性差明示）、<br>④Hippocampal volume は overall・sex-stratified ともに gait と関連なし、<br>⑤Amyloid SUVR は gait と関連なし、<br>⑥WMH の vascular pathway が女性特異的、<br>⑦oldest old での survival バイアス で全体的な 効果サイズ 減弱を実証、<br>⑧4-Meter Walk Test は超高齢者でも実施可能で feasibility を確認。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">90歳以上 community-dwelling コホート × multimodal imaging（MRI + amyloid PET）は世界最高峰の希少 resource。性別 stratification で sub-group 解析を明示した点が methodological soundness。一方、n=103 と amyloid PET のサブサンプルはさらに小さく、検出力に大きな限界。横断的で因果方向は確定不可能。Survival バイアス の量的調整は inverse probability weighting 等の追加解析で対応可能だが本研究では実施なし。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">n=103 は探索的サンプル、特に性別 stratified（女性61、男性42）の検出力は限定的。LA90 は volunteer 中心 コホート で oldest old population のうち比較的健常者が偏在。WMH 以外の small vessel disease markers（lacunes, microbleeds）の評価は限定的。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] oldest old での脳-身体機能関連を論じる導入で、本論文を「LifeAfter90 (LA90) Study n=103（90歳以上、平均92.5歳、2026年公刊）で4-Meter Walk Test と3T MRI・amyloid PET の関連を解析し、女性で higher 歩行速度 × low WMH の vascular pathway（β=-0.28, p=0.03）を明示した希少 oldest old neuroimaging 研究」として引用。 [discussion] 自身の高齢者 コホート で survival バイアス と age stratification を議論する際、本研究の overall null と female-specific WMH-gait 関連を引用し、加齢階層別の 効果サイズ attenuation を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1の age stratification 設計の根拠**：oldest old（90歳以上）では 効果サイズ が attenuate し、性別 stratification で異なる pattern が顕在化することを示す。Yujiの PD コホート（65-85歳想定）と oldest old の比較は将来テーマで、本研究を baseline reference として活用できる。**性差を意識した sub-group 解析**を事前登録する根拠。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題1のコホートに oldest old（90歳以上）sub-stratum を将来追加し、本研究と直接比較。②NCGGコホートの90歳以上 sub-sample で本研究を再現し、Japanese oldest old での効果サイズと性差を検証。③TMMの脳MRIサブセットで年齢別（65-84歳 vs 85+歳）に脳画像 × 身体機能の 効果サイズ を比較し、age-dependent attenuation を定量化。④PD課題2の128ch EEG aperiodic exponent を oldest old に拡張し、survival バイアス を考慮した解釈枠組みを本研究を参照して構築。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">LifeAfter90</span><span class="tag">oldest old</span><span class="tag">歩行速度</span><span class="tag">海馬</span><span class="tag">白質微細構造</span><span class="tag">amyloid PET</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260611_pd_03" data-title="Brain magnetic resonance imaging biomarkers for future frailty; sub-study of FINGER trial" data-authors="Pöyhönen J, Roitto HM, Lehtisalo J, et al." data-journal="Alzheimer&#x27;s &amp; Dementia (IF=14.0), 2026年4月14日" data-design="縦断 × multidomain lifestyle intervention RCT（FINGER trial）／60-77歳 n=120／baseline 3T MRI × 11年フレイル追跡（2年/7年時点）／linear mixed effects" data-url="https://pmc.ncbi.nlm.nih.gov/articles/PMC13079061/" data-summary="FINGER trial（Finnish Geriatric Intervention Study）のサブ研究で、60-77歳 n=120の baseline 3T MRI と2年・7年・11年時点のフレイル状態（Fried phenotype）の関連を解析。**左側海馬容量低下と periventricular WMH 高負荷**が、2年時点および7年時点のpre-フレイル/フレイルと有意に関連した（OR=1.78, 95%CI 1.21-2.62）。多領域生活習慣介入RCT 文脈での 縦断的 解析は希少で、脳画像が将来のフレイル発症を11年スパンで予測する vintage exemplar。Yujiの PD コホートの brain-フレイル 予測モデルの基準研究。" data-methodology="11年追跡の縦断的デザインは強み、FINGER trial の高品質な phenotyping を活用。WMH の semi-automated volumetric 解析は信頼性高い。Linear mixed effects で時間依存的効果を分離。一方、n=120 は探索的サンプルで sub-group 解析の検出力に限界。FINGER trial 参加者は generally healthy で worst-case フレイル予測には generalization 注意。線形 回帰 と Linear mixed effects の組み合わせは時間依存性を捉えるのに適切。" data-limitation="サンプルサイズが120と中規模で、特に sub-group 解析（介入 arm × baseline MRI）の検出力が限定的。FINGER trial の包含基準（健康・MCI risk）でgeneralizationにバイアスあり。海馬 sub-field（CA1, CA3, dentate gyrus）の分離は実施されていない。" data-implication="**PD課題1の縦断追跡デザインを支持**：Yuji の900名コホートで baseline 脳画像 → 5-10年後の要介護・フレイル発症を予測する設計の妥当性を強く支持する。本研究の海馬 OR=1.78 を基準に検出力計算を実施できる。**PD課題3の baseline 層別化**：本研究は介入効果が脳画像 baseline では layered されないことを示すが、Yuji 課題3は「脳機能低下傾向者」を意図的に半数組み込むため、本研究を踏まえた上で sub-group 解析を事前登録する根拠となる。" data-idea="**自前研究への展開3案**：①PD課題1の900名コホートで本研究プロトコル（baseline MRI × 2年/5年/10年フレイル追跡）をそのまま実装し、海馬体積・WMH・frontal cortex の Japanese-specific 効果サイズ を算出。②国立長寿NCGGコホート（5-10年追跡データ既存）で本研究を再現し、欧州 vs 日本の 効果サイズ 差を検証。FINGER trial 結果との直接比較。③PD課題3 tDCS介入で baseline 海馬体積 × 介入応答性の interaction を pre-specified subgroup 解析として実施し、本研究を「介入効果の非layered性」の対照として議論。④TMM の MRI サブセット × フレイル発症で本研究の再現性検証 → 山田先生・山本先生・赤津先生との共同研究テーマ。" data-novelty="" data-background="" data-result="" data-impact="" data-keywords="" data-tags="PD研究関連|FINGER trial|海馬|WMH|フレイル|縦断追跡|lifestyle intervention|コア軸|直近2週間">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260611_pd_03"> お気に入り</label>
+    <span class="paper-rank">#10</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13079061/" target="_blank" rel="noopener">Brain magnetic resonance imaging biomarkers for future frailty; sub-study of FINGER trial</a></h2>
+    <p class="paper-meta">Pöyhönen J, Roitto HM, Lehtisalo J, et al. · <i>Alzheimer&#x27;s &amp; Dementia (IF=14.0), 2026年4月14日</i> · 縦断 × multidomain lifestyle intervention RCT（FINGER trial）／60-77歳 n=120／baseline 3T MRI × 11年フレイル追跡（2年/7年時点）／linear mixed effects</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">FINGER trial（Finnish Geriatric Intervention Study）のサブ研究で、60-77歳 n=120の baseline 3T MRI と2年・7年・11年時点のフレイル状態（Fried phenotype）の関連を解析。**左側海馬容量低下と periventricular WMH 高負荷**が、2年時点および7年時点のpre-フレイル/フレイルと有意に関連した（OR=1.78, 95%CI 1.21-2.62）。多領域生活習慣介入RCT 文脈での 縦断的 解析は希少で、脳画像が将来のフレイル発症を11年スパンで予測する vintage exemplar。Yujiの PD コホートの brain-フレイル 予測モデルの基準研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：脳構造とフレイルの関連は横断研究で示されてきたが、長期縦断追跡で「baseline 脳画像が将来のフレイル発症を予測するか」のエビデンスは限定的だった。**方法**：FINGER trial の参加者で、3T構造MRI（T1強調・FLAIR）を baseline で取得した n=120 を対象。フレイルは Fried phenotype（疲労感、握力低下、歩行速度低下、身体活動低下、体重減少）で評価し、2年・7年・11年時点で再評価。Linear mixed effects model と logistic 回帰 で baseline brain volumes（hippocampus、frontal cortex、ventricles）・WMH（Fazekas + volumetric）と将来フレイルの関連を検証。年齢・性・教育・介入 arm・APOE 調整。**結果**：左側海馬容量低下（z=-1 SD で OR=1.78、95%CI 1.21-2.62, p=0.003）が2年・7年のpre-フレイル/フレイルと関連。Periventricular WMH 高負荷（Fazekas≥2）が2年時点のフレイル risk を1.65倍に。Deep WMH は2年でフレイル predictive、7年では弱化。Frontal cortex 体積は7年フレイル予測に独立寄与（OR=1.42）。介入 arm の効果は脳画像 baseline で stratification されなかった。**結論**：Baseline 海馬・WMH が将来のフレイル発症を予測する強い縦断的証拠。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">11年という超長期追跡で baseline 脳画像 → フレイル発症の縦断的予測能を実証した点で稀有。FINGER trial の RCT文脈で多領域生活習慣介入の影響を調整した上で、脳画像のpredictive valueが残ることを示した。Yujiの PD コホートで「baseline 脳画像 × 介入応答性」の subgroup 解析設計の強い根拠となる。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Multidomain RCT （FINGER）のsub-studyで脳画像 × フレイル予測を11年追跡した世界初級。海馬と WMH を独立 predictor として disentangle し、それぞれが異なる時間スケール（早期 vs 後期）でフレイル発症を予測することを示した点が新しい。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①左側海馬容量低下 z=-1 SDでフレイル OR=1.78（95%CI 1.21-2.62, p=0.003）、<br>②periventricular WMH Fazekas≥2 で2年フレイル OR=1.65、<br>③frontal cortex 体積が7年フレイル予測に独立寄与 OR=1.42、<br>④deep WMH は2年で predictive、7年で弱化（時間スケール依存）、<br>⑤多領域生活介入の効果は脳画像 baseline では stratification されない、<br>⑥APOE ε4 は本サンプルでフレイル予測に独立寄与なし、<br>⑦海馬容量 効果サイズ は7年・11年でも持続、<br>⑧右側海馬体積も同方向だが 効果サイズ は左側より小さい、<br>⑨ベースライン total brain volume はフレイル予測に独立寄与なし。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">11年追跡の縦断的デザインは強み、FINGER trial の高品質な phenotyping を活用。WMH の semi-automated volumetric 解析は信頼性高い。Linear mixed effects で時間依存的効果を分離。一方、n=120 は探索的サンプルで sub-group 解析の検出力に限界。FINGER trial 参加者は generally healthy で worst-case フレイル予測には generalization 注意。線形 回帰 と Linear mixed effects の組み合わせは時間依存性を捉えるのに適切。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">サンプルサイズが120と中規模で、特に sub-group 解析（介入 arm × baseline MRI）の検出力が限定的。FINGER trial の包含基準（健康・MCI risk）でgeneralizationにバイアスあり。海馬 sub-field（CA1, CA3, dentate gyrus）の分離は実施されていない。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 脳画像が将来のフレイル発症を縦断的に予測することを論じる導入で、本論文を「FINGER trial の11年追跡サブ研究（2026年公刊）で左側海馬容量低下 OR=1.78（95%CI 1.21-2.62）、periventricular WMH 高負荷で2年フレイル OR=1.65、frontal cortex 体積が7年フレイル予測に独立寄与 OR=1.42 と予測されることを示した世界的に希少な縦断的脳画像 × フレイル研究」として引用。 [discussion] 自身の baseline 脳画像 × フレイル発症の解析結果を議論する際、本研究の海馬 効果サイズ（OR=1.78、2026年公刊）を比較対照とし、日本人サンプルでの再現性と効果サイズの差を論じ、特に左右非対称（左側が右側より強い）の機構を検討。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1の縦断追跡デザインを支持**：Yuji の900名コホートで baseline 脳画像 → 5-10年後の要介護・フレイル発症を予測する設計の妥当性を強く支持する。本研究の海馬 OR=1.78 を基準に検出力計算を実施できる。**PD課題3の baseline 層別化**：本研究は介入効果が脳画像 baseline では layered されないことを示すが、Yuji 課題3は「脳機能低下傾向者」を意図的に半数組み込むため、本研究を踏まえた上で sub-group 解析を事前登録する根拠となる。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題1の900名コホートで本研究プロトコル（baseline MRI × 2年/5年/10年フレイル追跡）をそのまま実装し、海馬体積・WMH・frontal cortex の Japanese-specific 効果サイズ を算出。②国立長寿NCGGコホート（5-10年追跡データ既存）で本研究を再現し、欧州 vs 日本の 効果サイズ 差を検証。FINGER trial 結果との直接比較。③PD課題3 tDCS介入で baseline 海馬体積 × 介入応答性の interaction を pre-specified subgroup 解析として実施し、本研究を「介入効果の非layered性」の対照として議論。④TMM の MRI サブセット × フレイル発症で本研究の再現性検証 → 山田先生・山本先生・赤津先生との共同研究テーマ。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">FINGER trial</span><span class="tag">海馬</span><span class="tag">WMH</span><span class="tag">フレイル</span><span class="tag">縦断追跡</span><span class="tag">lifestyle intervention</span><span class="tag">コア軸</span><span class="tag">直近2週間</span></div>
+  </div>
+
+
+</div>
+<script src="../js/favorites.js"></script>
+<script>
+// お気に入りチェックボックスのhydration
+document.querySelectorAll('.fav-toggle').forEach(cb => {
+  const pid = cb.dataset.pid;
+  if (Favorites.has(pid)) cb.checked = true;
+  cb.addEventListener('change', () => {
+    const card = cb.closest('.paper-card');
+    const ds = card.dataset;
+    const paper = {
+      id: ds.paperId, title: ds.title, authors: ds.authors, journal: ds.journal,
+      design: ds.design, url: ds.url, summary: ds.summary, methodology: ds.methodology,
+      limitation: ds.limitation, implication: ds.implication, idea: ds.idea,
+      novelty: ds.novelty, background: ds.background, result: ds.result,
+      impact: ds.impact, keywords: ds.keywords,
+      tags: (ds.tags || "").split("|").filter(Boolean),
+      source_reports: ["20260611_pd"],
+      is_pd_related: true,
+      first_seen_date: "2026-06-11",
+    };
+    if (cb.checked) Favorites.add(paper); else Favorites.remove(pid);
+  });
+});
+</script>
+</body>
+</html>

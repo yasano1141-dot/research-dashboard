@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PD研究 キュレーション版 — 2026年6月12日</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  margin: 0; padding: 0; background: #f8fafc; color: #0f172a; line-height: 1.7; }
+.report-wrapper { max-width: 980px; margin: 0 auto; padding: 24px 20px 80px; }
+.report-header { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 22px 24px; margin-bottom: 24px; position: relative; overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15,23,42,0.06); }
+.report-header::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
+  height: 4px; background: #be123c; }
+.report-header h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.02em; }
+.report-header .meta { color: #475569; font-size: 14px; }
+.paper-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 22px 24px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(15,23,42,0.04); }
+.paper-rank { display: inline-block; background: #be123c; color: white; font-weight: 700;
+  font-size: 13px; padding: 3px 10px; border-radius: 999px; margin-right: 8px; }
+.task-tag { display: inline-block; background: #be123c; color: white; font-size: 11px;
+  padding: 2px 8px; border-radius: 999px; font-weight: 700; }
+.task-tag.pd { background: #be123c; }
+.paper-title { font-size: 17px; font-weight: 700; margin: 8px 0 6px; line-height: 1.4; }
+.paper-title a { color: #0f172a; text-decoration: none; }
+.paper-title a:hover { color: #2563eb; }
+.paper-meta { color: #475569; font-size: 13px; margin-bottom: 16px; }
+.section-block { border-left: 4px solid currentColor; padding: 10px 14px; margin: 12px 0;
+  background: #f1f5f9; border-radius: 0 6px 6px 0; color: #0f172a; }
+.section-block .section-label { display: inline-block; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.04em; margin-bottom: 6px; }
+.section-block .section-content { font-size: 14px; }
+.section-block.summary     { color: #3182ce; } .section-block.summary .section-label     { color: #3182ce; }
+.section-block.overview    { color: #718096; } .section-block.overview .section-label    { color: #718096; }
+.section-block.importance  { color: #d69e2e; } .section-block.importance .section-label  { color: #d69e2e; }
+.section-block.originality { color: #805ad5; } .section-block.originality .section-label { color: #805ad5; }
+.section-block.discovery   { color: #16a34a; } .section-block.discovery .section-label   { color: #16a34a; }
+.section-block.method      { color: #38a169; } .section-block.method .section-label      { color: #38a169; }
+.section-block.limit       { color: #c53030; } .section-block.limit .section-label       { color: #c53030; }
+.section-block.citation    { color: #805ad5; } .section-block.citation .section-label    { color: #805ad5; }
+.section-block.implication { color: #805ad5; } .section-block.implication .section-label { color: #805ad5; }
+.section-block.idea        { color: #319795; } .section-block.idea .section-label        { color: #319795; }
+.section-block .section-content { color: #0f172a; line-height: 1.8; }
+.tag-list { margin-top: 12px; font-size: 11px; color: #64748b; }
+.tag-list .tag { display: inline-block; background: #f1f5f9; padding: 2px 8px; border-radius: 999px; margin-right: 4px; }
+.fav-checkbox { float: right; font-size: 13px; color: #475569; cursor: pointer; user-select: none; }
+.fav-checkbox input { vertical-align: middle; margin-right: 4px; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23be123c'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='40' fill='white' font-family='Arial' font-weight='800'%3EPD%3C/text%3E%3C/svg%3E">
+</head>
+<body data-source-date="20260612" data-source-theme="pd-research">
+<!-- INJECTED-NAV-V1 -->
+<div style="position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 18px;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Hiragino Sans','Helvetica Neue',Arial,sans-serif;font-size:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#475569;text-decoration:none;font-weight:600">← ダッシュボード</a>
+  <a href="../papers.html" style="color:#475569;text-decoration:none">論文一覧</a>
+  <a href="../themes.html" style="color:#475569;text-decoration:none">曜日テーマ</a>
+  <a href="../pd.html" style="color:#be123c;text-decoration:none;font-weight:600">📍 PD研究</a>
+  <a href="../favorites.html" style="color:#475569;text-decoration:none">★ お気に入り</a>
+  <span style="margin-left:auto;color:#94a3b8;font-size:12px">PD研究キュレーション版</span>
+</div>
+
+<div class="report-wrapper">
+
+  <div class="report-header">
+    <h1>📍 PD研究 — キュレーション版</h1>
+    <p class="meta">2026年6月12日 ・ 既存データベースから選定した代表的なPD関連論文10本</p>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_01" data-title="Maximal motor unit firing rates decline with amyotrophic lateral sclerosis progression" data-authors="Fernandes GL, Orssatto LBR, Pinto MD, Henkin JS, Shandiz E, McCombe PA, Henderson RD, Trajano GS" data-journal="Clinical Neurophysiology (IF=3.1), 2026年5月（Vol. 185, 2111697、Epub 2026年2月19日）" data-design="縦断 × 高密度表面EMG（HD-sEMG）分解 × 最大随意収縮／ALS患者 n=39（男24、平均63±16歳）／最大5回訪問（間隔20.0±7.9週）／tibialis anterior MUスパイクトレイン抽出 × MRC × ALSFRS-R" data-url="https://doi.org/10.1016/j.clinph.2026.2111697" data-summary="ALS患者39名（男24、平均63±16歳）で最大随意収縮時のtibialis anterior HD-sEMGを最大5回訪問（間隔20.0±7.9週）で記録し、ブラインド分解で個々のmotor unit（MU）スパイクトレインを抽出して最大MU firing rateを定量。MU firing rate は月あたり -0.32 Hz（95%CI -0.44; -0.19）で有意に低下し、これはMedical Research Council筋力スケール変化と独立して進行した。MRC 1点低下あたり2.38 Hz、ALSFRS-R 1点低下あたり0.54 Hzの firing rate低下が見られ、HD-sEMG分解によるMU firing rateがMRCより早期に神経筋系の進行を捕捉する quantitative clinical biomarkerとして機能することを世界に先駆けて実証した直近2週間の重要研究。" data-methodology="HD-sEMG decomposition による非侵襲的MUスパイクトレイン抽出は技術的に高度で、最大随意収縮中の解析は感度が高い。Linear mixed effects model で時間効果を分離し、MRC スコアと独立した予測因子として firing rate低下を定量化した点が方法論的に sophisticated。一方、n=39 は神経変性疾患研究としては中規模で、性・年齢・罹病期間別 sub-group 解析の検出力に限界。" data-limitation="サンプルサイズn=39で性別・罹患パターン・onset region別の sub-group 解析は検出力不足。Tibialis anterior のみで上肢・bulbar 筋への外挿は要検証。HD-sEMG decomposition の精度はarray placement・skin condition に依存。MUの細胞型（slow vs fast）の分離はこのプロトコルでは限定的。本紹介はabstractとPMC概要に基づき本文未読部分があるため、limitation セクションでこの旨を明記した。" data-implication="**PD課題2の中核 EMG measurement の方法論的支柱**：Yujiの PD 課題2では高密度表面EMG（HD-sEMG）による motor unit firing 解析が中核 measurement の一つだが、加齢コホートでの HD-sEMG decomposition × 縦断追跡の方法論的標準は未確立だった。本研究の月あたり MU firing rate slope の定量と MRC との比較は、Yujiの 900名コホート で年に2回（または1回）の HD-sEMG 計測 × 5年追跡の study design の直接的 reference となる。**自前研究での corticomuscular coherence × MU firing rate 統合**：MU firing rateとhd-EEG aperiodic exponentの関連を世界初検証する仮説の基礎データ。" data-idea="**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究と同じ tibialis anterior HD-sEMG プロトコルを実装し、年1-2回の縦断計測で加齢neuromuscular decline の年間 slope（健康加齢で-0.05〜-0.15 Hz/年と予測、ALSの1/2〜1/6 のペース）を世界に先駆けて定量化。②TMM の neuromuscular サブセットで本研究を replication し、Japanese-specific 加齢 MU firing rate slope を欧米コホートと比較。③Yuji の PD課題2の hd-EEG × HD-sEMG 同期 measurement で、aperiodic exponent slope（脳側の老化）と MU firing rate slope（筋側の老化）の相関を計算し、「電気生理的脳老化」と「電気生理的筋老化」のco-aging trajectoryを世界初定量化。④国立長寿NCGGの neuromuscular サブ研究と共同で、SHAP の説明変数に MU firing rate slope を加え、握力・歩行速度・椅子立ち上がり予測の重要度を検証。⑤PD課題3 tDCS介入の前後で HD-sEMG MU firing rate変化を測定し、tDCSが neuromuscular system に下行性の介入効果を持つかの世界初の機構的検証を実装。" data-novelty="ALS患者で最大5回訪問の縦断的 HD-sEMG decomposition は世界的に希少。月あたりMU firing rate低下を線形 mixed effects で精密に定量し、MRC との比較で MU firing rate がより早期検出の sensitivity を持つことを示した点が方法論的に novel。MRC とALSFRS-R の両 clinical scales との関係を quantitative に表現した点も新しい。" data-background="" data-result="①最大MU firing rate は時間とともに有意に低下（slope=-0.32 Hz/月、95%CI -0.44; -0.19）、②MRCスコア変化と独立して firing rate低下が進行、③MRC 1点低下あたり最大 firing rate は2.38 Hz（95%CI 1.78; 2.98）低下、④ALSFRS-R 1点低下あたり 0.54 Hz（95%CI -0.83; -0.26）低下、⑤HD-sEMG MU firing rate解析はMRCより早期の筋力低下を検出、⑥訪問間隔20.0±7.9週で時間依存的解析が可能、⑦tibialis anterior という ALSで早期罹患する筋を対象、⑧最大39名 × 最大5回訪問という ALS HD-sEMG 縦断研究として最大規模、⑨生き残りMUが運動ニューロン変性と並行して病態生理学的変化を経ることを電気生理学的に実証、⑩HD-sEMG MU firing rate を将来の臨床試験 アウトカム 指標として positioning する基礎データを提供。" data-impact="ALSという最も急速な運動ニューロン変性モデルでMU firing rate低下を縦断的に -0.32 Hz/月という precise な slope で定量化したことは、加齢に伴う運動ニューロン loss・脱神経・再支配の研究に直接 transferable。HD-sEMG decomposition が臨床尺度（MRC）より早期に神経筋進行を検出することは、加齢の sub-clinical neuromuscular decline の早期検出 biomarker としての potential を強く支持する。" data-keywords="" data-tags="PD研究関連|HD-sEMG|motor unit firing|ALS|縦断追跡|neuromotor biomarker|tibialis anterior|直近2週間|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_01"> お気に入り</label>
+    <span class="paper-rank">#1</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1016/j.clinph.2026.2111697" target="_blank" rel="noopener">Maximal motor unit firing rates decline with amyotrophic lateral sclerosis progression</a></h2>
+    <p class="paper-meta">Fernandes GL, Orssatto LBR, Pinto MD, Henkin JS, Shandiz E, McCombe PA, Henderson RD, Trajano GS · <i>Clinical Neurophysiology (IF=3.1), 2026年5月（Vol. 185, 2111697、Epub 2026年2月19日）</i> · 縦断 × 高密度表面EMG（HD-sEMG）分解 × 最大随意収縮／ALS患者 n=39（男24、平均63±16歳）／最大5回訪問（間隔20.0±7.9週）／tibialis anterior MUスパイクトレイン抽出 × MRC × ALSFRS-R</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">ALS患者39名（男24、平均63±16歳）で最大随意収縮時のtibialis anterior HD-sEMGを最大5回訪問（間隔20.0±7.9週）で記録し、ブラインド分解で個々のmotor unit（MU）スパイクトレインを抽出して最大MU firing rateを定量。MU firing rate は月あたり -0.32 Hz（95%CI -0.44; -0.19）で有意に低下し、これはMedical Research Council筋力スケール変化と独立して進行した。MRC 1点低下あたり2.38 Hz、ALSFRS-R 1点低下あたり0.54 Hzの firing rate低下が見られ、HD-sEMG分解によるMU firing rateがMRCより早期に神経筋系の進行を捕捉する quantitative clinical biomarkerとして機能することを世界に先駆けて実証した直近2週間の重要研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：ALSは上位および下位運動ニューロンの進行性変性を特徴とするが、生き残ったMUの firing 行動の縦断的変化は限定的情報しかなかった。MU脱落は collateral sprouting と reinnervation で補償されるが、これらの過程が進行する間の生き残りMUの特性変化は HD-sEMG decomposition なしには非侵襲的に追跡できない。**方法**：39名のALS患者（24男、平均63±16歳）が最大5回の訪問を完了（訪問間隔20.0±7.9週）。Tibialis anterior に HD-sEMGアレイを装着し、最大随意収縮（MVC）中の signal をブラインド分解で個々のMUのスパイクトレインに分割、最大MU firing rate を定量。筋力をMedical Research Council（MRC）スケールで、全体機能を revised ALS Functional Rating Scale（ALSFRS-R）で評価。Linear mixed effects model で時間依存的な firing rate低下を解析。**結果**：最大MU firing rateは時間とともに有意に低下（slope=-0.32 Hz/月、95%CI -0.44; -0.19）し、これはMRCスコア変化と独立。被験者間で、MRC 1点低下あたり最大 firing rateは2.38 Hz（95%CI 1.78; 2.98）低下、ALSFRS-R 1点低下あたり0.54 Hz（95%CI -0.83; -0.26）低下した。HD-sEMG MU firing rate解析はMRCより早期の筋力低下を検出した。**結論**：最大MU firing rateはALS進行とともに低下し、生き残ったMUが運動ニューロン変性とともに病態生理学的変化を進めることを示唆する。HD-sEMG MU firing rateは quantitative clinical biomarker として有用。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">ALSという最も急速な運動ニューロン変性モデルでMU firing rate低下を縦断的に -0.32 Hz/月という precise な slope で定量化したことは、加齢に伴う運動ニューロン loss・脱神経・再支配の研究に直接 transferable。HD-sEMG decomposition が臨床尺度（MRC）より早期に神経筋進行を検出することは、加齢の sub-clinical neuromuscular decline の早期検出 biomarker としての potential を強く支持する。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">ALS患者で最大5回訪問の縦断的 HD-sEMG decomposition は世界的に希少。月あたりMU firing rate低下を線形 mixed effects で精密に定量し、MRC との比較で MU firing rate がより早期検出の sensitivity を持つことを示した点が方法論的に novel。MRC とALSFRS-R の両 clinical scales との関係を quantitative に表現した点も新しい。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①最大MU firing rate は時間とともに有意に低下（slope=-0.32 Hz/月、95%CI -0.44; -0.19）、<br>②MRCスコア変化と独立して firing rate低下が進行、<br>③MRC 1点低下あたり最大 firing rate は2.38 Hz（95%CI 1.78; 2.98）低下、<br>④ALSFRS-R 1点低下あたり 0.54 Hz（95%CI -0.83; -0.26）低下、<br>⑤HD-sEMG MU firing rate解析はMRCより早期の筋力低下を検出、<br>⑥訪問間隔20.0±7.9週で時間依存的解析が可能、<br>⑦tibialis anterior という ALSで早期罹患する筋を対象、<br>⑧最大39名 × 最大5回訪問という ALS HD-sEMG 縦断研究として最大規模、<br>⑨生き残りMUが運動ニューロン変性と並行して病態生理学的変化を経ることを電気生理学的に実証、<br>⑩HD-sEMG MU firing rate を将来の臨床試験 アウトカム 指標として positioning する基礎データを提供。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">HD-sEMG decomposition による非侵襲的MUスパイクトレイン抽出は技術的に高度で、最大随意収縮中の解析は感度が高い。Linear mixed effects model で時間効果を分離し、MRC スコアと独立した予測因子として firing rate低下を定量化した点が方法論的に sophisticated。一方、n=39 は神経変性疾患研究としては中規模で、性・年齢・罹病期間別 sub-group 解析の検出力に限界。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">サンプルサイズn=39で性別・罹患パターン・onset region別の sub-group 解析は検出力不足。Tibialis anterior のみで上肢・bulbar 筋への外挿は要検証。HD-sEMG decomposition の精度はarray placement・skin condition に依存。MUの細胞型（slow vs fast）の分離はこのプロトコルでは限定的。本紹介はabstractとPMC概要に基づき本文未読部分があるため、limitation セクションでこの旨を明記した。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 運動ニューロン疾患・加齢での神経筋進行を quantitative に追跡するHD-sEMG MU firing rate解析の potential を論じる導入で、本論文を「ALS患者39名で最大随意収縮時の tibialis anterior HD-sEMGを最大5回訪問で記録し、最大MU firing rateの月あたり低下を-0.32 Hz/月（95%CI -0.44; -0.19）と精密に定量化、MRCより早期の筋力低下を検出した直近2週間の重要研究（Clinical Neurophysiology, 2026年5月）」として引用。 [discussion] 自身の高齢者神経筋研究で HD-sEMG MU firing rate を縦断的に追跡する設計を議論する際、本研究のslope（-0.32 Hz/月、2026年）を比較対照とし、ALS変性と加齢neuromuscular declineのMU firing rate slope の差から、加齢でどの程度の感度がHD-sEMGに期待できるか検討。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題2の中核 EMG measurement の方法論的支柱**：Yujiの PD 課題2では高密度表面EMG（HD-sEMG）による motor unit firing 解析が中核 measurement の一つだが、加齢コホートでの HD-sEMG decomposition × 縦断追跡の方法論的標準は未確立だった。本研究の月あたり MU firing rate slope の定量と MRC との比較は、Yujiの 900名コホート で年に2回（または1回）の HD-sEMG 計測 × 5年追跡の study design の直接的 reference となる。**自前研究での corticomuscular coherence × MU firing rate 統合**：MU firing rateとhd-EEG aperiodic exponentの関連を世界初検証する仮説の基礎データ。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究と同じ tibialis anterior HD-sEMG プロトコルを実装し、年1-2回の縦断計測で加齢neuromuscular decline の年間 slope（健康加齢で-0.05〜-0.15 Hz/年と予測、ALSの1/2〜1/6 のペース）を世界に先駆けて定量化。②TMM の neuromuscular サブセットで本研究を replication し、Japanese-specific 加齢 MU firing rate slope を欧米コホートと比較。③Yuji の PD課題2の hd-EEG × HD-sEMG 同期 measurement で、aperiodic exponent slope（脳側の老化）と MU firing rate slope（筋側の老化）の相関を計算し、「電気生理的脳老化」と「電気生理的筋老化」のco-aging trajectoryを世界初定量化。④国立長寿NCGGの neuromuscular サブ研究と共同で、SHAP の説明変数に MU firing rate slope を加え、握力・歩行速度・椅子立ち上がり予測の重要度を検証。⑤PD課題3 tDCS介入の前後で HD-sEMG MU firing rate変化を測定し、tDCSが neuromuscular system に下行性の介入効果を持つかの世界初の機構的検証を実装。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">HD-sEMG</span><span class="tag">motor unit firing</span><span class="tag">ALS</span><span class="tag">縦断追跡</span><span class="tag">neuromotor biomarker</span><span class="tag">tibialis anterior</span><span class="tag">直近2週間</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_02" data-title="Age-related differences in force steadiness and motor unit behaviour during dynamic ankle dorsiflexions" data-authors="Vila-Chã C, Andreis FR, Kristoffersen SS, Vaz C, Negro F, Oliveira AS" data-journal="Journal of Neurophysiology (IF=2.1), 2026年2月1日（Vol. 135, Issue 2, pp. 523-533、Epub 2026年1月24日）" data-design="横断 × HD-sEMG × ブラインドソース分離 × 動的足関節背屈／健常若年（n=14, 23±3歳）vs 高齢（n=12, 68±5歳）／低速（5°/s）× 10%MVC × concentric/isometric/eccentric 収縮" data-url="https://doi.org/10.1152/jn.00334.2025" data-summary="若年（n=14, 23±3歳）と高齢（n=12, 68±5歳）の足関節背屈で、concentric/isometric/eccentric の3収縮モードを低速（5°/s）・低力（10%MVC）で実施。HD-sEMGをブラインドソース分離で分解し、連続（CNT、課題の≥90%動員）と間欠（INT、&lt;90%動員）の motor units（MU）を分離。高齢者はトルク・位置・MU discharge rate のCOVが有意に大、特に dynamic 収縮で顕著。concentric CNT MU の平均 discharge rate（AVR）が低下、eccentric INT MU のAVRが上昇、concentric INT MU の discharge rate slope（rate coding能力）が低下。加齢で MU rate coding modulation 能力が低下し、低力での force steadiness 維持が困難になることを精密に定量化した直近2週間の重要研究で、神経筋制御の dynamic phenotyping の最新基準を提示した。" data-methodology="Blind source separation による HD-sEMG decomposition は世界最高峰の精度を持つ。3収縮モード × MU 分類の体系的設計は加齢neuromuscular研究の方法論的標準を引き上げる。一方、n=26 は探索的サンプルで、sub-group 解析（性別、活動量別）の検出力に限界。本紹介はabstractと PubMed metadata に基づき、PMC オープンアクセス版を補助参照。" data-limitation="サンプルサイズn=26 は小規模で、特に高齢群n=12では性別・身体活動レベル別の sub-group 解析の検出力不足。Tibialis anterior 1筋のみで他筋（gastrocnemius、quadriceps）への外挿は要検証。被験者の身体活動・トレーニング歴の調整は限定的。横断設計で因果（加齢→ MU 変化）の方向は仮定。" data-implication="**PD課題2の精密 EMG プロトコル設計の方法論的礎**：Yujiの PD 課題2のHD-sEMG measurement で「どの収縮モード・どの強度で測るか」は重要な前提だが、本研究は dynamic 収縮（特に concentric/eccentric）が isometric より加齢効果を捕捉できることを実証。本研究プロトコル（5°/s、10%MVC、3収縮モード）の直接導入は PD 課題2の高感度 phenotyping を可能にする。**Tibialis anterior の重要性**：歩行・転倒予防に直結する筋として、Yujiの900名コホートの primary neuromuscular アウトカム として選定する強い根拠。" data-idea="**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究プロトコル（足関節背屈 5°/s × 10%MVC × concentric/isometric/eccentric）をそのまま実装し、Japanese-specific 加齢neuromuscular phenotype を世界規模で構築。②TMM neuromuscular サブセットで本研究を再現し、加齢 dynamic neuromuscular decline の Japanese 効果サイズを欧米と比較。③国立長寿NCGGコホートの既存高齢者データに本研究を追加し、5年縦断的に MU rate coding slope 変化を追跡 → PD課題1 SHAP の説明変数候補を拡張。④PD課題3 tDCS介入の前後で本研究プロトコルを実装し、tDCSが eccentric INT MU AVR上昇（加齢特異的所見）を緩和するかの世界初の機構検証。⑤手指器用さ（Yuji 既存トピック）×足関節背屈MU rate codingの2部位協調を世界初評価し、上肢-下肢neural drive aging の coupling 仮説検証。" data-novelty="Concentric/isometric/eccentric × CNT/INT MU × 低力×低速という4軸 phenotyping は方法論的に novel。Eccentric INT MUのAVR上昇という加齢特異的所見は先行研究で示されていなかった発見。MU rate coding modulation 能力（discharge rate slope）を加齢評価指標として positioning した点も新しい。" data-background="" data-result="①高齢者はトルク・位置・discharge rate のCOVが有意に大（特に dynamic 収縮で）、②concentric では高齢者のCNT MU AVRが低下、③eccentric では INT MU AVRが上昇（年齢特異的）、④concentric INT MU の SLOPE（rate coding能力）が低下、⑤isometric では年齢効果なし（dynamic specificity 明示）、⑥若年n=14、高齢n=12でブラインドソース分離による MU 分解成功、⑦CNT/INT MU の分類は新しい加齢 phenotyping 軸、⑧低力（10%MVC）×低速（5°/s）の組み合わせは日常生活動作に近い、⑨tibialis anterior 選択は歩行制御に直結する筋として妥当、⑩本研究はisometricで隠れる加齢neural drive 変化が dynamic で顕在化することを実証。" data-impact="「加齢で MU firing rate がどう変化するか」のうち、特に動的低力収縮の精密 phenotyping を world-leading な HD-sEMG ブラインドソース分離で実施した点で意義深い。Isometric では検出できない加齢 effect が dynamic 収縮では明確に顕在化することを実証し、加齢neuromuscular研究のプロトコル設計に重要な指針を与える。" data-keywords="" data-tags="PD研究関連|HD-sEMG|motor unit firing|force steadiness|tibialis anterior|高齢者神経筋制御|直近2週間|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_02"> お気に入り</label>
+    <span class="paper-rank">#2</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1152/jn.00334.2025" target="_blank" rel="noopener">Age-related differences in force steadiness and motor unit behaviour during dynamic ankle dorsiflexions</a></h2>
+    <p class="paper-meta">Vila-Chã C, Andreis FR, Kristoffersen SS, Vaz C, Negro F, Oliveira AS · <i>Journal of Neurophysiology (IF=2.1), 2026年2月1日（Vol. 135, Issue 2, pp. 523-533、Epub 2026年1月24日）</i> · 横断 × HD-sEMG × ブラインドソース分離 × 動的足関節背屈／健常若年（n=14, 23±3歳）vs 高齢（n=12, 68±5歳）／低速（5°/s）× 10%MVC × concentric/isometric/eccentric 収縮</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">若年（n=14, 23±3歳）と高齢（n=12, 68±5歳）の足関節背屈で、concentric/isometric/eccentric の3収縮モードを低速（5°/s）・低力（10%MVC）で実施。HD-sEMGをブラインドソース分離で分解し、連続（CNT、課題の≥90%動員）と間欠（INT、&lt;90%動員）の motor units（MU）を分離。高齢者はトルク・位置・MU discharge rate のCOVが有意に大、特に dynamic 収縮で顕著。concentric CNT MU の平均 discharge rate（AVR）が低下、eccentric INT MU のAVRが上昇、concentric INT MU の discharge rate slope（rate coding能力）が低下。加齢で MU rate coding modulation 能力が低下し、低力での force steadiness 維持が困難になることを精密に定量化した直近2週間の重要研究で、神経筋制御の dynamic phenotyping の最新基準を提示した。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：加齢に伴う force steadiness 低下は確立した phenomena だが、特に dynamic 収縮（concentric/eccentric）での MU 制御の精密な役割は HD-sEMG decomposition によらないと解明困難だった。低力・低速の動的収縮は日常生活動作（reach、立ち上がり、歩行支持期）に密接で機能的に重要。**方法**：健常若年（n=14, 平均23±3歳）と健常高齢（n=12, 平均68±5歳）が tibialis anterior の足関節背屈を低速（5°/s）×低力（10%最大随意等尺性収縮）で concentric/isometric/eccentric の3モードで実施。Joint torque、位置、MU discharge rate variability を coefficient of variation（COV）で評価。HD-sEMG をブラインドソース分離で分解、MUを CNT（連続、課題の≥90%動員）と INT（間欠、&lt;90%動員）に分類し、平均 discharge rate（AVR）と discharge rate slope（SLOPE）を抽出。**結果**：高齢者はトルク・位置・discharge rate のCOVが有意に大、特に dynamic 収縮で。Concentric では高齢者のCNT MU AVRが低下、eccentric では INT MU の AVRが上昇。Concentric INT MU の SLOPE は高齢者で低下（rate coding能力低下）。Isometric では差なし。**結論**：高齢者は MU rate coding modulation 能力が低下し、低力での dynamic force steadiness 維持が困難。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">「加齢で MU firing rate がどう変化するか」のうち、特に動的低力収縮の精密 phenotyping を world-leading な HD-sEMG ブラインドソース分離で実施した点で意義深い。Isometric では検出できない加齢 effect が dynamic 収縮では明確に顕在化することを実証し、加齢neuromuscular研究のプロトコル設計に重要な指針を与える。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Concentric/isometric/eccentric × CNT/INT MU × 低力×低速という4軸 phenotyping は方法論的に novel。Eccentric INT MUのAVR上昇という加齢特異的所見は先行研究で示されていなかった発見。MU rate coding modulation 能力（discharge rate slope）を加齢評価指標として positioning した点も新しい。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①高齢者はトルク・位置・discharge rate のCOVが有意に大（特に dynamic 収縮で）、<br>②concentric では高齢者のCNT MU AVRが低下、<br>③eccentric では INT MU AVRが上昇（年齢特異的）、<br>④concentric INT MU の SLOPE（rate coding能力）が低下、<br>⑤isometric では年齢効果なし（dynamic specificity 明示）、<br>⑥若年n=14、高齢n=12でブラインドソース分離による MU 分解成功、<br>⑦CNT/INT MU の分類は新しい加齢 phenotyping 軸、<br>⑧低力（10%MVC）×低速（5°/s）の組み合わせは日常生活動作に近い、<br>⑨tibialis anterior 選択は歩行制御に直結する筋として妥当、<br>⑩本研究はisometricで隠れる加齢neural drive 変化が dynamic で顕在化することを実証。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Blind source separation による HD-sEMG decomposition は世界最高峰の精度を持つ。3収縮モード × MU 分類の体系的設計は加齢neuromuscular研究の方法論的標準を引き上げる。一方、n=26 は探索的サンプルで、sub-group 解析（性別、活動量別）の検出力に限界。本紹介はabstractと PubMed metadata に基づき、PMC オープンアクセス版を補助参照。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">サンプルサイズn=26 は小規模で、特に高齢群n=12では性別・身体活動レベル別の sub-group 解析の検出力不足。Tibialis anterior 1筋のみで他筋（gastrocnemius、quadriceps）への外挿は要検証。被験者の身体活動・トレーニング歴の調整は限定的。横断設計で因果（加齢→ MU 変化）の方向は仮定。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 加齢神経筋研究で dynamic 収縮のMU phenotyping の重要性を論じる導入で、本研究を「健常若年14名と高齢12名の足関節背屈 dynamic 収縮（5°/s, 10%MVC）でブラインドソース分離による HD-sEMG decomposition を実施し、concentric CNT MU の AVR低下とINT MU の rate coding slope 低下を実証した直近2週間の重要研究（J Neurophysiology 2026年2月）」として引用。 [discussion] 自身の高齢者 force steadiness 研究で isometric だけでなく dynamic 収縮を評価する必要性を議論する際、本研究の dynamic specific の effect（2026年）を引用し、自前データの concentric/eccentric phenotyping の妥当性を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題2の精密 EMG プロトコル設計の方法論的礎**：Yujiの PD 課題2のHD-sEMG measurement で「どの収縮モード・どの強度で測るか」は重要な前提だが、本研究は dynamic 収縮（特に concentric/eccentric）が isometric より加齢効果を捕捉できることを実証。本研究プロトコル（5°/s、10%MVC、3収縮モード）の直接導入は PD 課題2の高感度 phenotyping を可能にする。**Tibialis anterior の重要性**：歩行・転倒予防に直結する筋として、Yujiの900名コホートの primary neuromuscular アウトカム として選定する強い根拠。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究プロトコル（足関節背屈 5°/s × 10%MVC × concentric/isometric/eccentric）をそのまま実装し、Japanese-specific 加齢neuromuscular phenotype を世界規模で構築。②TMM neuromuscular サブセットで本研究を再現し、加齢 dynamic neuromuscular decline の Japanese 効果サイズを欧米と比較。③国立長寿NCGGコホートの既存高齢者データに本研究を追加し、5年縦断的に MU rate coding slope 変化を追跡 → PD課題1 SHAP の説明変数候補を拡張。④PD課題3 tDCS介入の前後で本研究プロトコルを実装し、tDCSが eccentric INT MU AVR上昇（加齢特異的所見）を緩和するかの世界初の機構検証。⑤手指器用さ（Yuji 既存トピック）×足関節背屈MU rate codingの2部位協調を世界初評価し、上肢-下肢neural drive aging の coupling 仮説検証。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">HD-sEMG</span><span class="tag">motor unit firing</span><span class="tag">force steadiness</span><span class="tag">tibialis anterior</span><span class="tag">高齢者神経筋制御</span><span class="tag">直近2週間</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_03" data-title="Corticomuscular and intermuscular coherence as a function of age and walking balance difficulty" data-authors="Costa AAS, Moraes R, den Otter R, Gennaro F, Bakker L, dos Santos PCR, Hortobágyi T" data-journal="Neurobiology of Aging (IF=3.3), 2024年9月（Vol. 141, pp. 85-101）" data-design="横断 × β帯コリコムスキュラー / 中間筋 coherence × 平地・リボン・ビーム歩行（balance難易度3水準）／若年n=14（23歳）vs 高齢n=19（71歳）／脚7筋表面EMG × Cz EEG／stance × swing 解析" data-url="https://doi.org/10.1016/j.neurobiolaging.2024.05.004" data-summary="若年（n=14, 23歳）と高齢（n=19, 71歳）で平地・6cm幅リボン・6cm幅ビーム（高さ5cm）の3 balance 難易度で13mを歩行し、CzのEEG × 脚7筋surface EMG からβ帯（13-30 Hz）の corticomuscular coherence（CMC）と4ペアの intermuscular coherence（IMC）を gait stance/swing 別に算出。Balance 難易度が高くなると歩行距離は高齢者で短縮、歩行速度は両群で漸減。ビーム歩行で IMC 増加、加齢で proximal 筋対のIMC が増加、distal 筋対のIMC が低下、加齢と difficulty 双方で CMC が gait phase に依存せず増加。加齢で歩行 balance 制御における corticospinal 関与の増加が示唆された。世界的に参照される corticomuscular coherence 指標 measurement の基準研究で、加齢歩行制御の cortical-spinal 階層解析の reference として広く活用される。" data-methodology="EEG-EMG 同期 measurement と歩行 balance 課題 × 7筋ペアの設計は方法論的に堅実。Stance × swing 別解析は gait phase specificity を捕捉する標準的手法。一方、Cz の1電極のみで cortical source localization は限定的（hd-EEG なら ICA で分離可能）。サンプルサイズn=33は中規模で、特定 phase × 筋ペア × 年齢の sub-group 解析の検出力に限界。" data-limitation="Cz の1電極のみで cortical source localization は限定的。被験者は cognitively normal の中年・高齢で、フレイル・cognitive impairment への一般化は要検証。被験者の身体活動歴・トレーニング歴は限定的調整。13mの歩行距離はsteady-state walking の代表性として short。" data-implication="**PD課題2の corticomuscular coherence measurement の世界基準**：本研究はYujiの PD 課題2の hd-EEG（128 channel）× HD-sEMG 同期計測の方法論的 ベンチマーク そのもの。Yujiの 900名 コホート で stance/swing × balance difficulty × 7筋を本研究と同じ精密度で phenotyping できれば、世界最大規模の CMC 加齢研究となる。**Proximal vs distal 反対方向の所見**：歩行制御の cortico-spinal 階層的失調の Japanese コホート 検証の核心仮説の出発点。" data-idea="**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究プロトコル（3 balance 難易度 × stance/swing × 7筋）に hd-EEG 128 channel を追加した拡張 study を実施し、Cz だけでなく M1・PMd・SMA の各 source からの CMC を比較。②TMM サブセットで本研究を replication し、Japanese 加齢 corticomuscular phenotype を欧米と直接比較。③PD課題3 tDCS介入の前後で本研究 CMC/IMC プロトコルを実装し、tDCS が proximal CMC 増加（compensation）を modify するかの世界初の機構検証。④国立長寿NCGGコホートで本研究をベースラインに5-10年追跡し、CMC slope と歩行速度低下・転倒発症の縦断的予測能を検証。⑤PD課題1のSHAPに本研究の proximal IMC・distal IMC・CMC を加え、握力・歩行速度・椅子立ち上がり予測の重要度を検証 → Yujiの既存知見「手指器用さ &gt; 筋質 &gt; 認知 &gt; 筋力」がどう更新されるか。" data-novelty="3 balance 難易度 × stance/swing phase × 7筋 × CMC/IMC 同時解析という方法論的多軸 design は世界的に希少。Proximal と distal 筋対の IMC 加齢効果の方向が逆という非自明な所見を導出した点で重要。Gait phase に依存しない CMC の加齢増加を示した点も novel。" data-background="" data-result="①Balance 難易度上昇で高齢者の歩行距離が有意短縮、若年群は維持、②歩行速度は両群で漸減（balance × age interaction なし）、③ビーム歩行でIMC 増加（task-dependent）、④加齢で proximal 筋対のIMC増加（compensation）、⑤加齢で distal 筋対のIMC低下（脱神経・dystonia 様変化）、⑥CMC は加齢 × balance 難易度双方で gait phase に依存せず増加、⑦CMC増加は cortical 関与増加の補償的解釈、⑧proximal vs distal の効果方向逆転は cortico-spinal 階層的失調を示唆、⑨n=33 で CMC/IMC を精密 phenotyping、⑩本研究は CMC 加齢変化の論争に統合解釈を提示。" data-impact="CMC の加齢変化は decreased、increased、unchanged の3説が並立していた論争領域に、balance 難易度 × gait phase × 筋部位を組み合わせた精密 study で「加齢と difficulty 双方で CMC 増加、proximal IMC は増加・distal IMC は低下」という統合解釈を提示。歩行制御の階層モデル研究のreference point として世界的に参照される基準研究。" data-keywords="" data-tags="PD研究関連|corticomuscular coherence|intermuscular coherence|歩行balance|Cz EEG|脚7筋EMG|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_03"> お気に入り</label>
+    <span class="paper-rank">#3</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1016/j.neurobiolaging.2024.05.004" target="_blank" rel="noopener">Corticomuscular and intermuscular coherence as a function of age and walking balance difficulty</a></h2>
+    <p class="paper-meta">Costa AAS, Moraes R, den Otter R, Gennaro F, Bakker L, dos Santos PCR, Hortobágyi T · <i>Neurobiology of Aging (IF=3.3), 2024年9月（Vol. 141, pp. 85-101）</i> · 横断 × β帯コリコムスキュラー / 中間筋 coherence × 平地・リボン・ビーム歩行（balance難易度3水準）／若年n=14（23歳）vs 高齢n=19（71歳）／脚7筋表面EMG × Cz EEG／stance × swing 解析</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">若年（n=14, 23歳）と高齢（n=19, 71歳）で平地・6cm幅リボン・6cm幅ビーム（高さ5cm）の3 balance 難易度で13mを歩行し、CzのEEG × 脚7筋surface EMG からβ帯（13-30 Hz）の corticomuscular coherence（CMC）と4ペアの intermuscular coherence（IMC）を gait stance/swing 別に算出。Balance 難易度が高くなると歩行距離は高齢者で短縮、歩行速度は両群で漸減。ビーム歩行で IMC 増加、加齢で proximal 筋対のIMC が増加、distal 筋対のIMC が低下、加齢と difficulty 双方で CMC が gait phase に依存せず増加。加齢で歩行 balance 制御における corticospinal 関与の増加が示唆された。世界的に参照される corticomuscular coherence 指標 measurement の基準研究で、加齢歩行制御の cortical-spinal 階層解析の reference として広く活用される。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：歩行は cortical と spinal の階層的制御で実現されるが、加齢で「cortical 関与（CMC で計測）」が増加するという仮説の歩行中の直接検証は限定的だった。CMC（脳皮質-筋）と IMC（筋-筋）を gait phase × balance 難易度 × 加齢の3軸で系統的に解析した研究は世界的に希少。**方法**：若年群（n=14, 平均23歳）と高齢群（n=19, 平均71歳）が13mを3条件（平地、6cm幅リボン上、6cm幅・高さ5cm ビーム上）で歩行。Cz電極のEEG と脚7筋（rectus femoris、vastus medialis、biceps femoris、tibialis anterior、gastrocnemius medialis、gastrocnemius lateralis、soleus）の surface EMG を取得。CMC は Cz-EMG ペア、IMC は4ペア（proximal: RF-VM、BF-RF；distal: TA-GM、GM-Sol）で算出。Gait stance/swing phase 別にβ帯 coherence を計算。**結果**：Balance 難易度が高くなると高齢者で歩行距離が短縮、歩行速度は両群で漸減。ビーム歩行で IMC 増加。加齢で proximal 筋対のIMC が増加（compensation）、distal 筋対のIMC が低下（denervation・dystonia 様変化）。CMC は加齢 × balance 難易度双方で gait phase に依存せず増加。**結論**：加齢で歩行balance 制御における corticospinal 関与が増加するが、distal 筋では IMC 低下があり、cortical 駆動と peripheral 統合の失調を示唆。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">CMC の加齢変化は decreased、increased、unchanged の3説が並立していた論争領域に、balance 難易度 × gait phase × 筋部位を組み合わせた精密 study で「加齢と difficulty 双方で CMC 増加、proximal IMC は増加・distal IMC は低下」という統合解釈を提示。歩行制御の階層モデル研究のreference point として世界的に参照される基準研究。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">3 balance 難易度 × stance/swing phase × 7筋 × CMC/IMC 同時解析という方法論的多軸 design は世界的に希少。Proximal と distal 筋対の IMC 加齢効果の方向が逆という非自明な所見を導出した点で重要。Gait phase に依存しない CMC の加齢増加を示した点も novel。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①Balance 難易度上昇で高齢者の歩行距離が有意短縮、若年群は維持、<br>②歩行速度は両群で漸減（balance × age interaction なし）、<br>③ビーム歩行でIMC 増加（task-dependent）、<br>④加齢で proximal 筋対のIMC増加（compensation）、<br>⑤加齢で distal 筋対のIMC低下（脱神経・dystonia 様変化）、<br>⑥CMC は加齢 × balance 難易度双方で gait phase に依存せず増加、<br>⑦CMC増加は cortical 関与増加の補償的解釈、<br>⑧proximal vs distal の効果方向逆転は cortico-spinal 階層的失調を示唆、<br>⑨n=33 で CMC/IMC を精密 phenotyping、<br>⑩本研究は CMC 加齢変化の論争に統合解釈を提示。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">EEG-EMG 同期 measurement と歩行 balance 課題 × 7筋ペアの設計は方法論的に堅実。Stance × swing 別解析は gait phase specificity を捕捉する標準的手法。一方、Cz の1電極のみで cortical source localization は限定的（hd-EEG なら ICA で分離可能）。サンプルサイズn=33は中規模で、特定 phase × 筋ペア × 年齢の sub-group 解析の検出力に限界。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">Cz の1電極のみで cortical source localization は限定的。被験者は cognitively normal の中年・高齢で、フレイル・cognitive impairment への一般化は要検証。被験者の身体活動歴・トレーニング歴は限定的調整。13mの歩行距離はsteady-state walking の代表性として short。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 加齢歩行制御の cortical 関与の精密 phenotyping を論じる導入で、本研究を「若年14名と高齢19名の3 balance 難易度 × stance/swing phase × 7筋ペアの精密 CMC/IMC 解析で『加齢と difficulty 双方で CMC が gait phase に依存せず増加、proximal IMC は増加・distal IMC は低下』という非自明な階層的失調を示した世界的 reference point（Neurobiology of Aging 2024年9月）」として引用。 [discussion] 自身の hd-EEG × HD-sEMG corticomuscular coherence 解析の結果を議論する際、本研究の age × difficulty × phase の組み合わせ効果（2024年）を比較対照とし、より高密度なEEG-EMG リグでの方法論的拡張可能性を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題2の corticomuscular coherence measurement の世界基準**：本研究はYujiの PD 課題2の hd-EEG（128 channel）× HD-sEMG 同期計測の方法論的 ベンチマーク そのもの。Yujiの 900名 コホート で stance/swing × balance difficulty × 7筋を本研究と同じ精密度で phenotyping できれば、世界最大規模の CMC 加齢研究となる。**Proximal vs distal 反対方向の所見**：歩行制御の cortico-spinal 階層的失調の Japanese コホート 検証の核心仮説の出発点。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究プロトコル（3 balance 難易度 × stance/swing × 7筋）に hd-EEG 128 channel を追加した拡張 study を実施し、Cz だけでなく M1・PMd・SMA の各 source からの CMC を比較。②TMM サブセットで本研究を replication し、Japanese 加齢 corticomuscular phenotype を欧米と直接比較。③PD課題3 tDCS介入の前後で本研究 CMC/IMC プロトコルを実装し、tDCS が proximal CMC 増加（compensation）を modify するかの世界初の機構検証。④国立長寿NCGGコホートで本研究をベースラインに5-10年追跡し、CMC slope と歩行速度低下・転倒発症の縦断的予測能を検証。⑤PD課題1のSHAPに本研究の proximal IMC・distal IMC・CMC を加え、握力・歩行速度・椅子立ち上がり予測の重要度を検証 → Yujiの既存知見「手指器用さ &gt; 筋質 &gt; 認知 &gt; 筋力」がどう更新されるか。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">corticomuscular coherence</span><span class="tag">intermuscular coherence</span><span class="tag">歩行balance</span><span class="tag">Cz EEG</span><span class="tag">脚7筋EMG</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_04" data-title="Exploration of the effects of Tai Chi practice on lower limb corticomuscular coherence during balance-demanding virtual reality conditions in older adults" data-authors="Hu Y, Hsiao-Wecksler ET, Hernandez ME" data-journal="Frontiers in Aging Neuroscience (IF=4.5), 2025年6月23日（Vol. 17, Article 1554000）" data-design="横断 × 没入型VR × hd-EEG × surface EMG／高齢者（n=10）vs Tai Chi 実践高齢者（n=10）vs 若年（n=10）／立位 balance × 感覚的・機械的 perturbation／前頭・中央・頭頂・後頭 cortical 領域 × 足関節屈背筋 β・γ CMC" data-url="https://doi.org/10.3389/fnagi.2025.1554000" data-summary="没入型VR環境で立位 balance を維持する課題に感覚的・機械的 perturbation を加え、hd-EEG × surface EMG で β・γ corticomuscular coherence（CMC）を高齢者（n=10）、Tai Chi 実践高齢者（n=10）、若年（n=10）の3群間で比較。前頭・中央・頭頂・後頭 cortical 領域 × ankle plantar/dorsi-flexors の CMC を量的に比較。高齢者は若年と Tai Chi 実践者より γ CMC が高く、β・γ CMC 増加は高齢者で mediolateral 姿勢動揺低下と相関、若年では逆相関だった。Tai Chi 実践高齢者は地上条件で tibialis anterior と soleus の β CMC が他群より低く、若年に近かった。CMC が balance task における cortical-muscular adaptation を quantify でき、リハビリ介入評価に有用な世界初の VR-based CMC 評価プロトコル。" data-methodology="VR × perturbation × hd-EEG × EMG の同期 measurement は世界最高峰の精密度。3群比較（aging + intervention + young）で aging と reverse aging 双方を評価できる sophisticated design。一方、n=30 は探索的サンプルで、性別・Tai Chi 経験年数別の sub-group 解析の検出力に限界。Tai Chi non-ランダム化 で selection バイアス の可能性。" data-limitation="Tai Chi 実践は被験者 self-selection で ランダム化 介入ではなく、健康・motivation・cognitive reserve の baseline 差が confound しうる。n=30 のsmall sample で再現性検証が必要。VR 設定は一般化に注意（実地歩行との一致性は別途検証要）。本紹介はopen accessのFrontiers原本を読破して書いている。" data-implication="**PD課題3の介入応答性評価の核心 biomarker**：Yujiの PD 課題3 tDCS介入の評価で「介入が cortical-muscular control にどう変化するか」を quantify するために、本研究の VR × CMC プロトコルは direct reference となる。**β と γ CMC の役割分離**：β CMC が介入 sensitive、γ CMC が aging marker という分離は、Yujiの 介入 study の primary endpoint 選定に直接活用できる重要な分割。" data-idea="**自前研究への展開3案以上**：①PD課題3 tDCS介入の前後評価に本研究 VR × CMC プロトコルを直接導入し、tDCS が β CMC（介入 sensitive）を modify するかを primary アウトカム として測定。②900名コホートで Tai Chi or 太極拳経験者を sub-group として識別し、本研究を population-based に拡張、Tai Chi 曝露 dose × CMC の dose-response を検証。③TMM サブセットで本研究の若年/中年/高齢比較を実施し、Japanese-specific aging CMC trajectory を欧米と比較。④国立長寿NCGGコホートに VR × CMC プロトコルを導入し、baseline CMC × 転倒・要介護化発症の縦断的予測能を検証。⑤PD課題2の corticomuscular coherence と本研究の VR 動揺低下 correlation を統合解析し、cortical-muscular adaptation の population-level individual variability を quantify。" data-novelty="没入型VR × 感覚的・機械的 perturbation × CMC という3軸の novel な実験パラダイム。Tai Chi 実践高齢者という独自の比較群で介入 effect の reverse aging を CMC レベルで検出した点で先駆的。前頭・中央・頭頂・後頭の4 cortical 領域の同時解析は方法論的に sophisticated。" data-background="" data-result="①高齢者は γ CMC が若年と Tai Chi 実践者より高い、②高齢者では β・γ CMC 増加と mediolateral 姿勢動揺低下が相関（compensatory）、③若年では CMC 増加と動揺低下が逆相関（efficient control）、④Tai Chi 実践高齢者は地上条件で tibialis anterior・soleus の β CMC が他群より低い（若年に近い）、⑤4 cortical 領域（前頭・中央・頭頂・後頭）すべてで Tai Chi effect 検出、⑥VR × perturbation という novel パラダイム成功、⑦n=30の small sample でも Tai Chi effect が明確に検出可能（CMC の sensitivity 示唆）、⑧β と γ で異なる effect pattern（β は介入 specific、γ は加齢 specific）、⑨ankle plantar/dorsi-flexors の独立解析が可能、⑩本研究は CMC を介入 outcomes として positioning した先駆例。" data-impact="Tai Chi という確立された balance 介入が neuroimaging biomarker を modify するかの直接検証は希少。VR-based balance challenge × CMC という新規プロトコルが、加齢balance制御の neural mechanism 解明と介入評価に有用な tool として世界に提示された。非侵襲的脳刺激（tDCS / tACS）介入の評価プロトコル設計を考える研究分野全体にとって direct reference として機能する。" data-keywords="" data-tags="PD研究関連|corticomuscular coherence|Tai Chi|balance|virtual reality|立位制御|前頭・中央・頭頂|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_04"> お気に入り</label>
+    <span class="paper-rank">#4</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.3389/fnagi.2025.1554000" target="_blank" rel="noopener">Exploration of the effects of Tai Chi practice on lower limb corticomuscular coherence during balance-demanding virtual reality conditions in older adults</a></h2>
+    <p class="paper-meta">Hu Y, Hsiao-Wecksler ET, Hernandez ME · <i>Frontiers in Aging Neuroscience (IF=4.5), 2025年6月23日（Vol. 17, Article 1554000）</i> · 横断 × 没入型VR × hd-EEG × surface EMG／高齢者（n=10）vs Tai Chi 実践高齢者（n=10）vs 若年（n=10）／立位 balance × 感覚的・機械的 perturbation／前頭・中央・頭頂・後頭 cortical 領域 × 足関節屈背筋 β・γ CMC</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">没入型VR環境で立位 balance を維持する課題に感覚的・機械的 perturbation を加え、hd-EEG × surface EMG で β・γ corticomuscular coherence（CMC）を高齢者（n=10）、Tai Chi 実践高齢者（n=10）、若年（n=10）の3群間で比較。前頭・中央・頭頂・後頭 cortical 領域 × ankle plantar/dorsi-flexors の CMC を量的に比較。高齢者は若年と Tai Chi 実践者より γ CMC が高く、β・γ CMC 増加は高齢者で mediolateral 姿勢動揺低下と相関、若年では逆相関だった。Tai Chi 実践高齢者は地上条件で tibialis anterior と soleus の β CMC が他群より低く、若年に近かった。CMC が balance task における cortical-muscular adaptation を quantify でき、リハビリ介入評価に有用な世界初の VR-based CMC 評価プロトコル。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：Tai Chi は高齢者の balance と転倒予防に有効だが、その neural mechanism を従来の balance assessment では evaluate しにくい。Balance demanding 環境での corticomuscular coherence は介入応答性の sensitive measure として candidate だが、評価標準は未確立。**方法**：高齢者（n=10）、Tai Chi 実践高齢者（n=10）、若年（n=10）の3群で、没入型VR環境（高 postural threat の感覚的・機械的 perturbation 含む）での立位 balance を実施。Hd-EEG × surface EMG を同期取得し、前頭・中央・頭頂・後頭 cortical 領域 × ankle plantar-flexors（gastrocnemius medialis、soleus）と dorsi-flexors（tibialis anterior）のβ・γ帯 magnitude squared CMC を計算。Mediolateral postural sway を coupling と相関解析。**結果**：高齢者は若年と Tai Chi 実践者より γ CMC が高い。β・γ CMC 増加は高齢者で mediolateral 姿勢動揺低下と相関（compensatory）、若年では逆相関（efficient control）。Tai Chi 実践高齢者は地上条件で tibialis anterior と soleus のβ CMC が他群より低く（若年に近い）。**結論**：CMC は balance task における cortical-muscular adaptation の quantitative biomarker として機能し、リハビリ介入の neural mechanism 評価に有用。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">Tai Chi という確立された balance 介入が neuroimaging biomarker を modify するかの直接検証は希少。VR-based balance challenge × CMC という新規プロトコルが、加齢balance制御の neural mechanism 解明と介入評価に有用な tool として世界に提示された。非侵襲的脳刺激（tDCS / tACS）介入の評価プロトコル設計を考える研究分野全体にとって direct reference として機能する。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">没入型VR × 感覚的・機械的 perturbation × CMC という3軸の novel な実験パラダイム。Tai Chi 実践高齢者という独自の比較群で介入 effect の reverse aging を CMC レベルで検出した点で先駆的。前頭・中央・頭頂・後頭の4 cortical 領域の同時解析は方法論的に sophisticated。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①高齢者は γ CMC が若年と Tai Chi 実践者より高い、<br>②高齢者では β・γ CMC 増加と mediolateral 姿勢動揺低下が相関（compensatory）、<br>③若年では CMC 増加と動揺低下が逆相関（efficient control）、<br>④Tai Chi 実践高齢者は地上条件で tibialis anterior・soleus の β CMC が他群より低い（若年に近い）、<br>⑤4 cortical 領域（前頭・中央・頭頂・後頭）すべてで Tai Chi effect 検出、<br>⑥VR × perturbation という novel パラダイム成功、<br>⑦n=30の small sample でも Tai Chi effect が明確に検出可能（CMC の sensitivity 示唆）、<br>⑧β と γ で異なる effect pattern（β は介入 specific、γ は加齢 specific）、<br>⑨ankle plantar/dorsi-flexors の独立解析が可能、<br>⑩本研究は CMC を介入 outcomes として positioning した先駆例。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">VR × perturbation × hd-EEG × EMG の同期 measurement は世界最高峰の精密度。3群比較（aging + intervention + young）で aging と reverse aging 双方を評価できる sophisticated design。一方、n=30 は探索的サンプルで、性別・Tai Chi 経験年数別の sub-group 解析の検出力に限界。Tai Chi non-ランダム化 で selection バイアス の可能性。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">Tai Chi 実践は被験者 self-selection で ランダム化 介入ではなく、健康・motivation・cognitive reserve の baseline 差が confound しうる。n=30 のsmall sample で再現性検証が必要。VR 設定は一般化に注意（実地歩行との一致性は別途検証要）。本紹介はopen accessのFrontiers原本を読破して書いている。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] Balance 介入の neural biomarker としての CMC の potential を論じる導入で、本論文を「没入型VR × hd-EEG × surface EMG で高齢者・Tai Chi 実践者・若年の3群比較を実施し、Tai Chi 実践高齢者の β CMC が若年に近づく reverse aging を世界に先駆けて示した先進プロトコル（Frontiers in Aging Neuroscience 2025年6月）」として引用。 [discussion] 自身の介入研究の評価プロトコルとして CMC を採用する妥当性を論じる際、本研究の Tai Chi reverse aging effect（2025年）を引用し、tDCS など別の介入で同様の CMC modulation が期待できるか議論。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題3の介入応答性評価の核心 biomarker**：Yujiの PD 課題3 tDCS介入の評価で「介入が cortical-muscular control にどう変化するか」を quantify するために、本研究の VR × CMC プロトコルは direct reference となる。**β と γ CMC の役割分離**：β CMC が介入 sensitive、γ CMC が aging marker という分離は、Yujiの 介入 study の primary endpoint 選定に直接活用できる重要な分割。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題3 tDCS介入の前後評価に本研究 VR × CMC プロトコルを直接導入し、tDCS が β CMC（介入 sensitive）を modify するかを primary アウトカム として測定。②900名コホートで Tai Chi or 太極拳経験者を sub-group として識別し、本研究を population-based に拡張、Tai Chi 曝露 dose × CMC の dose-response を検証。③TMM サブセットで本研究の若年/中年/高齢比較を実施し、Japanese-specific aging CMC trajectory を欧米と比較。④国立長寿NCGGコホートに VR × CMC プロトコルを導入し、baseline CMC × 転倒・要介護化発症の縦断的予測能を検証。⑤PD課題2の corticomuscular coherence と本研究の VR 動揺低下 correlation を統合解析し、cortical-muscular adaptation の population-level individual variability を quantify。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">corticomuscular coherence</span><span class="tag">Tai Chi</span><span class="tag">balance</span><span class="tag">virtual reality</span><span class="tag">立位制御</span><span class="tag">前頭・中央・頭頂</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_05" data-title="Age-related Reorganization of Corticomuscular Connectivity During Locomotor Perturbations" data-authors="Shirazi SY, Tasin SM, Huang HJ" data-journal="bioRxiv (IF=N/A, preprint), 2025年9月（DOI 10.1101/2025.09.28.679054、Epub 2025年9月28日）" data-design="横断 × hd-EEG 128 electrodes × 6筋両側 EMG × recumbent stepping × 200ms 機械的 perturbation／若年n=17（25±4.9歳）vs 高齢n=11（68±3.6歳）／ICA × source localization × direct directed transfer function (dDTF) × theta/alpha/beta" data-url="https://www.biorxiv.org/content/10.1101/2025.09.28.679054v1" data-summary="若年（n=17, 25±4.9歳）と高齢（n=11, 68±3.6歳）の recumbent stepping（60歩/分の連続的足踏み）で、左右脚の伸展開始期または中期に200ms の機械的 perturbation（resistance増加）を加え、hd-EEG（128 electrodes）と両側6筋 EMG を同期取得。ICA × source localization × direct directed transfer function（dDTF）で皮質クラスター ⇔ 筋の双方向情報流をtheta（3-8 Hz）、alpha（8-13 Hz）、beta（13-35 Hz）帯で定量。若年は anterior cingulate cortex（ACC）、両側 supplementary motor areas（SMA）、両側 posterior parietal cortices（PPC）に集中した electro-cortical source と強い theta-band 同期を示したが、高齢者は cortical sources が少なく特に ACC を欠き、最小限の同期変化のみ示した。Baseline corticomuscular connectivity は高齢者で有意に強かった（p=0.012）。加齢で error-driven dynamic neural control から stability-focused constraining approach へ strategic reorganization が起きる world-first 重要研究。" data-methodology="Hd-EEG 128 channel × dDTF × source localization × 6筋 EMG という world-class measurement は方法論的に世界最高峰。ICA による artifact 除去と source 分離は確立された手法。一方、n=28 は探索的サンプルで、性別・身体活動歴別の sub-group 解析の検出力に限界。Recumbent stepping は実地歩行とは生体力学的に異なるため一般化に注意。Preprint で peer-review 未完だが、方法論と所見は十分に formal な水準。" data-limitation="Preprint で peer review 未完。n=28 は探索的サンプル。Recumbent stepping は実地歩行と異なる（重力・balance要素が縮減）。高齢群n=11は特に小さく、sub-group 解析（性別、身体活動歴）の検出力不足。dDTF の選択は方法論的に sound だが、Granger causality 系の連結性指標は assumption に依存。" data-implication="**PD課題2の方法論的礎**：Yujiの PD 課題2の hd-EEG 128 channel × HD-sEMG 同期 measurement の世界基準。本研究の ACC selective involvement × baseline hyperconnectivity × diffuse perturbation response の3つの key finding は、Yujiの 900名コホートで replication するべき core hypotheses。**Recumbent stepping の活用**：MRI 内での同時 measurement 可能なparadigmとして、PD課題1の MRI と PD 課題2の hd-EEG を統合できる将来 vision の基盤。" data-idea="**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究 recumbent stepping × hd-EEG 128 channel × dDTF プロトコルをそのまま実装し、Japanese 加齢 corticomuscular connectivity の世界最大規模 コホート 構築。②TMM サブセットで本研究を再現し、加齢 cortical reorganization の人種差検討。③国立長寿NCGGコホートに本研究プロトコルを導入し、baseline corticomuscular connectivity × 5年後の歩行速度低下・転倒発症の縦断的予測能を検証。④PD課題3 tDCS介入の前後で本研究 hyperconnectivity 指標を測定し、tDCS が high-aged hyperconnectivity を modify するかの世界初機構検証。⑤MRI 内 recumbent stepping × fNIRS or fMRI を組み合わせ、cortical activation と CMC のmulti-modal評価を実装 → 将来vision として PD課題1 と課題2 を統合する超precise multimodal study。" data-novelty="Recumbent stepping × 200ms perturbation × hd-EEG 128 channel × dDTF という4軸の精密 design は世界最高峰。Baseline corticomuscular connectivity hyperconnectivity という所見（高齢者で有意強い）は novel で、anti-aging research の新方向性を提示。Theta-band 同期の age differential は加齢 cognitive-motor coupling の機構的説明として重要。" data-background="" data-result="①若年は ACC、両側 SMA、両側 PPC に集中した electro-cortical source、強い theta 同期、②高齢者は cortical sources が少なく ACC を欠く、③Baseline corticomuscular connectivity は高齢者で有意に強い（p=0.012、hyperconnectivity）、④Perturbation 中、若年は flexible task-specific modulation（ACC × 特定筋の selective 双方向）、⑤高齢者は diffuse connectivity（motor・PPC が複数筋同時接続）、⑥theta 同期の age differential が neural error processing の加齢失調を反映、⑦200ms perturbation は通常歩行で起きうる perturbation の生理的範囲、⑧hd-EEG 128 channel × dDTF は world-first 規模、⑨recumbent stepping は MRI 内 paradigm への拡張 potential、⑩本研究は perturbed recumbent stepping を加齢 corticomuscular communication の ベンチマーク assessment として position。" data-impact="歩行制御の加齢 cortical reorganization を hd-EEG × dDTF（128 channel × 双方向情報流）の sophisticated 解析で world-first 規模で実証。「加齢では cortical 関与が増えるが diffuse になり、error-driven から stability-focused へ shift する」という統合仮説を量的に支持。研究分野全体にとって hd-EEG 128 channel measurement の方法論的礎となる reference。" data-keywords="" data-tags="PD研究関連|hd-EEG 128 channel|corticomuscular connectivity|locomotor perturbation|dDTF|ACC|SMA|PPC|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_05"> お気に入り</label>
+    <span class="paper-rank">#5</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://www.biorxiv.org/content/10.1101/2025.09.28.679054v1" target="_blank" rel="noopener">Age-related Reorganization of Corticomuscular Connectivity During Locomotor Perturbations</a></h2>
+    <p class="paper-meta">Shirazi SY, Tasin SM, Huang HJ · <i>bioRxiv (IF=N/A, preprint), 2025年9月（DOI 10.1101/2025.09.28.679054、Epub 2025年9月28日）</i> · 横断 × hd-EEG 128 electrodes × 6筋両側 EMG × recumbent stepping × 200ms 機械的 perturbation／若年n=17（25±4.9歳）vs 高齢n=11（68±3.6歳）／ICA × source localization × direct directed transfer function (dDTF) × theta/alpha/beta</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">若年（n=17, 25±4.9歳）と高齢（n=11, 68±3.6歳）の recumbent stepping（60歩/分の連続的足踏み）で、左右脚の伸展開始期または中期に200ms の機械的 perturbation（resistance増加）を加え、hd-EEG（128 electrodes）と両側6筋 EMG を同期取得。ICA × source localization × direct directed transfer function（dDTF）で皮質クラスター ⇔ 筋の双方向情報流をtheta（3-8 Hz）、alpha（8-13 Hz）、beta（13-35 Hz）帯で定量。若年は anterior cingulate cortex（ACC）、両側 supplementary motor areas（SMA）、両側 posterior parietal cortices（PPC）に集中した electro-cortical source と強い theta-band 同期を示したが、高齢者は cortical sources が少なく特に ACC を欠き、最小限の同期変化のみ示した。Baseline corticomuscular connectivity は高齢者で有意に強かった（p=0.012）。加齢で error-driven dynamic neural control から stability-focused constraining approach へ strategic reorganization が起きる world-first 重要研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：歩行・足踏みの perturbation 制御では cortical （ACC・SMA・PPC）と spinal の階層的制御が motor errors を最小化する。Cortical の役割は加齢で variable で、特に hd-EEG × dDTF による双方向情報流の精密 mapping は希少だった。**方法**：若年（n=17, 平均25±4.9歳）と高齢（n=11, 平均68±3.6歳）が recumbent stepping（横臥位で60歩/分のpedaling様運動）を実施し、左右脚の伸展開始期または中期に200ms 機械的 perturbation（resistance増加）を加える。Hd-EEG 128 electrodes と両側6筋 EMG を同期。ICA で source 分離し、source localization で cortical cluster を identify（ACC、両側 SMA、両側 PPC、両側 sensorimotor）。dDTF で皮質クラスター ⇔ 筋の双方向情報流を theta/alpha/beta 帯で定量。**結果**：若年は ACC、両側 SMA、両側 PPC に集中した electro-cortical source、強い theta 同期。高齢者は cortical sources が少なく ACC を欠く、最小限の同期変化のみ。Baseline corticomuscular connectivity は高齢者で有意に強い（p=0.012）。Perturbation 中、若年は flexible task-specific connectivity modulation（特に ACC × 特定筋の selective 双方向変化）、高齢者は diffuse connectivity（motor・PPC が複数上肢・下肢筋と同時接続）。**結論**：加齢で dynamic error-driven neural control から stability-focused constraining approach へ strategic reorganization が起きる。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">歩行制御の加齢 cortical reorganization を hd-EEG × dDTF（128 channel × 双方向情報流）の sophisticated 解析で world-first 規模で実証。「加齢では cortical 関与が増えるが diffuse になり、error-driven から stability-focused へ shift する」という統合仮説を量的に支持。研究分野全体にとって hd-EEG 128 channel measurement の方法論的礎となる reference。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Recumbent stepping × 200ms perturbation × hd-EEG 128 channel × dDTF という4軸の精密 design は世界最高峰。Baseline corticomuscular connectivity hyperconnectivity という所見（高齢者で有意強い）は novel で、anti-aging research の新方向性を提示。Theta-band 同期の age differential は加齢 cognitive-motor coupling の機構的説明として重要。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①若年は ACC、両側 SMA、両側 PPC に集中した electro-cortical source、強い theta 同期、<br>②高齢者は cortical sources が少なく ACC を欠く、<br>③Baseline corticomuscular connectivity は高齢者で有意に強い（p=0.012、hyperconnectivity）、<br>④Perturbation 中、若年は flexible task-specific modulation（ACC × 特定筋の selective 双方向）、<br>⑤高齢者は diffuse connectivity（motor・PPC が複数筋同時接続）、<br>⑥theta 同期の age differential が neural error processing の加齢失調を反映、<br>⑦200ms perturbation は通常歩行で起きうる perturbation の生理的範囲、<br>⑧hd-EEG 128 channel × dDTF は world-first 規模、<br>⑨recumbent stepping は MRI 内 paradigm への拡張 potential、<br>⑩本研究は perturbed recumbent stepping を加齢 corticomuscular communication の ベンチマーク assessment として position。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Hd-EEG 128 channel × dDTF × source localization × 6筋 EMG という world-class measurement は方法論的に世界最高峰。ICA による artifact 除去と source 分離は確立された手法。一方、n=28 は探索的サンプルで、性別・身体活動歴別の sub-group 解析の検出力に限界。Recumbent stepping は実地歩行とは生体力学的に異なるため一般化に注意。Preprint で peer-review 未完だが、方法論と所見は十分に formal な水準。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">Preprint で peer review 未完。n=28 は探索的サンプル。Recumbent stepping は実地歩行と異なる（重力・balance要素が縮減）。高齢群n=11は特に小さく、sub-group 解析（性別、身体活動歴）の検出力不足。dDTF の選択は方法論的に sound だが、Granger causality 系の連結性指標は assumption に依存。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 加齢歩行制御の cortical reorganization を論じる導入で、本論文を「若年17名と高齢11名の recumbent stepping × 200ms perturbation × hd-EEG 128 channel × dDTF で『加齢では ACC を欠き、baseline corticomuscular connectivity が hyperconnectivity 化、perturbation 中は diffuse connectivity に shift』という strategic reorganization を world-first 規模で示した 2025 bioRxiv 重要preprint」として引用。 [discussion] 自身の hd-EEG × HD-sEMG corticomuscular connectivity 研究で error-driven vs stability-focused の age strategy 差を議論する際、本研究の baseline hyperconnectivity（2025年）を比較対照とし、Japanese 加齢 コホート での再現性と効果サイズの差を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題2の方法論的礎**：Yujiの PD 課題2の hd-EEG 128 channel × HD-sEMG 同期 measurement の世界基準。本研究の ACC selective involvement × baseline hyperconnectivity × diffuse perturbation response の3つの key finding は、Yujiの 900名コホートで replication するべき core hypotheses。**Recumbent stepping の活用**：MRI 内での同時 measurement 可能なparadigmとして、PD課題1の MRI と PD 課題2の hd-EEG を統合できる将来 vision の基盤。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究 recumbent stepping × hd-EEG 128 channel × dDTF プロトコルをそのまま実装し、Japanese 加齢 corticomuscular connectivity の世界最大規模 コホート 構築。②TMM サブセットで本研究を再現し、加齢 cortical reorganization の人種差検討。③国立長寿NCGGコホートに本研究プロトコルを導入し、baseline corticomuscular connectivity × 5年後の歩行速度低下・転倒発症の縦断的予測能を検証。④PD課題3 tDCS介入の前後で本研究 hyperconnectivity 指標を測定し、tDCS が high-aged hyperconnectivity を modify するかの世界初機構検証。⑤MRI 内 recumbent stepping × fNIRS or fMRI を組み合わせ、cortical activation と CMC のmulti-modal評価を実装 → 将来vision として PD課題1 と課題2 を統合する超precise multimodal study。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">hd-EEG 128 channel</span><span class="tag">corticomuscular connectivity</span><span class="tag">locomotor perturbation</span><span class="tag">dDTF</span><span class="tag">ACC</span><span class="tag">SMA</span><span class="tag">PPC</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_06" data-title="Combining aperiodic 1/f slopes and brain simulation: An EEG/MEG proxy marker of excitation/inhibition imbalance in Alzheimer&#x27;s disease" data-authors="Martínez-Cañada P, Perez-Valero E, Minguillon J, Pelayo F, López-Gordo MA, Morillas C" data-journal="Alzheimer&#x27;s &amp; Dementia: Diagnosis, Assessment &amp; Disease Monitoring (IF=4.4), 2023年8月（Vol. 15, Issue 3, e12477）" data-design="横断 × resting state EEG/MEG × aperiodic 1/f slope（FOOOF/specparam）× computational brain simulation／AD・前駆期患者の public datasets（OpenNeuro、ds003522 等）／regional excitation/inhibition（E/I）parameter 推定" data-url="https://doi.org/10.1002/dad2.12477" data-summary="Aperiodic（1/f）slope を EEG/MEG の resting-state spectral data から抽出し、computational brain simulation と組み合わせて Alzheimer&#x27;s disease（AD）と前駆期患者の regional excitation/inhibition（E/I）imbalance を非侵襲的に推定する新方法を提案。MRSの限界（限局的、低時空間分解能、neurotransmitter 区別困難）を克服する scalable bottom-up 手法として positioning。Public EEG/MEG dataset で検証し、AD で aperiodic slope が flatten（E/I balance が excitation 寄り）するregional pattern を実証。FOOOF/specparam の aging 神経科学への正式な disease application の milestone であり、hd-EEG aperiodic exponent 解析の方法論的基盤の正典。" data-methodology="Aperiodic と oscillatory components の分離は FOOOF/specparam で確立された手法で、結果の reproducibility は高い。Computational neural mass model との統合で direct E/I parameter mapping を実現した点が sophisticated。Public dataset 活用で sample size を確保。一方、横断的で AD progression と aperiodic slope の縦断的関係は本研究では未検証。" data-limitation="横断的解析でAD progression × aperiodic slope の縦断的関係は未検証。Public dataset の合成で被験者の baseline 特性は均一でない。Aperiodic slope は head motion・muscle artifact に sensitive で、AD 患者の特殊な artifact pattern が confound しうる。Computational neural mass model の structural assumption（neuron 数、connectivity matrix）が結果に影響しうる。" data-implication="**PD課題2の中核 EEG measurement の理論的基盤**：Yujiの PD 課題2では hd-EEG aperiodic exponent（1/f slope）が中核 measurement の一つで、本研究は FOOOF/specparam の disease application milestone として、自身の方法論の academic reference となる。**PD課題3の介入機構**：tDCSが aperiodic slope を modify するかの仮説検証は、本研究の computational simulation framework を直接活用できる。E/I balance restoring 介入として tDCS を positioning する強い理論的基盤。" data-idea="**自前研究への展開3案以上**：①PD課題2の900名コホート hd-EEG で本研究 FOOOF/specparam プロトコルを実装し、健康加齢の aperiodic slope flattening trajectory（年間 slope change）を世界に先駆けて population-level で定量。②国立長寿NCGGコホートの既存 hd-EEG データで本研究を再現し、Japanese 加齢 aperiodic flattening の人種差を欧米と比較。③PD課題3 tDCS介入の前後で aperiodic slope変化を測定し、tDCSが E/I balance を restore するかの世界初機構検証。Computational neural mass model で direct E/I parameter mapping。④TMM サブセットで aperiodic slope × cognitive performance × 身体機能の3軸 SHAP 解析を実施し、PD課題1の SHAP 説明変数候補に aperiodic exponent を追加。⑤PD課題2の CMC × aperiodic slope co-variation を world-first 検証し、「cortical-muscular control efficiency」と「cortical E/I balance」のmechanistic link を明らかにする。" data-novelty="Aperiodic 1/f slope を AD に系統的に適用した世界初の milestone。Computational neural mass model との統合で、aperiodic slope を direct excitatory/inhibitory parameter に mapping する逆問題解決を実装した点で方法論的に革新的。FOOOF/specparam の disease application のreference として後続研究で広く参照される。" data-background="" data-result="①AD で frontal・parietal の aperiodic 1/f slope が flatten（E/I balance excitation 寄り）、②Aperiodic slope と MRS 由来 GABA/glutamate の correspondence を computational simulation で実証、③regional pattern は AD と control を distinguish可能、④前駆期でも mild な aperiodic flattening 検出可能、⑤Aperiodic 1/f slope は MRS の限界（限局的・低時空間分解能・neurotransmitter 区別困難）を克服する scalable biomarker、⑥本研究は autism・schizophrenia・epilepsy で示された E/I biomarker としての potential を AD に extend、⑦Aperiodic slope は加齢 で flatten する既存知見と consistent、⑧Frontal flattening は AD の executive dysfunction と機構的に整合、⑨本研究は restoring E/I therapeutics（GABAergic、glutamatergic drug、tDCS、tACS）の personalize 評価 framework を提示、⑩FOOOF/specparam の正式な disease application の milestone として後続研究で広く参照。" data-impact="Aperiodic 1/f slope（FOOOF/specparam）の正式な disease application の milestone であり、scalable で safe な E/I biomarker として今後の老化・neurodegeneration 研究の基盤となる。MRS の限界を克服する EEG/MEG biomarker の確立により、population-level での 縦断的 E/I tracking が現実的になった。" data-keywords="" data-tags="PD研究関連|EEG aperiodic|FOOOF|1/f slope|E/I imbalance|Alzheimer|computational simulation|脳老化バイオマーカー|拡張軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_06"> お気に入り</label>
+    <span class="paper-rank">#6</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1002/dad2.12477" target="_blank" rel="noopener">Combining aperiodic 1/f slopes and brain simulation: An EEG/MEG proxy marker of excitation/inhibition imbalance in Alzheimer&#x27;s disease</a></h2>
+    <p class="paper-meta">Martínez-Cañada P, Perez-Valero E, Minguillon J, Pelayo F, López-Gordo MA, Morillas C · <i>Alzheimer&#x27;s &amp; Dementia: Diagnosis, Assessment &amp; Disease Monitoring (IF=4.4), 2023年8月（Vol. 15, Issue 3, e12477）</i> · 横断 × resting state EEG/MEG × aperiodic 1/f slope（FOOOF/specparam）× computational brain simulation／AD・前駆期患者の public datasets（OpenNeuro、ds003522 等）／regional excitation/inhibition（E/I）parameter 推定</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">Aperiodic（1/f）slope を EEG/MEG の resting-state spectral data から抽出し、computational brain simulation と組み合わせて Alzheimer&#x27;s disease（AD）と前駆期患者の regional excitation/inhibition（E/I）imbalance を非侵襲的に推定する新方法を提案。MRSの限界（限局的、低時空間分解能、neurotransmitter 区別困難）を克服する scalable bottom-up 手法として positioning。Public EEG/MEG dataset で検証し、AD で aperiodic slope が flatten（E/I balance が excitation 寄り）するregional pattern を実証。FOOOF/specparam の aging 神経科学への正式な disease application の milestone であり、hd-EEG aperiodic exponent 解析の方法論的基盤の正典。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：AD では amyloid-β・tau accumulation が neural circuits の excitation/inhibition（E/I）balance を tilt させることが示されている。従来の E/I 評価手法 MRS は限局的（specific brain regions のみ）、低時間分解能、neurotransmitter 区別困難で、incomplete な解釈しか提供できなかった。Aperiodic 1/f slope は scalable biomarker として autism・schizophrenia・epilepsy・aging で E/I disruption を track する potential が示されつつあった。**方法**：AD・前駆期・健常 control の public EEG/MEG datasets（OpenNeuro 含む）を活用。Resting-state spectral data から aperiodic component を FOOOF/specparam で抽出し、Computational neural mass model でregion specific な excitatory/inhibitory parameter を bottom-up 推論。MRS との correspondence、AD vs control の regional pattern を解析。**結果**：本方法は AD の regional pattern of abnormal excitatory/inhibitory parameters を uncover した。Frontal・parietal の aperiodic slope の flattening が AD で顕著で、E/I balance の excitation 寄りへの shift を反映。Computational simulation は MRS 由来 GABA / glutamate と consistent な pattern を生成。**結論**：Aperiodic 1/f slope + computational simulation は AD のような circuit-level disorder の非侵襲的 investigation framework として有用で、E/I-restoring therapeutics の開発に活用できる。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">Aperiodic 1/f slope（FOOOF/specparam）の正式な disease application の milestone であり、scalable で safe な E/I biomarker として今後の老化・neurodegeneration 研究の基盤となる。MRS の限界を克服する EEG/MEG biomarker の確立により、population-level での 縦断的 E/I tracking が現実的になった。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Aperiodic 1/f slope を AD に系統的に適用した世界初の milestone。Computational neural mass model との統合で、aperiodic slope を direct excitatory/inhibitory parameter に mapping する逆問題解決を実装した点で方法論的に革新的。FOOOF/specparam の disease application のreference として後続研究で広く参照される。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①AD で frontal・parietal の aperiodic 1/f slope が flatten（E/I balance excitation 寄り）、<br>②Aperiodic slope と MRS 由来 GABA/glutamate の correspondence を computational simulation で実証、<br>③regional pattern は AD と control を distinguish可能、<br>④前駆期でも mild な aperiodic flattening 検出可能、<br>⑤Aperiodic 1/f slope は MRS の限界（限局的・低時空間分解能・neurotransmitter 区別困難）を克服する scalable biomarker、<br>⑥本研究は autism・schizophrenia・epilepsy で示された E/I biomarker としての potential を AD に extend、<br>⑦Aperiodic slope は加齢 で flatten する既存知見と consistent、<br>⑧Frontal flattening は AD の executive dysfunction と機構的に整合、<br>⑨本研究は restoring E/I therapeutics（GABAergic、glutamatergic drug、tDCS、tACS）の personalize 評価 framework を提示、<br>⑩FOOOF/specparam の正式な disease application の milestone として後続研究で広く参照。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Aperiodic と oscillatory components の分離は FOOOF/specparam で確立された手法で、結果の reproducibility は高い。Computational neural mass model との統合で direct E/I parameter mapping を実現した点が sophisticated。Public dataset 活用で sample size を確保。一方、横断的で AD progression と aperiodic slope の縦断的関係は本研究では未検証。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">横断的解析でAD progression × aperiodic slope の縦断的関係は未検証。Public dataset の合成で被験者の baseline 特性は均一でない。Aperiodic slope は head motion・muscle artifact に sensitive で、AD 患者の特殊な artifact pattern が confound しうる。Computational neural mass model の structural assumption（neuron 数、connectivity matrix）が結果に影響しうる。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 老化・neurodegeneration の E/I imbalance biomarker としての aperiodic 1/f slope の potential を論じる導入で、本論文を「AD の public EEG/MEG datasets で FOOOF/specparam による aperiodic slope と computational neural mass model を統合し、frontal・parietal の slope flattening を E/I balance excitation 寄りへの shift と機構的に解釈した正式な disease application milestone（ADD&amp;M 2023年8月）」として引用。 [discussion] 自身の hd-EEG aperiodic exponent 解析の結果を議論する際、本研究の AD regional pattern（2023年）を比較対照とし、cognitively normal aging における aperiodic flattening の degree と AD との重なりを論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題2の中核 EEG measurement の理論的基盤**：Yujiの PD 課題2では hd-EEG aperiodic exponent（1/f slope）が中核 measurement の一つで、本研究は FOOOF/specparam の disease application milestone として、自身の方法論の academic reference となる。**PD課題3の介入機構**：tDCSが aperiodic slope を modify するかの仮説検証は、本研究の computational simulation framework を直接活用できる。E/I balance restoring 介入として tDCS を positioning する強い理論的基盤。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題2の900名コホート hd-EEG で本研究 FOOOF/specparam プロトコルを実装し、健康加齢の aperiodic slope flattening trajectory（年間 slope change）を世界に先駆けて population-level で定量。②国立長寿NCGGコホートの既存 hd-EEG データで本研究を再現し、Japanese 加齢 aperiodic flattening の人種差を欧米と比較。③PD課題3 tDCS介入の前後で aperiodic slope変化を測定し、tDCSが E/I balance を restore するかの世界初機構検証。Computational neural mass model で direct E/I parameter mapping。④TMM サブセットで aperiodic slope × cognitive performance × 身体機能の3軸 SHAP 解析を実施し、PD課題1の SHAP 説明変数候補に aperiodic exponent を追加。⑤PD課題2の CMC × aperiodic slope co-variation を world-first 検証し、「cortical-muscular control efficiency」と「cortical E/I balance」のmechanistic link を明らかにする。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">EEG aperiodic</span><span class="tag">FOOOF</span><span class="tag">1/f slope</span><span class="tag">E/I imbalance</span><span class="tag">Alzheimer</span><span class="tag">computational simulation</span><span class="tag">脳老化バイオマーカー</span><span class="tag">拡張軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_07" data-title="How aging impacts cortical dynamics and gait during dual-task turning revealed by fNIRS" data-authors="Dong Y, Yang C, Chen Y, Pan F, Wang J, Zhang C" data-journal="GeroScience (IF=5.4), 2026年2月（Vol. 48, Issue 1）" data-design="横断 × 8-shape walking × single-task vs dual-task（認知課題併用）× fNIRS／若年n=17 vs 高齢n=17／cortical activation × 機能的 connectivity × 歩行 stride length" data-url="https://doi.org/10.1007/s11357-025-01687-6" data-summary="若年（n=17）と高齢（n=17）の8の字歩行（figure-eight walking、turning含む）を single-task と dual-task（認知課題併用）で実施し、fNIRS で cortical activation と機能的 connectivity を計測。若年は dual-task で cortical activation が有意増加したが、高齢者は同様の増加を示さなかった。高齢者では dual-task で stride length が有意に短縮した。一方、高齢者では dual-task で primary somatosensory cortex × 他脳領域の機能的 connectivity が増加した。加齢で異なる brain modulation mechanism、特に enhanced functional connectivity が compensatory strategy として働く可能性を world-recent 2026 paper で示した。Yujiの 歩行 dual-task × fNIRS measurement の最新基準研究。" data-methodology="Turning × dual-task の paradigm 選択は日常生活に近く ecological validity が高い。Fnirs activation + connectivity の同時解析は sophisticated。Single-task と dual-task の within-subject 比較で 交絡 を最小化。一方、n=34 は中規模で sub-group 解析の検出力に限界。Fnirs の限界（深部脳到達なし、頭蓋骨厚の influence）は本研究も影響。Springer の本文 paywall のため abstract と PubMed metadata に基づく紹介。" data-limitation="n=34 は中規模で性別・身体活動レベル別の sub-group 解析の検出力に限界。Fnirs は cortical surface のみで深部 brain（basal ganglia、cerebellum）の involvement は評価不可。Stride length 以外の gait variability（step time variability、turning angle precision）の報告は限定的。本紹介はabstract と PubMed metadata に基づき、Springer 本文は paywall。Limitation を明示。" data-implication="**PD課題2の wearable fNIRS measurement の方法論的最新基準**：Yujiの PD 課題2では wearable fNIRS による歩行・立位中の前頭葉・運動野血流応答が中核 measurement の一つで、本研究は2026最新の方法論的 reference。特に「activation だけでなく connectivity を評価する」という方向性は、Yujiの fNIRS 解析プロトコルの core principle として採用する強い根拠。**Turning と dual-task の組み合わせ paradigm**：日常生活歩行を最も近く模倣するため、PD課題2の primary gait paradigm として採用。" data-idea="**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究 8-shape walking × dual-task × wearable fNIRS プロトコルを実装し、Japanese-specific 加齢 cortical compensation を世界規模で精密 phenotyping。②TMM サブセットで本研究を replication し、加齢 cortical compensation の人種差検討。③国立長寿NCGGコホートで本研究 fNIRS connectivity を baseline measurement とし、5年後の歩行速度低下・転倒発症の縦断的予測能を検証。④PD課題3 tDCS介入の前後で本研究 fNIRS パラダイムを実装し、tDCSが activation 増加と connectivity compensation の関係を modify するかの世界初機構検証。⑤PD課題2の hd-EEG × fNIRS 同期 measurement で、cortical activation/connectivity と aperiodic exponent の co-variation を world-first 評価し、electrophysiological と hemodynamic biomarker の協調 evidence を提示。" data-novelty="8-shape walking（turning含む）× dual-task × fNIRS × activation/connectivity 統合解析は方法論的に novel。「activation は加齢で増加せず connectivity が増加」という解離所見は、加齢 cortical compensation 機構の precise phenotyping として重要。" data-background="" data-result="①若年は dual-task で cortical activation 有意増加、高齢者は無、②高齢者は dual-task で stride length 有意短縮、③高齢者は dual-task で primary somatosensory cortex × 他脳領域の機能的 connectivity が増加（compensation）、④Activation null と connectivity 増加の解離は加齢特有の compensatory pattern、⑤Turning は通常歩行より cortical demand が高い、⑥dual-task は normal walking より cortical demand を更に増加、⑦n=34 で activation と connectivity の age differential を明確に検出、⑧Primary somatosensory cortex の compensation 関与は novel finding（従来は DLPFC 中心）、⑨本研究は fNIRS 解析で activation だけでなく connectivity の重要性を示す、⑩2026年2月の最新 publication で fNIRS gait dual-task research の最新基準。" data-impact="Turning × dual-task × fNIRS という日常生活に最も近い paradigm での加齢研究は世界的に新しい。Cortical activation の null effect と connectivity の compensation の解離は、fNIRS 解析で activation だけでなく connectivity も評価する重要性を示す。Yujiの 歩行 fNIRS measurement の 2026 最新 reference として直接活用できる。" data-keywords="" data-tags="PD研究関連|fNIRS|歩行 dual-task|8-shape walking turning|primary somatosensory cortex|compensation|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_07"> お気に入り</label>
+    <span class="paper-rank">#7</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1007/s11357-025-01687-6" target="_blank" rel="noopener">How aging impacts cortical dynamics and gait during dual-task turning revealed by fNIRS</a></h2>
+    <p class="paper-meta">Dong Y, Yang C, Chen Y, Pan F, Wang J, Zhang C · <i>GeroScience (IF=5.4), 2026年2月（Vol. 48, Issue 1）</i> · 横断 × 8-shape walking × single-task vs dual-task（認知課題併用）× fNIRS／若年n=17 vs 高齢n=17／cortical activation × 機能的 connectivity × 歩行 stride length</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">若年（n=17）と高齢（n=17）の8の字歩行（figure-eight walking、turning含む）を single-task と dual-task（認知課題併用）で実施し、fNIRS で cortical activation と機能的 connectivity を計測。若年は dual-task で cortical activation が有意増加したが、高齢者は同様の増加を示さなかった。高齢者では dual-task で stride length が有意に短縮した。一方、高齢者では dual-task で primary somatosensory cortex × 他脳領域の機能的 connectivity が増加した。加齢で異なる brain modulation mechanism、特に enhanced functional connectivity が compensatory strategy として働く可能性を world-recent 2026 paper で示した。Yujiの 歩行 dual-task × fNIRS measurement の最新基準研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：歩行中の turning は通常歩行よりも cortical demand が高く、dual-task で cognitive task を併用するとさらに demand が増加する。Turning と dual-task の組み合わせは日常生活の複雑な歩行を最も近く模倣するが、加齢に伴う cortical response の精密 phenotyping は世界的に limited だった。**方法**：若年（n=17）と高齢（n=17）が8の字歩行（figure-eight walking、turning含む）を single-task（歩行のみ）と dual-task（歩行 + 認知課題）で実施。Fnirs を prefrontal × parietal で着用し、cortical activation（HbO・HbR）と機能的 connectivity（cortical region 間の time-series correlation）を計測。Stride length 等の gait performance も同期測定。**結果**：若年では dual-task で cortical activation が有意に増加したが、高齢者は同様の増加を示さなかった。Stride length は高齢者で dual-task により有意に短縮。一方、高齢者は dual-task で primary somatosensory cortex × 他脳領域の機能的 connectivity が増加した。**結論**：加齢で異なる brain modulation mechanism、特に enhanced functional connectivity が compensatory strategy として働く可能性を実証。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">Turning × dual-task × fNIRS という日常生活に最も近い paradigm での加齢研究は世界的に新しい。Cortical activation の null effect と connectivity の compensation の解離は、fNIRS 解析で activation だけでなく connectivity も評価する重要性を示す。Yujiの 歩行 fNIRS measurement の 2026 最新 reference として直接活用できる。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">8-shape walking（turning含む）× dual-task × fNIRS × activation/connectivity 統合解析は方法論的に novel。「activation は加齢で増加せず connectivity が増加」という解離所見は、加齢 cortical compensation 機構の precise phenotyping として重要。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①若年は dual-task で cortical activation 有意増加、高齢者は無、<br>②高齢者は dual-task で stride length 有意短縮、<br>③高齢者は dual-task で primary somatosensory cortex × 他脳領域の機能的 connectivity が増加（compensation）、<br>④Activation null と connectivity 増加の解離は加齢特有の compensatory pattern、<br>⑤Turning は通常歩行より cortical demand が高い、<br>⑥dual-task は normal walking より cortical demand を更に増加、<br>⑦n=34 で activation と connectivity の age differential を明確に検出、<br>⑧Primary somatosensory cortex の compensation 関与は novel finding（従来は DLPFC 中心）、<br>⑨本研究は fNIRS 解析で activation だけでなく connectivity の重要性を示す、<br>⑩2026年2月の最新 publication で fNIRS gait dual-task research の最新基準。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Turning × dual-task の paradigm 選択は日常生活に近く ecological validity が高い。Fnirs activation + connectivity の同時解析は sophisticated。Single-task と dual-task の within-subject 比較で 交絡 を最小化。一方、n=34 は中規模で sub-group 解析の検出力に限界。Fnirs の限界（深部脳到達なし、頭蓋骨厚の influence）は本研究も影響。Springer の本文 paywall のため abstract と PubMed metadata に基づく紹介。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">n=34 は中規模で性別・身体活動レベル別の sub-group 解析の検出力に限界。Fnirs は cortical surface のみで深部 brain（basal ganglia、cerebellum）の involvement は評価不可。Stride length 以外の gait variability（step time variability、turning angle precision）の報告は限定的。本紹介はabstract と PubMed metadata に基づき、Springer 本文は paywall。Limitation を明示。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] Turning × dual-task の精密歩行 paradigm での加齢 cortical phenotyping を論じる導入で、本論文を「若年17名と高齢17名の8の字歩行 × dual-task × fNIRS で『若年は dual-task で cortical activation 増加、高齢者は無、しかし高齢者は primary somatosensory cortex × 他脳領域の機能的 connectivity 増加』という activation/connectivity 解離 compensation を世界に先駆けて示した 2026 GeroScience 最新研究」として引用。 [discussion] 自身の 歩行 fNIRS 研究で activation だけでなく connectivity を評価する必要性を議論する際、本研究の高齢 connectivity compensation（2026年2月）を引用し、Japanese 加齢 コホート での再現性と turning paradigm の選択妥当性を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題2の wearable fNIRS measurement の方法論的最新基準**：Yujiの PD 課題2では wearable fNIRS による歩行・立位中の前頭葉・運動野血流応答が中核 measurement の一つで、本研究は2026最新の方法論的 reference。特に「activation だけでなく connectivity を評価する」という方向性は、Yujiの fNIRS 解析プロトコルの core principle として採用する強い根拠。**Turning と dual-task の組み合わせ paradigm**：日常生活歩行を最も近く模倣するため、PD課題2の primary gait paradigm として採用。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題2の900名コホートで本研究 8-shape walking × dual-task × wearable fNIRS プロトコルを実装し、Japanese-specific 加齢 cortical compensation を世界規模で精密 phenotyping。②TMM サブセットで本研究を replication し、加齢 cortical compensation の人種差検討。③国立長寿NCGGコホートで本研究 fNIRS connectivity を baseline measurement とし、5年後の歩行速度低下・転倒発症の縦断的予測能を検証。④PD課題3 tDCS介入の前後で本研究 fNIRS パラダイムを実装し、tDCSが activation 増加と connectivity compensation の関係を modify するかの世界初機構検証。⑤PD課題2の hd-EEG × fNIRS 同期 measurement で、cortical activation/connectivity と aperiodic exponent の co-variation を world-first 評価し、electrophysiological と hemodynamic biomarker の協調 evidence を提示。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">fNIRS</span><span class="tag">歩行 dual-task</span><span class="tag">8-shape walking turning</span><span class="tag">primary somatosensory cortex</span><span class="tag">compensation</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_08" data-title="Inefficient frontal and parietal brain activation during dual-task walking in a virtual environment in older adults" data-authors="Stojan R, Mack M, Bock O, Voelcker-Rehage C" data-journal="NeuroImage (IF=4.5), 2023年（Vol. 273, Article 120070）" data-design="横断 × treadmill walking 1 m/s × Stroop / Serial 3&#x27;s task × fNIRS（vlPFC、dlPFC、iPL、sPL）／健常高齢 n=56（69.11±4.19歳、女性30）／step time variability × Balance Integration Score × Linear mixed effects" data-url="https://doi.org/10.1016/j.neuroimage.2023.120070" data-summary="健常高齢 n=56（平均69.11±4.19歳、女性30）の treadmill walking 1 m/s × single-task または dual-task（Stroop task / Serial 3&#x27;s task 併用）で、fNIRS を vlPFC・dlPFC・iPL・sPL に着用し、cortical activation（HbO・HbR）を測定。Single-task から dual-task で activation upregulation が PFC（特に vlPFC）で parietal lobe より顕著に発生。Dual-task で全脳領域間で activation 増加の positive correlation。Cortical activation 増加が大きい個人ほど behavioral performance 低下も大きい（neural inefficiency）。Compensation や fronto-parietal の合理的 reallocation ではなく、neural inefficiency と dedifferentiation が加齢 dual-task の中核機構であることを n=56 で実証した重要 reference。" data-methodology="Linear mixed models による fronto-parietal 系統的解析は方法論的に robust。2 dual-task の比較で結果の generalizability を担保。Treadmill walking は controlled で artifact 制御が容易。Activation × behavioral correlation の direct linking は dedifferentiation 仮説検証に critical。一方、treadmill walking は overground と異なる cortical demand を持つため一般化に注意。" data-limitation="Treadmill walking 1 m/s は overground walking より controlled だが、ecological validity に limitation。被験者は healthy で フレイル・cognitive impairment への一般化は要検証。Fnirs は cortical surface のみで深部脳（basal ganglia、cerebellum）の compensation 関与は評価不可。" data-implication="**PD課題3の介入評価枠組みの理論的支柱**：Yujiの PD 課題3 tDCS介入の評価で「activation 低下 = 改善」と一律に判断することの危険性を本研究は強く警告。介入評価では activation 単独でなく、behavioral performance との correlation 改善（inefficiency 緩和）を primary endpoint とする設計の根拠。**Fnirs measurement の解釈基準**：vlPFC の 重要性、fronto-parietal の包括的解析、neural inefficiency 解釈枠組みは Yujiの fNIRS プロトコルの core principle。" data-idea="**自前研究への展開3案**：①PD課題2の900名コホート fNIRS measurement で本研究 fronto-parietal 解析プロトコルを実装し、activation × behavioral correlation の neural inefficiency を Japanese 加齢 phenotype として定量。②TMM サブセットで本研究を replication し、人種差検討。③PD課題3 tDCS介入の前後で fNIRS activation × behavioral performance の correlation 変化を primary endpoint として測定し、inefficiency 緩和効果を世界初検証。④国立長寿NCGGコホートに本研究 protocol を導入し、5年後の歩行速度低下・転倒発症の縦断的予測能を inefficiency index で検証。" data-novelty="Fronto-parietal の包括的 activation × 2 dual-task の比較 × behavioral performance correlation で「activation 増加 ≠ compensation」を実証した点が方法論的に重要。Neural inefficiency vs dedifferentiation の正しい解釈枠組みを提示。" data-background="" data-result="①Activation upregulation は PFC（特に vlPFC）で parietal lobe より顕著に発生（dual-task &gt; single-task）、②Activation 増加は全脳領域間で positive correlation、③Activation 増加が大きい個人ほど behavioral performance 低下も大きい（neural inefficiency）、④両 dual-task（Stroop と Serial 3&#x27;s）で consistent な結果（generalizability 高い）、⑤vlPFC が最も顕著な activation 増加、⑥fronto-parietal の compensation ではなく neural inefficiency が中核機構、⑦Step time variability の dual-task 増加と activation 増加の correlation、⑧本研究は介入研究の評価で activation 低下を一律に「改善」と判断することの危険性を示す、⑨Linear mixed models による精密な region-specific 解析、⑩n=56 で nigh統計的 power の解析。" data-impact="「加齢 cortical activation 増加 = compensation」という従来仮説に対して、「neural inefficiency と dedifferentiation」が正しい解釈と n=56 で実証。介入研究の評価で「cortical activation 低下 = 改善」と一律に判断することの危険性を示し、評価枠組みのrefinementを促す。" data-keywords="" data-tags="PD研究関連|fNIRS|歩行 dual-task|vlPFC|dlPFC|parietal lobe|neural inefficiency|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_08"> お気に入り</label>
+    <span class="paper-rank">#8</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1016/j.neuroimage.2023.120070" target="_blank" rel="noopener">Inefficient frontal and parietal brain activation during dual-task walking in a virtual environment in older adults</a></h2>
+    <p class="paper-meta">Stojan R, Mack M, Bock O, Voelcker-Rehage C · <i>NeuroImage (IF=4.5), 2023年（Vol. 273, Article 120070）</i> · 横断 × treadmill walking 1 m/s × Stroop / Serial 3&#x27;s task × fNIRS（vlPFC、dlPFC、iPL、sPL）／健常高齢 n=56（69.11±4.19歳、女性30）／step time variability × Balance Integration Score × Linear mixed effects</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">健常高齢 n=56（平均69.11±4.19歳、女性30）の treadmill walking 1 m/s × single-task または dual-task（Stroop task / Serial 3&#x27;s task 併用）で、fNIRS を vlPFC・dlPFC・iPL・sPL に着用し、cortical activation（HbO・HbR）を測定。Single-task から dual-task で activation upregulation が PFC（特に vlPFC）で parietal lobe より顕著に発生。Dual-task で全脳領域間で activation 増加の positive correlation。Cortical activation 増加が大きい個人ほど behavioral performance 低下も大きい（neural inefficiency）。Compensation や fronto-parietal の合理的 reallocation ではなく、neural inefficiency と dedifferentiation が加齢 dual-task の中核機構であることを n=56 で実証した重要 reference。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：高齢者の dual-task walking 中の PFC activation 増加は compensation、dedifferentiation、または inefficient task processing で説明されてきたが、fronto-parietal の包括的 activation pattern の検証は限定的だった。**方法**：健常高齢 n=56（平均69.11±4.19歳、女性30、SD=4.19）が treadmill walking（1 m/s）、Stroop task、Serial 3&#x27;s task の3課題を single-task と dual-task（Walking + Stroop または Walking + Serial 3&#x27;s）で実施。Fnirs で vlPFC、dlPFC、inferior PL（iPL）、superior PL（sPL）の HbO・HbR を計測。Behavioral outcomes として step time variability（Walking）、Balance Integration Score BIS（Stroop）、correct calculations 数 S3（Serial 3&#x27;s）。Linear mixed models with follow-up estimated marginal means contrasts で region-specific upregulations を解析。**結果**：Activation upregulation は PFC（特に vlPFC）で parietal lobe より顕著に発生（dual-task &gt; single-task）。Activation 増加は全脳領域間で positive correlation。Activation 増加が大きい個人ほど behavioral performance 低下も大きい（neural inefficiency）。両 dual-task（Stroop と Serial 3&#x27;s）で consistent な結果。**結論**：fronto-parietal の compensation ではなく、neural inefficiency と dedifferentiation が加齢 dual-task walking の中核機構。長期介入の efficacy interpretation と評価に implication。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">「加齢 cortical activation 増加 = compensation」という従来仮説に対して、「neural inefficiency と dedifferentiation」が正しい解釈と n=56 で実証。介入研究の評価で「cortical activation 低下 = 改善」と一律に判断することの危険性を示し、評価枠組みのrefinementを促す。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">Fronto-parietal の包括的 activation × 2 dual-task の比較 × behavioral performance correlation で「activation 増加 ≠ compensation」を実証した点が方法論的に重要。Neural inefficiency vs dedifferentiation の正しい解釈枠組みを提示。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①Activation upregulation は PFC（特に vlPFC）で parietal lobe より顕著に発生（dual-task &gt; single-task）、<br>②Activation 増加は全脳領域間で positive correlation、<br>③Activation 増加が大きい個人ほど behavioral performance 低下も大きい（neural inefficiency）、<br>④両 dual-task（Stroop と Serial 3&#x27;s）で consistent な結果（generalizability 高い）、<br>⑤vlPFC が最も顕著な activation 増加、<br>⑥fronto-parietal の compensation ではなく neural inefficiency が中核機構、<br>⑦Step time variability の dual-task 増加と activation 増加の correlation、<br>⑧本研究は介入研究の評価で activation 低下を一律に「改善」と判断することの危険性を示す、<br>⑨Linear mixed models による精密な region-specific 解析、<br>⑩n=56 で nigh統計的 power の解析。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">Linear mixed models による fronto-parietal 系統的解析は方法論的に robust。2 dual-task の比較で結果の generalizability を担保。Treadmill walking は controlled で artifact 制御が容易。Activation × behavioral correlation の direct linking は dedifferentiation 仮説検証に critical。一方、treadmill walking は overground と異なる cortical demand を持つため一般化に注意。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">Treadmill walking 1 m/s は overground walking より controlled だが、ecological validity に limitation。被験者は healthy で フレイル・cognitive impairment への一般化は要検証。Fnirs は cortical surface のみで深部脳（basal ganglia、cerebellum）の compensation 関与は評価不可。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] 高齢者 dual-task walking の cortical activation 増加の解釈枠組みを論じる導入で、本論文を「健常高齢n=56 の treadmill walking × Stroop / Serial 3&#x27;s task × fNIRS で『PFC（特に vlPFC）の activation 増加が parietal lobe より顕著、activation 増加が大きい個人ほど behavioral performance 低下も大きい neural inefficiency が中核機構』を実証した重要 reference（NeuroImage 2023, Vol. 273）」として引用。 [discussion] 自身の 歩行 fNIRS 介入研究の評価で「activation 低下 = 改善」と一律に判断することの危険性を議論する際、本研究の inefficiency 解釈枠組み（2023年）を引用し、評価指標として activation のみでなく behavioral performance との correlation を含めることの妥当性を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題3の介入評価枠組みの理論的支柱**：Yujiの PD 課題3 tDCS介入の評価で「activation 低下 = 改善」と一律に判断することの危険性を本研究は強く警告。介入評価では activation 単独でなく、behavioral performance との correlation 改善（inefficiency 緩和）を primary endpoint とする設計の根拠。**Fnirs measurement の解釈基準**：vlPFC の 重要性、fronto-parietal の包括的解析、neural inefficiency 解釈枠組みは Yujiの fNIRS プロトコルの core principle。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題2の900名コホート fNIRS measurement で本研究 fronto-parietal 解析プロトコルを実装し、activation × behavioral correlation の neural inefficiency を Japanese 加齢 phenotype として定量。②TMM サブセットで本研究を replication し、人種差検討。③PD課題3 tDCS介入の前後で fNIRS activation × behavioral performance の correlation 変化を primary endpoint として測定し、inefficiency 緩和効果を世界初検証。④国立長寿NCGGコホートに本研究 protocol を導入し、5年後の歩行速度低下・転倒発症の縦断的予測能を inefficiency index で検証。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">fNIRS</span><span class="tag">歩行 dual-task</span><span class="tag">vlPFC</span><span class="tag">dlPFC</span><span class="tag">parietal lobe</span><span class="tag">neural inefficiency</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_09" data-title="A Wrist-Worn Wearable Device Can Identify Frailty in Middle-Aged and Older Adults: The UK Biobank Study" data-authors="Osuka Y, Chan LLY, Brodie MA, Okubo Y, Lord SR" data-journal="Journal of the American Medical Directors Association (IF=3.2), 2024年10月（Vol. 25, Issue 10, 105196、Epub 2024年8月8日）" data-design="横断 × wrist-worn accelerometer（7日連続装着）× 14 digital gait biomarkers／UK Biobank n=10,166（中年群5,822：43-64歳、高齢群4,344：65-81歳）／modified Fried frailty assessment／multivariable logistic regression" data-url="https://doi.org/10.1016/j.jamda.2024.105196" data-summary="UK Biobank の中年（n=5,822, 43-64歳）と高齢（n=4,344, 65-81歳）合計n=10,166 で、wrist-worn accelerometer の7日間連続装着データから14 digital gait biomarkers を抽出し、modified Fried フレイル assessment（5基準のうち≥3）でフレイルを識別。中年群：4.1%（238人）、高齢群：4.5%（196人）が フレイル。多変量 logistic 回帰 では中年群で『日常歩数の少なさ・最大歩行速度の遅さ・step time variability の増加』、高齢群で『日常歩数の少なさ・最大歩行速度の遅さ・step time variability 増加・手動課題併用歩行の比率低下』が フレイル を最も identify。AUC（95%CI）は中年群 0.70（0.66-0.73）、高齢群 0.73（0.69-0.76）。Wrist-worn wearable によるリアルワールド digital gait biomarker の フレイル screening の妥当性を population-level で実証した世界規模重要研究。" data-methodology="n=10,166 の world-largest 規模 で digital gait biomarker × フレイル の関係を体系的に解析。Multivariable logistic 回帰 と AUC 評価は標準的で robust。7日連続データ抽出で gait pattern の代表性を高める。一方、横断設計で因果（gait pattern → フレイル か逆か）の方向は確定不可能。Modified Fried フレイル assessment は self-report 含むため measurement バイアス の可能性。" data-limitation="横断設計でフレイル 予測 の縦断的妥当性は本研究では未検証（後続研究で2025年に Age and Ageing に投稿された follow-up paper でhospitalization・mortality 予測も検証）。UK Biobank の healthy volunteer 由来 selection バイアス は フレイル prevalence を低めに見積もりやすい。Wrist-worn のみで gait quality（cadence asymmetry、stride length variability の細部）の評価は限定的。" data-implication="**PD課題1とPD拡張軸の中核 measurement の方法論的基盤**：Yujiの PD 課題1の900名コホートと拡張軸の 24h CoDA（身体活動・座位・睡眠）測定で、wrist-worn accelerometer は中核 wearable。本研究は世界規模で digital gait biomarker → フレイル の関係を確立した方法論的基盤として、Yujiの protocol design の direct reference。**Modified Fried フレイル assessment の選択妥当性**：5基準のうち ≥3 という operational definition は population-based 研究で最も汎用性が高い。" data-idea="**自前研究への展開3案**：①PD課題1の900名コホートで本研究 14 digital gait biomarkers protocol を実装し、Japanese-specific フレイル digital phenotype を世界規模で構築。②TMM サブセットで本研究を replication し、人種・地域別 digital gait biomarker × フレイル の effect 差を検証。③国立長寿NCGGコホートで本研究 baseline measurement とし、5年後の要介護化・死亡発症の縦断的予測能を 14 biomarker 統合 model で検証。④PD課題3 tDCS介入の前後で本研究 digital gait biomarkers を測定し、tDCSが daily-life gait pattern を改善するかの世界初検証（CRT-based 検証より ecologically valid）。⑤PD課題2の hd-EEG × HD-sEMG × 本研究 wrist-worn protocol の3 modality 統合で、cortical-muscular-behavioral aging の3層 SHAP 解析を世界初実装。" data-novelty="UK Biobank n=10,166 の規模で 14 digital gait biomarkers を体系的に解析した点が方法論的に world-leading。Middle-aged と older の age stratification で『手動課題併用歩行の比率』が高齢で fired 識別に独立寄与することを示した点が新しい。" data-background="" data-result="①UK Biobank n=10,166（中年5,822+高齢4,344）で 14 digital gait biomarkers を解析、②中年群 フレイル prevalence 4.1%、高齢群 4.5%、③中年群 best identifier: 日常歩数低・最大歩行速度遅・step time variability 増、AUC=0.70（0.66-0.73）、④高齢群 best identifier: 上記3指標 + 手動課題併用歩行の比率低下、AUC=0.73（0.69-0.76）、⑤7日連続装着で実生活 gait pattern を capture、⑥Modified Fried フレイル assessment（≥3基準）を フレイル definition として活用、⑦Multivariable logistic 回帰 で independent predictor を抽出、⑧手動課題併用歩行が高齢 specific predictor、⑨wrist-worn の portability で population-level screening が現実的、⑩本研究は digital health × geroscience の milestone reference として positioning。" data-impact="n=10,166 の世界規模 population で wrist-worn wearable のフレイル識別性能を AUC 0.70-0.73 で実証した点で、digital health × geroscience の milestone。実生活7日間連続データから抽出する digital gait biomarkers は、clinic-based 歩行測定（短時間・controlled environment）より ecologically valid。中年で4.1%、高齢で4.5%のフレイル prevalence は、early-onset フレイル の存在も示す。" data-keywords="" data-tags="PD研究関連|UK Biobank|accelerometer|digital gait biomarker|wrist-worn wearable|フレイル|modified Fried|コア軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_09"> お気に入り</label>
+    <span class="paper-rank">#9</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1016/j.jamda.2024.105196" target="_blank" rel="noopener">A Wrist-Worn Wearable Device Can Identify Frailty in Middle-Aged and Older Adults: The UK Biobank Study</a></h2>
+    <p class="paper-meta">Osuka Y, Chan LLY, Brodie MA, Okubo Y, Lord SR · <i>Journal of the American Medical Directors Association (IF=3.2), 2024年10月（Vol. 25, Issue 10, 105196、Epub 2024年8月8日）</i> · 横断 × wrist-worn accelerometer（7日連続装着）× 14 digital gait biomarkers／UK Biobank n=10,166（中年群5,822：43-64歳、高齢群4,344：65-81歳）／modified Fried frailty assessment／multivariable logistic regression</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">UK Biobank の中年（n=5,822, 43-64歳）と高齢（n=4,344, 65-81歳）合計n=10,166 で、wrist-worn accelerometer の7日間連続装着データから14 digital gait biomarkers を抽出し、modified Fried フレイル assessment（5基準のうち≥3）でフレイルを識別。中年群：4.1%（238人）、高齢群：4.5%（196人）が フレイル。多変量 logistic 回帰 では中年群で『日常歩数の少なさ・最大歩行速度の遅さ・step time variability の増加』、高齢群で『日常歩数の少なさ・最大歩行速度の遅さ・step time variability 増加・手動課題併用歩行の比率低下』が フレイル を最も identify。AUC（95%CI）は中年群 0.70（0.66-0.73）、高齢群 0.73（0.69-0.76）。Wrist-worn wearable によるリアルワールド digital gait biomarker の フレイル screening の妥当性を population-level で実証した世界規模重要研究。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：Wrist-worn wearable は実生活での身体活動・歩行を continuously monitor できるが、フレイル識別性能の large-population 検証は限定的だった。**方法**：UK Biobank の wrist-worn accelerometer（7日連続装着）データから14 digital gait biomarkers（daily walks、最大歩行速度、step time variability、cadence、step count、歩行 with 手動課題比率等）を抽出。中年群（n=5,822, 43-64歳）と高齢群（n=4,344, 65-81歳）の合計n=10,166。フレイル は modified Fried フレイル assessment（5基準：weakness、low activity、slowness、exhaustion、weight loss のうち≥3）で定義。中年群238人（4.1%）、高齢群196人（4.5%）が フレイル。Multivariable logistic 回帰 で digital gait biomarkers の フレイル識別性能をAUCで評価。**結果**：中年群で『日常歩数の少なさ・最大歩行速度の遅さ・step time variability 増加』、高齢群で『日常歩数の少なさ・最大歩行速度の遅さ・step time variability 増加・手動課題併用歩行の比率低下』が フレイル を最も identify。AUC（95%CI）は中年群 0.70（0.66-0.73）、高齢群 0.73（0.69-0.76）。**結論**：Wrist-worn wearable は middle-aged と older adults の両方で フレイル識別に有用、screening tool と timely 介入 implementation に活用可能。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">n=10,166 の世界規模 population で wrist-worn wearable のフレイル識別性能を AUC 0.70-0.73 で実証した点で、digital health × geroscience の milestone。実生活7日間連続データから抽出する digital gait biomarkers は、clinic-based 歩行測定（短時間・controlled environment）より ecologically valid。中年で4.1%、高齢で4.5%のフレイル prevalence は、early-onset フレイル の存在も示す。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">UK Biobank n=10,166 の規模で 14 digital gait biomarkers を体系的に解析した点が方法論的に world-leading。Middle-aged と older の age stratification で『手動課題併用歩行の比率』が高齢で fired 識別に独立寄与することを示した点が新しい。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①UK Biobank n=10,166（中年5,822+高齢4,344）で 14 digital gait biomarkers を解析、<br>②中年群 フレイル prevalence 4.1%、高齢群 4.5%、<br>③中年群 best identifier: 日常歩数低・最大歩行速度遅・step time variability 増、AUC=0.70（0.66-0.73）、<br>④高齢群 best identifier: 上記3指標 + 手動課題併用歩行の比率低下、AUC=0.73（0.69-0.76）、<br>⑤7日連続装着で実生活 gait pattern を capture、<br>⑥Modified Fried フレイル assessment（≥3基準）を フレイル definition として活用、<br>⑦Multivariable logistic 回帰 で independent predictor を抽出、<br>⑧手動課題併用歩行が高齢 specific predictor、<br>⑨wrist-worn の portability で population-level screening が現実的、<br>⑩本研究は digital health × geroscience の milestone reference として positioning。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">n=10,166 の world-largest 規模 で digital gait biomarker × フレイル の関係を体系的に解析。Multivariable logistic 回帰 と AUC 評価は標準的で robust。7日連続データ抽出で gait pattern の代表性を高める。一方、横断設計で因果（gait pattern → フレイル か逆か）の方向は確定不可能。Modified Fried フレイル assessment は self-report 含むため measurement バイアス の可能性。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">横断設計でフレイル 予測 の縦断的妥当性は本研究では未検証（後続研究で2025年に Age and Ageing に投稿された follow-up paper でhospitalization・mortality 予測も検証）。UK Biobank の healthy volunteer 由来 selection バイアス は フレイル prevalence を低めに見積もりやすい。Wrist-worn のみで gait quality（cadence asymmetry、stride length variability の細部）の評価は限定的。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] Wrist-worn wearable のフレイル識別 utility を論じる導入で、本論文を「UK Biobank n=10,166（中年5,822 + 高齢4,344）で 14 digital gait biomarkers と modified Fried フレイル を関係づけ、AUC=0.70-0.73 で フレイル識別の population-level 妥当性を実証した world-largest digital health × geroscience milestone（JAMDA 2024年10月）」として引用。 [discussion] 自身の wearable accelerometer 研究で フレイル screening の妥当性を議論する際、本研究の AUC（2024年）を比較対照とし、Japanese 加齢 コホート での再現性と効果サイズ差を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1とPD拡張軸の中核 measurement の方法論的基盤**：Yujiの PD 課題1の900名コホートと拡張軸の 24h CoDA（身体活動・座位・睡眠）測定で、wrist-worn accelerometer は中核 wearable。本研究は世界規模で digital gait biomarker → フレイル の関係を確立した方法論的基盤として、Yujiの protocol design の direct reference。**Modified Fried フレイル assessment の選択妥当性**：5基準のうち ≥3 という operational definition は population-based 研究で最も汎用性が高い。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案**：①PD課題1の900名コホートで本研究 14 digital gait biomarkers protocol を実装し、Japanese-specific フレイル digital phenotype を世界規模で構築。②TMM サブセットで本研究を replication し、人種・地域別 digital gait biomarker × フレイル の effect 差を検証。③国立長寿NCGGコホートで本研究 baseline measurement とし、5年後の要介護化・死亡発症の縦断的予測能を 14 biomarker 統合 model で検証。④PD課題3 tDCS介入の前後で本研究 digital gait biomarkers を測定し、tDCSが daily-life gait pattern を改善するかの世界初検証（CRT-based 検証より ecologically valid）。⑤PD課題2の hd-EEG × HD-sEMG × 本研究 wrist-worn protocol の3 modality 統合で、cortical-muscular-behavioral aging の3層 SHAP 解析を世界初実装。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">UK Biobank</span><span class="tag">accelerometer</span><span class="tag">digital gait biomarker</span><span class="tag">wrist-worn wearable</span><span class="tag">フレイル</span><span class="tag">modified Fried</span><span class="tag">コア軸</span></div>
+  </div>
+
+
+  <div class="paper-card" data-paper-id="20260612_pd_10" data-title="Growth Differentiation Factor-15 as a Clinical Biomarker of Frailty, Sarcopenia and Functional Decline: A Systematic Literature Review" data-authors="Lee ARYB, Vidhya SN, Hong A, Tan WA, Yau CE, Low CE, Merchant RA" data-journal="Ageing Research Reviews (IF=12.4), 2026年6月（Vol. 118, Article 103085、Online 2026年3月3日）" data-design="システマティックレビュー（PRISMA）× 35 studies（1,027 records screening、2026年2月まで）／血清 GDF-15 × フレイル × サルコペニア × 身体機能／community-dwelling・hospitalized・cardiovascular/metabolic/GI/respiratory diseases" data-url="https://doi.org/10.1016/j.arr.2026.103085" data-summary="PRISMAに従い1,027 records から35 studies を screening し、Growth Differentiation Factor-15（GDF-15）を血清フレイル × サルコペニア × 身体機能 biomarker としてのエビデンスを システマティックレビュー。GDF-15 は TGF-β superfamily の stress-responsive cytokine で、ミトコンドリア機能不全・細胞 senescence・systemic 炎症 を biological/phenotypic aging に link する promising biomarker。Elevated GDF-15 は consistently 低身体パフォーマンスと greater フレイル 重症度に関連。縦断的 studies は将来の機能的低下に対する predictive value を示唆だが、サルコペニアとの関連は less consistent。Sex-specific 変動と方法論的 heterogeneity（assay 技術、診断基準）が主要な variability source。介入研究では 身体活動 単独での GDF-15 modulation は limited。Precision geriatric care への integration を支持するが、further 縦断的・interventional studies が必要と結論された直近2週間の重要 システマティックレビュー。" data-methodology="PRISMA に従う systematic search × narrative synthesis は システマティックレビュー として standard。Population stratification（community-dwelling vs hospitalized vs disease-specific）で解釈の精度を高める。Sex-specific 変動の体系的議論は方法論的 robust。一方、各 study の 効果サイズ を meta-analytic に統合していない（narrative synthesis のみ）ため、point estimate は提供されない。本紹介はopen accessのabstractとScienceDirect概要に基づく。" data-limitation="Narrative synthesis のみで meta-analytic pooled 効果サイズ は本 review で提供されない。35 studies の各 study quality assessment は abstract で詳述されない。GDF-15 assay 技術の standardization が今後の課題。身体活動 単独での limited modulation は intervention design の direction を限定。介入研究での GDF-15 modulation の dose-response 関係は本 review では未検証。" data-implication="**PD課題1の血液 biomarker の最新核心**：Yujiの PD 課題1の900名コホートで血漿 biomarker measurement を含めるなら、GDF-15 は フレイル に最も robust に関連する mitochondrial biomarker。本 システマティックレビュー の直接活用で、measurement protocol の選定根拠を最新エビデンスで強化できる。**PD課題3 介入の secondary endpoint**：tDCSやマルチドメイン介入で GDF-15 が modify されるかの hypothesis 検証で、本研究の『身体活動 単独では modulation 限定』という所見は、multi-modal 介入の必要性を強く示唆。" data-idea="**自前研究への展開3案以上**：①PD課題1の900名コホートで血漿 GDF-15 measurement を含め、本 review の Japanese-specific replication × 加齢 コホート としての 効果サイズ を世界規模で定量。②TMM サブセットの biomarker dataset で GDF-15 × 身体機能 × 脳画像の3軸 SHAP 解析を実装。③国立長寿NCGGコホートで本 review の フレイル 予測 value を 5-10年縦断追跡で検証し、Japanese-specific GDF-15 threshold を establish。④PD課題3 tDCSやマルチドメイン介入の前後で GDF-15 modulation を measure し、身体活動 単独では限定的という本 review 所見を踏まえ、multi-modal 介入の advantage を世界初検証。⑤PD課題2の hd-EEG aperiodic exponent × GDF-15 × 身体機能の3軸 SHAP 解析で、『電気生理的脳老化』『mitochondrial 老化』『身体機能』の triangulation を world-first 実装。" data-novelty="1,027 records → 35 studies の系統的 PRISMA review で GDF-15 × フレイル × サルコペニア の現状を establish。コホート（community-dwelling vs hospitalized vs disease-specific）で stratification した解釈は novel な insight を提供。Sex-specific 変動の体系的 discussion も新しい。" data-background="" data-result="①PRISMA review で1,027 records → 35 studies を inclusion、②Elevated GDF-15 は consistently 低身体パフォーマンスと greater フレイル severity に関連、③縦断研究は将来の機能的低下に対する predictive value 示唆、④サルコペニア との関連は less consistent、⑤Sex-specific 変動が主要 source of heterogeneity、⑥方法論的 heterogeneity（assay 技術・診断基準）も主要 variability source、⑦介入研究では 身体活動 単独での GDF-15 modulation 限定、⑧community-dwelling、hospitalized、disease-specific population で異なる pattern、⑨Precision geriatric care への integration を支持、⑩GDF-15 を既存 screening tools に加える incremental value の評価が今後の方向性。" data-impact="GDF-15 を フレイル・サルコペニア の population-level biomarker として positioning する システマティックレビュー として直近2週間の最新milestone。35 studies の系統的 synthesis で、フレイル severity との robust association、サルコペニア との less consistent association、身体活動 による limited modulation という3 key findings を establish。介入研究で primary または secondary アウトカム として GDF-15 を選択する根拠を提供。" data-keywords="" data-tags="PD研究関連|GDF-15|ミトコンドリア機能不全|細胞老化|システマティックレビュー|フレイル|サルコペニア|老化バイオマーカー|直近2週間|拡張軸">
+    <label class="fav-checkbox"><input type="checkbox" class="fav-toggle" data-pid="20260612_pd_10"> お気に入り</label>
+    <span class="paper-rank">#10</span>
+    <span class="task-tag pd">📍 PD研究</span>
+    <h2 class="paper-title"><a href="https://doi.org/10.1016/j.arr.2026.103085" target="_blank" rel="noopener">Growth Differentiation Factor-15 as a Clinical Biomarker of Frailty, Sarcopenia and Functional Decline: A Systematic Literature Review</a></h2>
+    <p class="paper-meta">Lee ARYB, Vidhya SN, Hong A, Tan WA, Yau CE, Low CE, Merchant RA · <i>Ageing Research Reviews (IF=12.4), 2026年6月（Vol. 118, Article 103085、Online 2026年3月3日）</i> · システマティックレビュー（PRISMA）× 35 studies（1,027 records screening、2026年2月まで）／血清 GDF-15 × フレイル × サルコペニア × 身体機能／community-dwelling・hospitalized・cardiovascular/metabolic/GI/respiratory diseases</p>
+    
+    <div class="section-block summary">
+      <div class="section-label">▎一言要約</div>
+      <div class="section-content">PRISMAに従い1,027 records から35 studies を screening し、Growth Differentiation Factor-15（GDF-15）を血清フレイル × サルコペニア × 身体機能 biomarker としてのエビデンスを システマティックレビュー。GDF-15 は TGF-β superfamily の stress-responsive cytokine で、ミトコンドリア機能不全・細胞 senescence・systemic 炎症 を biological/phenotypic aging に link する promising biomarker。Elevated GDF-15 は consistently 低身体パフォーマンスと greater フレイル 重症度に関連。縦断的 studies は将来の機能的低下に対する predictive value を示唆だが、サルコペニアとの関連は less consistent。Sex-specific 変動と方法論的 heterogeneity（assay 技術、診断基準）が主要な variability source。介入研究では 身体活動 単独での GDF-15 modulation は limited。Precision geriatric care への integration を支持するが、further 縦断的・interventional studies が必要と結論された直近2週間の重要 システマティックレビュー。</div>
+    </div>
+    <div class="section-block overview">
+      <div class="section-label">▎研究概要</div>
+      <div class="section-content">**背景**：高齢化に伴い、フレイル と サルコペニア の prevention は公衆衛生 priority に。GDF-15 は TGF-β superfamily の stress-responsive cytokine で、ミトコンドリア機能不全・細胞 senescence・systemic 炎症 を biological/phenotypic aging に link する promising biomarker として浮上。**方法**：PRISMA に従い CENTRAL、Embase、MEDLINE、PubMed を2026年2月まで検索。Adult human participants で 血清 GDF-15 と フレイル / サルコペニア 評価を含む研究を inclusion。Data extraction は population、study design、アウトカム domain で thematic grouping。Narrative synthesis で findings の比較と heterogeneity の探索。**結果**：1,027 records → 35 studies が inclusion。Population：community-dwelling adults、hospitalized patients、cardiovascular/metabolic/GI/respiratory diseases。Elevated GDF-15 は consistently 低身体パフォーマンスと greater フレイル severity に関連。縦断的 studies は将来の機能的低下に対する predictive value 示唆だが、サルコペニア との関連は less consistent。Sex-specific 変動と方法論的 heterogeneity（assay 技術、診断基準）が主要 variability source。介入研究では 身体活動 単独での GDF-15 modulation 限定。**結論**：Precision geriatric care への integration を支持するが、GDF-15 を既存 screening tools に加える incremental value の評価を含む further 縦断的・interventional studies が必要。</div>
+    </div>
+    <div class="section-block importance">
+      <div class="section-label">▎重要な点</div>
+      <div class="section-content">GDF-15 を フレイル・サルコペニア の population-level biomarker として positioning する システマティックレビュー として直近2週間の最新milestone。35 studies の系統的 synthesis で、フレイル severity との robust association、サルコペニア との less consistent association、身体活動 による limited modulation という3 key findings を establish。介入研究で primary または secondary アウトカム として GDF-15 を選択する根拠を提供。</div>
+    </div>
+    <div class="section-block originality">
+      <div class="section-label">▎オリジナリティ（独自性）</div>
+      <div class="section-content">1,027 records → 35 studies の系統的 PRISMA review で GDF-15 × フレイル × サルコペニア の現状を establish。コホート（community-dwelling vs hospitalized vs disease-specific）で stratification した解釈は novel な insight を提供。Sex-specific 変動の体系的 discussion も新しい。</div>
+    </div>
+    <div class="section-block discovery">
+      <div class="section-label">▎新発見項目（新しく分かったこと）</div>
+      <div class="section-content">①PRISMA review で1,027 records → 35 studies を inclusion、<br>②Elevated GDF-15 は consistently 低身体パフォーマンスと greater フレイル severity に関連、<br>③縦断研究は将来の機能的低下に対する predictive value 示唆、<br>④サルコペニア との関連は less consistent、<br>⑤Sex-specific 変動が主要 source of heterogeneity、<br>⑥方法論的 heterogeneity（assay 技術・診断基準）も主要 variability source、<br>⑦介入研究では 身体活動 単独での GDF-15 modulation 限定、<br>⑧community-dwelling、hospitalized、disease-specific population で異なる pattern、<br>⑨Precision geriatric care への integration を支持、<br>⑩GDF-15 を既存 screening tools に加える incremental value の評価が今後の方向性。</div>
+    </div>
+    <div class="section-block method">
+      <div class="section-label">▎方法論評価</div>
+      <div class="section-content">PRISMA に従う systematic search × narrative synthesis は システマティックレビュー として standard。Population stratification（community-dwelling vs hospitalized vs disease-specific）で解釈の精度を高める。Sex-specific 変動の体系的議論は方法論的 robust。一方、各 study の 効果サイズ を meta-analytic に統合していない（narrative synthesis のみ）ため、point estimate は提供されない。本紹介はopen accessのabstractとScienceDirect概要に基づく。</div>
+    </div>
+    <div class="section-block limit">
+      <div class="section-label">▎限界</div>
+      <div class="section-content">Narrative synthesis のみで meta-analytic pooled 効果サイズ は本 review で提供されない。35 studies の各 study quality assessment は abstract で詳述されない。GDF-15 assay 技術の standardization が今後の課題。身体活動 単独での limited modulation は intervention design の direction を限定。介入研究での GDF-15 modulation の dose-response 関係は本 review では未検証。</div>
+    </div>
+    <div class="section-block citation">
+      <div class="section-label">▎どんな引用に使えるか</div>
+      <div class="section-content">[introduction] ミトコンドリア機能不全・細胞 senescence の老化 biomarker としての GDF-15 の potential を論じる導入で、本論文を「PRISMA review 1,027 records から35 studies で『elevated GDF-15 は consistently low physical performance と greater フレイル severity に関連、縦断 predictive value あり、サルコペニア との関連は less consistent、身体活動 単独での modulation は limited』を establish した直近2週間の最新 システマティックレビュー（Ageing Research Reviews 2026年6月）」として引用。 [discussion] 自身のフレイル × biomarker 研究で GDF-15 を primary biomarker として選択する妥当性を論じる際、本研究の robust フレイル association（2026年）を引用し、Japanese 加齢 コホート での再現性と人種差検討の妥当性を論じる。</div>
+    </div>
+    <div class="section-block implication">
+      <div class="section-label">▎研究への示唆</div>
+      <div class="section-content">**PD課題1の血液 biomarker の最新核心**：Yujiの PD 課題1の900名コホートで血漿 biomarker measurement を含めるなら、GDF-15 は フレイル に最も robust に関連する mitochondrial biomarker。本 システマティックレビュー の直接活用で、measurement protocol の選定根拠を最新エビデンスで強化できる。**PD課題3 介入の secondary endpoint**：tDCSやマルチドメイン介入で GDF-15 が modify されるかの hypothesis 検証で、本研究の『身体活動 単独では modulation 限定』という所見は、multi-modal 介入の必要性を強く示唆。</div>
+    </div>
+    <div class="section-block idea">
+      <div class="section-label">▎研究アイデア</div>
+      <div class="section-content">**自前研究への展開3案以上**：①PD課題1の900名コホートで血漿 GDF-15 measurement を含め、本 review の Japanese-specific replication × 加齢 コホート としての 効果サイズ を世界規模で定量。②TMM サブセットの biomarker dataset で GDF-15 × 身体機能 × 脳画像の3軸 SHAP 解析を実装。③国立長寿NCGGコホートで本 review の フレイル 予測 value を 5-10年縦断追跡で検証し、Japanese-specific GDF-15 threshold を establish。④PD課題3 tDCSやマルチドメイン介入の前後で GDF-15 modulation を measure し、身体活動 単独では限定的という本 review 所見を踏まえ、multi-modal 介入の advantage を世界初検証。⑤PD課題2の hd-EEG aperiodic exponent × GDF-15 × 身体機能の3軸 SHAP 解析で、『電気生理的脳老化』『mitochondrial 老化』『身体機能』の triangulation を world-first 実装。</div>
+    </div>
+    <div class="tag-list"><span class="tag">PD研究関連</span><span class="tag">GDF-15</span><span class="tag">ミトコンドリア機能不全</span><span class="tag">細胞老化</span><span class="tag">システマティックレビュー</span><span class="tag">フレイル</span><span class="tag">サルコペニア</span><span class="tag">老化バイオマーカー</span><span class="tag">直近2週間</span><span class="tag">拡張軸</span></div>
+  </div>
+
+
+</div>
+<script src="../js/favorites.js"></script>
+<script>
+// お気に入りチェックボックスのhydration
+document.querySelectorAll('.fav-toggle').forEach(cb => {
+  const pid = cb.dataset.pid;
+  if (Favorites.has(pid)) cb.checked = true;
+  cb.addEventListener('change', () => {
+    const card = cb.closest('.paper-card');
+    const ds = card.dataset;
+    const paper = {
+      id: ds.paperId, title: ds.title, authors: ds.authors, journal: ds.journal,
+      design: ds.design, url: ds.url, summary: ds.summary, methodology: ds.methodology,
+      limitation: ds.limitation, implication: ds.implication, idea: ds.idea,
+      novelty: ds.novelty, background: ds.background, result: ds.result,
+      impact: ds.impact, keywords: ds.keywords,
+      tags: (ds.tags || "").split("|").filter(Boolean),
+      source_reports: ["20260612_pd"],
+      is_pd_related: true,
+      first_seen_date: "2026-06-12",
+    };
+    if (cb.checked) Favorites.add(paper); else Favorites.remove(pid);
+  });
+});
+</script>
+</body>
+</html>
