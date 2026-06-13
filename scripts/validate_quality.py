@@ -325,6 +325,18 @@ def check_paper(pid: str, paper: dict) -> tuple[list[str], int]:
         violations.append("  🚫 SKILL.md rev13: IF・ジャーナル名 strict 検証違反：")
         violations.extend(rev13_violations)
 
+    # rev15: 本文の英字比率チェック（WARNING のみ、hard fail にはしない）
+    body_fields = ("summary", "overview", "importance", "originality",
+                   "discovery", "methodology", "limitation", "citation",
+                   "implication", "idea", "design")
+    body_concat = "".join(str(paper.get(f, "")) for f in body_fields)
+    ascii_letters = len(re.findall(r"[A-Za-z]", body_concat))
+    non_space = len(re.sub(r"[\s\d]", "", body_concat))
+    eng_ratio = (ascii_letters / non_space * 100) if non_space else 0
+    if eng_ratio > 40:
+        # WARNING のみ（violations に入れず、has_violations を立てない）
+        print(f"  ⚠️  rev15 英字比率 WARNING: {paper.get('title','')[:45]}（本文英字 {eng_ratio:.0f}%、目安30%以下・40%超は説明的英語の japanize 漏れを疑う）")
+
     return violations, section_total
 
 

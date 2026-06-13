@@ -116,6 +116,24 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 
     **本ルール違反は研究倫理違反と同等の重大ミスとして扱い、再発時はユーザーから再度指摘を受ける前に自主的に rev2/rev3 で修正すること**。
 
+18. **🔴 本文の英語／日本語バランス（rev15 / 2026-06-13 指示・最重要）**。
+
+    **背景**：
+    PD 研究レポートで本文の英語比率が 50〜72% に達し、「英語の文に日本語の助詞を付けただけ」の読みにくい文章になる事象が多発した。日本語優先ポリシー（rev6.1）の趣旨は「英語論文を日本語で噛み砕いて伝える」ことであり、説明的な英語句をそのまま残すのは違反。
+
+    **絶対遵守**：
+    - 本文（summary / overview / importance / originality / discovery / methodology / limitation / citation / implication / idea / design）の **英字比率は 30% 以下**を目安とする（abbreviation・固有名詞を含めても 35% を超えない）。
+    - **説明的な英語句は必ず日本語化する**。例：
+      - postural sway→姿勢動揺 / coupling→結合 / cross-spectral→クロススペクトル / automaticity→自動性 / cortical demand→皮質負荷 / measurement→計測 / voluntary activation→随意的筋活性化（中枢性活性化）/ motor unit→運動単位 / corticospinal tract→皮質脊髄路 / intracortical inhibition→皮質内抑制 / nerve conduction velocity→神経伝導速度 / resting-state functional connectivity→安静時機能的結合 / network segregation→ネットワーク分離 / default mode network→デフォルトモードネットワーク / sensorimotor→感覚運動 / white matter→白質 / gray matter→灰白質 / gait→歩行 / balance→バランス / locomotion→移動運動 / prevalence→有病率 / connectome→コネクトーム / dose-response→用量反応 / cut-off→カットオフ 等
+    - **英語のまま維持してよいもの**（rev6.1 と同じ）：論文タイトル全体、雑誌名、著者名、固有名詞（UK Biobank、ADNI、BLSA、Dunedin 等）、略語（EEG、fMRI、MRI、PET、EMG、TMS、fNIRS、COP、DTI、SICI、GABA、ADL、IADL、OR、HR、95%CI、AUC、MUNE、NCV、CST、RST、PAD、FOOOF、CMC、IMC、BIA、SHAP、SARC-F、ASMI 等）、確立した専門語（phase angle、H-reflex、motor unit number estimation の略 MUNE 等）
+    - 迷ったら「日本語の専門用語が定着しているか」で判断する。定着していれば日本語（運動単位・皮質脊髄路・神経伝導速度）、略語が一般的なら英語（EEG・fMRI・TMS）。
+
+    **自動検証（validate_quality.py）**：
+    - 本文連結の英字比率（ASCII letters ÷ 非空白・非数字文字）が **40% を超えると WARNING** を出力（要レビュー）。
+    - AI・統計手法系レポートはモデル名・略語が多く比率が上がりやすいため hard fail にはしないが、PD・疫学・臨床系で 40% 超は説明的英語の japanize 漏れを強く疑う。
+
+    **本ルール違反は読み手（Yuji）の可読性を損なう重大ミスとして扱う**。
+
 17. **🟡 コホート多様性のガイドライン（rev14 / 2026-06-02 指示）**。
 
     **背景**：

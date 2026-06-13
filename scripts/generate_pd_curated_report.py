@@ -128,6 +128,29 @@ def _date_key(p: dict) -> int:
         return 0
 
 
+def select_pinned_pd_papers(papers: list[dict], pinned_ids: list[str]) -> list[dict]:
+    """pinned_ids（pd_curated_content.CONTENT のキー順）に厳密一致する論文を選定。
+
+    特定日付のレポートを「キュレーション済みの10本そのまま」で再生成する用途。
+    relevance スコアでの全体選定はせず、CONTENT に列挙された論文を順序どおり返す。
+    """
+    index = {p["id"]: p for p in papers}
+    selected = []
+    missing = []
+    for pid in pinned_ids:
+        if pid in index:
+            selected.append(index[pid])
+        else:
+            missing.append(pid)
+    if missing:
+        print(f"⚠️  pinned だが papers.json に存在しない id: {missing}")
+    print(f"\n=== Pinned selection ({len(selected)}本、CONTENT キー順) ===")
+    for i, p in enumerate(selected, 1):
+        print(f"  {i:2d}. [{p['id']}] {p['title'][:60]}")
+    print()
+    return selected
+
+
 # ============================================================
 # HTML rendering
 # ============================================================
@@ -377,12 +400,35 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.now().strftime("%Y%m%d"),
                     help="Date in YYYYMMDD (default: today)")
+    ap.add_argument("--pinned", action="store_true",
+                    help="pd_curated_content.CONTENT のキーをそのまま採用し、relevance 選定を行わない")
     args = ap.parse_args()
 
     papers = json.loads(PAPERS_PATH.read_text(encoding="utf-8"))
     reports = json.loads(REPORTS_JSON_PATH.read_text(encoding="utf-8"))
 
-    selected = select_top_pd_papers(papers, n=10)
+    # CONTENT のキーがすべて当日 (--date) の id（{date}_pd_NN）なら、
+    # キュレーション済みの10本そのままで再生成する（特定日付レポートの本文更新用途）。
+    # それ以外（新規 PD 枠など）は従来どおり relevance で全体選定する。
+    pinned_ids = []
+    try:
+        from pd_curated_content import CONTENT
+        content_ids = list(CONTENT.keys())
+        date_prefix = f"{args.date}_pd_"
+        if content_ids and all(cid.startswith(date_prefix) for cid in content_ids):
+            pinned_ids = content_ids
+    except ImportError:
+        pass
+
+    if args.pinned or pinned_ids:
+        if not pinned_ids:
+            # --pinned 明示時は CONTENT のキーをそのまま使う
+            from pd_curated_content import CONTENT
+            pinned_ids = list(CONTENT.keys())
+        print(f"📌 pinned モード：CONTENT の {len(pinned_ids)}本を date={args.date} のレポートとして再生成")
+        selected = select_pinned_pd_papers(papers, pinned_ids)
+    else:
+        selected = select_top_pd_papers(papers, n=10)
     if len(selected) < 10:
         print(f"⚠️  PD関連論文が10本未満（{len(selected)}本のみ）。続行します。")
 
