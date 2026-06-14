@@ -1222,153 +1222,6 @@
     "paper_count": 10
   },
   {
-    "id": "20260604_thursday",
-    "date": "2026-06-04",
-    "weekday": "thursday",
-    "theme_jp": "脳・認知",
-    "theme_en": "brain-cognition",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260604_thursday.html",
-    "paper_ids": [
-      "20260514_thu_01",
-      "20260601_thu_02",
-      "20260528_thu_03",
-      "20260521_thu_04",
-      "20260528_thu_05",
-      "20260521_thu_06",
-      "20260528_thu_07",
-      "20260603_thu_08",
-      "20260521_thu_09",
-      "20260601_thu_10"
-    ],
-    "paper_count": 10
-  },
-  {
-    "id": "20260605_friday",
-    "date": "2026-06-05",
-    "weekday": "friday",
-    "theme_jp": "疫学方法論",
-    "theme_en": "epidemiology-methods",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260605_friday.html",
-    "paper_ids": [
-      "20260605_fri_02",
-      "20260605_fri_07",
-      "20260604_fri_10"
-    ],
-    "paper_count": 3
-  },
-  {
-    "id": "20260606_saturday",
-    "date": "2026-06-06",
-    "weekday": "saturday",
-    "theme_jp": "AI・データ科学",
-    "theme_en": "ai-data-science",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260606_saturday.html",
-    "paper_ids": [
-      "20260523_sat_01",
-      "20260517_sat_02",
-      "20260521_sat_03",
-      "20260523_sat_04",
-      "20260605_sat_05",
-      "20260518_sat_06",
-      "20260527_sat_07",
-      "20260516_sat_08",
-      "20260601_sat_09",
-      "20260516_sat_10"
-    ],
-    "paper_count": 10
-  },
-  {
-    "id": "20260607_sunday",
-    "date": "2026-06-07",
-    "weekday": "sunday",
-    "theme_jp": "遺伝子・オミクス",
-    "theme_en": "genetics-omics",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260607_sunday.html",
-    "paper_ids": [
-      "20260520_sun_01",
-      "20260603_sun_02",
-      "20260520_sun_03",
-      "20260524_sun_04",
-      "20260526_sun_05",
-      "20260524_sun_06",
-      "20260606_sun_07",
-      "20260517_sun_08",
-      "20260519_sun_09",
-      "20260601_sun_10"
-    ],
-    "paper_count": 10
-  },
-  {
-    "id": "20260608_monday",
-    "date": "2026-06-08",
-    "weekday": "monday",
-    "theme_jp": "老年医学・健康寿命",
-    "theme_en": "geriatrics-healthspan",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260608_monday.html",
-    "paper_ids": [
-      "20260518_mon_01",
-      "20260601_mon_02",
-      "20260608_mon_03",
-      "20260529_mon_04",
-      "20260608_mon_05",
-      "20260608_mon_06",
-      "20260518_mon_07",
-      "20260530_mon_08",
-      "20260515_mon_09",
-      "20260518_mon_10"
-    ],
-    "paper_count": 10
-  },
-  {
-    "id": "20260609_tuesday",
-    "date": "2026-06-09",
-    "weekday": "tuesday",
-    "theme_jp": "身体活動・運動疫学",
-    "theme_en": "physical-activity-epidemiology",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260609_tuesday.html",
-    "paper_ids": [
-      "20260519_tue_01",
-      "20260519_tue_02",
-      "20260602_tue_03",
-      "20260604_tue_04",
-      "20260414_tue_05",
-      "20260605_tue_06",
-      "20260526_tue_07",
-      "20260602_tue_08",
-      "20260519_tue_09",
-      "20260602_tue_10"
-    ],
-    "paper_count": 10
-  },
-  {
-    "id": "20260610_wednesday",
-    "date": "2026-06-10",
-    "weekday": "wednesday",
-    "theme_jp": "筋質・体組成",
-    "theme_en": "muscle-body-composition",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260610_wednesday.html",
-    "paper_ids": [
-      "20260513_wed_01",
-      "20260605_wed_02",
-      "20260513_wed_03",
-      "20260603_wed_04",
-      "20260608_wed_05",
-      "20260513_wed_06",
-      "20260603_wed_07",
-      "20260603_wed_08",
-      "20260608_wed_09",
-      "20260520_wed_10"
-    ],
-    "paper_count": 10
-  },
-  {
     "id": "20260613_pd",
     "date": "2026-06-13",
     "weekday": "pd",
@@ -1431,6 +1284,153 @@
       "20260611_pd_08",
       "20260611_pd_09",
       "20260611_pd_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260607_sunday",
+    "date": "2026-06-07",
+    "weekday": "sunday",
+    "theme_jp": "遺伝子・オミクス",
+    "theme_en": "genetics-omics",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260607_sunday.html",
+    "paper_ids": [
+      "20260520_sun_01",
+      "20260603_sun_02",
+      "20260520_sun_03",
+      "20260524_sun_04",
+      "20260526_sun_05",
+      "20260524_sun_06",
+      "20260606_sun_07",
+      "20260517_sun_08",
+      "20260519_sun_09",
+      "20260601_sun_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260608_monday",
+    "date": "2026-06-08",
+    "weekday": "monday",
+    "theme_jp": "老年医学・健康寿命",
+    "theme_en": "geriatrics-healthspan",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260608_monday.html",
+    "paper_ids": [
+      "20260518_mon_01",
+      "20260601_mon_02",
+      "20260608_mon_03",
+      "20260529_mon_04",
+      "20260608_mon_05",
+      "20260608_mon_06",
+      "20260518_mon_07",
+      "20260530_mon_08",
+      "20260515_mon_09",
+      "20260518_mon_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260605_friday",
+    "date": "2026-06-05",
+    "weekday": "friday",
+    "theme_jp": "疫学方法論",
+    "theme_en": "epidemiology-methods",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260605_friday.html",
+    "paper_ids": [
+      "20260605_fri_02",
+      "20260605_fri_07",
+      "20260604_fri_10"
+    ],
+    "paper_count": 3
+  },
+  {
+    "id": "20260609_tuesday",
+    "date": "2026-06-09",
+    "weekday": "tuesday",
+    "theme_jp": "身体活動・運動疫学",
+    "theme_en": "physical-activity-epidemiology",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260609_tuesday.html",
+    "paper_ids": [
+      "20260519_tue_01",
+      "20260519_tue_02",
+      "20260602_tue_03",
+      "20260604_tue_04",
+      "20260414_tue_05",
+      "20260605_tue_06",
+      "20260526_tue_07",
+      "20260602_tue_08",
+      "20260519_tue_09",
+      "20260602_tue_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260610_wednesday",
+    "date": "2026-06-10",
+    "weekday": "wednesday",
+    "theme_jp": "筋質・体組成",
+    "theme_en": "muscle-body-composition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260610_wednesday.html",
+    "paper_ids": [
+      "20260513_wed_01",
+      "20260605_wed_02",
+      "20260513_wed_03",
+      "20260603_wed_04",
+      "20260608_wed_05",
+      "20260513_wed_06",
+      "20260603_wed_07",
+      "20260603_wed_08",
+      "20260608_wed_09",
+      "20260520_wed_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260604_thursday",
+    "date": "2026-06-04",
+    "weekday": "thursday",
+    "theme_jp": "脳・認知",
+    "theme_en": "brain-cognition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260604_thursday.html",
+    "paper_ids": [
+      "20260514_thu_01",
+      "20260601_thu_02",
+      "20260528_thu_03",
+      "20260521_thu_04",
+      "20260528_thu_05",
+      "20260521_thu_06",
+      "20260528_thu_07",
+      "20260603_thu_08",
+      "20260521_thu_09",
+      "20260601_thu_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260606_saturday",
+    "date": "2026-06-06",
+    "weekday": "saturday",
+    "theme_jp": "AI・データ科学",
+    "theme_en": "ai-data-science",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260606_saturday.html",
+    "paper_ids": [
+      "20260523_sat_01",
+      "20260517_sat_02",
+      "20260521_sat_03",
+      "20260523_sat_04",
+      "20260605_sat_05",
+      "20260518_sat_06",
+      "20260527_sat_07",
+      "20260516_sat_08",
+      "20260601_sat_09",
+      "20260516_sat_10"
     ],
     "paper_count": 10
   }
