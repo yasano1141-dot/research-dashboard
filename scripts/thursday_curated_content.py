@@ -6,7 +6,7 @@
 CONTENT = {
 
     "20260514_thu_01": {
-        "title": "Deep-learning based multi-modal models for brain age, cognition and amyloid pathology 予測",
+        "title": "Deep-learning based multi-modal models for brain age, cognition and amyloid pathology prediction",
         "authors": "Couvy-Duchesne B, Faouzi J, Martin B, et al.",
         "journal": "Nature Aging (IF=17.0), 2025年",
         "fulltext_status": "pre-rev11_needs_verification",
@@ -26,7 +26,7 @@ CONTENT = {
     },
 
     "20260601_thu_02": {
-        "title": "KGT: Knowledge-guided graph transformer for neurodegenerative disease diagnosis and brain age 予測 with MRI",
+        "title": "KGT: Knowledge-guided graph transformer for neurodegenerative disease diagnosis and brain age prediction with MRI",
         "authors": "Zhao J, Ding R, Liu M",
         "journal": "Medical Image Analysis (IF=11.8), 2026年6月1日（Vol. 113, p. 104143）",
         "fulltext_status": "read_abstract_only",

@@ -97,7 +97,7 @@ CONTENT = {
 
     # ============================================================
     "20260508_fri_05": {
-        "title": "アウトカム-wide Epidemiology: Systematic Evaluation of Single 曝露 Effects on Multiple Outcomes",
+        "title": "Outcome-wide Epidemiology: Systematic Evaluation of Single Exposure Effects on Multiple Outcomes",
         "authors": "VanderWeele TJ, Mathur MB, Chen Y, et al.",
         "journal": "American Journal of Epidemiology (IF=5.0), 2026年",
         "fulltext_status": "pre-rev11_needs_verification",

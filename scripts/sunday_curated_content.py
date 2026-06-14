@@ -104,7 +104,7 @@ CONTENT = {
     },
 
     "20260524_sun_06": {
-        "title": "Identification of PTPRR gene associated with cirrhosis and サルコペニア based on bioinformatics and machine learning",
+        "title": "Identification of PTPRR gene associated with cirrhosis and sarcopenia based on bioinformatics and machine learning",
         "authors": "Ran S, Li H, Li Z, Li Y, Fang Y, Liu B",
         "journal": "European Journal of Clinical Nutrition (IF=3.6), 2026年",
         "fulltext_status": "read_abstract_only",

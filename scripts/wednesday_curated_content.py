@@ -24,7 +24,7 @@ abstract 読解ベースで作成したことを明記（rev11 準拠）。
 CONTENT = {
 
     "20260513_wed_01": {
-        "title": "A focus shift from サルコペニア to muscle health in the Asian Working Group for サルコペニア 2025 Consensus Update",
+        "title": "A focus shift from sarcopenia to muscle health in the Asian Working Group for Sarcopenia 2025 Consensus Update",
         "authors": "Chen LK, Arai H, Assantachai P, Akishita M, Chew STH, Dent E, et al.",
         "journal": "Nature Aging (IF=17.0), 2025年（Nov 2025）",
         "fulltext_status": "read_abstract_only",
@@ -164,7 +164,7 @@ CONTENT = {
     },
 
     "20260603_wed_08": {
-        "title": "Impact of the AWGS2025 criteria on サルコペニア prevalence and microvascular complications in individuals with type 2 diabetes in Japan: a cross-sectional study",
+        "title": "Impact of the AWGS2025 criteria on sarcopenia prevalence and microvascular complications in individuals with type 2 diabetes in Japan: a cross-sectional study",
         "authors": "Hashimoto Y, Yamamoto S, Takahashi F, Murai M, Yoshioka N, Saijyo Y, et al.",
         "journal": "Journal of Diabetes and its Complications (IF=2.9), 2026年（Vol. 40, Issue 8, Jun 1, 2026）",
         "fulltext_status": "read_abstract_only",
@@ -204,7 +204,7 @@ CONTENT = {
     },
 
     "20260520_wed_10": {
-        "title": "Growth differentiation factor-15 as a clinical biomarker of フレイル, サルコペニア and functional decline: A systematic literature review",
+        "title": "Growth differentiation factor-15 as a clinical biomarker of frailty, sarcopenia and functional decline: A systematic literature review",
         "authors": "Lee ARYB, Vidhya SN, Hong A, Tan WA, Yau CE, Low CE, Merchant RA",
         "journal": "Ageing Research Reviews (IF=12.5), 2026年（Mar 2026）",
         "fulltext_status": "read_abstract_only",
