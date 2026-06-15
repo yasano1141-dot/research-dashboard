@@ -11,6 +11,7 @@ const THEME = {
   saturday:  { jp: "AI・データ科学",        short: "AI",         color: "var(--t-saturday)" },
   sunday:    { jp: "遺伝子・オミクス",      short: "オミクス",   color: "var(--t-sunday)" },
   pd:        { jp: "PD研究",                short: "PD研究",     color: "var(--t-pd)" },
+  other:     { jp: "その他",                short: "その他",     color: "var(--t-other)" },
 };
 
 const THEME_BY_EN = {
@@ -23,12 +24,13 @@ const THEME_BY_EN = {
   "ai-data-science":               "saturday",
   "genetics-omics":                "sunday",
   "pd-research":                   "pd",
+  "other":                         "other",
 };
 
 const WEEKDAY_JP = ["日", "月", "火", "水", "木", "金", "土"];
 const WEEKDAY_ORDER = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
-// 8番目の独立テーマ「PD研究」を含む完全リスト（曜日カレンダーには使わない）
-const THEME_ORDER = [...WEEKDAY_ORDER, "pd"];
+// 9番目の独立テーマ「PD研究」「その他」を含む完全リスト（曜日カレンダーには使わない）
+const THEME_ORDER = [...WEEKDAY_ORDER, "pd", "other"];
 
 // ---- Data loading ----------------------------------------------------------
 

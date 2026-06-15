@@ -364,6 +364,23 @@ last_updated: 2026-05-05 (rev5 — メール廃止、ウェブサイト運用に
 - 木曜の `_PD研究特化.html`（thursday_pd）とは別物。PD専用枠は曜日に依存しない独立カテゴリ
 - `<body data-source-theme="pd-research">` 必須
 
+### Step 2-OTHER: 「その他」専用枠が起動された場合（曜日・PD と並ぶ独立カテゴリ、rev16 / 2026-06-14 新設）
+
+ユーザーが「その他で〇〇のテーマをまとめて」「その他カテゴリで〜の論文を」などと、**任意テーマ**を指定して依頼した時に起動する。PD 専用枠と全く同じ立ち位置の独立カテゴリで、テーマは都度変わる。
+
+- テーマ: その他（jp: "その他", en: "other", color: #0d9488 teal）
+- **content ファイル**: `scripts/other_curated_content.py` を依頼テーマの 10 本で書き換える（`TOPIC` 変数に依頼テーマ名、`CONTENT` に paper ID `{date}_other_NN` で 10 本）
+- **生成コマンド**: `python3 scripts/generate_other_curated_report.py --date {YYYYMMDD} --topic "依頼テーマ名"`
+- ファイル名: `docs/reports/{YYYYMMDD}_other.html`
+- reports.json: weekday="other"、theme_jp="その他"、theme_en="other"、topic_label="依頼テーマ名"、report_type="regular"
+- 全カードに `<span class="task-tag other">🗂 その他</span>` バッジ
+- `<body data-source-theme="other" data-topic="...">` 必須
+- 新規論文は papers.json に追加（曜日レポートと同じ挙動。is_pd_related=false）
+- フロントエンド: `docs/other.html` が weekday=="other" の論文を集約表示、テーマ別レポート一覧も表示
+- **rev9〜rev15 を曜日・PD と完全に同じく適用**（最低字数・日本語優先・直近3年・IF実値・著者 verbatim・本文英字40%以下・[introduction]/[discussion] マーカー保持）
+- PD と異なり Yuji の PD 研究計画への接続は必須ではない（依頼テーマ次第）。ただし implication/idea に Yuji の研究との接続があれば書いてよい（summary/importance には rev10 通り書かない）
+- 生成は他カテゴリと **逐次** 実行（papers.json/reports.json 競合回避）
+
 #### 選定優先軸（research-plan-extended.md より）
 **コア軸（PD申請書）**:
 - 脳構造／機能／脳波 × 身体機能・運動・歩行
