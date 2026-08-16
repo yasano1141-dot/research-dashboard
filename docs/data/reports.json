@@ -1543,5 +1543,27 @@
       "20260616_thu_06"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260807_friday",
+    "date": "2026-08-07",
+    "weekday": "friday",
+    "theme_jp": "疫学方法論",
+    "theme_en": "epidemiology-methods",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260807_friday.html",
+    "paper_ids": [
+      "20260807_fri_01",
+      "20260807_fri_02",
+      "20260807_fri_03",
+      "20260807_fri_04",
+      "20260807_fri_05",
+      "20260807_fri_06",
+      "20260807_fri_07",
+      "20260807_fri_08",
+      "20260623_fri_04",
+      "20260617_fri_05"
+    ],
+    "paper_count": 10
   }
 ]
