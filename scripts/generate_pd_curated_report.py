@@ -133,17 +133,53 @@ def select_pinned_pd_papers(papers: list[dict], pinned_ids: list[str]) -> list[d
 
     特定日付のレポートを「キュレーション済みの10本そのまま」で再生成する用途。
     relevance スコアでの全体選定はせず、CONTENT に列挙された論文を順序どおり返す。
+
+    rev17 (2026-08-16): papers.json に未登録の id は CONTENT から新規論文として
+    構築する（曜日版 generate_{theme}_curated.py と同じ挙動）。従来は既存論文への
+    リンクのみで、新規 PD レポートを作ると 0 本になっていた。
     """
+    try:
+        from pd_curated_content import CONTENT
+    except ImportError:
+        CONTENT = {}
+
     index = {p["id"]: p for p in papers}
     selected = []
-    missing = []
+    created = []
     for pid in pinned_ids:
         if pid in index:
             selected.append(index[pid])
-        else:
-            missing.append(pid)
-    if missing:
-        print(f"⚠️  pinned だが papers.json に存在しない id: {missing}")
+            continue
+        content = CONTENT.get(pid)
+        if not content:
+            print(f"⚠️  pinned だが papers.json にも CONTENT にも無い id: {pid}")
+            continue
+        selected.append({
+            "id": pid,
+            "title": content.get("title", ""),
+            "authors": content.get("authors", ""),
+            "journal": content.get("journal", ""),
+            "design": content.get("design", ""),
+            "url": content.get("url", ""),
+            "summary": content.get("summary", ""),
+            "methodology": content.get("methodology", ""),
+            "limitation": content.get("limitation", ""),
+            "implication": content.get("implication", ""),
+            "idea": content.get("idea", ""),
+            "novelty": content.get("originality", ""),
+            "background": content.get("overview", ""),
+            "result": content.get("discovery", ""),
+            "impact": content.get("importance", ""),
+            "keywords": "",
+            "tags": list(content.get("tags", [])),
+            "source_reports": [],
+            "is_pd_related": True,
+            "first_seen_date": f"{pid[:4]}-{pid[4:6]}-{pid[6:8]}",
+            "_is_new": True,
+        })
+        created.append(pid)
+    if created:
+        print(f"🆕 CONTENT から新規論文を構築: {len(created)}本")
     print(f"\n=== Pinned selection ({len(selected)}本、CONTENT キー順) ===")
     for i, p in enumerate(selected, 1):
         print(f"  {i:2d}. [{p['id']}] {p['title'][:60]}")
@@ -455,14 +491,23 @@ def main():
         if report_id in srcs:
             p["source_reports"] = [s for s in srcs if s != report_id]
 
+    new_papers_added = 0
     for pid in selected_ids:
-        if pid in paper_index:
+        rich = enriched_index[pid]
+        is_new = rich.pop("_is_new", False)
+        if is_new and pid not in paper_index:
+            # 新規論文 → papers.json に追加（rev17）
+            new_paper = {k: v for k, v in rich.items() if k != "_is_new"}
+            new_paper["source_reports"] = [report_id]
+            papers.append(new_paper)
+            paper_index[pid] = new_paper
+            new_papers_added += 1
+        elif pid in paper_index:
             base = paper_index[pid]
-            rich = enriched_index[pid]
             for k, v in rich.items():
                 if v in (None, ""):
                     continue
-                if k == "source_reports":
+                if k in ("source_reports", "_is_new"):
                     continue
                 if k == "tags" and isinstance(v, list):
                     base[k] = list(dict.fromkeys(v + (base.get(k) or [])))
@@ -472,7 +517,8 @@ def main():
             if report_id not in srcs:
                 srcs.append(report_id)
     PAPERS_PATH.write_text(json.dumps(papers, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"✅ updated papers.json (linked {len(selected_ids)} papers to {report_id})")
+    print(f"✅ updated papers.json (added {new_papers_added} new papers, "
+          f"linked {len(selected_ids)} to {report_id}, total now {len(papers)})")
 
     # Update reports.json: add new report
     new_report = {
