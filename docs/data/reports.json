@@ -1433,5 +1433,115 @@
       "20260516_sat_10"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260809_sunday",
+    "date": "2026-08-09",
+    "weekday": "sunday",
+    "theme_jp": "遺伝子・オミクス",
+    "theme_en": "genetics-omics",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260809_sunday.html",
+    "paper_ids": [
+      "20260809_sun_01",
+      "20260809_sun_02",
+      "20260626_sun_08",
+      "20260809_sun_03",
+      "20260809_sun_04",
+      "20260624_sun_01",
+      "20260809_sun_05",
+      "20260809_sun_06",
+      "20260809_sun_07",
+      "20260624_sun_09"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260810_monday",
+    "date": "2026-08-10",
+    "weekday": "monday",
+    "theme_jp": "老年医学・健康寿命",
+    "theme_en": "geriatrics-healthspan",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260810_monday.html",
+    "paper_ids": [
+      "20260810_mon_01",
+      "20260810_mon_02",
+      "20260810_mon_03",
+      "20260810_mon_04",
+      "20260810_mon_05",
+      "20260810_mon_06",
+      "20260810_mon_07",
+      "20260629_mon_01",
+      "20260629_mon_07",
+      "20260629_mon_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260811_tuesday",
+    "date": "2026-08-11",
+    "weekday": "tuesday",
+    "theme_jp": "身体活動・運動疫学",
+    "theme_en": "physical-activity-epidemiology",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260811_tuesday.html",
+    "paper_ids": [
+      "20260811_tue_01",
+      "20260811_tue_02",
+      "20260811_tue_03",
+      "20260811_tue_04",
+      "20260623_tue_02",
+      "20260811_tue_05",
+      "20260811_tue_06",
+      "20260811_tue_07",
+      "20260811_tue_08",
+      "20260811_tue_09"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260812_wednesday",
+    "date": "2026-08-12",
+    "weekday": "wednesday",
+    "theme_jp": "筋質・体組成",
+    "theme_en": "muscle-body-composition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260812_wednesday.html",
+    "paper_ids": [
+      "20260812_wed_01",
+      "20260812_wed_02",
+      "20260812_wed_03",
+      "20260812_wed_04",
+      "20260812_wed_05",
+      "20260812_wed_06",
+      "20260812_wed_07",
+      "20260621_wed_01",
+      "20260624_wed_06",
+      "20260624_wed_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260813_thursday",
+    "date": "2026-08-13",
+    "weekday": "thursday",
+    "theme_jp": "脳・認知",
+    "theme_en": "brain-cognition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260813_thursday.html",
+    "paper_ids": [
+      "20260813_thu_01",
+      "20260813_thu_02",
+      "20260813_thu_03",
+      "20260813_thu_04",
+      "20260813_thu_05",
+      "20260813_thu_06",
+      "20260813_thu_07",
+      "20260612_thu_01",
+      "20260618_thu_04",
+      "20260616_thu_06"
+    ],
+    "paper_count": 10
   }
 ]
