@@ -1565,5 +1565,27 @@
       "20260617_fri_05"
     ],
     "paper_count": 10
+  },
+  {
+    "id": "20260808_saturday",
+    "date": "2026-08-08",
+    "weekday": "saturday",
+    "theme_jp": "AI・データ科学",
+    "theme_en": "ai-data-science",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260808_saturday.html",
+    "paper_ids": [
+      "20260808_sat_01",
+      "20260808_sat_02",
+      "20260808_sat_03",
+      "20260808_sat_04",
+      "20260808_sat_05",
+      "20260622_sat_01",
+      "20260616_sat_02",
+      "20260808_sat_06",
+      "20260616_sat_04",
+      "20260808_sat_07"
+    ],
+    "paper_count": 10
   }
 ]
