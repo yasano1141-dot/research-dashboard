@@ -1523,28 +1523,6 @@
     "paper_count": 10
   },
   {
-    "id": "20260813_thursday",
-    "date": "2026-08-13",
-    "weekday": "thursday",
-    "theme_jp": "脳・認知",
-    "theme_en": "brain-cognition",
-    "report_type": "regular",
-    "source_html_path": "docs/reports/20260813_thursday.html",
-    "paper_ids": [
-      "20260813_thu_01",
-      "20260813_thu_02",
-      "20260813_thu_03",
-      "20260813_thu_04",
-      "20260813_thu_05",
-      "20260813_thu_06",
-      "20260813_thu_07",
-      "20260612_thu_01",
-      "20260618_thu_04",
-      "20260616_thu_06"
-    ],
-    "paper_count": 10
-  },
-  {
     "id": "20260807_friday",
     "date": "2026-08-07",
     "weekday": "friday",
@@ -1607,6 +1585,72 @@
       "20260813_pd_08",
       "20260813_pd_09",
       "20260813_pd_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260813_thursday",
+    "date": "2026-08-13",
+    "weekday": "thursday",
+    "theme_jp": "脳・認知",
+    "theme_en": "brain-cognition",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260813_thursday.html",
+    "paper_ids": [
+      "20260813_thu_01",
+      "20260813_thu_02",
+      "20260813_thu_03",
+      "20260813_thu_04",
+      "20260813_thu_05",
+      "20260813_thu_06",
+      "20260813_thu_07",
+      "20260813_thu_08",
+      "20260813_thu_09",
+      "20260813_thu_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260817_monday",
+    "date": "2026-08-17",
+    "weekday": "monday",
+    "theme_jp": "老年医学・健康寿命",
+    "theme_en": "geriatrics-healthspan",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260817_monday.html",
+    "paper_ids": [
+      "20260817_mon_01",
+      "20260817_mon_02",
+      "20260817_mon_03",
+      "20260817_mon_04",
+      "20260817_mon_05",
+      "20260817_mon_06",
+      "20260817_mon_07",
+      "20260817_mon_08",
+      "20260817_mon_09",
+      "20260817_mon_10"
+    ],
+    "paper_count": 10
+  },
+  {
+    "id": "20260818_tuesday",
+    "date": "2026-08-18",
+    "weekday": "tuesday",
+    "theme_jp": "身体活動・運動疫学",
+    "theme_en": "physical-activity-epidemiology",
+    "report_type": "regular",
+    "source_html_path": "docs/reports/20260818_tuesday.html",
+    "paper_ids": [
+      "20260818_tue_01",
+      "20260818_tue_02",
+      "20260818_tue_03",
+      "20260818_tue_04",
+      "20260818_tue_05",
+      "20260818_tue_06",
+      "20260818_tue_07",
+      "20260818_tue_08",
+      "20260818_tue_09",
+      "20260818_tue_10"
     ],
     "paper_count": 10
   }
